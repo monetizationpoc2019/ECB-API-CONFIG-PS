@@ -1,0 +1,528 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<GridLayout xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <IsBusinessEntityLayout>true</IsBusinessEntityLayout>
+    <Name>Core.UI.Widget</Name>   
+    <Exportable>true</Exportable>
+    <Height>360</Height>
+    <Width>715</Width>
+    <Expandable>true</Expandable>
+    <Buttons>Custom</Buttons>
+    <ObjectName>Core.UI.Widget</ObjectName>
+    <DataSourceURL>../AjaxServices/BEListSvc.aspx?Name=Core.UI.Widget&amp;Assembly=Core.UI.Entity</DataSourceURL>
+    <MultiSelect>false</MultiSelect>
+    <SelectionModel>Standard</SelectionModel>
+    <TotalProperty>TotalRows</TotalProperty>
+    <RootElement>Items</RootElement>
+    <PageSize>10</PageSize>
+    <Description>The grid layout for displaying widgets in a dashboard column in the MetraView Admin site.</Description>
+    <ExpansionCssClass />
+    <FilterInputWidth>220</FilterInputWidth>
+    <FilterLabelWidth>75</FilterLabelWidth>
+    <FilterColumnWidth>350</FilterColumnWidth>
+    <NoRecordsText>
+      <LocalizationTag>TEXT_NO_RECORDS_FOUND</LocalizationTag>
+      <ResourceClassKey>Resource</ResourceClassKey>
+    </NoRecordsText>
+    <FilterPanelLayout>MultiColumn</FilterPanelLayout>
+    <FilterPanelCollapsed>true</FilterPanelCollapsed>
+    <EnableColumnConfig>true</EnableColumnConfig>
+    <EnableFilterConfig>true</EnableFilterConfig>
+    <Resizeable>true</Resizeable>
+    <ButtonAlignment>Center</ButtonAlignment>
+    <DefaultSortField />
+    <DefaultSortDirection>Ascending</DefaultSortDirection>
+    <DisplayCount>false</DisplayCount>
+    <SearchOnLoad>true</SearchOnLoad>
+    <CustomImplementationFilePath>/MetraView/BE/BEList.aspx.js</CustomImplementationFilePath>
+    <ShowFilterPanel>true</ShowFilterPanel>
+    <ShowTopBar>true</ShowTopBar>
+    <ShowBottomBar>true</ShowBottomBar>
+    <ShowGridFrame>true</ShowGridFrame>
+    <ShowGridHeader>true</ShowGridHeader>
+    <ShowColumnHeaders>true</ShowColumnHeaders>
+    <SubGrid />
+    <Elements>
+        <Element>
+            <RecordElement>true</RecordElement>
+            <AssemblyFilename />
+            <ObjectName />
+            <ID>internalId</ID>
+            <DataType>String</DataType>
+            <IsIdentity>true</IsIdentity>
+            <DataIndex>internalId</DataIndex>
+            <IsColumn>true</IsColumn>
+            <HeaderText>
+              <LocalizationTag>TEXT_INTERNAL_ID</LocalizationTag>
+              <ResourceClassKey>Resource</ResourceClassKey>
+            </HeaderText>
+            <Formatter />
+            <Width>120</Width>
+            <Resizeable>true</Resizeable>
+            <PreventSortable>false</PreventSortable>
+            <Sortable>false</Sortable>
+            <ColumnHideable>true</ColumnHideable>
+            <DefaultColumn>false</DefaultColumn>
+            <Exportable>true</Exportable>
+            <ShowInExpander>true</ShowInExpander>
+            <Filterable>false</Filterable>
+            <FilterHideable>true</FilterHideable>
+            <DefaultFilter>true</DefaultFilter>
+            <RequiredFilter>false</RequiredFilter>
+            <FilterLabel />
+            <ElementValue>
+                <Value />
+            </ElementValue>
+            <ElementValue2>
+                <Value />
+            </ElementValue2>
+            <FilterReadOnly>false</FilterReadOnly>
+            <DropdownItems />
+        </Element>
+        <Element>
+            <RecordElement>true</RecordElement>
+            <AssemblyFilename>\Core.UI.Entity.dll</AssemblyFilename>
+            <ObjectName>Core.UI.Widget</ObjectName>
+            <ID>Name</ID>
+            <DataType>String</DataType>
+            <IsIdentity>false</IsIdentity>
+            <DataIndex>Name</DataIndex>
+            <IsColumn>true</IsColumn>
+            <HeaderText>
+              <LocalizationTag>TEXT_NAME</LocalizationTag>
+              <ResourceClassKey>Resource</ResourceClassKey>
+            </HeaderText>
+            <Formatter />
+            <Width>120</Width>
+            <Resizeable>true</Resizeable>
+            <PreventSortable>false</PreventSortable>
+            <Sortable>true</Sortable>
+            <ColumnHideable>true</ColumnHideable>
+            <DefaultColumn>true</DefaultColumn>
+            <Exportable>true</Exportable>
+            <ShowInExpander>true</ShowInExpander>
+            <Filterable>true</Filterable>
+            <FilterHideable>true</FilterHideable>
+            <DefaultFilter>true</DefaultFilter>
+            <RequiredFilter>false</RequiredFilter>
+            <FilterLabel />
+            <ElementValue>
+                <Value />
+            </ElementValue>
+            <ElementValue2>
+                <Value />
+            </ElementValue2>
+            <FilterReadOnly>false</FilterReadOnly>
+            <DropdownItems />
+        </Element>
+        <Element>
+            <RecordElement>true</RecordElement>
+            <AssemblyFilename>\Core.UI.Entity.dll</AssemblyFilename>
+            <ObjectName>Core.UI.Widget</ObjectName>
+            <ID>Description</ID>
+            <DataType>String</DataType>
+            <IsIdentity>false</IsIdentity>
+            <DataIndex>Description</DataIndex>
+            <IsColumn>true</IsColumn>
+            <HeaderText>
+              <LocalizationTag>TEXT_DESCRIPTION</LocalizationTag>
+              <ResourceClassKey>Resource</ResourceClassKey>
+            </HeaderText>
+            <Formatter />
+            <Width>120</Width>
+            <Resizeable>true</Resizeable>
+            <PreventSortable>false</PreventSortable>
+            <Sortable>true</Sortable>
+            <ColumnHideable>true</ColumnHideable>
+            <DefaultColumn>true</DefaultColumn>
+            <Exportable>true</Exportable>
+            <ShowInExpander>true</ShowInExpander>
+            <Filterable>true</Filterable>
+            <FilterHideable>true</FilterHideable>
+            <DefaultFilter>true</DefaultFilter>
+            <RequiredFilter>false</RequiredFilter>
+            <FilterLabel />
+            <ElementValue>
+                <Value />
+            </ElementValue>
+            <ElementValue2>
+                <Value />
+            </ElementValue2>
+            <FilterReadOnly>false</FilterReadOnly>
+            <DropdownItems />
+        </Element>
+        <Element>
+            <RecordElement>true</RecordElement>
+            <AssemblyFilename>\Core.UI.Entity.dll</AssemblyFilename>
+            <ObjectName>Core.UI.Widget</ObjectName>
+            <ID>Title</ID>
+            <DataType>String</DataType>
+            <IsIdentity>false</IsIdentity>
+            <DataIndex>Title</DataIndex>
+            <IsColumn>false</IsColumn>
+            <HeaderText>
+              <LocalizationTag>TEXT_COLUMN_TITLE</LocalizationTag>
+              <ResourceClassKey>Resource</ResourceClassKey>
+            </HeaderText>
+            <Formatter />
+            <Width>120</Width>
+            <Resizeable>true</Resizeable>
+            <PreventSortable>false</PreventSortable>
+            <Sortable>true</Sortable>
+            <ColumnHideable>true</ColumnHideable>
+            <DefaultColumn>true</DefaultColumn>
+            <Exportable>true</Exportable>
+            <ShowInExpander>true</ShowInExpander>
+            <Filterable>true</Filterable>
+            <FilterHideable>true</FilterHideable>
+            <DefaultFilter>true</DefaultFilter>
+            <RequiredFilter>false</RequiredFilter>
+            <FilterLabel />
+            <ElementValue>
+                <Value />
+            </ElementValue>
+            <ElementValue2>
+                <Value />
+            </ElementValue2>
+            <FilterReadOnly>false</FilterReadOnly>
+            <DropdownItems />
+        </Element>
+        <Element>
+            <RecordElement>true</RecordElement>
+            <AssemblyFilename>\Core.UI.Entity.dll</AssemblyFilename>
+            <ObjectName>Core.UI.Widget</ObjectName>
+            <ID>CssClass</ID>
+            <DataType>String</DataType>
+            <IsIdentity>false</IsIdentity>
+            <DataIndex>CssClass</DataIndex>
+            <IsColumn>false</IsColumn>
+            <HeaderText>
+              <LocalizationTag>TEXT_CSS_CLASS</LocalizationTag>
+              <ResourceClassKey>Resource</ResourceClassKey>
+            </HeaderText>
+            <Formatter />
+            <Width>120</Width>
+            <Resizeable>true</Resizeable>
+            <PreventSortable>false</PreventSortable>
+            <Sortable>true</Sortable>
+            <ColumnHideable>true</ColumnHideable>
+            <DefaultColumn>true</DefaultColumn>
+            <Exportable>true</Exportable>
+            <ShowInExpander>true</ShowInExpander>
+            <Filterable>true</Filterable>
+            <FilterHideable>true</FilterHideable>
+            <DefaultFilter>true</DefaultFilter>
+            <RequiredFilter>false</RequiredFilter>
+            <FilterLabel />
+            <ElementValue>
+                <Value />
+            </ElementValue>
+            <ElementValue2>
+                <Value />
+            </ElementValue2>
+            <FilterReadOnly>false</FilterReadOnly>
+            <DropdownItems />
+        </Element>
+        <Element>
+            <RecordElement>true</RecordElement>
+            <AssemblyFilename>\Core.UI.Entity.dll</AssemblyFilename>
+            <ObjectName>Core.UI.Widget</ObjectName>
+            <ID>Height</ID>
+            <DataType>Numeric</DataType>
+            <IsIdentity>false</IsIdentity>
+            <DataIndex>Height</DataIndex>
+            <IsColumn>false</IsColumn>
+            <HeaderText>
+              <LocalizationTag>TEXT_HEIGHT</LocalizationTag>
+              <ResourceClassKey>Resource</ResourceClassKey>
+            </HeaderText>
+            <Formatter />
+            <Width>120</Width>
+            <Resizeable>true</Resizeable>
+            <PreventSortable>false</PreventSortable>
+            <Sortable>true</Sortable>
+            <ColumnHideable>true</ColumnHideable>
+            <DefaultColumn>true</DefaultColumn>
+            <Exportable>true</Exportable>
+            <ShowInExpander>true</ShowInExpander>
+            <Filterable>true</Filterable>
+            <FilterHideable>true</FilterHideable>
+            <DefaultFilter>true</DefaultFilter>
+            <RequiredFilter>false</RequiredFilter>
+            <FilterLabel />
+            <ElementValue>
+                <Value />
+            </ElementValue>
+            <ElementValue2>
+                <Value />
+            </ElementValue2>
+            <FilterReadOnly>false</FilterReadOnly>
+            <DropdownItems />
+        </Element>
+        <Element>
+            <RecordElement>true</RecordElement>
+            <AssemblyFilename>\Core.UI.Entity.dll</AssemblyFilename>
+            <ObjectName>Core.UI.Widget</ObjectName>
+            <ID>Position</ID>
+            <DataType>Numeric</DataType>
+            <IsIdentity>false</IsIdentity>
+            <DataIndex>Position</DataIndex>
+            <IsColumn>false</IsColumn>
+            <HeaderText>
+              <LocalizationTag>TEXT_POSITION</LocalizationTag>
+              <ResourceClassKey>Resource</ResourceClassKey>
+            </HeaderText>
+            <Formatter />
+            <Width>120</Width>
+            <Resizeable>true</Resizeable>
+            <PreventSortable>false</PreventSortable>
+            <Sortable>true</Sortable>
+            <ColumnHideable>true</ColumnHideable>
+            <DefaultColumn>true</DefaultColumn>
+            <Exportable>true</Exportable>
+            <ShowInExpander>true</ShowInExpander>
+            <Filterable>true</Filterable>
+            <FilterHideable>true</FilterHideable>
+            <DefaultFilter>true</DefaultFilter>
+            <RequiredFilter>false</RequiredFilter>
+            <FilterLabel />
+            <ElementValue>
+                <Value />
+            </ElementValue>
+            <ElementValue2>
+                <Value />
+            </ElementValue2>
+            <FilterReadOnly>false</FilterReadOnly>
+            <DropdownItems />
+        </Element>
+        <Element>
+            <RecordElement>true</RecordElement>
+            <AssemblyFilename>\Core.UI.Entity.dll</AssemblyFilename>
+            <ObjectName>Core.UI.Widget</ObjectName>
+            <ID>Style</ID>
+            <DataType>String</DataType>
+            <IsIdentity>false</IsIdentity>
+            <DataIndex>Style</DataIndex>
+            <IsColumn>false</IsColumn>
+            <HeaderText>
+              <LocalizationTag>TEXT_STYLE</LocalizationTag>
+              <ResourceClassKey>Resource</ResourceClassKey>
+            </HeaderText>
+            <Formatter />
+            <Width>120</Width>
+            <Resizeable>true</Resizeable>
+            <PreventSortable>false</PreventSortable>
+            <Sortable>true</Sortable>
+            <ColumnHideable>true</ColumnHideable>
+            <DefaultColumn>true</DefaultColumn>
+            <Exportable>true</Exportable>
+            <ShowInExpander>true</ShowInExpander>
+            <Filterable>true</Filterable>
+            <FilterHideable>true</FilterHideable>
+            <DefaultFilter>true</DefaultFilter>
+            <RequiredFilter>false</RequiredFilter>
+            <FilterLabel />
+            <ElementValue>
+                <Value />
+            </ElementValue>
+            <ElementValue2>
+                <Value />
+            </ElementValue2>
+            <FilterReadOnly>false</FilterReadOnly>
+            <DropdownItems />
+        </Element>
+        <Element>
+            <RecordElement>true</RecordElement>
+            <AssemblyFilename>\Core.UI.Entity.dll</AssemblyFilename>
+            <ObjectName>Core.UI.Widget</ObjectName>
+            <ID>WidgetPath</ID>
+            <DataType>String</DataType>
+            <IsIdentity>false</IsIdentity>
+            <DataIndex>WidgetPath</DataIndex>
+            <IsColumn>false</IsColumn>
+            <HeaderText>
+              <LocalizationTag>TEXT_WIDGET_PATH</LocalizationTag>
+              <ResourceClassKey>Resource</ResourceClassKey>
+            </HeaderText>
+            <Formatter />
+            <Width>120</Width>
+            <Resizeable>true</Resizeable>
+            <PreventSortable>false</PreventSortable>
+            <Sortable>true</Sortable>
+            <ColumnHideable>true</ColumnHideable>
+            <DefaultColumn>true</DefaultColumn>
+            <Exportable>true</Exportable>
+            <ShowInExpander>true</ShowInExpander>
+            <Filterable>true</Filterable>
+            <FilterHideable>true</FilterHideable>
+            <DefaultFilter>true</DefaultFilter>
+            <RequiredFilter>false</RequiredFilter>
+            <FilterLabel />
+            <ElementValue>
+                <Value />
+            </ElementValue>
+            <ElementValue2>
+                <Value />
+            </ElementValue2>
+            <FilterReadOnly>false</FilterReadOnly>
+            <DropdownItems />
+        </Element>
+        <Element>
+            <RecordElement>true</RecordElement>
+            <AssemblyFilename>\Core.UI.Entity.dll</AssemblyFilename>
+            <ObjectName>Core.UI.Widget</ObjectName>
+            <ID>WidgetType</ID>
+            <DataType>String</DataType>
+            <IsIdentity>false</IsIdentity>
+            <DataIndex>WidgetType</DataIndex>
+            <IsColumn>true</IsColumn>
+            <HeaderText>
+              <LocalizationTag>TEXT_WIDGET_TYPE</LocalizationTag>
+              <ResourceClassKey>Resource</ResourceClassKey>
+            </HeaderText>
+            <Formatter />
+            <Width>120</Width>
+            <Resizeable>true</Resizeable>
+            <PreventSortable>false</PreventSortable>
+            <Sortable>true</Sortable>
+            <ColumnHideable>true</ColumnHideable>
+            <DefaultColumn>true</DefaultColumn>
+            <Exportable>true</Exportable>
+            <ShowInExpander>true</ShowInExpander>
+            <Filterable>true</Filterable>
+            <FilterHideable>true</FilterHideable>
+            <DefaultFilter>true</DefaultFilter>
+            <RequiredFilter>false</RequiredFilter>
+            <FilterLabel />
+            <ElementValue>
+                <Value />
+            </ElementValue>
+            <ElementValue2>
+                <Value />
+            </ElementValue2>
+            <FilterReadOnly>false</FilterReadOnly>
+            <DropdownItems />
+        </Element>
+        <Element>
+            <RecordElement>false</RecordElement>
+            <ID>Actions</ID>
+            <DataIndex />
+            <IsColumn>true</IsColumn>
+            <HeaderText>
+              <LocalizationTag>TEXT_ACTIONS</LocalizationTag>
+              <ResourceClassKey>Resource</ResourceClassKey>
+            </HeaderText>
+            <Formatter />
+            <Width>120</Width>
+            <Resizeable>true</Resizeable>
+            <PreventSortable>false</PreventSortable>
+            <Sortable>false</Sortable>
+            <ColumnHideable>false</ColumnHideable>
+            <DefaultColumn>true</DefaultColumn>
+            <Filterable>false</Filterable>
+        </Element>
+    </Elements>
+    <ExpanderTemplate>
+        <Section>
+            <Title>
+              <LocalizationTag>TEXT_DETAILS</LocalizationTag>
+              <ResourceClassKey>Resource</ResourceClassKey>
+            </Title>
+            <TabOrder>LeftToRight</TabOrder>
+            <Columns>
+                <Column>
+                    <Fields>
+                        <Field>
+                            <AssemblyFilename>\Core.UI.Entity.dll</AssemblyFilename>
+                            <ObjectName>Core.UI.Widget</ObjectName>
+                            <ID>Name</ID>
+                            <Name>Name</Name>
+                        </Field>
+                        <Field>
+                            <AssemblyFilename>\Core.UI.Entity.dll</AssemblyFilename>
+                            <ObjectName>Core.UI.Widget</ObjectName>
+                            <ID>Description</ID>
+                            <Name>Description</Name>
+                        </Field>
+                        <Field>
+                            <AssemblyFilename>\Core.UI.Entity.dll</AssemblyFilename>
+                            <ObjectName>Core.UI.Widget</ObjectName>
+                            <ID>Title</ID>
+                            <Name>Title</Name>
+                        </Field>
+                        <Field>
+                            <AssemblyFilename>\Core.UI.Entity.dll</AssemblyFilename>
+                            <ObjectName>Core.UI.Widget</ObjectName>
+                            <ID>CssClass</ID>
+                            <Name>CssClass</Name>
+                        </Field>
+                        <Field>
+                            <AssemblyFilename>\Core.UI.Entity.dll</AssemblyFilename>
+                            <ObjectName>Core.UI.Widget</ObjectName>
+                            <ID>Height</ID>
+                            <Name>Height</Name>
+                        </Field>
+                        <Field>
+                            <AssemblyFilename>\Core.UI.Entity.dll</AssemblyFilename>
+                            <ObjectName>Core.UI.Widget</ObjectName>
+                            <ID>Position</ID>
+                            <Name>Position</Name>
+                        </Field>
+                        <Field>
+                            <AssemblyFilename>\Core.UI.Entity.dll</AssemblyFilename>
+                            <ObjectName>Core.UI.Widget</ObjectName>
+                            <ID>Style</ID>
+                            <Name>Style</Name>
+                        </Field>
+                        <Field>
+                            <AssemblyFilename>\Core.UI.Entity.dll</AssemblyFilename>
+                            <ObjectName>Core.UI.Widget</ObjectName>
+                            <ID>WidgetPath</ID>
+                            <Name>WidgetPath</Name>
+                        </Field>
+                        <Field>
+                            <AssemblyFilename>\Core.UI.Entity.dll</AssemblyFilename>
+                            <ObjectName>Core.UI.Widget</ObjectName>
+                            <ID>WidgetType</ID>
+                            <Name>WidgetType</Name>
+                        </Field>
+                    </Fields>
+                </Column>
+                <Column>
+                    <Fields />
+                </Column>
+            </Columns>
+        </Section>
+    </ExpanderTemplate>
+    <GridButtons>
+        <Button>
+            <ButtonID>ApplyChanges</ButtonID>
+            <ButtonText>
+                <LocalizationTag>TEXT_APPLY_CHANGES</LocalizationTag>
+                <ResourceClassKey>SiteJSConsts</ResourceClassKey>
+            </ButtonText>
+            <ToolTip>
+                <LocalizationTag>TEXT_APPLY_CHANGES</LocalizationTag>
+                <ResourceClassKey>Resource</ResourceClassKey>
+            </ToolTip>
+            <IconClass />
+            <RequiredCapabilities />
+            <JSHandlerFunction>onApplyChanges</JSHandlerFunction>
+        </Button>
+    </GridButtons>
+    <ToolbarButtons>
+        <Button>
+            <ButtonID>Add</ButtonID>
+            <ButtonText>             
+                <LocalizationTag>TEXT_ADD_BME</LocalizationTag>
+                <ResourceClassKey>Resource</ResourceClassKey>             
+            </ButtonText>
+            <ToolTip>              
+                <LocalizationTag>TEXT_ADD_BME</LocalizationTag>
+                <ResourceClassKey>Resource</ResourceClassKey>              
+            </ToolTip>
+            <IconClass>add</IconClass>
+            <RequiredCapabilities />
+            <JSHandlerFunction>onNew</JSHandlerFunction>
+        </Button>
+    </ToolbarButtons>
+</GridLayout>

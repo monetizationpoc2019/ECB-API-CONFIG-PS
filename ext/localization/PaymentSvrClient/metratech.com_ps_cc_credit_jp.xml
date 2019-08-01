@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<mt_config>
+  <language_code>jp</language_code>
+  <locale_space name="metratech.com/ps_cc_credit">
+    <locale_entry>
+      <Name>metratech.com/ps_cc_credit</Name>
+      <Value>返金の成功</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ps_cc_credit/CreditCardType</Name>
+      <Value>クレジット カード種別</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ps_cc_credit/csrid</Name>
+      <Value>対応窓口 ID</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ps_cc_credit/exported</Name>
+      <Value>エクスポートされたインジケーター</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ps_cc_credit/LastFourDigits</Name>
+      <Value>最後の 4 桁</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ps_cc_credit/OriginalAccountID</Name>
+      <Value>元のお客様 ID</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ps_cc_credit/paymentservicetransactionid</Name>
+      <Value>支払サービス プロバイダの取引 ID</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ps_cc_credit/Reason</Name>
+      <Value>返金理由</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ps_cc_credit/RespString</Name>
+      <Value>応答の説明</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ps_cc_credit/retcode</Name>
+      <Value>戻りコード</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ps_cc_credit/terminalid</Name>
+      <Value>端末 ID</Value>
+    </locale_entry>
+  </locale_space>
+</mt_config>

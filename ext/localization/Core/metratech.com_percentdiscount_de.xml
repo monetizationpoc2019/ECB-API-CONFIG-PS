@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<mt_config>
+  <language_code>de</language_code>
+  <locale_space name="metratech.com/percentdiscount">
+    <locale_entry>
+      <Name>metratech.com/percentdiscount</Name>
+      <Value>Rabatt in Prozent</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/percentdiscount/DiscountIntervalEnd</Name>
+      <Value>Enddatum des Rabattintervalls</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/percentdiscount/DiscountIntervalStart</Name>
+      <Value>Anfangsdatum des Rabattintervalls</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/percentdiscount/DiscountIntervalSubEnd</Name>
+      <Value>Enddatum der Rabattintervallnutzung</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/percentdiscount/DiscountIntervalSubStart</Name>
+      <Value>Anfangsdatum der Rabattintervallnutzung</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/percentdiscount/DiscountPercent</Name>
+      <Value>Prozentsatz Rabatt</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/percentdiscount/GroupSubscriptionName</Name>
+      <Value>Gruppennutzungsanmeldung</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/percentdiscount/Qualifier</Name>
+      <Value>Kennungswert</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/percentdiscount/SubscriptionEnd</Name>
+      <Value>Enddatum der Nutzungsanmeldung</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/percentdiscount/SubscriptionStart</Name>
+      <Value>Anfangsdatum der Nutzungsanmeldung</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/percentdiscount/Target</Name>
+      <Value>Zielwert</Value>
+    </locale_entry>
+  </locale_space>
+</mt_config>

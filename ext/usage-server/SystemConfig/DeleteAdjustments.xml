@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xmlconfig>
+
+<!-- The PreBillAdjustmentSetting flag tells the DeleteAdjustments
+     adapter what to do with pre-bill pending ('P') and/or orphaned
+     ('O') adjustments.  The valid settings for this flag are:
+    
+     "delete" - All pre-bill pending and orphaned adjustments will be
+                marked as auto-deleted.  This is the default behavior
+                for this adapter.
+    
+     "abort"  - If any pre-bill pending or orphaned adjustments are
+                found the adapter will throw an appropriate error and
+                abort EOP processing.
+-->
+
+<PreBillAdjustmentSetting>delete</PreBillAdjustmentSetting>
+
+</xmlconfig>

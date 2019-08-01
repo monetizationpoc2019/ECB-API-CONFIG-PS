@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<mt_config>
+    <language_code>pt-br</language_code>
+     <locale_space name="Notification_EventType_TestNotification">
+        <locale_entry>
+            <Name>Notification_EventType_TestNotification/EventType/Test Notification</Name>
+            <Value>Notificação de teste</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>Notification_EventType_TestNotification/Template/Test Notification</Name>
+            <Value>Notificação de teste gerado com sucesso em {EventTimestamp}.</Value>
+        </locale_entry>
+     </locale_space>
+</mt_config>

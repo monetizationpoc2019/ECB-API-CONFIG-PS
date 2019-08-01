@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<mt_config>
+  <language_code>it</language_code>
+  <locale_space name="metratech.com/UnbundledDiscount">
+    <locale_entry>
+      <Name>metratech.com/UnbundledDiscount</Name>
+      <Value>Sconti frazionati</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/UnbundledDiscount/DiscountAmount</Name>
+      <Value>Importo sconto</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/UnbundledDiscount/DiscountID</Name>
+      <Value>ID sconto</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/UnbundledDiscount/DiscountName</Name>
+      <Value>Nome sconto</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/UnbundledDiscount/DiscountTaxAmount</Name>
+      <Value>Importo imposte sconto</Value>
+    </locale_entry>
+  </locale_space>
+</mt_config>

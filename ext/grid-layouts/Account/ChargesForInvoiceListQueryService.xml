@@ -1,0 +1,499 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<GridLayout xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <Name>ChargesForInvoiceListQueryService</Name>
+    <Title>
+        <LocalizationTag>GRID_TITLE</LocalizationTag>
+        <ResourceClassKey />
+    </Title>
+    <Exportable>true</Exportable>
+    <Height>400</Height>
+    <Width>750</Width>
+    <Expandable>true</Expandable>
+    <Buttons>Custom</Buttons>
+    <DataSourceURL>~/AjaxServices/QueryService.aspx</DataSourceURL>
+    <MultiSelect>true</MultiSelect>
+    <SelectionModel>CheckBox</SelectionModel>
+    <TotalProperty>TotalRows</TotalProperty>
+    <RootElement>Items</RootElement>
+    <PageSize>10</PageSize>
+    <Description />
+    <ExpansionCssClass />
+    <ShowFilterPanel>true</ShowFilterPanel>
+    <FilterInputWidth>220</FilterInputWidth>
+    <FilterLabelWidth>75</FilterLabelWidth>
+    <FilterLabelWrap>None</FilterLabelWrap>
+    <FilterColumnWidth>350</FilterColumnWidth>
+    <ShowTopBar>true</ShowTopBar>
+    <ShowBottomBar>true</ShowBottomBar>
+    <ShowGridFrame>true</ShowGridFrame>
+    <ShowGridHeader>true</ShowGridHeader>
+    <ShowColumnHeaders>true</ShowColumnHeaders>
+    <NoRecordsText>
+        <LocalizationTag>NoCharges </LocalizationTag>
+        <ResourceClassKey>Account/App_LocalResources/ChargesForInvoiceList.aspx</ResourceClassKey>
+    </NoRecordsText>
+    <FilterPanelLayout>MultiColumn</FilterPanelLayout>
+    <FilterPanelCollapsed>false</FilterPanelCollapsed>
+    <EnableColumnConfig>true</EnableColumnConfig>
+    <EnableFilterConfig>true</EnableFilterConfig>
+    <Resizeable>true</Resizeable>
+    <ButtonAlignment>Center</ButtonAlignment>
+    <DefaultSortField>idsess</DefaultSortField>
+    <DefaultSortDirection>Ascending</DefaultSortDirection>
+    <DisplayCount>true</DisplayCount>
+    <SearchOnLoad>true</SearchOnLoad>
+    <CustomImplementationFilePath />
+    <CustomOverrideJavascriptIncludes>\MetraNet\Account\ChargesForInvoiceList.aspx</CustomOverrideJavascriptIncludes>
+    <URLParameters>
+        <URLParameter>
+            <ParameterName>q</ParameterName>
+            <SQLQuery>
+                <QueryName>__GET_CHARGES_FOR_ONDEMAND_BILLING_FOR_GRID__</QueryName>
+                <QueryDir />
+                <QueryParameters>
+                    <QueryParameter>
+                        <Name>%%PAYER_ID%%</Name>
+                        <Value />
+                        <DataType>String</DataType>
+                    </QueryParameter>
+                    <QueryParameter>
+                        <Name>%%INTERVAL_ID%%</Name>
+                        <Value />
+                        <DataType>String</DataType>
+                    </QueryParameter>
+                    <QueryParameter>
+                        <Name>%%LANG_CODE%%</Name>
+                        <Value />
+                        <DataType>String</DataType>
+                    </QueryParameter>
+                </QueryParameters>
+                <QueryColumns>
+                    <QueryColumn>
+                        <Name>IdSess</Name>
+                        <Type>System.Int64, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</Type>
+                    </QueryColumn>
+                    <QueryColumn>
+                        <Name>Payee</Name>
+                        <Type>System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</Type>
+                    </QueryColumn>
+                    <QueryColumn>
+                        <Name>PayeeName</Name>
+                        <Type>System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</Type>
+                    </QueryColumn>
+                    <QueryColumn>
+                        <Name>ChargeType</Name>
+                        <Type>System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</Type>
+                    </QueryColumn>
+                    <QueryColumn>
+                        <Name>ChargeDate</Name>
+                        <Type>System.DateTime, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</Type>
+                    </QueryColumn>
+                    <QueryColumn>
+                        <Name>Amount</Name>
+                        <Type>System.Decimal, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</Type>
+                    </QueryColumn>
+                </QueryColumns>
+            </SQLQuery>
+        </URLParameter>
+    </URLParameters>
+    <SubGrid />
+    <Elements>
+        <Element>
+            <RecordElement>true</RecordElement>
+            <AssemblyFilename />
+            <ObjectName />
+            <ID>idsess</ID>
+            <DataType>String</DataType>
+            <IsIdentity>true</IsIdentity>
+            <DataIndex>idsess</DataIndex>
+            <IsColumn>false</IsColumn>
+            <HeaderText>
+                <LocalizationTag>ChargesListGridHeader_IdSess</LocalizationTag>
+                <ResourceClassKey>Account/App_LocalResources/ChargesForInvoiceListUsingQS.aspx</ResourceClassKey>
+            </HeaderText>
+            <Formatter />
+            <Width>120</Width>
+            <Resizeable>true</Resizeable>
+            <PreventSortable>false</PreventSortable>
+            <Sortable>false</Sortable>
+            <ColumnHideable>true</ColumnHideable>
+            <DefaultColumn>true</DefaultColumn>
+            <Exportable>true</Exportable>
+            <ShowInExpander>true</ShowInExpander>
+            <Filterable>false</Filterable>
+            <FilterHideable>true</FilterHideable>
+            <DefaultFilter>true</DefaultFilter>
+            <RequiredFilter>false</RequiredFilter>
+            <FilterLabel />
+            <ElementValue>
+                <Value />
+            </ElementValue>
+            <ElementValue2>
+                <Value />
+            </ElementValue2>
+            <FilterReadOnly>false</FilterReadOnly>
+            <DropdownItems />
+        </Element>
+        <Element>
+            <RecordElement>true</RecordElement>
+            <AssemblyFilename />
+            <ObjectName />
+            <ID>payee</ID>
+            <DataType>Account</DataType>
+            <IsIdentity>false</IsIdentity>
+            <DataIndex>payee</DataIndex>
+            <IsColumn>true</IsColumn>
+            <HeaderText>
+                <LocalizationTag>ChargesListGridHeader_Payee</LocalizationTag>
+                <ResourceClassKey>Account/App_LocalResources/ChargesForInvoiceListUsingQS.aspx</ResourceClassKey>
+            </HeaderText>
+            <Formatter />
+            <Width>200</Width>
+            <Resizeable>true</Resizeable>
+            <PreventSortable>false</PreventSortable>
+            <Sortable>true</Sortable>
+            <ColumnHideable>true</ColumnHideable>
+            <DefaultColumn>true</DefaultColumn>
+            <Exportable>true</Exportable>
+            <ShowInExpander>false</ShowInExpander>
+            <Filterable>true</Filterable>
+            <FilterHideable>true</FilterHideable>
+            <DefaultFilter>true</DefaultFilter>
+            <RequiredFilter>false</RequiredFilter>
+            <FilterLabel />
+            <ElementValue>
+                <Value />
+            </ElementValue>
+            <ElementValue2>
+                <Value />
+            </ElementValue2>
+            <FilterReadOnly>false</FilterReadOnly>
+            <DropdownItems />
+        </Element>
+        <Element>
+            <RecordElement>true</RecordElement>
+            <AssemblyFilename />
+            <ObjectName />
+            <ID>chargetype</ID>
+            <DataType>List</DataType>
+            <IsIdentity>false</IsIdentity>
+            <DataIndex>chargetype</DataIndex>
+            <IsColumn>true</IsColumn>
+            <HeaderText>
+                <LocalizationTag>ChargesListGridHeader_ChargeType</LocalizationTag>
+                <ResourceClassKey>Account/App_LocalResources/ChargesForInvoiceListUsingQS.aspx</ResourceClassKey>
+            </HeaderText>
+            <Formatter />
+            <Width>180</Width>
+            <Resizeable>true</Resizeable>
+            <PreventSortable>false</PreventSortable>
+            <Sortable>true</Sortable>
+            <ColumnHideable>true</ColumnHideable>
+            <DefaultColumn>true</DefaultColumn>
+            <Exportable>true</Exportable>
+            <ShowInExpander>false</ShowInExpander>
+            <Filterable>true</Filterable>
+            <FilterHideable>true</FilterHideable>
+            <DefaultFilter>true</DefaultFilter>
+            <RequiredFilter>false</RequiredFilter>
+            <FilterLabel />
+            <ElementValue>
+                <Value />
+            </ElementValue>
+            <ElementValue2>
+                <Value />
+            </ElementValue2>
+            <FilterReadOnly>false</FilterReadOnly>
+            <DropdownItems />
+        </Element>
+        <Element>
+            <RecordElement>true</RecordElement>
+            <AssemblyFilename />
+            <ObjectName />
+            <ID>chargedate</ID>
+            <DataType>Date</DataType>
+            <IsIdentity>false</IsIdentity>
+            <DataIndex>chargedate</DataIndex>
+            <IsColumn>true</IsColumn>
+            <HeaderText>
+                <LocalizationTag>ChargesListGridHaader_ChargeDate</LocalizationTag>
+                <ResourceClassKey>Account/App_LocalResources/ChargesForInvoiceListUsingQS.aspx</ResourceClassKey>
+            </HeaderText>
+            <Formatter>DateTimeRenderer</Formatter>
+            <Width>180</Width>
+            <Resizeable>true</Resizeable>
+            <PreventSortable>false</PreventSortable>
+            <Sortable>true</Sortable>
+            <ColumnHideable>true</ColumnHideable>
+            <DefaultColumn>true</DefaultColumn>
+            <Exportable>true</Exportable>
+            <ShowInExpander>false</ShowInExpander>
+            <Filterable>true</Filterable>
+            <FilterHideable>true</FilterHideable>
+            <DefaultFilter>true</DefaultFilter>
+            <RequiredFilter>false</RequiredFilter>
+            <FilterLabel />
+            <ElementValue>
+                <Value />
+            </ElementValue>
+            <ElementValue2>
+                <Value />
+            </ElementValue2>
+            <FilterReadOnly>false</FilterReadOnly>
+            <DropdownItems />
+        </Element>
+        <Element>
+            <RecordElement>true</RecordElement>
+            <AssemblyFilename />
+            <ObjectName />
+            <ID>amountwithadj</ID>
+            <DataType>Numeric</DataType>
+            <IsIdentity>false</IsIdentity>
+            <DataIndex>amountwithadj</DataIndex>
+            <IsColumn>true</IsColumn>
+            <HeaderText>
+                <LocalizationTag>ChargesListGridHeader_Amount</LocalizationTag>
+                <ResourceClassKey>Account/App_LocalResources/ChargesForInvoiceListUsingQS.aspx</ResourceClassKey>
+            </HeaderText>
+            <Formatter>CurrencyRenderer</Formatter>
+            <Width>120</Width>
+            <Resizeable>true</Resizeable>
+            <PreventSortable>false</PreventSortable>
+            <Sortable>false</Sortable>
+            <ColumnHideable>true</ColumnHideable>
+            <DefaultColumn>true</DefaultColumn>
+            <Exportable>true</Exportable>
+            <ShowInExpander>false</ShowInExpander>
+            <Filterable>true</Filterable>
+            <FilterHideable>true</FilterHideable>
+            <DefaultFilter>true</DefaultFilter>
+            <RequiredFilter>false</RequiredFilter>
+            <FilterLabel />
+            <ElementValue>
+                <Value />
+            </ElementValue>
+            <ElementValue2>
+                <Value />
+            </ElementValue2>
+            <FilterReadOnly>false</FilterReadOnly>
+            <DropdownItems />
+        </Element>
+        <Element>
+            <RecordElement>true</RecordElement>
+            <AssemblyFilename />
+            <ObjectName />
+            <ID>amount</ID>
+            <DataType>Numeric</DataType>
+            <IsIdentity>false</IsIdentity>
+            <DataIndex>amount</DataIndex>
+            <IsColumn>false</IsColumn>
+            <HeaderText>
+                <LocalizationTag>ChargesListGridHeader_ChargeAmount</LocalizationTag>
+                <ResourceClassKey>Account/App_LocalResources/ChargesForInvoiceListUsingQS.aspx</ResourceClassKey>
+            </HeaderText>
+            <Formatter>CurrencyRenderer</Formatter>
+            <Width>120</Width>
+            <Resizeable>true</Resizeable>
+            <PreventSortable>false</PreventSortable>
+            <Sortable>false</Sortable>
+            <ColumnHideable>true</ColumnHideable>
+            <DefaultColumn>true</DefaultColumn>
+            <Exportable>true</Exportable>
+            <ShowInExpander>true</ShowInExpander>
+            <Filterable>true</Filterable>
+            <FilterHideable>true</FilterHideable>
+            <DefaultFilter>true</DefaultFilter>
+            <RequiredFilter>false</RequiredFilter>
+            <FilterLabel />
+            <ElementValue>
+                <Value />
+            </ElementValue>
+            <ElementValue2>
+                <Value />
+            </ElementValue2>
+            <FilterReadOnly>false</FilterReadOnly>
+            <DropdownItems />
+        </Element>
+        <Element>
+            <RecordElement>true</RecordElement>
+            <AssemblyFilename />
+            <ObjectName />
+            <ID>adjamount</ID>
+            <DataType>Numeric</DataType>
+            <IsIdentity>false</IsIdentity>
+            <DataIndex>adjamount</DataIndex>
+            <IsColumn>false</IsColumn>
+            <HeaderText>
+                <LocalizationTag>ChargesListGridHeader_AdjAmount</LocalizationTag>
+                <ResourceClassKey>Account/App_LocalResources/ChargesForInvoiceListUsingQS.aspx</ResourceClassKey>
+            </HeaderText>
+            <Formatter>CurrencyRenderer</Formatter>
+            <Width>120</Width>
+            <Resizeable>true</Resizeable>
+            <PreventSortable>false</PreventSortable>
+            <Sortable>false</Sortable>
+            <ColumnHideable>true</ColumnHideable>
+            <DefaultColumn>true</DefaultColumn>
+            <Exportable>true</Exportable>
+            <ShowInExpander>true</ShowInExpander>
+            <Filterable>true</Filterable>
+            <FilterHideable>true</FilterHideable>
+            <DefaultFilter>true</DefaultFilter>
+            <RequiredFilter>false</RequiredFilter>
+            <FilterLabel />
+            <ElementValue>
+                <Value />
+            </ElementValue>
+            <ElementValue2>
+                <Value />
+            </ElementValue2>
+            <FilterReadOnly>false</FilterReadOnly>
+            <DropdownItems />
+        </Element>
+        <Element>
+            <RecordElement>true</RecordElement>
+            <AssemblyFilename />
+            <ObjectName />
+            <ID>adjtaxamount</ID>
+            <DataType>Numeric</DataType>
+            <IsIdentity>false</IsIdentity>
+            <DataIndex>adjtaxamount</DataIndex>
+            <IsColumn>false</IsColumn>
+            <HeaderText>
+                <LocalizationTag>ChargesListGridHeader_AdjTaxAmount</LocalizationTag>
+                <ResourceClassKey>Account/App_LocalResources/ChargesForInvoiceListUsingQS.aspx</ResourceClassKey>
+            </HeaderText>
+            <Formatter>CurrencyRenderer</Formatter>
+            <Width>120</Width>
+            <Resizeable>true</Resizeable>
+            <PreventSortable>false</PreventSortable>
+            <Sortable>false</Sortable>
+            <ColumnHideable>true</ColumnHideable>
+            <DefaultColumn>true</DefaultColumn>
+            <Exportable>true</Exportable>
+            <ShowInExpander>true</ShowInExpander>
+            <Filterable>true</Filterable>
+            <FilterHideable>true</FilterHideable>
+            <DefaultFilter>true</DefaultFilter>
+            <RequiredFilter>false</RequiredFilter>
+            <FilterLabel />
+            <ElementValue>
+                <Value />
+            </ElementValue>
+            <ElementValue2>
+                <Value />
+            </ElementValue2>
+            <FilterReadOnly>false</FilterReadOnly>
+            <DropdownItems />
+        </Element>
+        <Element>
+            <RecordElement>true</RecordElement>
+            <AssemblyFilename />
+            <ObjectName />
+            <ID>payeename</ID>
+            <DataType>String</DataType>
+            <IsIdentity>false</IsIdentity>
+            <DataIndex>payeename</DataIndex>
+            <IsColumn>false</IsColumn>
+            <HeaderText />
+            <Formatter />
+            <Width>120</Width>
+            <Resizeable>true</Resizeable>
+            <PreventSortable>false</PreventSortable>
+            <Sortable>false</Sortable>
+            <ColumnHideable>true</ColumnHideable>
+            <DefaultColumn>true</DefaultColumn>
+            <Exportable>true</Exportable>
+            <ShowInExpander>false</ShowInExpander>
+            <Filterable>false</Filterable>
+            <FilterHideable>true</FilterHideable>
+            <DefaultFilter>true</DefaultFilter>
+            <RequiredFilter>false</RequiredFilter>
+            <FilterLabel />
+            <ElementValue>
+                <Value />
+            </ElementValue>
+            <ElementValue2>
+                <Value />
+            </ElementValue2>
+            <FilterReadOnly>false</FilterReadOnly>
+            <DropdownItems />
+        </Element>
+    </Elements>
+    <ExpanderTemplate>
+        <Section>
+            <Title>
+                <LocalizationTag>TEXT_DETAILS</LocalizationTag>
+                <ResourceClassKey>App_GlobalResources/Resource</ResourceClassKey>
+            </Title>
+            <TabOrder>LeftToRight</TabOrder>
+            <Name />
+            <Columns>
+                <Column>
+                    <Fields>
+                        <Field>
+                            <AssemblyFilename />
+                            <ObjectName />
+                            <ID>idsess</ID>
+                            <Name>idsess</Name>
+                        </Field>
+                    </Fields>
+                </Column>
+                <Column>
+                    <Fields>
+                        <Field>
+                            <AssemblyFilename />
+                            <ObjectName />
+                            <ID>amount</ID>
+                            <Name>amount</Name>
+                        </Field>
+                        <Field>
+                            <AssemblyFilename />
+                            <ObjectName />
+                            <ID>adjamount</ID>
+                            <Name>adjamount</Name>
+                        </Field>
+                        <Field>
+                            <AssemblyFilename />
+                            <ObjectName />
+                            <ID>adjtaxamount</ID>
+                            <Name>adjtaxamount</Name>
+                        </Field>
+                    </Fields>
+                </Column>
+            </Columns>
+            <ToolbarButtons />
+        </Section>
+    </ExpanderTemplate>
+    <GridButtons>
+        <Button>
+            <ButtonID>createInvoice</ButtonID>
+            <ButtonText>
+                <LocalizationTag>ButtonRunOndemand</LocalizationTag>
+                <ResourceClassKey>Account/App_LocalResources/ChargesForInvoiceListUsingQS.aspx</ResourceClassKey>
+            </ButtonText>
+            <ToolTip>
+                <LocalizationTag>ButtonRunOndemand</LocalizationTag>
+                <ResourceClassKey>Account/App_LocalResources/ChargesForInvoiceListUsingQS.aspx</ResourceClassKey>
+            </ToolTip>
+            <IconClass />
+            <RequiredCapabilities />
+            <JSHandlerFunction>createInvoice</JSHandlerFunction>
+        </Button>
+        <Button>
+            <ButtonID>cancelSelect</ButtonID>
+            <ButtonText>
+                <LocalizationTag>ButtonCancel</LocalizationTag>
+                <ResourceClassKey>Account/App_LocalResources/ChargesForInvoiceList.aspx</ResourceClassKey>
+            </ButtonText>
+            <ToolTip>
+                <LocalizationTag>ButtonCancel</LocalizationTag>
+                <ResourceClassKey>Account/App_LocalResources/ChargesForInvoiceList.aspx</ResourceClassKey>
+            </ToolTip>
+            <IconClass />
+            <RequiredCapabilities />
+            <JSHandlerFunction>cancelSelect</JSHandlerFunction>
+        </Button>
+    </GridButtons>
+    <ToolbarButtons />
+</GridLayout>

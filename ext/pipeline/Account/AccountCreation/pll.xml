@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xmlconfig>
+  <mtsysconfigdata>
+    <effective_date ptype="DATETIME">1998-11-19T00:00:00Z</effective_date>
+    <timeout ptype="INTEGER">30</timeout>
+    <configfiletype>CONFIG_DATA</configfiletype>
+  </mtsysconfigdata>
+
+  <mtconfigdata>
+	<version ptype="INTEGER">1</version>
+	<!-- First processor configuration -->
+	<processor>
+		<name>pll</name>
+		<progid>MetraPipeline.MTSQLBatchQuery.1</progid>
+		<description>Used for resolving pricelist from name to ID</description>
+
+		<!-- Processor specific configuration data -->
+		<configdata>
+			<Program>
+			
+				CREATE PROCEDURE PriceListLookup @pricelist NVARCHAR(255),@resolved_pricelist INTEGER OUTPUT
+				AS
+				SELECT t_pricelist.id_pricelist INTO @resolved_pricelist FROM t_pricelist JOIN t_vw_base_props
+				ON t_vw_base_props.id_prop = t_pricelist.id_pricelist AND t_vw_base_props.id_lang_code = 840 AND t_vw_base_props.n_kind = 150
+				WHERE UPPER(t_vw_base_props.nm_name)=UPPER(@pricelist)
+			
+			</Program> 
+		<TempTable>pll</TempTable>
+	  </configdata>
+	</processor>
+  </mtconfigdata>
+</xmlconfig>

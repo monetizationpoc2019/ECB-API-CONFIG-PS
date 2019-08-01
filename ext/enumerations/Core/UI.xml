@@ -1,0 +1,110 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<mt_config>
+    <enum_spaces>
+        <enum_space name="UI">
+            <description>Enumeration namespace for system enumerations related to the user interface and user interface business modelling objects.</description>
+            <enums>
+                <enum name="AuthenticationType">
+                    <description>An enum for supported AuthenticationTypes.  Right now we only support MetraNet auth.  In the future we could have other things like oAuth, and Windows Live ID.</description>
+                    <entries>
+                        <entry name="MetraNet">
+                            <value>0</value>
+                        </entry>
+                    </entries>
+                </enum>
+                <enum name="DashboardColumnWidth">
+                    <description>Describes the widths associated with columns in dashboards</description>
+                    <entries>
+                        <entry name="ExtraSmall">
+                            <value>200</value>
+                        </entry>
+                        <entry name="Small">
+                            <value>300</value>
+                        </entry>
+                        <entry name="Medium">
+                            <value>350</value>
+                        </entry>
+                        <entry name="Large">
+                            <value>500</value>
+                        </entry>
+                        <entry name="ExtraLarge">
+                            <value>700</value>
+                        </entry>
+                    </entries>
+                </enum>
+                <enum name="ReportType">
+                    <description>Types of Query based reports</description>
+                    <entries>
+                        <entry name="Grid">
+                            <value>0</value>
+                        </entry>
+                        <entry name="Chart">
+                            <value>1</value>
+                        </entry>
+                    </entries>
+                </enum>
+                <enum name="Themes">
+                    <description>List of available site themes.</description>
+                    <entries>
+                        <entry name="blue">
+                            <value>blue</value>
+                        </entry>
+                        <entry name="gold">
+                            <value>gold</value>
+                        </entry>
+                        <entry name="gray">
+                            <value>gray</value>
+                        </entry>
+                        <entry name="green">
+                            <value>green</value>
+                        </entry>
+                        <entry name="orange">
+                            <value>orange</value>
+                        </entry>
+                        <entry name="purple">
+                            <value>purple</value>
+                        </entry>
+                        <entry name="red">
+                            <value>red</value>
+                        </entry>
+                    </entries>
+                </enum>
+                <enum name="UICultures">
+                    <description>List of supported UI Cultures.</description>
+                    <entries>
+                        <entry name="English">
+                            <value>en-US</value>
+                        </entry>
+                        <entry name="English GB">
+                            <value>en-GB</value>
+                        </entry>
+                        <entry name="French">
+                            <value>fr-FR</value>
+                        </entry>
+                        <entry name="German">
+                            <value>de-DE</value>
+                        </entry>
+                        <entry name="Italian">
+                            <value>it</value>
+                        </entry>
+                        <entry name="Spanish">
+                            <value>es</value>
+                        </entry>
+                        <entry name="Japanese">
+                            <value>ja</value>
+                        </entry>
+                        <entry name="Arabic">
+                            <value>ar</value>
+                        </entry>
+                        <entry name="Spanish - Mexican">
+                            <value>es-mx</value>
+                        </entry>
+                        <entry name="Portuguese - Brazil">
+                            <value>pt-br</value>
+                        </entry>
+                    </entries>
+                </enum>
+            </enums>
+        </enum_space>
+    </enum_spaces>
+</mt_config>

@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xmlconfig>
+   <Version>1</Version>
+
+	<MaxOpenTransactionHours>24</MaxOpenTransactionHours>
+	<MaxThreads>20</MaxThreads>
+	<ConfigFile>PaymentSvrClient\config\UsageServer\CleanupService.xml</ConfigFile>
+	<EndPoint>WSHttpBinding_IElectronicPaymentServices</EndPoint>
+</xmlconfig>

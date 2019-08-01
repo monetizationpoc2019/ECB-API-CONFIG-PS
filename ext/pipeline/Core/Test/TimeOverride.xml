@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xmlconfig>
+  <mtsysconfigdata>
+    <effective_date ptype="DATETIME">1998-11-19T00:00:00Z</effective_date>
+    <timeout ptype="INTEGER">30</timeout>
+    <configfiletype>CONFIG_DATA</configfiletype>
+  </mtsysconfigdata>
+  <mtconfigdata>
+  <version ptype="INTEGER">1</version>
+
+ <processor>
+  <name>TimeOverride</name>
+  <progid>MetraPipeline.MTSQLInterpreter.1</progid>
+  <description>Set timestamp if overridden in service definition.</description>
+
+  <configdata>
+  <Program>
+
+CREATE PROCEDURE TimeOverride
+  @PipelineTime DATETIME
+  @_Timestamp   DATETIME OUTPUT
+AS
+ 
+  IF NOT (@PipelineTime IS NULL)
+    -- use pipelinetime from the service
+    SET @_Timestamp = @PipelineTime
+ 
+  </Program>
+
+  </configdata>
+ </processor>
+  </mtconfigdata>
+</xmlconfig>

@@ -1,0 +1,106 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<mt_config>
+  <language_code>gb</language_code>
+  <locale_space name="metratech.com/ps_paymentscheduler">
+    <locale_entry>
+      <Name>metratech.com/ps_paymentscheduler</Name>
+      <Value>Payment Scheduler Product View</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ps_paymentscheduler/bankaccounttype</Name>
+      <Value>Bank Account Type</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ps_paymentscheduler/confirmationreceived</Name>
+      <Value>Subscriber Account ID</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ps_paymentscheduler/confirmationrequested</Name>
+      <Value>Subscriber Account ID</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ps_paymentscheduler/creditcardtype</Name>
+      <Value>Credit Card Type</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ps_paymentscheduler/currentstatus</Name>
+      <Value>Current Transaction Status</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ps_paymentscheduler/description</Name>
+      <Value />
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ps_paymentscheduler/email</Name>
+      <Value />
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ps_paymentscheduler/intervalid</Name>
+      <Value />
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ps_paymentscheduler/lastfourdigits</Name>
+      <Value>Last Four Digits of Credit Card or Bank Account Number</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ps_paymentscheduler/laststatusupdate</Name>
+      <Value>Last Status Update Date</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ps_paymentscheduler/maxretries</Name>
+      <Value>Maximum Number of Retries</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ps_paymentscheduler/nachacode</Name>
+      <Value>NACHA Code</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ps_paymentscheduler/numberretries</Name>
+      <Value />
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ps_paymentscheduler/originalaccountid</Name>
+      <Value>Subscriber Confirmation Received Indicator</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ps_paymentscheduler/originalintervalid</Name>
+      <Value>Original Interval ID</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ps_paymentscheduler/paymentprovidercode</Name>
+      <Value>Payment Provider Status Code</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ps_paymentscheduler/paymentproviderstatus</Name>
+      <Value>Payment Provider Status</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ps_paymentscheduler/paymentservicetransactionid</Name>
+      <Value>Payment Service Provider Transaction ID</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ps_paymentscheduler/paymenttype</Name>
+      <Value>Internal Payment Type</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ps_paymentscheduler/retryonfailure</Name>
+      <Value>Retry on Failure Indicator</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ps_paymentscheduler/routingnumber</Name>
+      <Value>ABA/Routing Number</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ps_paymentscheduler/scheduledpayment</Name>
+      <Value>Scheduled Payment Date</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ps_paymentscheduler/taxamount</Name>
+      <Value />
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ps_paymentscheduler/usagecycletype</Name>
+      <Value />
+    </locale_entry>
+  </locale_space>
+</mt_config>

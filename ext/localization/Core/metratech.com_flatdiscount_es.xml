@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<mt_config>
+  <language_code>es</language_code>
+  <locale_space name="metratech.com/flatdiscount">
+    <locale_entry>
+      <Name>metratech.com/flatdiscount</Name>
+      <Value>Descuento a tipo fijo</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/flatdiscount/DiscountIntervalEnd</Name>
+      <Value>Fecha final del intervalo de descuento</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/flatdiscount/DiscountIntervalStart</Name>
+      <Value>Fecha inicial del intervalo de descuento</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/flatdiscount/DiscountIntervalSubEnd</Name>
+      <Value>Final de la suscripción del intervalo de descuento</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/flatdiscount/DiscountIntervalSubStart</Name>
+      <Value>Inicio de la suscripción del intervalo de descuento</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/flatdiscount/FlatRateQualifier</Name>
+      <Value>Calificador de tarifa constante</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/flatdiscount/GroupSubscriptionName</Name>
+      <Value>Suscripción a grupo</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/flatdiscount/SubscriptionEnd</Name>
+      <Value>Finalización de la suscripción</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/flatdiscount/SubscriptionStart</Name>
+      <Value>Inicio de la suscripción</Value>
+    </locale_entry>
+  </locale_space>
+</mt_config>

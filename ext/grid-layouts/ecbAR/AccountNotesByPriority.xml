@@ -1,0 +1,363 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<GridLayout xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <Name>AccountNotesByPriority</Name>
+    <Title>
+        <Value>Collection Notes</Value>
+    </Title>
+    <Exportable>true</Exportable>
+    <Height>275</Height>
+    <Width>950</Width>
+    <Expandable>false</Expandable>
+    <Buttons>Custom</Buttons>
+    <DataSourceURL>~/ecbAR/AjaxServices/AccountNotesSvc.aspx?op=GetListByPriority</DataSourceURL>
+    <MultiSelect>false</MultiSelect>
+    <SelectionModel>CheckBox</SelectionModel>
+    <TotalProperty>TotalRows</TotalProperty>
+    <RootElement>Items</RootElement>
+    <PageSize>5</PageSize>
+    <Description />
+    <ExpansionCssClass />
+    <ShowFilterPanel>true</ShowFilterPanel>
+    <FilterInputWidth>220</FilterInputWidth>
+    <FilterLabelWidth>75</FilterLabelWidth>
+    <FilterColumnWidth>350</FilterColumnWidth>
+    <ShowTopBar>true</ShowTopBar>
+    <ShowBottomBar>true</ShowBottomBar>
+    <ShowGridFrame>true</ShowGridFrame>
+    <ShowGridHeader>true</ShowGridHeader>
+    <ShowColumnHeaders>true</ShowColumnHeaders>
+    <NoRecordsText>
+        <LocalizationTag>NO_RECORDS_TEXT</LocalizationTag>
+        <ResourceClassKey>App_GlobalResources/ecbAR</ResourceClassKey>
+    </NoRecordsText>
+    <FilterPanelLayout>MultiColumn</FilterPanelLayout>
+    <FilterPanelCollapsed>true</FilterPanelCollapsed>
+    <EnableColumnConfig>true</EnableColumnConfig>
+    <EnableFilterConfig>true</EnableFilterConfig>
+    <Resizeable>true</Resizeable>
+    <ButtonAlignment>Right</ButtonAlignment>
+    <DefaultSortField />
+    <DefaultSortDirection>Ascending</DefaultSortDirection>
+    <DisplayCount>true</DisplayCount>
+    <SearchOnLoad>true</SearchOnLoad>
+    <CustomImplementationFilePath />
+    <SubGrid />
+    <FilterLabelWrap>None</FilterLabelWrap>
+    <CustomOverrideJavascriptIncludes />
+    <Elements>
+        <Element>
+            <RecordElement>true</RecordElement>
+            <AssemblyFilename>ECB.ecbAR.BO.Entity.dll</AssemblyFilename>
+            <ObjectName>ECB.ecbAR.BO.Entity.AccountNotesEntity</ObjectName>
+            <ID>NoteDate</ID>
+            <DataType>Date</DataType>
+            <IsIdentity>false</IsIdentity>
+            <DataIndex>NoteDate</DataIndex>
+            <IsColumn>true</IsColumn>
+            <HeaderText>
+                <Value>Date Note (UTC)</Value>
+            </HeaderText>
+            <Formatter>noteDateCustomRenderer</Formatter>
+            <Width>120</Width>
+            <Resizeable>true</Resizeable>
+            <PreventSortable>false</PreventSortable>
+            <Sortable>false</Sortable>
+            <ColumnHideable>true</ColumnHideable>
+            <DefaultColumn>true</DefaultColumn>
+            <Exportable>true</Exportable>
+            <ShowInExpander>false</ShowInExpander>
+            <Filterable>true</Filterable>
+            <FilterHideable>true</FilterHideable>
+            <DefaultFilter>true</DefaultFilter>
+            <RequiredFilter>false</RequiredFilter>
+            <FilterLabel />
+            <ElementValue>
+                <Value />
+            </ElementValue>
+            <ElementValue2>
+                <Value />
+            </ElementValue2>
+            <FilterReadOnly>false</FilterReadOnly>
+            <DropdownItems />
+        </Element>
+        <Element>
+            <RecordElement>true</RecordElement>
+            <AssemblyFilename>ECB.ecbAR.BO.Entity.dll</AssemblyFilename>
+            <ObjectName>ECB.ecbAR.BO.Entity.AccountNotesEntity</ObjectName>
+            <ID>LoginName</ID>
+            <DataType>String</DataType>
+            <IsIdentity>false</IsIdentity>
+            <DataIndex>LoginName</DataIndex>
+            <IsColumn>true</IsColumn>
+            <HeaderText>
+                <Value>Login</Value>
+            </HeaderText>
+            <Formatter />
+            <Width>100</Width>
+            <Resizeable>true</Resizeable>
+            <PreventSortable>false</PreventSortable>
+            <Sortable>false</Sortable>
+            <ColumnHideable>true</ColumnHideable>
+            <DefaultColumn>true</DefaultColumn>
+            <Exportable>true</Exportable>
+            <ShowInExpander>false</ShowInExpander>
+            <Filterable>true</Filterable>
+            <FilterHideable>true</FilterHideable>
+            <DefaultFilter>true</DefaultFilter>
+            <RequiredFilter>false</RequiredFilter>
+            <FilterLabel />
+            <ElementValue>
+                <Value />
+            </ElementValue>
+            <ElementValue2>
+                <Value />
+            </ElementValue2>
+            <FilterReadOnly>false</FilterReadOnly>
+            <DropdownItems />
+        </Element>
+        <Element>
+            <RecordElement>true</RecordElement>
+            <AssemblyFilename>ECB.ecbAR.BO.Entity.dll</AssemblyFilename>
+            <ObjectName>ECB.ecbAR.BO.Entity.AccountNotesEntity</ObjectName>
+            <ID>Note</ID>
+            <DataType>String</DataType>
+            <IsIdentity>false</IsIdentity>
+            <DataIndex>Note</DataIndex>
+            <IsColumn>true</IsColumn>
+            <HeaderText>
+                <Value>Note</Value>
+            </HeaderText>
+            <Formatter>noteRenderer</Formatter>
+            <Width>400</Width>
+            <Resizeable>true</Resizeable>
+            <PreventSortable>false</PreventSortable>
+            <Sortable>false</Sortable>
+            <ColumnHideable>true</ColumnHideable>
+            <DefaultColumn>true</DefaultColumn>
+            <Exportable>true</Exportable>
+            <ShowInExpander>false</ShowInExpander>
+            <Filterable>true</Filterable>
+            <FilterHideable>true</FilterHideable>
+            <DefaultFilter>true</DefaultFilter>
+            <RequiredFilter>false</RequiredFilter>
+            <FilterLabel />
+            <ElementValue>
+                <Value />
+            </ElementValue>
+            <ElementValue2>
+                <Value />
+            </ElementValue2>
+            <FilterReadOnly>false</FilterReadOnly>
+            <DropdownItems />
+        </Element>
+        <Element>
+            <RecordElement>true</RecordElement>
+            <AssemblyFilename>ECB.ecbAR.BO.Entity.dll</AssemblyFilename>
+            <ObjectName>ECB.ecbAR.BO.Entity.AccountNotesEntity</ObjectName>
+            <ID>FollowUpDate</ID>
+            <DataType>Date</DataType>
+            <IsIdentity>false</IsIdentity>
+            <DataIndex>FollowUpDate</DataIndex>
+            <IsColumn>true</IsColumn>
+            <HeaderText>
+                <Value>Follow Up Date</Value>
+            </HeaderText>
+            <Formatter>followUpDateRenderer</Formatter>
+            <Width>120</Width>
+            <Resizeable>true</Resizeable>
+            <PreventSortable>false</PreventSortable>
+            <Sortable>false</Sortable>
+            <ColumnHideable>true</ColumnHideable>
+            <DefaultColumn>true</DefaultColumn>
+            <Exportable>true</Exportable>
+            <ShowInExpander>false</ShowInExpander>
+            <Filterable>true</Filterable>
+            <FilterHideable>true</FilterHideable>
+            <DefaultFilter>true</DefaultFilter>
+            <RequiredFilter>false</RequiredFilter>
+            <FilterLabel />
+            <ElementValue>
+                <Value />
+            </ElementValue>
+            <ElementValue2>
+                <Value />
+            </ElementValue2>
+            <FilterReadOnly>false</FilterReadOnly>
+            <DropdownItems />
+        </Element>
+        <Element>
+            <RecordElement>true</RecordElement>
+            <AssemblyFilename>ECB.ecbAR.BO.Entity.dll</AssemblyFilename>
+            <ObjectName>ECB.ecbAR.BO.Entity.AccountNotesEntity</ObjectName>
+            <ID>ActiveFollowUpDate</ID>
+            <DataType>Boolean</DataType>
+            <IsIdentity>false</IsIdentity>
+            <DataIndex>ActiveFollowUpDate</DataIndex>
+            <IsColumn>true</IsColumn>
+            <HeaderText>
+                <Value>Active Follow Up</Value>
+            </HeaderText>
+            <Formatter />
+            <Width>100</Width>
+            <Resizeable>true</Resizeable>
+            <PreventSortable>false</PreventSortable>
+            <Sortable>false</Sortable>
+            <ColumnHideable>true</ColumnHideable>
+            <DefaultColumn>true</DefaultColumn>
+            <Exportable>true</Exportable>
+            <ShowInExpander>false</ShowInExpander>
+            <Filterable>true</Filterable>
+            <FilterHideable>true</FilterHideable>
+            <DefaultFilter>true</DefaultFilter>
+            <RequiredFilter>false</RequiredFilter>
+            <FilterLabel />
+            <ElementValue>
+                <Value />
+            </ElementValue>
+            <ElementValue2>
+                <Value />
+            </ElementValue2>
+            <FilterReadOnly>false</FilterReadOnly>
+            <DropdownItems />
+        </Element>
+        <Element>
+            <RecordElement>true</RecordElement>
+            <AssemblyFilename>ECB.ecbAR.BO.Entity.dll</AssemblyFilename>
+            <ObjectName>ECB.ecbAR.BO.Entity.AccountNotesEntity</ObjectName>
+            <ID>NoteID</ID>
+            <DataType>Numeric</DataType>
+            <IsIdentity>true</IsIdentity>
+            <DataIndex>NoteID</DataIndex>
+            <IsColumn>false</IsColumn>
+            <HeaderText />
+            <Formatter />
+            <Width>120</Width>
+            <Resizeable>true</Resizeable>
+            <PreventSortable>false</PreventSortable>
+            <Sortable>false</Sortable>
+            <ColumnHideable>true</ColumnHideable>
+            <DefaultColumn>true</DefaultColumn>
+            <Exportable>true</Exportable>
+            <ShowInExpander>false</ShowInExpander>
+            <Filterable>false</Filterable>
+            <FilterHideable>true</FilterHideable>
+            <DefaultFilter>true</DefaultFilter>
+            <RequiredFilter>false</RequiredFilter>
+            <FilterLabel />
+            <ElementValue>
+                <Value />
+            </ElementValue>
+            <ElementValue2>
+                <Value />
+            </ElementValue2>
+            <FilterReadOnly>false</FilterReadOnly>
+            <DropdownItems />
+        </Element>
+        <Element>
+            <RecordElement>true</RecordElement>
+            <AssemblyFilename>ECB.ecbAR.BO.Entity.dll</AssemblyFilename>
+            <ObjectName>ECB.ecbAR.BO.Entity.AccountNotesEntity</ObjectName>
+            <ID>Priority</ID>
+            <DataType>List</DataType>
+            <IsIdentity>false</IsIdentity>
+            <DataIndex>Priority</DataIndex>
+            <IsColumn>false</IsColumn>
+            <HeaderText />
+            <Formatter />
+            <Width>120</Width>
+            <Resizeable>true</Resizeable>
+            <PreventSortable>false</PreventSortable>
+            <Sortable>false</Sortable>
+            <ColumnHideable>true</ColumnHideable>
+            <DefaultColumn>true</DefaultColumn>
+            <Exportable>true</Exportable>
+            <ShowInExpander>false</ShowInExpander>
+            <Filterable>false</Filterable>
+            <FilterHideable>true</FilterHideable>
+            <DefaultFilter>true</DefaultFilter>
+            <RequiredFilter>false</RequiredFilter>
+            <FilterLabel />
+            <ElementValue>
+                <Value />
+            </ElementValue>
+            <ElementValue2>
+                <Value />
+            </ElementValue2>
+            <FilterReadOnly>false</FilterReadOnly>
+            <DropdownItems />
+        </Element>
+        <Element>
+            <RecordElement>true</RecordElement>
+            <AssemblyFilename>ECB.ecbAR.BO.Entity.dll</AssemblyFilename>
+            <ObjectName>ECB.ecbAR.BO.Entity.AccountNotesEntity</ObjectName>
+            <ID>HighLight</ID>
+            <DataType>Boolean</DataType>
+            <IsIdentity>false</IsIdentity>
+            <DataIndex>HighLight</DataIndex>
+            <IsColumn>false</IsColumn>
+            <HeaderText />
+            <Formatter />
+            <Width>120</Width>
+            <Resizeable>true</Resizeable>
+            <PreventSortable>false</PreventSortable>
+            <Sortable>false</Sortable>
+            <ColumnHideable>true</ColumnHideable>
+            <DefaultColumn>true</DefaultColumn>
+            <Exportable>true</Exportable>
+            <ShowInExpander>false</ShowInExpander>
+            <Filterable>false</Filterable>
+            <FilterHideable>true</FilterHideable>
+            <DefaultFilter>true</DefaultFilter>
+            <RequiredFilter>false</RequiredFilter>
+            <FilterLabel />
+            <ElementValue>
+                <Value />
+            </ElementValue>
+            <ElementValue2>
+                <Value />
+            </ElementValue2>
+            <FilterReadOnly>false</FilterReadOnly>
+            <DropdownItems />
+        </Element>
+    </Elements>
+    <ExpanderTemplate />
+    <GridButtons>
+        <Button>
+            <ButtonID>btnArchive</ButtonID>
+            <ButtonText>
+                <Value>Archive</Value>
+            </ButtonText>
+            <ToolTip>
+                <Value>Archive</Value>
+            </ToolTip>
+            <IconClass />
+            <RequiredCapabilities />
+            <JSHandlerFunction>onArchive</JSHandlerFunction>
+        </Button>
+        <Button>
+            <ButtonID>btnActiveFollowUp</ButtonID>
+            <ButtonText>
+                <Value>Active Follow Up</Value>
+            </ButtonText>
+            <ToolTip>
+                <Value>Active Follow Up</Value>
+            </ToolTip>
+            <IconClass />
+            <RequiredCapabilities />
+            <JSHandlerFunction>onActiveFollowup</JSHandlerFunction>
+        </Button>
+        <Button>
+            <ButtonID>btnUpdatePriority</ButtonID>
+            <ButtonText>
+                <Value>High Priority</Value>
+            </ButtonText>
+            <ToolTip>
+                <Value>High Priority</Value>
+            </ToolTip>
+            <IconClass />
+            <RequiredCapabilities />
+            <JSHandlerFunction>onUpdatePriority</JSHandlerFunction>
+        </Button>
+    </GridButtons>
+    <ToolbarButtons />
+</GridLayout>

@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<mt_config>
+  <language_code>es-MX</language_code>
+  <locale_space name="metratech.com/Dispute">
+    <locale_entry>
+      <Name>metratech.com/Dispute/DisputeStatus/Approved</Name>
+      <Value>Aprobado(a)</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/Dispute/DisputeStatus/Pending</Name>
+      <Value>Pendiente</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/Dispute/DisputeStatus/Rejected</Name>
+      <Value>Rechazado(a)</Value>
+    </locale_entry>
+  </locale_space>
+</mt_config>

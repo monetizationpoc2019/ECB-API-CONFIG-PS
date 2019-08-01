@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<mt_config>
+  <language_code>jp</language_code>
+  <locale_space name="metratech.com/ps_cc_postauth">
+    <locale_entry>
+      <Name>metratech.com/ps_cc_postauth</Name>
+      <Value>事後承認</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ps_cc_postauth/CreditCardType</Name>
+      <Value>クレジット カード種別</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ps_cc_postauth/CsrId</Name>
+      <Value>対応窓口 ID</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ps_cc_postauth/exported</Name>
+      <Value>エクスポートされたインジケーター</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ps_cc_postauth/LastFourDigits</Name>
+      <Value>最後の 4 桁</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ps_cc_postauth/OriginalAccountID</Name>
+      <Value>元のお客様 ID</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ps_cc_postauth/originalid</Name>
+      <Value>元の ID</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ps_cc_postauth/paymentservicetransactionid</Name>
+      <Value>支払サービス プロバイダの取引 ID (事後承認)</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ps_cc_postauth/Reason</Name>
+      <Value>引き落とし理由</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ps_cc_postauth/RespString</Name>
+      <Value>応答の説明</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ps_cc_postauth/retcode</Name>
+      <Value>戻りコード</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ps_cc_postauth/terminalid</Name>
+      <Value>端末 ID</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ps_cc_postauth/TransactionID</Name>
+      <Value>取引 ID</Value>
+    </locale_entry>
+  </locale_space>
+</mt_config>

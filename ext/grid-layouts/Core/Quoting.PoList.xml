@@ -1,0 +1,219 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<GridLayout xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <Name>Quoting.PoList</Name>
+    <Title>
+        <LocalizationTag>GRID_TITLE</LocalizationTag>
+        <ResourceClassKey>Quoting/App_LocalResources/SelectPOForQuote.aspx</ResourceClassKey>
+    </Title>
+    <Exportable>true</Exportable>
+    <Height>400</Height>
+    <Width>650</Width>
+    <Expandable>true</Expandable>
+    <Buttons>OK</Buttons>
+    <DataSourceURL>../AjaxServices/LoadPosForQuote.aspx</DataSourceURL>
+    <MultiSelect>true</MultiSelect>
+    <SelectionModel>CheckBox</SelectionModel>
+    <TotalProperty>TotalRows</TotalProperty>
+    <RootElement>Items</RootElement>
+    <PageSize>10</PageSize>
+    <Description />
+    <ExpansionCssClass />
+    <ShowFilterPanel>true</ShowFilterPanel>
+    <FilterInputWidth>220</FilterInputWidth>
+    <FilterLabelWidth>75</FilterLabelWidth>
+    <FilterColumnWidth>350</FilterColumnWidth>
+    <ShowTopBar>true</ShowTopBar>
+    <ShowBottomBar>true</ShowBottomBar>
+    <ShowGridFrame>true</ShowGridFrame>
+    <ShowGridHeader>true</ShowGridHeader>
+    <ShowColumnHeaders>true</ShowColumnHeaders>
+    <NoRecordsText>
+        <Value />
+    </NoRecordsText>
+    <FilterPanelLayout>MultiColumn</FilterPanelLayout>
+    <FilterPanelCollapsed>true</FilterPanelCollapsed>
+    <EnableColumnConfig>true</EnableColumnConfig>
+    <EnableFilterConfig>true</EnableFilterConfig>
+    <Resizeable>true</Resizeable>
+    <ButtonAlignment>Center</ButtonAlignment>
+    <DefaultSortField />
+    <DefaultSortDirection>Ascending</DefaultSortDirection>
+    <DisplayCount>false</DisplayCount>
+    <SearchOnLoad>true</SearchOnLoad>
+    <CustomImplementationFilePath />
+    <CustomOverrideJavascriptIncludes />
+    <SubGrid />
+    <Elements>
+        <Element>
+            <RecordElement>true</RecordElement>
+            <AssemblyFilename>C:\dev\MetraNetDev\output\Debug\Bin\MetraTech.DomainModel.ProductCatalog.Generated.dll</AssemblyFilename>
+            <ObjectName>MetraTech.DomainModel.ProductCatalog.ProductOffering</ObjectName>
+            <ID>ProductOfferingId</ID>
+            <DataType>Numeric</DataType>
+            <IsIdentity>true</IsIdentity>
+            <DataIndex>ProductOfferingId</DataIndex>
+            <IsColumn>false</IsColumn>
+            <HeaderText>
+                <LocalizationTag>PO_ID</LocalizationTag>
+                <ResourceClassKey>Quoting/App_LocalResources/SelectPOForQuote.aspx</ResourceClassKey>
+            </HeaderText>
+            <Formatter />
+            <Width>120</Width>
+            <Resizeable>true</Resizeable>
+            <PreventSortable>false</PreventSortable>
+            <Sortable>false</Sortable>
+            <ColumnHideable>true</ColumnHideable>
+            <DefaultColumn>true</DefaultColumn>
+            <Exportable>true</Exportable>
+            <ShowInExpander>true</ShowInExpander>
+            <Filterable>true</Filterable>
+            <FilterHideable>true</FilterHideable>
+            <DefaultFilter>true</DefaultFilter>
+            <RequiredFilter>false</RequiredFilter>
+            <FilterLabel />
+            <ElementValue>
+                <Value />
+            </ElementValue>
+            <ElementValue2>
+                <Value />
+            </ElementValue2>
+            <FilterReadOnly>false</FilterReadOnly>
+            <DropdownItems />
+        </Element>
+        <Element>
+            <RecordElement>true</RecordElement>
+            <AssemblyFilename>C:\dev\MetraNetDev\output\Debug\Bin\MetraTech.DomainModel.ProductCatalog.Generated.dll</AssemblyFilename>
+            <ObjectName>MetraTech.DomainModel.ProductCatalog.ProductOffering</ObjectName>
+            <ID>Name</ID>
+            <DataType>String</DataType>
+            <IsIdentity>false</IsIdentity>
+            <DataIndex>Name</DataIndex>
+            <IsColumn>true</IsColumn>
+            <HeaderText>
+                <LocalizationTag>PO_NAME</LocalizationTag>
+                <ResourceClassKey>Quoting/App_LocalResources/SelectPOForQuote.aspx</ResourceClassKey>
+            </HeaderText>
+            <Formatter />
+            <Width>300</Width>
+            <Resizeable>true</Resizeable>
+            <PreventSortable>false</PreventSortable>
+            <Sortable>false</Sortable>
+            <ColumnHideable>true</ColumnHideable>
+            <DefaultColumn>true</DefaultColumn>
+            <Exportable>true</Exportable>
+            <ShowInExpander>false</ShowInExpander>
+            <Filterable>true</Filterable>
+            <FilterHideable>true</FilterHideable>
+            <DefaultFilter>true</DefaultFilter>
+            <RequiredFilter>false</RequiredFilter>
+            <FilterLabel />
+            <ElementValue>
+                <Value />
+            </ElementValue>
+            <ElementValue2>
+                <Value />
+            </ElementValue2>
+            <FilterReadOnly>false</FilterReadOnly>
+            <DropdownItems />
+        </Element>
+        <Element>
+            <RecordElement>true</RecordElement>
+            <AssemblyFilename>C:\dev\MetraNetDev\output\Debug\Bin\MetraTech.DomainModel.ProductCatalog.Generated.dll</AssemblyFilename>
+            <ObjectName>MetraTech.DomainModel.ProductCatalog.ProductOffering</ObjectName>
+            <ID>Description</ID>
+            <DataType>String</DataType>
+            <IsIdentity>false</IsIdentity>
+            <DataIndex>Description</DataIndex>
+            <IsColumn>true</IsColumn>
+            <HeaderText>
+                <LocalizationTag>PO_DESCRIPTION</LocalizationTag>
+                <ResourceClassKey>Quoting/App_LocalResources/SelectPOForQuote.aspx</ResourceClassKey>
+            </HeaderText>
+            <Formatter />
+            <Width>300</Width>
+            <Resizeable>true</Resizeable>
+            <PreventSortable>false</PreventSortable>
+            <Sortable>false</Sortable>
+            <ColumnHideable>true</ColumnHideable>
+            <DefaultColumn>true</DefaultColumn>
+            <Exportable>true</Exportable>
+            <ShowInExpander>false</ShowInExpander>
+            <Filterable>true</Filterable>
+            <FilterHideable>true</FilterHideable>
+            <DefaultFilter>true</DefaultFilter>
+            <RequiredFilter>false</RequiredFilter>
+            <FilterLabel />
+            <ElementValue>
+                <Value />
+            </ElementValue>
+            <ElementValue2>
+                <Value />
+            </ElementValue2>
+            <FilterReadOnly>false</FilterReadOnly>
+            <DropdownItems />
+        </Element>
+        <Element>
+            <RecordElement>true</RecordElement>
+            <AssemblyFilename>C:\dev\MetraNetDev\output\Debug\Bin\MetraTech.DomainModel.ProductCatalog.Generated.dll</AssemblyFilename>
+            <ObjectName>MetraTech.DomainModel.ProductCatalog.ProductOffering</ObjectName>
+            <ID>POPartitionId</ID>
+            <DataType>Numeric</DataType>
+            <IsIdentity>false</IsIdentity>
+            <DataIndex>POPartitionId</DataIndex>
+            <IsColumn>true</IsColumn>
+            <HeaderText>
+                <LocalizationTag>PO_PARTITIONID</LocalizationTag>
+                <ResourceClassKey>Quoting/App_LocalResources/SelectPOForQuote.aspx</ResourceClassKey>
+            </HeaderText>
+            <Formatter />
+            <Width>100</Width>
+            <Resizeable>true</Resizeable>
+            <PreventSortable>false</PreventSortable>
+            <Sortable>false</Sortable>
+            <ColumnHideable>true</ColumnHideable>
+            <DefaultColumn>false</DefaultColumn>
+            <Exportable>false</Exportable>
+            <ShowInExpander>false</ShowInExpander>
+            <Filterable>true</Filterable>
+            <FilterHideable>false</FilterHideable>
+            <DefaultFilter>true</DefaultFilter>
+            <RequiredFilter>false</RequiredFilter>
+            <FilterLabel />
+            <ElementValue>
+                <Value />
+            </ElementValue>
+            <ElementValue2>
+                <Value />
+            </ElementValue2>
+            <FilterReadOnly>true</FilterReadOnly>
+            <DropdownItems />
+        </Element>
+    </Elements>
+    <ExpanderTemplate>
+        <Section>
+            <Title>
+                <Value />
+            </Title>
+            <TabOrder>LeftToRight</TabOrder>
+            <Name />
+            <Columns>
+                <Column>
+                    <Fields>
+                        <Field>
+                            <AssemblyFilename>C:\dev\MetraNetDev\output\Debug\Bin\MetraTech.DomainModel.ProductCatalog.Generated.dll</AssemblyFilename>
+                            <ObjectName>MetraTech.DomainModel.ProductCatalog.ProductOffering</ObjectName>
+                            <ID>ProductOfferingId</ID>
+                            <Name>ProductOfferingId</Name>
+                        </Field>
+                    </Fields>
+                </Column>
+                <Column>
+                    <Fields />
+                </Column>
+            </Columns>
+            <ToolbarButtons />
+        </Section>
+    </ExpanderTemplate>
+    <GridButtons />
+    <ToolbarButtons />
+</GridLayout>

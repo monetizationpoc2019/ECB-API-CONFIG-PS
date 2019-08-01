@@ -1,0 +1,215 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<GridLayout xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <Name>RevenueRecognitionMapping</Name>
+    <Title>
+        <LocalizationTag>GRID_TITLE</LocalizationTag>
+        <ResourceClassKey />
+    </Title>
+    <Exportable>true</Exportable>
+    <Height>400</Height>
+    <Width>720</Width>
+    <Expandable>false</Expandable>
+    <Buttons>None</Buttons>
+    <DataSourceURL>~/AjaxServices/QueryService.aspx</DataSourceURL>
+    <MultiSelect>false</MultiSelect>
+    <SelectionModel>Standard</SelectionModel>
+    <TotalProperty>TotalRows</TotalProperty>
+    <RootElement>Items</RootElement>
+    <PageSize>10</PageSize>
+    <Description>Advanced Recurring Charge Credits By Currency,by PI Template,by Prorated</Description>
+    <ExpansionCssClass />
+    <ShowFilterPanel>true</ShowFilterPanel>
+    <FilterInputWidth>220</FilterInputWidth>
+    <FilterLabelWidth>75</FilterLabelWidth>
+    <FilterColumnWidth>350</FilterColumnWidth>
+    <ShowTopBar>true</ShowTopBar>
+    <ShowBottomBar>true</ShowBottomBar>
+    <ShowGridFrame>true</ShowGridFrame>
+    <ShowGridHeader>true</ShowGridHeader>
+    <ShowColumnHeaders>true</ShowColumnHeaders>
+    <NoRecordsText>
+        <Value />
+    </NoRecordsText>
+    <FilterPanelLayout>MultiColumn</FilterPanelLayout>
+    <FilterPanelCollapsed>false</FilterPanelCollapsed>
+    <EnableColumnConfig>true</EnableColumnConfig>
+    <EnableFilterConfig>true</EnableFilterConfig>
+    <Resizeable>true</Resizeable>
+    <ButtonAlignment>Center</ButtonAlignment>
+    <DefaultSortField />
+    <DefaultSortDirection>Ascending</DefaultSortDirection>
+    <DisplayCount>false</DisplayCount>
+    <SearchOnLoad>true</SearchOnLoad>
+    <CustomImplementationFilePath />
+    <CustomOverrideJavascriptIncludes />
+    <URLParameters>
+        <URLParameter>
+            <ParameterName>q</ParameterName>
+            <SQLQuery>
+                <QueryName>__REVREC_MAPPING__</QueryName>
+                <QueryDir />
+                <QueryParameters />
+                <QueryColumns />
+            </SQLQuery>
+        </URLParameter>
+    </URLParameters>
+    <SubGrid />
+    <Elements>
+        <Element>
+            <RecordElement>false</RecordElement>
+            <ID>product id</ID>
+            <DataIndex>product id</DataIndex>
+            <IsColumn>true</IsColumn>
+            <HeaderText />
+            <Formatter />
+            <Width>120</Width>
+            <Resizeable>true</Resizeable>
+            <PreventSortable>false</PreventSortable>
+            <Sortable>false</Sortable>
+            <ColumnHideable>true</ColumnHideable>
+            <DefaultColumn>true</DefaultColumn>
+            <Filterable>false</Filterable>
+        </Element>
+        <Element>
+            <RecordElement>true</RecordElement>
+            <AssemblyFilename />
+            <ObjectName />
+            <ID>pi template</ID>
+            <DataType>String</DataType>
+            <IsIdentity>true</IsIdentity>
+            <DataIndex>pi template</DataIndex>
+            <IsColumn>true</IsColumn>
+            <HeaderText />
+            <Formatter />
+            <Width>120</Width>
+            <Resizeable>true</Resizeable>
+            <PreventSortable>false</PreventSortable>
+            <Sortable>false</Sortable>
+            <ColumnHideable>true</ColumnHideable>
+            <DefaultColumn>true</DefaultColumn>
+            <Exportable>true</Exportable>
+            <ShowInExpander>false</ShowInExpander>
+            <Filterable>false</Filterable>
+            <FilterHideable>true</FilterHideable>
+            <DefaultFilter>true</DefaultFilter>
+            <RequiredFilter>false</RequiredFilter>
+            <FilterLabel />
+            <ElementValue>
+                <Value />
+            </ElementValue>
+            <ElementValue2>
+                <Value />
+            </ElementValue2>
+            <FilterReadOnly>false</FilterReadOnly>
+            <DropdownItems />
+        </Element>
+        <Element>
+            <RecordElement>false</RecordElement>
+            <ID>revenue account</ID>
+            <DataIndex>revenue account</DataIndex>
+            <IsColumn>true</IsColumn>
+            <HeaderText />
+            <Formatter />
+            <Width>120</Width>
+            <Resizeable>true</Resizeable>
+            <PreventSortable>false</PreventSortable>
+            <Sortable>false</Sortable>
+            <ColumnHideable>true</ColumnHideable>
+            <DefaultColumn>true</DefaultColumn>
+            <Filterable>false</Filterable>
+        </Element>
+        <Element>
+            <RecordElement>false</RecordElement>
+            <ID>liability account</ID>
+            <DataIndex>liability account</DataIndex>
+            <IsColumn>true</IsColumn>
+            <HeaderText />
+            <Formatter />
+            <Width>120</Width>
+            <Resizeable>true</Resizeable>
+            <PreventSortable>false</PreventSortable>
+            <Sortable>false</Sortable>
+            <ColumnHideable>true</ColumnHideable>
+            <DefaultColumn>true</DefaultColumn>
+            <Filterable>false</Filterable>
+        </Element>
+        <Element>
+            <RecordElement>false</RecordElement>
+            <ID>deffered revenue account</ID>
+            <DataIndex>deffered revenue account</DataIndex>
+            <IsColumn>true</IsColumn>
+            <HeaderText />
+            <Formatter />
+            <Width>120</Width>
+            <Resizeable>true</Resizeable>
+            <PreventSortable>false</PreventSortable>
+            <Sortable>false</Sortable>
+            <ColumnHideable>true</ColumnHideable>
+            <DefaultColumn>true</DefaultColumn>
+            <Filterable>false</Filterable>
+        </Element>
+        <Element>
+            <RecordElement>false</RecordElement>
+            <ID>treat as liability</ID>
+            <DataIndex>treat as liability</DataIndex>
+            <IsColumn>true</IsColumn>
+            <HeaderText />
+            <Formatter />
+            <Width>120</Width>
+            <Resizeable>true</Resizeable>
+            <PreventSortable>false</PreventSortable>
+            <Sortable>false</Sortable>
+            <ColumnHideable>true</ColumnHideable>
+            <DefaultColumn>true</DefaultColumn>
+            <Filterable>false</Filterable>
+        </Element>
+        <Element>
+            <RecordElement>false</RecordElement>
+            <ID>gl code</ID>
+            <DataIndex>gl code</DataIndex>
+            <IsColumn>true</IsColumn>
+            <HeaderText />
+            <Formatter />
+            <Width>120</Width>
+            <Resizeable>true</Resizeable>
+            <PreventSortable>false</PreventSortable>
+            <Sortable>false</Sortable>
+            <ColumnHideable>true</ColumnHideable>
+            <DefaultColumn>false</DefaultColumn>
+            <Filterable>false</Filterable>
+        </Element>
+        <Element>
+            <RecordElement>false</RecordElement>
+            <ID>charge item description </ID>
+            <DataIndex>charge item description </DataIndex>
+            <IsColumn>true</IsColumn>
+            <HeaderText />
+            <Formatter />
+            <Width>120</Width>
+            <Resizeable>true</Resizeable>
+            <PreventSortable>false</PreventSortable>
+            <Sortable>false</Sortable>
+            <ColumnHideable>true</ColumnHideable>
+            <DefaultColumn>true</DefaultColumn>
+            <Filterable>false</Filterable>
+        </Element>
+        <Element>
+            <RecordElement>false</RecordElement>
+            <ID>product description</ID>
+            <DataIndex>product description</DataIndex>
+            <IsColumn>true</IsColumn>
+            <HeaderText />
+            <Formatter />
+            <Width>120</Width>
+            <Resizeable>true</Resizeable>
+            <PreventSortable>false</PreventSortable>
+            <Sortable>false</Sortable>
+            <ColumnHideable>true</ColumnHideable>
+            <DefaultColumn>true</DefaultColumn>
+            <Filterable>false</Filterable>
+        </Element>
+    </Elements>
+    <ExpanderTemplate />
+    <GridButtons />
+    <ToolbarButtons />
+</GridLayout>

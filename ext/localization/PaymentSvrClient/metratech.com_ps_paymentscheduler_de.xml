@@ -1,0 +1,106 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<mt_config>
+  <language_code>DE</language_code>
+  <locale_space name="metratech.com/ps_paymentscheduler">
+    <locale_entry>
+      <Name>metratech.com/ps_paymentscheduler</Name>
+      <Value>Produktansicht für Zahlungsplanung</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ps_paymentscheduler/bankaccounttype</Name>
+      <Value>Bankkontoart</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ps_paymentscheduler/confirmationreceived</Name>
+      <Value>Kennzeichen für Erhalt der Bestätigung vom Teilnehmer</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ps_paymentscheduler/confirmationrequested</Name>
+      <Value>Kennzeichen für Anforderung der Bestätigung vom Teilnehmer</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ps_paymentscheduler/creditcardtype</Name>
+      <Value>Kreditkartentyp</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ps_paymentscheduler/currentstatus</Name>
+      <Value>Aktueller Transaktionsstatus</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ps_paymentscheduler/description</Name>
+      <Value>Beschreibung</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ps_paymentscheduler/email</Name>
+      <Value>E-Mail-Adresse</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ps_paymentscheduler/intervalid</Name>
+      <Value>Intervall-ID für Verwendungsserver</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ps_paymentscheduler/lastfourdigits</Name>
+      <Value>Die letzten vier Ziffern der Kreditkarten- oder Kontonummer</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ps_paymentscheduler/laststatusupdate</Name>
+      <Value>Letztes Datum der Statusaktualisierung</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ps_paymentscheduler/maxretries</Name>
+      <Value>Höchstanzahl für Versuche</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ps_paymentscheduler/nachacode</Name>
+      <Value>NACHA-Code</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ps_paymentscheduler/numberretries</Name>
+      <Value>Anzahl der Neuversuche</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ps_paymentscheduler/originalaccountid</Name>
+      <Value>Teilnehmer-ID</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ps_paymentscheduler/originalintervalid</Name>
+      <Value>Ursprüngliche Intervall-ID</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ps_paymentscheduler/paymentprovidercode</Name>
+      <Value>Statuscode des Zahlungsdienstleisters</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ps_paymentscheduler/paymentproviderstatus</Name>
+      <Value>Status des Zahlungsdienstleisters</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ps_paymentscheduler/paymentservicetransactionid</Name>
+      <Value>Transaktions-ID des Zahlungsdienstleisters</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ps_paymentscheduler/paymenttype</Name>
+      <Value>Art der internen Zahlung</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ps_paymentscheduler/retryonfailure</Name>
+      <Value>Neuversuch bei Fehlerkennzeichen</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ps_paymentscheduler/routingnumber</Name>
+      <Value>ABA/Bankleitzahl</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ps_paymentscheduler/scheduledpayment</Name>
+      <Value>Eingeplantes Zahlungsdatum</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ps_paymentscheduler/taxamount</Name>
+      <Value>Steuerbetrag</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ps_paymentscheduler/usagecycletype</Name>
+      <Value>Art des Verwendungszyklus</Value>
+    </locale_entry>
+  </locale_space>
+</mt_config>

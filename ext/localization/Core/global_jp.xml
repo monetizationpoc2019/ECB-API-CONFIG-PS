@@ -1,0 +1,1490 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<mt_config>
+  <language_code>jp</language_code>
+  <locale_space name="Global">
+    <locale_entry>
+      <Name>Global/AccessLevel/READ</Name>
+      <Value>READ</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Global/AccessLevel/WRITE</Name>
+      <Value>WRITE</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Global/APIParameterDirection/IN</Name>
+      <Value>IN</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Global/APIParameterDirection/INOUT</Name>
+      <Value>INOUT</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Global/APIParameterDirection/OUT</Name>
+      <Value>OUT</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Global/Application/Application/MAM</Name>
+      <Value>MetraCare</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Global/Application/Application/MCM</Name>
+      <Value>MetraOffer</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Global/Application/Application/MDM</Name>
+      <Value>MDM</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Global/Application/Application/MOM</Name>
+      <Value>MetraControl</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Global/Application/Application/MPS</Name>
+      <Value>MetraView</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Global/Application/MAM</Name>
+      <Value>MetraCare</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Global/Application/MCM</Name>
+      <Value>MetraOffer</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Global/Application/MOM</Name>
+      <Value>MetraControl</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Global/Application/MPS</Name>
+      <Value>MetraView</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Global/Boolean/False</Name>
+      <Value>いいえ</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Global/Boolean/True</Name>
+      <Value>はい</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Global/BooleanYN/No</Name>
+      <Value>いいえ</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Global/BooleanYN/Yes</Name>
+      <Value>はい</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Global/CountryName/Afghanistan</Name>
+      <Value>アフガニスタン</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Global/CountryName/Åland Islands</Name>
+      <Value>オーランド諸島</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Global/CountryName/Albania</Name>
+      <Value>アルバニア</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Global/CountryName/Algeria</Name>
+      <Value>アルジェリア</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Global/CountryName/American Samoa</Name>
+      <Value>米国領サモア</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Global/CountryName/Andorra</Name>
+      <Value>アンドラ</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Global/CountryName/Angola</Name>
+      <Value>アンゴラ</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Global/CountryName/Anguilla</Name>
+      <Value>アングイラ</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Global/CountryName/Antarctica</Name>
+      <Value>南極大陸</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Global/CountryName/Antigua and Barbuda</Name>
+      <Value>アンティグア・バーブーダ</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Global/CountryName/Argentina</Name>
+      <Value>アルゼンチン</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Global/CountryName/Armenia</Name>
+      <Value>アルメニア</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Global/CountryName/Aruba</Name>
+      <Value>アルーバ</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Global/CountryName/Australia</Name>
+      <Value>オーストラリア</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Global/CountryName/Austria</Name>
+      <Value>オーストリア</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Global/CountryName/Azerbaijan</Name>
+      <Value>アゼルバイジャン</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Global/CountryName/Bahamas</Name>
+      <Value>バハマ</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Global/CountryName/Bahrain</Name>
+      <Value>バーレーン</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Global/CountryName/Bangladesh</Name>
+      <Value>バングラデシュ</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Global/CountryName/Barbados</Name>
+      <Value>バルバドス</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Global/CountryName/Belarus</Name>
+      <Value>ベラルーシ</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Global/CountryName/Belgium</Name>
+      <Value>ベルギー</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Global/CountryName/Belize</Name>
+      <Value>ベリーズ</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Global/CountryName/Benin</Name>
+      <Value>ベニン</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Global/CountryName/Bermuda</Name>
+      <Value>バミューダ</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Global/CountryName/Bhutan</Name>
+      <Value>ブータン</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Global/CountryName/Bolivia</Name>
+      <Value>ボリビア</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Global/CountryName/Bonaire, Sint Eustatius and Saba</Name>
+      <Value>ボネール、シント・ユースタティウスおよびサバ</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Global/CountryName/Bosnia and Herzegovina</Name>
+      <Value>ボスニア・ヘルツェゴビナ</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Global/CountryName/Botswana</Name>
+      <Value>ボツワナ</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Global/CountryName/Bouvet Island</Name>
+      <Value>ブーベ島</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Global/CountryName/Brazil</Name>
+      <Value>ブラジル</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Global/CountryName/British Indian Ocean Territory</Name>
+      <Value>イギリス領インド洋地域</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Global/CountryName/Brunei</Name>
+      <Value>ブルネイ・ダルサラーム国</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Global/CountryName/Bulgaria</Name>
+      <Value>ブルガリア</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Global/CountryName/Burkina Faso</Name>
+      <Value>ブルキナファソ</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Global/CountryName/Burundi</Name>
+      <Value>ブルンディ</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Global/CountryName/Cabo Verde</Name>
+      <Value>カーボベルデ共和国</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Global/CountryName/Cambodia</Name>
+      <Value>カンボジア</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Global/CountryName/Cameroon</Name>
+      <Value>カメルーン</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Global/CountryName/Canada</Name>
+      <Value>カナダ</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Global/CountryName/Cayman Islands</Name>
+      <Value>ケイマン諸島</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Global/CountryName/Central African Republic</Name>
+      <Value>中央アフリカ共和国</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Global/CountryName/Chad</Name>
+      <Value>チャド共和国</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Global/CountryName/Chile</Name>
+      <Value>チリ</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Global/CountryName/China</Name>
+      <Value>中国</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Global/CountryName/Christmas Island</Name>
+      <Value>クリスマス諸島</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Global/CountryName/CNMI</Name>
+      <Value>北マリアナ諸島</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Global/CountryName/Cocos (Keeling) Islands</Name>
+      <Value>ココス諸島</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Global/CountryName/Colombia</Name>
+      <Value>コロンビア</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Global/CountryName/Comoros</Name>
+      <Value>コモロ諸島</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Global/CountryName/Congo</Name>
+      <Value>コンゴ</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Global/CountryName/Cook Islands</Name>
+      <Value>クック諸島</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Global/CountryName/Costa Rica</Name>
+      <Value>コスタリカ</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Global/CountryName/Croatia</Name>
+      <Value>クロアチア</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Global/CountryName/Cuba</Name>
+      <Value>キューバ</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Global/CountryName/Curaçao</Name>
+      <Value>キュラソー島</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Global/CountryName/Cyprus</Name>
+      <Value>キプロス</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Global/CountryName/Czech Republic</Name>
+      <Value>チェコ共和国</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Global/CountryName/Denmark</Name>
+      <Value>デンマーク</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Global/CountryName/Djibouti</Name>
+      <Value>ジブティ</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Global/CountryName/Dominica</Name>
+      <Value>ドミニカ連邦</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Global/CountryName/Dominican Republic</Name>
+      <Value>ドミニカ共和国</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Global/CountryName/Ecuador</Name>
+      <Value>エクアドル</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Global/CountryName/Egypt</Name>
+      <Value>エジプト</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Global/CountryName/El Salvador</Name>
+      <Value>エルサルバドル</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Global/CountryName/Equatorial Guinea</Name>
+      <Value>赤道ギニア</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Global/CountryName/Eritrea</Name>
+      <Value>エリトリア</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Global/CountryName/Estonia</Name>
+      <Value>エストニア</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Global/CountryName/Ethiopia</Name>
+      <Value>エチオピア</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Global/CountryName/Faeroe Islands</Name>
+      <Value>フェロー諸島</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Global/CountryName/Falkland Islands</Name>
+      <Value>フォークランド諸島</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Global/CountryName/Fiji</Name>
+      <Value>フィジー</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Global/CountryName/Finland</Name>
+      <Value>フィンランド</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Global/CountryName/France</Name>
+      <Value>フランス</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Global/CountryName/French Guiana</Name>
+      <Value>仏領ギアナ</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Global/CountryName/French Polynesia</Name>
+      <Value>仏領ポリネシア</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Global/CountryName/French Southern Territories</Name>
+      <Value>フランス領南方・南極地域</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Global/CountryName/Gabon</Name>
+      <Value>ガボン</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Global/CountryName/Gambia</Name>
+      <Value>ガンビア</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Global/CountryName/Georgia</Name>
+      <Value>グルジア</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Global/CountryName/Germany</Name>
+      <Value>ドイツ</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Global/CountryName/Ghana</Name>
+      <Value>ガーナ</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Global/CountryName/Gibraltar</Name>
+      <Value>ジブラルタル</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Global/CountryName/Greece</Name>
+      <Value>ギリシャ</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Global/CountryName/Greenland</Name>
+      <Value>グリーンランド</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Global/CountryName/Grenada</Name>
+      <Value>グレナダ</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Global/CountryName/Guadeloupe</Name>
+      <Value>グアドループ</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Global/CountryName/Guam</Name>
+      <Value>グアム</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Global/CountryName/Guatemala</Name>
+      <Value>グアテマラ</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Global/CountryName/Guernsey</Name>
+      <Value>ガーンジー</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Global/CountryName/Guinea</Name>
+      <Value>ギニア</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Global/CountryName/Guinea-Bissau</Name>
+      <Value>ギニア－ビサウ</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Global/CountryName/Guyana</Name>
+      <Value>ガイアナ</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Global/CountryName/Haiti</Name>
+      <Value>ハイチ</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Global/CountryName/Honduras</Name>
+      <Value>ホンデュラス</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Global/CountryName/Hong Kong</Name>
+      <Value>香港</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Global/CountryName/Hungary</Name>
+      <Value>ハンガリー</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Global/CountryName/Iceland</Name>
+      <Value>アイスランド</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Global/CountryName/India</Name>
+      <Value>インド</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Global/CountryName/Indonesia</Name>
+      <Value>インドネシア</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Global/CountryName/Inmarsat - East Atlantic Ocean</Name>
+      <Value>INMARSAT －大西洋</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Global/CountryName/Inmarsat - Indian Ocean</Name>
+      <Value>INMARSAT －インド</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Global/CountryName/Inmarsat - Pacific Ocean</Name>
+      <Value>INMARSAT －太平洋</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Global/CountryName/Inmarsat - West Atlantic Ocean</Name>
+      <Value>INMARSAT －西大西洋</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Global/CountryName/Iran</Name>
+      <Value>イラン</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Global/CountryName/Iraq</Name>
+      <Value>イラク</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Global/CountryName/Ireland</Name>
+      <Value>アイルランド</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Global/CountryName/Isle of Man</Name>
+      <Value>マン島</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Global/CountryName/Israel</Name>
+      <Value>イスラエル</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Global/CountryName/Italy</Name>
+      <Value>イタリア</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Global/CountryName/Ivory Coast</Name>
+      <Value>コートディヴォアール</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Global/CountryName/Jamaica</Name>
+      <Value>ジャマイカ</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Global/CountryName/Japan</Name>
+      <Value>日本</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Global/CountryName/Jersey</Name>
+      <Value>ジャージー</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Global/CountryName/Jordan</Name>
+      <Value>ヨルダン</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Global/CountryName/Kazakhstan</Name>
+      <Value>カザフスタン</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Global/CountryName/Kenya</Name>
+      <Value>ケニア</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Global/CountryName/Kiribati</Name>
+      <Value>キリバス</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Global/CountryName/Kuwait</Name>
+      <Value>クウェート</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Global/CountryName/Kyrgyzstan</Name>
+      <Value>キルギスタン</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Global/CountryName/Laos</Name>
+      <Value>ラオス</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Global/CountryName/Latvia</Name>
+      <Value>ラトヴィア</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Global/CountryName/Lebanon</Name>
+      <Value>レバノン</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Global/CountryName/Lesotho</Name>
+      <Value>レソト</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Global/CountryName/Liberia</Name>
+      <Value>リベリア</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Global/CountryName/Libya</Name>
+      <Value>リビア</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Global/CountryName/Liechtenstein</Name>
+      <Value>リヒテンシュタイン</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Global/CountryName/Lithuania</Name>
+      <Value>リトアニア</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Global/CountryName/Luxembourg</Name>
+      <Value>ルクセンブルグ</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Global/CountryName/Macau</Name>
+      <Value>マカオ</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Global/CountryName/Macedonia</Name>
+      <Value>マケドニア</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Global/CountryName/Madagascar</Name>
+      <Value>マダガスカル</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Global/CountryName/Malawi</Name>
+      <Value>マラウィ</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Global/CountryName/Malaysia</Name>
+      <Value>マレーシア</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Global/CountryName/Maldives</Name>
+      <Value>モルディヴ</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Global/CountryName/Mali Republic</Name>
+      <Value>マリ共和国</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Global/CountryName/Malta</Name>
+      <Value>マルタ</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Global/CountryName/Marshall Islands</Name>
+      <Value>マーシャル諸島</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Global/CountryName/Martinique</Name>
+      <Value>サイパン</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Global/CountryName/Mauritania</Name>
+      <Value>モーリタニア</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Global/CountryName/Mauritius</Name>
+      <Value>モーリシャス</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Global/CountryName/Mayotte Island</Name>
+      <Value>マヨット島</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Global/CountryName/Mexico</Name>
+      <Value>メキシコ</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Global/CountryName/Micronesia</Name>
+      <Value>ミクロネシア</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Global/CountryName/Moldova</Name>
+      <Value>モルドヴァ</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Global/CountryName/Monaco</Name>
+      <Value>モナコ</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Global/CountryName/Mongolia</Name>
+      <Value>モンゴル</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Global/CountryName/Montenegro</Name>
+      <Value>モンテネグロ</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Global/CountryName/MontSerrat</Name>
+      <Value>モントセラト</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Global/CountryName/Morocco</Name>
+      <Value>モロッコ</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Global/CountryName/Mozambique</Name>
+      <Value>モザンビーク</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Global/CountryName/Myanmar</Name>
+      <Value>ミャンマー</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Global/CountryName/Namibia</Name>
+      <Value>ナミビア</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Global/CountryName/Nauru</Name>
+      <Value>ナウル</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Global/CountryName/Nepal</Name>
+      <Value>ネパール</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Global/CountryName/Netherlands</Name>
+      <Value>オランダ</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Global/CountryName/Netherlands Antilles</Name>
+      <Value>オランダ領アンティル</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Global/CountryName/Nevis</Name>
+      <Value>ネヴィス</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Global/CountryName/New Caledonia</Name>
+      <Value>ニューカレドニア</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Global/CountryName/New Zealand</Name>
+      <Value>ニュージーランド</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Global/CountryName/Nicaragua</Name>
+      <Value>ニカラグア</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Global/CountryName/Niger</Name>
+      <Value>ニジェール</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Global/CountryName/Nigeria</Name>
+      <Value>ナイジェリア</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Global/CountryName/Niue</Name>
+      <Value>ニウエ</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Global/CountryName/Norfolk Island</Name>
+      <Value>ノーフォーク島</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Global/CountryName/North Korea</Name>
+      <Value>北朝鮮</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Global/CountryName/Norway</Name>
+      <Value>ノルウェイ</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Global/CountryName/Oman</Name>
+      <Value>オマーン</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Global/CountryName/Pakistan</Name>
+      <Value>パキスタン</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Global/CountryName/Palau</Name>
+      <Value>パラウ</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Global/CountryName/Palestine</Name>
+      <Value>パレスタイン</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Global/CountryName/Panama</Name>
+      <Value>パナマ</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Global/CountryName/Papua New Guinea</Name>
+      <Value>パプアニューギニア</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Global/CountryName/Paraguay</Name>
+      <Value>パラグアイ</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Global/CountryName/Peru</Name>
+      <Value>ペルー</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Global/CountryName/Philippines</Name>
+      <Value>フィリピン</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Global/CountryName/Pitcairn</Name>
+      <Value>ピトケアン諸島</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Global/CountryName/Poland</Name>
+      <Value>ポーランド</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Global/CountryName/Portugal</Name>
+      <Value>ポルトガル</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Global/CountryName/Puerto Rico</Name>
+      <Value>プエルトリコ</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Global/CountryName/Qatar</Name>
+      <Value>カタール</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Global/CountryName/Reunion</Name>
+      <Value>レユニオン</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Global/CountryName/Romania</Name>
+      <Value>ルーマニア</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Global/CountryName/Russia</Name>
+      <Value>ロシア</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Global/CountryName/Rwanda</Name>
+      <Value>ルワンダ</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Global/CountryName/Saint Barthélemy</Name>
+      <Value>サン・バルテルミー島</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Global/CountryName/Saint Helena, Ascension and Tristan da Cunha</Name>
+      <Value>セントヘレナ・アセンションおよびトリスタンダクーニャ</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Global/CountryName/Saint Kitts and Nevis</Name>
+      <Value>セントクリストファー・ネイビス</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Global/CountryName/Saint Lucia</Name>
+      <Value>セントルシア</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Global/CountryName/Saint Martin (French part)</Name>
+      <Value>サン・マルタン (西インド諸島)</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Global/CountryName/Saint Pierre and Miquelon</Name>
+      <Value>サンピエール島・ミクロン島</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Global/CountryName/Saint Vincent and the Grenadines</Name>
+      <Value>セントビンセント・グレナディーン</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Global/CountryName/Samoa</Name>
+      <Value>サモア</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Global/CountryName/San Marino</Name>
+      <Value>サンマリノ</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Global/CountryName/Sao Tome and Principe</Name>
+      <Value>サントーメ</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Global/CountryName/Saudi Arabia</Name>
+      <Value>サウジアラビア</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Global/CountryName/Senegal</Name>
+      <Value>セネガル共和国</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Global/CountryName/Serbia</Name>
+      <Value>セルビア</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Global/CountryName/Serbia and Montenegro</Name>
+      <Value>セルビア・モンテネグロ</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Global/CountryName/Seychelles</Name>
+      <Value>セーシェル諸島</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Global/CountryName/Sierra Leone</Name>
+      <Value>シエラレオーネ</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Global/CountryName/Singapore</Name>
+      <Value>シンガポール</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Global/CountryName/Sint Maarten (Dutch part)</Name>
+      <Value>シント・マールテン</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Global/CountryName/Slovakia</Name>
+      <Value>スロヴァキア</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Global/CountryName/Slovenia</Name>
+      <Value>スロヴェニア</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Global/CountryName/Solomon Islands</Name>
+      <Value>ソロモン諸島</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Global/CountryName/Somalia</Name>
+      <Value>ソマリア</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Global/CountryName/South Africa</Name>
+      <Value>南アフリカ</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Global/CountryName/South Georgia and The South Sandwich Islands</Name>
+      <Value>サウスジョージア・サウスサンドウィッチ諸島</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Global/CountryName/South Korea</Name>
+      <Value>韓国</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Global/CountryName/South Sudan</Name>
+      <Value>南スーダン</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Global/CountryName/Spain</Name>
+      <Value>スペイン</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Global/CountryName/Sri Lanka</Name>
+      <Value>スリランカ</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Global/CountryName/Sudan</Name>
+      <Value>スーダン</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Global/CountryName/Suriname</Name>
+      <Value>スリナム</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Global/CountryName/Svalbard and Jan Mayen</Name>
+      <Value>スヴァールバル諸島およびヤンマイエン島</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Global/CountryName/Swaziland</Name>
+      <Value>スワジランド</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Global/CountryName/Sweden</Name>
+      <Value>スウェーデン</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Global/CountryName/Switzerland</Name>
+      <Value>スイス</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Global/CountryName/Syria</Name>
+      <Value>シリア・アラブ共和国</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Global/CountryName/Taiwan</Name>
+      <Value>台湾</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Global/CountryName/Tajikistan</Name>
+      <Value>タジキスタン</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Global/CountryName/Tanzania</Name>
+      <Value>タンザニア</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Global/CountryName/Thailand</Name>
+      <Value>タイ</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Global/CountryName/Timor-Leste</Name>
+      <Value>東ティモール</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Global/CountryName/Togo</Name>
+      <Value>トーゴ</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Global/CountryName/Tokelau</Name>
+      <Value>トケラウ</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Global/CountryName/Tonga</Name>
+      <Value>トンガ諸島</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Global/CountryName/Trinidad and Tobago</Name>
+      <Value>トリニダード・トバゴ</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Global/CountryName/Tunisia</Name>
+      <Value>チュニジア</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Global/CountryName/Turkey</Name>
+      <Value>トルコ</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Global/CountryName/Turkmenistan</Name>
+      <Value>トルクメニスタン</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Global/CountryName/Turks and Caicos Islands</Name>
+      <Value>タークス・カイコス諸島</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Global/CountryName/Tuvalu</Name>
+      <Value>トゥヴァル</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Global/CountryName/Uganda</Name>
+      <Value>ウガンダ</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Global/CountryName/Ukraine</Name>
+      <Value>ウクライナ</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Global/CountryName/United Arab Emirates</Name>
+      <Value>アラブ首長国連邦</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Global/CountryName/United Kingdom</Name>
+      <Value>英国</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Global/CountryName/United States Minor Outlying Islands</Name>
+      <Value>合衆国領有小離島</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Global/CountryName/Uruguay</Name>
+      <Value>ウルグアイ</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Global/CountryName/US Virgin Islands</Name>
+      <Value>米国領ヴァージン諸島</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Global/CountryName/USA</Name>
+      <Value>アメリカ合衆国</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Global/CountryName/Uzbekistan</Name>
+      <Value>ウズベキスタン</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Global/CountryName/Vanuatu</Name>
+      <Value>ヴァヌアトゥ</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Global/CountryName/Vatican City</Name>
+      <Value>ヴァティカン市国</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Global/CountryName/Venezuela</Name>
+      <Value>ベネズエラ</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Global/CountryName/Vietnam</Name>
+      <Value>ベトナム</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Global/CountryName/Virgin Islands British</Name>
+      <Value>イギリス領ヴァージン諸島</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Global/CountryName/Wallis and Futuna</Name>
+      <Value>ウォリス・フツナ</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Global/CountryName/Western Sahara</Name>
+      <Value>西サハラ</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Global/CountryName/Western Samoa</Name>
+      <Value>西サモア</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Global/CountryName/Yemen</Name>
+      <Value>イエメン</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Global/CountryName/Zaire</Name>
+      <Value>コンゴ民主共和国</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Global/CountryName/Zambia</Name>
+      <Value>ザンビア</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Global/CountryName/Zimbabwe</Name>
+      <Value>ジンバブウェ</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Global/DayOfTheWeek/Friday</Name>
+      <Value>金</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Global/DayOfTheWeek/Monday</Name>
+      <Value>月</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Global/DayOfTheWeek/Saturday</Name>
+      <Value>土</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Global/DayOfTheWeek/Sunday</Name>
+      <Value>日</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Global/DayOfTheWeek/Thursday</Name>
+      <Value>木</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Global/DayOfTheWeek/Tuesday</Name>
+      <Value>火</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Global/DayOfTheWeek/Wednesday</Name>
+      <Value>水</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Global/EntityType/AgreementTemplate</Name>
+      <Value>AgreementTemplate</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Global/EntityType/ProductOffering</Name>
+      <Value>ProductOffering</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Global/LanguageCode/BR</Name>
+      <Value>Portuguese-Brazil</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Global/LanguageCode/DA</Name>
+      <Value>Danish</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Global/LanguageCode/de</Name>
+      <Value>ドイツ語</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Global/LanguageCode/ES</Name>
+      <Value>ES</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Global/LanguageCode/FR</Name>
+      <Value>フランス</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Global/LanguageCode/GB</Name>
+      <Value>GB English</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Global/LanguageCode/it</Name>
+      <Value>イタリア</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Global/LanguageCode/jp</Name>
+      <Value>日本</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Global/LanguageCode/MX</Name>
+      <Value>Spanish-Mexican</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Global/LanguageCode/us</Name>
+      <Value>米国英語</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Global/LocalizedItemsType /AtomicCapability </Name>
+      <Value>Global/LocalizedItemsType /AtomicCapability </Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Global/LocalizedItemsType /CompositeCapability </Name>
+      <Value>Global/LocalizedItemsType /CompositeCapability </Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Global/LocalizedItemsType /None</Name>
+      <Value>Global/LocalizedItemsType /None</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Global/LocalizedItemsType /RecurringAdapters</Name>
+      <Value>Global/LocalizedItemsType /RecurringAdapters</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Global/LocalizedItemsType /Role </Name>
+      <Value>Global/LocalizedItemsType /Role </Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Global/MonthOfTheYear/April</Name>
+      <Value>4月</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Global/MonthOfTheYear/August</Name>
+      <Value>8月</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Global/MonthOfTheYear/December</Name>
+      <Value>12月</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Global/MonthOfTheYear/February</Name>
+      <Value>2月</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Global/MonthOfTheYear/January</Name>
+      <Value>1月</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Global/MonthOfTheYear/July</Name>
+      <Value>7月</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Global/MonthOfTheYear/June</Name>
+      <Value>6月</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Global/MonthOfTheYear/March</Name>
+      <Value>3月</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Global/MonthOfTheYear/May</Name>
+      <Value>5月</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Global/MonthOfTheYear/November</Name>
+      <Value>11月</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Global/MonthOfTheYear/October</Name>
+      <Value>10月</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Global/MonthOfTheYear/September</Name>
+      <Value>9月</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Global/MonthOfTheYearByQuarter/Month1InQuarter</Name>
+      <Value>1月、4月、7月、10月</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Global/MonthOfTheYearByQuarter/Month2InQuarter</Name>
+      <Value>2月、5月、8月、11月</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Global/MonthOfTheYearByQuarter/Month3InQuarter</Name>
+      <Value>3月、6月、9月、12月</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Global/PropertyType/boolean</Name>
+      <Value>boolean</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Global/PropertyType/datetime</Name>
+      <Value>datetime</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Global/PropertyType/decimal</Name>
+      <Value>decimal</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Global/PropertyType/int</Name>
+      <Value>int</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Global/PropertyType/list</Name>
+      <Value>list</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Global/PropertyType/string</Name>
+      <Value>string</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Global/TimeZoneID/(GMT 03:00) Baghdad</Name>
+      <Value>(GMT+03:00) バグダッド</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Global/TimeZoneID/(GMT) Greenwich Mean Time; Dublin, Edinburgh, London, Lisbon</Name>
+      <Value>(GMT)グリニッジ標準時; ダブリン、エジンバラ、ロンドン、リスボン</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Global/TimeZoneID/(GMT) Monrovia, Casablanca</Name>
+      <Value>(GMT) モンロヴィア、カサブランカ</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Global/TimeZoneID/(GMT+01:00) Berlin, Stockholm, Rome, Bern, Brussels Vienna</Name>
+      <Value>(GMT+01:00) ベルリン、ストックホルム、ローマ、ベルン、ブリュッセル、ウィーン</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Global/TimeZoneID/(GMT+01:00) Paris, Madrid, Amsterdam</Name>
+      <Value>(GMT+01:00) パリ、マドリッド、アムステルダム</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Global/TimeZoneID/(GMT+01:00) Prague, Warsaw, Budapest</Name>
+      <Value>(GMT+01:00) プラハ、ワルシャワ、ブダペスト</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Global/TimeZoneID/(GMT+02:00) Athens, Helsinki, Istanbul</Name>
+      <Value>(GMT+02:00) アテネ、ヘルシンキ、イスタンブール</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Global/TimeZoneID/(GMT+02:00) Cairo</Name>
+      <Value>(GMT+02:00) カイロ</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Global/TimeZoneID/(GMT+02:00) Harare, Pretoria</Name>
+      <Value>(GMT+02:00) ハラレ、プレトリア</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Global/TimeZoneID/(GMT+02:00) Israel</Name>
+      <Value>(GMT+02:00) イスラエル</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Global/TimeZoneID/(GMT+03:00) Baghdad</Name>
+      <Value>(GMT+03:00) バグダッド</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Global/TimeZoneID/(GMT+03:00) Kuwait, Nairobi, Riyadh</Name>
+      <Value>(GMT+03:00) クウェート、ナイロビ、リヤド</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Global/TimeZoneID/(GMT+03:00) Kuwait, Riyadh, Nairobi</Name>
+      <Value>(GMT+03:00) クウェート、ナイロビ、リヤド</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Global/TimeZoneID/(GMT+03:00) Moscow, St. Petersburg, Kazan, Volgograd</Name>
+      <Value>(GMT+03:00) モスクワ、サンクトペテルブルグ、カザン、ヴォルゴグラード</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Global/TimeZoneID/(GMT+03:30) Tehran</Name>
+      <Value>(GMT+03:30) テヘラン</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Global/TimeZoneID/(GMT+04:00) Abu Dhabi, Muscat, Tbilisi</Name>
+      <Value>(GMT+04:00) アブダビ、マスカット、トビリシ</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Global/TimeZoneID/(GMT+04:30) Kabul</Name>
+      <Value>(GMT+04:30) カブール</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Global/TimeZoneID/(GMT+05:00) Islamabad, Karachi, Ekaterinburg, Tashkent</Name>
+      <Value>(GMT+05:00) イスラマバード、カラチ、エカチェリンブルグ、タシケント</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Global/TimeZoneID/(GMT+05:30) Bombay, Calcutta, Madras, New Delhi, Colombo</Name>
+      <Value>(GMT+05:30) ボンベイ、カルカッタ、マドラス、ニューデリー、コロンボ</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Global/TimeZoneID/(GMT+06:00) Almaty, Dhaka</Name>
+      <Value>(GMT+06:00) アルマトゥイ、ダッカ</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Global/TimeZoneID/(GMT+07:00) Bangkok, Jakarta, Hanoi</Name>
+      <Value>(GMT+07:00) バンコク、ジャカルタ、ハノイ</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Global/TimeZoneID/(GMT+08:00) Beijing, Chongqing, Urumqi</Name>
+      <Value>(GMT+08:00) 北京、重慶、ウルムチ</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Global/TimeZoneID/(GMT+08:00) Hong Kong, Perth, Singapore, Taipei</Name>
+      <Value>(GMT+08:00) 香港、パース、シンガポール、台北</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Global/TimeZoneID/(GMT+09:00) Tokyo, Osaka, Sapporo, Seoul, Yakutsk</Name>
+      <Value>(GMT+09:00) 東京、大阪、札幌、ソウル、ヤクーツク</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Global/TimeZoneID/(GMT+09:30) Adelaide</Name>
+      <Value>(GMT+09:30) アデレード</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Global/TimeZoneID/(GMT+09:30) Darwin</Name>
+      <Value>(GMT+09:30) ダーウィン</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Global/TimeZoneID/(GMT+10:00) Brisbane</Name>
+      <Value>(GMT+10:00) ブリスベーン</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Global/TimeZoneID/(GMT+10:00) Guam, Port Moresby, Vladivostok</Name>
+      <Value>(GMT+10:00) グアム、ポートモレスビー、ウラジオストク</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Global/TimeZoneID/(GMT+10:00) Hobart</Name>
+      <Value>(GMT+10:00) ホーバート</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Global/TimeZoneID/(GMT+10:00) Sydney, Melbourne</Name>
+      <Value>(GMT+10:00)シドニー、メルボルン</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Global/TimeZoneID/(GMT+11:00) Magadan, Solomon Is., New Caledonia</Name>
+      <Value>(GMT+11:00) マガダン、ソロモン諸島、ニューカレドニア</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Global/TimeZoneID/(GMT+12:00) Fiji, Kamchatka, Marshall Is.</Name>
+      <Value>(GMT+12:00) フィジー、カムチャッカ、マーシャル諸島</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Global/TimeZoneID/(GMT+12:00) Wellington, Auckland</Name>
+      <Value>(GMT+12:00) ウェリントン、オークランド</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Global/TimeZoneID/(GMT-01:00) Azores, Cape Verde Is.</Name>
+      <Value>(GMT-01:00) アゾレス諸島、カボヴェルデ諸島</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Global/TimeZoneID/(GMT-03:00) Buenos Aires, Georgetown</Name>
+      <Value>(GMT-03:00) ブエノスアイレス、ジョージタウン</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Global/TimeZoneID/(GMT-03:30) Newfoundland</Name>
+      <Value>(GMT-03:30) ニューファンドランド</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Global/TimeZoneID/(GMT-04:00) Atlantic Time (Canada)</Name>
+      <Value>(GMT-04:00) 大西洋標準時（カナダ）</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Global/TimeZoneID/(GMT-04:00) Caracas, La Paz</Name>
+      <Value>(GMT-04:00) カラカス、ラパス</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Global/TimeZoneID/(GMT-05:00) Bogota, Lima</Name>
+      <Value>(GMT-05:00) ボゴタ、リマ</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Global/TimeZoneID/(GMT-05:00) Eastern Time (US &amp; Canada)</Name>
+      <Value>(GMT-05:00) 東部標準時（米国、カナダ）</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Global/TimeZoneID/(GMT-05:00) Indiana (East)</Name>
+      <Value>(GMT-05:00) インディアナ（東部）</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Global/TimeZoneID/(GMT-06:00) Central Time (US &amp; Canada)</Name>
+      <Value>(GMT-06:00) 中部標準時（米国、カナダ）</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Global/TimeZoneID/(GMT-06:00) Mexico City, Tegucigalpa</Name>
+      <Value>(GMT-06:00) メキシコシティ、テグシガルパ</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Global/TimeZoneID/(GMT-06:00) Saskatchewan</Name>
+      <Value>(GMT-06:00) サスカチェワン</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Global/TimeZoneID/(GMT-07:00) Arizona</Name>
+      <Value>(GMT-07:00) アリゾナ</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Global/TimeZoneID/(GMT-07:00) Mountain Time (US &amp; Canada)</Name>
+      <Value>(GMT-07:00) 山地標準時 （米国、カナダ）</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Global/TimeZoneID/(GMT-08:00) Pacific Time (US &amp; Canada), Tijuana</Name>
+      <Value>(GMT-08:00) 太平洋標準時（米国、カナダ）、ティファナ</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Global/TimeZoneID/(GMT-09:00) Alaska</Name>
+      <Value>(GMT-09:00) アラスカ</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Global/TimeZoneID/(GMT-10:00) Hawaii</Name>
+      <Value>(GMT-10:00) ハワイ</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Global/TimeZoneID/(GMT-11:00) Midway Island, Samoa</Name>
+      <Value>(GMT-11:00) ミッドウェー諸島、サモア</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Global/TimeZoneID/(GMT-12:00) Eniwetok, Kwajalein</Name>
+      <Value>(GMT-12:00) エニウェトク、クアジャリン</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Global/LocalizedItemsType /AccountType</Name>
+      <Value>AccountType</Value>
+    </locale_entry>
+  </locale_space>
+</mt_config>

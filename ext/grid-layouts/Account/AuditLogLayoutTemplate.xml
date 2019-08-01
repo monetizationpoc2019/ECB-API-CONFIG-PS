@@ -1,0 +1,427 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<GridLayout xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <Pages>
+        <PageName>~/AdvancedFind.aspx</PageName>
+    </Pages>
+    <Title>
+        <LocalizationTag>GRID_TITLE</LocalizationTag>
+        <ResourceClassKey />
+    </Title>
+    <Name>AuditLogLayoutTemplate</Name>
+    <Exportable>true</Exportable>
+    <Height>0</Height>
+    <Width>0</Width>
+    <FilterInputWidth>220</FilterInputWidth>
+    <Expandable>true</Expandable>
+    <Buttons>Custom</Buttons>
+    <DataSourceURL>/MetraNet/AjaxServices/QueryService.aspx</DataSourceURL>
+    <PageSize>10</PageSize>
+    <!--
+  <URLParameters>
+  
+    <URLParameter>
+      <ParameterName>q</ParameterName>
+      <SQLQuery>
+        <QueryName>__SELECT_AUDIT_LOG_BY_ENTITY_TYPE__</QueryName>
+        <QueryDir>Queries\Audit</QueryDir>
+        <QueryParameters>
+          <QueryParameter>
+            <Name>%%ENTITY_TYPE%%</Name>
+            <Value>1</Value>
+            <DataType>String</DataType>
+          </QueryParameter>
+        </QueryParameters>
+      </SQLQuery>
+    </URLParameter>
+  </URLParameters>
+  -->
+    <MultiSelect>false</MultiSelect>
+    <DisplayCount>true</DisplayCount>
+    <FilterPanelCollapsed>false</FilterPanelCollapsed>
+    <Description>The grid layout for MetraCare's Application Audit Log.</Description>
+    <ExpansionCssClass />
+    <ShowFilterPanel>true</ShowFilterPanel>
+    <FilterLabelWidth>75</FilterLabelWidth>
+    <FilterColumnWidth>350</FilterColumnWidth>
+    <ShowTopBar>true</ShowTopBar>
+    <ShowBottomBar>true</ShowBottomBar>
+    <ShowGridFrame>true</ShowGridFrame>
+    <ShowGridHeader>true</ShowGridHeader>
+    <ShowColumnHeaders>true</ShowColumnHeaders>
+    <NoRecordsText>
+        <LocalizationTag>NO_RECORDS_TEXT</LocalizationTag>
+        <ResourceClassKey />
+    </NoRecordsText>
+    <FilterPanelLayout>MultiColumn</FilterPanelLayout>
+    <EnableColumnConfig>true</EnableColumnConfig>
+    <EnableFilterConfig>true</EnableFilterConfig>
+    <Resizeable>true</Resizeable>
+    <SelectionModel>Standard</SelectionModel>
+    <ButtonAlignment>Center</ButtonAlignment>
+    <DefaultSortField>dt_crt</DefaultSortField>
+    <DefaultSortDirection>Descending</DefaultSortDirection>
+    <SearchOnLoad>true</SearchOnLoad>
+    <TotalProperty>TotalRows</TotalProperty>
+    <RootElement>Items</RootElement>
+    <CustomImplementationFilePath />
+    <SubGrid />
+    <Elements>
+        <Element>
+            <RecordElement>true</RecordElement>
+            <AssemblyFilename />
+            <ObjectName />
+            <ID>id_audit</ID>
+            <DataType>Numeric</DataType>
+            <IsIdentity>true</IsIdentity>
+            <DataIndex>id_audit</DataIndex>
+            <IsColumn>true</IsColumn>
+            <HeaderText>
+                <LocalizationTag>AUDIT_ID</LocalizationTag>
+                <ResourceClassKey />
+            </HeaderText>
+            <Formatter />
+            <Width>80</Width>
+            <Resizeable>true</Resizeable>
+            <PreventSortable>false</PreventSortable>
+            <Sortable>true</Sortable>
+            <ColumnHideable>true</ColumnHideable>
+            <DefaultColumn>false</DefaultColumn>
+            <Exportable>true</Exportable>
+            <ShowInExpander>true</ShowInExpander>
+            <Filterable>true</Filterable>
+            <FilterHideable>true</FilterHideable>
+            <DefaultFilter>false</DefaultFilter>
+            <RequiredFilter>false</RequiredFilter>
+            <FilterLabel />
+            <ElementValue>
+                <Value />
+            </ElementValue>
+            <ElementValue2>
+                <Value />
+            </ElementValue2>
+            <FilterReadOnly>false</FilterReadOnly>
+            <DropdownItems />
+        </Element>
+        <Element>
+            <RecordElement>true</RecordElement>
+            <AssemblyFilename />
+            <ObjectName />
+            <ID>dt_crt</ID>
+            <DataType>Date</DataType>
+            <IsIdentity>false</IsIdentity>
+            <DataIndex>dt_crt</DataIndex>
+            <IsColumn>true</IsColumn>
+            <HeaderText>
+                <LocalizationTag>TIME</LocalizationTag>
+                <ResourceClassKey />
+            </HeaderText>
+            <Formatter>DateTimeRenderer</Formatter>
+            <Width>120</Width>
+            <Resizeable>true</Resizeable>
+            <PreventSortable>false</PreventSortable>
+            <Sortable>true</Sortable>
+            <ColumnHideable>true</ColumnHideable>
+            <DefaultColumn>true</DefaultColumn>
+            <Exportable>true</Exportable>
+            <ShowInExpander>false</ShowInExpander>
+            <Filterable>true</Filterable>
+            <FilterHideable>true</FilterHideable>
+            <DefaultFilter>true</DefaultFilter>
+            <RequiredFilter>false</RequiredFilter>
+            <FilterLabel />
+            <ElementValue>
+                <Value />
+            </ElementValue>
+            <ElementValue2>
+                <Value />
+            </ElementValue2>
+            <FilterReadOnly>false</FilterReadOnly>
+            <DropdownItems />
+        </Element>
+        <Element>
+            <RecordElement>true</RecordElement>
+            <AssemblyFilename />
+            <ObjectName />
+            <ID>username</ID>
+            <DataType>String</DataType>
+            <IsIdentity>false</IsIdentity>
+            <DataIndex>username</DataIndex>
+            <IsColumn>true</IsColumn>
+            <HeaderText>
+                <LocalizationTag>USERNAME</LocalizationTag>
+                <ResourceClassKey />
+            </HeaderText>
+            <Formatter />
+            <Width>120</Width>
+            <Resizeable>true</Resizeable>
+            <PreventSortable>false</PreventSortable>
+            <Sortable>true</Sortable>
+            <ColumnHideable>true</ColumnHideable>
+            <DefaultColumn>true</DefaultColumn>
+            <Exportable>true</Exportable>
+            <ShowInExpander>true</ShowInExpander>
+            <Filterable>true</Filterable>
+            <FilterHideable>true</FilterHideable>
+            <DefaultFilter>true</DefaultFilter>
+            <RequiredFilter>false</RequiredFilter>
+            <FilterLabel />
+            <ElementValue>
+                <Value />
+            </ElementValue>
+            <ElementValue2>
+                <Value />
+            </ElementValue2>
+            <FilterReadOnly>false</FilterReadOnly>
+            <DropdownItems />
+        </Element>
+        <Element>
+            <RecordElement>true</RecordElement>
+            <AssemblyFilename />
+            <ObjectName />
+            <ID>eventname</ID>
+            <DataType>String</DataType>
+            <IsIdentity>false</IsIdentity>
+            <DataIndex>eventname</DataIndex>
+            <IsColumn>true</IsColumn>
+            <HeaderText>
+                <LocalizationTag>EVENT_NAME</LocalizationTag>
+                <ResourceClassKey />
+            </HeaderText>
+            <Formatter />
+            <Width>120</Width>
+            <Resizeable>true</Resizeable>
+            <PreventSortable>false</PreventSortable>
+            <Sortable>true</Sortable>
+            <ColumnHideable>true</ColumnHideable>
+            <DefaultColumn>true</DefaultColumn>
+            <Exportable>true</Exportable>
+            <ShowInExpander>true</ShowInExpander>
+            <Filterable>true</Filterable>
+            <FilterHideable>true</FilterHideable>
+            <DefaultFilter>true</DefaultFilter>
+            <RequiredFilter>false</RequiredFilter>
+            <FilterLabel />
+            <ElementValue>
+                <Value />
+            </ElementValue>
+            <ElementValue2>
+                <Value />
+            </ElementValue2>
+            <FilterReadOnly>false</FilterReadOnly>
+            <DropdownItems />
+        </Element>
+        <Element>
+            <RecordElement>true</RecordElement>
+            <AssemblyFilename />
+            <ObjectName />
+            <ID>entityname</ID>
+            <DataType>String</DataType>
+            <IsIdentity>false</IsIdentity>
+            <DataIndex>entityname</DataIndex>
+            <IsColumn>true</IsColumn>
+            <HeaderText>
+                <LocalizationTag>ENTITY_NAME</LocalizationTag>
+                <ResourceClassKey />
+            </HeaderText>
+            <Formatter />
+            <Width>120</Width>
+            <Resizeable>true</Resizeable>
+            <PreventSortable>false</PreventSortable>
+            <Sortable>true</Sortable>
+            <ColumnHideable>true</ColumnHideable>
+            <DefaultColumn>true</DefaultColumn>
+            <Exportable>true</Exportable>
+            <ShowInExpander>true</ShowInExpander>
+            <Filterable>true</Filterable>
+            <FilterHideable>true</FilterHideable>
+            <DefaultFilter>true</DefaultFilter>
+            <RequiredFilter>false</RequiredFilter>
+            <FilterLabel />
+            <ElementValue>
+                <Value />
+            </ElementValue>
+            <ElementValue2>
+                <Value />
+            </ElementValue2>
+            <FilterReadOnly>false</FilterReadOnly>
+            <DropdownItems />
+        </Element>
+        <Element>
+            <RecordElement>true</RecordElement>
+            <AssemblyFilename />
+            <ObjectName />
+            <ID>loggedinas</ID>
+            <DataType>String</DataType>
+            <IsIdentity>false</IsIdentity>
+            <DataIndex>loggedinas</DataIndex>
+            <IsColumn>true</IsColumn>
+            <HeaderText>
+                <LocalizationTag>LOGGED_IN_AS</LocalizationTag>
+                <ResourceClassKey />
+            </HeaderText>
+            <Formatter />
+            <Width>120</Width>
+            <Resizeable>true</Resizeable>
+            <PreventSortable>false</PreventSortable>
+            <Sortable>true</Sortable>
+            <ColumnHideable>true</ColumnHideable>
+            <DefaultColumn>true</DefaultColumn>
+            <Exportable>true</Exportable>
+            <ShowInExpander>true</ShowInExpander>
+            <Filterable>true</Filterable>
+            <FilterHideable>true</FilterHideable>
+            <DefaultFilter>true</DefaultFilter>
+            <RequiredFilter>false</RequiredFilter>
+            <FilterLabel />
+            <ElementValue>
+                <Value />
+            </ElementValue>
+            <ElementValue2>
+                <Value />
+            </ElementValue2>
+            <FilterReadOnly>false</FilterReadOnly>
+            <DropdownItems />
+        </Element>		
+        <Element>
+            <RecordElement>true</RecordElement>
+            <AssemblyFilename />
+            <ObjectName />
+            <ID>applicationname</ID>
+            <DataType>String</DataType>
+            <IsIdentity>false</IsIdentity>
+            <DataIndex>applicationname</DataIndex>
+            <IsColumn>true</IsColumn>
+            <HeaderText>
+                <LocalizationTag>APPLICATION_NAME</LocalizationTag>
+                <ResourceClassKey />
+            </HeaderText>
+            <Formatter />
+            <Width>120</Width>
+            <Resizeable>true</Resizeable>
+            <PreventSortable>false</PreventSortable>
+            <Sortable>true</Sortable>
+            <ColumnHideable>true</ColumnHideable>
+            <DefaultColumn>true</DefaultColumn>
+            <Exportable>true</Exportable>
+            <ShowInExpander>true</ShowInExpander>
+            <Filterable>true</Filterable>
+            <FilterHideable>true</FilterHideable>
+            <DefaultFilter>true</DefaultFilter>
+            <RequiredFilter>false</RequiredFilter>
+            <FilterLabel />
+            <ElementValue>
+                <Value />
+            </ElementValue>
+            <ElementValue2>
+                <Value />
+            </ElementValue2>
+            <FilterReadOnly>false</FilterReadOnly>
+            <DropdownItems />
+        </Element>		
+        <Element>
+            <RecordElement>true</RecordElement>
+            <AssemblyFilename />
+            <ObjectName />
+            <ID>details</ID>
+            <DataType>String</DataType>
+            <IsIdentity>false</IsIdentity>
+            <DataIndex>details</DataIndex>
+            <IsColumn>true</IsColumn>
+            <HeaderText>
+                <LocalizationTag>DETAILS</LocalizationTag>
+                <ResourceClassKey />
+            </HeaderText>
+            <Formatter />
+            <Width>400</Width>
+            <Resizeable>true</Resizeable>
+            <PreventSortable>false</PreventSortable>
+            <Sortable>true</Sortable>
+            <ColumnHideable>true</ColumnHideable>
+            <DefaultColumn>true</DefaultColumn>
+            <Exportable>true</Exportable>
+            <ShowInExpander>true</ShowInExpander>
+            <Filterable>true</Filterable>
+            <FilterHideable>true</FilterHideable>
+            <DefaultFilter>true</DefaultFilter>
+            <RequiredFilter>false</RequiredFilter>
+            <FilterLabel />
+            <ElementValue>
+                <Value />
+            </ElementValue>
+            <ElementValue2>
+                <Value />
+            </ElementValue2>
+            <FilterReadOnly>false</FilterReadOnly>
+            <DropdownItems />
+        </Element>
+    </Elements>
+    <ExpanderTemplate>
+        <Section>
+            <Title>
+                <LocalizationTag>DETAILS</LocalizationTag>
+                <ResourceClassKey />
+            </Title>
+            <TabOrder>LeftToRight</TabOrder>
+            <Columns>
+                <Column>
+                    <Fields>
+                        <Field>
+                            <AssemblyFilename />
+                            <ObjectName />
+                            <ID>id_audit</ID>
+                            <Name>id_audit</Name>
+                        </Field>
+                        <Field>
+                            <AssemblyFilename />
+                            <ObjectName />
+                            <ID>username</ID>
+                            <Name>username</Name>
+                        </Field>
+                        <Field>
+                            <AssemblyFilename />
+                            <ObjectName />
+                            <ID>dt_crt</ID>
+                            <Name>dt_crt</Name>
+                        </Field>
+                        <Field>
+                            <AssemblyFilename />
+                            <ObjectName />
+                            <ID>eventname</ID>
+                            <Name>eventname</Name>
+                        </Field>
+                        <Field>
+                            <AssemblyFilename />
+                            <ObjectName />
+                            <ID>entityname</ID>
+                            <Name>entityname</Name>
+                        </Field>
+                    </Fields>
+                </Column>
+                <Column>
+                    <Fields>
+                        <Field>
+                            <AssemblyFilename />
+                            <ObjectName />
+                            <ID>loggedinas</ID>
+                            <Name>loggedinas</Name>
+                        </Field>
+                        <Field>
+                            <AssemblyFilename />
+                            <ObjectName />
+                            <ID>applicationname</ID>
+                            <Name>applicationname</Name>
+                        </Field>
+                        <Field>
+                            <AssemblyFilename />
+                            <ObjectName />
+                            <ID>details</ID>
+                            <Name>details</Name>
+                        </Field>
+                    </Fields>
+                </Column>
+            </Columns>
+        </Section>
+    </ExpanderTemplate>
+    <GridButtons />
+    <ToolbarButtons />
+</GridLayout>

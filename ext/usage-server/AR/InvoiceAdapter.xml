@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xmlconfig>
+  <SetSize>500</SetSize>
+  
+  <!-- for debug only, can be ommitted, defaults to true -->
+  <ExportInvoices>true</ExportInvoices>
+  <ExportInvoiceQuery>__GET_INVOICES_TO_EXPORT__</ExportInvoiceQuery>
+ 
+  <CheckBalances>false</CheckBalances>
+  <!-- CheckBalancesErrorIfMismatch indicates if balances are checked and a mismatch is found,
+       should the adapter be forced to fail although all work has completed successfully.
+       True indicates adapter will be forced to fail if a mismatch is found -->
+  <CheckBalancesErrorIfMismatch>false</CheckBalancesErrorIfMismatch>
+  <!-- ExportInvoiceTaxDetails indicates if details on invoice taxes should be queried and passed
+       to the external AR system. If set to true, then the query for retrieving tax detail category and amount
+       information referenced by ExportInvoiceTaxDetailQuery must be customized/configured and tested. The query
+       referenced by ExportInvoiceQueryWithTaxSummary may or not need to be customized/configured depending on how taxes are stored.-->
+  <ExportInvoiceTaxDetails>true</ExportInvoiceTaxDetails>
+  <ExportInvoiceQueryWithTaxSummary>__INVOICE_TAX_SUMMARY_FOR_EXTERNAL_AR_SYSTEM__</ExportInvoiceQueryWithTaxSummary> <!-- Used to retrieve invoice information instead of ExportInvoiceQuery/__GET_INVOICES_TO_EXPORT__ -->
+  <ExportInvoiceTaxDetailQuery>__INVOICE_TAX_DETAILS_FOR_EXTERNAL_AR_SYSTEM__</ExportInvoiceTaxDetailQuery>
+</xmlconfig>

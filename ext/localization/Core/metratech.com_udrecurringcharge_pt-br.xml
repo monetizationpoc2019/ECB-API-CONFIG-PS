@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<mt_config>
+    <language_code>pt-br</language_code>
+    <locale_space name="metratech.com/udrecurringcharge">
+        <locale_entry>
+            <Name>metratech.com/udrecurringcharge</Name>
+            <Value>Cobrança recorrente dependente da unidade</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/udrecurringcharge/Advance</Name>
+            <Value>Avançar</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/udrecurringcharge/BillingIntervalEnd</Name>
+            <Value>Final do intervalo de faturamento</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/udrecurringcharge/BillingIntervalStart</Name>
+            <Value>Início do intervalo de faturamento</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/udrecurringcharge/ProratedDailyRate</Name>
+            <Value>Taxa diária rateada</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/udrecurringcharge/ProratedDays</Name>
+            <Value>Dias rateados</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/udrecurringcharge/ProratedIntervalEnd</Name>
+            <Value>Final do intervalo de rateamento</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/udrecurringcharge/ProratedIntervalStart</Name>
+            <Value>Início do intervalo de reteamento</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/udrecurringcharge/ProratedOnSubscription</Name>
+            <Value>Rateado devido à assinatura</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/udrecurringcharge/ProratedOnUnSubscription</Name>
+            <Value>Rateado devido ao cancelamento da assinatura</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/udrecurringcharge/ProrateOnSubscription</Name>
+            <Value>Ratear devido à assinatura</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/udrecurringcharge/ProrateOnUnSubscription</Name>
+            <Value>Ratear devido ao cancelamento da assinatura</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/udrecurringcharge/RCAmount</Name>
+            <Value>Valor da cobrança recorrente</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/udrecurringcharge/RCIntervalEnd</Name>
+            <Value>Data de término da cobrança recorrente</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/udrecurringcharge/RCIntervalStart</Name>
+            <Value>Data de início da cobrança recorrente</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/udrecurringcharge/RCIntervalSubscriptionEnd</Name>
+            <Value>Data de término da assinatura na cobrança recorrente</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/udrecurringcharge/RCIntervalSubscriptionStart</Name>
+            <Value>Data de início da assinatura na cobrança recorrente</Value>
+        </locale_entry>
+    </locale_space>
+</mt_config>

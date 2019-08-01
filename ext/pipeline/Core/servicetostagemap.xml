@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xmlconfig>
+    <direction>
+        <ServiceID ptype="ID">metratech.com/TestParent</ServiceID>
+        <stage>TestParent</stage>
+    </direction>
+    <direction>
+        <ServiceID ptype="ID">metratech.com/TestService</ServiceID>
+        <stage>Test</stage>
+    </direction>
+    <direction>
+        <ServiceID ptype="ID">metratech.com/FlatRecurringCharge</ServiceID>
+        <stage>FlatRecurringCharge</stage>
+    </direction>
+    <direction>
+        <ServiceID ptype="ID">metratech.com/UDRecurringCharge</ServiceID>
+        <stage>UnitDependentRecurringCharge</stage>
+    </direction>
+    <direction>
+        <ServiceID ptype="ID">metratech.com/FlatDiscount</ServiceID>
+        <stage>FlatDiscount</stage>
+    </direction>
+    <direction>
+        <ServiceID ptype="ID">metratech.com/FlatDiscount_NoCond</ServiceID>
+        <stage>FlatUnconditionalDiscount</stage>
+    </direction>
+    <direction>
+        <ServiceID ptype="ID">metratech.com/PercentDiscount</ServiceID>
+        <stage>PercentDiscount</stage>
+    </direction>
+    <direction>
+        <ServiceID ptype="ID">metratech.com/PercentDiscount_NoCond</ServiceID>
+        <stage>PercentUnconditionalDiscount</stage>
+    </direction>
+    <direction>
+        <ServiceID ptype="ID">metratech.com/AddCharge</ServiceID>
+        <stage>AddCharge</stage>
+    </direction>
+    <direction>
+        <ServiceID ptype="ID">metratech.com/AccountCredit</ServiceID>
+        <stage>AccountCredit</stage>
+    </direction>
+    <direction>
+        <ServiceID ptype="ID">metratech.com/AccountCreditRequest</ServiceID>
+        <stage>AccountCreditRequest</stage>
+    </direction>
+    <direction>
+        <ServiceID ptype="ID">metratech.com/AccountMapping</ServiceID>
+        <stage>AccountMapping</stage>
+    </direction>
+    <direction>
+        <ServiceID ptype="ID">metratech.com/DTCGetWhereAbouts</ServiceID>
+        <stage>DTCGetWhereAbouts</stage>
+    </direction>
+    <direction>
+        <ServiceID ptype="ID">metratech.com/NonRecurringCharge</ServiceID>
+        <stage>NonRecurringCharge</stage>
+    </direction>
+    <direction>
+        <ServiceID ptype="ID">metratech.com/Payment</ServiceID>
+        <stage>BalanceAdjustments</stage>
+    </direction>
+    <direction>
+        <ServiceID ptype="ID">metratech.com/ARAdjustment</ServiceID>
+        <stage>BalanceAdjustments</stage>
+    </direction>
+    <direction>
+        <ServiceID ptype="ID">metratech.com/Login</ServiceID>
+        <stage>Login</stage>
+    </direction>
+    <direction>
+        <ServiceID ptype="ID">metratech.com/PaymentDetails</ServiceID>
+        <stage>BalanceAdjustments</stage>
+    </direction>
+    <direction>
+        <ServiceID ptype="ID">metratech.com/NonStandardCharge</ServiceID>
+        <stage>NonStandardCharge</stage>
+    </direction>
+    <direction>
+        <ServiceID ptype="ID">metratech.com/NonStandardChargeRequest</ServiceID>
+        <stage>NonStandardChargeRequest</stage>
+    </direction>
+</xmlconfig>

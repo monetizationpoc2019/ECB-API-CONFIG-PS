@@ -1,0 +1,17 @@
+server:
+  port: ${customer-port:8095}
+createAccount:
+  default: 
+    roles: Subscriber (MetraView)
+  userName:
+    allowedChars: ^([a-zA-Z0-9]+[0-9_.@-]*?)+[a-zA-Z0-9]$
+    minLength: 6
+    maxLength: 128
+  createAccountBatch:
+    maxNoOfAccountsPerBatch: 50
+
+logging.level.com.ericsson: INFO
+logging.level.com.ericsson.ecb:  INFO
+logging.level.org.springframework: INFO
+logging.level.org.eclipse.jetty: INFO
+logging.level.org.eclipse.jetty.util: INFO

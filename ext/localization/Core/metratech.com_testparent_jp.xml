@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<mt_config>
+  <language_code>jp</language_code>
+  <locale_space name="metratech.com/testparent">
+    <locale_entry>
+      <Name>metratech.com/testparent</Name>
+      <Value>親のテスト</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/testparent/description</Name>
+      <Value>内容</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/testparent/time</Name>
+      <Value>時間</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/testparent/totalamount</Name>
+      <Value>総合計</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/testparent/totalunits</Name>
+      <Value>単位合計</Value>
+    </locale_entry>
+  </locale_space>
+</mt_config>

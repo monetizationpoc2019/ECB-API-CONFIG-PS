@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xmlconfig>
+    <mtconfigdata>
+        <version ptype="INTEGER">1</version>
+        <!-- First processor configuration -->
+        <processor>
+            <name>GetDivisionCurrencyAR</name>
+            <progid>MetraPipeline.MTSQLBatchQuery.1</progid>
+            <description>This plugin retrieves the division currency set for the division to which the specified account is associated</description>
+            <condition>CREATE PROCEDURE Condition
+	@CheckECBARInstalled VARCHAR
+  @_ExecutePlugin  BOOLEAN OUTPUT
+as
+  SET @_ExecutePlugin = CAST(CheckECBARInstalled AS BOOLEAN);</condition>
+            <!-- Processor specific configuration data -->
+            <configdata>
+                <Program>create procedure GetDivisionCurrencyAR
+ @_AccountID INTEGER
+ @_Timestamp DATETIME														
+	@_DivisionCurrency VARCHAR OUTPUT --$ICE:('Global/SystemCurrencies','SystemCurrencies')$
+AS
+     select CAST(CONCAT('GLOBAL/SYSTEMCURRENCIES/SYSTEMCURRENCIES/', avInternal.c_Currency) AS VARCHAR(100)) into @_DivisionCurrency from t_account a 
+INNER JOIN (select aa.ID_ANCESTOR from t_account_ancestor aa where aa.ID_DESCENDENT = @_AccountID and @_Timestamp between vt_start and vt_end)a2 on a.id_acc = a2.ID_ANCESTOR 
+INNER JOIN t_account_type t ON a.id_type = t.id_type 
+INNER JOIN t_db_values dbv ON t.name = dbv.value AND dbv.parameter = 'DivisionAccountType'  
+INNER JOIN t_av_Internal avInternal on a.id_acc = avInternal.id_acc;</Program>
+                <TempTable>tmp_getdivisioncurrencyAR</TempTable>
+            </configdata>
+        </processor>
+    </mtconfigdata>
+</xmlconfig>

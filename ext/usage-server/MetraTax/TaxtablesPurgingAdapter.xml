@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xmlconfig>
+<!-- Adapter Name -->
+<AdapterName>TaxtablesPurgingAdapter</AdapterName>
+<!-- NoOfDays -->
+<NoOfDays>180</NoOfDays>
+</xmlconfig>

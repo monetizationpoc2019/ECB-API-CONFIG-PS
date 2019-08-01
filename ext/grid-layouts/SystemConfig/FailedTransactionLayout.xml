@@ -1,0 +1,925 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<GridLayout xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <Name>FailedTransactionLayout</Name>
+    <Title>
+        <LocalizationTag>GRID_TITLE</LocalizationTag>
+        <ResourceClassKey>FailedTransactionResources</ResourceClassKey>
+    </Title>
+    <Exportable>true</Exportable>
+    <Height>500</Height>
+    <Width>90%</Width>
+    <Expandable>false</Expandable>
+    <Buttons>Custom</Buttons>
+    <DataSourceURL>~/MetraControl/FailedTransactions/AjaxServices/FailedTransactionsAjaxService.aspx?action=GetFailedTransaction</DataSourceURL>
+    <MultiSelect>true</MultiSelect>
+    <SelectionModel>CheckBox</SelectionModel>
+    <TotalProperty>TotalRows</TotalProperty>
+    <RootElement>Items</RootElement>
+    <PageSize>10</PageSize>
+    <Description>The grid layout for non-summary pages (except Suspended) in MetraControl=&gt;Failed Transactions.</Description>
+    <ExpansionCssClass />
+    <ShowFilterPanel>true</ShowFilterPanel>
+    <FilterInputWidth>220</FilterInputWidth>
+    <FilterLabelWidth>75</FilterLabelWidth>
+    <FilterColumnWidth>350</FilterColumnWidth>
+    <ShowTopBar>true</ShowTopBar>
+    <ShowBottomBar>true</ShowBottomBar>
+    <ShowGridFrame>true</ShowGridFrame>
+    <ShowGridHeader>true</ShowGridHeader>
+    <ShowColumnHeaders>true</ShowColumnHeaders>
+    <NoRecordsText>
+        <LocalizationTag>NO_RECORDS_TEXT</LocalizationTag>
+        <ResourceClassKey>FailedTransactionResources</ResourceClassKey>
+    </NoRecordsText>
+    <FilterPanelLayout>MultiColumn</FilterPanelLayout>
+    <FilterPanelCollapsed>true</FilterPanelCollapsed>
+    <EnableColumnConfig>true</EnableColumnConfig>
+    <EnableFilterConfig>true</EnableFilterConfig>
+    <Resizeable>true</Resizeable>
+    <ButtonAlignment>Center</ButtonAlignment>
+    <DefaultSortField>casenumber</DefaultSortField>
+    <DefaultSortDirection>Descending</DefaultSortDirection>
+    <DisplayCount>true</DisplayCount>
+    <SearchOnLoad>true</SearchOnLoad>
+    <CustomImplementationFilePath>js/FailedTransaction.js</CustomImplementationFilePath>
+    <SubGrid />
+    <CustomOverrideJavascriptIncludes />
+    <Elements>
+        <Element>
+            <RecordElement>true</RecordElement>
+            <AssemblyFilename />
+            <ObjectName />
+            <ID>casenumber</ID>
+            <DataType>Numeric</DataType>
+            <IsIdentity>true</IsIdentity>
+            <DataIndex>casenumber</DataIndex>
+            <IsColumn>true</IsColumn>
+            <HeaderText>
+                <LocalizationTag>TEXT_CASE_NUMBER</LocalizationTag>
+                <ResourceClassKey>FailedTransactionResources</ResourceClassKey>
+            </HeaderText>
+            <Formatter />
+            <Width>90</Width>
+            <Resizeable>true</Resizeable>
+            <PreventSortable>false</PreventSortable>
+            <Sortable>true</Sortable>
+            <ColumnHideable>true</ColumnHideable>
+            <DefaultColumn>true</DefaultColumn>
+            <Exportable>true</Exportable>
+            <ShowInExpander>false</ShowInExpander>
+            <Filterable>true</Filterable>
+            <FilterHideable>true</FilterHideable>
+            <DefaultFilter>true</DefaultFilter>
+            <RequiredFilter>false</RequiredFilter>
+            <FilterLabel />
+            <ElementValue>
+                <Value />
+            </ElementValue>
+            <ElementValue2>
+                <Value />
+            </ElementValue2>
+            <FilterReadOnly>false</FilterReadOnly>
+            <DropdownItems />
+        </Element>
+        <Element>
+            <RecordElement>true</RecordElement>
+            <AssemblyFilename />
+            <ObjectName />
+            <ID>status</ID>
+            <DataType>List</DataType>
+            <IsIdentity>false</IsIdentity>
+            <DataIndex>status</DataIndex>
+            <IsColumn>true</IsColumn>
+            <HeaderText>
+                <LocalizationTag>TEXT_STATUS</LocalizationTag>
+                <ResourceClassKey>FailedTransactionResources</ResourceClassKey>
+            </HeaderText>
+            <Formatter />
+            <Width>110</Width>
+            <Resizeable>true</Resizeable>
+            <PreventSortable>false</PreventSortable>
+            <Sortable>true</Sortable>
+            <ColumnHideable>true</ColumnHideable>
+            <DefaultColumn>true</DefaultColumn>
+            <Exportable>true</Exportable>
+            <ShowInExpander>false</ShowInExpander>
+            <Filterable>true</Filterable>
+            <FilterHideable>true</FilterHideable>
+            <DefaultFilter>true</DefaultFilter>
+            <RequiredFilter>false</RequiredFilter>
+            <FilterLabel />
+            <ElementValue>
+                <Value />
+            </ElementValue>
+            <ElementValue2>
+                <Value />
+            </ElementValue2>
+            <FilterReadOnly>false</FilterReadOnly>
+            <DropdownItems>
+                <DropdownItem>
+                    <Key>N</Key>
+                    <Value>
+                        <LocalizationTag>TEXT_OPEN</LocalizationTag>
+                        <ResourceClassKey>FailedTransactionResources</ResourceClassKey>
+                    </Value>
+                </DropdownItem>
+                <DropdownItem>
+                    <Key>I</Key>
+                    <Value>
+                        <LocalizationTag>TEXT_UNDER_INVESTIGATION</LocalizationTag>
+                        <ResourceClassKey>FailedTransactionResources</ResourceClassKey>
+                    </Value>
+                </DropdownItem>
+                <DropdownItem>
+                    <Key>C</Key>
+                    <Value>
+                        <LocalizationTag>TEXT_CORRECTED</LocalizationTag>
+                        <ResourceClassKey>FailedTransactionResources</ResourceClassKey>
+                    </Value>
+                </DropdownItem>
+                <DropdownItem>
+                    <Key>P</Key>
+                    <Value>
+                        <LocalizationTag>TEXT_DISMISSED</LocalizationTag>
+                        <ResourceClassKey>FailedTransactionResources</ResourceClassKey>
+                    </Value>
+                </DropdownItem>
+                <DropdownItem>
+                    <Key>D</Key>
+                    <Value>
+                        <LocalizationTag>TEXT_DELETED</LocalizationTag>
+                        <ResourceClassKey>FailedTransactionResources</ResourceClassKey>
+                    </Value>
+                </DropdownItem>
+                <DropdownItem>
+                    <Key>R</Key>
+                    <Value>
+                        <LocalizationTag>TEXT_RESUBMITTED</LocalizationTag>
+                        <ResourceClassKey>FailedTransactionResources</ResourceClassKey>
+                    </Value>
+                </DropdownItem>
+            </DropdownItems>
+        </Element>
+        <Element>
+            <RecordElement>true</RecordElement>
+            <AssemblyFilename />
+            <ObjectName />
+            <ID>failuretime</ID>
+            <DataType>Date</DataType>
+            <IsIdentity>false</IsIdentity>
+            <DataIndex>failuretime</DataIndex>
+            <IsColumn>true</IsColumn>
+            <HeaderText>
+                <LocalizationTag>TEXT_FAILURE_TIME</LocalizationTag>
+                <ResourceClassKey>FailedTransactionResources</ResourceClassKey>
+            </HeaderText>
+            <Formatter>DateTimeRenderer</Formatter>
+            <Width>120</Width>
+            <Resizeable>true</Resizeable>
+            <PreventSortable>false</PreventSortable>
+            <Sortable>true</Sortable>
+            <ColumnHideable>true</ColumnHideable>
+            <DefaultColumn>true</DefaultColumn>
+            <Exportable>true</Exportable>
+            <ShowInExpander>false</ShowInExpander>
+            <Filterable>true</Filterable>
+            <FilterHideable>true</FilterHideable>
+            <DefaultFilter>true</DefaultFilter>
+            <RequiredFilter>false</RequiredFilter>
+            <FilterLabel />
+            <ElementValue>
+                <Value />
+            </ElementValue>
+            <ElementValue2>
+                <Value />
+            </ElementValue2>
+            <FilterReadOnly>false</FilterReadOnly>
+            <DropdownItems />
+        </Element>
+        <Element>
+            <RecordElement>true</RecordElement>
+            <AssemblyFilename />
+            <ObjectName />
+            <ID>code</ID>
+            <DataType>String</DataType>
+            <IsIdentity>false</IsIdentity>
+            <DataIndex>code</DataIndex>
+            <IsColumn>true</IsColumn>
+            <HeaderText>
+                <LocalizationTag>TEXT_CODE</LocalizationTag>
+                <ResourceClassKey>FailedTransactionResources</ResourceClassKey>
+            </HeaderText>
+            <Formatter />
+            <Width>60</Width>
+            <Resizeable>true</Resizeable>
+            <PreventSortable>false</PreventSortable>
+            <Sortable>true</Sortable>
+            <ColumnHideable>true</ColumnHideable>
+            <DefaultColumn>true</DefaultColumn>
+            <Exportable>true</Exportable>
+            <ShowInExpander>false</ShowInExpander>
+            <Filterable>true</Filterable>
+            <FilterHideable>true</FilterHideable>
+            <DefaultFilter>true</DefaultFilter>
+            <RequiredFilter>false</RequiredFilter>
+            <FilterLabel />
+            <ElementValue>
+                <Value />
+            </ElementValue>
+            <ElementValue2>
+                <Value />
+            </ElementValue2>
+            <FilterReadOnly>false</FilterReadOnly>
+            <DropdownItems />
+        </Element>
+        <Element>
+            <RecordElement>true</RecordElement>
+            <AssemblyFilename />
+            <ObjectName />
+            <ID>codemessage</ID>
+            <DataType>String</DataType>
+            <IsIdentity>false</IsIdentity>
+            <DataIndex>codemessage</DataIndex>
+            <IsColumn>true</IsColumn>
+            <HeaderText>
+                <LocalizationTag>TEXT_CODE_MESSAGE</LocalizationTag>
+                <ResourceClassKey>FailedTransactionResources</ResourceClassKey>
+            </HeaderText>
+            <Formatter />
+            <Width>120</Width>
+            <Resizeable>true</Resizeable>
+            <PreventSortable>false</PreventSortable>
+            <Sortable>true</Sortable>
+            <ColumnHideable>true</ColumnHideable>
+            <DefaultColumn>true</DefaultColumn>
+            <Exportable>true</Exportable>
+            <ShowInExpander>false</ShowInExpander>
+            <Filterable>true</Filterable>
+            <FilterHideable>true</FilterHideable>
+            <DefaultFilter>true</DefaultFilter>
+            <RequiredFilter>false</RequiredFilter>
+            <FilterLabel />
+            <ElementValue>
+                <Value />
+            </ElementValue>
+            <ElementValue2>
+                <Value />
+            </ElementValue2>
+            <FilterReadOnly>false</FilterReadOnly>
+            <DropdownItems />
+        </Element>
+        <Element>
+            <RecordElement>true</RecordElement>
+            <AssemblyFilename />
+            <ObjectName />
+            <ID>errormessage</ID>
+            <DataType>String</DataType>
+            <IsIdentity>false</IsIdentity>
+            <DataIndex>errormessage</DataIndex>
+            <IsColumn>true</IsColumn>
+            <HeaderText>
+                <LocalizationTag>TEXT_ERROR_MESSAGE</LocalizationTag>
+                <ResourceClassKey>FailedTransactionResources</ResourceClassKey>
+            </HeaderText>
+            <Formatter />
+            <Width>200</Width>
+            <Resizeable>true</Resizeable>
+            <PreventSortable>false</PreventSortable>
+            <Sortable>true</Sortable>
+            <ColumnHideable>true</ColumnHideable>
+            <DefaultColumn>true</DefaultColumn>
+            <Exportable>true</Exportable>
+            <ShowInExpander>false</ShowInExpander>
+            <Filterable>true</Filterable>
+            <FilterHideable>true</FilterHideable>
+            <DefaultFilter>true</DefaultFilter>
+            <RequiredFilter>false</RequiredFilter>
+            <FilterLabel />
+            <ElementValue>
+                <Value />
+            </ElementValue>
+            <ElementValue2>
+                <Value />
+            </ElementValue2>
+            <FilterReadOnly>false</FilterReadOnly>
+            <DropdownItems />
+        </Element>
+        <Element>
+            <RecordElement>true</RecordElement>
+            <AssemblyFilename />
+            <ObjectName />
+            <ID>failureservicename</ID>
+            <DataType>String</DataType>
+            <IsIdentity>false</IsIdentity>
+            <DataIndex>failureservicename</DataIndex>
+            <IsColumn>true</IsColumn>
+            <HeaderText>
+                <LocalizationTag>TEXT_SERVICE</LocalizationTag>
+                <ResourceClassKey>FailedTransactionResources</ResourceClassKey>
+            </HeaderText>
+            <Formatter />
+            <Width>120</Width>
+            <Resizeable>true</Resizeable>
+            <PreventSortable>false</PreventSortable>
+            <Sortable>true</Sortable>
+            <ColumnHideable>true</ColumnHideable>
+            <DefaultColumn>true</DefaultColumn>
+            <Exportable>true</Exportable>
+            <ShowInExpander>false</ShowInExpander>
+            <Filterable>true</Filterable>
+            <FilterHideable>true</FilterHideable>
+            <DefaultFilter>true</DefaultFilter>
+            <RequiredFilter>false</RequiredFilter>
+            <FilterLabel />
+            <ElementValue>
+                <Value />
+            </ElementValue>
+            <ElementValue2>
+                <Value />
+            </ElementValue2>
+            <FilterReadOnly>false</FilterReadOnly>
+            <DropdownItems />
+        </Element>
+        <Element>
+            <RecordElement>true</RecordElement>
+            <AssemblyFilename />
+            <ObjectName />
+            <ID>stagename</ID>
+            <DataType>String</DataType>
+            <IsIdentity>false</IsIdentity>
+            <DataIndex>stagename</DataIndex>
+            <IsColumn>true</IsColumn>
+            <HeaderText>
+                <LocalizationTag>TEXT_STAGE</LocalizationTag>
+                <ResourceClassKey>FailedTransactionResources</ResourceClassKey>
+            </HeaderText>
+            <Formatter />
+            <Width>120</Width>
+            <Resizeable>true</Resizeable>
+            <PreventSortable>false</PreventSortable>
+            <Sortable>true</Sortable>
+            <ColumnHideable>true</ColumnHideable>
+            <DefaultColumn>true</DefaultColumn>
+            <Exportable>true</Exportable>
+            <ShowInExpander>false</ShowInExpander>
+            <Filterable>true</Filterable>
+            <FilterHideable>true</FilterHideable>
+            <DefaultFilter>true</DefaultFilter>
+            <RequiredFilter>false</RequiredFilter>
+            <FilterLabel />
+            <ElementValue>
+                <Value />
+            </ElementValue>
+            <ElementValue2>
+                <Value />
+            </ElementValue2>
+            <FilterReadOnly>false</FilterReadOnly>
+            <DropdownItems />
+        </Element>
+        <Element>
+            <RecordElement>true</RecordElement>
+            <AssemblyFilename />
+            <ObjectName />
+            <ID>plugin</ID>
+            <DataType>String</DataType>
+            <IsIdentity>false</IsIdentity>
+            <DataIndex>plugin</DataIndex>
+            <IsColumn>true</IsColumn>
+            <HeaderText>
+                <LocalizationTag>TEXT_PLUGIN</LocalizationTag>
+                <ResourceClassKey>FailedTransactionResources</ResourceClassKey>
+            </HeaderText>
+            <Formatter />
+            <Width>120</Width>
+            <Resizeable>true</Resizeable>
+            <PreventSortable>false</PreventSortable>
+            <Sortable>true</Sortable>
+            <ColumnHideable>true</ColumnHideable>
+            <DefaultColumn>true</DefaultColumn>
+            <Exportable>true</Exportable>
+            <ShowInExpander>false</ShowInExpander>
+            <Filterable>true</Filterable>
+            <FilterHideable>true</FilterHideable>
+            <DefaultFilter>true</DefaultFilter>
+            <RequiredFilter>false</RequiredFilter>
+            <FilterLabel />
+            <ElementValue>
+                <Value />
+            </ElementValue>
+            <ElementValue2>
+                <Value />
+            </ElementValue2>
+            <FilterReadOnly>false</FilterReadOnly>
+            <DropdownItems />
+        </Element>
+        <Element>
+            <RecordElement>true</RecordElement>
+            <AssemblyFilename />
+            <ObjectName />
+            <ID>statereasoncode</ID>
+            <DataType>String</DataType>
+            <IsIdentity>false</IsIdentity>
+            <DataIndex>statereasoncode</DataIndex>
+            <IsColumn>false</IsColumn>
+            <HeaderText>
+                <LocalizationTag>TEXT_STATE_REASON_CODE</LocalizationTag>
+                <ResourceClassKey>FailedTransactionResources</ResourceClassKey>
+            </HeaderText>
+            <Formatter />
+            <Width>120</Width>
+            <Resizeable>true</Resizeable>
+            <PreventSortable>false</PreventSortable>
+            <Sortable>true</Sortable>
+            <ColumnHideable>true</ColumnHideable>
+            <DefaultColumn>true</DefaultColumn>
+            <Exportable>true</Exportable>
+            <ShowInExpander>false</ShowInExpander>
+            <Filterable>true</Filterable>
+            <FilterHideable>true</FilterHideable>
+            <DefaultFilter>true</DefaultFilter>
+            <RequiredFilter>false</RequiredFilter>
+            <FilterLabel />
+            <ElementValue>
+                <Value />
+            </ElementValue>
+            <ElementValue2>
+                <Value />
+            </ElementValue2>
+            <FilterReadOnly>false</FilterReadOnly>
+            <DropdownItems />
+        </Element>
+        <Element>
+            <RecordElement>true</RecordElement>
+            <AssemblyFilename />
+            <ObjectName />
+            <ID>failuresessionid</ID>
+            <DataType>String</DataType>
+            <IsIdentity>false</IsIdentity>
+            <DataIndex>failuresessionid</DataIndex>
+            <IsColumn>true</IsColumn>
+            <HeaderText>
+                <LocalizationTag>TEXT_SESSION_ID</LocalizationTag>
+                <ResourceClassKey>FailedTransactionResources</ResourceClassKey>
+            </HeaderText>
+            <Formatter />
+            <Width>200</Width>
+            <Resizeable>true</Resizeable>
+            <PreventSortable>false</PreventSortable>
+            <Sortable>true</Sortable>
+            <ColumnHideable>true</ColumnHideable>
+            <DefaultColumn>true</DefaultColumn>
+            <Exportable>true</Exportable>
+            <ShowInExpander>false</ShowInExpander>
+            <Filterable>true</Filterable>
+            <FilterHideable>true</FilterHideable>
+            <DefaultFilter>true</DefaultFilter>
+            <RequiredFilter>false</RequiredFilter>
+            <FilterLabel />
+            <ElementValue>
+                <Value />
+            </ElementValue>
+            <ElementValue2>
+                <Value />
+            </ElementValue2>
+            <FilterReadOnly>false</FilterReadOnly>
+            <DropdownItems />
+        </Element>
+        <Element>
+            <RecordElement>true</RecordElement>
+            <AssemblyFilename />
+            <ObjectName />
+            <ID>failurecompoundsessionid</ID>
+            <DataType>String</DataType>
+            <IsIdentity>false</IsIdentity>
+            <DataIndex>failurecompoundsessionid</DataIndex>
+            <IsColumn>true</IsColumn>
+            <HeaderText>
+                <LocalizationTag>TEXT_COMPOUND_SESSION_ID</LocalizationTag>
+                <ResourceClassKey>FailedTransactionResources</ResourceClassKey>
+            </HeaderText>
+            <Formatter />
+            <Width>200</Width>
+            <Resizeable>true</Resizeable>
+            <PreventSortable>false</PreventSortable>
+            <Sortable>true</Sortable>
+            <ColumnHideable>true</ColumnHideable>
+            <DefaultColumn>true</DefaultColumn>
+            <Exportable>true</Exportable>
+            <ShowInExpander>false</ShowInExpander>
+            <Filterable>true</Filterable>
+            <FilterHideable>true</FilterHideable>
+            <DefaultFilter>true</DefaultFilter>
+            <RequiredFilter>false</RequiredFilter>
+            <FilterLabel />
+            <ElementValue>
+                <Value />
+            </ElementValue>
+            <ElementValue2>
+                <Value />
+            </ElementValue2>
+            <FilterReadOnly>false</FilterReadOnly>
+            <DropdownItems />
+        </Element>
+        <Element>
+            <RecordElement>true</RecordElement>
+            <AssemblyFilename />
+            <ObjectName />
+            <ID>compound</ID>
+            <DataType>List</DataType>
+            <IsIdentity>false</IsIdentity>
+            <DataIndex>compound</DataIndex>
+            <IsColumn>false</IsColumn>
+            <HeaderText>
+                <LocalizationTag>TEXT_IS_CHILD</LocalizationTag>
+                <ResourceClassKey>FailedTransactionResources</ResourceClassKey>
+            </HeaderText>
+            <Formatter />
+            <Width>10</Width>
+            <Resizeable>true</Resizeable>
+            <PreventSortable>false</PreventSortable>
+            <Sortable>true</Sortable>
+            <ColumnHideable>true</ColumnHideable>
+            <DefaultColumn>true</DefaultColumn>
+            <Exportable>true</Exportable>
+            <ShowInExpander>false</ShowInExpander>
+            <Filterable>true</Filterable>
+            <FilterHideable>true</FilterHideable>
+            <DefaultFilter>true</DefaultFilter>
+            <RequiredFilter>false</RequiredFilter>
+            <FilterLabel />
+            <ElementValue>
+                <Value />
+            </ElementValue>
+            <ElementValue2>
+                <Value />
+            </ElementValue2>
+            <FilterReadOnly>false</FilterReadOnly>
+            <DropdownItems>
+                <DropdownItem>
+                    <Key>N</Key>
+                    <Value>
+                        <LocalizationTag>TEXT_NO</LocalizationTag>
+                        <ResourceClassKey>FailedTransactionResources</ResourceClassKey>
+                    </Value>
+                </DropdownItem>
+                <DropdownItem>
+                    <Key>Y</Key>
+                    <Value>
+                        <LocalizationTag>TEXT_YES</LocalizationTag>
+                        <ResourceClassKey>FailedTransactionResources</ResourceClassKey>
+                    </Value>
+                </DropdownItem>
+            </DropdownItems>
+        </Element>
+        <Element>
+            <RecordElement>true</RecordElement>
+            <AssemblyFilename />
+            <ObjectName />
+            <ID>possiblepayeraccountid</ID>
+            <DataType>String</DataType>
+            <IsIdentity>false</IsIdentity>
+            <DataIndex>possiblepayeraccountid</DataIndex>
+            <IsColumn>true</IsColumn>
+            <HeaderText>
+                <LocalizationTag>TEXT_POSSIBLE_PAYER_ACCOUNT_ID</LocalizationTag>
+                <ResourceClassKey>FailedTransactionResources</ResourceClassKey>
+            </HeaderText>
+            <Formatter />
+            <Width>120</Width>
+            <Resizeable>true</Resizeable>
+            <PreventSortable>false</PreventSortable>
+            <Sortable>true</Sortable>
+            <ColumnHideable>true</ColumnHideable>
+            <DefaultColumn>false</DefaultColumn>
+            <Exportable>true</Exportable>
+            <ShowInExpander>false</ShowInExpander>
+            <Filterable>true</Filterable>
+            <FilterHideable>true</FilterHideable>
+            <DefaultFilter>true</DefaultFilter>
+            <RequiredFilter>false</RequiredFilter>
+            <FilterLabel />
+            <ElementValue>
+                <Value />
+            </ElementValue>
+            <ElementValue2>
+                <Value />
+            </ElementValue2>
+            <FilterReadOnly>false</FilterReadOnly>
+            <DropdownItems />
+        </Element>
+        <Element>
+            <RecordElement>true</RecordElement>
+            <AssemblyFilename />
+            <ObjectName />
+            <ID>possibleaccountid</ID>
+            <DataType>String</DataType>
+            <IsIdentity>false</IsIdentity>
+            <DataIndex>possibleaccountid</DataIndex>
+            <IsColumn>true</IsColumn>
+            <HeaderText>
+                <LocalizationTag>TEXT_POSSIBLE_ACCOUNT_ID</LocalizationTag>
+                <ResourceClassKey>FailedTransactionResources</ResourceClassKey>
+            </HeaderText>
+            <Formatter />
+            <Width>120</Width>
+            <Resizeable>true</Resizeable>
+            <PreventSortable>false</PreventSortable>
+            <Sortable>true</Sortable>
+            <ColumnHideable>true</ColumnHideable>
+            <DefaultColumn>false</DefaultColumn>
+            <Exportable>true</Exportable>
+            <ShowInExpander>false</ShowInExpander>
+            <Filterable>true</Filterable>
+            <FilterHideable>true</FilterHideable>
+            <DefaultFilter>true</DefaultFilter>
+            <RequiredFilter>false</RequiredFilter>
+            <FilterLabel />
+            <ElementValue>
+                <Value />
+            </ElementValue>
+            <ElementValue2>
+                <Value />
+            </ElementValue2>
+            <FilterReadOnly>false</FilterReadOnly>
+            <DropdownItems />
+        </Element>
+        <Element>
+            <RecordElement>true</RecordElement>
+            <AssemblyFilename />
+            <ObjectName />
+            <ID>line</ID>
+            <DataType>String</DataType>
+            <IsIdentity>false</IsIdentity>
+            <DataIndex>line</DataIndex>
+            <IsColumn>false</IsColumn>
+            <HeaderText />
+            <Formatter />
+            <Width>120</Width>
+            <Resizeable>true</Resizeable>
+            <PreventSortable>false</PreventSortable>
+            <Sortable>true</Sortable>
+            <ColumnHideable>true</ColumnHideable>
+            <DefaultColumn>true</DefaultColumn>
+            <Exportable>true</Exportable>
+            <ShowInExpander>false</ShowInExpander>
+            <Filterable>false</Filterable>
+            <FilterHideable>true</FilterHideable>
+            <DefaultFilter>true</DefaultFilter>
+            <RequiredFilter>false</RequiredFilter>
+            <FilterLabel />
+            <ElementValue>
+                <Value />
+            </ElementValue>
+            <ElementValue2>
+                <Value />
+            </ElementValue2>
+            <FilterReadOnly>false</FilterReadOnly>
+            <DropdownItems />
+        </Element>
+        <Element>
+            <RecordElement>true</RecordElement>
+            <AssemblyFilename />
+            <ObjectName />
+            <ID>meteredtime</ID>
+            <DataType>String</DataType>
+            <IsIdentity>false</IsIdentity>
+            <DataIndex>meteredtime</DataIndex>
+            <IsColumn>false</IsColumn>
+            <HeaderText />
+            <Formatter />
+            <Width>120</Width>
+            <Resizeable>true</Resizeable>
+            <PreventSortable>false</PreventSortable>
+            <Sortable>true</Sortable>
+            <ColumnHideable>true</ColumnHideable>
+            <DefaultColumn>true</DefaultColumn>
+            <Exportable>true</Exportable>
+            <ShowInExpander>false</ShowInExpander>
+            <Filterable>false</Filterable>
+            <FilterHideable>true</FilterHideable>
+            <DefaultFilter>true</DefaultFilter>
+            <RequiredFilter>false</RequiredFilter>
+            <FilterLabel />
+            <ElementValue>
+                <Value />
+            </ElementValue>
+            <ElementValue2>
+                <Value />
+            </ElementValue2>
+            <FilterReadOnly>false</FilterReadOnly>
+            <DropdownItems />
+        </Element>
+        <Element>
+            <RecordElement>true</RecordElement>
+            <AssemblyFilename />
+            <ObjectName />
+            <ID>sender</ID>
+            <DataType>String</DataType>
+            <IsIdentity>false</IsIdentity>
+            <DataIndex>sender</DataIndex>
+            <IsColumn>false</IsColumn>
+            <HeaderText />
+            <Formatter />
+            <Width>120</Width>
+            <Resizeable>true</Resizeable>
+            <PreventSortable>false</PreventSortable>
+            <Sortable>true</Sortable>
+            <ColumnHideable>true</ColumnHideable>
+            <DefaultColumn>true</DefaultColumn>
+            <Exportable>true</Exportable>
+            <ShowInExpander>false</ShowInExpander>
+            <Filterable>false</Filterable>
+            <FilterHideable>true</FilterHideable>
+            <DefaultFilter>true</DefaultFilter>
+            <RequiredFilter>false</RequiredFilter>
+            <FilterLabel />
+            <ElementValue>
+                <Value />
+            </ElementValue>
+            <ElementValue2>
+                <Value />
+            </ElementValue2>
+            <FilterReadOnly>false</FilterReadOnly>
+            <DropdownItems />
+        </Element>
+        <Element>
+            <RecordElement>true</RecordElement>
+            <AssemblyFilename />
+            <ObjectName />
+            <ID>module</ID>
+            <DataType>String</DataType>
+            <IsIdentity>false</IsIdentity>
+            <DataIndex>module</DataIndex>
+            <IsColumn>false</IsColumn>
+            <HeaderText />
+            <Formatter />
+            <Width>120</Width>
+            <Resizeable>true</Resizeable>
+            <PreventSortable>false</PreventSortable>
+            <Sortable>true</Sortable>
+            <ColumnHideable>true</ColumnHideable>
+            <DefaultColumn>true</DefaultColumn>
+            <Exportable>true</Exportable>
+            <ShowInExpander>false</ShowInExpander>
+            <Filterable>false</Filterable>
+            <FilterHideable>true</FilterHideable>
+            <DefaultFilter>true</DefaultFilter>
+            <RequiredFilter>false</RequiredFilter>
+            <FilterLabel />
+            <ElementValue>
+                <Value />
+            </ElementValue>
+            <ElementValue2>
+                <Value />
+            </ElementValue2>
+            <FilterReadOnly>false</FilterReadOnly>
+            <DropdownItems />
+        </Element>
+        <Element>
+            <RecordElement>true</RecordElement>
+            <AssemblyFilename />
+            <ObjectName />
+            <ID>method</ID>
+            <DataType>String</DataType>
+            <IsIdentity>false</IsIdentity>
+            <DataIndex>method</DataIndex>
+            <IsColumn>false</IsColumn>
+            <HeaderText />
+            <Formatter />
+            <Width>120</Width>
+            <Resizeable>true</Resizeable>
+            <PreventSortable>false</PreventSortable>
+            <Sortable>true</Sortable>
+            <ColumnHideable>true</ColumnHideable>
+            <DefaultColumn>true</DefaultColumn>
+            <Exportable>true</Exportable>
+            <ShowInExpander>false</ShowInExpander>
+            <Filterable>false</Filterable>
+            <FilterHideable>true</FilterHideable>
+            <DefaultFilter>true</DefaultFilter>
+            <RequiredFilter>false</RequiredFilter>
+            <FilterLabel />
+            <ElementValue>
+                <Value />
+            </ElementValue>
+            <ElementValue2>
+                <Value />
+            </ElementValue2>
+            <FilterReadOnly>false</FilterReadOnly>
+            <DropdownItems />
+        </Element>
+        <Element>
+            <RecordElement>true</RecordElement>
+            <AssemblyFilename />
+            <ObjectName />
+            <ID>batchid</ID>
+            <DataType>String</DataType>
+            <IsIdentity>false</IsIdentity>
+            <DataIndex>batchid</DataIndex>
+            <IsColumn>true</IsColumn>
+            <HeaderText>
+                <LocalizationTag>TEXT_BATCH_ID</LocalizationTag>
+                <ResourceClassKey>FailedTransactionResources</ResourceClassKey>
+            </HeaderText>
+            <Formatter />
+            <Width>120</Width>
+            <Resizeable>true</Resizeable>
+            <PreventSortable>false</PreventSortable>
+            <Sortable>true</Sortable>
+            <ColumnHideable>true</ColumnHideable>
+            <DefaultColumn>false</DefaultColumn>
+            <Exportable>true</Exportable>
+            <ShowInExpander>false</ShowInExpander>
+            <Filterable>true</Filterable>
+            <FilterHideable>true</FilterHideable>
+            <DefaultFilter>true</DefaultFilter>
+            <RequiredFilter>false</RequiredFilter>
+            <FilterLabel />
+            <ElementValue>
+                <Value />
+            </ElementValue>
+            <ElementValue2>
+                <Value />
+            </ElementValue2>
+            <FilterReadOnly>false</FilterReadOnly>
+            <DropdownItems />
+        </Element>
+        <Element>
+            <RecordElement>false</RecordElement>
+            <ID>actions</ID>
+            <DataIndex>actions</DataIndex>
+            <IsColumn>true</IsColumn>
+            <HeaderText>
+                <Value>&amp;nbsp;</Value>
+            </HeaderText>
+            <Formatter>actionsColRenderer</Formatter>
+            <Width>120</Width>
+            <Resizeable>true</Resizeable>
+            <PreventSortable>false</PreventSortable>
+            <Sortable>false</Sortable>
+            <ColumnHideable>true</ColumnHideable>
+            <DefaultColumn>true</DefaultColumn>
+            <Filterable>false</Filterable>
+        </Element>
+    </Elements>
+    <ExpanderTemplate />
+    <GridButtons>
+        <Button>
+            <ButtonID>UpdateStatus</ButtonID>
+            <ButtonText>
+                <LocalizationTag>TEXT_CHANGE_STATUS</LocalizationTag>
+                <ResourceClassKey>FailedTransactionResources</ResourceClassKey>
+            </ButtonText>
+            <ToolTip>
+                <LocalizationTag>TEXT_CHANGE_STATUS</LocalizationTag>
+                <ResourceClassKey>FailedTransactionResources</ResourceClassKey>
+            </ToolTip>
+            <IconClass />
+            <RequiredCapabilities />
+            <JSHandlerFunction>onUpdateStatus</JSHandlerFunction>
+        </Button>
+        <Button>
+            <ButtonID>UpdateAllStatuses</ButtonID>
+            <ButtonText>
+                <LocalizationTag>TEXT_CHANGE_ALL_STATUSES</LocalizationTag>
+                <ResourceClassKey>FailedTransactionResources</ResourceClassKey>
+            </ButtonText>
+            <ToolTip>
+                <LocalizationTag>TEXT_CHANGE_ALL_STATUSES</LocalizationTag>
+                <ResourceClassKey>FailedTransactionResources</ResourceClassKey>
+            </ToolTip>
+            <IconClass />
+            <RequiredCapabilities />
+            <JSHandlerFunction>onUpdateAllStatus</JSHandlerFunction>
+        </Button>
+        <Button>
+            <ButtonID>Resubmit</ButtonID>
+            <ButtonText>
+                <LocalizationTag>TEXT_RESUBMIT</LocalizationTag>
+                <ResourceClassKey>FailedTransactionResources</ResourceClassKey>
+            </ButtonText>
+            <ToolTip>
+                <LocalizationTag>TEXT_RESUBMIT</LocalizationTag>
+                <ResourceClassKey>FailedTransactionResources</ResourceClassKey>
+            </ToolTip>
+            <IconClass />
+            <RequiredCapabilities />
+            <JSHandlerFunction>onResubmit</JSHandlerFunction>
+        </Button>
+        <Button>
+            <ButtonID>ResubmitAll</ButtonID>
+            <ButtonText>
+                <LocalizationTag>TEXT_RESUBMIT_ALL</LocalizationTag>
+                <ResourceClassKey>FailedTransactionResources</ResourceClassKey>
+            </ButtonText>
+            <ToolTip>
+                <LocalizationTag>TEXT_RESUBMIT_ALL</LocalizationTag>
+                <ResourceClassKey>FailedTransactionResources</ResourceClassKey>
+            </ToolTip>
+            <IconClass />
+            <RequiredCapabilities />
+            <JSHandlerFunction>onResubmitAll</JSHandlerFunction>
+        </Button>
+    </GridButtons>
+    <ToolbarButtons />
+</GridLayout>

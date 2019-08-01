@@ -1,0 +1,1444 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xmlconfig>
+    <version ptype="INTEGER">2</version>
+    <ScheduledAdapters>
+        <Adapter>
+            <Name>GenerateAnalyticsDatamart</Name>
+            <DisplayName>Generate and/or Populate Analytics Data Mart</DisplayName>
+            <ClassID>MetraTech.UsageServer.Adapters.AnalyticsDatamartAdapter,MetraTech.UsageServer.Adapters</ClassID>
+            <ConfigFile>GenerateAnalyticsDatamart.xml</ConfigFile>
+            <Description>Generates and/or populates the Analytics Data Mart
+      </Description>
+            <LocalizedItems>
+                <item lang="FR">
+                    <DisplayName>Générer et/ou compléter le Datamart d’analyse</DisplayName>
+                    <Description>Génère et / ou remplit le Data Mart Analytics</Description>
+                </item>
+                <item lang="IT">
+                    <DisplayName>[IT] Generate and/or Populate Analytics Data Mart</DisplayName>
+                    <Description>[IT] Generates and/or populates the Analytics Data Mart
+      </Description>
+                </item>
+                <item lang="ES">
+                    <DisplayName>[ES] Generate and/or Populate Analytics Data Mart</DisplayName>
+                    <Description>[ES] Generates and/or populates the Analytics Data Mart
+      </Description>
+                </item>
+                <item lang="DE">
+                    <DisplayName>[DE] Generate and/or Populate Analytics Data Mart</DisplayName>
+                    <Description>[DE] Generates and/or populates the Analytics Data Mart
+      </Description>
+                </item>
+                <item lang="es-MX">
+                    <DisplayName>[es-MX] Generate and/or Populate Analytics Data Mart</DisplayName>
+                    <Description>[es-MX] Generates and/or populates the Analytics Data Mart
+      </Description>
+                </item>
+                <item lang="pt-BR">
+                    <DisplayName>Gerar e/ou preencher Analytics Data Mart</DisplayName>
+                    <Description>Gerar e/ou preencher Analytics Data Mart</Description>
+                </item>
+                <item lang="en-GB">
+                    <DisplayName>[en-GB] Generate and/or Populate Analytics Data Mart</DisplayName>
+                    <Description>[en-GB] Generates and/or populates the Analytics Data Mart
+      </Description>
+                </item>
+                <item lang="JA">
+                    <DisplayName>[JA] Generate and/or Populate Analytics Data Mart</DisplayName>
+                    <Description>[JA] </Description>
+                </item>
+            </LocalizedItems>
+            <RecurrencePattern>
+                <SystemCycle>Daily</SystemCycle>
+            </RecurrencePattern>
+        </Adapter>
+        <!--
+    <Adapter>
+      <Name>MaterializedViewAdapter</Name>
+      <DisplayName>Populate Materialized Views (Scheduled)</DisplayName>
+      <ClassID>MetraTech.UsageServer.Adapters.MaterializedViewAdapter,MetraTech.UsageServer.Adapters</ClassID>
+      <ActivationDate>10/1/2002 00:00:00</ActivationDate>
+      <Description>
+        <![CDATA[This adapter is responsible for populating Materialized Views configured in DEFERRED mode
+        ]]>
+      </Description>
+      <LocalizedItems>
+        <item lang="FR">
+          <DisplayName>[FR] Populate Materialized Views (Scheduled)</DisplayName>
+          <Description>[FR] <![CDATA[This adapter is responsible for populating Materialized Views configured in DEFERRED mode
+        ]]>
+      </Description>
+        </item>
+        <item lang="IT">
+          <DisplayName>[IT] Populate Materialized Views (Scheduled)</DisplayName>
+          <Description>[IT] <![CDATA[This adapter is responsible for populating Materialized Views configured in DEFERRED mode
+        ]]>
+      </Description>
+        </item>
+        <item lang="ES">
+          <DisplayName>[ES] Populate Materialized Views (Scheduled)</DisplayName>
+          <Description>[ES] <![CDATA[This adapter is responsible for populating Materialized Views configured in DEFERRED mode
+        ]]>
+      </Description>
+        </item>
+        <item lang="DE">
+          <DisplayName>[DE] Populate Materialized Views (Scheduled)</DisplayName>
+          <Description>[DE] <![CDATA[This adapter is responsible for populating Materialized Views configured in DEFERRED mode
+        ]]>
+      </Description>
+        </item>
+        <item lang="es-MX">
+          <DisplayName>[es-MX] Populate Materialized Views (Scheduled)</DisplayName>
+          <Description>[es-MX] <![CDATA[This adapter is responsible for populating Materialized Views configured in DEFERRED mode
+        ]]>
+      </Description>
+        </item>
+        <item lang="pt-BR">
+          <DisplayName>[pt-BR] Populate Materialized Views (Scheduled)</DisplayName>
+          <Description>[pt-BR] <![CDATA[This adapter is responsible for populating Materialized Views configured in DEFERRED mode
+        ]]>
+      </Description>
+        </item>
+        <item lang="en-GB">
+          <DisplayName>[en-GB] Populate Materialized Views (Scheduled)</DisplayName>
+          <Description>[en-GB] <![CDATA[This adapter is responsible for populating Materialized Views configured in DEFERRED mode
+        ]]>
+      </Description>
+        </item>
+        <item lang="JA">
+          <DisplayName>[JA] Populate Materialized Views (Scheduled)</DisplayName>
+          <Description>[JA] <![CDATA[This adapter is responsible for populating Materialized Views configured in DEFERRED mode
+        ]]>
+      </Description>
+        </item>	
+      </LocalizedItems>
+      <RecurrencePattern>
+        <IntervalInMinutes>300</IntervalInMinutes>
+      </RecurrencePattern>
+    </Adapter>
+-->
+        <Adapter>
+            <Name>AccountStateAdapterSCH</Name>
+            <DisplayName>Generic Change Account State Adapter (Scheduled)</DisplayName>
+            <ClassID>MetraTech.UsageServer.Adapters.AccountStateAdapter,MetraTech.UsageServer.Adapters</ClassID>
+            <ConfigFile>AccountStateAdapter.xml</ConfigFile>
+            <ActivationDate>10/1/2002 00:00:00</ActivationDate>
+            <Description>This adapter is responsible for changing states of accounts from 
+       	closed to pending final bill and Closed to Archived. The rules are:
+        &lt;BR&gt;Closed To Pending Final Bill: 
+        This operation gets triggered when there is usage that comes in as 
+        either late usage or as part of a straggler to an account that is 
+        in closed state. End of period processing detects this changes the 
+        account state to Pending Final Bill.
+        &lt;BR&gt;Closed To Archived:
+        This transition happens when an account has aged x number of months
+        (configurable) after being Closed.  End of period processing detects 
+        that changes the account state to Archived.
+        </Description>
+            <LocalizedItems>
+                <item lang="FR">
+                    <DisplayName>Générique Change compte Adaptateur État (prévue)</DisplayName>
+                    <Description>Cet adaptateur est chargé de modifier les états de comptes à partir de fermée à l’attente facture finale et fermé à archivés. Les règles sont les suivantes:
+         &lt;BR&gt; Fermé Pour attente final du projet de loi:
+         Cette opération se déclenche quand il ya utilisation qui vient en tant que
+         soit la fin de l’utilisation ou dans le cadre d’un retardataire à un compte qui est
+         à l’état fermé. Traitement de fin de période détecte cela modifie la
+         compte de l’état d’attente final du projet de loi.
+         &lt;BR&gt; Fermé Pour archivée:
+         Cette transition se passe quand un compte a vieilli x nombre de mois
+         (configurable) après avoir été fermée. Fin de la période de traitement détecte
+         qui change l’état de compte pour archivées.</Description>
+                </item>
+                <item lang="IT">
+                    <DisplayName>[IT] Generic Change Account State Adapter (Scheduled)</DisplayName>
+                    <Description>[IT] This adapter is responsible for changing states of accounts from 
+       	closed to pending final bill and Closed to Archived. The rules are:
+        &lt;BR&gt;Closed To Pending Final Bill: 
+        This operation gets triggered when there is usage that comes in as 
+        either late usage or as part of a straggler to an account that is 
+        in closed state. End of period processing detects this changes the 
+        account state to Pending Final Bill.
+        &lt;BR&gt;Closed To Archived:
+        This transition happens when an account has aged x number of months
+        (configurable) after being Closed.  End of period processing detects 
+        that changes the account state to Archived.
+        </Description>
+                </item>
+                <item lang="ES">
+                    <DisplayName>[ES] Generic Change Account State Adapter (Scheduled)</DisplayName>
+                    <Description>[ES] This adapter is responsible for changing states of accounts from 
+       	closed to pending final bill and Closed to Archived. The rules are:
+        &lt;BR&gt;Closed To Pending Final Bill: 
+        This operation gets triggered when there is usage that comes in as 
+        either late usage or as part of a straggler to an account that is 
+        in closed state. End of period processing detects this changes the 
+        account state to Pending Final Bill.
+        &lt;BR&gt;Closed To Archived:
+        This transition happens when an account has aged x number of months
+        (configurable) after being Closed.  End of period processing detects 
+        that changes the account state to Archived.
+        </Description>
+                </item>
+                <item lang="DE">
+                    <DisplayName>[DE] Generic Change Account State Adapter (Scheduled)</DisplayName>
+                    <Description>[DE] This adapter is responsible for changing states of accounts from 
+       	closed to pending final bill and Closed to Archived. The rules are:
+        &lt;BR&gt;Closed To Pending Final Bill: 
+        This operation gets triggered when there is usage that comes in as 
+        either late usage or as part of a straggler to an account that is 
+        in closed state. End of period processing detects this changes the 
+        account state to Pending Final Bill.
+        &lt;BR&gt;Closed To Archived:
+        This transition happens when an account has aged x number of months
+        (configurable) after being Closed.  End of period processing detects 
+        that changes the account state to Archived.
+        </Description>
+                </item>
+                <item lang="es-MX">
+                    <DisplayName>[es-MX] Generic Change Account State Adapter (Scheduled)</DisplayName>
+                    <Description>[es-MX] This adapter is responsible for changing states of accounts from 
+       	closed to pending final bill and Closed to Archived. The rules are:
+        &lt;BR&gt;Closed To Pending Final Bill: 
+        This operation gets triggered when there is usage that comes in as 
+        either late usage or as part of a straggler to an account that is 
+        in closed state. End of period processing detects this changes the 
+        account state to Pending Final Bill.
+        &lt;BR&gt;Closed To Archived:
+        This transition happens when an account has aged x number of months
+        (configurable) after being Closed.  End of period processing detects 
+        that changes the account state to Archived.
+        </Description>
+                </item>
+                <item lang="pt-BR">
+                    <DisplayName>Adaptador de estado de conta de alteração genérico (agendado)</DisplayName>
+                    <Description>Este adaptador é responsável por mudar estados de contas de fechado para pendentes conta final e fechou a Arquivado. As regras são:
+         &lt;BR&gt; Fechado para Pending final Bill:
+         Esta operação é acionado quando há o uso que vem em como
+         ou uso final ou como parte de um vagabundo para uma conta que é
+         em estado fechado. Fim do período de processamento detecta isso muda a
+         conta do Estado para Pending final Bill.
+         &lt;BR&gt; Closed Para arquivados:
+         Esta transição acontece quando uma conta envelheceu x número de meses
+         (configurável) depois de ser fechado. Fim do período de processamento detecta
+         que altera o estado conta com Arquivado.</Description>
+                </item>
+                <item lang="en-GB">
+                    <DisplayName>[en-GB] Generic Change Account State Adapter (Scheduled)</DisplayName>
+                    <Description>[en-GB] This adapter is responsible for changing states of accounts from 
+       	closed to pending final bill and Closed to Archived. The rules are:
+        &lt;BR&gt;Closed To Pending Final Bill: 
+        This operation gets triggered when there is usage that comes in as 
+        either late usage or as part of a straggler to an account that is 
+        in closed state. End of period processing detects this changes the 
+        account state to Pending Final Bill.
+        &lt;BR&gt;Closed To Archived:
+        This transition happens when an account has aged x number of months
+        (configurable) after being Closed.  End of period processing detects 
+        that changes the account state to Archived.
+        </Description>
+                </item>
+                <item lang="JA">
+                    <DisplayName>[JA] Generic Change Account State Adapter (Scheduled)</DisplayName>
+                    <Description>[JA] This adapter is responsible for changing states of accounts from 
+       	closed to pending final bill and Closed to Archived. The rules are:
+        &lt;BR&gt;Closed To Pending Final Bill: 
+        This operation gets triggered when there is usage that comes in as 
+        either late usage or as part of a straggler to an account that is 
+        in closed state. End of period processing detects this changes the 
+        account state to Pending Final Bill.
+        &lt;BR&gt;Closed To Archived:
+        This transition happens when an account has aged x number of months
+        (configurable) after being Closed.  End of period processing detects 
+        that changes the account state to Archived.
+        </Description>
+                </item>
+            </LocalizedItems>
+            <RecurrencePattern>
+                <SystemCycle>Daily</SystemCycle>
+            </RecurrencePattern>
+        </Adapter>
+        <!-- Product Catalog NonRecurring Charges -->
+        <Adapter>
+            <Name>NonRecurringCharges</Name>
+            <DisplayName>NonRecurring Charge Adapter</DisplayName>
+            <ClassID>Metratech.MTNonRecurringChargeAdapter.1</ClassID>
+            <ConfigFile>NonRecurringCharges.xml</ConfigFile>
+            <ActivationDate>10/1/2002 00:00:00</ActivationDate>
+            <Description>MetraTech standard adapter to generate non-recurring charges from
+        the product catalog. This adapter will generate the appropriate subscription
+        and unsubscription charges for subscription events that occurred for the period
+        in which the adapter is run.
+      </Description>
+            <LocalizedItems>
+                <item lang="FR">
+                    <DisplayName>Adaptateur de frais non récurrents</DisplayName>
+                    <Description>MetraTech adaptateur standard pour générer des charges non récurrentes de
+         le catalogue de produits. Cet adaptateur va générer la souscription appropriée
+         et les frais de désabonnement pour les événements de souscription qui ont eu lieu pour la période
+         dans laquelle l’adaptateur est exécuté.</Description>
+                </item>
+                <item lang="IT">
+                    <DisplayName>[IT] NonRecurring Charge Adapter</DisplayName>
+                    <Description>[IT] MetraTech standard adapter to generate non-recurring charges from
+        the product catalog. This adapter will generate the appropriate subscription
+        and unsubscription charges for subscription events that occurred for the period
+        in which the adapter is run.</Description>
+                </item>
+                <item lang="ES">
+                    <DisplayName>[ES] NonRecurring Charge Adapter</DisplayName>
+                    <Description>[ES] MetraTech standard adapter to generate non-recurring charges from
+        the product catalog. This adapter will generate the appropriate subscription
+        and unsubscription charges for subscription events that occurred for the period
+        in which the adapter is run.</Description>
+                </item>
+                <item lang="DE">
+                    <DisplayName>[DE] NonRecurring Charge Adapter</DisplayName>
+                    <Description>[DE] MetraTech standard adapter to generate non-recurring charges from
+        the product catalog. This adapter will generate the appropriate subscription
+        and unsubscription charges for subscription events that occurred for the period
+        in which the adapter is run.</Description>
+                </item>
+                <item lang="es-MX">
+                    <DisplayName>[es-MX] NonRecurring Charge Adapter</DisplayName>
+                    <Description>[es-MX] MetraTech standard adapter to generate non-recurring charges from
+        the product catalog. This adapter will generate the appropriate subscription
+        and unsubscription charges for subscription events that occurred for the period
+        in which the adapter is run.</Description>
+                </item>
+                <item lang="pt-BR">
+                    <DisplayName>Adaptador de encargo não recorrente</DisplayName>
+                    <Description>Adaptador padrão MetraTech para gerar encargos não recorrentes de
+                           o catálogo de produtos. Este adaptador irá gerar a assinatura apropriada
+                           e encargos unsubscription para eventos de assinatura que ocorreram durante o período
+                           em que o adaptador é executado.
+                </Description>
+                </item>
+                <item lang="en-GB">
+                    <DisplayName>[en-GB] NonRecurring Charge Adapter</DisplayName>
+                    <Description>[en-GB] MetraTech standard adapter to generate non-recurring charges from
+        the product catalog. This adapter will generate the appropriate subscription
+        and unsubscription charges for subscription events that occurred for the period
+        in which the adapter is run.</Description>
+                </item>
+                <item lang="JA">
+                    <DisplayName>[JA] NonRecurring Charge Adapter</DisplayName>
+                    <Description>[JA] MetraTech standard adapter to generate non-recurring charges from
+        the product catalog. This adapter will generate the appropriate subscription
+        and unsubscription charges for subscription events that occurred for the period
+        in which the adapter is run.</Description>
+                </item>
+            </LocalizedItems>
+            <RecurrencePattern>
+                <SystemCycle>Daily</SystemCycle>
+            </RecurrencePattern>
+        </Adapter>
+        <Adapter>
+            <Name>FailedTransaction</Name>
+            <DisplayName>Delete Dismissed Failed Transactions</DisplayName>
+            <ClassID>MetraTech.UsageServer.Adapters.FailedTransactionAdapter,MetraTech.UsageServer.Adapters</ClassID>
+            <ConfigFile>DeleteFailedTransactions.xml</ConfigFile>
+            <ActivationDate>10/1/2002 00:00:00</ActivationDate>
+            <Description>MetraTech standard adapter to delete failed transactions a certain number of days after they have
+        been marked as dismissed. This adapter will also delete successfully resubmitted transactions a
+        certain number of days after they have been resubmitted.
+      </Description>
+            <LocalizedItems>
+                <item lang="FR">
+                    <DisplayName>Supprimer les transactions en échec ignorées</DisplayName>
+                    <Description>MetraTech adaptateur standard pour supprimer des transactions ayant échoué un certain nombre de jours après qu’ils ont
+         été marqué comme rejeté. Cet adaptateur sera également soumis à nouveau avec succès supprimer transactions par
+         certain nombre de jours après qu’ils ont été soumis à nouveau.</Description>
+                </item>
+                <item lang="IT">
+                    <DisplayName>[IT] Delete Dismissed Failed Transactions</DisplayName>
+                    <Description>[IT] MetraTech standard adapter to delete failed transactions a certain number of days after they have
+        been marked as dismissed. This adapter will also delete successfully resubmitted transactions a
+        certain number of days after they have been resubmitted.
+      </Description>
+                </item>
+                <item lang="ES">
+                    <DisplayName>[ES] Delete Dismissed Failed Transactions</DisplayName>
+                    <Description>[ES] MetraTech standard adapter to delete failed transactions a certain number of days after they have
+        been marked as dismissed. This adapter will also delete successfully resubmitted transactions a
+        certain number of days after they have been resubmitted.
+      </Description>
+                </item>
+                <item lang="DE">
+                    <DisplayName>[DE] Delete Dismissed Failed Transactions</DisplayName>
+                    <Description>[DE] MetraTech standard adapter to delete failed transactions a certain number of days after they have
+        been marked as dismissed. This adapter will also delete successfully resubmitted transactions a
+        certain number of days after they have been resubmitted.
+      </Description>
+                </item>
+                <item lang="es-MX">
+                    <DisplayName>[es-MX] Delete Dismissed Failed Transactions</DisplayName>
+                    <Description>[es-MX] MetraTech standard adapter to delete failed transactions a certain number of days after they have
+        been marked as dismissed. This adapter will also delete successfully resubmitted transactions a
+        certain number of days after they have been resubmitted.
+      </Description>
+                </item>
+                <item lang="pt-BR">
+                    <DisplayName>Excluir Transações com Falha Ignoradas</DisplayName>
+                    <Description>Adaptador padrão MetraTech para excluir transações falhas de um certo número de dias depois de terem
+         foi marcado como demitido. Este adaptador também excluirá reapresentado com sucesso transações por
+         certo número de dias depois de terem sido reenviados.
+      </Description>
+                </item>
+                <item lang="en-GB">
+                    <DisplayName>[en-GB] Delete Dismissed Failed Transactions</DisplayName>
+                    <Description>[en-GB] MetraTech standard adapter to delete failed transactions a certain number of days after they have
+        been marked as dismissed. This adapter will also delete successfully resubmitted transactions a
+        certain number of days after they have been resubmitted.
+      </Description>
+                </item>
+                <item lang="JA">
+                    <DisplayName>[JA] Delete Dismissed Failed Transactions</DisplayName>
+                    <Description>[JA] MetraTech standard adapter to delete failed transactions a certain number of days after they have
+        been marked as dismissed. This adapter will also delete successfully resubmitted transactions a
+        certain number of days after they have been resubmitted.
+      </Description>
+                </item>
+            </LocalizedItems>
+            <RecurrencePattern>
+                <SystemCycle>Daily</SystemCycle>
+            </RecurrencePattern>
+        </Adapter>
+        <Adapter>
+            <Name>PipelineFailoverAdapter</Name>
+            <DisplayName>Pipeline Failover Adapter</DisplayName>
+            <ClassID>MetraTech.UsageServer.Adapters.PipelineFailoverAdapter,MetraTech.UsageServer.Adapters</ClassID>
+            <ConfigFile>PipelineFailoverAdapter.xml</ConfigFile>
+            <ActivationDate>10/1/2002 00:00:00</ActivationDate>
+            <Description>Resubmits failed transactions that failed due to db cluster failover, network error or other rerunable database error.</Description>
+            <LocalizedItems>
+                <item lang="FR">
+                    <DisplayName>Adaptateur de basculement de pipeline</DisplayName>
+                    <Description>Resoumet transactions ayant échoué qui ont échoué en raison de db basculement de cluster, erreur réseau ou autre erreur de base de données réexécutable.</Description>
+                </item>
+                <item lang="IT">
+                    <DisplayName>[IT] Pipeline Failover Adapter</DisplayName>
+                    <Description>[IT] Resubmits failed transactions that failed due to db cluster failover, network error or other rerunable database error.</Description>
+                </item>
+                <item lang="ES">
+                    <DisplayName>[ES] Pipeline Failover Adapter</DisplayName>
+                    <Description>[ES] Resubmits failed transactions that failed due to db cluster failover, network error or other rerunable database error.</Description>
+                </item>
+                <item lang="DE">
+                    <DisplayName>[DE] Pipeline Failover Adapter</DisplayName>
+                    <Description>[DE] Resubmits failed transactions that failed due to db cluster failover, network error or other rerunable database error.</Description>
+                </item>
+                <item lang="es-MX">
+                    <DisplayName>[es-MX] Pipeline Failover Adapter</DisplayName>
+                    <Description>[es-MX] Resubmits failed transactions that failed due to db cluster failover, network error or other rerunable database error.</Description>
+                </item>
+                <item lang="pt-BR">
+                    <DisplayName>Adaptador de failover de pipeline</DisplayName>
+                    <Description>Reenvia transações falhas que falharam devido a falha de cluster db, erro de rede ou outro erro de banco de dados rerunable.</Description>
+                </item>
+                <item lang="en-GB">
+                    <DisplayName>[en-GB] Pipeline Failover Adapter</DisplayName>
+                    <Description>[en-GB] Resubmits failed transactions that failed due to db cluster failover, network error or other rerunable database error.</Description>
+                </item>
+                <item lang="JA">
+                    <DisplayName>[JA] Pipeline Failover Adapter</DisplayName>
+                    <Description>[JA] Resubmits failed transactions that failed due to db cluster failover, network error or other rerunable database error.</Description>
+                </item>
+            </LocalizedItems>
+            <RecurrencePattern>
+                <IntervalInMinutes>60</IntervalInMinutes>
+            </RecurrencePattern>
+        </Adapter>        
+        <Adapter>
+            <Name>GenerateNotificationEventsAdapter</Name>
+            <DisplayName>Generate Notification Events Adapter</DisplayName>
+            <ClassID>MetraTech.UsageServer.Adapters.GenerateNotificationEventsAdapter</ClassID>
+            <ConfigFile>GenerateNotificationEventsAdapter.xml</ConfigFile>
+            <Description>Generate notification events.</Description>
+            <LocalizedItems>
+                <item lang="FR">
+                    <DisplayName>Générer des événements de notification Adaptateur</DisplayName>
+                    <Description>Générer des événements de notification.</Description>
+                </item>
+                <item lang="IT">
+                    <DisplayName>[IT] Generate Notification Events Adapter</DisplayName>
+                    <Description>[IT] Generate notification events.</Description>
+                </item>
+                <item lang="ES">
+                    <DisplayName>[ES] Generate Notification Events Adapter</DisplayName>
+                    <Description>[ES] Generate notification events.</Description>
+                </item>
+                <item lang="DE">
+                    <DisplayName>[DE] Generate Notification Events Adapter</DisplayName>
+                    <Description>[DE] Generate notification events.</Description>
+                </item>
+                <item lang="es-MX">
+                    <DisplayName>[es-MX] Generate Notification Events Adapter</DisplayName>
+                    <Description>[es-MX] Generate notification events.</Description>
+                </item>
+                <item lang="pt-BR">
+                    <DisplayName>Gerar eventos de notificação Adapter</DisplayName>
+                    <Description>Gerar eventos de notificação.</Description>
+                </item>
+                <item lang="en-GB">
+                    <DisplayName>[en-GB] Generate Notification Events Adapter</DisplayName>
+                    <Description>[en-GB] Generate notification events.</Description>
+                </item>
+                <item lang="JA">
+                    <DisplayName>[JA] Generate Notification Events Adapter</DisplayName>
+                    <Description>[JA] Generate notification events.</Description>
+                </item>
+            </LocalizedItems>
+            <RecurrencePattern>
+                <Daily>
+                    <Start>1/1/2010 12:00:00 AM</Start>
+                    <Interval>1</Interval>
+                    <Times>5:00 AM</Times>
+                </Daily>
+            </RecurrencePattern>
+        </Adapter>
+        <Adapter>
+            <Name>CreditNotesEmailAdapter</Name>
+            <DisplayName>Credit Notes Email Adapter</DisplayName>
+            <ClassID>MetraTech.UsageServer.Adapters.ScheduledEmailAdapter,MetraTech.UsageServer.Adapters</ClassID>
+            <ConfigFile>CreditNotesEmailAdapter.xml</ConfigFile>
+            <Description>Generate and send emails with credit note information.</Description>
+            <LocalizedItems>
+                <item lang="FR">
+                    <DisplayName>Adaptateur d`e-mails relatifs aux notes de crédit</DisplayName>
+                    <Description>Générer et envoyer des e-mails avec des informations sur les notes de crédit.</Description>
+                </item>
+                <item lang="IT">
+                    <DisplayName>[IT] Credit Notes Email Adapter</DisplayName>
+                    <Description>[IT] Generate and send emails with credit note information.</Description>
+                </item>
+                <item lang="ES">
+                    <DisplayName>[ES] Credit Notes Email Adapter</DisplayName>
+                    <Description>[ES] Generate and send emails with credit note information.</Description>
+                </item>
+                <item lang="DE">
+                    <DisplayName>[DE] Credit Notes Email Adapter</DisplayName>
+                    <Description>[DE] Generate and send emails with credit note information.</Description>
+                </item>
+                <item lang="es-MX">
+                    <DisplayName>[es-MX] Credit Notes Email Adapter</DisplayName>
+                    <Description>[es-MX] Generate and send emails with credit note information.</Description>
+                </item>
+                <item lang="pt-BR">
+                    <DisplayName>Adaptador de email de notas de crédito</DisplayName>
+                    <Description>Gerar e enviar emails com informações de nota de crédito.</Description>
+                </item>
+                <item lang="en-GB">
+                    <DisplayName>Credit Notes Email Adapter</DisplayName>
+                    <Description>Generate and send emails with credit note information.</Description>
+                </item>
+                <item lang="JA">
+                    <DisplayName>[JA] Credit Notes Email Adapter</DisplayName>
+                    <Description>[JA] Generate and send emails with credit note information.</Description>
+                </item>
+            </LocalizedItems>
+            <RecurrencePattern>
+                <Daily>
+                    <Start>1/1/2010 12:00:00 AM</Start>
+                    <Interval>1</Interval>
+                    <Times>5:00 AM</Times>
+                </Daily>
+            </RecurrencePattern>
+        </Adapter>
+        <!--<Adapter>
+            <Name>SAFTDeliveryCreditNotesAdapter</Name>
+            <DisplayName>Send Credit Notes To Portuguese Authority Webservice</DisplayName>
+            <ClassID>MetraTech.Baseline.Adapters.RunEXE</ClassID>
+            <ConfigFile>SAFTDeliveryCreditNotesAdapter.xml</ConfigFile>
+            <Description>Send Credit Notes To Portuguese Authority Webservice</Description>
+            <LocalizedItems>
+                <item lang="FR">
+                    <DisplayName>Envoyer les notes de crédit Pour Autorité portugaise de Webservice</DisplayName>
+                    <Description>Envoyer les notes de crédit Pour Autorité portugaise de Webservice: .</Description>
+                </item>
+                <item lang="IT">
+                    <DisplayName>[IT] Send Credit Notes To Portuguese Authority Webservice</DisplayName>
+                    <Description>[IT] Send Credit Notes To Portuguese Authority Webservice: .</Description>
+                </item>
+                <item lang="ES">
+                    <DisplayName>[ES] Send Credit Notes To Portuguese Authority Webservice</DisplayName>
+                    <Description>[ES] Send Credit Notes To Portuguese Authority Webservice: .</Description>
+                </item>
+                <item lang="DE">
+                    <DisplayName>[DE] Send Credit Notes To Portuguese Authority Webservice</DisplayName>
+                    <Description>[DE] Send Credit Notes To Portuguese Authority Webservice: .</Description>
+                </item>
+                <item lang="es-MX">
+                    <DisplayName>[es-MX] Send Credit Notes To Portuguese Authority Webservice</DisplayName>
+                    <Description>[es-MX] Send Credit Notes To Portuguese Authority Webservice: .</Description>
+                </item>
+                <item lang="pt-BR">
+                    <DisplayName>Enviar Cédulas de Crédito Para Português Autoridade Webservice</DisplayName>
+                    <Description>Enviar Cédulas de Crédito Para Português Autoridade Webservice: .</Description>
+                </item>
+                <item lang="en-GB">
+                    <DisplayName>Send Credit Notes To Portuguese Authority Webservice</DisplayName>
+                    <Description>Send Credit Notes To Portuguese Authority Webservice: .</Description>
+                </item>
+                <item lang="JA">
+                    <DisplayName>[JA] Send Credit Notes To Portuguese Authority Webservice</DisplayName>
+                    <Description>[JA] Generate and send emails with credit note information.</Description>
+                </item>
+            </LocalizedItems>
+            <RecurrencePattern>
+                <Daily>
+                    <Start>1/1/2010 12:00:00 AM</Start>
+                    <Interval>1</Interval>
+                    <Times>5:00 AM</Times>
+                </Daily>
+            </RecurrencePattern>
+        </Adapter>-->
+        <Adapter>
+            <Name>ScheduledInvoices</Name>
+            <DisplayName>On-Demand Manual Invoice Adapter</DisplayName>
+            <ClassID>MetraTech.UsageServer.Adapters.ScheduledInvoiceAdapter,MetraTech.UsageServer.Adapters</ClassID>
+            <ConfigFile>ScheduledInvoiceAdapter.xml</ConfigFile>
+            <Description>Scheduled analog of Invoice adapter for On-Demand billing. Takes payer Id from RMP\Extensions\SystemConfig\config\UsageServer\ScheduledInvoiceAdapter.xml file</Description>
+            <LocalizedItems>
+                <item lang="FR">
+                    <DisplayName>[FR] On-Demand Manual Invoice Adapter</DisplayName>
+                    <Description>[FR] Scheduled analog of Invoice adapter for On-Demand billing. Takes payer Id from RMP\Extensions\SystemConfig\config\UsageServer\ScheduledInvoiceAdapter.xml file</Description>
+                </item>
+                <item lang="IT">
+                    <DisplayName>[IT] On-Demand Manual Invoice Adapter</DisplayName>
+                    <Description>[IT] Scheduled analog of Invoice adapter for On-Demand billing. Takes payer Id from RMP\Extensions\SystemConfig\config\UsageServer\ScheduledInvoiceAdapter.xml file</Description>
+                </item>
+                <item lang="ES">
+                    <DisplayName>[ES] On-Demand Manual Invoice Adapter</DisplayName>
+                    <Description>[ES] Scheduled analog of Invoice adapter for On-Demand billing. Takes payer Id from RMP\Extensions\SystemConfig\config\UsageServer\ScheduledInvoiceAdapter.xml file</Description>
+                </item>
+                <item lang="DE">
+                    <DisplayName>[DE] On-Demand Manual Invoice Adapter</DisplayName>
+                    <Description>[DE] Scheduled analog of Invoice adapter for On-Demand billing. Takes payer Id from RMP\Extensions\SystemConfig\config\UsageServer\ScheduledInvoiceAdapter.xml file</Description>
+                </item>
+                <item lang="es-MX">
+                    <DisplayName>[es-MX] On-Demand Manual Invoice Adapter</DisplayName>
+                    <Description>[es-MX] Scheduled analog of Invoice adapter for On-Demand billing. Takes payer Id from RMP\Extensions\SystemConfig\config\UsageServer\ScheduledInvoiceAdapter.xml file</Description>
+                </item>
+                <item lang="pt-BR">
+                    <DisplayName>[pt-BR] On-Demand Manual Invoice Adapter</DisplayName>
+                    <Description>[pt-BR] Scheduled analog of Invoice adapter for On-Demand billing. Takes payer Id from RMP\Extensions\SystemConfig\config\UsageServer\ScheduledInvoiceAdapter.xml file</Description>
+                </item>
+                <item lang="en-GB">
+                    <DisplayName>[en-GB] On-Demand Manual Invoice Adapter</DisplayName>
+                    <Description>[en-GB] Scheduled analog of Invoice adapter for On-Demand billing. Takes payer Id from RMP\Extensions\SystemConfig\config\UsageServer\ScheduledInvoiceAdapter.xml file</Description>
+                </item>
+                <item lang="JA">
+                    <DisplayName>[JA] On-Demand Manual Invoice Adapter</DisplayName>
+                    <Description>[JA] Scheduled analog of Invoice adapter for On-Demand billing. Takes payer Id from RMP\Extensions\SystemConfig\config\UsageServer\ScheduledInvoiceAdapter.xml file</Description>
+                </item>
+            </LocalizedItems>
+            <RecurrencePattern>
+                <Manual />
+            </RecurrencePattern>
+        </Adapter>
+      <!--<Adapter>
+            <Name>AnonymizeCustomerDataAdapter</Name>
+            <DisplayName>Anonymize Customer Data</DisplayName>
+            <ClassID>MetraTech.UsageServer.Adapters.AnonymizeCustomerDataAdapter,MetraTech.UsageServer.Adapters</ClassID>
+            <ConfigFile>AnonymizeCustomerData.xml</ConfigFile>
+            <Description><![CDATA[ GDPR - Anonymize Customer Data after specified period of time
+      ]]></Description>
+            <LocalizedItems>
+                <item lang="FR">
+                    <DisplayName>[FR] Anonymize Customer Data</DisplayName>
+                    <Description>[FR] Anonymizes Customer Data after specified period of time</Description>
+                </item>
+                <item lang="IT">
+                    <DisplayName>[IT] Anonymize Customer Data</DisplayName>
+                    <Description>[IT] Anonymizes Customer Data after specified period of time</Description>
+                </item>
+                <item lang="ES">
+                    <DisplayName>[ES] Anonymize Customer Data</DisplayName>
+                    <Description>[ES] Anonymizes Customer Data after specified period of time</Description>
+                </item>
+                <item lang="DE">
+                    <DisplayName>[DE] Anonymize Customer Data</DisplayName>
+                    <Description>[DE] Anonymizes Customer Data after specified period of time</Description>
+                </item>
+                <item lang="es-MX">
+                    <DisplayName>[es-MX] Anonymize Customer Data</DisplayName>
+                    <Description>[es-MX] Anonymizes Customer Data after specified period of time</Description>
+                </item>
+                <item lang="pt-BR">
+                    <DisplayName>[pt-BR] Anonymize Customer Data</DisplayName>
+                    <Description>[pt-BR] Anonymizes Customer Data after specified period of time</Description>
+                </item>
+                <item lang="en-GB">
+                    <DisplayName>[en-GB] Anonymize Customer Data</DisplayName>
+                    <Description>[en-GB] Anonymizes Customer Data after specified period of time</Description>
+                </item>
+                <item lang="JA">
+                    <DisplayName>[JA] Anonymize Customer Data</DisplayName>
+                    <Description>[JA] Anonymizes Customer Data after specified period of time</Description>
+                </item>
+            </LocalizedItems>
+            <RecurrencePattern>
+                <SystemCycle>Daily</SystemCycle>
+            </RecurrencePattern>
+        </Adapter> -->
+    </ScheduledAdapters>
+    <EndOfPeriodAdapters>
+        <Adapter>
+            <Name>DeletePendingNonStandardChargesAdapter</Name>
+            <DisplayName>Delete Pending NonStandard Charges Adapter</DisplayName>
+            <ClassID>MetraTech.UsageServer.Adapters.DeletePendingNonStandardChargesAdapter,MetraTech.UsageServer.Adapters</ClassID>
+            <ConfigFile>DeletePendingNonStandardChargesAdapter.xml</ConfigFile>
+            <Description>MetraTech standard adapter deleting unmanaged pending non standard charges</Description>
+            <LocalizedItems>
+                <item lang="FR">
+                    <DisplayName>Supprimer attente nonStandard Frais Adaptateur</DisplayName>
+                    <Description>MetraTech adaptateur standard suppression des charges non standard en suspens non gérés</Description>
+                </item>
+                <item lang="IT">
+                    <DisplayName>[IT] Delete Pending NonStandard Charges Adapter</DisplayName>
+                    <Description>[IT] MetraTech standard adapter deleting unmanaged pending non standard charges</Description>
+                </item>
+                <item lang="ES">
+                    <DisplayName>[ES] Delete Pending NonStandard Charges Adapter</DisplayName>
+                    <Description>[ES] MetraTech standard adapter deleting unmanaged pending non standard charges</Description>
+                </item>
+                <item lang="DE">
+                    <DisplayName>[DE] Delete Pending NonStandard Charges Adapter</DisplayName>
+                    <Description>[DE] MetraTech standard adapter deleting unmanaged pending non standard charges</Description>
+                </item>
+                <item lang="es-MX">
+                    <DisplayName>[es-MX] Delete Pending NonStandard Charges Adapter</DisplayName>
+                    <Description>[es-MX] MetraTech standard adapter deleting unmanaged pending non standard charges</Description>
+                </item>
+                <item lang="pt-BR">
+                    <DisplayName>Exclusão pendente Nonstandard Encargos Adapter</DisplayName>
+                    <Description>Adaptador padrão MetraTech exclusão não gerenciados pendentes despesas não-padrão</Description>
+                </item>
+                <item lang="en-GB">
+                    <DisplayName>[en-GB] Delete Pending NonStandard Charges Adapter</DisplayName>
+                    <Description>[en-GB] MetraTech standard adapter deleting unmanaged pending non standard charges</Description>
+                </item>
+                <item lang="JA">
+                    <DisplayName>[JA] Delete Pending NonStandard Charges Adapter</DisplayName>
+                    <Description>[JA] MetraTech standard adapter deleting unmanaged pending non standard charges</Description>
+                </item>
+            </LocalizedItems>
+            <RecurrencePattern>
+                <UsageCycleType>All</UsageCycleType>
+            </RecurrencePattern>
+            <Dependencies>
+                <!-- <DependsOnMe>Invoices</DependsOnMe> -->
+                <!-- <DependsOnMe>Phase1Checkpoint</DependsOnMe> -->
+            </Dependencies>
+        </Adapter>
+        <!-- Product Catalog Recurring Charges -->
+        <Adapter>
+            <Name>RecurringCharges</Name>
+            <DisplayName>Recurring Charge Adapter</DisplayName>
+            <ClassID>MetraTech.UsageServer.Adapters.StatefulRecurringChargeAdapter</ClassID>
+            <ConfigFile>StatefulRecurringCharges.xml</ConfigFile>
+            <Description>
+              MetraTech standard adapter to generate recurring charges from the
+              product catalog for this interval.
+            </Description>
+            <LocalizedItems>
+                <item lang="FR">
+                    <DisplayName>Adaptateur frais récurrents</DisplayName>
+                    <Description>MetraTech adaptateur standard pour générer des frais récurrents de la
+             catalogue de produits pour cet intervalle.</Description>
+                </item>
+                <item lang="IT">
+                    <DisplayName>[IT] Recurring Charge Adapter</DisplayName>
+                    <Description>[IT] MetraTech standard adapter to generate recurring charges from the
+              product catalog for this interval.</Description>
+                </item>
+                <item lang="ES">
+                    <DisplayName>[ES] Recurring Charge Adapter</DisplayName>
+                    <Description>[ES] MetraTech standard adapter to generate recurring charges from the
+              product catalog for this interval.</Description>
+                </item>
+                <item lang="DE">
+                    <DisplayName>[DE] Recurring Charge Adapter</DisplayName>
+                    <Description>[DE] MetraTech standard adapter to generate recurring charges from the
+              product catalog for this interval.</Description>
+                </item>
+                <item lang="es-MX">
+                    <DisplayName>[es-MX] Recurring Charge Adapter</DisplayName>
+                    <Description>[es-MX] MetraTech standard adapter to generate recurring charges from the
+              product catalog for this interval.</Description>
+                </item>
+                <item lang="pt-BR">
+                    <DisplayName>Adaptador de cobrança recorrente</DisplayName>
+                    <Description>Adaptador padrão MetraTech para gerar cargas de retorno do
+                                     catálogo de produtos para este intervalo.</Description>
+                </item>
+                <item lang="en-GB">
+                    <DisplayName>[en-GB] Recurring Charge Adapter</DisplayName>
+                    <Description>[en-GB] MetraTech standard adapter to generate recurring charges from the
+              product catalog for this interval.</Description>
+                </item>
+                <item lang="JA">
+                    <DisplayName>[JA] Recurring Charge Adapter</DisplayName>
+                    <Description>[JA] MetraTech standard adapter to generate recurring charges from the
+              product catalog for this interval.</Description>
+                </item>
+            </LocalizedItems>
+            <RecurrencePattern>
+                <UsageCycleType>All</UsageCycleType>
+            </RecurrencePattern>
+            <Dependencies>
+                <!-- <DependsOnMe>Invoices</DependsOnMe> -->
+                <!-- <DependsOnMe>Phase1Checkpoint</DependsOnMe> -->
+            </Dependencies>
+        </Adapter>
+        <!-- Product Catalog Aggregate Charges -->
+        <!-- <Adapter>
+            <Name>AggregateCharges</Name>
+            <DisplayName>Aggregate Charge Adapter</DisplayName>
+            <ClassID>Metratech.MTAggRateAdapter.1</ClassID>
+            <ConfigFile>AggregateCharges.xml</ConfigFile>
+            <Description>
+        MetraTech standard adapter to process aggregate rating for aggregate
+        rated priceable items for this interval. This is accomplished by
+        remetering usage date for these priceable items for this interval to
+        the second pass service along with the appropriate aggregate counters.
+      </Description>
+            <LocalizedItems>
+              <item lang="FR">
+                <DisplayName>[FR] Aggregate Charge Adapter</DisplayName>
+                <Description>[FR] 
+        MetraTech standard adapter to process aggregate rating for aggregate
+        rated priceable items for this interval. This is accomplished by
+        remetering usage date for these priceable items for this interval to
+        the second pass service along with the appropriate aggregate counters.</Description>
+              </item>
+              <item lang="IT">
+                <DisplayName>[IT] Aggregate Charge Adapter</DisplayName>
+                <Description>[IT] 
+        MetraTech standard adapter to process aggregate rating for aggregate
+        rated priceable items for this interval. This is accomplished by
+        remetering usage date for these priceable items for this interval to
+        the second pass service along with the appropriate aggregate counters.</Description>
+              </item>
+              <item lang="ES">
+                <DisplayName>[ES] Aggregate Charge Adapter</DisplayName>
+                <Description>[ES] 
+        MetraTech standard adapter to process aggregate rating for aggregate
+        rated priceable items for this interval. This is accomplished by
+        remetering usage date for these priceable items for this interval to
+        the second pass service along with the appropriate aggregate counters.</Description>
+              </item>
+              <item lang="DE">
+                <DisplayName>[DE] Aggregate Charge Adapter</DisplayName>
+                <Description>[DE] 
+        MetraTech standard adapter to process aggregate rating for aggregate
+        rated priceable items for this interval. This is accomplished by
+        remetering usage date for these priceable items for this interval to
+        the second pass service along with the appropriate aggregate counters.</Description>
+              </item>
+              <item lang="es-MX">
+                <DisplayName>[es-MX] Aggregate Charge Adapter</DisplayName>
+                <Description>[es-MX] 
+        MetraTech standard adapter to process aggregate rating for aggregate
+        rated priceable items for this interval. This is accomplished by
+        remetering usage date for these priceable items for this interval to
+        the second pass service along with the appropriate aggregate counters.</Description>
+              </item>
+              <item lang="pt-BR">
+                <DisplayName>[pt-BR] Aggregate Charge Adapter</DisplayName>
+                <Description>[pt-BR] 
+        MetraTech standard adapter to process aggregate rating for aggregate
+        rated priceable items for this interval. This is accomplished by
+        remetering usage date for these priceable items for this interval to
+        the second pass service along with the appropriate aggregate counters.</Description>
+              </item>
+              <item lang="en-GB">
+                <DisplayName>[en-GB] Aggregate Charge Adapter</DisplayName>
+                <Description>[en-GB] 
+        MetraTech standard adapter to process aggregate rating for aggregate
+        rated priceable items for this interval. This is accomplished by
+        remetering usage date for these priceable items for this interval to
+        the second pass service along with the appropriate aggregate counters.</Description>
+              </item>
+              <item lang="JA">
+                <DisplayName>[JA] Aggregate Charge Adapter</DisplayName>
+                <Description>[JA] 
+        MetraTech standard adapter to process aggregate rating for aggregate
+        rated priceable items for this interval. This is accomplished by
+        remetering usage date for these priceable items for this interval to
+        the second pass service along with the appropriate aggregate counters.</Description>
+              </item>	
+            </LocalizedItems>
+
+            <RecurrencePattern>
+                <UsageCycleType>All</UsageCycleType>
+            </RecurrencePattern>
+            <Dependencies>
+                <DependsOn>RecurringCharges</DependsOn>
+            </Dependencies>
+        </Adapter> -->
+        <!-- PayerChange -->
+        <Adapter>
+            <Name>PayerChange</Name>
+            <DisplayName>Payer Change Adapter</DisplayName>
+            <ClassID>MetraTech.AR.Adapters.PayerChangeAdapter,MetraTech.AR.Adapters</ClassID>
+            <ConfigFile>PayerChangeAdapter.xml</ConfigFile>
+            <Description>Move balances and unbilled charges for non-billable accounts to their payer. If AR is enabled the balances will be moved in AR as well.</Description>
+            <LocalizedItems>
+                <item lang="FR">
+                    <DisplayName>Payer Changer Adaptateur</DisplayName>
+                    <Description>Déplacez les soldes et les frais non facturés pour les comptes non-facturables à leur payeur. Si AR est activée, les soldes seront déplacés dans AR ainsi.</Description>
+                </item>
+                <item lang="IT">
+                    <DisplayName>[IT] Payer Change Adapter</DisplayName>
+                    <Description>[IT] Move balances and unbilled charges for non-billable accounts to their payer. If AR is enabled the balances will be moved in AR as well.</Description>
+                </item>
+                <item lang="ES">
+                    <DisplayName>[ES] Payer Change Adapter</DisplayName>
+                    <Description>[ES] Move balances and unbilled charges for non-billable accounts to their payer. If AR is enabled the balances will be moved in AR as well.</Description>
+                </item>
+                <item lang="DE">
+                    <DisplayName>[DE] Payer Change Adapter</DisplayName>
+                    <Description>[DE] Move balances and unbilled charges for non-billable accounts to their payer. If AR is enabled the balances will be moved in AR as well.</Description>
+                </item>
+                <item lang="es-MX">
+                    <DisplayName>[es-MX] Payer Change Adapter</DisplayName>
+                    <Description>[es-MX] Move balances and unbilled charges for non-billable accounts to their payer. If AR is enabled the balances will be moved in AR as well.</Description>
+                </item>
+                <item lang="pt-BR">
+                    <DisplayName>Mudança Adapter Payer</DisplayName>
+                    <Description>Déplacez les soldes et les frais non facturés pour les comptes non-facturables à leur payeur. Si AR est activée, les soldes seront déplacés dans AR ainsi.</Description>
+                </item>
+                <item lang="en-GB">
+                    <DisplayName>[en-GB] Payer Change Adapter</DisplayName>
+                    <Description>[en-GB] Move balances and unbilled charges for non-billable accounts to their payer. If AR is enabled the balances will be moved in AR as well.</Description>
+                </item>
+                <item lang="JA">
+                    <DisplayName>[JA] Payer Change Adapter</DisplayName>
+                    <Description>[JA] Move balances and unbilled charges for non-billable accounts to their payer. If AR is enabled the balances will be moved in AR as well.</Description>
+                </item>
+            </LocalizedItems>
+            <RecurrencePattern>
+                <UsageCycleType>All</UsageCycleType>
+            </RecurrencePattern>
+            <Dependencies>
+                <!-- <DependsOnMe>Phase1Checkpoint</DependsOnMe> -->
+            </Dependencies>
+        </Adapter>
+        <Checkpoint>
+            <Name>Phase1Checkpoint</Name>
+            <DisplayName>Phase 1 Checkpoint</DisplayName>
+            <RecurrencePattern>
+                <UsageCycleType>All</UsageCycleType>
+            </RecurrencePattern>
+            <Dependencies>
+                <!-- <DependsOn>PayerChange</DependsOn> -->
+            </Dependencies>
+            <Description>This is a example checkpoint in the End Of Period processing. Processing will stop at this point until the checkpoint is manually completed. Currently this allows verfication of the processing of usage that has happened before invoices are generated.</Description>
+            <LocalizedItems>
+                <item lang="FR">
+                    <DisplayName>Phase 1 Checkpoint</DisplayName>
+                    <Description>Ce est un exemple poste de contrôle à la fin du traitement période. Le traitement se arrêter à ce point jusqu’à ce que le point de contrôle est effectuée manuellement. Actuellement cela permet verfication du traitement de l’usage qui se est passé avant que les factures sont générées.</Description>
+                </item>
+                <item lang="IT">
+                    <DisplayName>[IT] Phase 1 Checkpoint</DisplayName>
+                    <Description>[IT] This is a example checkpoint in the End Of Period processing. Processing will stop at this point until the checkpoint is manually completed. Currently this allows verfication of the processing of usage that has happened before invoices are generated.</Description>
+                </item>
+                <item lang="ES">
+                    <DisplayName>[ES] Phase 1 Checkpoint</DisplayName>
+                    <Description>[ES] This is a example checkpoint in the End Of Period processing. Processing will stop at this point until the checkpoint is manually completed. Currently this allows verfication of the processing of usage that has happened before invoices are generated.</Description>
+                </item>
+                <item lang="DE">
+                    <DisplayName>[DE] Phase 1 Checkpoint</DisplayName>
+                    <Description>[DE] This is a example checkpoint in the End Of Period processing. Processing will stop at this point until the checkpoint is manually completed. Currently this allows verfication of the processing of usage that has happened before invoices are generated.</Description>
+                </item>
+                <item lang="es-MX">
+                    <DisplayName>[es-MX] Phase 1 Checkpoint</DisplayName>
+                    <Description>[es-MX] This is a example checkpoint in the End Of Period processing. Processing will stop at this point until the checkpoint is manually completed. Currently this allows verfication of the processing of usage that has happened before invoices are generated.</Description>
+                </item>
+                <item lang="pt-BR">
+                    <DisplayName>Fase 1 Checkpoint</DisplayName>
+                    <Description>Este é um exemplo do ponto de verificação no final do processamento Período. Processing vai parar neste ponto até o ponto de verificação for concluída manualmente. Atualmente esta permite Verificação das da transformação de uso que já aconteceu antes faturas são gerados.</Description>
+                </item>
+                <item lang="en-GB">
+                    <DisplayName>[en-GB] Phase 1 Checkpoint</DisplayName>
+                    <Description>[en-GB] This is a example checkpoint in the End Of Period processing. Processing will stop at this point until the checkpoint is manually completed. Currently this allows verfication of the processing of usage that has happened before invoices are generated.</Description>
+                </item>
+                <item lang="JA">
+                    <DisplayName>[JA] Phase 1 Checkpoint</DisplayName>
+                    <Description>[JA] This is a example checkpoint in the End Of Period processing. Processing will stop at this point until the checkpoint is manually completed. Currently this allows verfication of the processing of usage that has happened before invoices are generated.</Description>
+                </item>
+            </LocalizedItems>
+        </Checkpoint>
+        <!-- Materialized Views EOP adapter
+	<Adapter>
+      <Name>MaterializedViewAdapterEOP</Name>
+  	  <DisplayName>Populate Materialized Views (EOP)</DisplayName>
+	  <ClassID>MetraTech.UsageServer.Adapters.MaterializedViewAdapter,MetraTech.UsageServer.Adapters</ClassID>
+      <Description>
+        <![CDATA[
+		This adapter is responsible for populating Materialized Views configured in DEFERRED mode
+        ]]>
+      </Description>
+      <LocalizedItems>
+        <item lang="FR">
+          <DisplayName>[FR] Populate Materialized Views (EOP)</DisplayName>
+          <Description>[FR] 
+        <![CDATA[
+		This adapter is responsible for populating Materialized Views configured in DEFERRED mode
+        ]]></Description>
+        </item>
+        <item lang="IT">
+          <DisplayName>[IT] Populate Materialized Views (EOP)</DisplayName>
+          <Description>[IT] 
+        <![CDATA[
+		This adapter is responsible for populating Materialized Views configured in DEFERRED mode
+        ]]></Description>
+        </item>
+        <item lang="ES">
+          <DisplayName>[ES] Populate Materialized Views (EOP)</DisplayName>
+          <Description>[ES] 
+        <![CDATA[
+		This adapter is responsible for populating Materialized Views configured in DEFERRED mode
+        ]]></Description>
+        </item>
+        <item lang="DE">
+          <DisplayName>[DE] Populate Materialized Views (EOP)</DisplayName>
+          <Description>[DE] 
+        <![CDATA[
+		This adapter is responsible for populating Materialized Views configured in DEFERRED mode
+        ]]></Description>
+        </item>
+        <item lang="es-MX">
+          <DisplayName>[es-MX] Populate Materialized Views (EOP)</DisplayName>
+          <Description>[es-MX] 
+        <![CDATA[
+		This adapter is responsible for populating Materialized Views configured in DEFERRED mode
+        ]]></Description>
+        </item>
+        <item lang="pt-BR">
+          <DisplayName>[pt-BR] Populate Materialized Views (EOP)</DisplayName>
+          <Description>[pt-BR] 
+        <![CDATA[
+		This adapter is responsible for populating Materialized Views configured in DEFERRED mode
+        ]]></Description>
+        </item>
+        <item lang="en-GB">
+          <DisplayName>[en-GB] Populate Materialized Views (EOP)</DisplayName>
+          <Description>[en-GB] 
+        <![CDATA[
+		This adapter is responsible for populating Materialized Views configured in DEFERRED mode
+        ]]></Description>
+        </item>
+        <item lang="JA">
+          <DisplayName>[JA] Populate Materialized Views (EOP)</DisplayName>
+          <Description>[JA] 
+        <![CDATA[
+		This adapter is responsible for populating Materialized Views configured in DEFERRED mode
+        ]]></Description>
+        </item>	
+      </LocalizedItems>
+      <RecurrencePattern>
+         <UsageCycleType>All</UsageCycleType>
+      </RecurrencePattern>
+      <Dependencies>
+        <DependsOn>Phase1Checkpoint</DependsOn>
+      </Dependencies>
+    </Adapter>
+-->
+        <!-- Invoices -->
+        <Adapter>
+            <Name>Invoices</Name>
+            <DisplayName>Invoice Adapter</DisplayName>
+            <ClassID>MetraTech.UsageServer.Adapters.InvoiceAdapter,MetraTech.UsageServer.Adapters</ClassID>
+            <ConfigFile>CreateInvoices.xml</ConfigFile>
+            <Description>MetraTech standard adapter for generating invoices.</Description>
+            <LocalizedItems>
+                <item lang="FR">
+                    <DisplayName>Adaptateur facture</DisplayName>
+                    <Description>MetraTech adaptateur standard pour générer des factures.</Description>
+                </item>
+                <item lang="IT">
+                    <DisplayName>[IT] Invoice Adapter</DisplayName>
+                    <Description>[IT] MetraTech standard adapter for generating invoices.</Description>
+                </item>
+                <item lang="ES">
+                    <DisplayName>[ES] Invoice Adapter</DisplayName>
+                    <Description>[ES] MetraTech standard adapter for generating invoices.</Description>
+                </item>
+                <item lang="DE">
+                    <DisplayName>[DE] Invoice Adapter</DisplayName>
+                    <Description>[DE] MetraTech standard adapter for generating invoices.</Description>
+                </item>
+                <item lang="es-MX">
+                    <DisplayName>[es-MX] Invoice Adapter</DisplayName>
+                    <Description>[es-MX] MetraTech standard adapter for generating invoices.</Description>
+                </item>
+                <item lang="pt-BR">
+                    <DisplayName>Adapter Invoice</DisplayName>
+                    <Description>Adaptador padrão MetraTech para gerar faturas.</Description>
+                </item>
+                <item lang="en-GB">
+                    <DisplayName>[en-GB] Invoice Adapter</DisplayName>
+                    <Description>[en-GB] MetraTech standard adapter for generating invoices.</Description>
+                </item>
+                <item lang="JA">
+                    <DisplayName>[JA] Invoice Adapter</DisplayName>
+                    <Description>[JA] MetraTech standard adapter for generating invoices.</Description>
+                </item>
+            </LocalizedItems>
+            <RecurrencePattern>
+                <UsageCycleType>All</UsageCycleType>
+            </RecurrencePattern>
+            <Dependencies>
+                <!-- When MaterializedView support is enabled comment our Phase1Checkpoint
+		 dependency and uncomment MaterializedViewAdapterEOP dependency -->
+                <!--		<DependsOn>MaterializedViewAdapterEOP</DependsOn> -->
+                <DependsOn>Phase1Checkpoint</DependsOn>
+            </Dependencies>
+        </Adapter>
+        <Adapter>
+            <Name>EmailAdapter</Name>
+            <DisplayName>Email Adapter</DisplayName>
+            <ClassID>MetraTech.UsageServer.Adapters.EmailAdapter,MetraTech.UsageServer.Adapters</ClassID>
+            <ConfigFile>EmailAdapterConfig.xml</ConfigFile>
+            <Description>Adapter to send emails</Description>
+            <LocalizedItems>
+                <item lang="FR">
+                    <DisplayName>Email adaptateur</DisplayName>
+                    <Description>Adaptateur pour envoyer des emails</Description>
+                </item>
+                <item lang="IT">
+                    <DisplayName>[IT] Email Adapter</DisplayName>
+                    <Description>[IT] Adapter to send emails</Description>
+                </item>
+                <item lang="ES">
+                    <DisplayName>[ES] Email Adapter</DisplayName>
+                    <Description>[ES] Adapter to send emails</Description>
+                </item>
+                <item lang="DE">
+                    <DisplayName>[DE] Email Adapter</DisplayName>
+                    <Description>[DE] Adapter to send emails</Description>
+                </item>
+                <item lang="es-MX">
+                    <DisplayName>[es-MX] Email Adapter</DisplayName>
+                    <Description>[es-MX] Adapter to send emails</Description>
+                </item>
+                <item lang="pt-BR">
+                    <DisplayName>Adapter Email</DisplayName>
+                    <Description>Adaptador para enviar e-mails</Description>
+                </item>
+                <item lang="en-GB">
+                    <DisplayName>[en-GB] Email Adapter</DisplayName>
+                    <Description>[en-GB] Adapter to send emails</Description>
+                </item>
+                <item lang="JA">
+                    <DisplayName>[JA] Email Adapter</DisplayName>
+                    <Description>[JA] Adapter to send emails</Description>
+                </item>
+            </LocalizedItems>
+            <RecurrencePattern>
+                <UsageCycleType>All</UsageCycleType>
+            </RecurrencePattern>
+            <Dependencies>
+                <DependsOn>Invoices</DependsOn>
+                <!-- <DependsOn>InvoiceSignatureAdapter</DependsOn>-->
+            </Dependencies>
+        </Adapter>
+        <Adapter>
+            <Name>AccountStateAdapterEOP</Name>
+            <DisplayName>Generic Change Account State Adapter (End-of-period)</DisplayName>
+            <ClassID>MetraTech.UsageServer.Adapters.AccountStateAdapter,MetraTech.UsageServer.Adapters</ClassID>
+            <ConfigFile>AccountStateAdapter.xml</ConfigFile>
+            <ActivationDate>10/1/2002 00:00:00</ActivationDate>
+            <Description>
+       	This adapter is also responsible for changing states of accounts from 
+       	pending final bill to closed. The rules are:
+        &lt;BR&gt;Pending Final Bill To Closed: 
+        This operation is interval based, i.e. it behaves like an EOP
+        adapter. The transition happens when the hard closed has reached on
+        that specific interval.
+        </Description>
+            <LocalizedItems>
+                <item lang="FR">
+                    <DisplayName>Générique Change compte Adaptateur État (fin de période)</DisplayName>
+                    <Description>Cet adaptateur est également responsable de la modification des états de comptes à partir de
+        attendant facture finale à fermé. Les règles sont les suivantes:
+         &lt;BR&gt; Attente final du projet de loi Pour Fermé:
+         Cette opération est basée intervalle, ce est à dire qu’il se comporte comme un EOP
+         adaptateur. La transition se produit lorsque le disque a atteint fermé sur
+         cet intervalle spécifique.
+        </Description>
+                </item>
+                <item lang="IT">
+                    <DisplayName>[IT] Generic Change Account State Adapter (End-of-period)</DisplayName>
+                    <Description>[IT] 
+       	This adapter is also responsible for changing states of accounts from 
+       	pending final bill to closed. The rules are:
+        &lt;BR&gt;Pending Final Bill To Closed: 
+        This operation is interval based, i.e. it behaves like an EOP
+        adapter. The transition happens when the hard closed has reached on
+        that specific interval.
+        </Description>
+                </item>
+                <item lang="ES">
+                    <DisplayName>[ES] Generic Change Account State Adapter (End-of-period)</DisplayName>
+                    <Description>[ES] 
+       	This adapter is also responsible for changing states of accounts from 
+       	pending final bill to closed. The rules are:
+        &lt;BR&gt;Pending Final Bill To Closed: 
+        This operation is interval based, i.e. it behaves like an EOP
+        adapter. The transition happens when the hard closed has reached on
+        that specific interval.
+        </Description>
+                </item>
+                <item lang="DE">
+                    <DisplayName>[DE] Generic Change Account State Adapter (End-of-period)</DisplayName>
+                    <Description>[DE] 
+       	This adapter is also responsible for changing states of accounts from 
+       	pending final bill to closed. The rules are:
+        &lt;BR&gt;Pending Final Bill To Closed: 
+        This operation is interval based, i.e. it behaves like an EOP
+        adapter. The transition happens when the hard closed has reached on
+        that specific interval.
+        </Description>
+                </item>
+                <item lang="es-MX">
+                    <DisplayName>[es-MX] Generic Change Account State Adapter (End-of-period)</DisplayName>
+                    <Description>[es-MX] 
+       	This adapter is also responsible for changing states of accounts from 
+       	pending final bill to closed. The rules are:
+        &lt;BR&gt;Pending Final Bill To Closed: 
+        This operation is interval based, i.e. it behaves like an EOP
+        adapter. The transition happens when the hard closed has reached on
+        that specific interval.
+        </Description>
+                </item>
+                <item lang="pt-BR">
+                    <DisplayName>Adapter Estado Alterar Conta Genéricos (End-of-período)</DisplayName>
+                    <Description>
+       	Este adaptador também é responsável por mudar estados de contas de
+        pendente conta final para fechado. As regras são:
+         &lt;BR&gt; Pending Bill final para Fechado:
+         Esta operação é baseada intervalo, ou seja, ele se comporta como um EOP
+         adaptador. A transição acontece quando o disco fechado atingiu em
+         esse intervalo específico.
+        </Description>
+                </item>
+                <item lang="en-GB">
+                    <DisplayName>[en-GB] Generic Change Account State Adapter (End-of-period)</DisplayName>
+                    <Description>[en-GB] 
+       	This adapter is also responsible for changing states of accounts from 
+       	pending final bill to closed. The rules are:
+        &lt;BR&gt;Pending Final Bill To Closed: 
+        This operation is interval based, i.e. it behaves like an EOP
+        adapter. The transition happens when the hard closed has reached on
+        that specific interval.
+        </Description>
+                </item>
+                <item lang="JA">
+                    <DisplayName>[JA] Generic Change Account State Adapter (End-of-period)</DisplayName>
+                    <Description>[JA] 
+       	This adapter is also responsible for changing states of accounts from 
+       	pending final bill to closed. The rules are:
+        &lt;BR&gt;Pending Final Bill To Closed: 
+        This operation is interval based, i.e. it behaves like an EOP
+        adapter. The transition happens when the hard closed has reached on
+        that specific interval.
+        </Description>
+                </item>
+            </LocalizedItems>
+            <RecurrencePattern>
+                <UsageCycleType>All</UsageCycleType>
+            </RecurrencePattern>
+            <Dependencies>
+                <DependsOn>Invoices</DependsOn>
+            </Dependencies>
+        </Adapter>
+        <Adapter>
+            <Name>DeletePendingAdjustments</Name>
+            <DisplayName>Delete Pending Adjustments Adapter</DisplayName>
+            <ClassID>MetraTech.Adjustments.Adapters.DeleteAdjustments,MetraTech.Adjustments.Adapters</ClassID>
+            <ConfigFile>DeleteAdjustments.xml</ConfigFile>
+            <Description>MetraTech standard adapter deleting pending adjustments</Description>
+            <LocalizedItems>
+                <item lang="FR">
+                    <DisplayName>Supprimer Ajustements attente Adaptateur</DisplayName>
+                    <Description>MetraTech adaptateur standard suppression ajustements en attente</Description>
+                </item>
+                <item lang="IT">
+                    <DisplayName>[IT] Delete Pending Adjustments Adapter</DisplayName>
+                    <Description>[IT] MetraTech standard adapter deleting pending adjustments</Description>
+                </item>
+                <item lang="ES">
+                    <DisplayName>[ES] Delete Pending Adjustments Adapter</DisplayName>
+                    <Description>[ES] MetraTech standard adapter deleting pending adjustments</Description>
+                </item>
+                <item lang="DE">
+                    <DisplayName>[DE] Delete Pending Adjustments Adapter</DisplayName>
+                    <Description>[DE] MetraTech standard adapter deleting pending adjustments</Description>
+                </item>
+                <item lang="es-MX">
+                    <DisplayName>[es-MX] Delete Pending Adjustments Adapter</DisplayName>
+                    <Description>[es-MX] MetraTech standard adapter deleting pending adjustments</Description>
+                </item>
+                <item lang="pt-BR">
+                    <DisplayName>Exclusão pendente Ajustes Adapter</DisplayName>
+                    <Description>MetraTech adaptateur standard suppression ajustements en attente</Description>
+                </item>
+                <item lang="en-GB">
+                    <DisplayName>[en-GB] Delete Pending Adjustments Adapter</DisplayName>
+                    <Description>[en-GB] MetraTech standard adapter deleting pending adjustments</Description>
+                </item>
+                <item lang="JA">
+                    <DisplayName>[JA] Delete Pending Adjustments Adapter</DisplayName>
+                    <Description>[JA] MetraTech standard adapter deleting pending adjustments</Description>
+                </item>
+            </LocalizedItems>
+            <RecurrencePattern>
+                <UsageCycleType>All</UsageCycleType>
+            </RecurrencePattern>
+            <Dependencies>
+                <!-- <DependsOnMe>Invoices</DependsOnMe>  -->
+                <!-- <DependsOnMe>Phase1Checkpoint</DependsOnMe>  -->
+            </Dependencies>
+        </Adapter>
+        <Checkpoint>
+            <Name>HardCloseCheckpoint</Name>
+            <DisplayName>Hard Close Checkpoint</DisplayName>
+            <RecurrencePattern>
+                <UsageCycleType>All</UsageCycleType>
+            </RecurrencePattern>
+            <Dependencies>
+                <DependsOn>AllEOP</DependsOn>
+            </Dependencies>
+            <Description>This is a final manual checkpoint before the interval is hard closed. Processing of the interval can be verified before it is closed. If this checkpoint is removed, the interval will automatically be «hard closed» after successful processing of the interval.</Description>
+            <LocalizedItems>
+                <item lang="FR">
+                    <DisplayName>Disque Fermer Checkpoint</DisplayName>
+                    <Description>Ce est un point de contrôle manuel final avant la pause est difficile fermé. Traitement de l’intervalle peut être vérifiée avant la fermeture. Si ce point de contrôle est retiré, l’intervalle sera automatiquement «dur fermé» après le traitement réussi de l’intervalle.</Description>
+                </item>
+                <item lang="IT">
+                    <DisplayName>[IT] Hard Close Checkpoint</DisplayName>
+                    <Description>[IT] This is a final manual checkpoint before the interval is hard closed. Processing of the interval can be verified before it is closed. If this checkpoint is removed, the interval will automatically be «hard closed» after successful processing of the interval.</Description>
+                </item>
+                <item lang="ES">
+                    <DisplayName>[ES] Hard Close Checkpoint</DisplayName>
+                    <Description>[ES] This is a final manual checkpoint before the interval is hard closed. Processing of the interval can be verified before it is closed. If this checkpoint is removed, the interval will automatically be «hard closed» after successful processing of the interval.</Description>
+                </item>
+                <item lang="DE">
+                    <DisplayName>[DE] Hard Close Checkpoint</DisplayName>
+                    <Description>[DE] This is a final manual checkpoint before the interval is hard closed. Processing of the interval can be verified before it is closed. If this checkpoint is removed, the interval will automatically be «hard closed» after successful processing of the interval.</Description>
+                </item>
+                <item lang="es-MX">
+                    <DisplayName>[es-MX] Hard Close Checkpoint</DisplayName>
+                    <Description>[es-MX] This is a final manual checkpoint before the interval is hard closed. Processing of the interval can be verified before it is closed. If this checkpoint is removed, the interval will automatically be «hard closed» after successful processing of the interval.</Description>
+                </item>
+                <item lang="pt-BR">
+                    <DisplayName>Difícil Fechar Checkpoint</DisplayName>
+                    <Description>Este é um ponto de verificação manual do final antes do intervalo é difícil fechado. Processamento do intervalo pode ser verificada antes de ser fechado. Se o ponto de verificação é removida, o intervalo será automaticamente «duro fechado» após o processamento bem sucedido do intervalo.</Description>
+                </item>
+                <item lang="en-GB">
+                    <DisplayName>[en-GB] Hard Close Checkpoint</DisplayName>
+                    <Description>[en-GB] This is a final manual checkpoint before the interval is hard closed. Processing of the interval can be verified before it is closed. If this checkpoint is removed, the interval will automatically be «hard closed» after successful processing of the interval.</Description>
+                </item>
+                <item lang="JA">
+                    <DisplayName>[JA] Hard Close Checkpoint</DisplayName>
+                    <Description>[JA] This is a final manual checkpoint before the interval is hard closed. Processing of the interval can be verified before it is closed. If this checkpoint is removed, the interval will automatically be «hard closed» after successful processing of the interval.</Description>
+                </item>
+            </LocalizedItems>
+        </Checkpoint>
+        <!--<Checkpoint>
+            <Name>InvoiceSignatureCheckpoint</Name>
+            <DisplayName>Invoice Signature Checkpoint</DisplayName>
+            <Description>Checkpoint before signing invoices. Once invoices are signed it is best to not back out to before this checkpoint because of potential gaps it could cause in invoice signatures across other intervals that are also in EOP at the same time as this interval.</Description>
+            <RecurrencePattern>
+                <UsageCycleType>All</UsageCycleType>
+            </RecurrencePattern>
+            <LocalizedItems>
+                <item lang="FR">
+                    <DisplayName>[FR] Invoice Signature Checkpoint</DisplayName>
+                    <Description>[FR] Checkpoint before signing invoices. Once invoices are signed it is best to not back out to before this checkpoint because of potential gaps it could cause in invoice signatures across other intervals that are also in EOP at the same time as this interval.</Description>
+                </item>
+                <item lang="IT">
+                    <DisplayName>[IT] Invoice Signature Checkpoint</DisplayName>
+                    <Description>[IT] Checkpoint before signing invoices. Once invoices are signed it is best to not back out to before this checkpoint because of potential gaps it could cause in invoice signatures across other intervals that are also in EOP at the same time as this interval.</Description>
+                </item>
+                <item lang="ES">
+                    <DisplayName>[ES] Invoice Signature Checkpoint</DisplayName>
+                    <Description>[ES] Checkpoint before signing invoices. Once invoices are signed it is best to not back out to before this checkpoint because of potential gaps it could cause in invoice signatures across other intervals that are also in EOP at the same time as this interval.</Description>
+                </item>
+                <item lang="DE">
+                    <DisplayName>[DE] Invoice Signature Checkpoint</DisplayName>
+                    <Description>[DE] Checkpoint before signing invoices. Once invoices are signed it is best to not back out to before this checkpoint because of potential gaps it could cause in invoice signatures across other intervals that are also in EOP at the same time as this interval.</Description>
+                </item>
+                <item lang="es-MX">
+                    <DisplayName>[es-MX] Invoice Signature Checkpoint</DisplayName>
+                    <Description>[es-MX] Checkpoint before signing invoices. Once invoices are signed it is best to not back out to before this checkpoint because of potential gaps it could cause in invoice signatures across other intervals that are also in EOP at the same time as this interval.</Description>
+                </item>
+                <item lang="pt-BR">
+                    <DisplayName>[pt-BR] Invoice Signature Checkpoint</DisplayName>
+                    <Description>[pt-BR] Checkpoint before signing invoices. Once invoices are signed it is best to not back out to before this checkpoint because of potential gaps it could cause in invoice signatures across other intervals that are also in EOP at the same time as this interval.</Description>
+                </item>
+                <item lang="en-GB">
+                    <DisplayName>Invoice Signature Checkpoint</DisplayName>
+                    <Description>Checkpoint before signing invoices. Once invoices are signed it is best to not back out to before this checkpoint because of potential gaps it could cause in invoice signatures across other intervals that are also in EOP at the same time as this interval.</Description>
+                </item>
+                <item lang="JA">
+                    <DisplayName>[JA] Invoice Signature Checkpoint</DisplayName>
+                    <Description>[JA] Checkpoint before signing invoices. Once invoices are signed it is best to not back out to before this checkpoint because of potential gaps it could cause in invoice signatures across other intervals that are also in EOP at the same time as this interval.</Description>
+                </item>
+            </LocalizedItems>
+            <Dependencies>-->
+                <!-- <DependsOn>Invoices</DependsOn> -->
+            <!--</Dependencies>
+        </Checkpoint>-->
+        <!--<Adapter>
+            <Name>InvoiceSignatureAdapter</Name>
+            <DisplayName>Portuguese Invoice Signature Adapter</DisplayName>
+            <ClassID>MetraTech.UsageServer.Adapters.InvoiceSignatureAdapter,MetraTech.UsageServer.Adapters</ClassID>
+            <ConfigFile>InvoiceSignatureAdapterConfig.xml</ConfigFile>
+            <Description>Generates the electronic signature based on public keys and invoice data appearing in MetraView and subscriber reports.</Description>
+            <LocalizedItems>
+                <item lang="FR">
+                    <DisplayName>[FR] Invoice Signature Adapter</DisplayName>
+                    <Description>[FR] Generates the electronic signature based on public keys and invoice data appearing in MetraView and subscriber reports.</Description>
+                </item>
+                <item lang="IT">
+                    <DisplayName>[IT] Invoice Signature Adapter</DisplayName>
+                    <Description>[IT] Generates the electronic signature based on public keys and invoice data appearing in MetraView and subscriber reports.</Description>
+                </item>
+                <item lang="ES">
+                    <DisplayName>[ES] Invoice Signature Adapter</DisplayName>
+                    <Description>[ES] Generates the electronic signature based on public keys and invoice data appearing in MetraView and subscriber reports.</Description>
+                </item>
+                <item lang="DE">
+                    <DisplayName>[DE] Invoice Signature Adapter</DisplayName>
+                    <Description>[DE] Generates the electronic signature based on public keys and invoice data appearing in MetraView and subscriber reports.</Description>
+                </item>
+                <item lang="es-MX">
+                    <DisplayName>[es-MX] Invoice Signature Adapter</DisplayName>
+                    <Description>[es-MX] Generates the electronic signature based on public keys and invoice data appearing in MetraView and subscriber reports.</Description>
+                </item>
+                <item lang="pt-BR">
+                    <DisplayName>[pt-BR] Invoice Signature Adapter</DisplayName>
+                    <Description>[pt-BR] Generates the electronic signature based on public keys and invoice data appearing in MetraView and subscriber reports.</Description>
+                </item>
+                <item lang="en-GB">
+                    <DisplayName>Invoice Signature Adapter</DisplayName>
+                    <Description>CGenerates the electronic signature based on public keys and invoice data appearing in MetraView and subscriber reports.</Description>
+                </item>
+                <item lang="JA">
+                    <DisplayName>[JA] Invoice Signature Adapter</DisplayName>
+                    <Description>[JA] Generates the electronic signature based on public keys and invoice data appearing in MetraView and subscriber reports.</Description>
+                </item>
+            </LocalizedItems>
+            <RecurrencePattern>
+                <UsageCycleType>All</UsageCycleType>
+            </RecurrencePattern>
+            <Dependencies>
+                <DependsOn>InvoiceSignatureCheckpoint</DependsOn>
+            </Dependencies>
+        </Adapter> -->
+    </EndOfPeriodAdapters>
+</xmlconfig>

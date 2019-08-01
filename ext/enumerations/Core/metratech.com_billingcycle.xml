@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<mt_config>
+  <enum_spaces>
+    <enum_space name="metratech.com/billingcycle">
+      <description>billing cycle namespace</description>
+      <enums>
+        <enum name="UsageCycleType">
+          <description>The billing cycle type</description>
+          <entries>
+            <entry name="Monthly">                <value>1</value></entry>
+            
+            <!-- Removed in 3.0 entry name="On-demand"><value>2</value></entry -->
+
+            <entry name="Daily">                  <value>3</value></entry>
+            <entry name="Weekly">                 <value>4</value></entry>
+            <entry name="Bi-weekly">              <value>5</value></entry>
+            <entry name="Semi-monthly">           <value>6</value></entry>
+            <entry name="Quarterly">              <value>7</value></entry>
+            <entry name="Annually">               <value>8</value></entry>
+            <entry name="Semi-Annually">           <value>9</value></entry>
+          </entries>
+        </enum>
+      </enums>
+    </enum_space>
+  </enum_spaces>
+</mt_config>

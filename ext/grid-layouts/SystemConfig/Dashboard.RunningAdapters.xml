@@ -1,0 +1,330 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<GridLayout xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <Name>Dashboard.RunningAdapters</Name>
+    <Title>
+        <Value>Running Adapters</Value>
+    </Title>
+    <Exportable>false</Exportable>
+    <Height>100</Height>
+    <Width>299</Width>
+    <Expandable>false</Expandable>
+    <Buttons>None</Buttons>
+    <DataSourceURL>~/AjaxServices/QueryService.aspx</DataSourceURL>
+    <MultiSelect>false</MultiSelect>
+    <SelectionModel>Standard</SelectionModel>
+    <TotalProperty>TotalRows</TotalProperty>
+    <RootElement>Items</RootElement>
+    <PageSize>5</PageSize>
+    <Description>Running Adapters </Description>
+    <ExpansionCssClass />
+    <ShowFilterPanel>false</ShowFilterPanel>
+    <FilterInputWidth>100</FilterInputWidth>
+    <FilterLabelWidth>75</FilterLabelWidth>
+    <FilterColumnWidth>100</FilterColumnWidth>
+    <ShowTopBar>false</ShowTopBar>
+    <ShowBottomBar>false</ShowBottomBar>
+    <ShowGridFrame>false</ShowGridFrame>
+    <ShowGridHeader>false</ShowGridHeader>
+    <ShowColumnHeaders>true</ShowColumnHeaders>
+    <NoRecordsText>
+        <LocalizationTag>NO_RUNNING_ADAPTERS_TEXT</LocalizationTag>
+        <ResourceClassKey>MetraControl/ControlCenter/App_LocalResources/OperationsDashboard.aspx</ResourceClassKey>
+    </NoRecordsText>
+    <FilterPanelLayout>SingleColumn</FilterPanelLayout>
+    <FilterPanelCollapsed>false</FilterPanelCollapsed>
+    <EnableColumnConfig>false</EnableColumnConfig>
+    <EnableFilterConfig>false</EnableFilterConfig>
+    <Resizeable>false</Resizeable>
+    <ButtonAlignment>Center</ButtonAlignment>
+    <DefaultSortField />
+    <DefaultSortDirection>Ascending</DefaultSortDirection>
+    <DisplayCount>false</DisplayCount>
+    <SearchOnLoad>true</SearchOnLoad>
+    <CustomImplementationFilePath />
+    <CustomOverrideJavascriptIncludes />
+    <SubGrid />
+    <!--URLParameter>
+            <ParameterName>q</ParameterName>
+            <SQLQuery>
+                <QueryName>__GET_RUNNING_ADAPTERS__</QueryName>
+                <QueryDir></QueryDir>
+                <QueryParameters></QueryParameters>
+                <QueryColumns>
+                    <QueryColumn>
+                        <Name>Name</Name>
+                        <Type>System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</Type>
+                    </QueryColumn>
+                    <QueryColumn>
+                        <Name>Start</Name>
+                        <Type>System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</Type>
+                    </QueryColumn>
+                    <QueryColumn>
+                        <Name>Status</Name>
+                        <Type>System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</Type>
+                    </QueryColumn>
+                </QueryColumns>
+            </SQLQuery>
+        </URLParameter>
+    </URLParameters-->
+    <!--URLParameters>
+        <URLParameter>
+            <ParameterName>q</ParameterName>
+            <SQLQuery>
+                <QueryName>__GET_RUNNING_ADAPTERS__</QueryName>
+                <QueryDir></QueryDir>
+                <QueryParameters></QueryParameters>
+                <QueryColumns>
+                    <QueryColumn>
+                        <Name>id_instance</Name>
+                        <Type>System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</Type>
+                    </QueryColumn>
+                    <QueryColumn>
+                        <Name>id_billgroup</Name>
+                        <Type>System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</Type>
+                    </QueryColumn>
+                    <QueryColumn>
+                        <Name>id_interval</Name>
+                        <Type>System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</Type>
+                    </QueryColumn>
+                    <QueryColumn>
+                        <Name>Name</Name>
+                        <Type>System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</Type>
+                    </QueryColumn>
+                    <QueryColumn>
+                        <Name>StartDate</Name>
+                        <Type>System.DateTime, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</Type>
+                    </QueryColumn>
+                    <QueryColumn>
+                        <Name>EndDate</Name>
+                        <Type>System.DateTime, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</Type>
+                    </QueryColumn>
+                    <QueryColumn>
+                        <Name>Status</Name>
+                        <Type>System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</Type>
+                    </QueryColumn>
+                </QueryColumns>
+            </SQLQuery>
+        </URLParameter>
+    </URLParameters-->
+    <Elements>
+        <Element>
+            <RecordElement>true</RecordElement>
+            <AssemblyFilename />
+            <ObjectName />
+            <ID>id_instance</ID>
+            <DataType>String</DataType>
+            <IsIdentity>true</IsIdentity>
+            <DataIndex>id_instance</DataIndex>
+            <IsColumn>true</IsColumn>
+            <HeaderText>
+                <LocalizationTag>TEXT_INSTANCE</LocalizationTag>
+                <ResourceClassKey>MetraControl/ControlCenter/App_LocalResources/OperationsDashboard.aspx</ResourceClassKey>
+            </HeaderText>
+            <Formatter />
+            <Width>100</Width>
+            <Resizeable>true</Resizeable>
+            <PreventSortable>false</PreventSortable>
+            <Sortable>false</Sortable>
+            <ColumnHideable>true</ColumnHideable>
+            <DefaultColumn>false</DefaultColumn>
+            <Exportable>true</Exportable>
+            <ShowInExpander>false</ShowInExpander>
+            <Filterable>false</Filterable>
+            <FilterHideable>true</FilterHideable>
+            <DefaultFilter>false</DefaultFilter>
+            <RequiredFilter>false</RequiredFilter>
+            <FilterLabel />
+            <ElementValue>
+                <Value />
+            </ElementValue>
+            <ElementValue2>
+                <Value />
+            </ElementValue2>
+            <FilterReadOnly>false</FilterReadOnly>
+            <DropdownItems />
+        </Element>
+        <Element>
+            <RecordElement>true</RecordElement>
+            <AssemblyFilename />
+            <ObjectName />
+            <ID>id_billgroup</ID>
+            <DataType>String</DataType>
+            <IsIdentity>false</IsIdentity>
+            <DataIndex>id_billgroup</DataIndex>
+            <IsColumn>true</IsColumn>
+            <HeaderText>
+                <LocalizationTag>TEXT_BILL_GROUP</LocalizationTag>
+                <ResourceClassKey>MetraControl/ControlCenter/App_LocalResources/OperationsDashboard.aspx</ResourceClassKey>
+            </HeaderText>
+            <Formatter />
+            <Width>100</Width>
+            <Resizeable>true</Resizeable>
+            <PreventSortable>false</PreventSortable>
+            <Sortable>false</Sortable>
+            <ColumnHideable>true</ColumnHideable>
+            <DefaultColumn>false</DefaultColumn>
+            <Exportable>true</Exportable>
+            <ShowInExpander>false</ShowInExpander>
+            <Filterable>false</Filterable>
+            <FilterHideable>true</FilterHideable>
+            <DefaultFilter>false</DefaultFilter>
+            <RequiredFilter>false</RequiredFilter>
+            <FilterLabel />
+            <ElementValue>
+                <Value />
+            </ElementValue>
+            <ElementValue2>
+                <Value />
+            </ElementValue2>
+            <FilterReadOnly>false</FilterReadOnly>
+            <DropdownItems />
+        </Element>
+        <Element>
+            <RecordElement>true</RecordElement>
+            <AssemblyFilename />
+            <ObjectName />
+            <ID>id_interval</ID>
+            <DataType>String</DataType>
+            <IsIdentity>false</IsIdentity>
+            <DataIndex>id_interval</DataIndex>
+            <IsColumn>true</IsColumn>
+            <HeaderText>
+                <LocalizationTag>TEXT_INTERVAL_ID</LocalizationTag>
+                <ResourceClassKey>MetraControl/ControlCenter/App_LocalResources/OperationsDashboard.aspx</ResourceClassKey>
+            </HeaderText>
+            <Formatter />
+            <Width>100</Width>
+            <Resizeable>true</Resizeable>
+            <PreventSortable>false</PreventSortable>
+            <Sortable>false</Sortable>
+            <ColumnHideable>true</ColumnHideable>
+            <DefaultColumn>false</DefaultColumn>
+            <Exportable>true</Exportable>
+            <ShowInExpander>false</ShowInExpander>
+            <Filterable>false</Filterable>
+            <FilterHideable>true</FilterHideable>
+            <DefaultFilter>false</DefaultFilter>
+            <RequiredFilter>false</RequiredFilter>
+            <FilterLabel />
+            <ElementValue>
+                <Value />
+            </ElementValue>
+            <ElementValue2>
+                <Value />
+            </ElementValue2>
+            <FilterReadOnly>false</FilterReadOnly>
+            <DropdownItems />
+        </Element>
+        <Element>
+            <RecordElement>true</RecordElement>
+            <AssemblyFilename />
+            <ObjectName />
+            <ID>name</ID>
+            <DataType>String</DataType>
+            <IsIdentity>false</IsIdentity>
+            <DataIndex>name</DataIndex>
+            <IsColumn>true</IsColumn>
+            <HeaderText>
+                <LocalizationTag>TEXT_NAME</LocalizationTag>
+                <ResourceClassKey>MetraControl/ControlCenter/App_LocalResources/OperationsDashboard.aspx</ResourceClassKey>
+            </HeaderText>
+            <Formatter />
+            <Width>120</Width>
+            <Resizeable>true</Resizeable>
+            <PreventSortable>false</PreventSortable>
+            <Sortable>false</Sortable>
+            <ColumnHideable>true</ColumnHideable>
+            <DefaultColumn>true</DefaultColumn>
+            <Exportable>true</Exportable>
+            <ShowInExpander>false</ShowInExpander>
+            <Filterable>false</Filterable>
+            <FilterHideable>true</FilterHideable>
+            <DefaultFilter>true</DefaultFilter>
+            <RequiredFilter>false</RequiredFilter>
+            <FilterLabel />
+            <ElementValue>
+                <Value />
+            </ElementValue>
+            <ElementValue2>
+                <Value />
+            </ElementValue2>
+            <FilterReadOnly>false</FilterReadOnly>
+            <DropdownItems />
+        </Element>
+        <Element>
+            <RecordElement>true</RecordElement>
+            <AssemblyFilename />
+            <ObjectName />
+            <ID>startdate</ID>
+            <DataType>String</DataType>
+            <IsIdentity>false</IsIdentity>
+            <DataIndex>startdate</DataIndex>
+            <IsColumn>true</IsColumn>
+            <HeaderText>
+                <LocalizationTag>TEXT_START</LocalizationTag>
+                <ResourceClassKey>MetraControl/ControlCenter/App_LocalResources/OperationsDashboard.aspx</ResourceClassKey>
+            </HeaderText>
+            <Formatter />
+            <Width>135</Width>
+            <Resizeable>true</Resizeable>
+            <PreventSortable>false</PreventSortable>
+            <Sortable>false</Sortable>
+            <ColumnHideable>true</ColumnHideable>
+            <DefaultColumn>true</DefaultColumn>
+            <Exportable>true</Exportable>
+            <ShowInExpander>false</ShowInExpander>
+            <Filterable>false</Filterable>
+            <FilterHideable>true</FilterHideable>
+            <DefaultFilter>true</DefaultFilter>
+            <RequiredFilter>false</RequiredFilter>
+            <FilterLabel />
+            <ElementValue>
+                <Value />
+            </ElementValue>
+            <ElementValue2>
+                <Value />
+            </ElementValue2>
+            <FilterReadOnly>false</FilterReadOnly>
+            <DropdownItems />
+        </Element>
+        <Element>
+            <RecordElement>true</RecordElement>
+            <AssemblyFilename />
+            <ObjectName />
+            <ID>status</ID>
+            <DataType>String</DataType>
+            <IsIdentity>false</IsIdentity>
+            <DataIndex>status</DataIndex>
+            <IsColumn>true</IsColumn>
+            <HeaderText>
+                <LocalizationTag>TEXT_STATUS</LocalizationTag>
+                <ResourceClassKey>MetraControl/ControlCenter/App_LocalResources/OperationsDashboard.aspx</ResourceClassKey>
+            </HeaderText>
+            <Formatter />
+            <Width>125</Width>
+            <Resizeable>true</Resizeable>
+            <PreventSortable>false</PreventSortable>
+            <Sortable>false</Sortable>
+            <ColumnHideable>true</ColumnHideable>
+            <DefaultColumn>true</DefaultColumn>
+            <Exportable>true</Exportable>
+            <ShowInExpander>false</ShowInExpander>
+            <Filterable>false</Filterable>
+            <FilterHideable>true</FilterHideable>
+            <DefaultFilter>true</DefaultFilter>
+            <RequiredFilter>false</RequiredFilter>
+            <FilterLabel />
+            <ElementValue>
+                <Value />
+            </ElementValue>
+            <ElementValue2>
+                <Value />
+            </ElementValue2>
+            <FilterReadOnly>false</FilterReadOnly>
+            <DropdownItems />
+        </Element>
+    </Elements>
+    <ExpanderTemplate />
+    <GridButtons />
+    <ToolbarButtons />
+</GridLayout>

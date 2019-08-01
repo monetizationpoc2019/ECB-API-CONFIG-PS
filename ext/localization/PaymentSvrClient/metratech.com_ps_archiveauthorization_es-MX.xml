@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<mt_config>
+  <language_code>es-MX</language_code>
+  <locale_space name="metratech.com/ps_archiveauthorization">
+    <locale_entry>
+      <Name>metratech.com/ps_archiveauthorization</Name>
+      <Value>Archivar autorización de vista de producto</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ps_archiveauthorization/bankaccounttype</Name>
+      <Value>Tipo de cuenta bancaria</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ps_archiveauthorization/creditcardtype</Name>
+      <Value>Tipo de tarjeta de crédito</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ps_archiveauthorization/description</Name>
+      <Value>Descripción</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ps_archiveauthorization/effectivedate</Name>
+      <Value>Fecha de entrada en vigencia</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ps_archiveauthorization/lastfourdigits</Name>
+      <Value>Últimos cuatro dígitos del número de tarjeta de crédito o cuenta bancaria</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ps_archiveauthorization/originalaccountid</Name>
+      <Value>Identificador de suscriptor</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ps_archiveauthorization/password_</Name>
+      <Value>Contraseña del suscriptor</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ps_archiveauthorization/paymenttype</Name>
+      <Value>Tipo de pago</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ps_archiveauthorization/routing number</Name>
+      <Value>Número ABA/de ruta</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ps_archiveauthorization/routingnumber</Name>
+      <Value>Número de ruta</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ps_archiveauthorization/username</Name>
+      <Value>Nombre de usuario del suscriptor</Value>
+    </locale_entry>
+  </locale_space>
+</mt_config>

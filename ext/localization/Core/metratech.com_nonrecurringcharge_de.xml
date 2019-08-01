@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<mt_config>
+  <language_code>de</language_code>
+  <locale_space name="metratech.com/nonrecurringcharge">
+    <locale_entry>
+      <Name>metratech.com/nonrecurringcharge</Name>
+      <Value>Einmalige Gebühr</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/nonrecurringcharge/NRCEventType</Name>
+      <Value>Ereignis</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/nonrecurringcharge/NRCIntervalEnd</Name>
+      <Value>Ende des Intervalls für einmalige Gebühren</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/nonrecurringcharge/NRCIntervalStart</Name>
+      <Value>Beginn des Intervalls für einmalige Gebühren</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/nonrecurringcharge/NRCIntervalSubscriptionEnd</Name>
+      <Value>Intervallende der Nutzungsanmeldung mit einmaligen Gebühren</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/nonrecurringcharge/NRCIntervalSubscriptionStart</Name>
+      <Value>Intervallbeginn der Nutzungsanmeldung mit einmaligen Gebühren</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/NRCIntervalEnd</Name>
+      <Value>Ende des Intervalls für einmalige Gebühren</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/NRCIntervalStart</Name>
+      <Value>Beginn des Intervalls für einmalige Gebühren</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/NRCIntervalSubscriptionEnd</Name>
+      <Value>Ende der Nutzungsanmeldung mit einmaligen Gebühren</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/NRCIntervalSubscriptionStart</Name>
+      <Value>Beginn der Nutzungsanmeldung mit einmaligen Gebühren</Value>
+    </locale_entry>
+  </locale_space>
+</mt_config>

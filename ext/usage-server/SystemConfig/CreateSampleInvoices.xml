@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xmlconfig>
+	<StoredProcs>
+		<!-- This is the stored procedure that will be used to calculate the various totals in the invoice -->
+		<CalculateInvoice>mtsp_InsertInvoice</CalculateInvoice>
+		<!-- This is the stored procedure that will be used to generate the invoice numbers -->
+		<GenInvoiceNumbers>MTSP_INSERTINVOICE_DEFLTINVNUM</GenInvoiceNumbers>
+	</StoredProcs>
+	<!-- For sample invoices, this should be 'Y" -->
+	<IsSample ptype="BOOLEAN">TRUE</IsSample>
+</xmlconfig>

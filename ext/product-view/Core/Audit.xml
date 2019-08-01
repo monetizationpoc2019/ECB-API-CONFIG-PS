@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<defineservice>
+  <name>metratech.com/Audit</name>
+  <description>Audit-specific information (including MetraCare-specific actions).</description>
+  <ptype>
+    <dn>Description</dn>
+    <type>string</type>
+    <length>255</length>
+    <required>Y</required>
+    <defaultvalue>
+    </defaultvalue>
+    <description>Textual description of the action.</description>
+  </ptype>
+  <ptype>
+    <dn>CSRID</dn>
+    <type>string</type>
+    <length>60</length>
+    <required>Y</required>
+    <defaultvalue>
+    </defaultvalue>
+    <description>This stores the CSR login ID.</description>
+  </ptype>
+  <ptype>
+    <dn>SubscriberAccountID</dn>
+    <type>int32</type>
+    <length>
+    </length>
+    <required>Y</required>
+    <defaultvalue>
+    </defaultvalue>
+    <description>This stores the subscriber account ID.</description>
+  </ptype>
+</defineservice>

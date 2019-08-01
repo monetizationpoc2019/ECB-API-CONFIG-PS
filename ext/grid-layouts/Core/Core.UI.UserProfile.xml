@@ -1,0 +1,308 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<GridLayout xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <IsBusinessEntityLayout>true</IsBusinessEntityLayout>
+    <Name>Core.UI.UserProfile</Name>   
+    <Exportable>true</Exportable>
+    <Height>280</Height>
+    <Width>715</Width>
+    <Expandable>true</Expandable>
+    <Buttons>Cancel</Buttons>
+    <ObjectName>Core.UI.UserProfile</ObjectName>
+    <DataSourceURL>../AjaxServices/BEListSvc.aspx?Name=Core.UI.UserProfile&amp;Assembly=Core.UI.Entity</DataSourceURL>
+    <MultiSelect>false</MultiSelect>
+    <SelectionModel>Standard</SelectionModel>
+    <TotalProperty>TotalRows</TotalProperty>
+    <RootElement>Items</RootElement>
+    <PageSize>10</PageSize>
+    <Description>User Profile</Description>
+    <ExpansionCssClass />
+    <FilterInputWidth>220</FilterInputWidth>
+    <FilterLabelWidth>75</FilterLabelWidth>
+    <FilterColumnWidth>350</FilterColumnWidth>
+    <NoRecordsText>
+      <LocalizationTag>TEXT_NO_RECORDS_FOUND</LocalizationTag>
+      <ResourceClassKey>Resource</ResourceClassKey>
+    </NoRecordsText>
+    <FilterPanelLayout>MultiColumn</FilterPanelLayout>
+    <FilterPanelCollapsed>true</FilterPanelCollapsed>
+    <EnableColumnConfig>true</EnableColumnConfig>
+    <EnableFilterConfig>true</EnableFilterConfig>
+    <Resizeable>true</Resizeable>
+    <ButtonAlignment>Center</ButtonAlignment>
+    <DefaultSortField />
+    <DefaultSortDirection>Ascending</DefaultSortDirection>
+    <DisplayCount>false</DisplayCount>
+    <SearchOnLoad>true</SearchOnLoad>
+    <CustomImplementationFilePath />
+    <DisplayFilterPanel>true</DisplayFilterPanel>
+    <UseTopBar>true</UseTopBar>
+    <UseBottomBar>true</UseBottomBar>
+    <ShowGridFrame>true</ShowGridFrame>
+    <ShowGridHeader>true</ShowGridHeader>
+    <ShowColumnHeaders>true</ShowColumnHeaders>
+    <ShowFilterPanel>true</ShowFilterPanel>
+    <ShowTopBar>true</ShowTopBar>
+    <ShowBottomBar>true</ShowBottomBar>
+    <SubGrid />
+    <Elements>
+        <Element>
+            <RecordElement>true</RecordElement>
+            <AssemblyFilename />
+            <ObjectName />
+            <ID>internalId</ID>
+            <DataType>String</DataType>
+            <IsIdentity>true</IsIdentity>
+            <DataIndex>internalId</DataIndex>
+            <IsColumn>true</IsColumn>
+            <HeaderText>
+              <LocalizationTag>TEXT_INTERNAL_ID</LocalizationTag>
+              <ResourceClassKey>Resource</ResourceClassKey>
+            </HeaderText>
+            <Formatter />
+            <Width>120</Width>
+            <Resizeable>true</Resizeable>
+            <PreventSortable>false</PreventSortable>
+            <Sortable>false</Sortable>
+            <ColumnHideable>true</ColumnHideable>
+            <DefaultColumn>false</DefaultColumn>
+            <Exportable>true</Exportable>
+            <ShowInExpander>true</ShowInExpander>
+            <Filterable>false</Filterable>
+            <FilterHideable>true</FilterHideable>
+            <DefaultFilter>true</DefaultFilter>
+            <RequiredFilter>false</RequiredFilter>
+            <FilterLabel />
+            <ElementValue>
+                <Value />
+            </ElementValue>
+            <ElementValue2>
+                <Value />
+            </ElementValue2>
+            <FilterReadOnly>false</FilterReadOnly>
+            <DropdownItems />
+        </Element>
+        <Element>
+            <RecordElement>true</RecordElement>
+            <AssemblyFilename>Core.UI.Entity.dll</AssemblyFilename>
+            <ObjectName>Core.UI.UserProfile</ObjectName>
+            <ID>AccountId</ID>
+            <DataType>Numeric</DataType>
+            <IsIdentity>false</IsIdentity>
+            <DataIndex>AccountId</DataIndex>
+            <IsColumn>true</IsColumn>
+            <HeaderText>
+              <LocalizationTag>TEXT_ACCOUNT_ID</LocalizationTag>
+              <ResourceClassKey>Resource</ResourceClassKey>
+            </HeaderText>
+            <Formatter />
+            <Width>120</Width>
+            <Resizeable>true</Resizeable>
+            <PreventSortable>false</PreventSortable>
+            <Sortable>true</Sortable>
+            <ColumnHideable>true</ColumnHideable>
+            <DefaultColumn>true</DefaultColumn>
+            <Exportable>true</Exportable>
+            <ShowInExpander>false</ShowInExpander>
+            <Filterable>true</Filterable>
+            <FilterHideable>true</FilterHideable>
+            <DefaultFilter>true</DefaultFilter>
+            <RequiredFilter>false</RequiredFilter>
+            <FilterLabel />
+            <ElementValue>
+                <Value />
+            </ElementValue>
+            <ElementValue2>
+                <Value />
+            </ElementValue2>
+            <FilterReadOnly>false</FilterReadOnly>
+            <DropdownItems />
+        </Element>
+        <Element>
+            <RecordElement>true</RecordElement>
+            <AssemblyFilename>Core.UI.Entity.dll</AssemblyFilename>
+            <ObjectName>Core.UI.UserProfile</ObjectName>
+            <ID>Culture</ID>
+            <DataType>String</DataType>
+            <IsIdentity>false</IsIdentity>
+            <DataIndex>Culture</DataIndex>
+            <IsColumn>true</IsColumn>
+            <HeaderText>
+              <LocalizationTag>TEXT_CULTURE</LocalizationTag>
+              <ResourceClassKey>Resource</ResourceClassKey>
+            </HeaderText>
+            <Formatter />
+            <Width>120</Width>
+            <Resizeable>true</Resizeable>
+            <PreventSortable>false</PreventSortable>
+            <Sortable>true</Sortable>
+            <ColumnHideable>true</ColumnHideable>
+            <DefaultColumn>true</DefaultColumn>
+            <Exportable>true</Exportable>
+            <ShowInExpander>true</ShowInExpander>
+            <Filterable>true</Filterable>
+            <FilterHideable>true</FilterHideable>
+            <DefaultFilter>true</DefaultFilter>
+            <RequiredFilter>false</RequiredFilter>
+            <FilterLabel />
+            <ElementValue>
+                <Value />
+            </ElementValue>
+            <ElementValue2>
+                <Value />
+            </ElementValue2>
+            <FilterReadOnly>false</FilterReadOnly>
+            <DropdownItems />
+        </Element>
+        <Element>
+            <RecordElement>true</RecordElement>
+            <AssemblyFilename>Core.UI.Entity.dll</AssemblyFilename>
+            <ObjectName>Core.UI.UserProfile</ObjectName>
+            <ID>Theme</ID>
+            <DataType>String</DataType>
+            <IsIdentity>false</IsIdentity>
+            <DataIndex>Theme</DataIndex>
+            <IsColumn>true</IsColumn>
+            <HeaderText>
+              <LocalizationTag>TEXT_THEME</LocalizationTag>
+              <ResourceClassKey>Resource</ResourceClassKey>
+            </HeaderText>
+            <Formatter />
+            <Width>120</Width>
+            <Resizeable>true</Resizeable>
+            <PreventSortable>false</PreventSortable>
+            <Sortable>true</Sortable>
+            <ColumnHideable>true</ColumnHideable>
+            <DefaultColumn>true</DefaultColumn>
+            <Exportable>true</Exportable>
+            <ShowInExpander>true</ShowInExpander>
+            <Filterable>true</Filterable>
+            <FilterHideable>true</FilterHideable>
+            <DefaultFilter>true</DefaultFilter>
+            <RequiredFilter>false</RequiredFilter>
+            <FilterLabel />
+            <ElementValue>
+                <Value />
+            </ElementValue>
+            <ElementValue2>
+                <Value />
+            </ElementValue2>
+            <FilterReadOnly>false</FilterReadOnly>
+            <DropdownItems />
+        </Element>
+        <Element>
+            <RecordElement>true</RecordElement>
+            <AssemblyFilename>Core.UI.Entity.dll</AssemblyFilename>
+            <ObjectName>Core.UI.UserProfile</ObjectName>
+            <ID>Timeone</ID>
+            <DataType>List</DataType>
+            <IsIdentity>false</IsIdentity>
+            <FilterEnum>
+                <EnumClassName />
+                <EnumSpace />
+                <EnumType />
+                <UseEnumValue>true</UseEnumValue>
+                <DefaultValue />
+                <HideEnumValues />
+            </FilterEnum>
+            <DataIndex>Timeone</DataIndex>
+            <IsColumn>true</IsColumn>
+            <HeaderText>
+              <LocalizationTag>TEXT_TIMEZONE</LocalizationTag>
+              <ResourceClassKey>Resource</ResourceClassKey>
+            </HeaderText>
+            <Formatter />
+            <Width>120</Width>
+            <Resizeable>true</Resizeable>
+            <PreventSortable>false</PreventSortable>
+            <Sortable>true</Sortable>
+            <ColumnHideable>true</ColumnHideable>
+            <DefaultColumn>true</DefaultColumn>
+            <Exportable>true</Exportable>
+            <ShowInExpander>true</ShowInExpander>
+            <Filterable>true</Filterable>
+            <FilterHideable>true</FilterHideable>
+            <DefaultFilter>true</DefaultFilter>
+            <RequiredFilter>false</RequiredFilter>
+            <FilterLabel />
+            <ElementValue>
+                <Value />
+            </ElementValue>
+            <ElementValue2>
+                <Value />
+            </ElementValue2>
+            <FilterReadOnly>false</FilterReadOnly>
+            <DropdownItems />
+        </Element>
+        <Element>
+            <RecordElement>false</RecordElement>
+            <ID>Actions</ID>
+            <DataIndex />
+            <IsColumn>true</IsColumn>      
+            <HeaderText>
+              <LocalizationTag>TEXT_ACTIONS</LocalizationTag>
+              <ResourceClassKey>Resource</ResourceClassKey>
+            </HeaderText>
+            <Formatter />
+            <Width>120</Width>
+            <Resizeable>true</Resizeable>
+            <PreventSortable>false</PreventSortable>
+            <Sortable>false</Sortable>
+            <ColumnHideable>false</ColumnHideable>
+            <DefaultColumn>true</DefaultColumn>
+            <Filterable>false</Filterable>
+        </Element>
+    </Elements>
+    <ExpanderTemplate>
+        <Section>
+            <Title>            
+                <LocalizationTag>TEXT_DETAILS</LocalizationTag>
+                <ResourceClassKey>Resource</ResourceClassKey>              
+            </Title>
+            <TabOrder>LeftToRight</TabOrder>
+            <Columns>
+                <Column>
+                    <Fields>
+                        <Field>
+                            <AssemblyFilename>Core.UI.Entity.dll</AssemblyFilename>
+                            <ObjectName>Core.UI.UserProfile</ObjectName>
+                            <ID>Culture</ID>
+                            <Name>Culture</Name>
+                        </Field>
+                        <Field>
+                            <AssemblyFilename>Core.UI.Entity.dll</AssemblyFilename>
+                            <ObjectName>Core.UI.UserProfile</ObjectName>
+                            <ID>Theme</ID>
+                            <Name>Theme</Name>
+                        </Field>
+                        <Field>
+                            <AssemblyFilename>Core.UI.Entity.dll</AssemblyFilename>
+                            <ObjectName>Core.UI.UserProfile</ObjectName>
+                            <ID>Timeone</ID>
+                            <Name>Timeone</Name>
+                        </Field>
+                    </Fields>
+                </Column>
+                <Column>
+                    <Fields />
+                </Column>
+            </Columns>
+        </Section>
+    </ExpanderTemplate>
+    <GridButtons />
+    <ToolbarButtons>
+        <Button>
+            <ButtonID>Add</ButtonID>
+            <ButtonText>              
+                <LocalizationTag>TEXT_ADD_BME</LocalizationTag>
+                <ResourceClassKey>Resource</ResourceClassKey>             
+            </ButtonText>
+            <ToolTip>            
+                <LocalizationTag>TEXT_ADD_BME</LocalizationTag>
+                <ResourceClassKey>Resource</ResourceClassKey>              
+            </ToolTip>
+            <IconClass>add</IconClass>
+            <RequiredCapabilities />
+            <JSHandlerFunction>onNew</JSHandlerFunction>
+        </Button>
+    </ToolbarButtons>
+</GridLayout>

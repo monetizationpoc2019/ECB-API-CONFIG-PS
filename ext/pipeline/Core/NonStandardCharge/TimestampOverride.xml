@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xmlconfig>
+    <mtsysconfigdata>
+        <effective_date ptype="DATETIME">1998-11-19T00:00:00Z</effective_date>
+        <timeout ptype="INTEGER">30</timeout>
+        <configfiletype>CONFIG_DATA</configfiletype>
+    </mtsysconfigdata>
+    <mtconfigdata>
+        <version ptype="INTEGER">1</version>
+        <processor>
+            <name>TimestampOverride</name>
+            <progid>MetraPipeline.TimestampOverride.1</progid>
+            <description>Synchronizes _Timestamp and IssueTime</description>
+            <inputs>
+                <input type="DATETIME">_Timestamp</input>
+                <input type="DATETIME">IssueTime</input>
+            </inputs>
+            <outputs>
+                <output type="DATETIME">_Timestamp</output>
+                <output type="DATETIME">IssueTime</output>
+            </outputs>
+            <configdata>
+                <timestamp>IssueTime</timestamp>
+            </configdata>
+        </processor>
+    </mtconfigdata>
+</xmlconfig>

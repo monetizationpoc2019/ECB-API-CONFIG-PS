@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<mt_config>
+  <language_code>pt-br</language_code>
+  <locale_space name="metratech.com/BusinessEntity">
+    <locale_entry>
+      <Name>metratech.com/BusinessEntity/BusinessEntityExtension/Acme</Name>
+      <Value>Acme</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/BusinessEntity/BusinessEntityExtension/Core</Name>
+      <Value>Núcleo</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/BusinessEntity/BusinessEntityExtension/Messaging</Name>
+      <Value>Mensagem</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/BusinessEntity/BusinessEntityExtension/smoketest</Name>
+      <Value>smoketest</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/BusinessEntity/BusinessEntityExtension/MetraTech.Account</Name>
+      <Value>MetraTech.Account</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/BusinessEntity/BusinessEntityExtension/MetraTech.SmokeTest</Name>
+      <Value>MetraTech.SmokeTest</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/BusinessEntity/BusinessEntityExtension/MetraTech.Core</Name>
+      <Value>MetraTech.Core</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/BusinessEntity/BusinessEntityExtension/MetraTech.Reporting</Name>
+      <Value>MetraTech.Reporting</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/BusinessEntity/BusinessEntityExtension/MetraTech.SystemConfig</Name>
+      <Value>MetraTech.SystemConfig</Value>
+    </locale_entry>
+  </locale_space>
+</mt_config>

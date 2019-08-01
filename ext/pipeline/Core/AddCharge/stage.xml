@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xmlconfig>
+ <version ptype="INTEGER">1</version>
+ <description>Processes a miscellaneous charge.</description>
+  <stage>
+    <name>AddCharge</name>
+    <startstage ptype="BOOLEAN">YES</startstage>
+    <finalstage ptype="BOOLEAN">NO</finalstage>
+    <nextstage>WriteProductView</nextstage>
+
+    <dependencies>
+
+      <dependson>GL</dependson>
+      <dependson>SetTax</dependson>
+      <dependson>SetAccountStateRule</dependson>
+
+      <dependency>
+        <processor>Audit</processor>
+        <dependson>SetAuditProperties</dependson>
+      </dependency> 
+
+      <dependency>
+        <processor>SetAuditProperties</processor>
+        <dependson>AccountResolutionByID</dependson>
+        <dependson>AccountResolutionByName</dependson>
+        <dependson>RoundAmount</dependson>
+      </dependency>
+
+      <dependency>
+        <processor>SetSubscriberAccountID</processor>
+        <dependson>AccountResolutionByID</dependson>
+        <dependson>AccountResolutionByName</dependson>
+      </dependency>
+      
+
+    </dependencies>
+
+  </stage>
+  <possiblenextstages />
+</xmlconfig>

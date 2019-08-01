@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<defineservice>
+  <name help_url="" condition_header="Conditions" action_header="Actions" display_name="Non-Recurring Charge Rate" type="Rates">metratech.com/NonRecurringCharge</name>
+  <description>Used to store the single, fixed non-recurring charge amount</description>
+  <!-- conditions -->
+  <!-- No conditions are required -->
+  <!-- actions -->
+  <ptype display_name="Non-Recurring Charge Amount" action="Y">
+    <dn>NRCAmount</dn>
+    <type>decimal</type>
+    <length>
+    </length>
+    <required>Y</required>
+    <defaultvalue>
+    </defaultvalue>
+    <description>The nonrecurring charge amount.</description>
+  </ptype>
+</defineservice>

@@ -1,0 +1,239 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<GridLayout xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <Name>RefundDetailsEntity</Name>
+    <Title>
+        <Value>Refund Details</Value>
+    </Title>
+    <Exportable>true</Exportable>
+    <Height>250</Height>
+    <Width>100%</Width>
+    <Expandable>false</Expandable>
+    <Buttons>Custom</Buttons>
+    <DataSourceURL>~/ecbAR/AjaxServices/GetRefundDetailsSvc.aspx</DataSourceURL>
+    <MultiSelect>false</MultiSelect>
+    <SelectionModel>Standard</SelectionModel>
+    <TotalProperty>TotalRows</TotalProperty>
+    <RootElement>Items</RootElement>
+    <PageSize>10</PageSize>
+    <Description />
+    <ExpansionCssClass />
+    <ShowFilterPanel>true</ShowFilterPanel>
+    <FilterInputWidth>220</FilterInputWidth>
+    <FilterLabelWidth>75</FilterLabelWidth>
+    <FilterColumnWidth>350</FilterColumnWidth>
+    <ShowTopBar>true</ShowTopBar>
+    <ShowBottomBar>true</ShowBottomBar>
+    <ShowGridFrame>true</ShowGridFrame>
+    <ShowGridHeader>true</ShowGridHeader>
+    <ShowColumnHeaders>true</ShowColumnHeaders>
+    <NoRecordsText>
+        <Value />
+    </NoRecordsText>
+    <FilterPanelLayout>MultiColumn</FilterPanelLayout>
+    <FilterPanelCollapsed>false</FilterPanelCollapsed>
+    <EnableColumnConfig>true</EnableColumnConfig>
+    <EnableFilterConfig>true</EnableFilterConfig>
+    <Resizeable>true</Resizeable>
+    <ButtonAlignment>Right</ButtonAlignment>
+    <DefaultSortField>DocumentType</DefaultSortField>
+    <DefaultSortDirection>Ascending</DefaultSortDirection>
+    <DisplayCount>true</DisplayCount>
+    <SearchOnLoad>true</SearchOnLoad>
+    <CustomImplementationFilePath />
+    <SubGrid />
+    <FilterLabelWrap>None</FilterLabelWrap>
+    <CustomOverrideJavascriptIncludes />
+    <Elements>
+        <Element>
+            <RecordElement>true</RecordElement>
+            <AssemblyFilename>O:\debug\Bin\ECB.ecbAR.BO.Entity.dll</AssemblyFilename>
+            <ObjectName>ECB.ecbAR.BO.Entity.BrowserBatchEntity</ObjectName>
+            <ID>DocumentType</ID>
+            <DataType>String</DataType>
+            <IsIdentity>false</IsIdentity>
+            <DataIndex>DocumentType</DataIndex>
+            <IsColumn>true</IsColumn>
+            <HeaderText>
+                <Value>Document Type</Value>
+            </HeaderText>
+            <Formatter />
+            <Width>120</Width>
+            <Resizeable>true</Resizeable>
+            <PreventSortable>false</PreventSortable>
+            <Sortable>true</Sortable>
+            <ColumnHideable>true</ColumnHideable>
+            <DefaultColumn>true</DefaultColumn>
+            <Exportable>true</Exportable>
+            <ShowInExpander>false</ShowInExpander>
+            <Filterable>false</Filterable>
+            <FilterHideable>true</FilterHideable>
+            <DefaultFilter>true</DefaultFilter>
+            <RequiredFilter>false</RequiredFilter>
+            <FilterLabel />
+            <ElementValue>
+                <Value />
+            </ElementValue>
+            <ElementValue2>
+                <Value />
+            </ElementValue2>
+            <FilterReadOnly>false</FilterReadOnly>
+            <DropdownItems />
+        </Element>
+        <Element>
+            <RecordElement>true</RecordElement>
+            <AssemblyFilename>O:\debug\Bin\ECB.ecbAR.BO.Entity.dll</AssemblyFilename>
+            <ObjectName>ECB.ecbAR.BO.Entity.BrowserBatchEntity</ObjectName>
+            <ID>DocumentNumber</ID>
+            <DataType>String</DataType>
+            <IsIdentity>false</IsIdentity>
+            <DataIndex>DocumentNumber</DataIndex>
+            <IsColumn>true</IsColumn>
+            <HeaderText>
+                <Value>Document Number</Value>
+            </HeaderText>
+            <Formatter />
+            <Width>120</Width>
+            <Resizeable>true</Resizeable>
+            <PreventSortable>false</PreventSortable>
+            <Sortable>true</Sortable>
+            <ColumnHideable>true</ColumnHideable>
+            <DefaultColumn>true</DefaultColumn>
+            <Exportable>true</Exportable>
+            <ShowInExpander>false</ShowInExpander>
+            <Filterable>false</Filterable>
+            <FilterHideable>true</FilterHideable>
+            <DefaultFilter>true</DefaultFilter>
+            <RequiredFilter>false</RequiredFilter>
+            <FilterLabel />
+            <ElementValue>
+                <Value />
+            </ElementValue>
+            <ElementValue2>
+                <Value />
+            </ElementValue2>
+            <FilterReadOnly>false</FilterReadOnly>
+            <DropdownItems />
+        </Element>
+        <Element>
+            <RecordElement>true</RecordElement>
+            <AssemblyFilename>O:\debug\Bin\ECB.ecbAR.BO.Entity.dll</AssemblyFilename>
+            <ObjectName>ECB.ecbAR.BO.Entity.BrowserBatchEntity</ObjectName>
+            <ID>Amount</ID>
+            <DataType>String</DataType>
+            <IsIdentity>false</IsIdentity>
+            <DataIndex>Amount</DataIndex>
+            <IsColumn>true</IsColumn>
+            <HeaderText>
+                <Value>Total Amount</Value>
+            </HeaderText>
+            <Formatter />
+            <Width>120</Width>
+            <Resizeable>true</Resizeable>
+            <PreventSortable>false</PreventSortable>
+            <Sortable>true</Sortable>
+            <ColumnHideable>true</ColumnHideable>
+            <DefaultColumn>true</DefaultColumn>
+            <Exportable>true</Exportable>
+            <ShowInExpander>false</ShowInExpander>
+            <Filterable>false</Filterable>
+            <FilterHideable>true</FilterHideable>
+            <DefaultFilter>true</DefaultFilter>
+            <RequiredFilter>false</RequiredFilter>
+            <FilterLabel />
+            <ElementValue>
+                <Value />
+            </ElementValue>
+            <ElementValue2>
+                <Value />
+            </ElementValue2>
+            <FilterReadOnly>false</FilterReadOnly>
+            <DropdownItems />
+        </Element>
+        <Element>
+            <RecordElement>true</RecordElement>
+            <AssemblyFilename>O:\debug\Bin\ECB.ecbAR.BO.Entity.dll</AssemblyFilename>
+            <ObjectName>ECB.ecbAR.BO.Entity.BrowserBatchEntity</ObjectName>
+            <ID>Debit</ID>
+            <DataType>String</DataType>
+            <IsIdentity>false</IsIdentity>
+            <DataIndex>Debit</DataIndex>
+            <IsColumn>true</IsColumn>
+            <HeaderText>
+                <Value>Refunded Amount</Value>
+            </HeaderText>
+            <Formatter />
+            <Width>120</Width>
+            <Resizeable>true</Resizeable>
+            <PreventSortable>false</PreventSortable>
+            <Sortable>true</Sortable>
+            <ColumnHideable>true</ColumnHideable>
+            <DefaultColumn>true</DefaultColumn>
+            <Exportable>true</Exportable>
+            <ShowInExpander>false</ShowInExpander>
+            <Filterable>false</Filterable>
+            <FilterHideable>true</FilterHideable>
+            <DefaultFilter>true</DefaultFilter>
+            <RequiredFilter>false</RequiredFilter>
+            <FilterLabel />
+            <ElementValue>
+                <Value />
+            </ElementValue>
+            <ElementValue2>
+                <Value />
+            </ElementValue2>
+            <FilterReadOnly>false</FilterReadOnly>
+            <DropdownItems />
+        </Element>
+        <Element>
+            <RecordElement>true</RecordElement>
+            <AssemblyFilename>O:\debug\Bin\ECB.ecbAR.BO.Entity.dll</AssemblyFilename>
+            <ObjectName>ECB.ecbAR.BO.Entity.BrowserBatchEntity</ObjectName>
+            <ID>Seq</ID>
+            <DataType>String</DataType>
+            <IsIdentity>true</IsIdentity>
+            <DataIndex>Seq</DataIndex>
+            <IsColumn>false</IsColumn>
+            <HeaderText>
+                <Value>Seq</Value>
+            </HeaderText>
+            <Formatter />
+            <Width>120</Width>
+            <Resizeable>true</Resizeable>
+            <PreventSortable>false</PreventSortable>
+            <Sortable>true</Sortable>
+            <ColumnHideable>true</ColumnHideable>
+            <DefaultColumn>true</DefaultColumn>
+            <Exportable>true</Exportable>
+            <ShowInExpander>false</ShowInExpander>
+            <Filterable>false</Filterable>
+            <FilterHideable>true</FilterHideable>
+            <DefaultFilter>true</DefaultFilter>
+            <RequiredFilter>false</RequiredFilter>
+            <FilterLabel />
+            <ElementValue>
+                <Value />
+            </ElementValue>
+            <ElementValue2>
+                <Value />
+            </ElementValue2>
+            <FilterReadOnly>false</FilterReadOnly>
+            <DropdownItems />
+        </Element>
+    </Elements>
+    <ExpanderTemplate />
+    <GridButtons>
+        <Button>
+            <ButtonID>btnClose</ButtonID>
+            <ButtonText>
+                <Value>Close</Value>
+            </ButtonText>
+            <ToolTip>
+                <Value />
+            </ToolTip>
+            <IconClass />
+            <RequiredCapabilities />
+            <JSHandlerFunction>onClose</JSHandlerFunction>
+        </Button>
+    </GridButtons>
+    <ToolbarButtons />
+</GridLayout>

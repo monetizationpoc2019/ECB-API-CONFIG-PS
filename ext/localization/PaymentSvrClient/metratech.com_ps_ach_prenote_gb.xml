@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<mt_config>
+  <language_code>gb</language_code>
+  <locale_space name="metratech.com/ps_ach_prenote">
+    <locale_entry>
+      <Name>metratech.com/ps_ach_prenote</Name>
+      <Value>ACH Prenotification</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ps_ach_prenote/address</Name>
+      <Value>Subscriber Password</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ps_ach_prenote/bankaccounttype</Name>
+      <Value>Bank Account Type</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ps_ach_prenote/city</Name>
+      <Value />
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ps_ach_prenote/country</Name>
+      <Value />
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ps_ach_prenote/customername</Name>
+      <Value>Subscriber Confirmation Request Indicator</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ps_ach_prenote/lastfourdigits</Name>
+      <Value>Last Four Digits</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ps_ach_prenote/originalaccountid</Name>
+      <Value>Original Account ID</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ps_ach_prenote/paymentservicetransactionid</Name>
+      <Value>Payment Service Provider Transaction ID</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ps_ach_prenote/respstring</Name>
+      <Value>Response Description</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ps_ach_prenote/retcode</Name>
+      <Value>Return Code</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ps_ach_prenote/routingnumber</Name>
+      <Value>ABA/Bank Routing Number</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ps_ach_prenote/state</Name>
+      <Value />
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ps_ach_prenote/zip</Name>
+      <Value>Zimbabwe</Value>
+    </locale_entry>
+  </locale_space>
+</mt_config>

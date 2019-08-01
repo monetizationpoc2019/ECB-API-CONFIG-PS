@@ -1,0 +1,9 @@
+server:
+  port: ${foundation-port:8097}
+  
+custom:
+  config:
+    localizationNotReqKinds: 15,130,140,150,160,170,180,190,230,240,300,320,330,360
+    
+logging.level.org.springframework: INFO
+logging.level.org.eclipse.jetty: INFO

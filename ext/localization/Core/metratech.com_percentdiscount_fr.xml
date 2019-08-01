@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<mt_config>
+    <language_code>fr</language_code>
+    <locale_space name="metratech.com/percentdiscount">
+        <locale_entry>
+            <Name>metratech.com/percentdiscount</Name>
+            <Value>Remise en pourcentage</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/percentdiscount/DiscountIntervalEnd</Name>
+            <Value>Date de fin de l'intervalle de remise</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/percentdiscount/DiscountIntervalStart</Name>
+            <Value>Date de début de l'intervalle de remise</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/percentdiscount/DiscountIntervalSubEnd</Name>
+            <Value>Date de fin de l'abonnement à l'intervalle de remise</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/percentdiscount/DiscountIntervalSubStart</Name>
+            <Value>Date de début de l'abonnement à l'intervalle de remise</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/percentdiscount/DiscountPercent</Name>
+            <Value>Pourcentage de la remise</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/percentdiscount/GroupSubscriptionName</Name>
+            <Value>Abonnement groupé</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/percentdiscount/Qualifier</Name>
+            <Value>Valeur du qualificatif</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/percentdiscount/SubscriptionEnd</Name>
+            <Value>Date de fin de l'abonnement</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/percentdiscount/SubscriptionStart</Name>
+            <Value>Date de début de l'abonnement</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/percentdiscount/Target</Name>
+            <Value>Valeur cible</Value>
+        </locale_entry>
+    </locale_space>
+</mt_config>

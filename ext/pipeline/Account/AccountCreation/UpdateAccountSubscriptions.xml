@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xmlconfig>
+
+  <mtsysconfigdata>
+    <effective_date ptype="DATETIME">1998-11-19T00:00:00Z</effective_date>
+    <timeout ptype="INTEGER">30</timeout>
+    <configfiletype>CONFIG_DATA</configfiletype>
+  </mtsysconfigdata>
+
+  <mtconfigdata>
+    <version ptype="INTEGER">1</version>
+
+    <processor>
+      <name>UpdateAccountSubscriptions</name>
+      <progid>MetraTech.Accounts.PlugIns.UpdateSubscriptions</progid>
+      <description>This plug-in applies the subscriptions present in the appropriate account template. (This is the template belonging to the nearest parent folder or corporate account with a template in the account hierarchy.)
+</description><condition>
+      
+                CREATE PROCEDURE condition 
+                                          @_ExecutePlugin BOOLEAN OUTPUT,
+                                          @Operation ENUM -- $ICE:('metratech.com','Operation')$,
+                                          @ApplyAccountTemplate BOOLEAN,
+   		                                    @b_cansubscribe BOOLEAN,
+   		                                    @b_CanParticipateInGSub BOOLEAN,
+                                          @ActionType ENUM -- $ICE:('metratech.com/accountcreation','ActionType')$,
+                AS
+                  IF
+                  (
+                        (@Operation != #metratech.com/Operation/Add#)
+                    AND (@ApplyAccountTemplate = TRUE)
+	                  AND ((@b_cansubscribe = TRUE) OR (@b_CanParticipateInGSub = TRUE))
+                    AND ((upper(CAST(@ActionType AS VARCHAR)) = 'ACCOUNT')
+                      OR (upper(CAST(@ActionType AS VARCHAR)) = 'BOTH'))
+                  )
+                    SET @_ExecutePlugin = TRUE
+                  ELSE
+                    SET @_ExecutePlugin = FALSE
+      
+      </condition>
+
+      
+
+      <configdata>
+      </configdata>
+    </processor>
+  </mtconfigdata>
+</xmlconfig>

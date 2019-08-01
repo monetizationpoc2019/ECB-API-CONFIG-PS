@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xmlconfig>
+  <mtsysconfigdata>
+    <effective_date ptype="DATETIME">1999-05-01T16:42:33Z</effective_date>
+    <timeout ptype="INTEGER">30</timeout>
+    <configfiletype>CONFIG_DATA</configfiletype>
+  </mtsysconfigdata>
+  <mtconfigdata>
+    <version ptype="INTEGER">1</version>
+    <processor>
+      <name>RoundAmount</name>
+      <progid>MetraPipeline.MTRoundPlugin.1</progid>
+      <description>Rounds all necessary values to the correct number of digits (2).</description>
+
+      <inputs>
+        <input type="DECIMAL">_Amount</input>
+      </inputs>
+
+      <outputs>
+        <output type="DECIMAL">_Amount</output>
+      </outputs>
+
+      <configdata>
+        <Rounding>
+          <Value>_Amount</Value>
+          <Precision ptype="INTEGER">10</Precision>
+        </Rounding>
+      </configdata>
+    </processor>
+  </mtconfigdata>
+</xmlconfig>

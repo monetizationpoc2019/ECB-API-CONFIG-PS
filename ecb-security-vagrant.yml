@@ -1,0 +1,7 @@
+ecb:
+  dbms: sqlserver
+  auth:
+    ssl:
+      keyStore: "${KEYSTORE_FILE}"
+      keyStorePassword: "${KEYSTORE_PWD}"
+      keyAlias: "${KEY_ALIAS}"

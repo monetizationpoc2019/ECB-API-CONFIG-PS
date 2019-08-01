@@ -1,0 +1,383 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<GridLayout xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <Name>MyAccountsList</Name>
+    <Title>
+        <LocalizationTag>GridTitle</LocalizationTag>
+        <ResourceClassKey>Account/App_LocalResources/MyAccounts.aspx</ResourceClassKey>
+    </Title>
+    <Exportable>true</Exportable>
+    <Height>600</Height>
+    <Width>965</Width>
+    <Expandable>false</Expandable>
+    <Buttons>None</Buttons>
+    <DataSourceURL>AjaxServices/MyAccountsAjax.aspx</DataSourceURL>
+    <MultiSelect>false</MultiSelect>
+    <SelectionModel>Standard</SelectionModel>
+    <TotalProperty>TotalRows</TotalProperty>
+    <RootElement>Items</RootElement>
+    <PageSize>30</PageSize>
+    <Description>My Accounts Grid Layout</Description>
+    <ExpansionCssClass />
+    <ShowFilterPanel>true</ShowFilterPanel>
+    <FilterInputWidth>220</FilterInputWidth>
+    <FilterLabelWidth>75</FilterLabelWidth>
+    <FilterLabelWrap>WordWrap</FilterLabelWrap>
+    <FilterColumnWidth>350</FilterColumnWidth>
+    <ShowTopBar>true</ShowTopBar>
+    <ShowBottomBar>true</ShowBottomBar>
+    <ShowGridFrame>true</ShowGridFrame>
+    <ShowGridHeader>true</ShowGridHeader>
+    <ShowColumnHeaders>true</ShowColumnHeaders>
+    <NoRecordsText>
+        <LocalizationTag>Grid_No_Records_Text</LocalizationTag>
+        <ResourceClassKey>Account/App_LocalResources/MyAccounts.aspx</ResourceClassKey>
+    </NoRecordsText>
+    <FilterPanelLayout>MultiColumn</FilterPanelLayout>
+    <FilterPanelCollapsed>true</FilterPanelCollapsed>
+    <EnableColumnConfig>true</EnableColumnConfig>
+    <EnableFilterConfig>true</EnableFilterConfig>
+    <Resizeable>true</Resizeable>
+    <ButtonAlignment>Center</ButtonAlignment>
+    <DefaultSortField>IdOwned</DefaultSortField>
+    <DefaultSortDirection>Ascending</DefaultSortDirection>
+    <DisplayCount>true</DisplayCount>
+    <SearchOnLoad>true</SearchOnLoad>
+    <CustomImplementationFilePath />
+    <CustomOverrideJavascriptIncludes />
+    <SubGrid />
+    <Elements>
+        <Element>
+            <RecordElement>false</RecordElement>
+            <ID>actions</ID>
+            <DataIndex>actions</DataIndex>
+            <IsColumn>true</IsColumn>
+            <HeaderText>
+                <LocalizationTag>GridHeader_Actions</LocalizationTag>
+                <ResourceClassKey>Account/App_LocalResources/MyAccounts.aspx</ResourceClassKey>
+            </HeaderText>
+            <Formatter />
+            <Width>100</Width>
+            <Resizeable>true</Resizeable>
+            <PreventSortable>false</PreventSortable>
+            <Sortable>false</Sortable>
+            <ColumnHideable>true</ColumnHideable>
+            <DefaultColumn>true</DefaultColumn>
+            <Filterable>false</Filterable>
+        </Element>
+        <Element>
+            <RecordElement>true</RecordElement>
+            <AssemblyFilename>MetraTech.DomainModel.ProductCatalog.dll</AssemblyFilename>
+            <ObjectName>MetraTech.DomainModel.ProductCatalog.OwnedAccounts</ObjectName>
+            <ID>IdOwned</ID>
+            <DataType>Numeric</DataType>
+            <IsIdentity>true</IsIdentity>
+            <DataIndex>IdOwned</DataIndex>
+            <IsColumn>true</IsColumn>
+            <HeaderText>
+                <LocalizationTag>GridHeader_Acount</LocalizationTag>
+                <ResourceClassKey>Account/App_LocalResources/MyAccounts.aspx</ResourceClassKey>
+            </HeaderText>
+            <Formatter />
+            <Width>170</Width>
+            <Resizeable>true</Resizeable>
+            <PreventSortable>false</PreventSortable>
+            <Sortable>true</Sortable>
+            <ColumnHideable>true</ColumnHideable>
+            <DefaultColumn>true</DefaultColumn>
+            <Exportable>true</Exportable>
+            <ShowInExpander>false</ShowInExpander>
+            <Filterable>true</Filterable>
+            <FilterHideable>true</FilterHideable>
+            <DefaultFilter>true</DefaultFilter>
+            <RequiredFilter>false</RequiredFilter>
+            <FilterLabel>
+                <LocalizationTag>GridHeader_Acount</LocalizationTag>
+                <ResourceClassKey>Account/App_LocalResources/MyAccounts.aspx</ResourceClassKey>
+            </FilterLabel>
+            <ElementValue>
+                <Value />
+            </ElementValue>
+            <ElementValue2>
+                <Value />
+            </ElementValue2>
+            <FilterReadOnly>false</FilterReadOnly>
+            <DropdownItems />
+        </Element>
+        <Element>
+            <RecordElement>true</RecordElement>
+            <AssemblyFilename>MetraTech.DomainModel.ProductCatalog.dll</AssemblyFilename>
+            <ObjectName>MetraTech.DomainModel.ProductCatalog.OwnedAccounts</ObjectName>
+            <ID>PercentageOwnership</ID>
+            <DataType>Numeric</DataType>
+            <IsIdentity>false</IsIdentity>
+            <DataIndex>PercentageOwnership</DataIndex>
+            <IsColumn>true</IsColumn>
+            <HeaderText>
+                <LocalizationTag>GridHeader_PercentageOwnership</LocalizationTag>
+                <ResourceClassKey>Account/App_LocalResources/MyAccounts.aspx</ResourceClassKey>
+            </HeaderText>
+            <Formatter />
+            <Width>130</Width>
+            <Resizeable>true</Resizeable>
+            <PreventSortable>false</PreventSortable>
+            <Sortable>true</Sortable>
+            <ColumnHideable>true</ColumnHideable>
+            <DefaultColumn>true</DefaultColumn>
+            <Exportable>true</Exportable>
+            <ShowInExpander>false</ShowInExpander>
+            <Filterable>true</Filterable>
+            <FilterHideable>true</FilterHideable>
+            <DefaultFilter>true</DefaultFilter>
+            <RequiredFilter>false</RequiredFilter>
+            <FilterLabel>
+                <LocalizationTag>GridHeader_PercentageOwnership</LocalizationTag>
+                <ResourceClassKey>Account/App_LocalResources/MyAccounts.aspx</ResourceClassKey>
+            </FilterLabel>
+            <ElementValue>
+                <Value />
+            </ElementValue>
+            <ElementValue2>
+                <Value />
+            </ElementValue2>
+            <FilterReadOnly>false</FilterReadOnly>
+            <DropdownItems />
+        </Element>
+        <Element>
+            <RecordElement>true</RecordElement>
+            <AssemblyFilename>MetraTech.DomainModel.ProductCatalog.dll</AssemblyFilename>
+            <ObjectName>MetraTech.DomainModel.ProductCatalog.RelationShipOwnedAccounts</ObjectName>
+            <ID>RelationData.RelationTypeName</ID>
+            <DataType>String</DataType>
+            <IsIdentity>false</IsIdentity>
+            <DataIndex>RelationData.RelationTypeName</DataIndex>
+            <IsColumn>true</IsColumn>
+            <HeaderText>
+                <LocalizationTag>GridHeader_Relationship</LocalizationTag>
+                <ResourceClassKey>Account/App_LocalResources/MyAccounts.aspx</ResourceClassKey>
+            </HeaderText>
+            <Formatter />
+            <Width>117</Width>
+            <Resizeable>true</Resizeable>
+            <PreventSortable>false</PreventSortable>
+            <Sortable>true</Sortable>
+            <ColumnHideable>true</ColumnHideable>
+            <DefaultColumn>true</DefaultColumn>
+            <Exportable>true</Exportable>
+            <ShowInExpander>false</ShowInExpander>
+            <Filterable>true</Filterable>
+            <FilterHideable>true</FilterHideable>
+            <DefaultFilter>true</DefaultFilter>
+            <RequiredFilter>false</RequiredFilter>
+            <FilterLabel>
+                <LocalizationTag>GridHeader_Relationship</LocalizationTag>
+                <ResourceClassKey>Account/App_LocalResources/MyAccounts.aspx</ResourceClassKey>
+            </FilterLabel>
+            <ElementValue>
+                <Value />
+            </ElementValue>
+            <ElementValue2>
+                <Value />
+            </ElementValue2>
+            <FilterReadOnly>false</FilterReadOnly>
+            <DropdownItems />
+        </Element>
+        <Element>
+            <RecordElement>true</RecordElement>
+            <AssemblyFilename>MetraTech.DomainModel.ProductCatalog.dll</AssemblyFilename>
+            <ObjectName>MetraTech.DomainModel.ProductCatalog.OwnedAccounts</ObjectName>
+            <ID>EffectiveStartDate</ID>
+            <DataType>Date</DataType>
+            <IsIdentity>false</IsIdentity>
+            <DataIndex>EffectiveStartDate</DataIndex>
+            <IsColumn>true</IsColumn>
+            <HeaderText>
+                <LocalizationTag>GridHeader_EffectiveStartDate</LocalizationTag>
+                <ResourceClassKey>Account/App_LocalResources/MyAccounts.aspx</ResourceClassKey>
+            </HeaderText>
+            <Formatter />
+            <Width>110</Width>
+            <Resizeable>true</Resizeable>
+            <PreventSortable>false</PreventSortable>
+            <Sortable>true</Sortable>
+            <ColumnHideable>true</ColumnHideable>
+            <DefaultColumn>true</DefaultColumn>
+            <Exportable>true</Exportable>
+            <ShowInExpander>false</ShowInExpander>
+            <Filterable>true</Filterable>
+            <FilterHideable>true</FilterHideable>
+            <DefaultFilter>true</DefaultFilter>
+            <RequiredFilter>false</RequiredFilter>
+            <FilterLabel>
+                <LocalizationTag>GridHeader_EffectiveStartDate</LocalizationTag>
+                <ResourceClassKey>Account/App_LocalResources/MyAccounts.aspx</ResourceClassKey>
+            </FilterLabel>
+            <ElementValue>
+                <Value />
+            </ElementValue>
+            <ElementValue2>
+                <Value />
+            </ElementValue2>
+            <FilterReadOnly>false</FilterReadOnly>
+            <DropdownItems />
+        </Element>
+        <Element>
+            <RecordElement>true</RecordElement>
+            <AssemblyFilename>MetraTech.DomainModel.ProductCatalog.dll</AssemblyFilename>
+            <ObjectName>MetraTech.DomainModel.ProductCatalog.OwnedAccounts</ObjectName>
+            <ID>EffectiveEndDate</ID>
+            <DataType>Date</DataType>
+            <IsIdentity>false</IsIdentity>
+            <DataIndex>EffectiveEndDate</DataIndex>
+            <IsColumn>true</IsColumn>
+            <HeaderText>
+                <LocalizationTag>GridHeader_EffectiveEndDate</LocalizationTag>
+                <ResourceClassKey>Account/App_LocalResources/MyAccounts.aspx</ResourceClassKey>
+            </HeaderText>
+            <Formatter />
+            <Width>110</Width>
+            <Resizeable>true</Resizeable>
+            <PreventSortable>false</PreventSortable>
+            <Sortable>true</Sortable>
+            <ColumnHideable>true</ColumnHideable>
+            <DefaultColumn>true</DefaultColumn>
+            <Exportable>true</Exportable>
+            <ShowInExpander>false</ShowInExpander>
+            <Filterable>true</Filterable>
+            <FilterHideable>true</FilterHideable>
+            <DefaultFilter>true</DefaultFilter>
+            <RequiredFilter>false</RequiredFilter>
+            <FilterLabel>
+                <LocalizationTag>GridHeader_EffectiveEndDate</LocalizationTag>
+                <ResourceClassKey>Account/App_LocalResources/MyAccounts.aspx</ResourceClassKey>
+            </FilterLabel>
+            <ElementValue>
+                <Value />
+            </ElementValue>
+            <ElementValue2>
+                <Value />
+            </ElementValue2>
+            <FilterReadOnly>false</FilterReadOnly>
+            <DropdownItems />
+        </Element>
+        <Element>
+            <RecordElement>true</RecordElement>
+            <AssemblyFilename>MetraTech.DomainModel.ProductCatalog.dll</AssemblyFilename>
+            <ObjectName>MetraTech.DomainModel.ProductCatalog.OwnedAccounts</ObjectName>
+            <ID>DirectOwner</ID>
+            <DataType>Numeric</DataType>
+            <IsIdentity>false</IsIdentity>
+            <DataIndex>DirectOwner</DataIndex>
+            <IsColumn>true</IsColumn>
+            <HeaderText>
+                <LocalizationTag>GridHeader_DirectOwner</LocalizationTag>
+                <ResourceClassKey>Account/App_LocalResources/MyAccounts.aspx</ResourceClassKey>
+            </HeaderText>
+            <Formatter />
+            <Width>90</Width>
+            <Resizeable>true</Resizeable>
+            <PreventSortable>false</PreventSortable>
+            <Sortable>true</Sortable>
+            <ColumnHideable>true</ColumnHideable>
+            <DefaultColumn>true</DefaultColumn>
+            <Exportable>true</Exportable>
+            <ShowInExpander>false</ShowInExpander>
+            <Filterable>true</Filterable>
+            <FilterHideable>true</FilterHideable>
+            <DefaultFilter>true</DefaultFilter>
+            <RequiredFilter>false</RequiredFilter>
+            <FilterLabel>
+                <LocalizationTag>GridHeader_DirectOwner</LocalizationTag>
+                <ResourceClassKey>Account/App_LocalResources/MyAccounts.aspx</ResourceClassKey>
+            </FilterLabel>
+            <ElementValue>
+                <Value />
+            </ElementValue>
+            <ElementValue2>
+                <Value />
+            </ElementValue2>
+            <FilterReadOnly>false</FilterReadOnly>
+            <DropdownItems />
+        </Element>
+        <Element>
+            <RecordElement>true</RecordElement>
+            <AssemblyFilename>MetraTech.DomainModel.ProductCatalog.dll</AssemblyFilename>
+            <ObjectName>MetraTech.DomainModel.ProductCatalog.OwnedAccounts</ObjectName>
+            <ID>OwnerAccountName</ID>
+            <DataType>String</DataType>
+            <IsIdentity>false</IsIdentity>
+            <DataIndex>OwnerAccountName</DataIndex>
+            <IsColumn>true</IsColumn>
+            <HeaderText>
+                <LocalizationTag>GridHeader_AccountOwner</LocalizationTag>
+                <ResourceClassKey>Account/App_LocalResources/MyAccounts.aspx</ResourceClassKey>
+            </HeaderText>
+            <Formatter />
+            <Width>120</Width>
+            <Resizeable>true</Resizeable>
+            <PreventSortable>false</PreventSortable>
+            <Sortable>true</Sortable>
+            <ColumnHideable>true</ColumnHideable>
+            <DefaultColumn>true</DefaultColumn>
+            <Exportable>true</Exportable>
+            <ShowInExpander>false</ShowInExpander>
+            <Filterable>true</Filterable>
+            <FilterHideable>true</FilterHideable>
+            <DefaultFilter>true</DefaultFilter>
+            <RequiredFilter>false</RequiredFilter>
+            <FilterLabel>
+                <LocalizationTag>GridHeader_AccountOwner</LocalizationTag>
+                <ResourceClassKey>Account/App_LocalResources/MyAccounts.aspx</ResourceClassKey>
+            </FilterLabel>
+            <ElementValue>
+                <Value />
+            </ElementValue>
+            <ElementValue2>
+                <Value />
+            </ElementValue2>
+            <FilterReadOnly>false</FilterReadOnly>
+            <DropdownItems />
+        </Element>
+        <Element>
+            <RecordElement>true</RecordElement>
+            <AssemblyFilename>MetraTech.DomainModel.ProductCatalog.dll</AssemblyFilename>
+            <ObjectName>MetraTech.DomainModel.ProductCatalog.OwnedAccounts</ObjectName>
+            <ID>OwnedAccountName</ID>
+            <DataType>String</DataType>
+            <IsIdentity>false</IsIdentity>
+            <DataIndex>OwnedAccountName</DataIndex>
+            <IsColumn>true</IsColumn>
+            <HeaderText>
+                <LocalizationTag>GridHeader_OwnedAccount</LocalizationTag>
+                <ResourceClassKey>Account/App_LocalResources/MyAccounts.aspx</ResourceClassKey>
+            </HeaderText>
+            <Formatter />
+            <Width>120</Width>
+            <Resizeable>true</Resizeable>
+            <PreventSortable>false</PreventSortable>
+            <Sortable>false</Sortable>
+            <ColumnHideable>true</ColumnHideable>
+            <DefaultColumn>false</DefaultColumn>
+            <Exportable>true</Exportable>
+            <ShowInExpander>false</ShowInExpander>
+            <Filterable>true</Filterable>
+            <FilterHideable>true</FilterHideable>
+            <DefaultFilter>true</DefaultFilter>
+            <RequiredFilter>false</RequiredFilter>
+            <FilterLabel>
+                <LocalizationTag>GridHeader_OwnedAccount</LocalizationTag>
+                <ResourceClassKey>Account/App_LocalResources/MyAccounts.aspx</ResourceClassKey>
+            </FilterLabel>
+            <ElementValue>
+                <Value />
+            </ElementValue>
+            <ElementValue2>
+                <Value />
+            </ElementValue2>
+            <FilterReadOnly>false</FilterReadOnly>
+            <DropdownItems />
+        </Element>
+    </Elements>
+    <ExpanderTemplate />
+    <GridButtons />
+    <ToolbarButtons />
+</GridLayout>

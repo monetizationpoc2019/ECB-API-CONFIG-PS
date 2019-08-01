@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xmlconfig>
+    <mtconfigdata>
+        <version ptype="INTEGER">1</version>
+        <!-- First processor configuration -->
+        <processor>
+            <name>InsertTaxInclusive</name>
+            <progid>MetraPipeline.MTSQLInterpreter.1</progid>
+            <description>Insert tax inclusive</description>
+            <!-- Processor specific configuration data -->
+            <configdata>
+                <Program>CREATE PROCEDURE InsertTaxInclusive
+@_TaxInclusive VARCHAR(1) OUTPUT
+@_TaxInformational  VARCHAR(1) OUTPUT
+@_TaxCalculated VARCHAR(1) OUTPUT
+as
+
+if (@_TaxInclusive is null)
+		set @_TaxInclusive = 'N';
+if (@_TaxInformational is null)
+		set @_TaxInformational = 'N';
+if (@_TaxCalculated is null)
+    set @_TaxCalculated = 'N';</Program>
+            </configdata>
+        </processor>
+    </mtconfigdata>
+</xmlconfig>

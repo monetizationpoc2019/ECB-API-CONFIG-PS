@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xmlconfig>
+  <StoredProcs>
+    <!-- This is the stored procedure that will be used to calculate invoice on demand for specific account(s) -->
+    <CalculateInvoice>MTSP_CalculateInvoiceOnDemand</CalculateInvoice>
+    <!-- This is the stored procedure that will be used to generate the invoice numbers -->
+    <GenInvoiceNumbers>MTSP_INSERTINVOICE_DEFLTINVNUM</GenInvoiceNumbers>
+  </StoredProcs>
+  <OnDemandBilling>
+    <!-- On-Demand process will be finished once adapter with "IsFinalAction"="True" is met. -->
+    <IsFinalAction>True</IsFinalAction>
+    <IncludedAdaptersRun>
+      <!-- <GenerateReportingDatamartsScheduled /> -->
+      <!-- <ScheduledInvoicePDFAdapter /> -->
+    </IncludedAdaptersRun>
+  </OnDemandBilling>
+</xmlconfig>

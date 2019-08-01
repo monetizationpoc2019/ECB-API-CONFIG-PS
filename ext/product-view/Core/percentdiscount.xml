@@ -1,0 +1,104 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<defineservice>
+  <name>metratech.com/PercentDiscount</name>
+  <description>Percentage discounts.</description>
+  <ptype>
+    <dn>DiscountIntervalStart</dn>
+    <type>timestamp</type>
+    <length>
+    </length>
+    <required>Y</required>
+    <defaultvalue>
+    </defaultvalue>
+    <description>Start date of discount interval.</description>
+  </ptype>
+  <ptype>
+    <dn>DiscountIntervalEnd</dn>
+    <type>timestamp</type>
+    <length>
+    </length>
+    <required>Y</required>
+    <defaultvalue>
+    </defaultvalue>
+    <description>End date of discount interval.</description>
+  </ptype>
+  <ptype uservisible="False">
+    <dn>SubscriptionStart</dn>
+    <type>timestamp</type>
+    <length>
+    </length>
+    <required>Y</required>
+    <defaultvalue>
+    </defaultvalue>
+    <description>Start date of subscription.</description>
+  </ptype>
+  <ptype uservisible="False">
+    <dn>SubscriptionEnd</dn>
+    <type>timestamp</type>
+    <length>
+    </length>
+    <required>N</required>
+    <defaultvalue>
+    </defaultvalue>
+    <description>End date of subscription.</description>
+  </ptype>
+  <ptype uservisible="False">
+    <dn>DiscountIntervalSubStart</dn>
+    <type>timestamp</type>
+    <length>
+    </length>
+    <required>Y</required>
+    <defaultvalue>
+    </defaultvalue>
+    <description>Start date of intersection of the discount and subscription interval.</description>
+  </ptype>
+  <ptype uservisible="False">
+    <dn>DiscountIntervalSubEnd</dn>
+    <type>timestamp</type>
+    <length>
+    </length>
+    <required>Y</required>
+    <defaultvalue>
+    </defaultvalue>
+    <description>End date of intersection of the discount and subscription interval.</description>
+  </ptype>
+  <ptype>
+    <dn>Qualifier</dn>
+    <type>decimal</type>
+    <length>
+    </length>
+    <required>N</required>
+    <defaultvalue>
+    </defaultvalue>
+    <description>Qualifier Counter value. Required in pass 0 and 1.</description>
+  </ptype>
+  <ptype>
+    <dn>Target</dn>
+    <type>decimal</type>
+    <length>
+    </length>
+    <required>N</required>
+    <defaultvalue>
+    </defaultvalue>
+    <description>Target Counter value. Required in pass 0 and 1.</description>
+  </ptype>
+  <ptype>
+    <dn>DiscountPercent</dn>
+    <type>decimal</type>
+    <length>
+    </length>
+    <required>Y</required>
+    <defaultvalue>
+    </defaultvalue>
+    <description>Actual percentage applied.</description>
+  </ptype>
+  <ptype>
+    <dn>GroupSubscriptionName</dn>
+    <type>string</type>
+    <length>100</length>
+    <required>N</required>
+    <defaultvalue>
+    </defaultvalue>
+    <description>The group subscription name. Required for pass 2.</description>
+  </ptype>
+</defineservice>

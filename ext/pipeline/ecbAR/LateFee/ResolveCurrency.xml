@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xmlconfig>
+    <mtsysconfigdata>
+        <effective_date ptype="DATETIME">1998-11-19T00:00:00Z</effective_date>
+        <timeout ptype="INTEGER">30</timeout>
+        <configfiletype>CONFIG_DATA</configfiletype>
+    </mtsysconfigdata>
+    <mtconfigdata>
+        <version ptype="INTEGER">1</version>
+        <!-- First processor configuration -->
+        <processor>
+            <name>ResolveCurrency</name>
+            <progid>MetraPipeline.MTSQLBatchQuery.1</progid>
+            <description>Resolves the currency</description>
+            <!-- Processor specific configuration data -->
+            <configdata>
+                <Program> CREATE PROCEDURE ResolveCurrency
+	@_Currency NVARCHAR OUTPUT	
+	@_AccountID INTEGER
+AS
+BEGIN
+select avCompany.c_currency INTO @_Currency
+from t_account_ancestor aaCompany
+inner join t_av_internal avCompany
+    on aaCompany.id_ancestor = avCompany.id_acc
+    and getutcdate() between aaCompany.vt_start and aaCompany.vt_end
+where aaCompany.id_descendent = @_AccountID
+  and aaCompany.num_generations = 1
+END
+</Program>
+                <TempTable>Temp_ResolveCurrency</TempTable>
+            </configdata>
+        </processor>
+    </mtconfigdata>
+</xmlconfig>

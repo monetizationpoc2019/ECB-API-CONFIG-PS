@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<mt_config>
+    <language_code>fr</language_code>
+    <locale_space name="unit_dependent_recurring">
+        <locale_entry>
+            <Name>unit_dependent_recurring/DeferredRevenueCode</Name>
+            <Value>Code PCA</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>unit_dependent_recurring/glcode</Name>
+            <Value>Code Compta.Générale</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>unit_dependent_recurring/IsLiabilityProduct</Name>
+            <Value>Constitue un passif</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>unit_dependent_recurring/RevenueCode</Name>
+            <Value>Code Produit</Value>
+        </locale_entry>
+    </locale_space>
+</mt_config>

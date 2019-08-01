@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xmlconfig>
+ <version ptype="INTEGER">1</version>
+ <description>Adds, updates, or deletes an account mapping.
+ 
+ Processing consists of:
+ 
+     1. Internal MetraNet account ID is found for LoginName and NameSpace pair.
+     2. If operation is Add, a new mapping record is added to t_account_mapper
+         table for NewLoginName, NewNameSpace (it has to exist in t_namespace
+         table) and internal account ID found in step 1.
+     3. If operation is Update, a record for LoginName and NameSpace is deleted
+         from t_account_mapper table and the new one for NewLoginName and
+         NewNameSpace is added there.
+     4. If operation is Delete, a record for LoginName and NameSpace is
+         deleted from t_account_mapper table.  NewLoginName and NewNameSpace are
+        ignored in this case.</description>
+ <stage>
+  <name>AccountMapping</name>
+  <startstage ptype="BOOLEAN">YES</startstage>
+  <finalstage ptype="BOOLEAN">YES</finalstage>
+
+<dependencies>
+  <dependson>ModifyAccountMapping</dependson>
+	<dependson>BatchUpdate</dependson>
+
+  <dependency>
+    <processor>BatchUpdate</processor>
+    <dependson>Audit</dependson>
+  </dependency>
+
+  <dependency>
+    <processor>Audit</processor>
+    <dependson>SetSubscriberAccountID</dependson>
+    <dependson>SetAuditProperties</dependson>
+
+  </dependency>
+
+  <dependency>
+    <processor>SetSubscriberAccountID</processor>
+    <dependson>AccountResolution</dependson>
+  </dependency>
+
+  <dependency>
+    <processor>ModifyAccountMapping</processor>
+    <dependson>AccountResolution</dependson>
+  </dependency>
+
+</dependencies>
+
+ </stage>
+ <possiblenextstages />
+</xmlconfig>

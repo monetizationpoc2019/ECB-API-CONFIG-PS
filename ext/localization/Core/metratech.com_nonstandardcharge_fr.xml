@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<mt_config>
+    <language_code>fr</language_code>
+    <locale_space name="metratech.com/NonStandardCharge">
+        <locale_entry>
+            <Name>metratech.com/NonStandardCharge</Name>
+            <Value>Frais non standard</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/NonStandardCharge/AdditionalCode/Other</Name>
+            <Value>Autre</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/NonStandardCharge/NonStandardChargeReason/Credit</Name>
+            <Value>Crédit</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/NonStandardCharge/NonStandardChargeReason/Debit</Name>
+            <Value>Débit</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/NonStandardCharge/NonStandardChargeReason/Other</Name>
+            <Value>Autre</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/NonStandardCharge/NonStandardChargeType/Other</Name>
+            <Value>Autre</Value>
+        </locale_entry>
+    </locale_space>
+</mt_config>

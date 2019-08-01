@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<defineservice>
+  <name indexed_property="UnitValue" help_url="" condition_header="Conditions" action_header="Actions" display_name="UDRC Tapered Rates" type="Rates">metratech.com/UDRCTapered</name>
+  <description>Stores the per unit recurring charge.</description>
+  <!-- conditions -->
+  <!-- actions -->
+  <ptype display_name="Number Of Units" condition="Y" column_operator="&lt;=" filterable="Y">
+    <dn>UnitValue</dn>
+    <type>decimal</type>
+    <length>
+    </length>
+    <required>Y</required>
+    <defaultvalue>
+    </defaultvalue>
+    <description>The value of the units.</description>
+  </ptype>
+  <ptype display_name="Recurring Charge Per-Unit Amount" action="Y">
+    <dn>UnitAmount</dn>
+    <type>decimal</type>
+    <length>
+    </length>
+    <required>Y</required>
+    <defaultvalue>
+    </defaultvalue>
+    <description>Number of units.</description>
+  </ptype>
+</defineservice>

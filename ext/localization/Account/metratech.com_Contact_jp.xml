@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<mt_config>
+  <language_code>jp</language_code>
+  <locale_space name="metratech.com/Contact">
+    <locale_entry>
+      <Name>metratech.com/Contact/Address1</Name>
+      <Value>住所 1</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/Contact/Address2</Name>
+      <Value>住所 2</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/Contact/Address3</Name>
+      <Value>住所 3</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/Contact/City</Name>
+      <Value>市町村</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/Contact/Company</Name>
+      <Value>会社名</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/Contact/ContactType</Name>
+      <Value>接触種別</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/Contact/Country</Name>
+      <Value>国</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/Contact/Email</Name>
+      <Value>電子メール</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/Contact/FacsimileTelephoneNumber</Name>
+      <Value>Fax</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/Contact/FirstName</Name>
+      <Value>名</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/Contact/LastName</Name>
+      <Value>姓</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/Contact/MiddleInitial</Name>
+      <Value>ミドルネームのイニシャル</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/Contact/PassportID</Name>
+      <Value>パスポート ID</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/Contact/PassportIssuer</Name>
+      <Value>パスポート発行者</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/Contact/PhoneNumber</Name>
+      <Value>電話番号</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/Contact/State</Name>
+      <Value>都道府県</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/Contact/Zip</Name>
+      <Value>郵便番号</Value>
+    </locale_entry>
+  </locale_space>
+</mt_config>

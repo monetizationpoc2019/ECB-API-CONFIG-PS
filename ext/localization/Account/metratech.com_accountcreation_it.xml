@@ -1,0 +1,446 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<mt_config>
+    <language_code>it</language_code>
+    <locale_space name="metratech.com/accountcreation">
+        <locale_entry>
+            <Name>metratech.com/accountcreation/_Accountid</Name>
+            <Value>ID account</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/accountcreation/accountenddate</Name>
+            <Value>Data di fine del conto</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/accountcreation/accountstartdate</Name>
+            <Value>Data di inizio del conto</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/accountcreation/AccountStatus</Name>
+            <Value>Stato del conto</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/accountcreation/AccountStatus/Active</Name>
+            <Value>Attivo</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/accountcreation/AccountStatus/Archived</Name>
+            <Value>Archiviato</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/accountcreation/AccountStatus/Closed</Name>
+            <Value>Chiuso</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/accountcreation/AccountStatus/PendingActiveApproval</Name>
+            <Value>PendingActiveApproval</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/accountcreation/AccountStatus/PendingFinalBill</Name>
+            <Value>PendingFinalBill</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/accountcreation/AccountStatus/Suspended</Name>
+            <Value>Sospeso</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/accountcreation/accountstatus_enddate</Name>
+            <Value>Data di fine dello stato conto</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/accountcreation/accountstatus_startdate</Name>
+            <Value>Data di inizio dello stato conto</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/accountcreation/AccountType</Name>
+            <Value>Tipo di conto</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/accountcreation/AccountType/CSR</Name>
+            <Value>RSC (Rappresentante Servizio Clienti)</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/accountcreation/AccountType/IND</Name>
+            <Value>Account indipendente</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/accountcreation/AccountType/MCM</Name>
+            <Value>MetraOffer</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/accountcreation/AccountType/MOM</Name>
+            <Value>MetraControl</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/accountcreation/AccountType/SUB</Name>
+            <Value>Abbonato gerarchico</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/accountcreation/AccountType/SYS</Name>
+            <Value>Conto di sistema interno</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/accountcreation/ActionType</Name>
+            <Value>Tipo di azione</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/accountcreation/ActionType/Account</Name>
+            <Value>Conto</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/accountcreation/ActionType/Both</Name>
+            <Value>Entrambi</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/accountcreation/ActionType/Contact</Name>
+            <Value>Contatto</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/accountcreation/address1</Name>
+            <Value>Indirizzo</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/accountcreation/address2</Name>
+            <Value>Riga indirizzo 2</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/accountcreation/address3</Name>
+            <Value>Riga indirizzo 3</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/accountcreation/ancestorAccount</Name>
+            <Value>Conto principale</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/accountcreation/ancestorAccountID</Name>
+            <Value>ID conto principale</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/accountcreation/ancestorAccountNS</Name>
+            <Value>Spazio dei nomi del conto principale</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/accountcreation/ApplyAccountTemplate</Name>
+            <Value>ApplyAccountTemplate</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/accountcreation/ApplyDefaultSecurityPolicy</Name>
+            <Value>Applica criterio di sicurezza predefinito</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/accountcreation/AuthenticationType/ActiveDirectory</Name>
+            <Value>ActiveDirectory</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/accountcreation/AuthenticationType/MetraNetInternal</Name>
+            <Value>MetraNetInternal</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/accountcreation/billable</Name>
+            <Value>Fatturabile</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/accountcreation/city</Name>
+            <Value>Città</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/accountcreation/company</Name>
+            <Value>Società</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/accountcreation/ContactType</Name>
+            <Value>Tipo di contatto</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/accountcreation/ContactType/Bill-To</Name>
+            <Value>Contatto per la fatturazione</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/accountcreation/ContactType/None</Name>
+            <Value>No</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/accountcreation/ContactType/Ship-To</Name>
+            <Value>Contatto per la spedizione</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/accountcreation/country</Name>
+            <Value>Stato</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/accountcreation/csrid</Name>
+            <Value>ID RSC</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/accountcreation/currency</Name>
+            <Value>Valuta</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/accountcreation/dayofmonth</Name>
+            <Value>Ultimo giorno del mese</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/accountcreation/dayofweek</Name>
+            <Value>Ultimo giorno della settimana</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/accountcreation/email</Name>
+            <Value>E-mail</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/accountcreation/facsimiletelephonenumber</Name>
+            <Value>Fax</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/accountcreation/firstdayofmonth</Name>
+            <Value>Primo ultimo giorno del mese</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/accountcreation/firstname</Name>
+            <Value>Nome</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/accountcreation/folder</Name>
+            <Value>Cartella</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/accountcreation/hierarchy_enddate</Name>
+            <Value>Data di fine gerarchia</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/accountcreation/hierarchy_startdate</Name>
+            <Value>Sposta data effettiva</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/accountcreation/InvoiceMethod</Name>
+            <Value>Fattura cartacea</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/accountcreation/InvoiceMethod/Detailed</Name>
+            <Value>Dettagliato</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/accountcreation/InvoiceMethod/None</Name>
+            <Value>No</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/accountcreation/InvoiceMethod/Standard</Name>
+            <Value>Standard</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/accountcreation/InvoiceMethod/StandardWithBillMessages</Name>
+            <Value>Standard With Bill Messages</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/accountcreation/Language</Name>
+            <Value>Lingua</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/accountcreation/lastname</Name>
+            <Value>Cognome</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/accountcreation/LoginApplication/CSR</Name>
+            <Value>RSC (Rappresentante Servizio Clienti)</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/accountcreation/LoginApplication/MCM</Name>
+            <Value>MetraOffer</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/accountcreation/LoginApplication/MOM</Name>
+            <Value>MetraControl</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/accountcreation/middleinitial</Name>
+            <Value>Iniziali</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/accountcreation/name_space</Name>
+            <Value>Spazio nome</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/accountcreation/operation</Name>
+            <Value>Operazione</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/accountcreation/operation/Add</Name>
+            <Value>Aggiungi</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/accountcreation/operation/delete</Name>
+            <Value>Elimina</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/accountcreation/operation/Update</Name>
+            <Value>Aggiorna</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/accountcreation/password_</Name>
+            <Value>Password</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/accountcreation/PayerAccount</Name>
+            <Value>Pagatore</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/accountcreation/PayerAccountNS</Name>
+            <Value>Spazio dei nomi del pagante</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/accountcreation/payerID</Name>
+            <Value>ID pagante</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/accountcreation/payment_enddate</Name>
+            <Value>Data di fine del pagamento</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/accountcreation/payment_startdate</Name>
+            <Value>Data di inizio del pagamento</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/accountcreation/PaymentMethod</Name>
+            <Value>Metodo di pagamento</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/accountcreation/PaymentMethod/CashOrCheck</Name>
+            <Value>Contanti/Assegno</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/accountcreation/PaymentMethod/CreditCard</Name>
+            <Value>Credit Card</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/accountcreation/PaymentMethod/CreditOrACH</Name>
+            <Value>Carta di credito o ACH</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/accountcreation/phonenumber</Name>
+            <Value>Numero di telefono</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/accountcreation/pricelist</Name>
+            <Value>Listini</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/accountcreation/seconddayofmonth</Name>
+            <Value>Secondo ultimo giorno del mese</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/accountcreation/SecurityAnswer</Name>
+            <Value>Risposta di sicurezza</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/accountcreation/SecurityQuestion</Name>
+            <Value>Domanda di sicurezza</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/accountcreation/SecurityQuestion/FirstSchool</Name>
+            <Value>[IT] What is the name of the first school you attended?</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/accountcreation/SecurityQuestion/MothersMaidenName</Name>
+            <Value>[IT] What was your childhood nickname?</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/accountcreation/SecurityQuestion/None</Name>
+            <Value>No</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/accountcreation/SecurityQuestion/PIN</Name>
+            <Value>[IT] What was the name of your first car?</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/accountcreation/SecurityQuestion/SSN</Name>
+            <Value>[IT] What school did you attend for sixth grade?</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/accountcreation/startday</Name>
+            <Value>Giorno di inizio</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/accountcreation/startmonth</Name>
+            <Value>Mese di inizio</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/accountcreation/startyear</Name>
+            <Value>Anno di inizio</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/accountcreation/state</Name>
+            <Value>Stato/Provincia</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/accountcreation/StatusReason</Name>
+            <Value>Motivo stato</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/accountcreation/StatusReason/AccountDeactivated</Name>
+            <Value>Conto disattivato</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/accountcreation/StatusReason/AccountTerminated</Name>
+            <Value>Conto chiuso</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/accountcreation/StatusReason/None</Name>
+            <Value>No</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/accountcreation/StatusReason/Other</Name>
+            <Value>Altro</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/accountcreation/StatusReason/PendingApproval</Name>
+            <Value>In attesa di approvazione</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/accountcreation/StatusReason/PendingPaymentSetUp</Name>
+            <Value>Impostazione pagamento in sospeso</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/accountcreation/StatusReasonOther</Name>
+            <Value>Altro</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/accountcreation/tariffID</Name>
+            <Value>Tariffa</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/accountcreation/taxexempt</Name>
+            <Value>Esente da imposte</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/accountcreation/TaxExemptID</Name>
+            <Value>ID esenzione fiscale</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/accountcreation/timezoneID</Name>
+            <Value>Fuso orario</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/accountcreation/timezoneoffset</Name>
+            <Value>Offset fuso orario</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/accountcreation/transactioncookie</Name>
+            <Value>Transactioncookie</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/accountcreation/TruncateOldSubscriptions</Name>
+            <Value>TruncateOldSubscriptions</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/accountcreation/usagecycletype</Name>
+            <Value>Ciclo di fatturazione</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/accountcreation/username</Name>
+            <Value>Nome utente</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/accountcreation/zip</Name>
+            <Value>CAP (Codice di avviamento postale)</Value>
+        </locale_entry>
+    </locale_space>
+</mt_config>

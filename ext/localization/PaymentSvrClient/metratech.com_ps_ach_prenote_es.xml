@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<mt_config>
+  <language_code>es</language_code>
+  <locale_space name="metratech.com/ps_ach_prenote">
+    <locale_entry>
+      <Name>metratech.com/ps_ach_prenote</Name>
+      <Value>Notificación anticipada ACH</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ps_ach_prenote/address</Name>
+      <Value>Dirección del suscriptor</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ps_ach_prenote/bankaccounttype</Name>
+      <Value>Tipo de cuenta bancaria</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ps_ach_prenote/city</Name>
+      <Value>Ciudad</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ps_ach_prenote/country</Name>
+      <Value>País</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ps_ach_prenote/customername</Name>
+      <Value>Nombre del suscriptor</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ps_ach_prenote/lastfourdigits</Name>
+      <Value>Últimos cuatro dígitos</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ps_ach_prenote/originalaccountid</Name>
+      <Value>ID de cuenta original</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ps_ach_prenote/paymentservicetransactionid</Name>
+      <Value>ID de transacción del proveedor de servicios de pago</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ps_ach_prenote/respstring</Name>
+      <Value>Descripción de la respuesta</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ps_ach_prenote/retcode</Name>
+      <Value>Código de devolución</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ps_ach_prenote/routingnumber</Name>
+      <Value>Número de ruta bancaria/ABA</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ps_ach_prenote/state</Name>
+      <Value>Provincia</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ps_ach_prenote/zip</Name>
+      <Value>Código postal</Value>
+    </locale_entry>
+  </locale_space>
+</mt_config>

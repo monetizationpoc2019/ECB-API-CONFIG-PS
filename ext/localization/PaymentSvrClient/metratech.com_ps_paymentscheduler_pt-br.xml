@@ -1,0 +1,106 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<mt_config>
+  <language_code>pt-br</language_code>
+  <locale_space name="metratech.com/ps_paymentscheduler">
+    <locale_entry>
+      <Name>metratech.com/ps_paymentscheduler</Name>
+      <Value>Exibição do produto Agendador de Pagamento</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ps_paymentscheduler/bankaccounttype</Name>
+      <Value>Tipo de conta bancária</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ps_paymentscheduler/confirmationreceived</Name>
+      <Value>Indicador de recebimento de confirmação do assinante</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ps_paymentscheduler/confirmationrequested</Name>
+      <Value>Indicador de solicitação de confirmação do assinante</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ps_paymentscheduler/creditcardtype</Name>
+      <Value>Tipo de cartão de crédito</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ps_paymentscheduler/currentstatus</Name>
+      <Value>Status da transação atual</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ps_paymentscheduler/description</Name>
+      <Value>Descrição</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ps_paymentscheduler/email</Name>
+      <Value>Endereço de email</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ps_paymentscheduler/intervalid</Name>
+      <Value>ID do intervalo do servidor de utilização</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ps_paymentscheduler/lastfourdigits</Name>
+      <Value>Último quatro dígitos do cartão de crédito ou número da conta bancária</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ps_paymentscheduler/laststatusupdate</Name>
+      <Value>Data de atualização do último status</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ps_paymentscheduler/maxretries</Name>
+      <Value>Números máximo de tentativas</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ps_paymentscheduler/nachacode</Name>
+      <Value>Código NACHA</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ps_paymentscheduler/numberretries</Name>
+      <Value>Números de tentativas</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ps_paymentscheduler/originalaccountid</Name>
+      <Value>Identificador do assinante</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ps_paymentscheduler/originalintervalid</Name>
+      <Value>ID do intervalo original</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ps_paymentscheduler/paymentprovidercode</Name>
+      <Value>Código de status do provedor de pagamento</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ps_paymentscheduler/paymentproviderstatus</Name>
+      <Value>Status do provedor de pagamento</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ps_paymentscheduler/paymentservicetransactionid</Name>
+      <Value>ID da transação do provedor do serviço de pagamento</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ps_paymentscheduler/paymenttype</Name>
+      <Value>Tipo de pagamento interno</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ps_paymentscheduler/retryonfailure</Name>
+      <Value>Tentar novamente em caso de indicação de falha</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ps_paymentscheduler/routingnumber</Name>
+      <Value>ABA/Número de identificação</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ps_paymentscheduler/scheduledpayment</Name>
+      <Value>Data de pagamento agendado</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ps_paymentscheduler/taxamount</Name>
+      <Value>Valores do imposto</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ps_paymentscheduler/usagecycletype</Name>
+      <Value>Tipo de ciclo de utilização</Value>
+    </locale_entry>
+  </locale_space>
+</mt_config>

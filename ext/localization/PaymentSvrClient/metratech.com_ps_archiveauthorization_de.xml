@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<mt_config>
+  <language_code>DE</language_code>
+  <locale_space name="metratech.com/ps_archiveauthorization">
+    <locale_entry>
+      <Name>metratech.com/ps_archiveauthorization</Name>
+      <Value>Autorisierungs-Produktansicht archivieren</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ps_archiveauthorization/bankaccounttype</Name>
+      <Value>Bankkontoart</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ps_archiveauthorization/creditcardtype</Name>
+      <Value>Kreditkartentyp</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ps_archiveauthorization/description</Name>
+      <Value>Beschreibung</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ps_archiveauthorization/effectivedate</Name>
+      <Value>Stichtag</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ps_archiveauthorization/lastfourdigits</Name>
+      <Value>Die letzten vier Ziffern der Kreditkarten- oder Kontonummer</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ps_archiveauthorization/originalaccountid</Name>
+      <Value>Teilnehmer-ID</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ps_archiveauthorization/password_</Name>
+      <Value>Kennwort des Teilnehmers</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ps_archiveauthorization/paymenttype</Name>
+      <Value>Zahlungsart</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ps_archiveauthorization/routing number</Name>
+      <Value>ABA/Bankleitzahl</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ps_archiveauthorization/routingnumber</Name>
+      <Value>Bankleitzahl</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ps_archiveauthorization/username</Name>
+      <Value>Benutzername des Teilnehmers</Value>
+    </locale_entry>
+  </locale_space>
+</mt_config>

@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<mt_config>
+  <language_code>jp</language_code>
+  <locale_space name="metratech.com/calendar">
+    <locale_entry>
+      <Name>metratech.com/calendar/CalendarCode/Holiday</Name>
+      <Value>祝日</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/calendar/CalendarCode/Off-Peak</Name>
+      <Value>オフピーク</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/calendar/CalendarCode/Peak</Name>
+      <Value>ピーク</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/calendar/CalendarCode/Weekend</Name>
+      <Value>週末</Value>
+    </locale_entry>
+  </locale_space>
+</mt_config>

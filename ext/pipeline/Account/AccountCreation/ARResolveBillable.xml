@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xmlconfig>
+
+  <mtsysconfigdata>
+    <effective_date ptype="DATETIME">1998-11-19T00:00:00Z</effective_date>
+    <timeout ptype="INTEGER">30</timeout>
+    <configfiletype>CONFIG_DATA</configfiletype>
+  </mtsysconfigdata>
+
+  <mtconfigdata>
+    <version ptype="INTEGER">1</version>
+
+    <processor>
+      <name>ARResolveBillable</name>
+      <progid>MetraPipeline.AccountResolution.1</progid>
+      <description>Need to determine if the account is 'billable' in the case we are doing an update. Billable is used later to determine if we should export the account to the external AR system.</description><condition>
+      
+      CREATE PROCEDURE condition
+                                          @_ExecutePlugin BOOLEAN OUTPUT
+                                          @Billable BOOLEAN
+                                          @ContactType ENUM  -- $ICE:('metratech.com/accountcreation','ContactType')$
+                AS
+                  IF ((@Billable IS NULL)
+                  AND (@ContactType = #metratech.com/accountcreation/ContactType/Bill-To#))
+                    SET @_ExecutePlugin = TRUE
+                  ELSE
+                    SET @_ExecutePlugin = FALSE
+
+                  -- IF @Billable IS NULL
+                  --   PRINT 'ARResolveBillable: Billable [NULL] ContactType [' + CAST(@ContactType AS VARCHAR) + '] _ExecutePlugin [' + CAST(@_ExecutePlugin AS VARCHAR) + ']';
+                  -- ELSE
+                  --   PRINT 'ARResolveBillable: Billable [' + CAST(@Billable AS VARCHAR) + '] ContactType [' + CAST(@ContactType AS VARCHAR) + '] _ExecutePlugin [' + CAST(@_ExecutePlugin AS VARCHAR) + ']';
+      
+      </condition>
+
+      
+
+      <configdata>
+        <Resolution>
+          <AccountID>_accountID</AccountID>
+        </Resolution>
+        <Retrieval> 
+          <Property>
+            <Extension>core</Extension>
+            <AccountAdapter>internal</AccountAdapter>
+            <Name>billable</Name>
+            <InSession>billable</InSession>
+          </Property>
+        </Retrieval>
+      </configdata>
+    </processor>
+  </mtconfigdata>
+</xmlconfig>

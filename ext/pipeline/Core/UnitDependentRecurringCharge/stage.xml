@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xmlconfig>
+  <version ptype="INTEGER">1</version>
+  <description>Applies a unit-dependent recurring charge.</description>
+  <stage>
+    <name>UnitDependentRecurringCharge</name>
+    <startstage ptype="BOOLEAN">YES</startstage>
+    <finalstage ptype="BOOLEAN">NO</finalstage>
+    <nextstage>WriteProductView</nextstage>
+  <dependencies>
+
+   <dependson>SetAmount</dependson>
+   <dependency>
+     <processor>SetAmount</processor>
+     <dependson>UDRCProration</dependson>
+   </dependency>
+
+   <dependency>
+     <processor>UDRCProration</processor>
+     <dependson>CalcAmount</dependson>
+   </dependency>
+
+   <dependency>
+     <processor>CalcAmount</processor>
+     <dependson>RCRateLookup</dependson>
+   </dependency>
+
+   <dependency>
+     <processor>RCRateLookup</processor>
+     <dependson>TaperedRateLookup</dependson>
+   </dependency>
+
+   <dependency>
+     <processor>TaperedRateLookup</processor>
+     <dependson>SetAccountStateRule</dependson>
+     <dependson>RateDate</dependson>
+     <dependson>AccountResolution</dependson>
+   </dependency>
+
+   <dependency>
+      <processor>AccountResolution</processor>
+      <dependson>Namespace</dependson>
+   </dependency>
+
+  </dependencies>
+  </stage>
+  <possiblenextstages />
+</xmlconfig>

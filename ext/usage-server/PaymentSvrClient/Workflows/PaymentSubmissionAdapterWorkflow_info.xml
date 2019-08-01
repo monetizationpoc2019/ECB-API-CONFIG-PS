@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<WorkflowInfo>
+    <Name>PaymentSubmissionAdapterWorkflow</Name>
+    <Type>SequentialWorkflow</Type>
+    <Assembly>MetraTech.Core.Workflows.dll</Assembly>
+    <XomlFile>PaymentSubmissionAdapterWorkflow.xoml</XomlFile>
+    <Description>Payment Submission Adapter Workflow</Description>
+</WorkflowInfo>

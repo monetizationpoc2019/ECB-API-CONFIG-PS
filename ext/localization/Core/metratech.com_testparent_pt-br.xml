@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<mt_config>
+  <language_code>pt-br</language_code>
+  <locale_space name="metratech.com/testparent">
+    <locale_entry>
+      <Name>metratech.com/testparent</Name>
+      <Value>Testar pai</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/testparent/description</Name>
+      <Value>Descrição</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/testparent/time</Name>
+      <Value>Hora</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/testparent/totalamount</Name>
+      <Value>Valor total</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/testparent/totalunits</Name>
+      <Value>Total de unidades</Value>
+    </locale_entry>
+  </locale_space>
+</mt_config>

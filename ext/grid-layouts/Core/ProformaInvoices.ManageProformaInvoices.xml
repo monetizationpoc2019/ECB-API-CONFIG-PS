@@ -1,0 +1,772 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<GridLayout xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <Name>ProformaInvoices.ManageProformaInvoices</Name>
+    <Title>
+        <LocalizationTag>MTTitleResource.Text</LocalizationTag>
+        <ResourceClassKey>ProformaInvoices/App_LocalResources/ManageProformaInvoices.aspx</ResourceClassKey>
+    </Title>
+    <Exportable>true</Exportable>
+    <Height>0</Height>
+    <Width>75%</Width>
+    <Expandable>true</Expandable>
+    <Buttons>None</Buttons>
+    <DataSourceURL>AjaxServices/ProformaInvoicesAjax.aspx?action=Get</DataSourceURL>
+    <MultiSelect>true</MultiSelect>
+    <SelectionModel>CheckBox</SelectionModel>
+    <TotalProperty>TotalRows</TotalProperty>
+    <RootElement>Items</RootElement>
+    <PageSize>10</PageSize>
+    <Description>Proforma Invoices</Description>
+    <ExpansionCssClass />
+    <ShowFilterPanel>true</ShowFilterPanel>
+    <FilterInputWidth>220</FilterInputWidth>
+    <FilterLabelWidth>75</FilterLabelWidth>
+    <FilterColumnWidth>350</FilterColumnWidth>
+    <ShowTopBar>true</ShowTopBar>
+    <ShowBottomBar>true</ShowBottomBar>
+    <ShowGridFrame>true</ShowGridFrame>
+    <ShowGridHeader>true</ShowGridHeader>
+    <ShowColumnHeaders>true</ShowColumnHeaders>
+    <NoRecordsText>
+        <LocalizationTag>TEXT_NO_RECORDS_FOUND</LocalizationTag>
+        <ResourceClassKey>Resource</ResourceClassKey>
+    </NoRecordsText>
+    <FilterPanelLayout>MultiColumn</FilterPanelLayout>
+    <FilterPanelCollapsed>true</FilterPanelCollapsed>
+    <EnableColumnConfig>true</EnableColumnConfig>
+    <EnableFilterConfig>true</EnableFilterConfig>
+    <Resizeable>true</Resizeable>
+    <ButtonAlignment>Center</ButtonAlignment>
+    <DefaultSortField>Id</DefaultSortField>
+    <DefaultSortDirection>Ascending</DefaultSortDirection>
+    <DisplayCount>true</DisplayCount>
+    <SearchOnLoad>true</SearchOnLoad>
+    <CustomImplementationFilePath />
+    <CustomOverrideJavascriptIncludes>\MetraNet\ProformaInvoices\ManageProformaInvoices.aspx</CustomOverrideJavascriptIncludes>
+    <DataBinder>
+        <ServicePath>AjaxServices/ProformaInvoicesAjax.aspx?action=Get</ServicePath>
+        <OutPropertyName>proformaInvoices</OutPropertyName>
+        <Operation>Get</Operation>
+    </DataBinder>
+    <SubGrid />
+    <FilterLabelWrap>None</FilterLabelWrap>
+    <Elements>
+        <Element>
+            <RecordElement>false</RecordElement>
+            <ID>Actions</ID>
+            <DataIndex>actions</DataIndex>
+            <IsColumn>true</IsColumn>
+            <HeaderText>
+                <LocalizationTag>TEXT_ACTIONS</LocalizationTag>
+                <ResourceClassKey>ProformaInvoices/App_LocalResources/ManageProformaInvoices.aspx</ResourceClassKey>
+            </HeaderText>
+            <Formatter />
+            <Width>80</Width>
+            <Resizeable>true</Resizeable>
+            <PreventSortable>false</PreventSortable>
+            <Sortable>false</Sortable>
+            <ColumnHideable>true</ColumnHideable>
+            <DefaultColumn>true</DefaultColumn>
+            <Filterable>false</Filterable>
+        </Element>
+        <Element>
+            <RecordElement>true</RecordElement>
+            <AssemblyFilename>MetraTech.Domain.dll</AssemblyFilename>
+            <ObjectName>MetraTech.Domain.ProformaInvoices.ProformaInvoice</ObjectName>
+            <ID>Id</ID>
+            <DataType>Numeric</DataType>
+            <IsIdentity>true</IsIdentity>
+            <DataIndex>Id</DataIndex>
+            <IsColumn>true</IsColumn>
+            <HeaderText>
+                <LocalizationTag>ID</LocalizationTag>
+                <ResourceClassKey>ProformaInvoices/App_LocalResources/ManageProformaInvoices.aspx</ResourceClassKey>
+            </HeaderText>
+            <Formatter />
+            <Width>80</Width>
+            <Resizeable>true</Resizeable>
+            <PreventSortable>false</PreventSortable>
+            <Sortable>true</Sortable>
+            <ColumnHideable>true</ColumnHideable>
+            <DefaultColumn>true</DefaultColumn>
+            <Exportable>true</Exportable>
+            <ShowInExpander>false</ShowInExpander>
+            <Filterable>true</Filterable>
+            <FilterHideable>true</FilterHideable>
+            <DefaultFilter>true</DefaultFilter>
+            <RequiredFilter>false</RequiredFilter>
+            <FilterLabel />
+            <ElementValue>
+                <Value />
+            </ElementValue>
+            <ElementValue2>
+                <Value />
+            </ElementValue2>
+            <FilterReadOnly>false</FilterReadOnly>
+            <DropdownItems />
+        </Element>
+        <Element>
+            <RecordElement>true</RecordElement>
+            <AssemblyFilename>MetraTech.Domain.dll</AssemblyFilename>
+            <ObjectName>MetraTech.Domain.ProformaInvoices.ProformaInvoice</ObjectName>
+            <ID>AccountDisplayName</ID>
+            <DataType>Account</DataType>
+            <IsIdentity>false</IsIdentity>
+            <DataIndex>AccountDisplayName</DataIndex>
+            <IsColumn>true</IsColumn>
+            <HeaderText>
+                <LocalizationTag>ACCOUNT_DISPLAY_NAME</LocalizationTag>
+                <ResourceClassKey>ProformaInvoices/App_LocalResources/ManageProformaInvoices.aspx</ResourceClassKey>
+            </HeaderText>
+            <Formatter />
+            <Width>220</Width>
+            <Resizeable>true</Resizeable>
+            <PreventSortable>false</PreventSortable>
+            <Sortable>true</Sortable>
+            <ColumnHideable>true</ColumnHideable>
+            <DefaultColumn>true</DefaultColumn>
+            <Exportable>true</Exportable>
+            <ShowInExpander>false</ShowInExpander>
+            <Filterable>false</Filterable>
+            <FilterHideable>true</FilterHideable>
+            <DefaultFilter>true</DefaultFilter>
+            <RequiredFilter>false</RequiredFilter>
+            <FilterLabel />
+            <ElementValue>
+                <Value />
+            </ElementValue>
+            <ElementValue2>
+                <Value />
+            </ElementValue2>
+            <FilterReadOnly>false</FilterReadOnly>
+            <DropdownItems />
+        </Element>
+        <Element>
+            <RecordElement>true</RecordElement>
+            <AssemblyFilename>MetraTech.Domain.dll</AssemblyFilename>
+            <ObjectName>MetraTech.Domain.ProformaInvoices.ProformaInvoice</ObjectName>
+            <ID>AccountId</ID>
+            <DataType>Account</DataType>
+            <IsIdentity>false</IsIdentity>
+            <DataIndex>AccountId</DataIndex>
+            <IsColumn>false</IsColumn>
+            <HeaderText>
+                <LocalizationTag>ACCOUNT_DISPLAY_NAME</LocalizationTag>
+                <ResourceClassKey>ProformaInvoices/App_LocalResources/ManageProformaInvoices.aspx</ResourceClassKey>
+            </HeaderText>
+            <Formatter />
+            <Width>220</Width>
+            <Resizeable>true</Resizeable>
+            <PreventSortable>false</PreventSortable>
+            <Sortable>true</Sortable>
+            <ColumnHideable>true</ColumnHideable>
+            <DefaultColumn>true</DefaultColumn>
+            <Exportable>true</Exportable>
+            <ShowInExpander>false</ShowInExpander>
+            <Filterable>true</Filterable>
+            <FilterHideable>true</FilterHideable>
+            <DefaultFilter>true</DefaultFilter>
+            <RequiredFilter>false</RequiredFilter>
+            <FilterLabel />
+            <ElementValue>
+                <Value />
+            </ElementValue>
+            <ElementValue2>
+                <Value />
+            </ElementValue2>
+            <FilterReadOnly>false</FilterReadOnly>
+            <DropdownItems />
+        </Element>
+        <Element>
+            <RecordElement>true</RecordElement>
+            <AssemblyFilename>MetraTech.Domain.dll</AssemblyFilename>
+            <ObjectName>MetraTech.Domain.ProformaInvoices.ProformaInvoice</ObjectName>
+            <ID>CreationDate</ID>
+            <DataType>Date</DataType>
+            <IsIdentity>false</IsIdentity>
+            <DataIndex>CreationDate</DataIndex>
+            <IsColumn>true</IsColumn>
+            <HeaderText>
+                <LocalizationTag>CREATION_DATE</LocalizationTag>
+                <ResourceClassKey>ProformaInvoices/App_LocalResources/ManageProformaInvoices.aspx</ResourceClassKey>
+            </HeaderText>
+            <Formatter />
+            <Width>120</Width>
+            <Resizeable>true</Resizeable>
+            <PreventSortable>false</PreventSortable>
+            <Sortable>true</Sortable>
+            <ColumnHideable>true</ColumnHideable>
+            <DefaultColumn>true</DefaultColumn>
+            <Exportable>true</Exportable>
+            <ShowInExpander>false</ShowInExpander>
+            <Filterable>true</Filterable>
+            <FilterHideable>true</FilterHideable>
+            <DefaultFilter>true</DefaultFilter>
+            <RequiredFilter>false</RequiredFilter>
+            <FilterLabel />
+            <ElementValue>
+                <Value />
+            </ElementValue>
+            <ElementValue2>
+                <Value />
+            </ElementValue2>
+            <FilterReadOnly>false</FilterReadOnly>
+            <DropdownItems />
+        </Element>
+        <Element>
+            <RecordElement>true</RecordElement>
+            <AssemblyFilename>MetraTech.Domain.dll</AssemblyFilename>
+            <ObjectName>MetraTech.Domain.ProformaInvoices.ProformaInvoice</ObjectName>
+            <ID>TotalAmount</ID>
+            <DataType>Numeric</DataType>
+            <IsIdentity>false</IsIdentity>
+            <DataIndex>TotalAmount</DataIndex>
+            <IsColumn>true</IsColumn>
+            <HeaderText>
+                <LocalizationTag>TOTAL_AMOUNT</LocalizationTag>
+                <ResourceClassKey>ProformaInvoices/App_LocalResources/ManageProformaInvoices.aspx</ResourceClassKey>
+            </HeaderText>
+            <Formatter>CurrencyRenderer</Formatter>
+            <Width>120</Width>
+            <Resizeable>true</Resizeable>
+            <PreventSortable>true</PreventSortable>
+            <Sortable>false</Sortable>
+            <ColumnHideable>true</ColumnHideable>
+            <DefaultColumn>true</DefaultColumn>
+            <Exportable>true</Exportable>
+            <ShowInExpander>false</ShowInExpander>
+            <Filterable>true</Filterable>
+            <FilterHideable>true</FilterHideable>
+            <DefaultFilter>true</DefaultFilter>
+            <RequiredFilter>false</RequiredFilter>
+            <FilterLabel />
+            <ElementValue>
+                <Value />
+            </ElementValue>
+            <ElementValue2>
+                <Value />
+            </ElementValue2>
+            <FilterReadOnly>false</FilterReadOnly>
+            <DropdownItems />
+        </Element>
+        <Element>
+            <RecordElement>true</RecordElement>
+            <AssemblyFilename>MetraTech.Domain.dll</AssemblyFilename>
+            <ObjectName>MetraTech.Domain.ProformaInvoices.ProformaInvoice</ObjectName>
+            <ID>Currency</ID>
+            <DataType>List</DataType>
+            <IsIdentity>false</IsIdentity>
+            <FilterEnum>
+                <EnumClassName />
+                <EnumSpace>Global/SystemCurrencies</EnumSpace>
+                <EnumType>SystemCurrencies</EnumType>
+                <UseEnumValue>true</UseEnumValue>
+                <DefaultValue />
+                <HideEnumValues />
+            </FilterEnum>
+            <DataIndex>Currency</DataIndex>
+            <IsColumn>true</IsColumn>
+            <HeaderText>
+                <LocalizationTag>CURRENCY</LocalizationTag>
+                <ResourceClassKey>ProformaInvoices/App_LocalResources/ManageProformaInvoices.aspx</ResourceClassKey>
+            </HeaderText>
+            <Formatter />
+            <Width>80</Width>
+            <Resizeable>true</Resizeable>
+            <PreventSortable>false</PreventSortable>
+            <Sortable>false</Sortable>
+            <ColumnHideable>true</ColumnHideable>
+            <DefaultColumn>true</DefaultColumn>
+            <Exportable>true</Exportable>
+            <ShowInExpander>false</ShowInExpander>
+            <Filterable>false</Filterable>
+            <FilterHideable>false</FilterHideable>
+            <DefaultFilter>false</DefaultFilter>
+            <RequiredFilter>false</RequiredFilter>
+            <FilterLabel />
+            <ElementValue>
+                <Value />
+            </ElementValue>
+            <ElementValue2>
+                <Value />
+            </ElementValue2>
+            <FilterReadOnly>false</FilterReadOnly>
+            <DropdownItems />
+        </Element>
+        <Element>
+            <RecordElement>true</RecordElement>
+            <AssemblyFilename>MetraTech.Domain.dll</AssemblyFilename>
+            <ObjectName>MetraTech.Domain.ProformaInvoices.ProformaInvoice</ObjectName>
+            <ID>IntervalId</ID>
+            <DataType>Numeric</DataType>
+            <IsIdentity>false</IsIdentity>
+            <DataIndex>IntervalId</DataIndex>
+            <IsColumn>false</IsColumn>
+            <HeaderText>
+                <LocalizationTag>INTERVAL_ID</LocalizationTag>
+                <ResourceClassKey>ProformaInvoices/App_LocalResources/ManageProformaInvoices.aspx</ResourceClassKey>
+            </HeaderText>
+            <Formatter />
+            <Width>40</Width>
+            <Resizeable>true</Resizeable>
+            <PreventSortable>false</PreventSortable>
+            <Sortable>false</Sortable>
+            <ColumnHideable>true</ColumnHideable>
+            <DefaultColumn>true</DefaultColumn>
+            <Exportable>true</Exportable>
+            <ShowInExpander>true</ShowInExpander>
+            <Filterable>false</Filterable>
+            <FilterHideable>true</FilterHideable>
+            <DefaultFilter>true</DefaultFilter>
+            <RequiredFilter>false</RequiredFilter>
+            <FilterLabel />
+            <ElementValue>
+                <Value />
+            </ElementValue>
+            <ElementValue2>
+                <Value />
+            </ElementValue2>
+            <FilterReadOnly>false</FilterReadOnly>
+            <DropdownItems />
+        </Element>
+        <Element>
+            <RecordElement>true</RecordElement>
+            <AssemblyFilename>MetraTech.Domain.dll</AssemblyFilename>
+            <ObjectName>MetraTech.Domain.ProformaInvoices.ProformaInvoice</ObjectName>
+            <ID>CurrentBalance</ID>
+            <DataType>Numeric</DataType>
+            <IsIdentity>false</IsIdentity>
+            <DataIndex>CurrentBalance</DataIndex>
+            <IsColumn>false</IsColumn>
+            <HeaderText>
+                <LocalizationTag>CURRENT_BALANCE</LocalizationTag>
+                <ResourceClassKey>ProformaInvoices/App_LocalResources/ManageProformaInvoices.aspx</ResourceClassKey>
+            </HeaderText>
+            <Formatter>CurrencyRenderer</Formatter>
+            <Width>120</Width>
+            <Resizeable>true</Resizeable>
+            <PreventSortable>false</PreventSortable>
+            <Sortable>false</Sortable>
+            <ColumnHideable>true</ColumnHideable>
+            <DefaultColumn>true</DefaultColumn>
+            <Exportable>true</Exportable>
+            <ShowInExpander>true</ShowInExpander>
+            <Filterable>false</Filterable>
+            <FilterHideable>true</FilterHideable>
+            <DefaultFilter>true</DefaultFilter>
+            <RequiredFilter>false</RequiredFilter>
+            <FilterLabel />
+            <ElementValue>
+                <Value />
+            </ElementValue>
+            <ElementValue2>
+                <Value />
+            </ElementValue2>
+            <FilterReadOnly>false</FilterReadOnly>
+            <DropdownItems />
+        </Element>
+        <Element>
+            <RecordElement>true</RecordElement>
+            <AssemblyFilename>MetraTech.Domain.dll</AssemblyFilename>
+            <ObjectName>MetraTech.Domain.ProformaInvoices.ProformaInvoice</ObjectName>
+            <ID>PreviousBalance</ID>
+            <DataType>Numeric</DataType>
+            <IsIdentity>false</IsIdentity>
+            <DataIndex>PreviousBalance</DataIndex>
+            <IsColumn>false</IsColumn>
+            <HeaderText>
+                <LocalizationTag>PREVIOUS_BALANCE</LocalizationTag>
+                <ResourceClassKey>ProformaInvoices/App_LocalResources/ManageProformaInvoices.aspx</ResourceClassKey>
+            </HeaderText>
+            <Formatter>CurrencyRenderer</Formatter>
+            <Width>120</Width>
+            <Resizeable>true</Resizeable>
+            <PreventSortable>false</PreventSortable>
+            <Sortable>false</Sortable>
+            <ColumnHideable>true</ColumnHideable>
+            <DefaultColumn>true</DefaultColumn>
+            <Exportable>true</Exportable>
+            <ShowInExpander>true</ShowInExpander>
+            <Filterable>false</Filterable>
+            <FilterHideable>true</FilterHideable>
+            <DefaultFilter>true</DefaultFilter>
+            <RequiredFilter>false</RequiredFilter>
+            <FilterLabel />
+            <ElementValue>
+                <Value />
+            </ElementValue>
+            <ElementValue2>
+                <Value />
+            </ElementValue2>
+            <FilterReadOnly>false</FilterReadOnly>
+            <DropdownItems />
+        </Element>
+        <Element>
+            <RecordElement>true</RecordElement>
+            <AssemblyFilename>MetraTech.Domain.dll</AssemblyFilename>
+            <ObjectName>MetraTech.Domain.ProformaInvoices.ProformaInvoice</ObjectName>
+            <ID>Payments</ID>
+            <DataType>Numeric</DataType>
+            <IsIdentity>false</IsIdentity>
+            <DataIndex>Payments</DataIndex>
+            <IsColumn>false</IsColumn>
+            <HeaderText>
+                <LocalizationTag>PAYMENTS</LocalizationTag>
+                <ResourceClassKey>ProformaInvoices/App_LocalResources/ManageProformaInvoices.aspx</ResourceClassKey>
+            </HeaderText>
+            <Formatter>CurrencyRenderer</Formatter>
+            <Width>120</Width>
+            <Resizeable>true</Resizeable>
+            <PreventSortable>false</PreventSortable>
+            <Sortable>false</Sortable>
+            <ColumnHideable>true</ColumnHideable>
+            <DefaultColumn>true</DefaultColumn>
+            <Exportable>true</Exportable>
+            <ShowInExpander>true</ShowInExpander>
+            <Filterable>false</Filterable>
+            <FilterHideable>true</FilterHideable>
+            <DefaultFilter>true</DefaultFilter>
+            <RequiredFilter>false</RequiredFilter>
+            <FilterLabel />
+            <ElementValue>
+                <Value />
+            </ElementValue>
+            <ElementValue2>
+                <Value />
+            </ElementValue2>
+            <FilterReadOnly>false</FilterReadOnly>
+            <DropdownItems />
+        </Element>
+        <Element>
+            <RecordElement>true</RecordElement>
+            <AssemblyFilename>MetraTech.Domain.dll</AssemblyFilename>
+            <ObjectName>MetraTech.Domain.ProformaInvoices.ProformaInvoice</ObjectName>
+            <ID>TotalPostBillAdjustments</ID>
+            <DataType>Numeric</DataType>
+            <IsIdentity>false</IsIdentity>
+            <DataIndex>TotalPostBillAdjustments</DataIndex>
+            <IsColumn>false</IsColumn>
+            <HeaderText>
+                <LocalizationTag>TOTAL_POST_BILL_ADJUSTMENTS</LocalizationTag>
+                <ResourceClassKey>ProformaInvoices/App_LocalResources/ManageProformaInvoices.aspx</ResourceClassKey>
+            </HeaderText>
+            <Formatter>CurrencyRenderer</Formatter>
+            <Width>120</Width>
+            <Resizeable>true</Resizeable>
+            <PreventSortable>false</PreventSortable>
+            <Sortable>false</Sortable>
+            <ColumnHideable>true</ColumnHideable>
+            <DefaultColumn>true</DefaultColumn>
+            <Exportable>true</Exportable>
+            <ShowInExpander>true</ShowInExpander>
+            <Filterable>false</Filterable>
+            <FilterHideable>true</FilterHideable>
+            <DefaultFilter>true</DefaultFilter>
+            <RequiredFilter>false</RequiredFilter>
+            <FilterLabel />
+            <ElementValue>
+                <Value />
+            </ElementValue>
+            <ElementValue2>
+                <Value />
+            </ElementValue2>
+            <FilterReadOnly>false</FilterReadOnly>
+            <DropdownItems />
+        </Element>
+        <Element>
+            <RecordElement>true</RecordElement>
+            <AssemblyFilename>MetraTech.Domain.dll</AssemblyFilename>
+            <ObjectName>MetraTech.Domain.ProformaInvoices.ProformaInvoice</ObjectName>
+            <ID>GeneralProductsAndServices</ID>
+            <DataType>Numeric</DataType>
+            <IsIdentity>false</IsIdentity>
+            <DataIndex>GeneralProductsAndServices</DataIndex>
+            <IsColumn>false</IsColumn>
+            <HeaderText>
+                <LocalizationTag>GENERAL_PRODUCTS_AND_SERVICES</LocalizationTag>
+                <ResourceClassKey>ProformaInvoices/App_LocalResources/ManageProformaInvoices.aspx</ResourceClassKey>
+            </HeaderText>
+            <Formatter>CurrencyRenderer</Formatter>
+            <Width>120</Width>
+            <Resizeable>true</Resizeable>
+            <PreventSortable>false</PreventSortable>
+            <Sortable>false</Sortable>
+            <ColumnHideable>true</ColumnHideable>
+            <DefaultColumn>true</DefaultColumn>
+            <Exportable>true</Exportable>
+            <ShowInExpander>true</ShowInExpander>
+            <Filterable>false</Filterable>
+            <FilterHideable>true</FilterHideable>
+            <DefaultFilter>true</DefaultFilter>
+            <RequiredFilter>false</RequiredFilter>
+            <FilterLabel />
+            <ElementValue>
+                <Value />
+            </ElementValue>
+            <ElementValue2>
+                <Value />
+            </ElementValue2>
+            <FilterReadOnly>false</FilterReadOnly>
+            <DropdownItems />
+        </Element>
+        <Element>
+            <RecordElement>true</RecordElement>
+            <AssemblyFilename>MetraTech.Domain.dll</AssemblyFilename>
+            <ObjectName>MetraTech.Domain.ProformaInvoices.ProformaInvoice</ObjectName>
+            <ID>RecurringCharges</ID>
+            <DataType>Numeric</DataType>
+            <IsIdentity>false</IsIdentity>
+            <DataIndex>RecurringCharges</DataIndex>
+            <IsColumn>false</IsColumn>
+            <HeaderText>
+                <LocalizationTag>RECURRING_CHARGES</LocalizationTag>
+                <ResourceClassKey>ProformaInvoices/App_LocalResources/ManageProformaInvoices.aspx</ResourceClassKey>
+            </HeaderText>
+            <Formatter>CurrencyRenderer</Formatter>
+            <Width>120</Width>
+            <Resizeable>true</Resizeable>
+            <PreventSortable>false</PreventSortable>
+            <Sortable>false</Sortable>
+            <ColumnHideable>true</ColumnHideable>
+            <DefaultColumn>true</DefaultColumn>
+            <Exportable>true</Exportable>
+            <ShowInExpander>true</ShowInExpander>
+            <Filterable>false</Filterable>
+            <FilterHideable>true</FilterHideable>
+            <DefaultFilter>true</DefaultFilter>
+            <RequiredFilter>false</RequiredFilter>
+            <FilterLabel />
+            <ElementValue>
+                <Value />
+            </ElementValue>
+            <ElementValue2>
+                <Value />
+            </ElementValue2>
+            <FilterReadOnly>false</FilterReadOnly>
+            <DropdownItems />
+        </Element>
+        <Element>
+            <RecordElement>true</RecordElement>
+            <AssemblyFilename>MetraTech.Domain.dll</AssemblyFilename>
+            <ObjectName>MetraTech.Domain.ProformaInvoices.ProformaInvoice</ObjectName>
+            <ID>Discounts</ID>
+            <DataType>Numeric</DataType>
+            <IsIdentity>false</IsIdentity>
+            <DataIndex>Discounts</DataIndex>
+            <IsColumn>false</IsColumn>
+            <HeaderText>
+                <LocalizationTag>DISCOUNTS</LocalizationTag>
+                <ResourceClassKey>ProformaInvoices/App_LocalResources/ManageProformaInvoices.aspx</ResourceClassKey>
+            </HeaderText>
+            <Formatter>CurrencyRenderer</Formatter>
+            <Width>120</Width>
+            <Resizeable>true</Resizeable>
+            <PreventSortable>false</PreventSortable>
+            <Sortable>false</Sortable>
+            <ColumnHideable>true</ColumnHideable>
+            <DefaultColumn>true</DefaultColumn>
+            <Exportable>true</Exportable>
+            <ShowInExpander>true</ShowInExpander>
+            <Filterable>false</Filterable>
+            <FilterHideable>true</FilterHideable>
+            <DefaultFilter>true</DefaultFilter>
+            <RequiredFilter>false</RequiredFilter>
+            <FilterLabel />
+            <ElementValue>
+                <Value />
+            </ElementValue>
+            <ElementValue2>
+                <Value />
+            </ElementValue2>
+            <FilterReadOnly>false</FilterReadOnly>
+            <DropdownItems />
+        </Element>
+        <Element>
+            <RecordElement>true</RecordElement>
+            <AssemblyFilename>MetraTech.Domain.dll</AssemblyFilename>
+            <ObjectName>MetraTech.Domain.ProformaInvoices.ProformaInvoice</ObjectName>
+            <ID>Taxes</ID>
+            <DataType>Numeric</DataType>
+            <IsIdentity>false</IsIdentity>
+            <DataIndex>Taxes</DataIndex>
+            <IsColumn>false</IsColumn>
+            <HeaderText>
+                <LocalizationTag>TAXES</LocalizationTag>
+                <ResourceClassKey>ProformaInvoices/App_LocalResources/ManageProformaInvoices.aspx</ResourceClassKey>
+            </HeaderText>
+            <Formatter>CurrencyRenderer</Formatter>
+            <Width>120</Width>
+            <Resizeable>true</Resizeable>
+            <PreventSortable>false</PreventSortable>
+            <Sortable>false</Sortable>
+            <ColumnHideable>true</ColumnHideable>
+            <DefaultColumn>true</DefaultColumn>
+            <Exportable>true</Exportable>
+            <ShowInExpander>true</ShowInExpander>
+            <Filterable>false</Filterable>
+            <FilterHideable>true</FilterHideable>
+            <DefaultFilter>true</DefaultFilter>
+            <RequiredFilter>false</RequiredFilter>
+            <FilterLabel />
+            <ElementValue>
+                <Value />
+            </ElementValue>
+            <ElementValue2>
+                <Value />
+            </ElementValue2>
+            <FilterReadOnly>false</FilterReadOnly>
+            <DropdownItems />
+        </Element>
+        <Element>
+            <RecordElement>true</RecordElement>
+            <AssemblyFilename>MetraTech.Domain.dll</AssemblyFilename>
+            <ObjectName>MetraTech.Domain.ProformaInvoices.ProformaInvoice</ObjectName>
+            <ID>TotalPreBillAdjustments</ID>
+            <DataType>Numeric</DataType>
+            <IsIdentity>false</IsIdentity>
+            <DataIndex>TotalPreBillAdjustments</DataIndex>
+            <IsColumn>false</IsColumn>
+            <HeaderText>
+                <LocalizationTag>TOTAL_PREBILL_ADJUSTMENTS</LocalizationTag>
+                <ResourceClassKey>ProformaInvoices/App_LocalResources/ManageProformaInvoices.aspx</ResourceClassKey>
+            </HeaderText>
+            <Formatter>CurrencyRenderer</Formatter>
+            <Width>120</Width>
+            <Resizeable>true</Resizeable>
+            <PreventSortable>false</PreventSortable>
+            <Sortable>false</Sortable>
+            <ColumnHideable>true</ColumnHideable>
+            <DefaultColumn>true</DefaultColumn>
+            <Exportable>true</Exportable>
+            <ShowInExpander>true</ShowInExpander>
+            <Filterable>false</Filterable>
+            <FilterHideable>true</FilterHideable>
+            <DefaultFilter>true</DefaultFilter>
+            <RequiredFilter>false</RequiredFilter>
+            <FilterLabel />
+            <ElementValue>
+                <Value />
+            </ElementValue>
+            <ElementValue2>
+                <Value />
+            </ElementValue2>
+            <FilterReadOnly>false</FilterReadOnly>
+            <DropdownItems />
+        </Element>        
+    </Elements>
+    <ExpanderTemplate>
+        <Section>
+            <Title>
+                <Value />
+            </Title>
+            <TabOrder>LeftToRight</TabOrder>
+            <Name />
+            <Columns>
+                <Column>
+                    <Fields>
+                        <Field>
+                            <AssemblyFilename>MetraTech.Domain.dll</AssemblyFilename>
+                            <ObjectName>MetraTech.Domain.ProformaInvoices.ProformaInvoice</ObjectName>
+                            <ID>IntervalId</ID>
+                            <Name>IntervalId</Name>
+                        </Field>
+                        <Field>
+                            <AssemblyFilename>MetraTech.Domain.dll</AssemblyFilename>
+                            <ObjectName>MetraTech.Domain.ProformaInvoices.ProformaInvoice</ObjectName>
+                            <ID>CurrentBalance</ID>
+                            <Name>CurrentBalance</Name>
+                        </Field>
+                        <Field>
+                            <AssemblyFilename>MetraTech.Domain.dll</AssemblyFilename>
+                            <ObjectName>MetraTech.Domain.ProformaInvoices.ProformaInvoice</ObjectName>
+                            <ID>PreviousBalance</ID>
+                            <Name>PreviousBalance</Name>
+                        </Field>
+                        <Field>
+                            <AssemblyFilename>MetraTech.Domain.dll</AssemblyFilename>
+                            <ObjectName>MetraTech.Domain.ProformaInvoices.ProformaInvoice</ObjectName>
+                            <ID>Payments</ID>
+                            <Name>Payments</Name>
+                        </Field>
+                        <Field>
+                            <AssemblyFilename>MetraTech.Domain.dll</AssemblyFilename>
+                            <ObjectName>MetraTech.Domain.ProformaInvoices.ProformaInvoice</ObjectName>
+                            <ID>TotalPostBillAdjustments</ID>
+                            <Name>TotalPostBillAdjustments</Name>
+                        </Field>
+                    </Fields>
+                </Column>
+                <Column>
+                    <Fields>                        
+                        <Field>
+                            <AssemblyFilename>MetraTech.Domain.dll</AssemblyFilename>
+                            <ObjectName>MetraTech.Domain.ProformaInvoices.ProformaInvoice</ObjectName>
+                            <ID>GeneralProductsAndServices</ID>
+                            <Name>GeneralProductsAndServices</Name>
+                        </Field>
+                        <Field>
+                            <AssemblyFilename>MetraTech.Domain.dll</AssemblyFilename>
+                            <ObjectName>MetraTech.Domain.ProformaInvoices.ProformaInvoice</ObjectName>
+                            <ID>RecurringCharges</ID>
+                            <Name>RecurringCharges</Name>
+                        </Field>
+                        <Field>
+                            <AssemblyFilename>MetraTech.Domain.dll</AssemblyFilename>
+                            <ObjectName>MetraTech.Domain.ProformaInvoices.ProformaInvoice</ObjectName>
+                            <ID>Discounts</ID>
+                            <Name>Discounts</Name>
+                        </Field>
+                        <Field>
+                            <AssemblyFilename>MetraTech.Domain.dll</AssemblyFilename>
+                            <ObjectName>MetraTech.Domain.ProformaInvoices.ProformaInvoice</ObjectName>
+                            <ID>Taxes</ID>
+                            <Name>Taxes</Name>
+                        </Field>
+                        <Field>
+                            <AssemblyFilename>MetraTech.Domain.dll</AssemblyFilename>
+                            <ObjectName>MetraTech.Domain.ProformaInvoices.ProformaInvoice</ObjectName>
+                            <ID>TotalPreBillAdjustments</ID>
+                            <Name>TotalPreBillAdjustments</Name>
+                        </Field>
+                    </Fields>
+                </Column>
+            </Columns>
+            <ToolbarButtons />
+        </Section>
+    </ExpanderTemplate>
+    <GridButtons />
+    <ToolbarButtons>
+        <Button>
+            <ButtonID>Add</ButtonID>
+            <ButtonText>
+                <LocalizationTag>CREATE</LocalizationTag>
+                <ResourceClassKey>ProformaInvoices/App_LocalResources/ManageProformaInvoices.aspx</ResourceClassKey>
+            </ButtonText>
+            <ToolTip>
+                <LocalizationTag>CREATE</LocalizationTag>
+                <ResourceClassKey>ProformaInvoices/App_LocalResources/ManageProformaInvoices.aspx</ResourceClassKey>
+            </ToolTip>
+            <IconClass>add</IconClass>
+            <RequiredCapabilities>
+                <Capability>Manage Proforma Invoices</Capability>
+            </RequiredCapabilities>
+            <JSHandlerFunction>onCreate</JSHandlerFunction>
+        </Button>
+        <Button>
+            <ButtonID>Detele</ButtonID>
+            <ButtonText>
+                <LocalizationTag>DELETE</LocalizationTag>
+                <ResourceClassKey>ProformaInvoices/App_LocalResources/ManageProformaInvoices.aspx</ResourceClassKey>
+            </ButtonText>
+            <ToolTip>
+                <LocalizationTag>DELETE</LocalizationTag>
+                <ResourceClassKey>ProformaInvoices/App_LocalResources/ManageProformaInvoices.aspx</ResourceClassKey>
+            </ToolTip>
+            <IconClass>remove</IconClass>
+            <RequiredCapabilities>
+                <Capability>Manage Proforma Invoices</Capability>
+            </RequiredCapabilities>
+            <JSHandlerFunction>onDelete</JSHandlerFunction>
+        </Button>
+    </ToolbarButtons>
+</GridLayout>

@@ -1,0 +1,659 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<GridLayout xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <Name>ManageDisputesEntity</Name>
+    <Title>
+        <Value>Manage All Disputes</Value>
+    </Title>
+    <Exportable>true</Exportable>
+    <Height>245</Height>
+    <Width>100%</Width>
+    <Expandable>false</Expandable>
+    <Buttons>Custom</Buttons>
+    <DataSourceURL>~/ecbAR/AjaxServices/DisputeManagementSVC.aspx?op=GetDisputes</DataSourceURL>
+    <MultiSelect>true</MultiSelect>
+    <SelectionModel>CheckBox</SelectionModel>
+    <TotalProperty>TotalRows</TotalProperty>
+    <RootElement>Items</RootElement>
+    <PageSize>10</PageSize>
+    <Description />
+    <ExpansionCssClass />
+    <ShowFilterPanel>true</ShowFilterPanel>
+    <FilterInputWidth>220</FilterInputWidth>
+    <FilterLabelWidth>75</FilterLabelWidth>
+    <FilterColumnWidth>350</FilterColumnWidth>
+    <ShowTopBar>true</ShowTopBar>
+    <ShowBottomBar>true</ShowBottomBar>
+    <ShowGridFrame>true</ShowGridFrame>
+    <ShowGridHeader>true</ShowGridHeader>
+    <ShowColumnHeaders>true</ShowColumnHeaders>
+    <NoRecordsText>
+        <Value />
+    </NoRecordsText>
+    <FilterPanelLayout>MultiColumn</FilterPanelLayout>
+    <FilterPanelCollapsed>false</FilterPanelCollapsed>
+    <EnableColumnConfig>true</EnableColumnConfig>
+    <EnableFilterConfig>true</EnableFilterConfig>
+    <Resizeable>true</Resizeable>
+    <ButtonAlignment>Center</ButtonAlignment>
+    <DefaultSortField>ID</DefaultSortField>
+    <DefaultSortDirection>Ascending</DefaultSortDirection>
+    <DisplayCount>true</DisplayCount>
+    <SearchOnLoad>false</SearchOnLoad>
+    <CustomImplementationFilePath />
+    <DataBinder>
+        <ServicePath>/MetraNet/AjaxServices/GetData.aspx</ServicePath>
+        <OutPropertyName />
+        <Operation>__Client</Operation>
+    </DataBinder>
+    <SubGrid />
+    <FilterLabelWrap>None</FilterLabelWrap>
+    <CustomOverrideJavascriptIncludes />
+    <Elements>
+        <Element>
+            <RecordElement>true</RecordElement>
+            <AssemblyFilename>ECB.ecbAR.BO.Entity.dll</AssemblyFilename>
+            <ObjectName>ECB.ecbAR.BO.Entity.DisputeEntity</ObjectName>
+            <ID>ID</ID>
+            <DataType>Numeric</DataType>
+            <IsIdentity>true</IsIdentity>
+            <DataIndex>ID</DataIndex>
+            <IsColumn>true</IsColumn>
+            <HeaderText>
+                <Value>Dispute Id</Value>
+            </HeaderText>
+            <Formatter />
+            <Width>80</Width>
+            <Resizeable>true</Resizeable>
+            <PreventSortable>false</PreventSortable>
+            <Sortable>true</Sortable>
+            <ColumnHideable>true</ColumnHideable>
+            <DefaultColumn>true</DefaultColumn>
+            <Exportable>true</Exportable>
+            <ShowInExpander>false</ShowInExpander>
+            <Filterable>true</Filterable>
+            <FilterHideable>true</FilterHideable>
+            <DefaultFilter>true</DefaultFilter>
+            <RequiredFilter>false</RequiredFilter>
+            <FilterLabel />
+            <ElementValue>
+                <Value />
+            </ElementValue>
+            <ElementValue2>
+                <Value />
+            </ElementValue2>
+            <FilterReadOnly>false</FilterReadOnly>
+            <DropdownItems />
+        </Element>
+        <Element>
+            <RecordElement>true</RecordElement>
+            <AssemblyFilename>ECB.ecbAR.BO.Entity.dll</AssemblyFilename>
+            <ObjectName>ECB.ecbAR.BO.Entity.DisputeEntity</ObjectName>
+            <ID>BeginDate</ID>
+            <DataType>Date</DataType>
+            <IsIdentity>false</IsIdentity>
+            <DataIndex>BeginDate</DataIndex>
+            <IsColumn>true</IsColumn>
+            <HeaderText>
+                <Value>Begin Date</Value>
+            </HeaderText>
+            <Formatter />
+            <Width>75</Width>
+            <Resizeable>true</Resizeable>
+            <PreventSortable>false</PreventSortable>
+            <Sortable>true</Sortable>
+            <ColumnHideable>true</ColumnHideable>
+            <DefaultColumn>true</DefaultColumn>
+            <Exportable>true</Exportable>
+            <ShowInExpander>false</ShowInExpander>
+            <Filterable>true</Filterable>
+            <FilterHideable>true</FilterHideable>
+            <DefaultFilter>true</DefaultFilter>
+            <RequiredFilter>false</RequiredFilter>
+            <FilterLabel />
+            <ElementValue>
+                <Value />
+            </ElementValue>
+            <ElementValue2>
+                <Value />
+            </ElementValue2>
+            <FilterReadOnly>false</FilterReadOnly>
+            <DropdownItems />
+        </Element>
+        <Element>
+            <RecordElement>true</RecordElement>
+            <AssemblyFilename>ECB.ecbAR.BO.Entity.dll</AssemblyFilename>
+            <ObjectName>ECB.ecbAR.BO.Entity.DisputeEntity</ObjectName>
+            <ID>EndDate</ID>
+            <DataType>Date</DataType>
+            <IsIdentity>false</IsIdentity>
+            <DataIndex>EndDate</DataIndex>
+            <IsColumn>true</IsColumn>
+            <HeaderText>
+                <Value>End Date</Value>
+            </HeaderText>
+            <Formatter />
+            <Width>75</Width>
+            <Resizeable>true</Resizeable>
+            <PreventSortable>false</PreventSortable>
+            <Sortable>true</Sortable>
+            <ColumnHideable>true</ColumnHideable>
+            <DefaultColumn>true</DefaultColumn>
+            <Exportable>true</Exportable>
+            <ShowInExpander>false</ShowInExpander>
+            <Filterable>true</Filterable>
+            <FilterHideable>true</FilterHideable>
+            <DefaultFilter>true</DefaultFilter>
+            <RequiredFilter>false</RequiredFilter>
+            <FilterLabel />
+            <ElementValue>
+                <Value />
+            </ElementValue>
+            <ElementValue2>
+                <Value />
+            </ElementValue2>
+            <FilterReadOnly>false</FilterReadOnly>
+            <DropdownItems />
+        </Element>
+        <Element>
+            <RecordElement>true</RecordElement>
+            <AssemblyFilename>ECB.ecbAR.BO.Entity.dll</AssemblyFilename>
+            <ObjectName>ECB.ecbAR.BO.Entity.DisputeEntity</ObjectName>
+            <ID>AreaKey</ID>
+            <DataType>String</DataType>
+            <IsIdentity>false</IsIdentity>
+            <DataIndex>AreaKey</DataIndex>
+            <IsColumn>true</IsColumn>
+            <HeaderText>
+                <Value>Login</Value>
+            </HeaderText>
+            <Formatter />
+            <Width>75</Width>
+            <Resizeable>true</Resizeable>
+            <PreventSortable>false</PreventSortable>
+            <Sortable>true</Sortable>
+            <ColumnHideable>true</ColumnHideable>
+            <DefaultColumn>true</DefaultColumn>
+            <Exportable>true</Exportable>
+            <ShowInExpander>false</ShowInExpander>
+            <Filterable>true</Filterable>
+            <FilterHideable>true</FilterHideable>
+            <DefaultFilter>true</DefaultFilter>
+            <RequiredFilter>false</RequiredFilter>
+            <FilterLabel />
+            <ElementValue>
+                <Value />
+            </ElementValue>
+            <ElementValue2>
+                <Value />
+            </ElementValue2>
+            <FilterReadOnly>false</FilterReadOnly>
+            <DropdownItems />
+        </Element>
+        <Element>
+            <RecordElement>true</RecordElement>
+            <AssemblyFilename>ECB.ecbAR.BO.Entity.dll</AssemblyFilename>
+            <ObjectName>ECB.ecbAR.BO.Entity.DisputeEntity</ObjectName>
+            <ID>Status</ID>
+            <DataType>List</DataType>
+            <IsIdentity>false</IsIdentity>
+            <FilterEnum>
+                <EnumClassName />
+                <EnumSpace>metratech.com/AR</EnumSpace>
+                <EnumType>DisputeStatus</EnumType>
+                <UseEnumValue>true</UseEnumValue>
+                <DefaultValue />
+                <HideEnumValues />
+            </FilterEnum>
+            <DataIndex>Status</DataIndex>
+            <IsColumn>true</IsColumn>
+            <HeaderText>
+                <Value>Status</Value>
+            </HeaderText>
+            <Formatter />
+            <Width>75</Width>
+            <Resizeable>true</Resizeable>
+            <PreventSortable>false</PreventSortable>
+            <Sortable>false</Sortable>
+            <ColumnHideable>true</ColumnHideable>
+            <DefaultColumn>true</DefaultColumn>
+            <Exportable>true</Exportable>
+            <ShowInExpander>false</ShowInExpander>
+            <Filterable>true</Filterable>
+            <FilterHideable>true</FilterHideable>
+            <DefaultFilter>true</DefaultFilter>
+            <RequiredFilter>false</RequiredFilter>
+            <FilterLabel>
+                <Value>Status</Value>
+            </FilterLabel>
+            <ElementValue>
+                <Value />
+            </ElementValue>
+            <ElementValue2>
+                <Value />
+            </ElementValue2>
+            <FilterReadOnly>false</FilterReadOnly>
+            <DropdownItems />
+        </Element>
+        <Element>
+            <RecordElement>true</RecordElement>
+            <AssemblyFilename>ECB.ecbAR.BO.Entity.dll</AssemblyFilename>
+            <ObjectName>ECB.ecbAR.BO.Entity.DisputeEntity</ObjectName>
+            <ID>UserID</ID>
+            <DataType>Numeric</DataType>
+            <IsIdentity>false</IsIdentity>
+            <DataIndex>UserID</DataIndex>
+            <IsColumn>true</IsColumn>
+            <HeaderText>
+                <Value>User Id</Value>
+            </HeaderText>
+            <Formatter />
+            <Width>75</Width>
+            <Resizeable>true</Resizeable>
+            <PreventSortable>false</PreventSortable>
+            <Sortable>true</Sortable>
+            <ColumnHideable>true</ColumnHideable>
+            <DefaultColumn>true</DefaultColumn>
+            <Exportable>true</Exportable>
+            <ShowInExpander>false</ShowInExpander>
+            <Filterable>false</Filterable>
+            <FilterHideable>true</FilterHideable>
+            <DefaultFilter>true</DefaultFilter>
+            <RequiredFilter>false</RequiredFilter>
+            <FilterLabel />
+            <ElementValue>
+                <Value />
+            </ElementValue>
+            <ElementValue2>
+                <Value />
+            </ElementValue2>
+            <FilterReadOnly>false</FilterReadOnly>
+            <DropdownItems />
+        </Element>
+        <Element>
+            <RecordElement>true</RecordElement>
+            <AssemblyFilename>ECB.ecbAR.BO.Entity.dll</AssemblyFilename>
+            <ObjectName>ECB.ecbAR.BO.Entity.DisputeEntity</ObjectName>
+            <ID>UserResolvedID</ID>
+            <DataType>Numeric</DataType>
+            <IsIdentity>false</IsIdentity>
+            <DataIndex>UserResolvedID</DataIndex>
+            <IsColumn>true</IsColumn>
+            <HeaderText>
+                <Value>Resolved User Id</Value>
+            </HeaderText>
+            <Formatter />
+            <Width>100</Width>
+            <Resizeable>true</Resizeable>
+            <PreventSortable>false</PreventSortable>
+            <Sortable>true</Sortable>
+            <ColumnHideable>true</ColumnHideable>
+            <DefaultColumn>true</DefaultColumn>
+            <Exportable>true</Exportable>
+            <ShowInExpander>false</ShowInExpander>
+            <Filterable>false</Filterable>
+            <FilterHideable>true</FilterHideable>
+            <DefaultFilter>true</DefaultFilter>
+            <RequiredFilter>false</RequiredFilter>
+            <FilterLabel />
+            <ElementValue>
+                <Value />
+            </ElementValue>
+            <ElementValue2>
+                <Value />
+            </ElementValue2>
+            <FilterReadOnly>false</FilterReadOnly>
+            <DropdownItems />
+        </Element>
+        <Element>
+            <RecordElement>true</RecordElement>
+            <AssemblyFilename>ECB.ecbAR.BO.Entity.dll</AssemblyFilename>
+            <ObjectName>ECB.ecbAR.BO.Entity.DisputeEntity</ObjectName>
+            <ID>CreditID</ID>
+            <DataType>Numeric</DataType>
+            <IsIdentity>false</IsIdentity>
+            <DataIndex>CreditID</DataIndex>
+            <IsColumn>true</IsColumn>
+            <HeaderText>
+                <Value>Credit Id</Value>
+            </HeaderText>
+            <Formatter />
+            <Width>75</Width>
+            <Resizeable>true</Resizeable>
+            <PreventSortable>false</PreventSortable>
+            <Sortable>true</Sortable>
+            <ColumnHideable>true</ColumnHideable>
+            <DefaultColumn>true</DefaultColumn>
+            <Exportable>true</Exportable>
+            <ShowInExpander>false</ShowInExpander>
+            <Filterable>true</Filterable>
+            <FilterHideable>true</FilterHideable>
+            <DefaultFilter>true</DefaultFilter>
+            <RequiredFilter>false</RequiredFilter>
+            <FilterLabel />
+            <ElementValue>
+                <Value />
+            </ElementValue>
+            <ElementValue2>
+                <Value />
+            </ElementValue2>
+            <FilterReadOnly>false</FilterReadOnly>
+            <DropdownItems />
+        </Element>
+        <Element>
+            <RecordElement>true</RecordElement>
+            <AssemblyFilename>ECB.ecbAR.BO.Entity.dll</AssemblyFilename>
+            <ObjectName>ECB.ecbAR.BO.Entity.DisputeEntity</ObjectName>
+            <ID>InvoiceNumber</ID>
+            <DataType>Numeric</DataType>
+            <IsIdentity>false</IsIdentity>
+            <DataIndex>InvoiceNumber</DataIndex>
+            <IsColumn>true</IsColumn>
+            <HeaderText>
+                <Value>Invoice Number</Value>
+            </HeaderText>
+            <Formatter />
+            <Width>120</Width>
+            <Resizeable>true</Resizeable>
+            <PreventSortable>false</PreventSortable>
+            <Sortable>false</Sortable>
+            <ColumnHideable>true</ColumnHideable>
+            <DefaultColumn>true</DefaultColumn>
+            <Exportable>true</Exportable>
+            <ShowInExpander>false</ShowInExpander>
+            <Filterable>false</Filterable>
+            <FilterHideable>true</FilterHideable>
+            <DefaultFilter>true</DefaultFilter>
+            <RequiredFilter>false</RequiredFilter>
+            <FilterLabel />
+            <ElementValue>
+                <Value />
+            </ElementValue>
+            <ElementValue2>
+                <Value />
+            </ElementValue2>
+            <FilterReadOnly>false</FilterReadOnly>
+            <DropdownItems />
+        </Element>
+        <Element>
+            <RecordElement>true</RecordElement>
+            <AssemblyFilename>ECB.ecbAR.BO.Entity.dll</AssemblyFilename>
+            <ObjectName>ECB.ecbAR.BO.Entity.DisputeEntity</ObjectName>
+            <ID>Comment</ID>
+            <DataType>String</DataType>
+            <IsIdentity>false</IsIdentity>
+            <DataIndex>Comment</DataIndex>
+            <IsColumn>true</IsColumn>
+            <HeaderText>
+                <Value>Comment</Value>
+            </HeaderText>
+            <Formatter />
+            <Width>120</Width>
+            <Resizeable>true</Resizeable>
+            <PreventSortable>false</PreventSortable>
+            <Sortable>false</Sortable>
+            <ColumnHideable>true</ColumnHideable>
+            <DefaultColumn>true</DefaultColumn>
+            <Exportable>true</Exportable>
+            <ShowInExpander>false</ShowInExpander>
+            <Filterable>false</Filterable>
+            <FilterHideable>true</FilterHideable>
+            <DefaultFilter>true</DefaultFilter>
+            <RequiredFilter>false</RequiredFilter>
+            <FilterLabel />
+            <ElementValue>
+                <Value />
+            </ElementValue>
+            <ElementValue2>
+                <Value />
+            </ElementValue2>
+            <FilterReadOnly>false</FilterReadOnly>
+            <DropdownItems />
+        </Element>
+        <Element>
+            <RecordElement>true</RecordElement>
+            <AssemblyFilename>ECB.ecbAR.BO.Entity.dll</AssemblyFilename>
+            <ObjectName>ECB.ecbAR.BO.Entity.DisputeEntity</ObjectName>
+            <ID>Filename</ID>
+            <DataType>String</DataType>
+            <IsIdentity>false</IsIdentity>
+            <DataIndex>Filename</DataIndex>
+            <IsColumn>true</IsColumn>
+            <HeaderText>
+                <Value>File Name</Value>
+            </HeaderText>
+            <Formatter />
+            <Width>75</Width>
+            <Resizeable>true</Resizeable>
+            <PreventSortable>false</PreventSortable>
+            <Sortable>true</Sortable>
+            <ColumnHideable>true</ColumnHideable>
+            <DefaultColumn>true</DefaultColumn>
+            <Exportable>true</Exportable>
+            <ShowInExpander>false</ShowInExpander>
+            <Filterable>false</Filterable>
+            <FilterHideable>true</FilterHideable>
+            <DefaultFilter>true</DefaultFilter>
+            <RequiredFilter>false</RequiredFilter>
+            <FilterLabel />
+            <ElementValue>
+                <Value />
+            </ElementValue>
+            <ElementValue2>
+                <Value />
+            </ElementValue2>
+            <FilterReadOnly>false</FilterReadOnly>
+            <DropdownItems />
+        </Element>
+        <Element>
+            <RecordElement>true</RecordElement>
+            <AssemblyFilename>ECB.ecbAR.BO.Entity.dll</AssemblyFilename>
+            <ObjectName>ECB.ecbAR.BO.Entity.DisputeEntity</ObjectName>
+            <ID>ReasonCode</ID>
+            <DataType>List</DataType>
+            <IsIdentity>false</IsIdentity>
+            <FilterEnum>
+                <EnumClassName />
+                <EnumSpace>metratech.com</EnumSpace>
+                <EnumType>SubscriberCreditAccountRequestReason</EnumType>
+                <UseEnumValue>false</UseEnumValue>
+                <DefaultValue />
+                <HideEnumValues />
+            </FilterEnum>
+            <DataIndex>ReasonCode</DataIndex>
+            <IsColumn>true</IsColumn>
+            <HeaderText>
+                <Value>Reason Code</Value>
+            </HeaderText>
+            <Formatter />
+            <Width>120</Width>
+            <Resizeable>true</Resizeable>
+            <PreventSortable>false</PreventSortable>
+            <Sortable>false</Sortable>
+            <ColumnHideable>true</ColumnHideable>
+            <DefaultColumn>true</DefaultColumn>
+            <Exportable>true</Exportable>
+            <ShowInExpander>false</ShowInExpander>
+            <Filterable>true</Filterable>
+            <FilterHideable>true</FilterHideable>
+            <DefaultFilter>true</DefaultFilter>
+            <RequiredFilter>false</RequiredFilter>
+            <FilterLabel />
+            <ElementValue>
+                <Value />
+            </ElementValue>
+            <ElementValue2>
+                <Value />
+            </ElementValue2>
+            <FilterReadOnly>false</FilterReadOnly>
+            <DropdownItems />
+        </Element>
+        <Element>
+            <RecordElement>true</RecordElement>
+            <AssemblyFilename>ECB.ecbAR.BO.Entity.dll</AssemblyFilename>
+            <ObjectName>ECB.ecbAR.BO.Entity.DisputeEntity</ObjectName>
+            <ID>Amount</ID>
+            <DataType>Numeric</DataType>
+            <IsIdentity>false</IsIdentity>
+            <DataIndex>Amount</DataIndex>
+            <IsColumn>true</IsColumn>
+            <HeaderText>
+                <Value>Dispute Amount</Value>
+            </HeaderText>
+            <Formatter>FormattedNumberColRenderer</Formatter>
+            <Width>120</Width>
+            <Resizeable>true</Resizeable>
+            <PreventSortable>false</PreventSortable>
+            <Sortable>false</Sortable>
+            <ColumnHideable>true</ColumnHideable>
+            <DefaultColumn>true</DefaultColumn>
+            <Exportable>true</Exportable>
+            <ShowInExpander>false</ShowInExpander>
+            <Filterable>false</Filterable>
+            <FilterHideable>true</FilterHideable>
+            <DefaultFilter>true</DefaultFilter>
+            <RequiredFilter>false</RequiredFilter>
+            <FilterLabel />
+            <ElementValue>
+                <Value />
+            </ElementValue>
+            <ElementValue2>
+                <Value />
+            </ElementValue2>
+            <FilterReadOnly>false</FilterReadOnly>
+            <DropdownItems />
+        </Element>
+        <Element>
+            <RecordElement>true</RecordElement>
+            <AssemblyFilename>ECB.ecbAR.BO.Entity.dll</AssemblyFilename>
+            <ObjectName>ECB.ecbAR.BO.Entity.DisputeEntity</ObjectName>
+            <ID>Currency</ID>
+            <DataType>String</DataType>
+            <IsIdentity>false</IsIdentity>
+            <DataIndex>Currency</DataIndex>
+            <IsColumn>true</IsColumn>
+            <HeaderText>
+                <Value>Currency</Value>
+            </HeaderText>
+            <Formatter />
+            <Width>75</Width>
+            <Resizeable>true</Resizeable>
+            <PreventSortable>false</PreventSortable>
+            <Sortable>false</Sortable>
+            <ColumnHideable>true</ColumnHideable>
+            <DefaultColumn>true</DefaultColumn>
+            <Exportable>true</Exportable>
+            <ShowInExpander>false</ShowInExpander>
+            <Filterable>false</Filterable>
+            <FilterHideable>true</FilterHideable>
+            <DefaultFilter>true</DefaultFilter>
+            <RequiredFilter>false</RequiredFilter>
+            <FilterLabel />
+            <ElementValue>
+                <Value />
+            </ElementValue>
+            <ElementValue2>
+                <Value />
+            </ElementValue2>
+            <FilterReadOnly>false</FilterReadOnly>
+            <DropdownItems />
+        </Element>
+        <Element>
+            <RecordElement>true</RecordElement>
+            <AssemblyFilename>ECB.ecbAR.BO.Entity.dll</AssemblyFilename>
+            <ObjectName>ECB.ecbAR.BO.Entity.DisputeEntity</ObjectName>
+            <ID>DomainName</ID>
+            <DataType>String</DataType>
+            <IsIdentity>false</IsIdentity>
+            <DataIndex>DomainName</DataIndex>
+            <IsColumn>true</IsColumn>
+            <HeaderText>
+                <Value>Domain name</Value>
+            </HeaderText>
+            <Formatter />
+            <Width>120</Width>
+            <Resizeable>true</Resizeable>
+            <PreventSortable>false</PreventSortable>
+            <Sortable>true</Sortable>
+            <ColumnHideable>true</ColumnHideable>
+            <DefaultColumn>true</DefaultColumn>
+            <Exportable>true</Exportable>
+            <ShowInExpander>false</ShowInExpander>
+            <Filterable>false</Filterable>
+            <FilterHideable>true</FilterHideable>
+            <DefaultFilter>true</DefaultFilter>
+            <RequiredFilter>false</RequiredFilter>
+            <FilterLabel />
+            <ElementValue>
+                <Value />
+            </ElementValue>
+            <ElementValue2>
+                <Value />
+            </ElementValue2>
+            <FilterReadOnly>false</FilterReadOnly>
+            <DropdownItems />
+        </Element>
+        <Element>
+            <RecordElement>true</RecordElement>
+            <AssemblyFilename>ECB.ecbAR.BO.Entity.dll</AssemblyFilename>
+            <ObjectName>ECB.ecbAR.BO.Entity.DisputeEntity</ObjectName>
+            <ID>DomainID</ID>
+            <DataType>List</DataType>
+            <IsIdentity>false</IsIdentity>
+            <DataIndex>DomainID</DataIndex>
+            <IsColumn>false</IsColumn>
+            <HeaderText />
+            <Formatter />
+            <Width>120</Width>
+            <Resizeable>true</Resizeable>
+            <PreventSortable>false</PreventSortable>
+            <Sortable>false</Sortable>
+            <ColumnHideable>true</ColumnHideable>
+            <DefaultColumn>true</DefaultColumn>
+            <Exportable>true</Exportable>
+            <ShowInExpander>false</ShowInExpander>
+            <Filterable>true</Filterable>
+            <FilterHideable>true</FilterHideable>
+            <DefaultFilter>true</DefaultFilter>
+            <RequiredFilter>false</RequiredFilter>
+            <FilterLabel>
+                <Value>Domain</Value>
+            </FilterLabel>
+            <ElementValue>
+                <Value />
+            </ElementValue>
+            <ElementValue2>
+                <Value />
+            </ElementValue2>
+            <FilterReadOnly>false</FilterReadOnly>
+            <DropdownItems />
+        </Element>
+    </Elements>
+    <ExpanderTemplate />
+    <GridButtons>
+        <Button>
+            <ButtonID>Approve</ButtonID>
+            <ButtonText>
+                <Value>Approve</Value>
+            </ButtonText>
+            <ToolTip>
+                <Value />
+            </ToolTip>
+            <IconClass />
+            <RequiredCapabilities />
+            <JSHandlerFunction>Approve_onClick</JSHandlerFunction>
+        </Button>
+        <Button>
+            <ButtonID>Deny</ButtonID>
+            <ButtonText>
+                <Value>Deny</Value>
+            </ButtonText>
+            <ToolTip>
+                <Value />
+            </ToolTip>
+            <IconClass />
+            <RequiredCapabilities />
+            <JSHandlerFunction>Deny_onClick</JSHandlerFunction>
+        </Button>
+    </GridButtons>
+    <ToolbarButtons />
+</GridLayout>

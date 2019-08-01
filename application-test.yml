@@ -1,0 +1,60 @@
+ecb-keystore: /ecb/ecbkeystore.jks
+ecb-eureka-host: https://arc-tp-poc04.metratech.com:8888/eureka/
+ecb-db-servername: mofferdemo.metratech.com
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: "${ecb-eureka-host:https://localhost:8888/eureka/}"
+    
+spring:
+  datasource:
+    dataSourceClassName: com.microsoft.sqlserver.jdbc.SQLServerDataSource
+    username: sa
+    password: MetraTech1
+    dataSourceProperties:
+      serverName: "${ecb-db-servername:mofferdemo.metratech.com}"
+      databaseName: "${ecb-db-name:NetMeter}"
+      applicationName: "${spring.application.name:ECB-API}@${eureka.instance.hostname}:${HOST_PORT:${server.port}}"
+      workstationID: "${eureka.instance.hostname}:${HOST_PORT:${server.port}}"
+      queryTimeout: 120
+      lockTimeout: 60
+
+    leakDetectionThreshold: 4000
+    minimumIdle: 15
+    
+  cloud:
+    stream:
+      kafka:
+        binder:
+   #       zkNodes: "192.168.50.4,${ZK_NODES}"
+   #       brokers: "192.168.50.4:9092,kafka:9092,${HOST_IP_ADDRESS}:9092"
+   
+logging.level.root: INFO
+logging.level.com.ericsson: INFO
+logging.level.org.springframework: INFO
+logging.level.com.zaxxer.hikari.pool.HikariPool: INFO
+logging.level.org.springframework.jdbc.datasource.DataSourceTransactionManager: DEBUG
+logging.level.org.springframework.transaction.support.AbstractPlatformTransactionManager: DEBUG
+logging.level.org.springframework.transaction.interceptor: DEBUG
+logging.level.org.eclipse.jetty: INFO
+logging.level.org.eclipse.jetty.util: INFO
+logging.path: /var/log
+      
+ecb:
+  auth:
+    hash: 
+      keys:
+        1095ffa1-8cfb-46cc-b30e-2d5d32c0e848: etgWIOaCAPTuVs7or19gx/AnwDHMI0132vwNDYhA4Gc=
+
+  log:
+    stash:
+      profile: develop
+      destination: ${logstash-server-name:arc-tp-poc04.metratech.com:5045}
+      appender-1: STDOUT-APPENDER
+      appender-2: ""
+
+hystrix:
+  stream:
+    queue:
+      enabled: false

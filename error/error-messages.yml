@@ -1,0 +1,439 @@
+INVALID_CODES_IN_PERIODS: One or more of the calendar codes are invalid as part of periods
+INVALID_CODES_IN_DAYS: One or more of the calendar codes are invalid as part of days
+INVALID_DATE_FORMAT: Invalid date format provided as part of filter - %s, valid format is dd-MM-yyyy
+BEGIN_END_ERROR: Begin %d cannot be greater than End %d in a Calendar Period
+PO_CREATE_AVAILABLE_DATE_ERROR: Available Start/End Dates can only be set after check configuration is successful
+DUPLICATE_CALENDAR_NAME: Calendar name, %s is not unique
+INPUT_INVALID: Input not valid
+INVALID_OFFERING: Offering doesn't exist
+INVALID_OFFERING_PARTITION_READ: Offering cannot be read in this partition
+INVALID_OFFERING_PARTITION_UPDATE: Offering cannot be updated in this partition
+INVALID_OFFERING_PARTITION_CREATE: Offering cannot be created in this partition
+INVALID_OFFERING_PARTITION_DELETE: Offering cannot be deleted from this partition
+UNMODIFIABLE_FIELD_ERROR: Field %s value cannot be updated
+NO_PI_FOR_PRODUCT_ERROR: A Product must contain at least one Priceable Item
+DUPLICATE_OFFERING_NAME_ERROR: The Offering name must be unique for this partition
+OFFERING_MODIFY_WITH_SUBS_ERROR: The Offering has  subscriptions and cannot be modified or deleted
+INVALID_CURRENCY_ERROR: The currency is not supported
+INVALID_PARTITION_ID: Partition Id %d does not exist
+EFFECTIVE_START_END_ERROR: The Effective Start Date must be precede or be the same as equal the Effective End Date
+AVAILABLE_START_END_ERROR: The Available Start Date must be precede or be the same as equal the Available End Date
+AVAILABLE_DATES_AFTER_EFFECTIVE_END_ERROR: Effective End Date must come after Available Start and End dates
+OFFERING_WITH_SUBS_DELETE_ERROR: Offering is available for sale/subscription and cannot be deleted
+PI_WITH_ADJUSTMENTS_TX_DELETE_ERROR: Unable to delete Priceable Item with existing Adjustment Transactions
+INVALID_PARTITION_ID_PASSED_ERROR: Partition does not exist
+NO_PI_FOR_PRODUCT_IN_BUNDLE_ERROR: Product within Bundle must include at least one Priceable Item
+ATLEAST_ONE_PRODUCT_IN_BUNDLE_ERROR: Bundle must include at least one Product
+NO_PI_IN_PRODUCT_OF_BUNDLE: Product %s within Bundle must include at least one Priceable Item
+INVALID_PI_OF_PRODUCT_IN_BUNDLE: Product %s within bundle includes at least one invalid Priceable Item
+INVALID_CHILD_PI_OF_PRODUCT_IN_BUNDLE: Product within Bundle includes at least one invalid Child Priceable Item
+INVALID_CHILD_PI_OF_PRODUCT: Product includes at least one invalid Child Priceable Item
+ATLEAST_ONE_INVALID_PI_FOR_OFFERING: Offering has at least one invalid Priceable Item
+NO_RATES_FOR_ATLEAST_ONE_RATETABLE_OF_PI: At least one Priceable Item has a Rate Table that is missing rates
+SAME_CURRENCY_AS_SRC_FOR_SHARED_RATELISTS: The Currency of copied Offerings with Shared Ratelists must not be changed. Otherwise the Offering and included Shared Ratelist Currencies will not match
+SAME_CURRENCY_AS_SRC_FOR_LOCAL_RATELISTS: The Currency of copied Offerings with Local Rates must not be changed. Otherwise the Offering and included Local Rate Currencies will not match
+INVALID_BUNDLE: Bundle %s is not a valid
+BUNDLE_AVAILABLE_ERROR: Bundle %s is available for sale or subscription and cannot be modified or deleted
+BUNDLE_WITH_SUBS_ERROR: Bundle %s has active subscriptions and cannot be modified or deleted
+INVALID_BUNDLE_ID: Bundle %d is not a valid bundle
+PRODUCT_BUNDLE_CURRENCY_MISMATCH: The Bundle %s and Product %s Currencies do not match
+PRODUCT_BUNDLE_PARTITION_MISMATCH: TThe Bundle %s and Product %s partitions do not match
+PRODUCT_HIDDEN: Product %s is hidden, it cannot be added to a Bundle
+PRODUCT_BUNDLE_SUPPORTED_ACCTYPE_MISMATCH: The Account Types for all of the Products within a Bundle must match the Bundle's supported Account Type
+INVALID_ADJUSTMENT: Adjustment %d does not exist
+INVALID_PI_TEMPLATE: Priceable Item Template Id %d does not exist
+INVALID_ADJUSTMENT_TYPE: Adjustment Type Id %d  does not exist
+ADJUSTMENTS_WITH_TRANSACTIONS: Adjustment %s has existing Adjustment Transactions
+INVALID_REASON_CODE: Reason code %d does not exist
+INVALID_PI_INSTANCE: Priceable Item Instance Id %d does not exist
+INVALID_PRODUCT: Product %d does not exist
+INVALID_CALENDAR: Calendar Id %d does not exist
+INVALID_CALENDAR_DAY: The Calendar Day Id %d  does not exist
+INVALID_CALENDAR_DAYS: Invalid Calendar Day Ids %s, no days deleted
+INVALID_CALENDAR_DAYS_IN_PERIODS: Invalid Calendar Day Ids %s
+INVALID_CALENDAR_DAYS_IN_HOLIDAYS: Invalid Calendar Day Ids %s
+INVALID_CALENDAR_HOLIDAY: The Calendar Holiday Id %d  does not exist
+INVALID_CALENDAR_PERIODS: Invalid Calendar Period Ids %s, no periods deleted or updated
+INVALID_CALENDARS: Invalid Calendar Ids %s, no days updated or deleted
+INVALID_CALENDARS_CREATE: Invalid Calendar Ids %s, no days created
+INVALID_CALENDAR_HOLIDAYS: Invalid Calendar Holiday Ids %s, no holidays deleted
+DUPLICATE_CALENDAR_HOLIDAY_NAME: Calendar Holiday name, %s is not unique
+DUPLICATE_CALENDAR_HOLIDAY_NAME_WITHIN_INPUT: Calendar Holiday name, %s is not unique within the input list
+EXISTING_WEEKDAY: Calendar WeekDay %s already exists in a calendar
+EXISTING_WEEKDAY_IN_INPUT: Calendar WeekDay %s for a day is already assigned to other day(s) in the same calendar within the input list
+CALENDAR_PERIOD_OVERLAPS: Input Calendar Period overlaps with Period having Start - %d and End - %d
+INVALID_CALENDAR_PERIOD: Calendar period %d does not exist
+INPUT_CALENDAR_PERIOD_OVERLAPS: Input Calendar Period having Start - %d and End - %d overlaps with Period having Start - %d and End - %d
+RATESCHEDULE_VALIDATION: Invalid Priceable Item Template, Rate Table or Shared Ratelist
+INVALID_SRC_SCHEDULE: Rate schedule to copy cannot be found
+START_DATE_END_DATE: End Date must be after Start Date
+INVALID_RATESCHEDULE: Rate Schedule %d does not exist
+INVALID_PRICELIST: Shared Ratelist %d does not exist
+MAPPED_PRICELIST: Shared Ratelist is In-Use and cannot be deleted
+INVALID_PRICELIST_PARTITION_DELETE: Shared Ratelist cannot be deleted from this partition
+INVALID_PRICELIST_PARTITION_UPDATE: Shared Ratelist cannot be updated in this partition
+INVALID_PRICELIST_PARTITION_ACCESS: Shared Ratelist cannot be accessed in this partition
+INVALID_PRICELIST_PARTITION_CREATE: Shared Ratelist cannot be created in this partition
+LOCAL_PRICELIST_UPDATE: Can update only Local or ICB Pricelist
+IN_USE_PRICELIST_NAME: Shared Ratelist %s already exist
+INVALID_PARAMTABLE_DEF: Rate Table does not exist
+UPDATE_PRICELIST_TYPE_IN_MAPPING: Cannot set price list. Incoming Non-shared price list is not same as default price list for PO
+INVALID_PRICELISTMAPPING: Rate Table and the Priceable Item do not match
+SUBS_PROP_ALREADY_ASSOCIATED_WITH_ENTITY: The Subscription Property is already associated with an Offering and cannot be deleted
+DUPLICATE_SUBS_PROP_ASSOCIATION: This Subscription Property %d already exists on Offering %d
+SUBS_PROP_NOT_ASSOCIATED: Subscription Property %d does not exist for Offering %d and cannot be removed
+INVALID_SUBS_PROP: Subscription Property %d does not exist
+DUPLICATE_SUBS_PROP_NAME: Subscription property name %s must be unique within category %s
+TEMPLATE_USAGE_AGG_DELETE: Usage Types cannot be deleted
+TEMPLATE_DELETE_EXISTING_INSTANCES: Templates with instances cannot be deleted
+INVALID_PI_TYPE: Priceable item type %d does not exist
+CHILD_TEMPLATE_CREATE: Child Priceable Item Templates cannot be created
+DUPLICATE_TEMPLATE_NAME: Template name %s already exists
+USAGE_CYCLE_DATES_ERROR: Error validating the dates provided for Cycle Type
+USAGE_CYCLE_DATES_RETRIEVAL_ERROR: Error retrieving dates for the Recurring Charge Period
+NAME_OVERRIDABILITY_ERROR: 76.	Name can only be updated if its Overridable Property is set to True
+DISPLAY_NAME_OVERRIDABILITY_ERROR: Display Name is only updated when its Overridable Property is set to true
+INVALID_PI_TEMPLATE: Priceable Item Template %d does not exist
+OFFERING_AVAILABLE: Offering %s available for sale/subscription
+OFFERING_HIDDEN: Offering %s is hidden
+INSTANCE_NAME_OVERRIDABILITY_ERROR:  Name can be updated only when their Overridable Property is set to true
+INSTANCE_DISPLAY_NAME_OVERRIDABILITY_ERROR: Display Name is only updated when its Overridable Property is set to True
+INCORRECT_EXT_PROP_NAME: Extended Property Name %s is invalid
+INVALID_EXT_PROP_VALUE: Extended Property value %s for %s exceeds the defined maximum length
+INSTANCE_EXT_PROP_OVERRIDABILITY_ERROR: Value for extended property %s can be updated only when its Overridable Property is set to True
+CHILD_INSTANCE_ADD: Child Priceable Item cannot be created
+CHILD_INSTANCE_DELETE: Child Priceable Item cannot be deleted
+INVALID_CHILD_PI_TEMPLATE: Child Priceable Item Template %d does not exist
+DUPLICATE_INSTANCE_ADD: The Offering can have only one Template Id %d Priceable Item
+BUNDLE_SAME_USAGE_ACROSS_PO: Bundle Id %d cannot include a Template Id %d Usage Priceable Item that is already included in any of its Products
+INVALID_INSTANCE: Priceable item %d does not exist
+INSTANCE_OFFERING_WITH_SUBSCRIPTIONS: Active subscriptions exists for this Offering. Hence, Priceable Items cannot be deleted
+INSTANCE_OFFERING_AVAILABLE: Offering avaiable for subscription. Hence, priceable items cannot be deleted
+INVALID_SUBSCRIPTION: Subcription %d does not exist
+SUBSCRIPTION_STARTED: Subscription has already been started
+USER_ACC_CYCLE_CONFLICT: User Cycle conflicts with Account Cycle %s
+NO_SUBSCRIBERS_FOUND: Offering %d has no subscriptions
+UNKNOWN_FAILURE_SUBS_CHANGE: Unknown Failure during Bulk Subscription change
+SOME_ACCS_SUBSCRIBED_TO_DESTINATION_OFFERING: Some Accounts are already subscribed to the destination Offering %s
+BULK_SUBS_USER_CONFLICT_OFFERING: Bulk subscription user conflicting product offering %s
+WEAK_PASSWORD: Reenter using a mix of capital and lowercase letters, and numbers
+PASSWORD_MIN_LENGTH_ERROR: Password must be at least %d characters
+PASSWORD_MAX_LENGTH_ERROR: Password should not exceed %d characters
+USED_PASSWORD: Password has been used before
+INVALID_ACCOUNT: Account %d does not exist
+INVALID_NAMESPACE: Namespace does not exist
+USERNAME_ALIAS_EXISTS: Alias already exist for user %s
+PASSWORDS_MISMATCH: Password and confirmation password do not match
+ACCOUNT_MAPPER_VALIDATION_ERROR: AccountId, login and namespace should be provided to create account alias
+CREATE_ACC_FAILED: Account creation failed with status - %s
+CREATE_ACC_MISSING_CYCLETYPE: UsageCycleType is mandatory
+CREATE_ACC_INVALID_ROLE: Role '%s' does not exist
+CREATE_ACC_ROLES_NOT_CONFIGURED: There are no default roles configured for the account
+CREATE_ACC_FAILED_TO_ADD_ROLE: Account creation failed with status - %s while adding role '%s'
+INVALID_CYCLETYPE: Invalid UsageCycleType - %s
+INVALID_CURRENCY: Invalid currency '%s'
+CREATE_ACC_INVALID_INPUT: Account type, namespace, userName, password and confirmPassword should be provided to create the account
+CREATE_ACC_MISSING_INTERNAL_VIEW: Create account input should have internal account view.
+CREATE_ACC_INVALID_ACC_TYPE: Invalid account type - %s
+CURRENCY_RETRIEVAL_ERROR: Error retrieving currencies supported by ECB
+INVALID_USAGE_QUAL_GRP_ID: Invalid Usage Qualification Group Id
+INVALID_AMOUNT_CHAIN_FIELD: Invalid Amount Chain Field Id
+DUPLICATE_AMOUNT_CHAIN_NAME: Amount Chain name %s is not unique
+INVALID_PRODUCT_VIEW: Invalid Product View Name - %s
+INVALID_AMOUNT_CHAIN: Invalid Amount Chain Id
+INVALID_CHARGE_NAME: Charge Name %s does not exist
+INVALID_CHARGE_DEFINITION: Invalid Charge Definition Id
+DUPLICATE_CHARGE_DEFINITION_NAME: Charge Definition Name %s is not unique
+INVALID_AMOUNT_CHAIN_NAME: Invalid Amount Chain Name - %s
+INVALID_DECISION_TYPE_ID: Invalid Decision Type Id
+INVALID_PARAMETER_TABLE_NAME: Invalid Rate Table Name - %s
+INVALID_ACC_QUAL_GRP_ID: Invalid Account Qualification Group Id
+INVALID_ACC_QUAL_GRP_NAME: Invalid Account Qualification Group Name - %s
+INVALID_USAGE_QUAL_GRP_NAME: Invalid Usage Qualification Group Name - %s
+INVALID_PV_TO_AMTCHAIN_MAPPING: The value %s specified for ‘Product View To Amount Chain Mapping’ attribute is invalid
+INVALID_AGG_TAX_IN: Invalid association in CDE Tax input configuration
+DUPLICATE_DECISION_NAME: Decision name %s already exists
+INVALID_SUBSCRIPTION_PARTITION: Specified offering and account are in the different partitions
+SUBSCRIPTION_PROP_REQUIRED: Subscription property %s is required to subscribe this offering
+RECURRING_UNIT_VALUE_REQUIRED: Recurring unit values are mandatory
+INVALID_SUBSCRIPTION_UDRC_ID: Invalid UDRC propId - %d
+INVALID_UDRC_VALUE: Unit value must be between %s and %s
+INVALID_UDRC_ENUM_VALUE: Unit value must be in the specified enumerated values
+MISSED_UDRC_INSTANCES_IN_INPUT: Required UDRC values for instances %s not available in input
+INVALID_DEFAULT_UNIT_RANGE: Default range is not available for prop id - %d
+INVALID_UNIT_START_DATE: Default range cannot be be more than once for prop id - %d
+INVALID_SUBSCRIPTION_START_DATE: Subscription start date cannot be before the offer effective start date
+INVALID_SUBSCRIPTION_END_DATE: Subscription end date cannot be after the offering effective end.
+INVALID_INPUT_FOR_SUBSCRIPTION: Account id, offer id and start date should be provided to create subscription
+SUBSC_CREATE_INACTIVE_ACC_ERROR: Account is not in active state for the requested subscription start date
+INVALID_PRODUCT_SUBSCRIPTION: Invalid Product %d for Subscription id - %d
+INVALID_ACCOUNT_SUBSCRIPTION: Inavlid Account %d for Subscription id - %d
+UPDATE_ACC_FAILED: Account updation failed with status - %s 
+DUPLICATE_INTERNAL_VIEW: An account can have only one internal view 
+MISSING_INTERNAL_VIEW: Account must have internal view 
+NAMESPACE_RETRIEVAL_ERROR: Error retrieving namespace for validation 
+INVALID_INPUT: Invalid input 
+INVALID_ACCOUNT_ID: Invalid account id '%d' 
+INVALID_ACCOUNT_VIEW_PROPERTY: Property %s in account view %s cannot be null
+ACCOUNT_VIEW_MISSING_REQUIRED_FIELD: Required '%s' field for view '%s'
+ACCOUNT_VIEW_REQUIRED_FIELD_NULL_CHECK: Field '%s' in '%s' view cannot be null or empty
+INVALID_PRICE_LIST: The 'price list' is invalid
+INVALID_VIEW_FOR_ACCOUNT_TYPE: View '%s' is not associated to account type %s
+METADATA_RETRIEVAL_ERROR: Server error reading the metadata information for view '%s' 
+INVALID_ENUM_FOR_VIEW: Invalid enum value for '%s' in view %s
+INVALID_SERVER_PATH: Invalid reporting server path
+UNABLE_READ_INVOICE_FILES: Unable to get list of invoice files
+FILE_NOT_FOUND: File not found at specified path
+UNABLE_DOWNLOAD_INVOICE_FILE: Unable to download invoice file - %s
+INVALID_INTERVAL_FOR_ACCOUNT: Inavlid usage interval id %d for account id %d
+FILE_NAME_PDF_EXTENSION: File name should have pdf extension
+CSR_ACCOUNT_CAPABILITY_ERROR: Permission Denied. Missing System account capability.
+CORPORATE_ACCOUNT_CAPABILITY_ERROR: Permission Denied. Missing Corporate Account capability
+SUBSCRIBER_ACCOUNT_CAPABILITY_ERROR: Permission Denied. Missing Subscriber Account Capability
+MANAGE_HIERARCHY_ACCOUNT_CAPABILITY_ERROR: Permission Denied. Missing Manage Hierarchy capability
+ACC_START_MONTH_FOR_QUARTERLY_CYCLE_TYPE_VALIDATION: Account failed validation Start month must be specified for Quarterly cycle type
+ACC_START_DAY_FOR_QUARTERL_CYCLE_TYPE_VALIDATION: Account failed validation Start day must be specified for Quarterly cycle type
+ACC_START_MONTH_FOR_ANNUALLY_CYCLE_TYPE_VALIDATION: Account failed validation Start month must be specified for Annually cycle type
+ACC_START_DAY_FOR_ANNUALLY_CYCLE_TYPE_VALIDATION: Account failed validation Start day must be specified for Annually cycle type
+ACC_START_MONTH_FOR_SEMI_ANNUALLY_CYCLE_TYPE_VALIDATION: Account failed validation Start month must be specified for Semi_Annually cycle type
+ACC_START_DAY_FOR_SEMI_ANNUALLY_CYCLE_TYPE_VALIDATION: Account failed validation Start day must be specified for Semi_Annually cycle type
+ACC_DAY_OF_WEEK_FOR_WEEKLY_CYCLE_TYPE_VALIDATION: Account failed validation day of week must be specified for Weekly cycle type
+ACC_FIRST_DAY_OF_MONTH_FOR_SEMI_MONTHLY_CYCLE_TYPE_VALIDATION: Account failed validation first day of month must be specified for Semi-Monthly cycle type
+ACC_SECOND_DAY_OF_MONTH_FOR_SEMI_MONTHLY_CYCLE_TYPE_VALIDATION: Account failed validation second day of month must be specified for Semi-Monthly cycle type
+ACC_START_MONTH_FOR_BIWEEKLY_CYCLE_TYPE_VALIDATION: Account failed validation Start month must be specified for Bi-weekly cycle type
+ACC_START_DAY_FOR_BIWEEKLY_CYCLE_TYPE_VALIDATION: Account failed validation Start day must be specified for Bi-weekly cycle type
+ACC_START_YEAR_FOR_BIWEEKLY_CYCLE_TYPE_VALIDATION: Account failed validation Start year must be specified for Bi-weekly cycle type
+UDR_LOADER_MISSING_SD_NAME: Service Definition name is mandatory
+UDR_LOADER_MISSING_USAGE_DATA: There is no usage data to load
+UDR_LOADER_DATA_EXCEEDS_MAX_COUNT: Cannot process more than %d usage records at a time
+UDR_LOADER_INVALID_SD: Service Definition '%s' does not exist
+UDR_LOADER_RESPONSE_ERROR_MSG: Could not process the record #%d. Reason- %s
+UDR_LOADER_MISSING_REQUIRED_PROPERTY: Property %s in the table %s cannot be null
+UPDATE_ACC_ACCOUNTTYPE_VALIDATION_ERROR: Account type cannot be updated
+UPDATE_ACCOUNT_INVALID_MOVE: Account %d cannot be moved to another namespace
+MANAGE_PAYMENT_CAPABILITY_ERROR: Permission Denied. Missing Manage Payment capability
+MANAGE_BILLABLE_CAPABILITY_ERROR: Permission Denied. Missing Manage Billable capability
+UPDATE_ACCOUNT_INVALID_NAMESPACE: Account '%d' does not exist under namespace '%s'
+UPDATE_ACCOUNT_CANNOT_UPDATE_NAMESPACE: Namespace cannot be updated
+INVALID_SUBSCRIPTION_PROPS: Subscription properties are not applicable for this offering
+INVALID_UDRC_VALUES: UDRC values are not applicable for this offering
+INVALID_LOCALIZED_PROPERY: Invalid localized property '%s'.
+INVALID_LOCALIZED_SORT: Invalid descriptionSort. Multiple column support not allowed.
+LOCALIZED_SORT_MISSING_LANG: Description language is mandatory to sort on localized properties.
+ACC_STATE_NOT_ALLOWED_AC_TO_PA: State Transition from Active to PendingActiveApproval is not allowed
+ACC_STATE_NOT_ALLOWED_AC_TO_AR: State Transition from Active to Archived is not allowed
+ACC_STRDATE_BFR_INCEPDATE: An attempt is being made to set the start date for the account to be before the accounts inception date.This operation is not allowed
+ACC_HAS_USAGE_ISACTV: This account contains usage and is currently active.  Attempt to move the start date for this account in the future is not allowed.  Please Close this account first
+ACC_STRDATE_AFT_INCEPDATE: An attempt is being made to set the start date for the account to be after the accounts inception date.This operation is not allowed
+ACC_BILLABLE_N_PAYABLE : The account is marked billable and is paying for other subscribers now or in the future.
+CHANGE_ACCOUNT_TO_SUSPEND_CAPABILITY_ERROR: Permission Denied. Missing Change account to suspend capability.
+CHANGE_ACCOUNT_TO_CLOSED_CAPABILITY_ERROR: Permission Denied. Missing Change account to closed capability.
+CHANGE_ACCOUNT_TO_ACTIVE_CAPABILITY_ERROR: Permission Denied. Missing Change account to active capability.
+ACC_HAS_DESCENDENTS: This account has descendents that are state other than closed.
+UNKOWN_ACCOUNSTATE_ERROR: Unknown Account State
+ACC_STATE_NOT_ALLOWED_PA_TO_SU: State Transition from PendingActiveApproval to Suspended is not allowed
+ACC_STATE_NOT_ALLOWED_PA_TO_PF: State Transition from PendingActiveApproval to PendingFinalBill is not allowed
+ACC_STATE_NOT_ALLOWED_PA_TO_CL: State Transition from PendingActiveApproval to Closed is not allowed
+ACC_STATE_NOT_ALLOWED_PA_TO_AR: State Transition from PendingActiveApproval to Archived is not allowed
+ACC_STATE_ARCHIVED_ERROR: Account is in an Archived state.  No operations are permitted
+ACC_STATE_NOT_ALLOWED_CL_TO_PA: State Transition from Closed to Pending Active Approval is not allowed
+ACC_STATE_NOT_ALLOWED_CL_TO_AC: State Transition from Closed to Active is not allowed
+ACC_STATE_NOT_ALLOWED_CL_TO_SU: State Transition from Closed to Suspended is not allowed
+ACC_STATE_NOT_ALLOWED_CL_TO_CL: State Transition from Closed to self is not allowed
+ACC_STATE_NOT_ALLOWED_CL_TO_AR: This account has descendents that are in a state other than archived
+ACC_STATE_NOT_ALLOWED_PF_TO_PA: State Transition from Pending Final Bill to Pending Active Approval is not allowed
+ACC_STATE_NOT_ALLOWED_PF_TO_SU: State Transition from Pending Final Bill to Suspended is not allowed
+ACC_STATE_NOT_ALLOWED_PF_TO_AR: State Transition from Pending Final Bill to Archived is not allowed
+ACC_STATE_NOT_ALLOWED_SU_TO_PA: State Transition from Suspended to Pending Active Approval is not allowed
+ACC_STATE_NOT_ALLOWED_SU_TO_PF: State Transition from Suspended to PendingFinalBill is not allowed
+ACC_STATE_NOT_ALLOWED_SU_TO_AR: State Transition from Suspended to Archived is not allowed
+ACC_STATE_NOT_ALLOWED_CL_TO_AR_AGE_0: Age is configured to be 0. This account will not be archived
+UPDATE_ACC_STATE_FAILED: Account State updation failed.
+EMPTY_USAGE_SERVER_TABLE: No row found in t_usage_server table
+BILL_GROUP_ID_AND_INTERVAL_ID_ERROR: Cannot be queried by both billGroupId and intervalId
+USM_CLOSE_USAGE_INTERVAL_ID_ERROR: Usage interval id is not valid.
+USM_CLOSE_BILL_GROUP_ID_ERROR: Bill group id is not valid.
+USM_CLOSE_USAGE_INTERVAL_ID_AND_BILL_GROUP_ID_ERROR: Cannot specify both interval and billing group during soft close.
+USM_SOFT_CLOSE_UNKNOWN_ERROR: An unknown error occurred during soft close of interval %d.
+USM_CLOSE_MATERIALIZATION_ERROR: The interval %d has more than one 'Full' materialization. Either create billing groups for interval or specify the ignoreBillingGroups option.
+USM_HARD_CLOSE_ERROR: Cannot hard close interval %d because not all payer accounts are hard closed.
+USM_HARD_CLOSE_UNKNOWN_ERROR: An unknown error occurred while trying to hard close interval %d.
+USM_CLOSE_NO_BILL_GROUP_ID_ERROR: Cannot find billing group %d.
+USM_CLOSE_BILL_GROUP_ID_ALREADY_CLOSED_ERROR: The billing group %d has previously been hard closed.
+USM_CLOSE_UNASSIGNED_ACCOUNTS_ERROR: Cannot hard close billing group %d because it is the last billing group being hard closed and there are unassigned accounts for the interval which are not hard closed.
+USM_CLOSE_CANNOT_HARD_CLOSE_ERROR: Could not update billing group status to 'H'.
+USM_CLOSE_CANNOT_SOFT_CLOSE_ERROR: Billing Group could not be soft closed
+USM_HARD_CLOSE_BILL_GROUP_UNKNOWN_ERROR: An unknown error occurred while trying to hard close billing group %d.
+USM_HARD_CLOSE__BILL_GROUP_UNKNOWN_ERROR: An unknown error occurred during soft close.
+NOT_EXISTS_INSTANCE_MARKED_SUCCEEDED_EXCEPTION: Event instance %d could not be marked as succeeded. Instance does not exist!
+INSTANCE_MUST_BE_FAILED_EXCEPTION: Event instance %d must be in the failed state!
+UNABLE_TO_MARK_SUCCEEDED_EVENT_EXCEPTION: Event instance %d could not be marked as succeeded for an unknown reason!
+NOT_EXISTS_INSTANCE_MARK_FAILED_EXCEPTION: Event instance %d could not be marked as failed. Instance does not exist!
+INSTANCE_MUST_BE_SUCCEEDED_EXCEPTION: Event instance %d must be in the succeeded state!
+UNABLE_TO_MARK_FAILED_EVENT_EXCEPTION: Event instance %d could not be marked as failed for an unknown reason!
+NOT_EXISTS_INSTANCE_MARK_NOT_YET_RUN_EXCEPTION: Event instance %d could not be marked as NotYetRun. Instance does not exist!
+UNABLE_TO_MARK_NOT_YET_RUN_EVENT_EXCEPTION: Event instance %d could not be marked as NotYetRun for an unknown reason!
+INVALID_KIND_PROPERTY: Property 'kind' cannot be null
+INVALID_CANICB_PROPERTY: Property 'canicb' cannot be null
+INVALID_SUBSCRIPTION_RELATIVE_DATE_MODE: Start/End date types must be same if date type is subscription relative
+INVALID_INSTANCEID_EXCEPTION: Invalid instanceId %d was passed
+ILLEGAL_INSTANCE_STATE_EXCEPTION: Instance cannot be cancelled because it is not in a legal state
+EVENT_CANCEL_EXCEPTION: Unable to cancel event
+UNSUPPORTED_STATUS_EXCEPTION: Only supported status options are ReadyToRun, ReadyToReverse and None
+INVALID_EVENT_NAME: Event Name passed %s is invalid
+DEACTIVATED_EVENT: Event %s is not active
+INVALID_INTERVAL_ID: Interval Id %d passed is invalid
+NO_INSTANCES_CRITERIA: No event instances were found that match the criteria specified!
+USM_OPEN_HAS_NOT_BEEN_SOFT_CLOSED_ERROR: The billing group %d has not been soft closed
+USM_OPEN_START_ROOT_ERROR: Unable to find _StartRoot instance for billing group %d
+USM_OPEN_NOT_REVERSED_ERROR: Not all instances, which depend on the billing group %d have been reversed successfully
+USM_OPEN_UPDATE_ERROR: Could not update billing group status to 'C'
+USM_OPEN_UNKNOWN_ERROR: An unknown error occurred while trying to open billing group %d
+UNRECOGNIZED_OPTION_VALUE_USED: Unrecognized value given to the %s option - %s
+INVALID_SUBSCRIPTION_RELATIVE_DATE_MODE: Start/End date types must be same if date type is subscription relative
+INVALID_KIND_PROPERTY: Property 'kind' cannot be null
+INVALID_CANICB_PROPERTY: Property 'canicb' cannot be null
+CREATE_MATERIALIZATION_REG_ERROR: Bill Group materialization error
+CREATE_MATERIALIZATION_CLEANUP_ERROR: Could not create materialization id for interval %d because the [CleanupMaterialization] stored procedure did not execute successfully
+CREATE_MATERIALIZATION_HARD_CLOSED_ERROR: Could not create materialization id for interval %d because the interval is hard closed
+CREATE_MATERIALIZATION_NO_PAY_ACCS_ERROR: No paying account exists for interval %d
+CREATE_MATERIALIZATION_REVERSE_ERROR: Cannot create billing groups or create user defined groups for interval %d until all interval-only adapters have been reversed!
+CREATE_MATERIALIZATION_EOP_ERROR: Cannot create billing groups for interval %d as the 'EOP' are in either 'Running or 'Reversing' status!
+CREATE_FULL_MATERIALIZATION_ERROR: Cannot have more than one 'Full' Materialization for given interval %d
+CREATE_MATERIALIZATION_INPROGRESS_ERROR: Materialization or creation of billing groups for interval %d is in progress!
+CREATE_MATERIALIZATION_UNKWOWN_ERROR: A materialization id for interval %d submitted by user %d could not be created for an unknown reason!
+CREATE_MATERIALIZATION_GRPID_ERROR: Constraint groupId has been named incorrectly.
+CREATE_MATERIALIZATION_DUP_ACCS_ERROR: Duplicate accounts exists in constraint groups for interval %d.
+CREATE_MATERIALIZATION_CONSTRAINTS_UNKNOWN_ACCS_ERROR: Constraint groups could not be created for interval %d due to an unknown reason.
+COMPLETE_MATERIALIZATION_CONSTRAINTS_NO_ACCS_ERROR: Could not create billing groups for interval %d because one or more billing groups would not have any accounts!
+COMPLETE_MATERIALIZATION_CONSTRAINTS_CLEANUP_ERROR: Could not create billing groups for interval %d because the [CleanupMaterialization] stored procedure did not execute successfully
+COMPLETE_MATERIALIZATION_CONSTRAINTS_REFRESH_ERROR: Billing group creation for interval %d failed because the [RefreshBillingGroupConstraints] stored procedure did not execute successfully
+COMPLETE_MATERIALIZATION_CONSTRAINTS_UNKNOWN_ERROR: Could not create billing groups for interval %d due to an unknown reason
+COMPLETE_REMATERIALIZATION_CONSTRAINTS_FAILURE_ERROR: Could not re-create billing groups for interval %d because of failure
+COMPLETE_REMATERIALIZATION_CONSTRAINTS_NO_ACCS_ERROR: Billing group re-creation for interval %d failed because one or more billing groups will be created with no accounts!
+COMPLETE_REMATERIALIZATION_CONSTRAINTS_REFRESH_ERROR: Billing group re-creation for interval %d failed because the [RefreshBillingGroupConstraints] stored procedure did not execute successfully
+COMPLETE_REMATERIALIZATION_CONSTRAINTS_CLEANUP_ERROR: Billing group re-creation for interval %d failed because the [CleanupMaterialization] stored procedure did not execute successfully
+COMPLETE_REMATERIALIZATION_CONSTRAINTS_UNKNOWN_ERROR: Billing group re-creation for interval %d failed with an unknown reason
+VALIDATE_CREATE_MATERIALIZATION_DUP_SRC_ACCS_ERROR: Duplicate accounts in bill group source account for materialization %d
+VALIDATE_CREATE_MATERIALIZATION_DUP_ACCS_BGM_TMP_ERROR: Duplicate accounts in bill group member temp for materialization %d
+VALIDATE_CREATE_MATERIALIZATION_MISSING_ACCS_ERROR: Missing accounts in bill group for materialization %d
+VALIDATE_CREATE_MATERIALIZATION_EMPTY_BG_ERROR: Empty bill group exist without an account for materialization %d
+VALIDATE_CREATE_MATERIALIZATION_DUPLICATE_BG_NAMEERROR: Duplicate bill group names exist for materialization %d
+UNRECOGNIZED_RECURRING_EVENT_TYPE_ERROR: Unknown recurring event type! - %s
+USM_RUN_INVALID_INSTANCE: Adapter instance %d does not exist
+USM_RUN_INVALID_CRITERIA: Adapter instance(s) does not exist
+USM_RUN_INVALID_INSTANCE_STATE: Adapter instance has invalid state other than 'Ready to Run' and 'Not Yet Run' for execute
+USM_RUN_NOT_REVERSIBLE: Recurring event not reversible for instanceId - %d
+USM_RUN_UNSATISFIED_CHECKPOINT: Unsatisfied checkpoint dependencies for instanceId - %d
+USM_RUN_INVALID_BGRP_STATE: Invalid bill group state %s for instanceId - %d
+USM_RUN_UNKNOWN_ERROR: Unable to submit event for instanceId - %d
+INPUT_PARSE_ERROR: Can not parse input JSON
+USM_CANCEL_INVALID_BILLGROUP: Bill Group Id %d does not exist
+INVALID_CALENDAR_CODE : Invalid calendar code - %s
+INVALID_CREATE_CALENDAR_INPUT: Calendar Id or code cannot be null
+INVALID_CALENDAR_PERIOD_INPUT: All fields are mandatory to create calendar period
+INVALID_CALENDAR_PERIOD_BENGIN_END: Start time cannot be equal or greater than to end time
+FIELD_EMPTY_NULL_CHECK: Field '%s' cannot be null or empty
+DUPLICATE_REASON_CODE_NAME: Reason code Name '%s' already exists
+USER_NAME_LENGTH_RANGE: Username should be in the range of %d - %d characters
+USER_NAME_INVALID_CHARS: Username contains invalid details. All Special Characters and Numbers are not allowed at initial position. Only allowed Special Characters are @ - . _
+UNABLE_TO_SUBMIT_EVENT_EXCEPTION: Event instance %d could not be submitted for '%s' for an unknown reason!
+RECURRING_EVENT_INSTANCE_NOT_FOUND_EXCEPTION: Recurring event instance %d was not found!
+SUBMIT_EVENT_FOR_REVERSAL_INVALID_STATE_EXCEPTION: Recurring event instance %d must be in the state of 'Succeeded' or 'Failed' in order to be submitted for reversal!
+SUBMIT_EVENT_FOR_EXECUTION_INVALID_STATE_EXCEPTION: Recurring event instance %d must be in the state of 'NotYetRun' in order to be submitted for execution!
+RECURRING_EVENT_NOT_REVERSIBLE_EXCEPTION: Recurring event related to instance %d is not reversible!
+UNSATISFIED_CHECKPOINT_DEPENDENCIES_EXCEPTION: Cannot acknowledge/unacknowledge checkpoint instance %d due to unsatisfied dependencies!
+GET_LOCALIZAED_INFO_INVALID_KIND_TYPE: Found invalid characters or unexpected sequence for kindType
+GET_LOCALIZAED_INFO_INVALID_INPUT: Input not valid
+GET_LOCALIZAED_INFO_INVALID_LANGUAGE: Language code does not exist
+GET_LOCALIZAED_INFO_INVALID_KIND: PropertyKind not valid
+GET_LOCALIZAED_INFO_INVALID_LOCALE: Locale not valid
+GET_LOCALIZAED_INFO_LOCALE_NOT_CONFIGURED: Locale not configured
+IDENTICAL_RATE_SCHEDULE: An identical Rate Schedule already exists in the system. Please change the range of the effective date and try again
+DUPLICATE_SHARED_PROPERTY_DEFAULT_VALUE: Only one default value shoulb be allowed  in Shared Properties
+INVALID_CAP_TYPE_ID: Cap Type Id %d does not exist
+ACCOUNT_PRINCIPAL_POLICY_MISSING: Principal policy does not exist for account id %d
+POLICY_CAPABILITY_EXISTS: The capability type id already exists
+INVALID_CSR_ASSIGNABLE: The capability type id is not CSR assignable
+INVALID_SUBSCRIBER_ASSIGNABLE: The capability type id is not subscriber assignable
+INVALID_ENUM_DATA: Enumeration '%s' does not exist in namespace '%s'
+EMPTY_APP_LOGON: At least one application should be provided for application logon capability
+EMPTY_MANAGE_ACCOUNT_INPUT: At least one access level details should be provided for Managing Account related capabilities
+EMPTY_ACCESS_HIERARCHY_ACCOUNT: Access level and access type cannot be empty
+INVALID_ACCESS_HIERARCHY_ACCOUNT: Access hierarchy accountIds %s does not exist
+EMPTY_IND_ACC_ACCESS_LEVEL: At least one access level should be provided for managing independent account
+EMPTY_BUSINESS_ENTITY_EXTENSION: At least one Business enitity extension should be provided
+EMPTY_PERMISSION_LIMITS: At least one permission limit should be provided
+INVALID_PERMISSION_LIMITS: Limit, operation and currency should be provided
+INVALID_OPERATOR_FOR_APPLY_ADJ_CAP: Invalid operator '%s' for capability '%s'
+INVALID_PATH_FOR_MANAGE_SALES_FORCE_HIERARCHY: A Subscriber can only be assigned path capabilities that match the subscriber's corporate account.Invalid paths are %s
+EMPTY_PATH_FOR_MANAGE_SALES_FORCE_HIERARCHY: Path must be provided for ManageSalesForceHierarchy capability to assign to subscription allowed accounts
+INVALID_OWNED_ACCOUNT_CAP_INPUT: Multiple records are not allowed to manage ManageOwnedAccounts capability
+INVALID_CAPID_FOR_ACCOUNT: CapId %d Invalid for Account %d
+ADJUSTMENT_NULL_CHECKS : Insufficient Data. Adjustment Type ID and combination of either Adjustment Item Template ID or Item Instance Id is mandatory to create Adjustment
+ADJUSTMENT_UNIQUE_ID_CHECK : Invalid Data. Both Adjustment Item Template ID and Item Instance ID shouldn't be available to create the Adjustment
+DUPLICATE_ADJUSTMENT_CHECK : ItemTemplateId/ItemInstanceId and AdjustmentTypeID mapping already exists
+INVALID_CAP_TYPE_ID_FOR_ACCOUNT : CapTypeId %d is not assigned to Account %d
+MANAGE_SUBSCRIBER_AUTH_CAPABILITY_ERROR : Permission Denied. Missing Manage Subscriber Auth Capability
+MANAGE_CSR_AUTH_CAPABILITY_ERROR : Permission Denied. Missing Manage CSR Auth Capability
+INVALID_ROLE: The role with Id %d does not exist
+DELETE_ALL_ATOMIC_RECORDS : Permission Denied. Cannot Delete all Atomic Capabilities
+INVALID_DELETE_RECORD: Atomic Id  %d invalid for the capability progId %s
+INVALID_CAP_TYPE_ID_FOR_ROLE : CapTypeId %d is not assigned to Role %d
+DISPLAY_NAME_MANDATORY_CHECK: Display Name cannot be null or empty
+DESCRITPION_MANDATORY_CHECK: Description cannot be null or empty
+CSR_ASSIGNABLE_MANDATORY_CHECK: csrAssignable cannot be null or empty
+SUBSCRIBER_ASSIGNABLE_MANDATORY_CHECK: subscriberAssignable cannot be null or empty
+DESCRITPION_MANDATORY_CHECK: Description cannot be null or empty
+INVALID_ROLE: Role %d does not exist
+ROLE_NAME_UPDATE_CHECK: Role name cannot be updated
+ATLEASE_ONE_ASSIGNABLE_CHECK: Either or both of CSR/subscribable has to be selected to create a Role
+CSR_ASSIGNABLE_INVALID_CHECK: Invalid value for csrAssignable the valid values are 'Y' or 'N'
+SUBSCRIBER_ASSIGNABLE_INVALID_CHECK: Invalid value for subscriberAssignable the valid values are 'Y' or 'N'
+ROLE_UPDATE_CHECK: Assignable flags on a Role cannot be changed as long as Role has either members, capabilities or belongs to a folder default security policy '%s'
+NAME_MANDATORY_CHECK: Name cannot be null or empty
+ROLE_NAME_ALREADY_EXISTS: Role name '%s' already exists
+NO_VALID_ACCOUNTS_ENTERED: No valid accounts provided
+INVALID_CSR_ASSIGNABLE_ROLE: The role id is not CSR assignable
+INVALID_SUBSCRIBER_ASSIGNABLE_ROLE: The role id is not subscriber assignable
+INVALID_ACCOUNT_IDS: One or more of the account ids entered are invalid
+DELETE_ROLE_CHECK: The role you are trying to delete currently has members or attached to a folder default security policy. You must first remove all members from the role before you can delete it. Role Id %d
+ACCOUNT_ROLE_MAPPING_ALREADY_EXISTS: Account Role mapping already exists
+NO_POLICY_MAPPED_FOR_ACCOUNT_ID: One or more AccountIds do not have policyId mapped
+MAXIMUM_NO_OF_ACCOUNTS_CHECK: Maximum limit for numberOfAccounts is %d
+USERNAME_SUFFIX_NUMBER_MANDATORY_CHECK: User Name Suffix Number is mandatory to create multiple accounts
+POLICY_ROLE_MISSING: Account id %d is not added to the role id %d
+UNKNOWN_CAPABILITY: Unknown capability with automic dependencies
+CALENDAR_ID_MANDATORY_CHECK: Calendar Id is mandatory to create Holiday
+CALENDAR_HOLIDAY_NAME_MANDATORY_CHECK: Holiday Name is mandatory to create Holiday
+CALENDAR_HOLIDAY_DAY_MONTH_YEAR_MANDATORY_CHECK: Day, Month and Year is mandatory to create Holiday
+INVALID_ENUM_FOR_UDR_USAE_PROPERTY: Invalid enum value '%s' for the property '%s'
+OFFERING_UNAVAILABLE_INVALID_DATE: Offering startdate and Available start date cannot be null
+OFFERING_UNAVAILABLE_INVALID_STARTDATE: Subscription startdate cannot be before offering availability
+OFFERING_UNAVAILABLE_INVALID_ENDDATE: Subscription start date cannot be after the offering availability end date
+INVALID_SUBSCRIPTION_DATE: Subscription start date cannot be after the offering effective end date
+ACCOUNT_VIEW_REQUIRED_FIELD_NULL_CHECK: Field '%s' in '%s' view cannot be null or empty
+ACCOUNT_TEMPLATES_MISSING_MANDATORY_FIELDS: Missing one or more mandatory fields - Account Type, FolderId, Template Name, Template Description
+ACCOUNT_TEMPLATES_FOLDER_CANNOT_HAVE_TEMPLATE: Accounts of specified folder type cannot have templates
+ACCOUNT_TEMPLATES_INVALID_ACC_TYPE: Invalid account type - '%s'
+ACCOUNT_TEMPLATES_INVALID_DESCENDANT_TYPE: The specified account type of template is not a valid descendant account type for the specified folder account
+ACCOUNT_TEMPLATES_TEMPLATE_EXISTS: Account template of specified type already exists under the specified folder
+ACCOUNT_TEMPLATES_DUPLICATE_VIEW: Duplicate views specified
+ACCOUNT_TEMPLATES_INVALID_MONTH: Invalid month 
+ACCOUNT_TEMPLATES_INVALID_DAY_OF_WEEK: Invalid DayOfWeek
+ACCOUNT_TEMPLATES_INVALID_ACCOUNT_STATUS: Invalid AccountStatus
+ACCOUNT_TEMPLATES_INVALID_DAY: Value must be between 1-31 for '%s'
+ACCOUNT_TEMPLATES_INVALID_FOLDER_ID: Invalid folderId - '%d'
+ACCOUNT_TEMPLATES_MISSING_DISTINGUISHER: Missing value for property '%s'
+ACCOUNT_TEMPLATES_UPDATE_MISSING_MANDATORY_FIELDS: Missing one or more mandatory fields - AccountType, FolderId
+ACCOUNT_TEMPLATES_TEMPLATE_DOESNT_EXIST: No template found for the type '%s' under the folder '%d'
+ACCOUNT_TEMPLATES_DELETE_TEMPLATE_FAILED: Deletion of Account Template failed with status - '%d'
+ROLE_NOT_MAPPED_WITH_CAPABILITES: Role %d does not have any mapped capabilities
+ACCOUNT_INFO_ERROR: Error in retrieving account information
+ACCOUNT_TYPE_ERROR: Invalid account type specified
+ACCOUNT_TEMPLATE_OWNER_ERROR: Specified template owner does not have a template defined for the specified account type
+INVALID_ENUM_VALUES: Enum Capability cannot be null or empty
+INVALID_PATH_VALUES: Path Capability cannot be null or empty
+INVALID_DECIMAL_VALUES: Decimal Capability cannot be null or empty
+ACCOUNT_TEMPLATE_INVALID_ERROR: Invalid Account Template Specified
+HOST_INFO_ERROR: Error in getting hostname.

@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<mt_config>
+    <enum_spaces>
+        <enum_space name="MetraTech.MetraNet.Reporting">
+            <description>Reporting</description>
+            <enums>
+                <enum name="ReportType">
+                    <description>Report Type</description>
+                    <entries>
+                        <entry name="Basic">
+                            <value>0</value>
+                        </entry>
+                        <entry name="Configured">
+                            <value>1</value>
+                        </entry>
+                        <entry name="Custom">
+                            <value>2</value>
+                        </entry>
+                        <entry name="IntervalStatistics">
+                            <value>3</value>
+                        </entry>
+                        <entry name="BillingGroupStatistics">
+                            <value>4</value>
+                        </entry>
+                    </entries>
+                </enum>
+                <enum name="SystemReportCapabilities">
+                    <description>List of MetraNet Capabilities used for System Reports access</description>
+                    <entries>
+                        <entry name="View Summary Financial Information">
+                            <value>0</value>
+                        </entry>
+                    </entries>
+                </enum>
+            </enums>
+        </enum_space>
+    </enum_spaces>
+</mt_config>

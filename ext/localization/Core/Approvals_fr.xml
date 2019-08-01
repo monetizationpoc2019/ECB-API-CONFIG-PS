@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<mt_config>
+  <language_code>fr</language_code>
+  <locale_space name="Approvals">
+    <locale_entry>
+      <Name>Approvals/ChangeType/AccountUpdate</Name>
+      <Value>Mise à jour des propriétés du compte</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Approvals/ChangeType/RateUpdate</Name>
+      <Value>Mise à jour des règles de planification des taux</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Approvals/ChangeState/Pending</Name>
+      <Value>En attente</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Approvals/ChangeState/ApprovedWaitingToBeApplied</Name>
+      <Value>Approuvé, en attente d'application</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Approvals/ChangeState/FailedToApply</Name>
+      <Value>Application impossible</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Approvals/ChangeState/Applied</Name>
+      <Value>Appliqué</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Approvals/ChangeState/Dismissed</Name>
+      <Value>Ignoré</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Approvals/ChangeType/ProductOfferingUpdate</Name>
+      <Value>Mise à jour de la date de l'offre produit</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Approvals/ChangeType/Subscription.Add</Name>
+      <Value>Nouvel abonnement</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Approvals/ChangeType/Subscription.Update</Name>
+      <Value>Mise à jour de l'abonnement</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Approvals/ChangeType/GroupSubscription.AddMemberHierarchies</Name>
+      <Value>Abonnement groupé : ajouter une hiérarchie de membres</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Approvals/ChangeType/GroupSubscription.AddMembers</Name>
+      <Value>Abonnement groupé : ajouter un membre</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Approvals/ChangeType/GroupSubscription.UnsubscribeMembers</Name>
+      <Value>Abonnement groupé : désabonner un membre</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Approvals/ChangeType/GroupSubscription.UpdateMember</Name>
+      <Value>Abonnement groupé : mettre à jour un membre</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Approvals/ChangeType/GroupSubscription.DeleteMembers</Name>
+      <Value>Abonnement groupé : supprimer un membre</Value>
+    </locale_entry>
+  </locale_space>
+</mt_config>

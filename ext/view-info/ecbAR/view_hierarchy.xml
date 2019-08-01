@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xmlconfig>
+    <view_hierarchy>
+        <view>
+            <id_view ptype="ENUM">metratech.com/LateFee</id_view>
+            <id_parent_view ptype="ENUM">Root</id_parent_view>
+            <nm_view_type>Product</nm_view_type>
+        </view>
+    </view_hierarchy>
+</xmlconfig>

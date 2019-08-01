@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xmlconfig>
+  <mtsysconfigdata>
+    <effective_date ptype="DATETIME">1998-11-20T00:00:00Z</effective_date>
+    <timeout ptype="INTEGER">30</timeout>
+    <configfiletype>CONFIG_DATA</configfiletype>
+  </mtsysconfigdata>
+
+  <mtconfigdata>
+
+ <version ptype="INTEGER">1</version>
+ <!-- First processor configuration -->
+ <processor>
+  <name>View</name>
+  <description>Set product view ID.</description>
+  <progid>MetraPipeline.MTSQLInterpreter.1</progid>
+
+  <configdata>
+
+   <Program>
+    CREATE PROCEDURE View
+  @_ProductViewID INTEGER OUTPUT
+AS
+  SET @_ProductViewID = CAST(#metratech.com/TestParent# AS INTEGER)
+   </Program>
+
+  </configdata>
+
+ </processor>
+
+  </mtconfigdata>
+</xmlconfig>

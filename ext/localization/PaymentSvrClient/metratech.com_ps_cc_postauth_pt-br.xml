@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<mt_config>
+  <language_code>pt-br</language_code>
+  <locale_space name="metratech.com/ps_cc_postauth">
+    <locale_entry>
+      <Name>metratech.com/ps_cc_postauth</Name>
+      <Value>Pós-autorização</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ps_cc_postauth/CreditCardType</Name>
+      <Value>Tipo de cartão de crédito</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ps_cc_postauth/CsrId</Name>
+      <Value>ID do CSR</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ps_cc_postauth/exported</Name>
+      <Value>Indicador exportado</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ps_cc_postauth/LastFourDigits</Name>
+      <Value>Último quatro dígitos</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ps_cc_postauth/OriginalAccountID</Name>
+      <Value>AccountID original</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ps_cc_postauth/originalid</Name>
+      <Value>ID original</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ps_cc_postauth/paymentservicetransactionid</Name>
+      <Value>ID da transação do provedor do serviço de pagamento (pós-autorização)</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ps_cc_postauth/Reason</Name>
+      <Value>Motivo para débito</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ps_cc_postauth/RespString</Name>
+      <Value>Descrição da resposta</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ps_cc_postauth/retcode</Name>
+      <Value>Código de retorno</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ps_cc_postauth/terminalid</Name>
+      <Value>ID do terminal</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ps_cc_postauth/TransactionID</Name>
+      <Value>TransactionID</Value>
+    </locale_entry>
+  </locale_space>
+</mt_config>

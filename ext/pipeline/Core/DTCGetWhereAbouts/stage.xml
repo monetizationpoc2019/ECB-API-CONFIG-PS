@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xmlconfig>
+ <version ptype="INTEGER">1</version>
+ <description>Returns DTC WhereAbouts cookie for this pipeline server.</description>
+ <stage>
+  <name>DTCGetWhereAbouts</name>
+  <startstage ptype="BOOLEAN">YES</startstage>
+  <finalstage ptype="BOOLEAN">YES</finalstage>
+
+<dependencies>
+	<dependson>DTCGetWhereAboutsPlugin</dependson>
+</dependencies>
+
+ </stage>
+ <possiblenextstages />
+</xmlconfig>

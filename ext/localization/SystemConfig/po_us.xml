@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<mt_config>
+  <language_code>us</language_code>
+  <locale_space name="po">
+    <locale_entry>
+      <Name>po/ExternalInformationURL</Name>
+      <Value>External Information URL</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>po/glcode</Name>
+      <Value>GL Code</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>po/InternalInformationURL</Name>
+      <Value>Internal Information URL</Value>
+    </locale_entry>
+  </locale_space>
+</mt_config>

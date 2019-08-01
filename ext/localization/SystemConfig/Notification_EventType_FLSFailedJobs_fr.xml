@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<mt_config>
+    <language_code>fr</language_code>
+    <locale_space name="Notification_EventType_FLSFailedJobs">
+        <locale_entry>
+            <Name>Notification_EventType_FLSFailedJobs/EventType/FLS Failed Jobs</Name>
+            <Value>Tâches FLS en échec</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>Notification_EventType_FLSFailedJobs/Template/FLS Failed Jobs</Name>
+            <Value>Le traitement de {ControlId} a échoué avec l`erreur {State} : {ErrorCode} &lt;a href='/MetraNet/MetraControl/FileManagement/FileManagementDetailReport.aspx?controlNumber={ControlId}&amp;filter=3'&gt;Afficher...&lt;/a&gt;</Value>
+        </locale_entry>
+    </locale_space>
+</mt_config>

@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xmlconfig>
+  <mtsysconfigdata>
+    <effective_date ptype="DATETIME">1998-11-19T00:00:00Z</effective_date>
+    <timeout ptype="INTEGER">30</timeout>
+    <configfiletype>CONFIG_DATA</configfiletype>
+  </mtsysconfigdata>
+
+  <mtconfigdata>
+
+ <version ptype="INTEGER">1</version>
+ <!-- First processor configuration -->
+ <processor>
+  	<name>SetAccountStateRule</name>
+  	<progid>MetraPipeline.MTSQLInterpreter.1</progid>
+  	<description>
+  		Sets the account state rule later to be used by the WriteProductView
+  		stage to determine if the rule holds weight or not
+ 		</description>
+
+  	<inputs>
+  	</inputs>
+
+  	<outputs>
+  	</outputs>
+  
+  	<!-- Processor specific configuration data -->
+  	<configdata>
+  		<Program>
+			
+				CREATE PROCEDURE SetAccountStateRule 
+					@AccountStateRule	VARCHAR OUTPUT
+				AS
+				SET @AccountStateRule = 'addcharge';
+	 		
+  		</Program> 
+  	</configdata>
+
+ 	</processor>
+  </mtconfigdata>
+</xmlconfig>

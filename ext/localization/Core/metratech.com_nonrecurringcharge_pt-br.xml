@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<mt_config>
+    <language_code>pt-br</language_code>
+    <locale_space name="metratech.com/nonrecurringcharge">
+        <locale_entry>
+            <Name>metratech.com/nonrecurringcharge</Name>
+            <Value>Cobrança não recorrente</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/nonrecurringcharge/NRCEventType</Name>
+            <Value>Evento</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/nonrecurringcharge/NRCIntervalEnd</Name>
+            <Value>Final do intervalo de cobrança não recorrente</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/nonrecurringcharge/NRCIntervalStart</Name>
+            <Value>Início do intervalo de cobrança não recorrente</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/nonrecurringcharge/NRCIntervalSubscriptionEnd</Name>
+            <Value>Final do intervalo de assinatura de cobrança não recorrente</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/nonrecurringcharge/NRCIntervalSubscriptionStart</Name>
+            <Value>Início do intervalo de assinatura de cobrança não recorrente</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/NRCIntervalEnd</Name>
+            <Value>Final do intervalo de cobrança não recorrente</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/NRCIntervalStart</Name>
+            <Value>Início do intervalo de cobrança não recorrente</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/NRCIntervalSubscriptionEnd</Name>
+            <Value>Final da assinatura de cobrança não recorrente</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/NRCIntervalSubscriptionStart</Name>
+            <Value>Início da assinatura de cobrança não recorrente</Value>
+        </locale_entry>
+    </locale_space>
+</mt_config>

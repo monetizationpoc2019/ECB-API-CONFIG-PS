@@ -1,0 +1,265 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<mt_config>
+    <enum_spaces>
+        <enum_space name="metratech.com">
+            <description>Metratech namespace</description>
+            <enums>
+                <!-- This enum type definition will change when we will meter enum type. -->
+                <enum name="CreditCardType">
+                    <description>The credit card type we support</description>
+                    <entries>
+                        <entry name="None">
+                            <value />
+                            <value>0</value>
+                            <value>0-</value>
+                        </entry>
+                        <entry name="Visa">
+                            <!-- The Name -->
+                            <value>Visa</value>
+                            <!-- The Id used to meter, for now they are the same -->
+                            <value>01</value>
+                            <!-- The index that define the credit card type, we use this value to check a credit card number on the UI Side with the componant MetraTechAccount.MTCreditCard.1 -->
+                            <value>01-VISA</value>
+                            <!-- This value is used to be stored in a HTML ComboBox, because we want to valid the credit card before we meter it so we use the index then we meter the STRING. -->
+                        </entry>
+                        <entry name="MasterCard">
+                            <value>MasterCard</value>
+                            <value>02</value>
+                            <value>02-MASTERCARD</value>
+                        </entry>
+                        <entry name="American Express">
+                            <value>American Express</value>
+                            <value>03</value>
+                            <value>03-AMEX</value>
+                        </entry>
+                        <entry name="Discover">
+                            <value>Discover</value>
+                            <value>04</value>
+                            <value>04-DISCOVER</value>
+                        </entry>
+                        <entry name="JCB">
+                            <value>JCB</value>
+                            <value>05</value>
+                            <!-- The Componant MetraTechAccount.MTCreditCard.1 do not know how to valid a credit card number of this type -->
+                            <value>05-JCB</value>
+                        </entry>
+                        <!-- Not supported for now
+          <entry name="Carte Blanche">
+            <value>Carte Blanche</value>
+            <value>06</value>
+            <value>06-CARTE BLANCHE</value>
+          </entry>
+  	  -->
+                        <entry name="Diners Club">
+                            <value>DINERS CLUB</value>
+                            <value>07</value>
+                            <!-- The Componant MetraTechAccount.MTCreditCard.1 do not know how to valid a credit card number of this type -->
+                            <value>07-DINERS CLUB</value>
+                        </entry>
+                        <entry name="Maestro">
+                            <value>Maestro</value>
+                            <value>08</value>
+                            <!-- The Componant MetraTechAccount.MTCreditCard.1 do not know how to valid a credit card number of this type -->
+                            <value>08-Maestro</value>
+                        </entry>
+                    </entries>
+                </enum>
+                <enum name="SubscriberCreditAccountRequestStatus">
+                    <!-- This enum is localized -->
+                    <description>Subscriber Credit Account Request Status</description>
+                    <entries>
+                        <entry name="PENDING">
+                            <!-- The Name -->
+                            <value>PENDING</value>
+                            <!-- The Id used to meter, for now they are the same -->
+                        </entry>
+                        <entry name="APPROVED">
+                            <value>APPROVED</value>
+                        </entry>
+                        <entry name="DENIED">
+                            <value>DENIED</value>
+                        </entry>
+                    </entries>
+                </enum>
+                <enum name="SubscriberCreditAccountRequestReason">
+                    <description>Subscriber Credit Account Request Reason</description>
+                    <entries>
+                        <entry name="DroppedCall">
+                            <!-- The Name -->
+                            <value>DroppedCall</value>
+                            <!-- The Id used to meter, for now they are the same -->
+                        </entry>
+                        <entry name="PoorConnection">
+                            <value>PoorConnection</value>
+                        </entry>
+                        <entry name="BadService">
+                            <value>BadService</value>
+                        </entry>
+                        <entry name="GeneralDissatisfaction">
+                            <value>GeneralDissatisfaction</value>
+                            <!-- The value we meter is less char that the name that's ok! See the length of the field -->
+                        </entry>
+                        <entry name="Other">
+                            <!-- The Name -->
+                            <value>Other</value>
+                            <!-- The Id used to meter, for now they are the same -->
+                        </entry>
+                    </entries>
+                </enum>
+                <enum name="Position">
+                    <description>Listed MetraTech positions</description>
+                    <entries>
+                        <entry name="Executive">
+                            <value>1</value>
+                            <value>01</value>
+                        </entry>
+                        <entry name="Manager">
+                            <value>2</value>
+                            <value>02</value>
+                        </entry>
+                        <entry name="Engineer">
+                            <value>3</value>
+                            <value>03</value>
+                        </entry>
+                    </entries>
+                </enum>
+                <enum name="Operation">
+                    <description>Operation</description>
+                    <entries>
+                        <entry name="Add">
+                            <value>0</value>
+                        </entry>
+                        <entry name="Update">
+                            <value>1</value>
+                        </entry>
+                        <entry name="Delete">
+                            <value>2</value>
+                        </entry>
+                    </entries>
+                </enum>
+                <!-- Use for TransactionOPs plugin -->
+                <enum name="TransactionTypes">
+                    <description>Transaction types for the transaction ops plugin</description>
+                    <entries>
+                        <entry name="BeginLocal">
+                            <value>0</value>
+                        </entry>
+                        <entry name="BeginDistributed">
+                            <value>1</value>
+                        </entry>
+                        <entry name="JoinDistributed">
+                            <value>2</value>
+                        </entry>
+                        <entry name="Commit">
+                            <value>3</value>
+                        </entry>
+                    </entries>
+                </enum>
+                <!-- Use for TransactionOPs plugin -->
+                <!--
+      <enum name="RemeterTypes">
+      <description>Types for the remeter plugin</description>
+        <entries>
+          <entry name="string">
+            <value>0</value>
+          </entry>
+          <entry name="long">
+            <value>1</value>
+          </entry>
+          <entry name="int32">
+            <value>1</value>
+          </entry>
+          <entry name="double">
+            <value>2</value>
+          </entry>
+          <entry name="timestamp">
+            <value>3</value>
+          </entry>
+          <entry name="date">
+            <value>3</value>
+          </entry>
+          <entry name="oledate">
+            <value>3</value>
+          </entry>
+          <entry name="decimal">
+            <value>4</value>
+          </entry>
+          <entry name="dec">
+            <value>4</value>
+          </entry>
+        </entries>
+      </enum>
+-->
+                <enum name="SaleForceRelationship">
+                    <description>Describes Relationship between a sales force account and a subscriber account that he or she owns</description>
+                    <entries>
+                        <entry name="Executive Sponsor">
+                            <value>0</value>
+                        </entry>
+                        <entry name="Account Executive">
+                            <value>1</value>
+                        </entry>
+                        <entry name="Technical Sales Support">
+                            <value>2</value>
+                        </entry>
+                        <entry name="Account Development">
+                            <value>3</value>
+                        </entry>
+                        <entry name="Program Manager">
+                            <value>4</value>
+                        </entry>
+                        <entry name="Project Manager">
+                            <value>5</value>
+                        </entry>
+                        <entry name="Channel Manager">
+                            <value>6</value>
+                        </entry>
+                        <entry name="Sales Agent">
+                            <value>7</value>
+                        </entry>
+                        <entry name="Operations Support">
+                            <value>8</value>
+                        </entry>
+                    </entries>
+                </enum>
+                <enum name="BillMessageType">
+                    <description>Type of bill message</description>
+                    <entries>
+                        <entry name="HEADER">
+                            <value>0</value>
+                        </entry>
+                        <entry name="INSERT">
+                            <value>1</value>
+                        </entry>
+                        <entry name="FOOTER">
+                            <value>2</value>
+                        </entry>
+                        <entry name="OTHER">
+                            <value>3</value>
+                        </entry>
+                    </entries>
+                </enum>
+                <enum name="QuoteStatus">
+                    <description>Statuses for quotes</description>
+                    <entries>
+                        <entry name="None">
+                            <value>0</value>
+                        </entry>
+                        <entry name="InProgress">
+                            <value>1</value>
+                        </entry>
+                        <entry name="Failed">
+                            <value>2</value>
+                        </entry>
+                        <entry name="Complete">
+                            <value>3</value>
+                        </entry>
+                        <entry name="Converted">
+                            <value>4</value>
+                        </entry>
+                    </entries>
+                </enum>
+            </enums>
+        </enum_space>
+    </enum_spaces>
+</mt_config>

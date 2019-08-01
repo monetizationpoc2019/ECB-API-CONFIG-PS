@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<mt_config>
+  <language_code>es-MX</language_code>
+  <locale_space name="metratech.com/flatdiscount_nocond">
+    <locale_entry>
+      <Name>metratech.com/flatdiscount_nocond</Name>
+      <Value>Descuento fijo incondicional</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/flatdiscount_nocond/DiscountIntervalEnd</Name>
+      <Value>Fecha de finalización del intervalo de descuento</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/flatdiscount_nocond/DiscountIntervalStart</Name>
+      <Value>Fecha de inicio del intervalo de descuento</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/flatdiscount_nocond/DiscountIntervalSubEnd</Name>
+      <Value>Fecha de finalización de suscripción del intervalo de descuento</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/flatdiscount_nocond/DiscountIntervalSubStart</Name>
+      <Value>Fecha de inicio de suscripción del intervalo de descuento</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/flatdiscount_nocond/GroupSubscriptionName</Name>
+      <Value>Suscripción a grupo</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/flatdiscount_nocond/SubscriptionEnd</Name>
+      <Value>Fecha de finalización de suscripción</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/flatdiscount_nocond/SubscriptionStart</Name>
+      <Value>Fecha de inicio de suscripción</Value>
+    </locale_entry>
+  </locale_space>
+</mt_config>

@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<mt_config>
+    <language_code>de</language_code>
+    <locale_space name="BusinessEntity/MetraTech.SystemConfig.Reports.Report">
+        <locale_entry>
+            <Name>BusinessEntity/MetraTech.SystemConfig.Reports.Report/Category/Label</Name>
+            <Value>Category</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>BusinessEntity/MetraTech.SystemConfig.Reports.Report/Description/Label</Name>
+            <Value>Description</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>BusinessEntity/MetraTech.SystemConfig.Reports.Report/Extension/Label</Name>
+            <Value>Extension</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>BusinessEntity/MetraTech.SystemConfig.Reports.Report/GridLayoutName/Label</Name>
+            <Value>Grid Layout Name</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>BusinessEntity/MetraTech.SystemConfig.Reports.Report/Name/Label</Name>
+            <Value>Name</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>BusinessEntity/MetraTech.SystemConfig.Reports.Report/QueryName/Label</Name>
+            <Value>Query Tag Name</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>BusinessEntity/MetraTech.SystemConfig.Reports.Report/Report</Name>
+            <Value>Report</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>BusinessEntity/MetraTech.SystemConfig.Reports.Report/ManageSystemReport</Name>
+            <Value>Manage System Report</Value>
+        </locale_entry>        
+        <locale_entry>
+            <Name>BusinessEntity/MetraTech.SystemConfig.Reports.Report/ReqdCapability/Label</Name>
+            <Value>Required Capability</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>BusinessEntity/MetraTech.SystemConfig.Reports.Report/RequiresInput/Label</Name>
+            <Value>Requires Input</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>BusinessEntity/MetraTech.SystemConfig.Reports.Report/SubCategory/Label</Name>
+            <Value>Sub Category</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>BusinessEntity/MetraTech.SystemConfig.Reports.Report/Type/Label</Name>
+            <Value>Type</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>BusinessEntity/MetraTech.SystemConfig.Reports.Report/URL/Label</Name>
+            <Value>URL</Value>
+        </locale_entry>
+    </locale_space>
+</mt_config>

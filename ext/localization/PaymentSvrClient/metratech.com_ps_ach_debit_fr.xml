@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<mt_config>
+  <language_code>fr</language_code>
+  <locale_space name="metratech.com/ps_ach_debit">
+    <locale_entry>
+      <Name>metratech.com/ps_ach_debit</Name>
+      <Value>Débit ACH</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ps_ach_debit/bankaccounttype</Name>
+      <Value>Type de compte bancaire</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ps_ach_debit/csrid</Name>
+      <Value>ID du CSR</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ps_ach_debit/currentstatus</Name>
+      <Value>État actuel</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ps_ach_debit/exported</Name>
+      <Value>Indicateur exporté</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ps_ach_debit/lastfourdigits</Name>
+      <Value>Quatre derniers chiffres</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ps_ach_debit/originalaccountid</Name>
+      <Value>ID du compte d'origine</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ps_ach_debit/paymentservicetransactionid</Name>
+      <Value>ID de transaction du fournisseur du service de paiement</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ps_ach_debit/reason</Name>
+      <Value>Motif du débit</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ps_ach_debit/respstring</Name>
+      <Value>Description de la réponse</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ps_ach_debit/retcode</Name>
+      <Value>Code de retour</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ps_ach_debit/routingnumber</Name>
+      <Value>Code ABA/Banque</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ps_ach_debit/transactionid</Name>
+      <Value>ID de transaction de l'appelant indiqué</Value>
+    </locale_entry>
+  </locale_space>
+</mt_config>

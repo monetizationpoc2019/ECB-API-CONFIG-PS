@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xmlconfig>
+    <mtsysconfigdata>
+        <effective_date ptype="DATETIME">1998-11-19T00:00:00Z</effective_date>
+        <timeout ptype="INTEGER">30</timeout>
+        <configfiletype>CONFIG_DATA</configfiletype>
+    </mtsysconfigdata>
+    <mtconfigdata>
+        <version ptype="INTEGER">1</version>
+        <!-- First processor configuration -->
+        <processor>
+            <name>ResolvePayerId</name>
+            <progid>MetraPipeline.MTSQLBatchQuery.1</progid>
+            <description>Resolve Payer ID</description>
+            <!-- Processor specific configuration data -->
+            <configdata>
+                <Program> CREATE PROCEDURE ResolvePayerId
+	@InvoiceId INTEGER	
+	@_AccountID INTEGER OUTPUT
+AS
+BEGIN
+-- Assign a default _AccountID here that will be used in case
+-- the other methods fail (e.g. for migrated conference invoices)
+
+select id_acc  into  @_AccountID
+from t_invoice
+where id_invoice = @InvoiceId;
+END</Program>
+                <TempTable>Temp_ResolvePayerId</TempTable>
+            </configdata>
+        </processor>
+    </mtconfigdata>
+</xmlconfig>

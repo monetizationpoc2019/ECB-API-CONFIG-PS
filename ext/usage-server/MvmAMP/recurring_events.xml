@@ -1,0 +1,225 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xmlconfig>
+  <version ptype="INTEGER">2</version>
+  <ScheduledAdapters>
+    <Adapter>
+      <Name>Aggregate Metrics Processor (Scheduled)</Name>
+      <DisplayName>Aggregate Metrics Processor (Scheduled)</DisplayName>
+      <ClassID>MetraTech.Baseline.Adapters.RunEXE, MetraTech.Baseline.Adapters.ExecuteExternalApp</ClassID>
+      <ConfigFile>AggregateDecisionScheduled.xml</ConfigFile>
+      <ActivationDate>8/4/2008 00:00:00</ActivationDate>
+      <Description>Aggregate Metrics Processor (Scheduled)
+      </Description>
+      <LocalizedItems>
+        <item lang="FR">
+          <DisplayName>[FR] Aggregate Metrics Processor (Scheduled)</DisplayName>
+          <Description>[FR] Aggregate Metrics Processor (Scheduled)
+          </Description>
+        </item>
+        <item lang="IT">
+          <DisplayName>[IT] Aggregate Metrics Processor (Scheduled)</DisplayName>
+          <Description>[IT] Aggregate Metrics Processor (Scheduled)
+          </Description>
+        </item>
+        <item lang="ES">
+          <DisplayName>[ES] Aggregate Metrics Processor (Scheduled)</DisplayName>
+          <Description>[ES] Aggregate Metrics Processor (Scheduled)
+          </Description>
+        </item>
+        <item lang="DE">
+          <DisplayName>[DE] Aggregate Metrics Processor (Scheduled)</DisplayName>
+          <Description>[DE] Aggregate Metrics Processor (Scheduled)
+          </Description>
+        </item>
+        <item lang="es-MX">
+          <DisplayName>[es-MX] Aggregate Metrics Processor (Scheduled)</DisplayName>
+          <Description>[es-MX] Aggregate Metrics Processor (Scheduled)
+          </Description>
+        </item>
+        <item lang="pt-BR">
+          <DisplayName>Aggregate Metrics Processor (Scheduled)</DisplayName>
+          <Description>Aggregate Metrics Processor (Scheduled)
+          </Description>
+        </item>
+        <item lang="en-GB">
+          <DisplayName>[en-GB] Aggregate Metrics Processor (Scheduled)</DisplayName>
+          <Description>[en-GB] Aggregate Metrics Processor (Scheduled)
+          </Description>
+        </item>
+        <item lang="JA">
+          <DisplayName>[JA] Aggregate Metrics Processor (Scheduled)</DisplayName>
+          <Description>[JA] Aggregate Metrics Processor (Scheduled)
+          </Description>
+        </item>
+      </LocalizedItems>
+      <RecurrencePattern>
+        <SystemCycle>Daily</SystemCycle>
+      </RecurrencePattern>
+      <Dependencies>
+      </Dependencies>
+    </Adapter>
+
+    <!---Adapter>
+            <Name>Rebuild Realtime Decisions</Name>
+            <DisplayName>Rebuild Realtime Decisions</DisplayName>
+            <ClassID>MetraTech.Baseline.Adapters.RunEXE, MetraTech.Baseline.Adapters.ExecuteExternalApp</ClassID>
+            <ConfigFile>RebuildRealtimeDecisions.xml</ConfigFile>
+            <ActivationDate>8/4/2008 00:00:00</ActivationDate>
+            <Description>
+                <![CDATA[
+         	 Rebuild Realtime Decisions
+            ]]>
+            </Description>
+            <LocalizedItems>
+              <item lang="FR">
+                <DisplayName>Rebuild Realtime Decisions</DisplayName>
+                <Description><![CDATA[
+         	 Rebuild Realtime Decisions
+            ]]></Description>
+              </item>
+              <item lang="IT">
+                <DisplayName>Rebuild Realtime Decisions</DisplayName>
+                <Description><![CDATA[
+         	 Rebuild Realtime Decisions
+            ]]></Description>
+              </item>
+              <item lang="ES">
+                <DisplayName>Rebuild Realtime Decisions</DisplayName>
+                <Description><![CDATA[
+         	 Rebuild Realtime Decisions
+            ]]></Description>
+              </item>
+              <item lang="DE">
+                <DisplayName>Rebuild Realtime Decisions</DisplayName>
+                <Description><![CDATA[
+         	 Rebuild Realtime Decisions
+            ]]></Description>
+              </item>
+              <item lang="es-MX">
+                <DisplayName>Rebuild Realtime Decisions</DisplayName>
+                <Description><![CDATA[
+         	 Rebuild Realtime Decisions
+            ]]></Description>
+              </item>
+              <item lang="pt-BR">
+                <DisplayName>Rebuild Realtime Decisions</DisplayName>
+                <Description><![CDATA[
+         	 Rebuild Realtime Decisions
+            ]]></Description>
+              </item>
+              <item lang="en-GB">
+                <DisplayName>Rebuild Realtime Decisions</DisplayName>
+                <Description><![CDATA[
+         	 Rebuild Realtime Decisions
+            ]]></Description>
+              </item>
+              <item lang="JA">
+                <DisplayName>Rebuild Realtime Decisions</DisplayName>
+                <Description><![CDATA[
+         	 Rebuild Realtime Decisions
+            ]]></Description>
+              </item>	
+            </LocalizedItems>
+            <RecurrencePattern>
+                <SystemCycle>Daily</SystemCycle>
+            </RecurrencePattern>
+            <Dependencies>
+            </Dependencies>
+        </Adapter-->
+
+  </ScheduledAdapters>
+
+
+  <EndOfPeriodAdapters>
+
+    <Adapter>
+      <Name>Aggregate Metrics Processor (EOP)</Name>
+      <DisplayName>Aggregate Metrics Processor (EOP)</DisplayName>
+      <ClassID>MetraTech.Baseline.Adapters.RunEXE, MetraTech.Baseline.Adapters.ExecuteExternalApp</ClassID>
+      <ConfigFile>AggregateDecisionEOP.xml</ConfigFile>
+      <ActivationDate>8/4/2008 00:00:00</ActivationDate>
+      <Description>
+        
+         	  Aggregate Metrics Processor (EOP)
+            
+      </Description>
+      <LocalizedItems>
+        <item lang="FR">
+          <DisplayName>[FR] Aggregate Metrics Processor (EOP)</DisplayName>
+          <Description>
+            
+         	  [FR] Aggregate Metrics Processor (EOP)
+            
+          </Description>
+        </item>
+        <item lang="IT">
+          <DisplayName>[IT] Aggregate Metrics Processor (EOP)</DisplayName>
+          <Description>
+            
+         	  [IT] Aggregate Metrics Processor (EOP)
+            
+          </Description>
+        </item>
+        <item lang="ES">
+          <DisplayName>[ES] Aggregate Metrics Processor (EOP)</DisplayName>
+          <Description>
+            
+         	  [ES] Aggregate Metrics Processor (EOP)
+            </Description>
+          </item>
+        <item lang="DE">
+          <DisplayName>[DE] Aggregate Metrics Processor (EOP)</DisplayName>
+          <Description>
+            
+         	  [DE] Aggregate Metrics Processor (EOP)
+            
+          </Description>
+        </item>
+        <item lang="es-MX">
+          <DisplayName>[es-MX] Aggregate Metrics Processor (EOP)</DisplayName>
+          <Description>
+            
+         	  [es-MX] Aggregate Metrics Processor (EOP)
+            
+          </Description>
+        </item>
+        <item lang="pt-BR">
+          <DisplayName>Aggregate Metrics Processor (EOP)</DisplayName>
+          <Description>
+            
+         	  Aggregate Metrics Processor (EOP)
+            
+          </Description>
+        </item>
+        <item lang="en-GB">
+          <DisplayName>[en-GB] Aggregate Metrics Processor (EOP)</DisplayName>
+          <Description>
+            
+         	  [en-GB] Aggregate Metrics Processor (EOP)
+            
+          </Description>
+        </item>
+        <item lang="JA">
+          <DisplayName>[JA] Aggregate Metrics Processor (EOP)</DisplayName>
+          <Description>
+            
+         	  [JA] Aggregate Metrics Processor (EOP)
+            
+          </Description>
+        </item>
+      </LocalizedItems>
+      <RecurrencePattern>
+        <UsageCycleType>All</UsageCycleType>
+      </RecurrencePattern>
+      <Dependencies>
+        <DependsOn>DeletePendingAdjustments</DependsOn>
+        <DependsOn>DeletePendingNonStandardChargesAdapter</DependsOn>
+        <DependsOn>RecurringCharges</DependsOn>
+        <DependsOn>PayerChange</DependsOn>
+        <!--<DependsOnMe>Invoices</DependsOnMe>-->
+        <DependsOnMe>Phase1Checkpoint</DependsOnMe>
+      </Dependencies>
+    </Adapter>
+
+  </EndOfPeriodAdapters>
+</xmlconfig>

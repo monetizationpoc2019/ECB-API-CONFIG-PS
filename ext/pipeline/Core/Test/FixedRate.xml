@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xmlconfig>
+  <mtsysconfigdata>
+    <effective_date ptype="DATETIME">1998-11-19T00:00:00Z</effective_date>
+    <timeout ptype="INTEGER">30</timeout>
+    <configfiletype>CONFIG_DATA</configfiletype>
+  </mtsysconfigdata>
+
+  <mtconfigdata>
+
+ <version ptype="INTEGER">1</version>
+ <processor>
+  <name>FixedRate</name>
+  <description>Calculate amount using fixed rate.</description>
+  <progid>MetraPipeline.MTSQLInterpreter.1</progid>
+
+  <configdata>
+    <Program>
+CREATE PROCEDURE FixedRate
+  @Units   DOUBLE
+  @_Amount DECIMAL OUTPUT
+AS
+  SET @_Amount = CAST(@Units AS DECIMAL)*0.1
+    </Program>
+  </configdata>
+
+ </processor>
+
+  </mtconfigdata>
+
+</xmlconfig>

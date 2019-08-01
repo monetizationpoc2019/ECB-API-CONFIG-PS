@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<mt_config>
+    <language_code>pt-br</language_code>
+    <locale_space name="BusinessEntity/Core.MR.MachineRole">
+        <locale_entry>
+            <Name>BusinessEntity/Core.MR.MachineRole/MachineRole</Name>
+            <Value>MachineRole</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>BusinessEntity/Core.MR.MachineRole/Name/Label</Name>
+            <Value>Name</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>BusinessEntity/Core.MR.MachineRole/Description/Label</Name>
+            <Value>Description</Value>
+        </locale_entry>
+    </locale_space>
+</mt_config>

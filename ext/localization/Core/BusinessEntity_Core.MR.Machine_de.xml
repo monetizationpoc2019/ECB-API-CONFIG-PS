@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<mt_config>
+    <language_code>de</language_code>
+    <locale_space name="BusinessEntity/Core.MR.Machine">
+        <locale_entry>
+            <Name>BusinessEntity/Core.MR.Machine/Machine</Name>
+            <Value>Machine</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>BusinessEntity/Core.MR.Machine/MachineIdentifier/Label</Name>
+            <Value>Machine Identifier</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>BusinessEntity/Core.MR.Machine/Description/Label</Name>
+            <Value>Description</Value>
+        </locale_entry>
+    </locale_space>
+</mt_config>

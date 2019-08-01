@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xmlconfig>
+ <version ptype="INTEGER">1</version>
+ <description>Processes a nonstandard charge request.</description>
+ <stage>
+  <name>NonStandardChargeRequest</name>
+  <startstage ptype="BOOLEAN">YES</startstage>
+  <finalstage ptype="BOOLEAN">NO</finalstage>
+  <nextstage>WriteProductView</nextstage>
+
+	<dependencies>
+
+    <dependency>
+	     <processor>NonStandardChargeRequestPlugin</processor>
+	     <dependson>RoundAmount</dependson>
+	     <dependson>AccountResolutionByID</dependson>
+	  </dependency>
+	  
+	  <dependency>
+	     <processor>NonStandardChargeRequestPlugin</processor>
+	     <dependson>RoundAmount</dependson>
+	     <dependson>SetPayingAccount</dependson>
+	  </dependency> 	
+
+  	</dependencies>
+ </stage>
+ <possiblenextstages />
+</xmlconfig>

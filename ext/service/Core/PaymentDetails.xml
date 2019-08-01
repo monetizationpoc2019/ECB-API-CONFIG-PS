@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<defineservice>
+    <name>metratech.com/PaymentDetails</name>
+    <description>Account payments.</description>
+    <ptype>
+        <dn>Payer</dn>
+        <type>string</type>
+        <length>80</length>
+        <required>N</required>
+        <defaultvalue />
+        <description>Payer identifier used for account resolution in conjunction with Namespace. Either Payer/Namespace or the _AccountID must be metered.</description>
+    </ptype>
+    <ptype>
+        <dn>Namespace</dn>
+        <type>string</type>
+        <length>40</length>
+        <required>N</required>
+        <defaultvalue>mt</defaultvalue>
+        <description>Namespace used to resolve the Payer account above.</description>
+    </ptype>
+    <ptype>
+        <dn>_AccountID</dn>
+        <type>int32</type>
+        <length />
+        <required>N</required>
+        <defaultvalue />
+        <description>Used to set the account ID for this payment. Either this or the Payer/Namespace must be metered.</description>
+    </ptype>
+    <ptype>
+        <dn>InvoiceNum</dn>
+        <type>string</type>
+        <length>40</length>
+        <required>N</required>
+        <defaultvalue />
+        <description>Invoice Number for which payment has been made.</description>
+    </ptype>
+    <ptype>
+        <dn>PONumber</dn>
+        <type>string</type>
+        <length>40</length>
+        <required>N</required>
+        <defaultvalue />
+        <description>PO Number for which payment has been made.</description>
+    </ptype>
+    <ptype>
+        <dn>InvoiceDate</dn>
+        <type>timestamp</type>
+        <length />
+        <required>N</required>
+        <defaultvalue />
+        <description>Invoice Date.</description>
+    </ptype>
+    <ptype>
+        <dn>_Amount</dn>
+        <type>decimal</type>
+        <length />
+        <required>N</required>
+        <defaultvalue />
+        <description>Amount of the payment. Payments should be metered as negative numbers.</description>
+    </ptype>
+</defineservice>

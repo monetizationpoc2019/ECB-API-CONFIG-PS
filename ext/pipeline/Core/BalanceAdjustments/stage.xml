@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xmlconfig>
+ <version ptype="INTEGER">1</version>
+ <description>Processes a balance adjustment.</description>
+ <stage>
+  <name>BalanceAdjustments</name>
+  <startstage ptype="BOOLEAN">YES</startstage>
+  <finalstage ptype="BOOLEAN">NO</finalstage>
+  <nextstage>WriteProductView</nextstage>
+
+  <dependencies>
+
+   <dependency>
+     <processor>IgnorePaymentRedirection</processor>
+     <dependson>SetTimestamp</dependson>
+   </dependency>
+
+   <dependency>
+     <processor>SetTimestamp</processor>
+     <!--<dependson>ValidatePayment</dependson>
+   </dependency>
+
+   <dependency>
+     <processor>ValidatePayment</processor>-->
+     <dependson>RoundAmount</dependson>
+   </dependency>
+
+   <dependency>
+     <processor>RoundAmount</processor>
+     <dependson>AccountResolutionByID</dependson>
+     <dependson>AccountResolutionByName</dependson>
+   </dependency>
+
+   <dependency>
+     <processor>AccountResolutionByName</processor>
+     <dependson>AccountResolutionByID</dependson>
+   </dependency>
+   
+   <dependency>
+     <processor>LogNoPaymentDate</processor>
+     <dependson>IgnorePaymentRedirection</dependson>
+   </dependency>
+   
+  </dependencies>
+
+ </stage>
+ <possiblenextstages />
+</xmlconfig>

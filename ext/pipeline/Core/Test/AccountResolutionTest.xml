@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xmlconfig>
+  <session>
+   <ServiceID ptype="ID">metratech.com/AcctResolve</ServiceID>
+   <inputs>
+	<resolvewithIDflag ptype="BOOL">TRUE</resolvewithIDflag>
+	<_AccountID ptype="INTEGER">131</_AccountID>
+<!--
+	<Payer>demo</Payer>
+	<Namespace>MT</Namespace>
+-->
+
+   </inputs>
+   <outputs>
+<!--
+	<_AccountID ptype="INTEGER">123</_AccountID>
+	<TariffName>Default</TariffName>
+-->
+   </outputs>
+  </session>
+</xmlconfig>

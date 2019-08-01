@@ -1,0 +1,209 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<GridLayout xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <Name>DataExportFramework.ReportParameters</Name>
+    <Title>
+        <LocalizationTag>TEXT_TITLE</LocalizationTag>
+        <ResourceClassKey>DataExportReportManagement/App_LocalResources/ShowAllReportParameters.aspx</ResourceClassKey>
+    </Title>
+    <Exportable>true</Exportable>
+    <Height>400</Height>
+    <Width>720</Width>
+    <Expandable>false</Expandable>
+    <Buttons>Custom</Buttons>
+    <DataSourceURL>/MetraNet/DataExportReportManagement/AjaxServices/SelectReportParameters.aspx</DataSourceURL>
+    <MultiSelect>true</MultiSelect>
+    <SelectionModel>CheckBox</SelectionModel>
+    <TotalProperty>TotalRows</TotalProperty>
+    <RootElement>Items</RootElement>
+    <PageSize>10</PageSize>
+    <Description>Display the list of available Report Parameters</Description>
+    <ExpansionCssClass />
+    <ShowFilterPanel>false</ShowFilterPanel>
+    <FilterInputWidth>220</FilterInputWidth>
+    <FilterLabelWidth>75</FilterLabelWidth>
+    <FilterColumnWidth>350</FilterColumnWidth>
+    <ShowTopBar>true</ShowTopBar>
+    <ShowBottomBar>true</ShowBottomBar>
+    <ShowGridFrame>true</ShowGridFrame>
+    <ShowGridHeader>true</ShowGridHeader>
+    <ShowColumnHeaders>true</ShowColumnHeaders>
+    <NoRecordsText>
+        <LocalizationTag>TEXT_NO_RECORDS_FOUND</LocalizationTag>
+        <ResourceClassKey>DataExportReportManagement/App_LocalResources/ShowAllReportParameters.aspx</ResourceClassKey>
+    </NoRecordsText>
+    <FilterPanelLayout>MultiColumn</FilterPanelLayout>
+    <FilterPanelCollapsed>false</FilterPanelCollapsed>
+    <EnableColumnConfig>true</EnableColumnConfig>
+    <EnableFilterConfig>true</EnableFilterConfig>
+    <Resizeable>true</Resizeable>
+    <ButtonAlignment>Center</ButtonAlignment>
+    <DefaultSortField>ParameterName</DefaultSortField>
+    <DefaultSortDirection>Ascending</DefaultSortDirection>
+    <DisplayCount>false</DisplayCount>
+    <SearchOnLoad>true</SearchOnLoad>
+    <CustomImplementationFilePath />
+    <DataBinder>
+        <ServicePath>/MetraNet/AjaxServices/GetData.aspx</ServicePath>
+        <OutPropertyName />
+        <Operation>SelectReportParameters__Client</Operation>
+    </DataBinder>
+    <SubGrid />
+    <CustomOverrideJavascriptIncludes>/MetraNet/DataExportReportManagement/ShowAllReportParameters.aspx</CustomOverrideJavascriptIncludes>
+    <Elements>
+        <Element>
+            <RecordElement>true</RecordElement>
+            <AssemblyFilename>MetraTech.DomainModel.Billing.dll</AssemblyFilename>
+            <ObjectName>MetraTech.DomainModel.Billing.ExportReportParameters</ObjectName>
+            <ID>ParameterName</ID>
+            <DataType>String</DataType>
+            <IsIdentity>false</IsIdentity>
+            <DataIndex>ParameterName</DataIndex>
+            <IsColumn>true</IsColumn>
+            <HeaderText>
+                <LocalizationTag>TEXT_DEF_NAME</LocalizationTag>
+                <ResourceClassKey>Resource</ResourceClassKey>
+            </HeaderText>
+            <Formatter />
+            <Width>120</Width>
+            <Resizeable>true</Resizeable>
+            <PreventSortable>false</PreventSortable>
+            <Sortable>true</Sortable>
+            <ColumnHideable>true</ColumnHideable>
+            <DefaultColumn>true</DefaultColumn>
+            <Exportable>true</Exportable>
+            <ShowInExpander>false</ShowInExpander>
+            <Filterable>true</Filterable>
+            <FilterHideable>true</FilterHideable>
+            <DefaultFilter>true</DefaultFilter>
+            <RequiredFilter>false</RequiredFilter>
+            <FilterLabel />
+            <ElementValue>
+                <Value />
+            </ElementValue>
+            <ElementValue2>
+                <Value />
+            </ElementValue2>
+            <FilterReadOnly>false</FilterReadOnly>
+            <DropdownItems />
+        </Element>
+        <Element>
+            <RecordElement>true</RecordElement>
+            <AssemblyFilename>MetraTech.DomainModel.Billing.dll</AssemblyFilename>
+            <ObjectName>MetraTech.DomainModel.Billing.ExportReportParameters</ObjectName>
+            <ID>ParameterDescription</ID>
+            <DataType>String</DataType>
+            <IsIdentity>false</IsIdentity>
+            <DataIndex>ParameterDescription</DataIndex>
+            <IsColumn>true</IsColumn>
+            <HeaderText>
+                <LocalizationTag>TEXT_DEF_DESCRIPTION</LocalizationTag>
+                <ResourceClassKey>Resource</ResourceClassKey>
+            </HeaderText>
+            <Formatter />
+            <Width>120</Width>
+            <Resizeable>true</Resizeable>
+            <PreventSortable>false</PreventSortable>
+            <Sortable>true</Sortable>
+            <ColumnHideable>true</ColumnHideable>
+            <DefaultColumn>true</DefaultColumn>
+            <Exportable>true</Exportable>
+            <ShowInExpander>false</ShowInExpander>
+            <Filterable>true</Filterable>
+            <FilterHideable>true</FilterHideable>
+            <DefaultFilter>true</DefaultFilter>
+            <RequiredFilter>false</RequiredFilter>
+            <FilterLabel />
+            <ElementValue>
+                <Value />
+            </ElementValue>
+            <ElementValue2>
+                <Value />
+            </ElementValue2>
+            <FilterReadOnly>false</FilterReadOnly>
+            <DropdownItems />
+        </Element>
+        <Element>
+            <RecordElement>true</RecordElement>
+            <AssemblyFilename>MetraTech.DomainModel.Billing.dll</AssemblyFilename>
+            <ObjectName>MetraTech.DomainModel.Billing.ExportReportParameters</ObjectName>
+            <ID>IDParameter</ID>
+            <DataType>Numeric</DataType>
+            <IsIdentity>true</IsIdentity>
+            <DataIndex>IDParameter</DataIndex>
+            <IsColumn>true</IsColumn>
+            <HeaderText>
+                <Value>Actions</Value>
+            </HeaderText>
+            <Formatter />
+            <Width>120</Width>
+            <Resizeable>true</Resizeable>
+            <PreventSortable>false</PreventSortable>
+            <Sortable>true</Sortable>
+            <ColumnHideable>true</ColumnHideable>
+            <DefaultColumn>false</DefaultColumn>
+            <Exportable>true</Exportable>
+            <ShowInExpander>false</ShowInExpander>
+            <Filterable>true</Filterable>
+            <FilterHideable>true</FilterHideable>
+            <DefaultFilter>true</DefaultFilter>
+            <RequiredFilter>false</RequiredFilter>
+            <FilterLabel />
+            <ElementValue>
+                <Value />
+            </ElementValue>
+            <ElementValue2>
+                <Value />
+            </ElementValue2>
+            <FilterReadOnly>false</FilterReadOnly>
+            <DropdownItems />
+        </Element>
+    </Elements>
+    <ExpanderTemplate />
+    <GridButtons>
+        <Button>
+            <ButtonID>OK</ButtonID>
+            <ButtonText>
+                <LocalizationTag>TEXT_OK</LocalizationTag>
+                <ResourceClassKey>App_GlobalResources/Resource</ResourceClassKey>
+            </ButtonText>
+            <ToolTip>
+                <Value>Add Report Parameter</Value>
+            </ToolTip>
+            <IconClass />
+            <RequiredCapabilities>
+                <Capability />
+            </RequiredCapabilities>
+            <JSHandlerFunction>onOK</JSHandlerFunction>
+        </Button>
+        <Button>
+            <ButtonID>Cancel</ButtonID>
+            <ButtonText>
+                <LocalizationTag>TEXT_BACK</LocalizationTag>
+                <ResourceClassKey>App_GlobalResources/Resource</ResourceClassKey>
+            </ButtonText>
+            <ToolTip>
+                <Value />
+            </ToolTip>
+            <IconClass />
+            <RequiredCapabilities>
+                <Capability />
+            </RequiredCapabilities>
+            <JSHandlerFunction>onCancel</JSHandlerFunction>
+        </Button>
+    </GridButtons>
+    <ToolbarButtons>
+        <Button>
+            <ButtonID>CreateNewParameter</ButtonID>
+            <ButtonText>
+                <LocalizationTag>TEXT_CREATE_NEW_PARAMETER</LocalizationTag>
+                <ResourceClassKey>App_GlobalResources/Resource</ResourceClassKey>
+            </ButtonText>
+            <ToolTip>
+                <Value />
+            </ToolTip>
+            <IconClass>add</IconClass>
+            <RequiredCapabilities />
+            <JSHandlerFunction>createnewparameter</JSHandlerFunction>
+        </Button>
+    </ToolbarButtons>
+</GridLayout>

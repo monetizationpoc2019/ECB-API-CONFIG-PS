@@ -1,0 +1,5 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xmlconfig>
+  <!-- [TODO]: Remove this param. For QA only. -->
+  <TestInvoiceNumber>5</TestInvoiceNumber>
+</xmlconfig>

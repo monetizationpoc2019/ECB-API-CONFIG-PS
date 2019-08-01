@@ -1,0 +1,161 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<defineservice>
+  <name>metratech.com/TestService</name>
+  <description>Simple test service (for verifying basic MetraNet functionality and MetraConnect-SDK connectivity).</description>
+  <ptype>
+    <dn>Description</dn>
+    <type>string</type>
+    <length>80</length>
+    <required>Y</required>
+    <defaultvalue>
+    </defaultvalue>
+    <description>Comment entered by the user. Used for display only.</description>
+  </ptype>
+  <ptype>
+    <dn>Time</dn>
+    <type>timestamp</type>
+    <length>
+    </length>
+    <required>Y</required>
+    <defaultvalue>
+    </defaultvalue>
+    <description>Any date/time value. Used for display only.</description>
+  </ptype>
+  <ptype>
+    <dn>PipelineTime</dn>
+    <type>timestamp</type>
+    <length>
+    </length>
+    <required>N</required>
+    <defaultvalue>
+    </defaultvalue>
+    <description>This time (optional) will be used by the pipeline.</description>
+  </ptype>
+  <ptype>
+    <dn>Units</dn>
+    <type>double</type>
+    <length>
+    </length>
+    <required>Y</required>
+    <defaultvalue>
+    </defaultvalue>
+    <description>Arbitrary number of units that will be rated for. The units are multiplied by a configurable rate to calculate the amount.</description>
+  </ptype>
+  <ptype>
+    <dn>AccountName</dn>
+    <type>string</type>
+    <length>20</length>
+    <required>Y</required>
+    <defaultvalue>
+    </defaultvalue>
+    <description>Account to which this transaction is associated. Used for account resolution.</description>
+  </ptype>
+  <!-- Properties covering every MSIX datatype -->
+  <ptype>
+    <dn>DecProp1</dn>
+    <type>decimal</type>
+    <length>
+    </length>
+    <required>N</required>
+    <defaultvalue>0.000000</defaultvalue>
+    <description>Test decimal property.</description>
+  </ptype>
+  <ptype>
+    <dn>DecProp2</dn>
+    <type>decimal</type>
+    <length>
+    </length>
+    <required>N</required>
+    <defaultvalue>0.000000</defaultvalue>
+    <description>Test decimal property.</description>
+  </ptype>
+  <ptype>
+    <dn>DecProp3</dn>
+    <type>decimal</type>
+    <length>
+    </length>
+    <required>N</required>
+    <defaultvalue>
+    </defaultvalue>
+    <description>Test decimal property.</description>
+  </ptype>
+  <ptype>
+    <dn>IntegerProperty</dn>
+    <type>int32</type>
+    <length>
+    </length>
+    <required>N</required>
+    <defaultvalue>1978</defaultvalue>
+    <description>Test 32-bit integer property.</description>
+  </ptype>
+  <ptype>
+    <dn>Integer64Property</dn>
+    <type>int64</type>
+    <length>
+    </length>
+    <required>N</required>
+    <defaultvalue>1978</defaultvalue>
+    <description>Test 64-bit integer property.</description>
+  </ptype>
+  <ptype>
+    <dn>StringProperty</dn>
+    <type>string</type>
+    <length>80</length>
+    <required>N</required>
+    <defaultvalue>Go Red Sox!</defaultvalue>
+    <description>Test string property.</description>
+  </ptype>
+  <ptype>
+    <dn>EncryptedStringProperty_</dn>
+    <type>string</type>
+    <length>80</length>
+    <required>N</required>
+    <defaultvalue>Go Red Sox!</defaultvalue>
+    <description>Test encrypted string property.</description>
+  </ptype>
+  <ptype>
+    <dn>DecimalProperty</dn>
+    <type>decimal</type>
+    <length>
+    </length>
+    <required>N</required>
+    <defaultvalue>3.14159</defaultvalue>
+    <description>Test decimal property.</description>
+  </ptype>
+  <ptype>
+    <dn>DoubleProperty</dn>
+    <type>double</type>
+    <length>
+    </length>
+    <required>N</required>
+    <defaultvalue>3.14159</defaultvalue>
+    <description>Test double property.</description>
+  </ptype>
+  <ptype>
+    <dn>BooleanProperty</dn>
+    <type>boolean</type>
+    <length>
+    </length>
+    <required>N</required>
+    <defaultvalue>F</defaultvalue>
+    <description>Test boolean property.</description>
+  </ptype>
+  <ptype>
+    <dn>EnumProperty</dn>
+    <type EnumSpace="Global" EnumType="CountryName">enum</type>
+    <length>
+    </length>
+    <required>N</required>
+    <defaultvalue>USA</defaultvalue>
+    <description>Test enum property.</description>
+  </ptype>
+  <ptype>
+    <dn>TimestampProperty</dn>
+    <type>timestamp</type>
+    <length>
+    </length>
+    <required>N</required>
+    <defaultvalue>2001-10-15T18:54:39Z</defaultvalue>
+    <description>Test timestamp property.</description>
+  </ptype>
+</defineservice>

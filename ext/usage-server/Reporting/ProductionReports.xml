@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xmlconfig>
+	<!--	
+		BeginGenerateReports adapter uses this property to determine
+		which query to execute from ReportList - InputQuery or SampleInputQuery
+	-->
+	<SampleMode>false</SampleMode>
+	<!-- 
+			Group Name has to be the same as in configuration file
+			for corresponding BeginGenerateReports adapter
+	-->
+	<ReportGroupName>MetraNetInvoices</ReportGroupName>
+	<!--
+	Next 2 parameters define behavior of report provider polling
+	mechanizm
+	-->
+	<!-- 
+			CompleteGenerateReports uses this property to
+			poll report provider for report instance generation status 
+			every x seconds 
+	-->
+	<PeriodInSeconds>10</PeriodInSeconds>
+	<!-- 
+			CompleteGenerateReports uses this property to
+			determine when to give up waiting for instance generation
+	-->
+	<TimeoutInSeconds>7200</TimeoutInSeconds>
+	
+	<!-- 
+			This property indicates to CompleteGenerateReports adapter
+			results of which BeginGenerateReports adapter to check. This property is 
+			necessary if there are multiple adapter "pairs", processing multiple report
+			groups. It is also used to deferentiate between "sample" and "production" report modes
+			within the same group.
+	-->
+	<InitiatorAdapterName>BeginGenerateProductionInvoices</InitiatorAdapterName>
+	<CompleteAdapterName>CompleteGenerateProductionInvoices</CompleteAdapterName>
+
+	<!-- Supported report types: Interval, BillingGroup, Account -->
+	<ReportType>Account</ReportType>
+
+</xmlconfig>

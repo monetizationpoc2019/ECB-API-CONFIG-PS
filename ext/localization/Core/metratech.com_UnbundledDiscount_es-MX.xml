@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<mt_config>
+  <language_code>es-MX</language_code>
+  <locale_space name="metratech.com/UnbundledDiscount">
+    <locale_entry>
+      <Name>metratech.com/UnbundledDiscount</Name>
+      <Value>Descuentos desempaquetados</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/UnbundledDiscount/DiscountAmount</Name>
+      <Value>Monto del descuento</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/UnbundledDiscount/DiscountID</Name>
+      <Value>ID de descuento</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/UnbundledDiscount/DiscountName</Name>
+      <Value>Nombre del descuento</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/UnbundledDiscount/DiscountTaxAmount</Name>
+      <Value>Monto del impuesto de descuento</Value>
+    </locale_entry>
+  </locale_space>
+</mt_config>

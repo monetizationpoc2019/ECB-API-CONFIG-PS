@@ -1,0 +1,458 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<GridLayout xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <Name>TransactionTypesGridList</Name>
+    <Title>
+        <LocalizationTag>TEXT_TRANSACTION_TYPES</LocalizationTag>
+        <ResourceClassKey>App_GlobalResources/MainMenu</ResourceClassKey>
+    </Title>
+    <Exportable>true</Exportable>
+    <Height>400</Height>
+    <Width>800</Width>
+    <Expandable>false</Expandable>
+    <Buttons>None</Buttons>
+    <DataSourceURL>AjaxServices/LoadTransactionTypesList.aspx</DataSourceURL>
+    <MultiSelect>false</MultiSelect>
+    <SelectionModel>Standard</SelectionModel>
+    <TotalProperty>TotalRows</TotalProperty>
+    <RootElement>Items</RootElement>
+    <PageSize>10</PageSize>
+    <Description>Transaction Types List</Description>
+    <ExpansionCssClass />
+    <ShowFilterPanel>true</ShowFilterPanel>
+    <FilterInputWidth>220</FilterInputWidth>
+    <FilterLabelWidth>75</FilterLabelWidth>
+    <FilterLabelWrap>None</FilterLabelWrap>
+    <FilterColumnWidth>350</FilterColumnWidth>
+    <ShowTopBar>true</ShowTopBar>
+    <ShowBottomBar>true</ShowBottomBar>
+    <ShowGridFrame>true</ShowGridFrame>
+    <ShowGridHeader>true</ShowGridHeader>
+    <ShowColumnHeaders>true</ShowColumnHeaders>
+    <NoRecordsText>
+        <LocalizationTag>TEXT_NO_RECORDS_FOUND</LocalizationTag>
+        <ResourceClassKey>Resource</ResourceClassKey>
+    </NoRecordsText>
+    <FilterPanelLayout>MultiColumn</FilterPanelLayout>
+    <FilterPanelCollapsed>true</FilterPanelCollapsed>
+    <EnableColumnConfig>true</EnableColumnConfig>
+    <EnableFilterConfig>true</EnableFilterConfig>
+    <Resizeable>true</Resizeable>
+    <ButtonAlignment>Center</ButtonAlignment>
+    <DefaultSortField>ID</DefaultSortField>
+    <DefaultSortDirection>Ascending</DefaultSortDirection>
+    <DisplayCount>true</DisplayCount>
+    <SearchOnLoad>true</SearchOnLoad>
+    <CustomImplementationFilePath />
+    <CustomOverrideJavascriptIncludes />
+    <DataBinder>
+        <ServicePath>/MetraNet/AjaxServices/GetData.aspx</ServicePath>
+        <OutPropertyName />
+        <Operation>__Client</Operation>
+    </DataBinder>
+    <SubGrid>
+        <Id>piDetailsGrid</Id>
+        <GridLayoutFile>RevenueRecognitionPIList</GridLayoutFile>
+        <LoadSubGridAutomaticallyWhenParentRowSelected>true</LoadSubGridAutomaticallyWhenParentRowSelected>
+        <ParentGridParameters>
+            <ParentGridParameter>
+                <ParameterName>TransTypeId</ParameterName>
+                <ElementID>ID</ElementID>
+                <UseParamAsFilter>true</UseParamAsFilter>
+            </ParentGridParameter>
+        </ParentGridParameters>
+    </SubGrid>
+    <Elements>
+        <Element>
+            <RecordElement>true</RecordElement>
+            <AssemblyFilename>MetraTech.RevenueRecognition.dll</AssemblyFilename>
+            <ObjectName>MetraTech.RevenueRecognition.RevRecTransactionType</ObjectName>
+            <ID>ID</ID>
+            <DataType>Numeric</DataType>
+            <IsIdentity>true</IsIdentity>
+            <DataIndex>ID</DataIndex>
+            <IsColumn>false</IsColumn>
+            <HeaderText />
+            <Formatter />
+            <Width>120</Width>
+            <Resizeable>true</Resizeable>
+            <PreventSortable>false</PreventSortable>
+            <Sortable>false</Sortable>
+            <ColumnHideable>true</ColumnHideable>
+            <DefaultColumn>true</DefaultColumn>
+            <Exportable>true</Exportable>
+            <ShowInExpander>false</ShowInExpander>
+            <Filterable>false</Filterable>
+            <FilterHideable>true</FilterHideable>
+            <DefaultFilter>true</DefaultFilter>
+            <RequiredFilter>false</RequiredFilter>
+            <FilterLabel />
+            <ElementValue>
+                <Value />
+            </ElementValue>
+            <ElementValue2>
+                <Value />
+            </ElementValue2>
+            <FilterReadOnly>false</FilterReadOnly>
+            <DropdownItems />
+        </Element>
+        <Element>
+            <RecordElement>false</RecordElement>
+            <ID>Actions</ID>
+            <DataIndex>actions</DataIndex>
+            <IsColumn>true</IsColumn>
+            <HeaderText>
+                <Value> </Value>
+            </HeaderText>
+            <Formatter />
+            <Width>50</Width>
+            <Resizeable>true</Resizeable>
+            <PreventSortable>false</PreventSortable>
+            <Sortable>false</Sortable>
+            <ColumnHideable>true</ColumnHideable>
+            <DefaultColumn>true</DefaultColumn>
+            <Filterable>false</Filterable>
+        </Element>
+        <Element>
+            <RecordElement>true</RecordElement>
+            <AssemblyFilename>MetraTech.RevenueRecognition.dll</AssemblyFilename>
+            <ObjectName>MetraTech.RevenueRecognition.RevRecTransactionType</ObjectName>
+            <ID>Name</ID>
+            <DataType>String</DataType>
+            <IsIdentity>false</IsIdentity>
+            <DataIndex>Name</DataIndex>
+            <IsColumn>true</IsColumn>
+            <HeaderText>
+                <LocalizationTag>TEXT_NAME</LocalizationTag>
+                <ResourceClassKey>App_GlobalResources/Resource</ResourceClassKey>
+            </HeaderText>
+            <Formatter />
+            <Width>100</Width>
+            <Resizeable>true</Resizeable>
+            <PreventSortable>false</PreventSortable>
+            <Sortable>true</Sortable>
+            <ColumnHideable>true</ColumnHideable>
+            <DefaultColumn>true</DefaultColumn>
+            <Exportable>true</Exportable>
+            <ShowInExpander>false</ShowInExpander>
+            <Filterable>true</Filterable>
+            <FilterHideable>true</FilterHideable>
+            <DefaultFilter>true</DefaultFilter>
+            <RequiredFilter>false</RequiredFilter>
+            <FilterLabel />
+            <ElementValue>
+                <Value />
+            </ElementValue>
+            <ElementValue2>
+                <Value />
+            </ElementValue2>
+            <FilterReadOnly>false</FilterReadOnly>
+            <DropdownItems />
+        </Element>
+        <Element>
+            <RecordElement>true</RecordElement>
+            <AssemblyFilename>MetraTech.RevenueRecognition.dll</AssemblyFilename>
+            <ObjectName>MetraTech.RevenueRecognition.RevRecTransactionType</ObjectName>
+            <ID>BillingAccountNum</ID>
+            <DataType>String</DataType>
+            <IsIdentity>false</IsIdentity>
+            <DataIndex>BillingAccountNum</DataIndex>
+            <IsColumn>true</IsColumn>
+            <HeaderText>
+                <LocalizationTag>TEXT_BILLING_ACCOUNT_NUM</LocalizationTag>
+                <ResourceClassKey>MetraOffer/RevenueRecognition/App_LocalResources/TransactionTypesList.aspx</ResourceClassKey>
+            </HeaderText>
+            <Formatter />
+            <Width>130</Width>
+            <Resizeable>true</Resizeable>
+            <PreventSortable>false</PreventSortable>
+            <Sortable>true</Sortable>
+            <ColumnHideable>true</ColumnHideable>
+            <DefaultColumn>true</DefaultColumn>
+            <Exportable>true</Exportable>
+            <ShowInExpander>false</ShowInExpander>
+            <Filterable>true</Filterable>
+            <FilterHideable>true</FilterHideable>
+            <DefaultFilter>true</DefaultFilter>
+            <RequiredFilter>false</RequiredFilter>
+            <FilterLabel />
+            <ElementValue>
+                <Value />
+            </ElementValue>
+            <ElementValue2>
+                <Value />
+            </ElementValue2>
+            <FilterReadOnly>false</FilterReadOnly>
+            <DropdownItems />
+        </Element>
+        <Element>
+            <RecordElement>true</RecordElement>
+            <AssemblyFilename>MetraTech.RevenueRecognition.dll</AssemblyFilename>
+            <ObjectName>MetraTech.RevenueRecognition.RevRecTransactionType</ObjectName>
+            <ID>BillingAccountDesc</ID>
+            <DataType>String</DataType>
+            <IsIdentity>false</IsIdentity>
+            <DataIndex>BillingAccountDesc</DataIndex>
+            <IsColumn>true</IsColumn>
+            <HeaderText>
+                <LocalizationTag>TEXT_BILLING_ACCOUNT_DESC</LocalizationTag>
+                <ResourceClassKey>MetraOffer/RevenueRecognition/App_LocalResources/TransactionTypesList.aspx</ResourceClassKey>
+            </HeaderText>
+            <Formatter />
+            <Width>120</Width>
+            <Resizeable>true</Resizeable>
+            <PreventSortable>false</PreventSortable>
+            <Sortable>true</Sortable>
+            <ColumnHideable>true</ColumnHideable>
+            <DefaultColumn>true</DefaultColumn>
+            <Exportable>true</Exportable>
+            <ShowInExpander>false</ShowInExpander>
+            <Filterable>true</Filterable>
+            <FilterHideable>true</FilterHideable>
+            <DefaultFilter>true</DefaultFilter>
+            <RequiredFilter>false</RequiredFilter>
+            <FilterLabel />
+            <ElementValue>
+                <Value />
+            </ElementValue>
+            <ElementValue2>
+                <Value />
+            </ElementValue2>
+            <FilterReadOnly>false</FilterReadOnly>
+            <DropdownItems />
+        </Element>   
+        <Element>
+            <RecordElement>true</RecordElement>
+            <AssemblyFilename>MetraTech.RevenueRecognition.dll</AssemblyFilename>
+            <ObjectName>MetraTech.RevenueRecognition.RevRecTransactionType</ObjectName>
+            <ID>RevenueAccountNum</ID>
+            <DataType>String</DataType>
+            <IsIdentity>false</IsIdentity>
+            <DataIndex>RevenueAccountNum</DataIndex>
+            <IsColumn>true</IsColumn>
+            <HeaderText>
+                <LocalizationTag>TEXT_REVENUE_ACCOUNT_NUM</LocalizationTag>
+                <ResourceClassKey>MetraOffer/RevenueRecognition/App_LocalResources/TransactionTypesList.aspx</ResourceClassKey>
+            </HeaderText>
+            <Formatter />
+            <Width>130</Width>
+            <Resizeable>true</Resizeable>
+            <PreventSortable>false</PreventSortable>
+            <Sortable>true</Sortable>
+            <ColumnHideable>true</ColumnHideable>
+            <DefaultColumn>true</DefaultColumn>
+            <Exportable>true</Exportable>
+            <ShowInExpander>false</ShowInExpander>
+            <Filterable>true</Filterable>
+            <FilterHideable>true</FilterHideable>
+            <DefaultFilter>true</DefaultFilter>
+            <RequiredFilter>false</RequiredFilter>
+            <FilterLabel />
+            <ElementValue>
+                <Value />
+            </ElementValue>
+            <ElementValue2>
+                <Value />
+            </ElementValue2>
+            <FilterReadOnly>false</FilterReadOnly>
+            <DropdownItems />
+        </Element>
+        <Element>
+            <RecordElement>true</RecordElement>
+            <AssemblyFilename>MetraTech.RevenueRecognition.dll</AssemblyFilename>
+            <ObjectName>MetraTech.RevenueRecognition.RevRecTransactionType</ObjectName>
+            <ID>RevenueAccountDesc</ID>
+            <DataType>String</DataType>
+            <IsIdentity>false</IsIdentity>
+            <DataIndex>RevenueAccountDesc</DataIndex>
+            <IsColumn>true</IsColumn>
+            <HeaderText>
+                <LocalizationTag>TEXT_REVENUE_ACCOUNT_DESC</LocalizationTag>
+                <ResourceClassKey>MetraOffer/RevenueRecognition/App_LocalResources/TransactionTypesList.aspx</ResourceClassKey>
+            </HeaderText>
+            <Formatter />
+            <Width>130</Width>
+            <Resizeable>true</Resizeable>
+            <PreventSortable>false</PreventSortable>
+            <Sortable>true</Sortable>
+            <ColumnHideable>true</ColumnHideable>
+            <DefaultColumn>true</DefaultColumn>
+            <Exportable>true</Exportable>
+            <ShowInExpander>false</ShowInExpander>
+            <Filterable>true</Filterable>
+            <FilterHideable>true</FilterHideable>
+            <DefaultFilter>true</DefaultFilter>
+            <RequiredFilter>false</RequiredFilter>
+            <FilterLabel />
+            <ElementValue>
+                <Value />
+            </ElementValue>
+            <ElementValue2>
+                <Value />
+            </ElementValue2>
+            <FilterReadOnly>false</FilterReadOnly>
+            <DropdownItems />
+        </Element>          
+        <Element>
+            <RecordElement>true</RecordElement>
+            <AssemblyFilename>MetraTech.RevenueRecognition.dll</AssemblyFilename>
+            <ObjectName>MetraTech.RevenueRecognition.RevRecTransactionType</ObjectName>
+            <ID>AccruedRevenueAccountNum</ID>
+            <DataType>String</DataType>
+            <IsIdentity>false</IsIdentity>
+            <DataIndex>AccruedRevenueAccountNum</DataIndex>
+            <IsColumn>true</IsColumn>
+            <HeaderText>
+                <LocalizationTag>TEXT_ACCURED_ACCOUNT_NUM</LocalizationTag>
+                <ResourceClassKey>MetraOffer/RevenueRecognition/App_LocalResources/TransactionTypesList.aspx</ResourceClassKey>
+            </HeaderText>
+            <Formatter />
+            <Width>150</Width>
+            <Resizeable>true</Resizeable>
+            <PreventSortable>false</PreventSortable>
+            <Sortable>true</Sortable>
+            <ColumnHideable>true</ColumnHideable>
+            <DefaultColumn>true</DefaultColumn>
+            <Exportable>true</Exportable>
+            <ShowInExpander>false</ShowInExpander>
+            <Filterable>true</Filterable>
+            <FilterHideable>true</FilterHideable>
+            <DefaultFilter>true</DefaultFilter>
+            <RequiredFilter>false</RequiredFilter>
+            <FilterLabel />
+            <ElementValue>
+                <Value />
+            </ElementValue>
+            <ElementValue2>
+                <Value />
+            </ElementValue2>
+            <FilterReadOnly>false</FilterReadOnly>
+            <DropdownItems />
+        </Element>
+        <Element>
+            <RecordElement>true</RecordElement>
+            <AssemblyFilename>MetraTech.RevenueRecognition.dll</AssemblyFilename>
+            <ObjectName>MetraTech.RevenueRecognition.RevRecTransactionType</ObjectName>
+            <ID>AccruedRevenueAccountDesc</ID>
+            <DataType>String</DataType>
+            <IsIdentity>false</IsIdentity>
+            <DataIndex>AccruedRevenueAccountDesc</DataIndex>
+            <IsColumn>true</IsColumn>
+            <HeaderText>
+                <LocalizationTag>TEXT_ACCURED_ACCOUNT_DESC</LocalizationTag>
+                <ResourceClassKey>MetraOffer/RevenueRecognition/App_LocalResources/TransactionTypesList.aspx</ResourceClassKey>
+            </HeaderText>
+            <Formatter />
+            <Width>175</Width>
+            <Resizeable>true</Resizeable>
+            <PreventSortable>false</PreventSortable>
+            <Sortable>true</Sortable>
+            <ColumnHideable>true</ColumnHideable>
+            <DefaultColumn>true</DefaultColumn>
+            <Exportable>true</Exportable>
+            <ShowInExpander>false</ShowInExpander>
+            <Filterable>true</Filterable>
+            <FilterHideable>true</FilterHideable>
+            <DefaultFilter>true</DefaultFilter>
+            <RequiredFilter>false</RequiredFilter>
+            <FilterLabel />
+            <ElementValue>
+                <Value />
+            </ElementValue>
+            <ElementValue2>
+                <Value />
+            </ElementValue2>
+            <FilterReadOnly>false</FilterReadOnly>
+            <DropdownItems />
+        </Element>        
+        <Element>
+            <RecordElement>true</RecordElement>
+            <AssemblyFilename>MetraTech.RevenueRecognition.dll</AssemblyFilename>
+            <ObjectName>MetraTech.RevenueRecognition.RevRecTransactionType</ObjectName>
+            <ID>DeferredRevenueAccountNum</ID>
+            <DataType>String</DataType>
+            <IsIdentity>false</IsIdentity>
+            <DataIndex>DeferredRevenueAccountNum</DataIndex>
+            <IsColumn>true</IsColumn>
+            <HeaderText>
+                <LocalizationTag>TEXT_DEFERRED_ACCOUNT_NUM</LocalizationTag>
+                <ResourceClassKey>MetraOffer/RevenueRecognition/App_LocalResources/TransactionTypesList.aspx</ResourceClassKey>
+            </HeaderText>
+            <Formatter />
+            <Width>160</Width>
+            <Resizeable>true</Resizeable>
+            <PreventSortable>false</PreventSortable>
+            <Sortable>true</Sortable>
+            <ColumnHideable>true</ColumnHideable>
+            <DefaultColumn>true</DefaultColumn>
+            <Exportable>true</Exportable>
+            <ShowInExpander>false</ShowInExpander>
+            <Filterable>true</Filterable>
+            <FilterHideable>true</FilterHideable>
+            <DefaultFilter>true</DefaultFilter>
+            <RequiredFilter>false</RequiredFilter>
+            <FilterLabel />
+            <ElementValue>
+                <Value />
+            </ElementValue>
+            <ElementValue2>
+                <Value />
+            </ElementValue2>
+            <FilterReadOnly>false</FilterReadOnly>
+            <DropdownItems />
+        </Element>
+        <Element>
+            <RecordElement>true</RecordElement>
+            <AssemblyFilename>MetraTech.RevenueRecognition.dll</AssemblyFilename>
+            <ObjectName>MetraTech.RevenueRecognition.RevRecTransactionType</ObjectName>
+            <ID>DeferredRevenueAccountDesc</ID>
+            <DataType>String</DataType>
+            <IsIdentity>false</IsIdentity>
+            <DataIndex>DeferredRevenueAccountDesc</DataIndex>
+            <IsColumn>true</IsColumn>
+            <HeaderText>
+                <LocalizationTag>TEXT_DEFERRED_ACCOUNT_DESC</LocalizationTag>
+                <ResourceClassKey>MetraOffer/RevenueRecognition/App_LocalResources/TransactionTypesList.aspx</ResourceClassKey>
+            </HeaderText>
+            <Formatter />
+            <Width>175</Width>
+            <Resizeable>true</Resizeable>
+            <PreventSortable>false</PreventSortable>
+            <Sortable>true</Sortable>
+            <ColumnHideable>true</ColumnHideable>
+            <DefaultColumn>true</DefaultColumn>
+            <Exportable>true</Exportable>
+            <ShowInExpander>false</ShowInExpander>
+            <Filterable>true</Filterable>
+            <FilterHideable>true</FilterHideable>
+            <DefaultFilter>true</DefaultFilter>
+            <RequiredFilter>false</RequiredFilter>
+            <FilterLabel />
+            <ElementValue>
+                <Value />
+            </ElementValue>
+            <ElementValue2>
+                <Value />
+            </ElementValue2>
+            <FilterReadOnly>false</FilterReadOnly>
+            <DropdownItems />
+        </Element>
+    </Elements>
+    <ExpanderTemplate />
+    <GridButtons />
+    <ToolbarButtons>
+        <Button>
+            <ButtonID>Add</ButtonID>
+            <ButtonText>
+                <LocalizationTag>TEXT_CREATE_TRANS_TYPE</LocalizationTag>
+                <ResourceClassKey>MetraOffer/RevenueRecognition/App_LocalResources/TransactionTypesList.aspx</ResourceClassKey>
+            </ButtonText>
+            <ToolTip>
+                <LocalizationTag>TEXT_CREATE_TRANS_TYPE_TOOLTIP</LocalizationTag>
+                <ResourceClassKey>MetraOffer/RevenueRecognition/App_LocalResources/TransactionType.aspx</ResourceClassKey>
+            </ToolTip>
+            <IconClass>add</IconClass>
+            <RequiredCapabilities />
+            <JSHandlerFunction>onNew</JSHandlerFunction>
+        </Button>
+    </ToolbarButtons>
+</GridLayout>

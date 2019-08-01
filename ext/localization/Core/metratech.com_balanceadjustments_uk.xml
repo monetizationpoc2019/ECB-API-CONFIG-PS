@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<mt_config>
+  <language_code>uk</language_code>
+  <locale_space name="metratech.com/balanceadjustments">
+    <locale_entry>
+      <Name>metratech.com/balanceadjustments/PaymentMethod/CreditCard</Name>
+      <Value>Credit Card</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/balanceadjustments/PaymentMethod/ACH</Name>
+      <Value>ACH</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/balanceadjustments/PaymentMethod/Check</Name>
+      <Value>Cheque</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/balanceadjustments/PaymentMethod/Cash</Name>
+      <Value>Cash</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/balanceadjustments/PaymentMethod/TerminalCreditCard</Name>
+      <Value>Terminal Credit Card</Value>
+    </locale_entry>
+  </locale_space>
+</mt_config>

@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<mt_config>
+  <language_code>jp</language_code>
+  <locale_space name="metratech.com/postauthsuccess">
+    <locale_entry>
+      <Name>metratech.com/postauthsuccess</Name>
+      <Value>事後承認の成功</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/postauthsuccess/authcode</Name>
+      <Value>承認コード</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/postauthsuccess/creditcardtype</Name>
+      <Value>クレジット カード種別</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/postauthsuccess/csrid</Name>
+      <Value>対応窓口 ID</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/postauthsuccess/lastfourdigits</Name>
+      <Value>最後の 4 桁</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/postauthsuccess/originalaccountid</Name>
+      <Value>元のお客様 ID</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/postauthsuccess/originalid</Name>
+      <Value>元の ID</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/postauthsuccess/paymentservicetransactionid</Name>
+      <Value>支払サービスの取引 ID</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/postauthsuccess/reason</Name>
+      <Value>失敗の理由</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/postauthsuccess/respstring</Name>
+      <Value>応答文字列</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/postauthsuccess/terminalid</Name>
+      <Value>端末 ID</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/postauthsuccess/transactionid</Name>
+      <Value>取引 ID</Value>
+    </locale_entry>
+  </locale_space>
+</mt_config>

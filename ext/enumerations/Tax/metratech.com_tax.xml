@@ -1,0 +1,118 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<mt_config>
+    <enum_spaces>
+        <enum_space name="metratech.com/tax">
+            <description>Enum for the tax field or value.</description>
+            <enums>
+                <enum name="TaxBand">
+                    <description>MetraTax (VAT/GST) Tax Band</description>
+                    <entries>
+                        <entry name="standard">
+                            <value>0</value>
+                        </entry>
+                        <entry name="reduce1">
+                            <value>1</value>
+                        </entry>
+                        <entry name="reduce2">
+                            <value>2</value>
+                        </entry>
+                        <entry name="reduce3">
+                            <value>3</value>
+                        </entry>
+                        <entry name="reduce4">
+                            <value>4</value>
+                        </entry>
+                        <entry name="exempt">
+                            <value>5</value>
+                        </entry>
+                    </entries>
+                </enum>
+                <enum name="TaxZone">
+                    <description>MetraTax tax zone for special geography areas that are given special tax bands within a country.</description>
+                    <entries>
+                        <entry name="DefaultZone">
+                            <value>0</value>
+                        </entry>
+                        <entry name="Zone1">
+                            <value>1</value>
+                        </entry>
+                        <entry name="Zone2">
+                            <value>2</value>
+                        </entry>
+                        <entry name="Zone3">
+                            <value>3</value>
+                        </entry>
+                        <entry name="Zone4">
+                            <value>4</value>
+                        </entry>
+                        <entry name="Zone5">
+                            <value>5</value>
+                        </entry>
+                        <entry name="Zone6">
+                            <value>6</value>
+                        </entry>
+                    </entries>
+                </enum>
+                <enum name="TaxVendor">
+                    <description>Supported tax vendors.</description>
+                    <entries>
+                        <entry name="MetraTax">
+                            <value>0</value>
+                        </entry>
+                        <entry name="BillSoft">
+                            <value>1</value>
+                        </entry>
+                        <entry name="Taxware">
+                            <value>2</value>
+                        </entry>
+                        <entry name="VertexQ">
+                            <value>3</value>
+                        </entry>
+                    </entries>
+                </enum>
+                <enum name="TaxExemptReason">
+                    <description>The reason, if any, that this account is tax exempt.</description>
+                    <entries>
+                        <entry name="NotExempt">
+                            <value>0</value>
+                        </entry>
+                        <entry name="Other">
+                            <value>1</value>
+                        </entry>
+                    </entries>
+                </enum>
+                <enum name="TaxDetail">
+                    <description>Insure there is a system-wide unique value associated with the t_tax_details table.</description>
+                    <entries>
+                        <entry name="tax_details">
+                            <value>0</value>
+                        </entry>
+                        <entry name="Other">
+                            <value>1</value>
+                        </entry>
+                    </entries>
+	        </enum>
+                <enum name="BillSoftTaxLevel">
+                    <description>This enum defines the level of government collecting the tax.</description>
+                    <entries>
+                        <entry name="Federal">
+                            <value>0</value>
+                        </entry>
+                        <entry name="State">
+                            <value>1</value>
+                        </entry>
+                        <entry name="County">
+                            <value>2</value>
+                        </entry>
+                        <entry name="Local">
+                            <value>3</value>
+                        </entry>
+                        <entry name="Other">
+                            <value>4</value>
+                        </entry>
+                    </entries>
+	        </enum>
+            </enums>
+        </enum_space>
+    </enum_spaces>
+</mt_config>

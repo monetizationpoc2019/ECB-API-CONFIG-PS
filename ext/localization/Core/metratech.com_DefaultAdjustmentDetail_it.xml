@@ -1,0 +1,98 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<mt_config>
+  <language_code>it</language_code>
+  <locale_space name="metratech.com/defaultadjustmentdetail">
+    <locale_entry>
+      <Name>metratech.com/DefaultAdjustmentDetail</Name>
+      <Value>Dettaglio rettifica</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/DefaultAdjustmentDetail/AdjustedAmount</Name>
+      <Value>Importo rettificato</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/DefaultAdjustmentDetail/AdjustedAmountAsString</Name>
+      <Value>Importo rettificato</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/DefaultAdjustmentDetail/AdjustedAmountWithTax</Name>
+      <Value>Importo rettificato con imposte</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/DefaultAdjustmentDetail/AdjustedAmountWithTaxAsString</Name>
+      <Value>Importo rettificato con imposte</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/DefaultAdjustmentDetail/AdjustmentAmount</Name>
+      <Value>Importo rettifica</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/DefaultAdjustmentDetail/AdjustmentAmountAsString</Name>
+      <Value>Importo rettifica</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/DefaultAdjustmentDetail/AdjustmentAmountWithTax</Name>
+      <Value>Importo rettifica con imposte</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/DefaultAdjustmentDetail/AdjustmentAmountWithTaxAsString</Name>
+      <Value>Importo rettifica con imposte</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/DefaultAdjustmentDetail/AdjustmentInstanceDisplayName</Name>
+      <Value>Nome visualizzato dell'istanza rettifica</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/DefaultAdjustmentDetail/AdjustmentReason</Name>
+      <Value>Motivo rettifica</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/DefaultAdjustmentDetail/AdjustmentTemplateDisplayName</Name>
+      <Value>Nome visualizzato del modello rettifica</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/DefaultAdjustmentDetail/CountyTax</Name>
+      <Value>Imposta locale</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/DefaultAdjustmentDetail/Description</Name>
+      <Value>Descrizione</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/DefaultAdjustmentDetail/FederalTax</Name>
+      <Value>Imposta federale</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/DefaultAdjustmentDetail/LocalTax</Name>
+      <Value>Imposta locale</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/DefaultAdjustmentDetail/OtherTax</Name>
+      <Value>Altra imposta</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/DefaultAdjustmentDetail/SessionID</Name>
+      <Value>Sessione</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/DefaultAdjustmentDetail/StateTax</Name>
+      <Value>Imposta regionale</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/DefaultAdjustmentDetail/UnadjustedAmount</Name>
+      <Value>Importo non rettificato</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/DefaultAdjustmentDetail/UnadjustedAmountAsString</Name>
+      <Value>Importo non rettificato</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/DefaultAdjustmentDetail/UnadjustedAmountWithTax</Name>
+      <Value>Importo non rettificato con imposte</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/DefaultAdjustmentDetail/UnadjustedAmountWithTaxAsString</Name>
+      <Value>Importo non rettificato con imposte</Value>
+    </locale_entry>
+  </locale_space>
+</mt_config>

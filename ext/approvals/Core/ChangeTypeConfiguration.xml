@@ -1,0 +1,269 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfChangeTypeConfiguration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ChangeTypeConfiguration>
+    <Name>RateUpdate</Name>
+    <LocalizationTag>TEXT_RATE_UPDATE</LocalizationTag>
+    <Description>Product Catalog RuleSet Rule Update</Description>
+    <Enabled>false</Enabled>
+    <AllowMoreThanOnePendingChange>false</AllowMoreThanOnePendingChange>
+    <CapabilityRequiredForApproveOrDeny>Approve RateUpdates</CapabilityRequiredForApproveOrDeny>
+    <MethodForApply>
+      <Assembly>MetraTech.Approvals.dll</Assembly>
+      <Classname>MetraTech.Approvals.ChangeTypes.RateUpdateChangeType</Classname>
+    </MethodForApply>
+    <NotifyOnSubmit>
+      <Enabled>false</Enabled>
+    </NotifyOnSubmit>
+    <NotifyOnApproved>
+      <Enabled>false</Enabled>
+    </NotifyOnApproved>
+    <NotifyOnDenied>
+      <Enabled>false</Enabled>
+    </NotifyOnDenied>
+    <WebpageForView>
+      <URL>/MetraNet/TicketToMam.aspx?URL=/MAM/default/dialog/gotoRuleEditorViewDifference.asp|APPROVAL_ID=%%CHANGE_ID%%</URL>
+    </WebpageForView>
+  </ChangeTypeConfiguration>
+  <ChangeTypeConfiguration>
+    <Name>AccountUpdate</Name>
+    <LocalizationTag>TEXT_ACCOUNT_UPDATE</LocalizationTag>
+    <Description>Update of account and accountview properties</Description>
+    <Enabled>false</Enabled>
+    <AllowMoreThanOnePendingChange>false</AllowMoreThanOnePendingChange>
+    <CapabilityRequiredForApproveOrDeny>Approve AccountChanges</CapabilityRequiredForApproveOrDeny>
+    <MethodForApply>
+      <Name>UpdateAccount</Name>
+      <ClientProxyType>MetraTech.Account.ClientProxies.AccountCreationClient, MetraTech.Account.ClientProxies</ClientProxyType>
+      <ConfigFileLocation>extensions\Core\config\Approvals\ActivityServices.config</ConfigFileLocation>
+      <EndPointName>NetTcpBinding_IAccountCreation</EndPointName>
+    </MethodForApply>
+    <NotifyOnSubmit>
+      <Enabled>false</Enabled>
+    </NotifyOnSubmit>
+    <NotifyOnApproved>
+      <Enabled>false</Enabled>
+    </NotifyOnApproved>
+    <NotifyOnDenied>
+      <Enabled>false</Enabled>
+    </NotifyOnDenied>
+    <WebpageForView>
+      <URL>/MetraNet/ApprovalFrameworkManagement/ChangeTypeViewers/ViewAccountChangeDetails.aspx?changeid=%%CHANGE_ID%%&amp;currentstate=%%CHANGE_STATE%%&amp;showchangestate=%%SHOW_CHANGE_STATE%%</URL>
+    </WebpageForView>
+  </ChangeTypeConfiguration>
+  <ChangeTypeConfiguration>
+    <Name>ProductOfferingUpdate</Name>
+    <LocalizationTag>TEXT_PRODUCT_OFFERING_UPDATE</LocalizationTag>
+    <Description>Update of product offering effective and availability dates</Description>
+    <Enabled>false</Enabled>
+    <AllowMoreThanOnePendingChange>false</AllowMoreThanOnePendingChange>
+    <CapabilityRequiredForApproveOrDeny>Approve ProductOfferingChanges</CapabilityRequiredForApproveOrDeny>
+    <MethodForApply>
+      <Name>SaveProductOffering</Name>
+      <ClientProxyType>MetraTech.Core.Services.ClientProxies.ProductOfferingServiceClient, MetraTech.Core.Services.ClientProxies</ClientProxyType>
+      <ConfigFileLocation>extensions\Core\config\Approvals\ActivityServices.config</ConfigFileLocation>
+      <EndPointName>NetTcpBinding_IProductOfferingService</EndPointName>
+    </MethodForApply>
+    <NotifyOnSubmit>
+      <Enabled>false</Enabled>
+    </NotifyOnSubmit>
+    <NotifyOnApproved>
+      <Enabled>false</Enabled>
+    </NotifyOnApproved>
+    <NotifyOnDenied>
+      <Enabled>false</Enabled>
+    </NotifyOnDenied>
+    <WebpageForView>
+      <URL>/MetraNet/ApprovalFrameworkManagement/ChangeTypeViewers/ViewProductOfferingChangeDetails.aspx?changeid=%%CHANGE_ID%%&amp;currentstate=%%CHANGE_STATE%%&amp;showchangestate=%%SHOW_CHANGE_STATE%%</URL>
+    </WebpageForView>
+  </ChangeTypeConfiguration>
+  <ChangeTypeConfiguration>
+    <Name>Subscription.Add</Name>
+    <LocalizationTag>TEXT_SUBSCRIPTION_ADD</LocalizationTag>
+    <Description>Adding subscription to account</Description>
+    <Enabled>false</Enabled>
+    <AllowMoreThanOnePendingChange>false</AllowMoreThanOnePendingChange>
+    <CapabilityRequiredForApproveOrDeny>Approve SubscriptionChanges</CapabilityRequiredForApproveOrDeny>
+    <MethodForApply>
+      <Name>AddSubscription</Name>
+      <ClientProxyType>MetraTech.Core.Services.ClientProxies.SubscriptionServiceClient, MetraTech.Core.Services.ClientProxies</ClientProxyType>
+      <ConfigFileLocation>extensions\Core\config\Approvals\ActivityServices.config</ConfigFileLocation>
+      <EndPointName>NetTcpBinding_ISubscriptionService</EndPointName>
+    </MethodForApply>
+    <MethodForSubmit>
+      <Assembly>MetraTech.Approvals.dll</Assembly>
+      <Classname>MetraTech.Approvals.ChangeTypes.SubscriptionChangeType</Classname>
+    </MethodForSubmit>
+    <NotifyOnSubmit>
+      <Enabled>false</Enabled>
+    </NotifyOnSubmit>
+    <NotifyOnApproved>
+      <Enabled>false</Enabled>
+    </NotifyOnApproved>
+    <NotifyOnDenied>
+      <Enabled>false</Enabled>
+    </NotifyOnDenied>
+    <WebpageForView>
+      <URL>/MetraNet/ApprovalFrameworkManagement/ChangeTypeViewers/ViewSubscriptionChangeDetails.aspx?changeid=%%CHANGE_ID%%&amp;currentstate=%%CHANGE_STATE%%&amp;showchangestate=%%SHOW_CHANGE_STATE%%</URL>
+    </WebpageForView>
+  </ChangeTypeConfiguration>
+  <ChangeTypeConfiguration>
+    <Name>Subscription.Update</Name>
+    <LocalizationTag>TEXT_SUBSCRIPTION_UPDATE</LocalizationTag>
+    <Description>Updating subscription to account</Description>
+    <Enabled>false</Enabled>
+    <AllowMoreThanOnePendingChange>false</AllowMoreThanOnePendingChange>
+    <CapabilityRequiredForApproveOrDeny>Approve SubscriptionChanges</CapabilityRequiredForApproveOrDeny>
+    <MethodForApply>
+      <Name>UpdateSubscription</Name>
+      <ClientProxyType>MetraTech.Core.Services.ClientProxies.SubscriptionServiceClient, MetraTech.Core.Services.ClientProxies</ClientProxyType>
+      <ConfigFileLocation>extensions\Core\config\Approvals\ActivityServices.config</ConfigFileLocation>
+      <EndPointName>NetTcpBinding_ISubscriptionService</EndPointName>
+    </MethodForApply>
+    <MethodForSubmit>
+      <Assembly>MetraTech.Approvals.dll</Assembly>
+      <Classname>MetraTech.Approvals.ChangeTypes.SubscriptionChangeType</Classname>
+    </MethodForSubmit>
+    <NotifyOnSubmit>
+      <Enabled>false</Enabled>
+    </NotifyOnSubmit>
+    <NotifyOnApproved>
+      <Enabled>false</Enabled>
+    </NotifyOnApproved>
+    <NotifyOnDenied>
+      <Enabled>false</Enabled>
+    </NotifyOnDenied>
+    <WebpageForView>
+      <URL>/MetraNet/ApprovalFrameworkManagement/ChangeTypeViewers/ViewSubscriptionChangeDetails.aspx?changeid=%%CHANGE_ID%%&amp;currentstate=%%CHANGE_STATE%%&amp;showchangestate=%%SHOW_CHANGE_STATE%%</URL>
+    </WebpageForView>
+  </ChangeTypeConfiguration>
+  <ChangeTypeConfiguration>
+    <Name>GroupSubscription.AddMemberHierarchies</Name>
+    <LocalizationTag>TEXT_ADD_MEMBER_HIERARCHIES</LocalizationTag>
+    <Description>Adding of members and member heirarchies to group subscription</Description>
+    <Enabled>false</Enabled>
+    <AllowMoreThanOnePendingChange>true</AllowMoreThanOnePendingChange>
+    <CapabilityRequiredForApproveOrDeny>Approve GroupSubscriptionChanges</CapabilityRequiredForApproveOrDeny>
+    <MethodForApply>
+      <Name>AddMemberHierarchiesToGroupSubscription</Name>
+      <ClientProxyType>MetraTech.Core.Services.ClientProxies.GroupSubscriptionServiceClient, MetraTech.Core.Services.ClientProxies</ClientProxyType>
+      <ConfigFileLocation>extensions\Core\config\Approvals\ActivityServices.config</ConfigFileLocation>
+      <EndPointName>NetTcpBinding_IGroupSubscriptionService</EndPointName>
+    </MethodForApply>
+    <NotifyOnSubmit>
+      <Enabled>false</Enabled>
+    </NotifyOnSubmit>
+    <NotifyOnApproved>
+      <Enabled>false</Enabled>
+    </NotifyOnApproved>
+    <NotifyOnDenied>
+      <Enabled>false</Enabled>
+    </NotifyOnDenied>
+    <WebpageForView>
+      <URL>/MetraNet/ApprovalFrameworkManagement/ChangeTypeViewers/ViewGroupSubscriptionMemberUpdateDetails.aspx?changeid=%%CHANGE_ID%%&amp;currentstate=%%CHANGE_STATE%%&amp;showchangestate=%%SHOW_CHANGE_STATE%%</URL>
+    </WebpageForView>
+  </ChangeTypeConfiguration>
+  <ChangeTypeConfiguration>
+    <Name>GroupSubscription.AddMembers</Name>
+    <LocalizationTag>TEXT_GROUP_SUBSCRIPTION_ADD_MEMBERS</LocalizationTag>
+    <Description>Adding of members to group subscription</Description>
+    <Enabled>false</Enabled>
+    <AllowMoreThanOnePendingChange>true</AllowMoreThanOnePendingChange>
+    <CapabilityRequiredForApproveOrDeny>Approve GroupSubscriptionChanges</CapabilityRequiredForApproveOrDeny>
+    <MethodForApply>
+      <Name>AddMembersToGroupSubscription</Name>
+      <ClientProxyType>MetraTech.Core.Services.ClientProxies.GroupSubscriptionServiceClient, MetraTech.Core.Services.ClientProxies</ClientProxyType>
+      <ConfigFileLocation>extensions\Core\config\Approvals\ActivityServices.config</ConfigFileLocation>
+      <EndPointName>NetTcpBinding_IGroupSubscriptionService</EndPointName>
+    </MethodForApply>
+    <NotifyOnSubmit>
+      <Enabled>false</Enabled>
+    </NotifyOnSubmit>
+    <NotifyOnApproved>
+      <Enabled>false</Enabled>
+    </NotifyOnApproved>
+    <NotifyOnDenied>
+      <Enabled>false</Enabled>
+    </NotifyOnDenied>
+    <WebpageForView>
+      <URL>/MetraNet/ApprovalFrameworkManagement/ChangeTypeViewers/ViewGroupSubscriptionMemberUpdateDetails.aspx?changeid=%%CHANGE_ID%%&amp;currentstate=%%CHANGE_STATE%%&amp;showchangestate=%%SHOW_CHANGE_STATE%%</URL>
+    </WebpageForView>
+  </ChangeTypeConfiguration>
+  <ChangeTypeConfiguration>
+    <Name>GroupSubscription.DeleteMembers</Name>
+    <LocalizationTag>TEXT_GROUP_SUBSCRIPTION_DELETE_MEMBERS</LocalizationTag>
+    <Description>Removing of members to group subscription</Description>
+    <Enabled>false</Enabled>
+    <AllowMoreThanOnePendingChange>true</AllowMoreThanOnePendingChange>
+    <CapabilityRequiredForApproveOrDeny>Approve GroupSubscriptionChanges</CapabilityRequiredForApproveOrDeny>
+    <MethodForApply>
+      <Name>DeleteMembersFromGroupSubscription</Name>
+      <ClientProxyType>MetraTech.Core.Services.ClientProxies.GroupSubscriptionServiceClient, MetraTech.Core.Services.ClientProxies</ClientProxyType>
+      <ConfigFileLocation>extensions\Core\config\Approvals\ActivityServices.config</ConfigFileLocation>
+      <EndPointName>NetTcpBinding_IGroupSubscriptionService</EndPointName>
+    </MethodForApply>
+    <NotifyOnSubmit>
+      <Enabled>false</Enabled>
+    </NotifyOnSubmit>
+    <NotifyOnApproved>
+      <Enabled>false</Enabled>
+    </NotifyOnApproved>
+    <NotifyOnDenied>
+      <Enabled>false</Enabled>
+    </NotifyOnDenied>
+    <WebpageForView>
+      <URL>/MetraNet/ApprovalFrameworkManagement/ChangeTypeViewers/ViewGroupSubscriptionMemberUpdateDetails.aspx?changeid=%%CHANGE_ID%%&amp;currentstate=%%CHANGE_STATE%%&amp;showchangestate=%%SHOW_CHANGE_STATE%%&amp;changetype=%%CHANGE_TYPE%%</URL>
+    </WebpageForView>
+  </ChangeTypeConfiguration>
+  <ChangeTypeConfiguration>
+    <Name>GroupSubscription.UpdateMember</Name>
+    <LocalizationTag>TEXT_GROUP_SUBSCRIPTION_UPDATE_MEMBERS</LocalizationTag>
+    <Description>Updating of members to group subscription</Description>
+    <Enabled>false</Enabled>
+    <AllowMoreThanOnePendingChange>true</AllowMoreThanOnePendingChange>
+    <CapabilityRequiredForApproveOrDeny>Approve GroupSubscriptionChanges</CapabilityRequiredForApproveOrDeny>
+    <MethodForApply>
+      <Name>UpdateGroupSubscriptionMember</Name>
+      <ClientProxyType>MetraTech.Core.Services.ClientProxies.GroupSubscriptionServiceClient, MetraTech.Core.Services.ClientProxies</ClientProxyType>
+      <ConfigFileLocation>extensions\Core\config\Approvals\ActivityServices.config</ConfigFileLocation>
+      <EndPointName>NetTcpBinding_IGroupSubscriptionService</EndPointName>
+    </MethodForApply>
+    <NotifyOnSubmit>
+      <Enabled>false</Enabled>
+    </NotifyOnSubmit>
+    <NotifyOnApproved>
+      <Enabled>false</Enabled>
+    </NotifyOnApproved>
+    <NotifyOnDenied>
+      <Enabled>false</Enabled>
+    </NotifyOnDenied>
+    <WebpageForView>
+      <URL>/MetraNet/ApprovalFrameworkManagement/ChangeTypeViewers/ViewGroupSubscriptionMemberUpdateDetails.aspx?changeid=%%CHANGE_ID%%&amp;currentstate=%%CHANGE_STATE%%&amp;showchangestate=%%SHOW_CHANGE_STATE%%</URL>
+    </WebpageForView>
+  </ChangeTypeConfiguration>
+  <ChangeTypeConfiguration>
+    <Name>GroupSubscription.UnsubscribeMembers</Name>
+    <LocalizationTag>TEXT_GROUP_SUBSCRIPTION_UNSUBSCRIBE_MEMBERS</LocalizationTag>
+    <Description>Unsubscribing of members from group subscription</Description>
+    <Enabled>false</Enabled>
+    <AllowMoreThanOnePendingChange>true</AllowMoreThanOnePendingChange>
+    <CapabilityRequiredForApproveOrDeny>Approve GroupSubscriptionChanges</CapabilityRequiredForApproveOrDeny>
+    <MethodForApply>
+      <Name>UnsubscribeGroupSubscriptionMembers</Name>
+      <ClientProxyType>MetraTech.Core.Services.ClientProxies.GroupSubscriptionServiceClient, MetraTech.Core.Services.ClientProxies</ClientProxyType>
+      <ConfigFileLocation>extensions\Core\config\Approvals\ActivityServices.config</ConfigFileLocation>
+      <EndPointName>NetTcpBinding_IGroupSubscriptionService</EndPointName>
+    </MethodForApply>
+    <NotifyOnSubmit>
+      <Enabled>false</Enabled>
+    </NotifyOnSubmit>
+    <NotifyOnApproved>
+      <Enabled>false</Enabled>
+    </NotifyOnApproved>
+    <NotifyOnDenied>
+      <Enabled>false</Enabled>
+    </NotifyOnDenied>
+    <WebpageForView>
+      <URL>/MetraNet/ApprovalFrameworkManagement/ChangeTypeViewers/ViewGroupSubscriptionMemberUpdateDetails.aspx?changeid=%%CHANGE_ID%%&amp;currentstate=%%CHANGE_STATE%%&amp;showchangestate=%%SHOW_CHANGE_STATE%%</URL>
+    </WebpageForView>
+  </ChangeTypeConfiguration>
+</ArrayOfChangeTypeConfiguration>

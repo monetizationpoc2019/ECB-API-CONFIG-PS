@@ -1,0 +1,181 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<GridLayout xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <Name>AccountBillManager</Name>
+    <Title>
+        <LocalizationTag>GRID_TITLE</LocalizationTag>
+        <ResourceClassKey />
+    </Title>
+    <Exportable>true</Exportable>
+    <Height>400</Height>
+    <Width>720</Width>
+    <Expandable>false</Expandable>
+    <Buttons>Custom</Buttons>
+    <DataSourceURL>AjaxServices/AccountBillAjaxService.aspx?action=GetAccountBillManager</DataSourceURL>
+    <MultiSelect>true</MultiSelect>
+    <SelectionModel>CheckBox</SelectionModel>
+    <TotalProperty>TotalRows</TotalProperty>
+    <RootElement>Items</RootElement>
+    <PageSize>10</PageSize>
+    <Description>AccountBillManager grid layout</Description>
+    <ExpansionCssClass />
+    <ShowFilterPanel>true</ShowFilterPanel>
+    <FilterInputWidth>220</FilterInputWidth>
+    <FilterLabelWidth>75</FilterLabelWidth>
+    <FilterColumnWidth>350</FilterColumnWidth>
+    <ShowTopBar>true</ShowTopBar>
+    <ShowBottomBar>true</ShowBottomBar>
+    <ShowGridFrame>true</ShowGridFrame>
+    <ShowGridHeader>true</ShowGridHeader>
+    <ShowColumnHeaders>true</ShowColumnHeaders>
+    <NoRecordsText>
+        <LocalizationTag>TEXT_NO_RECORDS_FOUND</LocalizationTag>
+        <ResourceClassKey>App_GlobalResources/Resource</ResourceClassKey>
+    </NoRecordsText>
+    <FilterPanelLayout>MultiColumn</FilterPanelLayout>
+    <FilterPanelCollapsed>false</FilterPanelCollapsed>
+    <EnableColumnConfig>true</EnableColumnConfig>
+    <EnableFilterConfig>true</EnableFilterConfig>
+    <Resizeable>true</Resizeable>
+    <ButtonAlignment>Center</ButtonAlignment>
+    <DefaultSortField>BillManager</DefaultSortField>
+    <DefaultSortDirection>Ascending</DefaultSortDirection>
+    <DisplayCount>true</DisplayCount>
+    <SearchOnLoad>true</SearchOnLoad>
+    <CustomImplementationFilePath />
+    <DataBinder>
+        <ServicePath>/MetraNet/AjaxServices/GetData.aspx</ServicePath>
+        <OutPropertyName />
+        <Operation>__Client</Operation>
+    </DataBinder>
+    <SubGrid />
+    <CustomOverrideJavascriptIncludes>\MetraNet\Relationships\js\AccountBill.js</CustomOverrideJavascriptIncludes>
+    <FilterLabelWrap>None</FilterLabelWrap>
+    <Elements>
+        <Element>
+            <RecordElement>true</RecordElement>
+            <AssemblyFilename>O:\debug\Bin\MetraTech.DomainModel.Billing.dll</AssemblyFilename>
+            <ObjectName>MetraTech.DomainModel.Billing.AccountBillManager</ObjectName>
+            <ID>BillManager</ID>
+            <DataType>String</DataType>
+            <IsIdentity>false</IsIdentity>
+            <DataIndex>BillManager</DataIndex>
+            <IsColumn>true</IsColumn>
+            <HeaderText>
+                <LocalizationTag>TEXT_BILL_MANAGER</LocalizationTag>
+                <ResourceClassKey>Relationships/App_LocalResources/AccountBillManager.aspx</ResourceClassKey>
+            </HeaderText>
+            <Formatter />
+            <Width>200</Width>
+            <Resizeable>true</Resizeable>
+            <PreventSortable>false</PreventSortable>
+            <Sortable>true</Sortable>
+            <ColumnHideable>true</ColumnHideable>
+            <DefaultColumn>true</DefaultColumn>
+            <Exportable>true</Exportable>
+            <ShowInExpander>false</ShowInExpander>
+            <Filterable>true</Filterable>
+            <FilterHideable>true</FilterHideable>
+            <DefaultFilter>true</DefaultFilter>
+            <RequiredFilter>false</RequiredFilter>
+            <FilterLabel>
+                <LocalizationTag>TEXT_BILL_MANAGER</LocalizationTag>
+                <ResourceClassKey>Relationships/App_LocalResources/AccountBillManager.aspx</ResourceClassKey>
+            </FilterLabel>
+            <ElementValue>
+                <Value />
+            </ElementValue>
+            <ElementValue2>
+                <Value />
+            </ElementValue2>
+            <FilterReadOnly>false</FilterReadOnly>
+            <DropdownItems />
+        </Element>
+        <Element>
+            <RecordElement>true</RecordElement>
+            <AssemblyFilename>O:\debug\Bin\MetraTech.DomainModel.Billing.dll</AssemblyFilename>
+            <ObjectName>MetraTech.DomainModel.Billing.AccountBillManager</ObjectName>
+            <ID>AdminID</ID>
+            <DataType>Numeric</DataType>
+            <IsIdentity>true</IsIdentity>
+            <DataIndex>AdminID</DataIndex>
+            <IsColumn>false</IsColumn>
+            <HeaderText>
+                <LocalizationTag>TEXT_ACCOUNT_ADMIN_ID</LocalizationTag>
+                <ResourceClassKey>Relationships/App_LocalResources/AccountBillManager.aspx</ResourceClassKey>
+            </HeaderText>
+            <Formatter />
+            <Width>120</Width>
+            <Resizeable>true</Resizeable>
+            <PreventSortable>false</PreventSortable>
+            <Sortable>true</Sortable>
+            <ColumnHideable>true</ColumnHideable>
+            <DefaultColumn>true</DefaultColumn>
+            <Exportable>true</Exportable>
+            <ShowInExpander>false</ShowInExpander>
+            <Filterable>true</Filterable>
+            <FilterHideable>true</FilterHideable>
+            <DefaultFilter>true</DefaultFilter>
+            <RequiredFilter>false</RequiredFilter>
+            <FilterLabel>
+                <LocalizationTag>TEXT_ACCOUNT_ADMIN_ID</LocalizationTag>
+                <ResourceClassKey>Relationships/App_LocalResources/AccountBillManager.aspx</ResourceClassKey>
+            </FilterLabel>
+            <ElementValue>
+                <Value />
+            </ElementValue>
+            <ElementValue2>
+                <Value />
+            </ElementValue2>
+            <FilterReadOnly>false</FilterReadOnly>
+            <DropdownItems />
+        </Element>
+        <Element>
+            <RecordElement>false</RecordElement>
+            <ID>actions</ID>
+            <DataIndex>actionscolumn</DataIndex>
+            <IsColumn>true</IsColumn>
+            <HeaderText>
+                <LocalizationTag>HEADER_ACTIONS_COLUMN</LocalizationTag>
+                <ResourceClassKey>Relationships/App_LocalResources/AccountBillManager.aspx</ResourceClassKey>
+            </HeaderText>
+            <Formatter />
+            <Width>50</Width>
+            <Resizeable>true</Resizeable>
+            <PreventSortable>false</PreventSortable>
+            <Sortable>false</Sortable>
+            <ColumnHideable>true</ColumnHideable>
+            <DefaultColumn>true</DefaultColumn>
+            <Filterable>false</Filterable>
+        </Element>
+    </Elements>
+    <ExpanderTemplate />
+    <GridButtons />
+    <ToolbarButtons>
+        <Button>
+            <ButtonID>Add</ButtonID>
+            <ButtonText>
+                <LocalizationTag>TEXT_ADD</LocalizationTag>
+                <ResourceClassKey>Relationships/App_LocalResources/AccountBillManager.aspx</ResourceClassKey>
+            </ButtonText>
+            <ToolTip>
+                <Value />
+            </ToolTip>
+            <IconClass>add</IconClass>
+            <RequiredCapabilities />
+            <JSHandlerFunction>onAdd</JSHandlerFunction>
+        </Button>
+        <Button>
+            <ButtonID>Remove</ButtonID>
+            <ButtonText>
+                <LocalizationTag>TEXT_REMOVE</LocalizationTag>
+                <ResourceClassKey>Relationships/App_LocalResources/AccountBillManager.aspx</ResourceClassKey>
+            </ButtonText>
+            <ToolTip>
+                <Value />
+            </ToolTip>
+            <IconClass>remove</IconClass>
+            <RequiredCapabilities />
+            <JSHandlerFunction>onRemove</JSHandlerFunction>
+        </Button>
+    </ToolbarButtons>
+</GridLayout>

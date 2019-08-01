@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<mt_config>
+  <language_code>de</language_code>
+  <locale_space name="metratech.com/flatdiscount_nocond">
+    <locale_entry>
+      <Name>metratech.com/flatdiscount_nocond</Name>
+      <Value>Bedingungsloser Pauschalrabatt</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/flatdiscount_nocond/DiscountIntervalEnd</Name>
+      <Value>Enddatum des Rabattintervalls</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/flatdiscount_nocond/DiscountIntervalStart</Name>
+      <Value>Anfangsdatum des Rabattintervalls</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/flatdiscount_nocond/DiscountIntervalSubEnd</Name>
+      <Value>Enddatum der Rabattintervallnutzung</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/flatdiscount_nocond/DiscountIntervalSubStart</Name>
+      <Value>Anfangsdatum der Rabattintervallnutzung</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/flatdiscount_nocond/GroupSubscriptionName</Name>
+      <Value>Gruppennutzungsanmeldung</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/flatdiscount_nocond/SubscriptionEnd</Name>
+      <Value>Enddatum der Nutzungsanmeldung</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/flatdiscount_nocond/SubscriptionStart</Name>
+      <Value>Anfangsdatum der Nutzungsanmeldung</Value>
+    </locale_entry>
+  </locale_space>
+</mt_config>

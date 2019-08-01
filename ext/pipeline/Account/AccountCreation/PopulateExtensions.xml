@@ -1,0 +1,275 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xmlconfig>
+  <mtsysconfigdata>
+    <effective_date ptype="DATETIME">1998-11-19T00:00:00Z</effective_date>
+    <timeout ptype="INTEGER">30</timeout>
+    <configfiletype>CONFIG_DATA</configfiletype>
+  </mtsysconfigdata>
+
+  <mtconfigdata>
+
+    <version ptype="INTEGER">1</version>
+    <!-- First processor configuration -->
+    <processor>
+      <name>PopulateExtensions</name>
+      <progid>MetraPipeline.MTCopyAccountProperties.1</progid>
+      <description>Copy properties from the session to an account extension.</description>
+      
+      <inputs />
+      <outputs />
+
+  
+      <!-- Processor specific configuration data -->
+      <configdata>
+  	    <DestinationAccountID>_AccountID</DestinationAccountID>
+
+        <Properties>
+          <!-- t_av_internal data -->
+          <Property>
+            <Type>Session</Type>
+            <Required ptype="BOOLEAN">False</Required>
+            <SourceProperty>taxexempt</SourceProperty>
+            <DestinationProperty>taxexempt</DestinationProperty>
+            <DestinationExtension>Internal</DestinationExtension>
+          </Property>
+
+          <Property>
+            <Type>Session</Type>
+            <Required ptype="BOOLEAN">False</Required>
+            <SourceProperty>TaxExemptID</SourceProperty>
+            <DestinationProperty>TaxExemptID</DestinationProperty>
+            <DestinationExtension>Internal</DestinationExtension>
+          </Property>
+
+          <Property>
+            <Type>Session</Type>
+            <Required ptype="BOOLEAN">False</Required>
+            <SourceProperty>timezoneID</SourceProperty>
+            <DestinationProperty>timezoneID</DestinationProperty>
+            <DestinationExtension>Internal</DestinationExtension>
+          </Property>
+
+          <Property>
+            <Type>Session</Type>
+            <Required ptype="BOOLEAN">False</Required>
+            <SourceProperty>PaymentMethod</SourceProperty>
+            <DestinationProperty>PaymentMethod</DestinationProperty>
+            <DestinationExtension>Internal</DestinationExtension>
+          </Property>
+
+          
+          <Property>
+            <Type>Session</Type>
+            <Required ptype="BOOLEAN">False</Required>
+            <SourceProperty>SecurityQuestion</SourceProperty>
+            <DestinationProperty>SecurityQuestion</DestinationProperty>
+            <DestinationExtension>Internal</DestinationExtension>
+          </Property>
+
+          <Property>
+            <Type>Session</Type>
+            <Required ptype="BOOLEAN">False</Required>
+            <SourceProperty>SecurityAnswer</SourceProperty>
+            <DestinationProperty>SecurityAnswer</DestinationProperty>
+            <DestinationExtension>Internal</DestinationExtension>
+          </Property>
+
+          <Property>
+            <Type>Session</Type>
+            <Required ptype="BOOLEAN">False</Required>
+            <SourceProperty>InvoiceMethod</SourceProperty>
+            <DestinationProperty>InvoiceMethod</DestinationProperty>
+            <DestinationExtension>Internal</DestinationExtension>
+          </Property>
+          
+          <Property>
+            <Type>Session</Type>
+            <Required ptype="BOOLEAN">False</Required>
+            <SourceProperty>UsageCycleType</SourceProperty>
+            <DestinationProperty>UsageCycleType</DestinationProperty>
+            <DestinationExtension>Internal</DestinationExtension>
+          </Property>
+          
+          <Property>
+            <Type>Session</Type>
+            <Required ptype="BOOLEAN">False</Required>
+            <SourceProperty>Language</SourceProperty>
+            <DestinationProperty>Language</DestinationProperty>
+            <DestinationExtension>Internal</DestinationExtension>
+          </Property>
+          
+          <Property>
+            <Type>Session</Type>
+            <Required ptype="BOOLEAN">False</Required>
+            <SourceProperty>StatusReason</SourceProperty>
+            <DestinationProperty>StatusReason</DestinationProperty>
+            <DestinationExtension>Internal</DestinationExtension>
+          </Property>
+          
+          <Property>
+            <Type>Session</Type>
+            <Required ptype="BOOLEAN">False</Required>
+            <SourceProperty>StatusReasonOther</SourceProperty>
+            <DestinationProperty>StatusReasonOther</DestinationProperty>
+            <DestinationExtension>Internal</DestinationExtension>
+          </Property>
+
+          <Property>
+            <Type>Session</Type>
+            <Required ptype="BOOLEAN">False</Required>
+            <SourceProperty>currency</SourceProperty>
+            <DestinationProperty>currency</DestinationProperty>
+            <DestinationExtension>Internal</DestinationExtension>
+          </Property>
+
+          <Property>
+            <Type>Session</Type>
+            <Required ptype="BOOLEAN">False</Required>
+            <SourceProperty>resolved_pricelist</SourceProperty>
+            <DestinationProperty>pricelist</DestinationProperty>
+            <DestinationExtension>Internal</DestinationExtension>
+          </Property>
+          
+          <Property>
+            <Type>Session</Type>
+            <Required ptype="BOOLEAN">False</Required>
+            <SourceProperty>billable</SourceProperty>
+            <DestinationProperty>billable</DestinationProperty>
+            <DestinationExtension>Internal</DestinationExtension>
+          </Property>
+          
+          <Property>
+            <Type>Session</Type>
+            <Required ptype="BOOLEAN">False</Required>
+            <SourceProperty>folder</SourceProperty>
+            <DestinationProperty>folder</DestinationProperty>
+            <DestinationExtension>Internal</DestinationExtension>
+          </Property>
+          
+          
+          <!-- t_av_contact properties -->
+          <Property>
+            <Type>Session</Type>
+            <Required ptype="BOOLEAN">False</Required>
+            <SourceProperty>ContactType</SourceProperty>
+            <DestinationProperty>contacttype</DestinationProperty>
+            <DestinationExtension>LDAP</DestinationExtension>
+            <PartOfKey ptype="BOOLEAN">True</PartOfKey>
+          </Property>
+
+          <Property>
+            <Type>Session</Type>
+            <Required ptype="BOOLEAN">False</Required>
+            <SourceProperty>firstname</SourceProperty>
+            <DestinationProperty>firstname</DestinationProperty>
+            <DestinationExtension>LDAP</DestinationExtension>
+          </Property>
+
+          <Property>
+            <Type>Session</Type>
+            <Required ptype="BOOLEAN">False</Required>
+            <SourceProperty>lastname</SourceProperty>
+            <DestinationProperty>lastname</DestinationProperty>
+            <DestinationExtension>LDAP</DestinationExtension>
+          </Property>
+
+          <Property>
+            <Type>Session</Type>
+            <Required ptype="BOOLEAN">False</Required>
+            <SourceProperty>email</SourceProperty>
+            <DestinationProperty>email</DestinationProperty>
+            <DestinationExtension>LDAP</DestinationExtension>
+          </Property>
+          
+          <Property>
+            <Type>Session</Type>
+            <Required ptype="BOOLEAN">False</Required>
+            <SourceProperty>phonenumber</SourceProperty>
+            <DestinationProperty>phonenumber</DestinationProperty>
+            <DestinationExtension>LDAP</DestinationExtension>
+          </Property>
+          
+          <Property>
+            <Type>Session</Type>
+            <Required ptype="BOOLEAN">False</Required>
+            <SourceProperty>company</SourceProperty>
+            <DestinationProperty>company</DestinationProperty>
+            <DestinationExtension>LDAP</DestinationExtension>
+          </Property>
+          
+          <Property>
+            <Type>Session</Type>
+            <Required ptype="BOOLEAN">False</Required>
+            <SourceProperty>address1</SourceProperty>
+            <DestinationProperty>address1</DestinationProperty>
+            <DestinationExtension>LDAP</DestinationExtension>
+          </Property>
+
+          <Property>
+            <Type>Session</Type>
+            <Required ptype="BOOLEAN">False</Required>
+            <SourceProperty>address2</SourceProperty>
+            <DestinationProperty>address2</DestinationProperty>
+            <DestinationExtension>LDAP</DestinationExtension>
+          </Property>
+
+          <Property>
+            <Type>Session</Type>
+            <Required ptype="BOOLEAN">False</Required>
+            <SourceProperty>address3</SourceProperty>
+            <DestinationProperty>address3</DestinationProperty>
+            <DestinationExtension>LDAP</DestinationExtension>
+          </Property>
+
+          <Property>
+            <Type>Session</Type>
+            <Required ptype="BOOLEAN">False</Required>
+            <SourceProperty>city</SourceProperty>
+            <DestinationProperty>city</DestinationProperty>
+            <DestinationExtension>LDAP</DestinationExtension>
+          </Property>
+
+          <Property>
+            <Type>Session</Type>
+            <Required ptype="BOOLEAN">False</Required>
+            <SourceProperty>state</SourceProperty>
+            <DestinationProperty>state</DestinationProperty>
+            <DestinationExtension>LDAP</DestinationExtension>
+          </Property>
+          
+          <Property>
+            <Type>Session</Type>
+            <Required ptype="BOOLEAN">False</Required>
+            <SourceProperty>zip</SourceProperty>
+            <DestinationProperty>zip</DestinationProperty>
+            <DestinationExtension>LDAP</DestinationExtension>
+          </Property>
+
+          <Property>
+            <Type>Session</Type>
+            <Required ptype="BOOLEAN">False</Required>
+            <SourceProperty>country</SourceProperty>
+            <DestinationProperty>country</DestinationProperty>
+            <DestinationExtension>LDAP</DestinationExtension>
+          </Property>
+          
+          <Property>
+            <Type>Session</Type>
+            <Required ptype="BOOLEAN">False</Required>
+            <SourceProperty>facsimiletelephonenumber</SourceProperty>
+            <DestinationProperty>facsimiletelephonenumber</DestinationProperty>
+            <DestinationExtension>LDAP</DestinationExtension>
+          </Property>
+
+          <Property>
+            <Type>Session</Type>
+            <Required ptype="BOOLEAN">False</Required>
+            <SourceProperty>middleinitial</SourceProperty>
+            <DestinationProperty>middleinitial</DestinationProperty>
+            <DestinationExtension>LDAP</DestinationExtension>
+          </Property>        
+        </Properties>
+      </configdata>
+    </processor>
+  </mtconfigdata>
+</xmlconfig>

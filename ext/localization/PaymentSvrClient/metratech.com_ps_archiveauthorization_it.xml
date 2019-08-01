@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<mt_config>
+  <language_code>it</language_code>
+  <locale_space name="metratech.com/ps_archiveauthorization">
+    <locale_entry>
+      <Name>metratech.com/ps_archiveauthorization</Name>
+      <Value>Visualizzazione Archivia autorizzazione prodotto</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ps_archiveauthorization/bankaccounttype</Name>
+      <Value>Tipo di conto bancario</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ps_archiveauthorization/creditcardtype</Name>
+      <Value>Tipo di carta di credito</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ps_archiveauthorization/description</Name>
+      <Value>Descrizione</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ps_archiveauthorization/effectivedate</Name>
+      <Value>Data effettiva</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ps_archiveauthorization/lastfourdigits</Name>
+      <Value>Ultime quattro cifre della carta di credito o del conto bancario</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ps_archiveauthorization/originalaccountid</Name>
+      <Value>ID abbonato</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ps_archiveauthorization/password_</Name>
+      <Value>Password abbonato</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ps_archiveauthorization/paymenttype</Name>
+      <Value>Tipo di pagamento</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ps_archiveauthorization/routing number</Name>
+      <Value>ABA/Coordinate bancarie</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ps_archiveauthorization/routingnumber</Name>
+      <Value>Numero di routing</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ps_archiveauthorization/username</Name>
+      <Value>Nome utente dell'abbonato</Value>
+    </locale_entry>
+  </locale_space>
+</mt_config>

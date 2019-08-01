@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<mt_config>
+  <language_code>it</language_code>
+  <locale_space name="metratech.com/ps_cc_credit">
+    <locale_entry>
+      <Name>metratech.com/ps_cc_credit</Name>
+      <Value>Accredito riuscito</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ps_cc_credit/CreditCardType</Name>
+      <Value>Tipo di carta di credito</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ps_cc_credit/csrid</Name>
+      <Value>ID RSC</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ps_cc_credit/exported</Name>
+      <Value>Indicatore esportato</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ps_cc_credit/LastFourDigits</Name>
+      <Value>Ultime quattro cifre</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ps_cc_credit/OriginalAccountID</Name>
+      <Value>ID conto originale</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ps_cc_credit/paymentservicetransactionid</Name>
+      <Value>ID transazione del fornitore del servizio di pagamento</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ps_cc_credit/Reason</Name>
+      <Value>Motivo per accredito</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ps_cc_credit/RespString</Name>
+      <Value>Descrizione della risposta</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ps_cc_credit/retcode</Name>
+      <Value>Codice restituzione</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ps_cc_credit/terminalid</Name>
+      <Value>ID terminale</Value>
+    </locale_entry>
+  </locale_space>
+</mt_config>

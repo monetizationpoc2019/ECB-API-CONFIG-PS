@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xmlconfig>
+  <mtsysconfigdata>
+    <effective_date ptype="DATETIME">2001-04-06T21:46:29Z</effective_date>
+    <timeout ptype="INTEGER">365</timeout>
+    <configfiletype>CONFIG_DATA</configfiletype>
+  </mtsysconfigdata>
+  <mtconfigdata>
+    <version ptype="INTEGER">1</version>
+    <processor>
+      <name>RCRateLookup</name>
+      <progid>MetraPipeline.PCRate.1</progid>
+      <description>Retrieve the Flat Recurring Charge rate information from the product catalog</description>
+      <inputs>
+      </inputs>
+      <outputs>
+        <output type="DECIMAL">RCAmount</output>
+      </outputs>
+
+      <configdata>
+
+        <ResolveSubscription ptype="BOOLEAN">False</ResolveSubscription>
+  
+        <!-- lookup from a named parameter table -->
+        <RateLookup>
+          <ParamTable>metratech.com/FlatRecurringCharge</ParamTable>
+        </RateLookup>
+        <properties>
+            <_Timestamp>RateDate</_Timestamp>
+        </properties>
+
+      </configdata>
+    </processor>
+  </mtconfigdata>
+</xmlconfig>

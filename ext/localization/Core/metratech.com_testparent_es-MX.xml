@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<mt_config>
+  <language_code>es-MX</language_code>
+  <locale_space name="metratech.com/testparent">
+    <locale_entry>
+      <Name>metratech.com/testparent</Name>
+      <Value>Probar principal</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/testparent/description</Name>
+      <Value>Descripción</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/testparent/time</Name>
+      <Value>Hora</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/testparent/totalamount</Name>
+      <Value>Monto total</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/testparent/totalunits</Name>
+      <Value>Unidades totales</Value>
+    </locale_entry>
+  </locale_space>
+</mt_config>

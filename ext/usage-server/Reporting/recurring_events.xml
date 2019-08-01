@@ -1,0 +1,600 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xmlconfig>
+    <version ptype="INTEGER">2</version>
+    <ScheduledAdapters>
+        <Adapter>
+            <Name>ScheduledInvoicePDFAdapter</Name>
+            <DisplayName>ScheduledInvoicePDFAdapter</DisplayName>
+            <ClassID>MetraTech.Reports.Adapters.ScheduledInvoicePDFAdapter,MetraTech.Reports.Adapters</ClassID>
+            <ConfigFile>ScheduledInvoicePDFAdapter.xml</ConfigFile>
+            <Description>Adapter responsible for submitting PDFgeneration requests to the reporting server for On-Demand invoices</Description>
+            <RecurrencePattern>
+                <Manual />
+            </RecurrencePattern>
+            <Dependencies>
+                <DependsOn>ScheduledInvoices</DependsOn>
+            </Dependencies>
+        </Adapter>
+        <!--Adapter>
+            <Name>BeginGenerateDunningLetters</Name>
+            <DisplayName>Begin Generate Dunning Letters</DisplayName>
+            <ClassID>MetraTech.Reports.Adapters.BeginGenerateReports,MetraTech.Reports.Adapters</ClassID>
+            <ConfigFile>GenerateDunningLetters.xml</ConfigFile>
+            <Description>BeginGenerateDunningLetters pdf</Description>
+            <RecurrencePattern>
+                <Manual />
+            </RecurrencePattern>
+            <Dependencies></Dependencies>
+        </Adapter-->
+        <!-- [TODO]: Remove this Adapter. For QA only. -->
+        <Adapter>
+            <Name>GenerateReportingDatamartsScheduled</Name>
+            <DisplayName>Generate and/or Populate Reporting Data Marts Schedule</DisplayName>
+            <ClassID>MetraTech.Reports.Adapters.GenerateReportingDatamartsAdapter,MetraTech.Reports.Adapters</ClassID>
+            <ConfigFile>GenerateReportingDatamartsScheduled.xml</ConfigFile>
+            <Description>Standard MetraTech Adapter is used to populate reporting data marts from product views</Description>
+            <LocalizedItems>
+                <item lang="FR">
+                    <DisplayName>Générer et/ou compléter les Datamarts de rapports</DisplayName>
+                    <Description>L'adaptateur MetraTech standard sert à compléter les Datamarts de rapports dans les vues produit</Description>
+                </item>
+                <item lang="IT">
+                    <DisplayName>[IT] Generate and/or Populate Reporting Data Marts</DisplayName>
+                    <Description>
+            [IT]
+            Standard MetraTech Adapter is used to populate reporting data marts
+        from product views
+      </Description>
+                </item>
+                <item lang="ES">
+                    <DisplayName>[ES] Generate and/or Populate Reporting Data Marts</DisplayName>
+                    <Description>
+            [ES]
+            Standard MetraTech Adapter is used to populate reporting data marts
+        from product views
+      </Description>
+                </item>
+                <item lang="DE">
+                    <DisplayName>[DE] Generate and/or Populate Reporting Data Marts</DisplayName>
+                    <Description>
+            [DE]
+            Standard MetraTech Adapter is used to populate reporting data marts
+        from product views
+      </Description>
+                </item>
+                <item lang="es-MX">
+                    <DisplayName>[es-MX] Generate and/or Populate Reporting Data Marts</DisplayName>
+                    <Description>
+            [es-MX]
+            Standard MetraTech Adapter is used to populate reporting data marts
+        from product views
+      </Description>
+                </item>
+                <item lang="pt-BR">
+                    <DisplayName>Gerar e/ou preencher Data Marts de relatório</DisplayName>
+                    <Description>Adapter MetraTech padrão é usado para preencher data marts relatórios a partir de pontos de vista de produtos</Description>
+                </item>
+                <item lang="en-GB">
+                    <DisplayName>[en-GB] Generate and/or Populate Reporting Data Marts</DisplayName>
+                    <Description>
+            [en-GB]
+            Standard MetraTech Adapter is used to populate reporting data marts
+        from product views
+      </Description>
+                </item>
+                <item lang="JA">
+                    <DisplayName>[JA] Generate and/or Populate Reporting Data Marts</DisplayName>
+                    <Description>
+            [JA]
+            Standard MetraTech Adapter is used to populate reporting data marts
+        from product views
+      </Description>
+                </item>
+            </LocalizedItems>
+            <RecurrencePattern>
+                <Manual />
+            </RecurrencePattern>
+            <Dependencies />
+        </Adapter>
+        <!--Adapter>
+            <Name>DunningLetterEmailAdapter</Name>
+            <DisplayName>Dunning Letter Email Adapter</DisplayName>
+            <ClassID>MetraTech.UsageServer.Adapters.DunningLetterEmailAdapter,MetraTech.UsageServer.Adapters</ClassID>
+            <ConfigFile>DunningLetterEmailAdapter.xml</ConfigFile>
+            <Description>Sends dunning letter emails to subscribers on a scheduled basis.</Description>
+            <RecurrencePattern>
+        <Daily>
+          <Start>1/1/2010 12:00:00 AM</Start>
+          <Interval>1</Interval>
+          <Times>5:00 AM</Times>
+        </Daily>
+      </RecurrencePattern>
+        </Adapter-->
+    </ScheduledAdapters>
+    <EndOfPeriodAdapters>
+        <Adapter>
+            <Name>GenerateReportingDatamarts</Name>
+            <DisplayName>Generate and/or Populate Reporting Data Marts</DisplayName>
+            <ClassID>MetraTech.Reports.Adapters.GenerateReportingDatamartsAdapter,MetraTech.Reports.Adapters</ClassID>
+            <ConfigFile>GenerateReportingDatamarts.xml</ConfigFile>
+            <Description>
+        Standard MetraTech Adapter is used to populate reporting data marts
+        from product views
+      </Description>
+            <LocalizedItems>
+                <item lang="FR">
+                    <DisplayName>Générer et/ou compléter les Datamarts de rapports</DisplayName>
+                    <Description>
+        L'adaptateur MetraTech standard sert à compléter les Datamarts de rapports         dans les vues produit      </Description>
+                </item>
+                <item lang="IT">
+                    <DisplayName>[IT] Generate and/or Populate Reporting Data Marts</DisplayName>
+                    <Description>
+            [IT]
+            
+        Standard MetraTech Adapter is used to populate reporting data marts
+        from product views
+      </Description>
+                </item>
+                <item lang="ES">
+                    <DisplayName>[ES] Generate and/or Populate Reporting Data Marts</DisplayName>
+                    <Description>
+            [ES]
+            
+        Standard MetraTech Adapter is used to populate reporting data marts
+        from product views
+      </Description>
+                </item>
+                <item lang="DE">
+                    <DisplayName>[DE] Generate and/or Populate Reporting Data Marts</DisplayName>
+                    <Description>
+            [DE]
+            
+        Standard MetraTech Adapter is used to populate reporting data marts
+        from product views
+      </Description>
+                </item>
+                <item lang="es-MX">
+                    <DisplayName>[es-MX] Generate and/or Populate Reporting Data Marts</DisplayName>
+                    <Description>
+            [es-MX]
+            
+        Standard MetraTech Adapter is used to populate reporting data marts
+        from product views
+      </Description>
+                </item>
+                <item lang="pt-BR">
+                    <DisplayName>Gerar e/ou preencher Data Marts de relatório</DisplayName>
+                    <Description>Adapter MetraTech padrão é usado para preencher data marts relatórios
+         a partir de pontos de vista de produtos</Description>
+                </item>
+                <item lang="en-GB">
+                    <DisplayName>[en-GB] Generate and/or Populate Reporting Data Marts</DisplayName>
+                    <Description>
+            [en-GB]
+            
+        Standard MetraTech Adapter is used to populate reporting data marts
+        from product views
+      </Description>
+                </item>
+                <item lang="JA">
+                    <DisplayName>[JA] Generate and/or Populate Reporting Data Marts</DisplayName>
+                    <Description>
+            [JA]
+            
+        Standard MetraTech Adapter is used to populate reporting data marts
+        from product views
+      </Description>
+                </item>
+            </LocalizedItems>
+            <RecurrencePattern>
+                <UsageCycleType>All</UsageCycleType>
+            </RecurrencePattern>
+            <Dependencies>
+                <DependsOn>Invoices</DependsOn>
+            </Dependencies>
+        </Adapter>
+        <Adapter>
+            <Name>BeginGenerateSampleInvoices</Name>
+            <DisplayName>Triggers Sample Invoices Generation</DisplayName>
+            <ClassID>MetraTech.Reports.Adapters.BeginGenerateReports,MetraTech.Reports.Adapters</ClassID>
+            <ConfigFile>SampleReports.xml</ConfigFile>
+            <Description>
+        MetraTech standard adapter, which triggers generation of sample invoices, so that
+        invoice correctness could be validated before real production invoices are run
+        </Description>
+            <LocalizedItems>
+                <item lang="FR">
+                    <DisplayName>Déclenche la création d'exemples de factures</DisplayName>
+                    <Description>
+        L'adaptateur MetraTech standard déclenche la création d'exemples de factures afin de valider l'exactitude des factures avant la publication des factures de production réelles        </Description>
+                </item>
+                <item lang="IT">
+                    <DisplayName>[IT] Triggers Sample Invoices Generation</DisplayName>
+                    <Description>
+            [IT]
+            
+        MetraTech standard adapter, which triggers generation of sample invoices, so that
+        invoice correctness could be validated before real production invoices are run
+        </Description>
+                </item>
+                <item lang="ES">
+                    <DisplayName>[ES] Triggers Sample Invoices Generation</DisplayName>
+                    <Description>
+            [ES]
+            
+        MetraTech standard adapter, which triggers generation of sample invoices, so that
+        invoice correctness could be validated before real production invoices are run
+        </Description>
+                </item>
+                <item lang="DE">
+                    <DisplayName>[DE] Triggers Sample Invoices Generation</DisplayName>
+                    <Description>
+            [DE]
+            
+        MetraTech standard adapter, which triggers generation of sample invoices, so that
+        invoice correctness could be validated before real production invoices are run
+        </Description>
+                </item>
+                <item lang="es-MX">
+                    <DisplayName>[es-MX] Triggers Sample Invoices Generation</DisplayName>
+                    <Description>
+            [es-MX]
+            
+        MetraTech standard adapter, which triggers generation of sample invoices, so that
+        invoice correctness could be validated before real production invoices are run
+        </Description>
+                </item>
+                <item lang="pt-BR">
+                    <DisplayName>Dispara a geração de faturas de exemplo</DisplayName>
+                    <Description>Adaptador padrão MetraTech, o que desencadeia geração de faturas de amostra, de modo que
+         correção da fatura pode ser validado antes faturas reais de produção são executados</Description>
+                </item>
+                <item lang="en-GB">
+                    <DisplayName>[en-GB] Triggers Sample Invoices Generation</DisplayName>
+                    <Description>
+            [en-GB]
+            
+        MetraTech standard adapter, which triggers generation of sample invoices, so that
+        invoice correctness could be validated before real production invoices are run
+        </Description>
+                </item>
+                <item lang="JA">
+                    <DisplayName>[JA] Triggers Sample Invoices Generation</DisplayName>
+                    <Description>
+              [JA]
+              
+        MetraTech standard adapter, which triggers generation of sample invoices, so that
+        invoice correctness could be validated before real production invoices are run
+        </Description>
+                </item>
+            </LocalizedItems>
+            <RecurrencePattern>
+                <UsageCycleType>All</UsageCycleType>
+            </RecurrencePattern>
+            <Dependencies>
+                <DependsOn>SampleInvoiceGenerationCheckpoint</DependsOn>
+            </Dependencies>
+        </Adapter>
+        <Adapter>
+            <Name>CompleteGenerateSampleInvoices</Name>
+            <DisplayName>Wait for all sample invoices to finish</DisplayName>
+            <ClassID>MetraTech.Reports.Adapters.CompleteGenerateReports,MetraTech.Reports.Adapters</ClassID>
+            <ConfigFile>SampleReports.xml</ConfigFile>
+            <Description>
+        MetraTech standard adapter, which waits for reporting provider (Crystal APS in our case)
+        to finish running invoices
+        </Description>
+            <LocalizedItems>
+                <item lang="FR">
+                    <DisplayName>Attendez que tous les exemples de factures soient créés</DisplayName>
+                    <Description>
+        L'adaptateur MetraTech standard attend que le générateur de rapports (ici Crystal APS)         finisse la création des factures        </Description>
+                </item>
+                <item lang="IT">
+                    <DisplayName>[IT] Wait for all sample invoices to finish</DisplayName>
+                    <Description>
+            [IT]
+            
+        MetraTech standard adapter, which waits for reporting provider (Crystal APS in our case)
+        to finish running invoices
+        </Description>
+                </item>
+                <item lang="ES">
+                    <DisplayName>[ES] Wait for all sample invoices to finish</DisplayName>
+                    <Description>
+            [ES]
+            
+        MetraTech standard adapter, which waits for reporting provider (Crystal APS in our case)
+        to finish running invoices
+        </Description>
+                </item>
+                <item lang="DE">
+                    <DisplayName>[DE] Wait for all sample invoices to finish</DisplayName>
+                    <Description>
+            [DE]
+            
+        MetraTech standard adapter, which waits for reporting provider (Crystal APS in our case)
+        to finish running invoices
+        </Description>
+                </item>
+                <item lang="es-MX">
+                    <DisplayName>[es-MX] Wait for all sample invoices to finish</DisplayName>
+                    <Description>
+            [es-MX]
+            
+        MetraTech standard adapter, which waits for reporting provider (Crystal APS in our case)
+        to finish running invoices
+        </Description>
+                </item>
+                <item lang="pt-BR">
+                    <DisplayName>Espere até a conclusão de todas as faturas de exemplo</DisplayName>
+                    <Description>Adaptador padrão MetraTech, que aguarda provedor de relatórios (Crystal APS no nosso caso)
+         para concluir a execução faturas</Description>
+                </item>
+                <item lang="en-GB">
+                    <DisplayName>[en-GB] Wait for all sample invoices to finish</DisplayName>
+                    <Description>
+            [en-GB]
+            
+        MetraTech standard adapter, which waits for reporting provider (Crystal APS in our case)
+        to finish running invoices
+        </Description>
+                </item>
+                <item lang="JA">
+                    <DisplayName>[JA] Wait for all sample invoices to finish</DisplayName>
+                    <Description>
+            [JA]
+            
+        MetraTech standard adapter, which waits for reporting provider (Crystal APS in our case)
+        to finish running invoices
+        </Description>
+                </item>
+            </LocalizedItems>
+            <RecurrencePattern>
+                <UsageCycleType>All</UsageCycleType>
+            </RecurrencePattern>
+            <Dependencies>
+                <DependsOn>BeginGenerateSampleInvoices</DependsOn>
+                <!--<DependsOnMe>InvoiceSignatureCheckpoint</DependsOnMe> -->
+            </Dependencies>
+        </Adapter>
+        <Checkpoint>
+            <Name>SampleInvoiceGenerationCheckpoint</Name>
+            <DisplayName>Sample Invoice Generation Checkpoint</DisplayName>
+            <Description>
+        This checkpoint needs to be acknowledged after Sample Invoices are examined
+        for correctness.
+        </Description>
+            <LocalizedItems>
+                <item lang="FR">
+                    <DisplayName>Exemple de facture Generation Checkpoint</DisplayName>
+                    <Description>Ce point de contrôle doit être reconnu après Factures échantillon sont examinés
+         pour l'exactitude.</Description>
+                </item>
+                <item lang="IT">
+                    <DisplayName>[IT] Sample Invoice Generation Checkpoint</DisplayName>
+                    <Description>
+            [IT]
+            
+        This checkpoint needs to be acknowledged after Sample Invoices are examined
+        for correctness.
+        </Description>
+                </item>
+                <item lang="ES">
+                    <DisplayName>[ES] Sample Invoice Generation Checkpoint</DisplayName>
+                    <Description>
+            [ES]
+            
+        This checkpoint needs to be acknowledged after Sample Invoices are examined
+        for correctness.
+        </Description>
+                </item>
+                <item lang="DE">
+                    <DisplayName>[DE] Sample Invoice Generation Checkpoint</DisplayName>
+                    <Description>
+            [DE]
+            
+        This checkpoint needs to be acknowledged after Sample Invoices are examined
+        for correctness.
+        </Description>
+                </item>
+                <item lang="es-MX">
+                    <DisplayName>[es-MX] Sample Invoice Generation Checkpoint</DisplayName>
+                    <Description>
+            [es-MX]
+            
+        This checkpoint needs to be acknowledged after Sample Invoices are examined
+        for correctness.
+        </Description>
+                </item>
+                <item lang="pt-BR">
+                    <DisplayName>Amostra Invoice Generation Checkpoint</DisplayName>
+                    <Description>Este ponto de verificação precisa ser reconhecida depois de Facturas amostra devem ser examinados
+         quanto à correção.</Description>
+                </item>
+                <item lang="en-GB">
+                    <DisplayName>[en-GB] Sample Invoice Generation Checkpoint</DisplayName>
+                    <Description>
+            [en-GB]
+            
+        This checkpoint needs to be acknowledged after Sample Invoices are examined
+        for correctness.
+        </Description>
+                </item>
+                <item lang="JA">
+                    <DisplayName>[JA] Sample Invoice Generation Checkpoint</DisplayName>
+                    <Description>
+            [JA]
+            
+        This checkpoint needs to be acknowledged after Sample Invoices are examined
+        for correctness.
+        </Description>
+                </item>
+            </LocalizedItems>
+            <RecurrencePattern>
+                <UsageCycleType>All</UsageCycleType>
+            </RecurrencePattern>
+            <Dependencies>
+                <DependsOn>GenerateReportingDatamarts</DependsOn>
+                <DependsOn>PaymentSubmissionAdapter</DependsOn>
+            </Dependencies>
+        </Checkpoint>
+        <Adapter>
+            <Name>BeginGenerateProductionInvoices</Name>
+            <DisplayName>Triggers Production Invoice Generation</DisplayName>
+            <ClassID>MetraTech.Reports.Adapters.BeginGenerateReports,MetraTech.Reports.Adapters</ClassID>
+            <ConfigFile>ProductionReports.xml</ConfigFile>
+            <Description>
+        MetraTech standard adapter, which triggers generation of production invoices
+        </Description>
+            <LocalizedItems>
+                <item lang="FR">
+                    <DisplayName>Déclenche la création de factures de production</DisplayName>
+                    <Description>Adaptateur standard MetraTech, ce qui déclenche la génération des factures de production</Description>
+                </item>
+                <item lang="IT">
+                    <DisplayName>[IT] Triggers Production Invoice Generation</DisplayName>
+                    <Description>
+            [IT]
+            
+        MetraTech standard adapter, which triggers generation of production invoices
+        </Description>
+                </item>
+                <item lang="ES">
+                    <DisplayName>[ES] Triggers Production Invoice Generation</DisplayName>
+                    <Description>
+            [ES]
+            
+        MetraTech standard adapter, which triggers generation of production invoices
+        </Description>
+                </item>
+                <item lang="DE">
+                    <DisplayName>[DE] Triggers Production Invoice Generation</DisplayName>
+                    <Description>
+            [DE]
+            
+        MetraTech standard adapter, which triggers generation of production invoices
+        </Description>
+                </item>
+                <item lang="es-MX">
+                    <DisplayName>[es-MX] Triggers Production Invoice Generation</DisplayName>
+                    <Description>
+            [es-MX]
+            
+        MetraTech standard adapter, which triggers generation of production invoices
+        </Description>
+                </item>
+                <item lang="pt-BR">
+                    <DisplayName>Dispara a geração de faturas de produção</DisplayName>
+                    <Description>Adaptador padrão MetraTech, o que desencadeia geração de faturas de produção</Description>
+                </item>
+                <item lang="en-GB">
+                    <DisplayName>[en-GB] Triggers Production Invoice Generation</DisplayName>
+                    <Description>
+            [en-GB]
+            
+        MetraTech standard adapter, which triggers generation of production invoices
+        </Description>
+                </item>
+                <item lang="JA">
+                    <DisplayName>[JA] Triggers Production Invoice Generation</DisplayName>
+                    <Description>
+            [JA]
+            
+        MetraTech standard adapter, which triggers generation of production invoices
+        </Description>
+                </item>
+            </LocalizedItems>
+            <RecurrencePattern>
+                <UsageCycleType>All</UsageCycleType>
+            </RecurrencePattern>
+            <Dependencies>
+                <DependsOn>CompleteGenerateSampleInvoices</DependsOn>
+                <!-- <DependsOn>InvoiceSignatureAdapter</DependsOn> -->
+            </Dependencies>
+        </Adapter>
+        <Adapter>
+            <Name>CompleteGenerateProductionInvoices</Name>
+            <DisplayName>Wait for all production invoices to finish</DisplayName>
+            <ClassID>MetraTech.Reports.Adapters.CompleteGenerateReports,MetraTech.Reports.Adapters</ClassID>
+            <ConfigFile>ProductionReports.xml</ConfigFile>
+            <Description>
+        MetraTech standard adapter, which waits for reporting provider (Crystal APS in our case)
+        to finish running invoices.
+        </Description>
+            <LocalizedItems>
+                <item lang="FR">
+                    <DisplayName>Attendez que toutes les factures de production pour finir</DisplayName>
+                    <Description>Adaptateur standard MetraTech, qui attend pour le fournisseur de reporting (Crystal APS dans notre cas)
+         pour terminer l'exécution factures.</Description>
+                </item>
+                <item lang="IT">
+                    <DisplayName>[IT] Wait for all production invoices to finish</DisplayName>
+                    <Description>
+            [IT]
+            
+        MetraTech standard adapter, which waits for reporting provider (Crystal APS in our case)
+        to finish running invoices.
+        </Description>
+                </item>
+                <item lang="ES">
+                    <DisplayName>[ES] Wait for all production invoices to finish</DisplayName>
+                    <Description>
+            [ES]
+            
+        MetraTech standard adapter, which waits for reporting provider (Crystal APS in our case)
+        to finish running invoices.
+        </Description>
+                </item>
+                <item lang="DE">
+                    <DisplayName>[DE] Wait for all production invoices to finish</DisplayName>
+                    <Description>
+            [DE]
+            
+        MetraTech standard adapter, which waits for reporting provider (Crystal APS in our case)
+        to finish running invoices.
+        </Description>
+                </item>
+                <item lang="es-MX">
+                    <DisplayName>[es-MX] Wait for all production invoices to finish</DisplayName>
+                    <Description>
+            [es-MX]
+            
+        MetraTech standard adapter, which waits for reporting provider (Crystal APS in our case)
+        to finish running invoices.
+        </Description>
+                </item>
+                <item lang="pt-BR">
+                    <DisplayName>Esperar a conclusão de todas as faturas de produção</DisplayName>
+                    <Description>Adaptador padrão MetraTech, que aguarda provedor de relatórios (Crystal APS no nosso caso)
+         para concluir a execução faturas.</Description>
+                </item>
+                <item lang="en-GB">
+                    <DisplayName>[en-GB] Wait for all production invoices to finish</DisplayName>
+                    <Description>
+            [en-GB]
+            
+        MetraTech standard adapter, which waits for reporting provider (Crystal APS in our case)
+        to finish running invoices.
+        </Description>
+                </item>
+                <item lang="JA">
+                    <DisplayName>[JA] Wait for all production invoices to finish</DisplayName>
+                    <Description>
+            [JA]
+            
+        MetraTech standard adapter, which waits for reporting provider (Crystal APS in our case)
+        to finish running invoices.
+        </Description>
+                </item>
+            </LocalizedItems>
+            <RecurrencePattern>
+                <UsageCycleType>All</UsageCycleType>
+            </RecurrencePattern>
+            <Dependencies>
+                <DependsOn>BeginGenerateProductionInvoices</DependsOn>
+            </Dependencies>
+        </Adapter>
+    </EndOfPeriodAdapters>
+</xmlconfig>

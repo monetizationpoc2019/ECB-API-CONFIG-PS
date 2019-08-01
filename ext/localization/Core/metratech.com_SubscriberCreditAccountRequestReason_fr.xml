@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<mt_config>
+    <language_code>fr</language_code>
+    <locale_space name="metratech.com/SubscriberCreditAccountRequestReason">
+        <locale_entry>
+            <Name>metratech.com/SubscriberCreditAccountRequestReason/BadService</Name>
+            <Value>Service faible</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/SubscriberCreditAccountRequestReason/DroppedCall</Name>
+            <Value>Appel abandonné</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/SubscriberCreditAccountRequestReason/GeneralDissatisfaction</Name>
+            <Value>Insatisfaction générale</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/SubscriberCreditAccountRequestReason/Other</Name>
+            <Value>Autre</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/SubscriberCreditAccountRequestReason/PoorConnection</Name>
+            <Value>Connexion faible</Value>
+        </locale_entry>
+    </locale_space>
+</mt_config>

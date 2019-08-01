@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xmlconfig>
+	<GenericWorkflowAdapter>
+		<AllowMultipleInstances>false</AllowMultipleInstances>
+		<!-- 
+			 BillingGroupSupport is an enum that defines the adapter's billing group support.  
+			 Valid values are:
+					Interval
+					BillingGroup
+					Account
+		-->
+		<BillingGroupSupport>BillingGroup</BillingGroupSupport>
+		<HasBillingGroupConstraints>false</HasBillingGroupConstraints>
+		<BillingGroupConstraintQueryPath />
+		<BillingGroupConstraintQueryTag />
+		<!--
+			ReverseMode is an enum that defines how the adapter is reversed.  
+			Valid values are:
+					NotImplemented
+					NotNeeded
+					Auto
+					Custom
+		-->
+		<ReverseMode>NotNeeded</ReverseMode>
+		<SupportsEOPEvents>false</SupportsEOPEvents>
+		<SupportsScheduledEvents>true</SupportsScheduledEvents>
+		
+		<!-- 
+			Workflows can be specified in the following ways:
+			1) Aboslute path to a XOML file
+			2) Path to XOML file relative to RMP\Extensions
+			3) An assembly-qualified type name (e.g. "<namespace>.<type>, <assembly details>")
+		-->
+		<ExecuteWorkflow>PaymentSvrClient\Config\UsageServer\Workflows\CreditCardDunningAdapterWorkflow.xoml</ExecuteWorkflow>
+		<ReverseWorkflow />
+	</GenericWorkflowAdapter>
+
+	<CreditCardDunningAdapter>
+		<WCFConfigFile>PaymentSvrClient\config\UsageServer\PayAuthAdapter_US.xml</WCFConfigFile>
+		<EPSEndpoint>WSHttpBinding_IElectronicPaymentServices</EPSEndpoint>
+		<NotificationEndpoint>WSHttpBinding_NotificationService</NotificationEndpoint>
+
+		<!-- Specifies the number of days to wait between retries -->
+		<RetryDelayDays>7</RetryDelayDays>
+
+		<!-- Specifies the maximum number of retries before failing payment attempt -->
+		<MaxRetries>5</MaxRetries>
+		
+		<!-- Specifies the email template to use for failure notifications -->
+		<FailedPaymentEmailTemplate>PaymentRetryFailedTemplate</FailedPaymentEmailTemplate>
+		
+		<!-- Specifies the email template to be used for final retyr failure notifications -->
+		<FinalRetryFailureEmailTemplate>FinalPaymentRetryEmailTemplate</FinalRetryFailureEmailTemplate>
+		
+		<!--
+			Specifies the number of concurrent requests to be sent to the payment
+			server at the same time.  Maximum is 64.
+		-->
+		<MaxConcurrentRequests>64</MaxConcurrentRequests>
+
+    <!-- Specifies how long to allow a request to run in the payment server-->
+    <PaymentServerTimeout>30000</PaymentServerTimeout>
+	</CreditCardDunningAdapter>
+</xmlconfig>

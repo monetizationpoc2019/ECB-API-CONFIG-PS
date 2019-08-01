@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xmlconfig>
+  <version ptype="INTEGER">2</version>
+  <ScheduledAdapters>
+    <Adapter>
+       <Name>TaxtablesPurgingAdapter</Name>
+       <DisplayName>Taxtables Purging Adapter</DisplayName>
+       <ClassID>MetraTech.Tax.Adapters.TaxtablesPurgingAdapter,MetraTech.Tax.Framework </ClassID>
+       <ConfigFile>TaxtablesPurgingAdapter.xml</ConfigFile>
+       <Description>Dropping t_tax_input and t_tax_output tables</Description>
+       <RecurrencePattern>
+         <Daily>
+           <Start>8/11/2017 12:00:00 AM</Start>
+           <Interval>1</Interval>
+           <Times>5:00 AM</Times>
+         </Daily>
+       </RecurrencePattern>
+    </Adapter>
+  </ScheduledAdapters>
+  <EndOfPeriodAdapters>
+    <Adapter>
+      <Name>MetraTaxInputAdapter</Name>
+      <DisplayName>MetraTax Input Adapter</DisplayName>
+      <ClassID>MetraTech.Tax.Adapters.TaxInputAdapter,MetraTech.Tax.Framework</ClassID>
+      <ConfigFile>MetraTaxAdapter.xml</ConfigFile>
+      <Description>MetraTech Tax Adapter preparing the list of records for which VAT/GST tax has to be calculated</Description>
+      <RecurrencePattern>
+        <UsageCycleType>All</UsageCycleType>
+      </RecurrencePattern>
+      <Dependencies>
+        <DependsOn>Phase1Checkpoint</DependsOn>
+      </Dependencies>
+    </Adapter>
+    <Adapter>
+      <Name>MetraTaxCalculateAdapter</Name>
+      <DisplayName>MetraTax Calculate Adapter</DisplayName>
+      <ClassID>MetraTech.Tax.Adapters.TaxCalculateAdapter,MetraTech.Tax.Framework</ClassID>
+      <ConfigFile>MetraTaxAdapter.xml</ConfigFile>
+      <Description>MetraTech Tax Adapter preparing the list of records for which VAT/GST tax has to be calculated</Description>
+      <RecurrencePattern>
+        <UsageCycleType>All</UsageCycleType>
+      </RecurrencePattern>
+      <Dependencies>
+        <DependsOn>MetraTaxInputAdapter</DependsOn>
+      </Dependencies>
+    </Adapter>
+    <Adapter>
+      <Name>MetraTaxOutputAdapter</Name>
+      <DisplayName>MetraTax Output Adapter</DisplayName>
+      <ClassID>MetraTech.Tax.Adapters.TaxOutputAdapter,MetraTech.Tax.Framework</ClassID>
+      <ConfigFile>MetraTaxAdapter.xml</ConfigFile>
+      <Description>MetraTech Tax Adapter puts the calculated GST/VAT taxes back from the temp table to the correct location</Description>
+      <RecurrencePattern>
+        <UsageCycleType>All</UsageCycleType>
+      </RecurrencePattern>
+      <Dependencies>
+        <DependsOn>MetraTaxCalculateAdapter</DependsOn>
+        <DependsOnMe>Invoices</DependsOnMe>
+      </Dependencies>
+    </Adapter>
+  </EndOfPeriodAdapters>
+</xmlconfig>

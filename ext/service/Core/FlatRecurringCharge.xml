@@ -1,0 +1,220 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<defineservice>
+  <name>metratech.com/FlatRecurringCharge</name>
+  <description>Flat rate recurring charges.</description>
+  <ptype>
+    <dn>RCActionType</dn>
+    <type>string</type>
+    <length>10</length>
+    <required>Y</required>
+    <defaultvalue>
+    </defaultvalue>
+    <description>Specifies type of the charge - arrears, advance, credit or initial charge.</description>
+  </ptype>
+  <ptype>
+    <dn>RCIntervalStart</dn>
+    <type>timestamp</type>
+    <length>
+    </length>
+    <required>Y</required>
+    <defaultvalue>
+    </defaultvalue>
+    <description>Start date of recurring charge interval.</description>
+  </ptype>
+  <ptype>
+    <dn>RCIntervalEnd</dn>
+    <type>timestamp</type>
+    <length>
+    </length>
+    <required>Y</required>
+    <defaultvalue>
+    </defaultvalue>
+    <description>End date of recurring charge interval.</description>
+  </ptype>
+  <ptype>
+    <dn>BillingIntervalStart</dn>
+    <type>timestamp</type>
+    <length>
+    </length>
+    <required>Y</required>
+    <defaultvalue>
+    </defaultvalue>
+    <description>Start date of billing interval.</description>
+  </ptype>
+  <ptype>
+    <dn>BillingIntervalEnd</dn>
+    <type>timestamp</type>
+    <length>
+    </length>
+    <required>Y</required>
+    <defaultvalue>
+    </defaultvalue>
+    <description>End date of billing interval.</description>
+  </ptype>
+  <ptype>
+    <dn>RCIntervalSubscriptionStart</dn>
+    <type>timestamp</type>
+    <length>
+    </length>
+    <required>Y</required>
+    <defaultvalue>
+    </defaultvalue>
+    <description>Start date of intersection of the recurring charge and subscription intervals.</description>
+  </ptype>
+  <ptype>
+    <dn>RCIntervalSubscriptionEnd</dn>
+    <type>timestamp</type>
+    <length>
+    </length>
+    <required>Y</required>
+    <defaultvalue>
+    </defaultvalue>
+    <description>End date of intersection of the recurring charge and subscription intervals.</description>
+  </ptype>
+  <ptype>
+    <dn>SubscriptionStart</dn>
+    <type>timestamp</type>
+    <length>
+    </length>
+    <required>Y</required>
+    <defaultvalue>
+    </defaultvalue>
+    <description>Start date of subscription.</description>
+  </ptype>
+  <ptype>
+    <dn>SubscriptionEnd</dn>
+    <type>timestamp</type>
+    <length>
+    </length>
+    <required>N</required>
+    <defaultvalue>
+    </defaultvalue>
+    <description>End date of subscription.</description>
+  </ptype>
+  <ptype>
+    <dn>Advance</dn>
+    <type>boolean</type>
+    <length>
+    </length>
+    <required>Y</required>
+    <defaultvalue>F</defaultvalue>
+    <description>True for advance, false for arrears.</description>
+  </ptype>
+  <ptype>
+    <dn>ProrateOnSubscription</dn>
+    <type>boolean</type>
+    <length>
+    </length>
+    <required>Y</required>
+    <defaultvalue>F</defaultvalue>
+    <description>If true, prorate on subscription.</description>
+  </ptype>
+  <ptype>
+    <dn>ProrateInstantly</dn>
+    <type>boolean</type>
+    <length>
+    </length>
+    <required>Y</required>
+    <defaultvalue>F</defaultvalue>
+    <description>If true, prorate instantly.</description>
+  </ptype>
+  <ptype>
+    <dn>ProrateOnUnsubscription</dn>
+    <type>boolean</type>
+    <length>
+    </length>
+    <required>Y</required>
+    <defaultvalue>F</defaultvalue>
+    <description>If true, prorate on unsubscription.</description>
+  </ptype>
+  <ptype>
+    <dn>ProrationCycleLength</dn>
+    <type>int32</type>
+    <length>
+    </length>
+    <required>Y</required>
+    <defaultvalue>
+    </defaultvalue>
+    <description>Fixed number of days to prorate to. 0 means use actual.</description>
+  </ptype>
+  <ptype>
+    <dn>_AccountID</dn>
+    <type>int32</type>
+    <length>
+    </length>
+    <required>Y</required>
+    <defaultvalue>
+    </defaultvalue>
+    <description>Account ID.</description>
+  </ptype>
+  <ptype>
+    <dn>_PayingAccount</dn>
+    <type>int32</type>
+    <length>
+    </length>
+    <required>Y</required>
+    <defaultvalue>
+    </defaultvalue>
+    <description>Payer's account ID.</description>
+  </ptype>
+  <ptype>
+    <dn>_PriceableItemInstanceID</dn>
+    <type>int32</type>
+    <length>
+    </length>
+    <required>Y</required>
+    <defaultvalue>
+    </defaultvalue>
+    <description>Recurring charge (priceable item) instance ID.</description>
+  </ptype>
+  <ptype>
+    <dn>_PriceableItemTemplateID</dn>
+    <type>int32</type>
+    <length>
+    </length>
+    <required>Y</required>
+    <defaultvalue>
+    </defaultvalue>
+    <description>Recurring charge (priceable item) template ID.</description>
+  </ptype>
+  <ptype>
+    <dn>_ProductOfferingID</dn>
+    <type>int32</type>
+    <length>
+    </length>
+    <required>Y</required>
+    <defaultvalue>
+    </defaultvalue>
+    <description>Product offering ID.</description>
+  </ptype>
+  <ptype>
+    <dn>BilledRateDate</dn>
+    <type>timestamp</type>
+    <length>
+    </length>
+    <required>N</required>
+    <defaultvalue>
+    </defaultvalue>
+    <description>For credits, this is the rate effective date to look up the rates when the advance or initial charge was issued.</description>
+  </ptype>
+  <ptype>
+    <dn>_SubscriptionID</dn>
+    <type>int32</type>
+    <length>
+    </length>
+    <required>Y</required>
+    <defaultvalue>
+    </defaultvalue>
+    <description>Subscription to the recurring charge.</description>
+  </ptype>
+  <ptype>
+    <dn>FinalizeDate</dn>
+    <type>timestamp</type>
+    <length>
+    </length>
+    <required>N</required>
+    <defaultvalue>
+    </defaultvalue>
+    <description>The date when CDE should finalize the decisions in the corresponding subscription.</description>
+  </ptype>
+</defineservice>

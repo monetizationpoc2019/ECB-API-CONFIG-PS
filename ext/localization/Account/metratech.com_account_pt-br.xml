@@ -1,0 +1,130 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<mt_config>
+  <language_code>pt-br</language_code>
+  <locale_space name="metratech.com/account">
+    <locale_entry>
+      <Name>metratech.com/account/_AccountID</Name>
+      <Value>Id de conta</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/account/AccountEndDate</Name>
+      <Value>Data de término</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/account/AccountStartDate</Name>
+      <Value>Data de início</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/account/AccountStatus</Name>
+      <Value>Status da conta</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/account/AccountType</Name>
+      <Value>Tipo de conta</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/account/AncestorAccount</Name>
+      <Value>Nome do pai</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/account/AncestorAccountID</Name>
+      <Value>ID do pai</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/account/AncestorAccountNS</Name>
+      <Value>Espaço de nomes do pai</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/account/ApplyDefaultSecurityPolicy</Name>
+      <Value>Aplicar política de segurança padrão</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/account/AuthenticationType</Name>
+      <Value>Tipo de autenticação</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/account/DayOfMonth</Name>
+      <Value>Dia do mês</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/account/DayOfWeek</Name>
+      <Value>Dia da semana</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/account/FirstDayOfMonth</Name>
+      <Value>Primeiro dia do mês</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/account/Hierarchy_EndDate</Name>
+      <Value>Data de término da hierarquia</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/account/Hierarchy_StartDate</Name>
+      <Value>Data de início da hierarquia</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/account/Name_Space</Name>
+      <Value>Espaço de nomes</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/account/Password_</Name>
+      <Value>Senha</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/account/PayerAccount</Name>
+      <Value>Pagador</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/account/PayerAccountNS</Name>
+      <Value>Espaço de nomes do pagador</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/account/PayerID</Name>
+      <Value>ID do pagador</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/account/Payment_EndDate</Name>
+      <Value>Data de término do pagamento</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/account/Payment_StartDate</Name>
+      <Value>Data de início do pagamento</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/account/SecondDayOfMonth</Name>
+      <Value>Segundo dia do mês</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/account/StartDay</Name>
+      <Value>Data de início</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/account/StartMonth</Name>
+      <Value>Mês de início</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/account/StartYear</Name>
+      <Value>Ano de início</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/account/UserName</Name>
+      <Value>Nome do usuário</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/account/AccountTypeID</Name>
+      <Value>ID do tipo de conta</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/account/CanHaveChildren</Name>
+      <Value>Pode ter subordinado</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/account/HasLogonCapability</Name>
+      <Value>Tem capacidade de logon</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/account/AccountTypeLocalizedName</Name>
+      <Value>[pt-BR]Account Type Localized Name</Value>
+    </locale_entry>
+  </locale_space>
+</mt_config>

@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xmlconfig>
+  <mtsysconfigdata>
+    <effective_date ptype="DATETIME">1990-03-19T23:12:22Z</effective_date>
+    <timeout ptype="INTEGER">30</timeout>
+    <configfiletype>CONFIG_DATA</configfiletype>
+  </mtsysconfigdata>
+  <mtconfigdata>
+    <version ptype="INTEGER">1</version>
+    <processor>
+      <name>SetSubscriberAccountID</name>
+      <progid>MTPipeline.MTSubStr.1</progid>
+	  <description>Sets the SubscriberAccountID property to _AccountID</description>
+
+	  <inputs>
+		<input type="INTEGER" internal_name="SourceProp">SubscriberAccountID</input>
+	  </inputs>
+
+	  <outputs>
+		<output type="INTEGER" internal_name="DestProp">_AccountID</output>
+	  </outputs>
+
+	  <!-- Set the subscriber account ID to _accountID -->
+
+	    <configdata>
+        
+        <AssignProps>
+          <AssignProp>
+            <SourceProp>_AccountID</SourceProp>
+            <!-- The actual contents of the type tag are irrelevant,
+            but we need the ptype! -->
+            <type ptype="INTEGER">99</type>
+            <DestProp>SubscriberAccountID</DestProp>
+          </AssignProp>
+        </AssignProps>
+      </configdata>
+    </processor>
+  </mtconfigdata>
+</xmlconfig>

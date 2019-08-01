@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xmlconfig>
+  <session>
+   <ServiceID ptype="ID">MetraTech.com/AccountMapping</ServiceID>
+   <inputs>
+	<Action ptype="STRING">0</Action>
+	<LoginName ptype="STRING">MyAccount</LoginName>
+	<NameSpace ptype="STRING">metratech.com/external</NameSpace>
+	<NewLoginName ptype="STRING">BorisAccount</NewLoginName>
+	<NewNameSpace ptype="STRING">metratech.com/external</NewNameSpace>
+   </inputs>
+  </session>
+</xmlconfig>

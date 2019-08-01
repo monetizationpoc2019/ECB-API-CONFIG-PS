@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<mt_config>
+  <language_code>it</language_code>
+  <locale_space name="metratech.com/auditevents/custom/mam">
+    <locale_entry>
+      <Name>metratech.com/auditevents/custom/mam/note</Name>
+      <Value>Nota CSR</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/auditevents/custom/mam/telephone</Name>
+      <Value>Abbonato contattato</Value>
+    </locale_entry>
+  </locale_space>
+</mt_config>

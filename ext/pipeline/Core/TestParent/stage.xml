@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xmlconfig>
+  <version ptype="INTEGER">1</version>
+  <description>Tests a multipoint transaction. Used as an example of simple usage processing and for testing processing.
+</description>
+  <stage>
+    <name>TestParent</name>
+    <startstage ptype="BOOLEAN">YES</startstage>
+    <finalstage ptype="BOOLEAN">NO</finalstage>
+    <nextstage>WriteProductView</nextstage>
+    <dependencies>
+      <dependency>
+        <processor>View</processor>
+      </dependency>
+      <dependency>
+        <processor>Namespace</processor>
+        <dependson>View</dependson>
+      </dependency>
+      <dependency>
+        <processor>TOD</processor>
+        <dependson>Namespace</dependson>
+      </dependency>
+      <dependency>
+        <processor>TestCompSum</processor>
+        <dependson>TOD</dependson>
+      </dependency>
+      <dependency>
+        <processor>AccountResolution</processor>
+        <dependson>TestCompSum</dependson>
+      </dependency>
+      <dependson>AccountResolution</dependson>
+    </dependencies>
+  </stage>
+  <possiblenextstages />
+</xmlconfig>

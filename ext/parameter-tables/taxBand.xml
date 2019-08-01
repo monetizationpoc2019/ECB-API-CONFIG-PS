@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<defineservice>
+    <name display_name="Tax Band" condition_header="Conditions" action_header="Actions" type="Rates" help_url="">metratech.com/taxBand</name>
+    <description>Maps a given product code and country to a tax band.</description>
+    <ptype display_name="Tax Country Eligibility" condition="Y" column_operator="=" filterable="Y">
+        <dn>Country</dn>
+        <type EnumSpace="Global" EnumType="CountryName">enum</type>
+        <length />
+        <required>Y</required>
+        <defaultvalue />
+        <description>Tax Country Eligibility</description>
+    </ptype>
+    <ptype display_name="Product Code" condition="Y" column_operator="=" filterable="Y">
+        <dn>ProductCode</dn>
+        <type>string</type>
+        <length>64</length>
+        <required>N</required>
+        <defaultvalue />
+        <description>Product Code</description>
+    </ptype>
+    <ptype display_name="Tax Band" action="Y">
+        <dn>TaxBand</dn>
+        <type EnumSpace="metratech.com/tax" EnumType="TaxBand">enum</type>
+        <length />
+        <required>Y</required>
+        <defaultvalue />
+        <description>Tax Band</description>
+    </ptype>
+</defineservice>

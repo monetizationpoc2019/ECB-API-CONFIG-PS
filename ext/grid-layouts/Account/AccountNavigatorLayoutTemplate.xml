@@ -1,0 +1,2182 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<GridLayout xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <Pages>
+        <PageName>~/AccountNavigation.aspx</PageName>
+    </Pages>
+    <Title>
+        <LocalizationTag>GRID_TITLE</LocalizationTag>
+        <ResourceClassKey />
+    </Title>
+    <Name>AccountNavigatorLayoutTemplate</Name>
+    <Exportable>true</Exportable>
+    <Height>360</Height>
+    <Width>350</Width>
+    <FilterInputWidth>222</FilterInputWidth>
+    <Expandable>true</Expandable>
+    <Buttons>Custom</Buttons>
+    <DataSourceURL>/MetraNet/AjaxServices/FindAccountSvc.aspx</DataSourceURL>
+    <MultiSelect>false</MultiSelect>
+    <FilterPanelCollapsed>false</FilterPanelCollapsed>
+    <FilterPanelLayout>SingleColumn</FilterPanelLayout>
+    <FilterColumnWidth>350</FilterColumnWidth>
+    <DisplayCount>false</DisplayCount>
+    <DefaultSortDirection>Ascending</DefaultSortDirection>
+    <EnableColumnConfig>true</EnableColumnConfig>
+    <EnableFilterConfig>true</EnableFilterConfig>
+    <FilterLabelWidth>75</FilterLabelWidth>
+    <FilterPanelCollapsed>false</FilterPanelCollapsed>
+    <PageSize>10</PageSize>
+    <Resizable>true</Resizable>
+    <SearchOnLoad>false</SearchOnLoad>
+    <Description>The grid layout for the Accounts Finder on the side panel of MetraCare.</Description>
+    <ExpansionCssClass />
+    <ShowFilterPanel>true</ShowFilterPanel>
+    <ShowTopBar>true</ShowTopBar>
+    <ShowBottomBar>true</ShowBottomBar>
+    <ShowGridFrame>true</ShowGridFrame>
+    <ShowGridHeader>true</ShowGridHeader>
+    <ShowColumnHeaders>true</ShowColumnHeaders>
+    <NoRecordsText>
+        <LocalizationTag>NO_RECORDS_TEXT</LocalizationTag>
+        <ResourceClassKey />
+    </NoRecordsText>
+    <Resizeable>true</Resizeable>
+    <SelectionModel>Standard</SelectionModel>
+    <ButtonAlignment>Center</ButtonAlignment>
+    <DefaultSortField />
+    <TotalProperty>TotalRows</TotalProperty>
+    <RootElement>Items</RootElement>
+    <CustomImplementationFilePath />
+    <SubGrid />
+    <Elements>
+        <Element>
+            <RecordElement>false</RecordElement>
+            <ID>Navigate</ID>
+            <DataIndex />
+            <IsColumn>true</IsColumn>
+            <HeaderText>
+                <Value>&amp;nbsp;</Value>
+            </HeaderText>
+            <Formatter />
+            <Width>28</Width>
+            <Resizeable>true</Resizeable>
+            <PreventSortable>false</PreventSortable>
+            <Sortable>false</Sortable>
+            <ColumnHideable>false</ColumnHideable>
+            <DefaultColumn>true</DefaultColumn>
+            <Filterable>false</Filterable>
+        </Element>
+        <Element>
+            <RecordElement>true</RecordElement>
+            <AssemblyFilename>MetraTech.DomainModel.AccountTypes.Generated.dll</AssemblyFilename>
+            <ObjectName>MetraTech.DomainModel.AccountTypes.CorporateAccount</ObjectName>
+            <ID>UserName</ID>
+            <DataType>String</DataType>
+            <IsIdentity>false</IsIdentity>
+            <DataIndex>UserName</DataIndex>
+            <IsColumn>true</IsColumn>
+            <HeaderText />
+            <Formatter />
+            <Width>130</Width>
+            <Resizeable>true</Resizeable>
+            <PreventSortable>false</PreventSortable>
+            <Sortable>true</Sortable>
+            <ColumnHideable>false</ColumnHideable>
+            <DefaultColumn>true</DefaultColumn>
+            <Exportable>true</Exportable>
+            <ShowInExpander>true</ShowInExpander>
+            <Filterable>true</Filterable>
+            <FilterHideable>true</FilterHideable>
+            <DefaultFilter>true</DefaultFilter>
+            <RequiredFilter>false</RequiredFilter>
+            <FilterLabel />
+            <ElementValue>
+                <Value />
+            </ElementValue>
+            <ElementValue2>
+                <Value />
+            </ElementValue2>
+            <FilterReadOnly>false</FilterReadOnly>
+            <DropdownItems />
+        </Element>
+        <Element>
+            <RecordElement>true</RecordElement>
+            <AssemblyFilename>MetraTech.DomainModel.AccountTypes.Generated.dll</AssemblyFilename>
+            <ObjectName>MetraTech.DomainModel.AccountTypes.ContactView</ObjectName>
+            <ID>LDAP[Bill-To].FirstName</ID>
+            <DataType>String</DataType>
+            <IsIdentity>false</IsIdentity>
+            <DataIndex>LDAP[ContactType == 1]/FirstName</DataIndex>
+            <IsColumn>true</IsColumn>
+            <HeaderText />
+            <Formatter />
+            <Width>120</Width>
+            <Resizeable>true</Resizeable>
+            <PreventSortable>false</PreventSortable>
+            <Sortable>true</Sortable>
+            <ColumnHideable>true</ColumnHideable>
+            <DefaultColumn>false</DefaultColumn>
+            <Exportable>true</Exportable>
+            <ShowInExpander>true</ShowInExpander>
+            <Filterable>true</Filterable>
+            <FilterHideable>true</FilterHideable>
+            <DefaultFilter>false</DefaultFilter>
+            <RequiredFilter>false</RequiredFilter>
+            <FilterLabel />
+            <ElementValue>
+                <Value />
+            </ElementValue>
+            <ElementValue2>
+                <Value />
+            </ElementValue2>
+            <FilterReadOnly>false</FilterReadOnly>
+            <DropdownItems />
+        </Element>
+        <Element>
+            <RecordElement>true</RecordElement>
+            <AssemblyFilename>MetraTech.DomainModel.AccountTypes.Generated.dll</AssemblyFilename>
+            <ObjectName>MetraTech.DomainModel.AccountTypes.ContactView</ObjectName>
+            <ID>LDAP[Bill-To].MiddleInitial</ID>
+            <DataType>String</DataType>
+            <IsIdentity>false</IsIdentity>
+            <DataIndex>LDAP[ContactType == 1]/MiddleInitial</DataIndex>
+            <IsColumn>true</IsColumn>
+            <HeaderText />
+            <Formatter />
+            <Width>120</Width>
+            <Resizeable>true</Resizeable>
+            <PreventSortable>false</PreventSortable>
+            <Sortable>true</Sortable>
+            <ColumnHideable>true</ColumnHideable>
+            <DefaultColumn>false</DefaultColumn>
+            <Exportable>true</Exportable>
+            <ShowInExpander>true</ShowInExpander>
+            <Filterable>true</Filterable>
+            <FilterHideable>true</FilterHideable>
+            <DefaultFilter>false</DefaultFilter>
+            <RequiredFilter>false</RequiredFilter>
+            <FilterLabel />
+            <ElementValue>
+                <Value />
+            </ElementValue>
+            <ElementValue2>
+                <Value />
+            </ElementValue2>
+            <FilterReadOnly>false</FilterReadOnly>
+            <DropdownItems />
+        </Element>
+        <Element>
+            <RecordElement>true</RecordElement>
+            <AssemblyFilename>MetraTech.DomainModel.AccountTypes.Generated.dll</AssemblyFilename>
+            <ObjectName>MetraTech.DomainModel.AccountTypes.ContactView</ObjectName>
+            <ID>LDAP[Bill-To].LastName</ID>
+            <DataType>String</DataType>
+            <IsIdentity>false</IsIdentity>
+            <DataIndex>LDAP[ContactType == 1]/LastName</DataIndex>
+            <IsColumn>true</IsColumn>
+            <HeaderText />
+            <Formatter />
+            <Width>120</Width>
+            <Resizeable>true</Resizeable>
+            <PreventSortable>false</PreventSortable>
+            <Sortable>true</Sortable>
+            <ColumnHideable>true</ColumnHideable>
+            <DefaultColumn>false</DefaultColumn>
+            <Exportable>true</Exportable>
+            <ShowInExpander>true</ShowInExpander>
+            <Filterable>true</Filterable>
+            <FilterHideable>true</FilterHideable>
+            <DefaultFilter>false</DefaultFilter>
+            <RequiredFilter>false</RequiredFilter>
+            <FilterLabel />
+            <ElementValue>
+                <Value />
+            </ElementValue>
+            <ElementValue2>
+                <Value />
+            </ElementValue2>
+            <FilterReadOnly>false</FilterReadOnly>
+            <DropdownItems />
+        </Element>
+        <Element>
+            <RecordElement>true</RecordElement>
+            <AssemblyFilename>MetraTech.DomainModel.AccountTypes.Generated.dll</AssemblyFilename>
+            <ObjectName>MetraTech.DomainModel.AccountTypes.CorporateAccount</ObjectName>
+            <ID>_AccountID</ID>
+            <DataType>Account</DataType>
+            <IsIdentity>true</IsIdentity>
+            <DataIndex>_AccountID</DataIndex>
+            <IsColumn>true</IsColumn>
+            <HeaderText />
+            <Formatter />
+            <Width>120</Width>
+            <Resizeable>true</Resizeable>
+            <PreventSortable>false</PreventSortable>
+            <Sortable>true</Sortable>
+            <ColumnHideable>true</ColumnHideable>
+            <DefaultColumn>false</DefaultColumn>
+            <Exportable>true</Exportable>
+            <ShowInExpander>true</ShowInExpander>
+            <Filterable>true</Filterable>
+            <FilterHideable>true</FilterHideable>
+            <DefaultFilter>false</DefaultFilter>
+            <RequiredFilter>false</RequiredFilter>
+            <FilterLabel />
+            <ElementValue>
+                <Value />
+            </ElementValue>
+            <ElementValue2>
+                <Value />
+            </ElementValue2>
+            <FilterReadOnly>false</FilterReadOnly>
+            <DropdownItems />
+        </Element>
+        <Element>
+            <RecordElement>true</RecordElement>
+            <AssemblyFilename>MetraTech.DomainModel.AccountTypes.Generated.dll</AssemblyFilename>
+            <ObjectName>MetraTech.DomainModel.AccountTypes.CorporateAccount</ObjectName>
+            <ID>AccountStatus</ID>
+            <DataType>List</DataType>
+            <IsIdentity>false</IsIdentity>
+            <FilterEnum>
+                <EnumClassName />
+                <EnumSpace>metratech.com/accountcreation</EnumSpace>
+                <EnumType>AccountStatus</EnumType>
+                <UseEnumValue>true</UseEnumValue>
+                <DefaultValue />
+                <HideEnumValues>
+                    <EnumValue>Archived</EnumValue>
+                </HideEnumValues>
+            </FilterEnum>
+            <DataIndex>AccountStatus</DataIndex>
+            <IsColumn>true</IsColumn>
+            <HeaderText />
+            <Formatter />
+            <Width>120</Width>
+            <Resizeable>true</Resizeable>
+            <PreventSortable>false</PreventSortable>
+            <Sortable>true</Sortable>
+            <ColumnHideable>true</ColumnHideable>
+            <DefaultColumn>false</DefaultColumn>
+            <Exportable>true</Exportable>
+            <ShowInExpander>true</ShowInExpander>
+            <Filterable>true</Filterable>
+            <FilterHideable>true</FilterHideable>
+            <DefaultFilter>false</DefaultFilter>
+            <RequiredFilter>false</RequiredFilter>
+            <FilterLabel />
+            <ElementValue>
+                <Value />
+            </ElementValue>
+            <ElementValue2>
+                <Value />
+            </ElementValue2>
+            <FilterReadOnly>false</FilterReadOnly>
+            <DropdownItems />
+        </Element>
+        <Element>
+            <RecordElement>true</RecordElement>
+            <AssemblyFilename>MetraTech.DomainModel.AccountTypes.Generated.dll</AssemblyFilename>
+            <ObjectName>MetraTech.DomainModel.AccountTypes.CorporateAccount</ObjectName>
+            <ID>AccountType</ID>
+            <DataType>List</DataType>
+            <IsIdentity>false</IsIdentity>
+            <DataIndex>AccountType</DataIndex>
+            <IsColumn>true</IsColumn>
+            <HeaderText />
+            <Formatter />
+            <Width>120</Width>
+            <Resizeable>true</Resizeable>
+            <PreventSortable>false</PreventSortable>
+            <Sortable>true</Sortable>
+            <ColumnHideable>true</ColumnHideable>
+            <DefaultColumn>false</DefaultColumn>
+            <Exportable>true</Exportable>
+            <ShowInExpander>true</ShowInExpander>
+            <Filterable>true</Filterable>
+            <FilterHideable>true</FilterHideable>
+            <DefaultFilter>false</DefaultFilter>
+            <RequiredFilter>false</RequiredFilter>
+            <FilterLabel />
+            <ElementValue>
+                <Value />
+            </ElementValue>
+            <ElementValue2>
+                <Value />
+            </ElementValue2>
+            <FilterReadOnly>false</FilterReadOnly>
+            <DropdownItems />
+        </Element>
+        <Element>
+            <RecordElement>true</RecordElement>
+            <AssemblyFilename>MetraTech.DomainModel.AccountTypes.Generated.dll</AssemblyFilename>
+            <ObjectName>MetraTech.DomainModel.AccountTypes.CorporateAccount</ObjectName>
+            <ID>AccountStartDate</ID>
+            <DataType>Date</DataType>
+            <IsIdentity>false</IsIdentity>
+            <DataIndex>AccountStartDate</DataIndex>
+            <IsColumn>true</IsColumn>
+            <HeaderText />
+            <Formatter />
+            <Width>120</Width>
+            <Resizeable>true</Resizeable>
+            <PreventSortable>false</PreventSortable>
+            <Sortable>true</Sortable>
+            <ColumnHideable>true</ColumnHideable>
+            <DefaultColumn>false</DefaultColumn>
+            <Exportable>true</Exportable>
+            <ShowInExpander>true</ShowInExpander>
+            <Filterable>true</Filterable>
+            <FilterHideable>true</FilterHideable>
+            <DefaultFilter>false</DefaultFilter>
+            <RequiredFilter>false</RequiredFilter>
+            <FilterLabel />
+            <ElementValue>
+                <Value />
+            </ElementValue>
+            <ElementValue2>
+                <Value />
+            </ElementValue2>
+            <FilterReadOnly>false</FilterReadOnly>
+            <DropdownItems />
+        </Element>
+        <Element>
+            <RecordElement>true</RecordElement>
+            <AssemblyFilename>MetraTech.DomainModel.AccountTypes.Generated.dll</AssemblyFilename>
+            <ObjectName>MetraTech.DomainModel.AccountTypes.CorporateAccount</ObjectName>
+            <ID>AccountEndDate</ID>
+            <DataType>Date</DataType>
+            <IsIdentity>false</IsIdentity>
+            <DataIndex>AccountEndDate</DataIndex>
+            <IsColumn>true</IsColumn>
+            <HeaderText />
+            <Formatter />
+            <Width>120</Width>
+            <Resizeable>true</Resizeable>
+            <PreventSortable>false</PreventSortable>
+            <Sortable>true</Sortable>
+            <ColumnHideable>true</ColumnHideable>
+            <DefaultColumn>false</DefaultColumn>
+            <Exportable>true</Exportable>
+            <ShowInExpander>true</ShowInExpander>
+            <Filterable>true</Filterable>
+            <FilterHideable>true</FilterHideable>
+            <DefaultFilter>false</DefaultFilter>
+            <RequiredFilter>false</RequiredFilter>
+            <FilterLabel />
+            <ElementValue>
+                <Value />
+            </ElementValue>
+            <ElementValue2>
+                <Value />
+            </ElementValue2>
+            <FilterReadOnly>false</FilterReadOnly>
+            <DropdownItems />
+        </Element>
+        <Element>
+            <RecordElement>true</RecordElement>
+            <AssemblyFilename>MetraTech.DomainModel.AccountTypes.Generated.dll</AssemblyFilename>
+            <ObjectName>MetraTech.DomainModel.AccountTypes.CorporateAccount</ObjectName>
+            <ID>Name_Space</ID>
+            <DataType>String</DataType>
+            <IsIdentity>false</IsIdentity>
+            <DataIndex>Name_Space</DataIndex>
+            <IsColumn>true</IsColumn>
+            <HeaderText />
+            <Formatter />
+            <Width>120</Width>
+            <Resizeable>true</Resizeable>
+            <PreventSortable>false</PreventSortable>
+            <Sortable>true</Sortable>
+            <ColumnHideable>true</ColumnHideable>
+            <DefaultColumn>false</DefaultColumn>
+            <Exportable>true</Exportable>
+            <ShowInExpander>true</ShowInExpander>
+            <Filterable>true</Filterable>
+            <FilterHideable>true</FilterHideable>
+            <DefaultFilter>false</DefaultFilter>
+            <RequiredFilter>false</RequiredFilter>
+            <FilterLabel />
+            <ElementValue>
+                <Value />
+            </ElementValue>
+            <ElementValue2>
+                <Value />
+            </ElementValue2>
+            <FilterReadOnly>false</FilterReadOnly>
+            <DropdownItems />
+        </Element>
+        <Element>
+            <RecordElement>true</RecordElement>
+            <AssemblyFilename>MetraTech.DomainModel.AccountTypes.Generated.dll</AssemblyFilename>
+            <ObjectName>MetraTech.DomainModel.AccountTypes.CorporateAccount</ObjectName>
+            <ID>DayOfMonth</ID>
+            <DataType>Numeric</DataType>
+            <IsIdentity>false</IsIdentity>
+            <DataIndex>DayOfMonth</DataIndex>
+            <IsColumn>true</IsColumn>
+            <HeaderText />
+            <Formatter />
+            <Width>120</Width>
+            <Resizeable>true</Resizeable>
+            <PreventSortable>false</PreventSortable>
+            <Sortable>true</Sortable>
+            <ColumnHideable>true</ColumnHideable>
+            <DefaultColumn>false</DefaultColumn>
+            <Exportable>true</Exportable>
+            <ShowInExpander>true</ShowInExpander>
+            <Filterable>true</Filterable>
+            <FilterHideable>true</FilterHideable>
+            <DefaultFilter>false</DefaultFilter>
+            <RequiredFilter>false</RequiredFilter>
+            <FilterLabel />
+            <ElementValue>
+                <Value />
+            </ElementValue>
+            <ElementValue2>
+                <Value />
+            </ElementValue2>
+            <FilterReadOnly>false</FilterReadOnly>
+            <DropdownItems />
+        </Element>
+        <Element>
+            <RecordElement>true</RecordElement>
+            <AssemblyFilename>MetraTech.DomainModel.AccountTypes.Generated.dll</AssemblyFilename>
+            <ObjectName>MetraTech.DomainModel.AccountTypes.CorporateAccount</ObjectName>
+            <ID>DayOfWeek</ID>
+            <DataType>List</DataType>
+            <IsIdentity>false</IsIdentity>
+            <FilterEnum>
+                <EnumClassName />
+                <EnumSpace>Global</EnumSpace>
+                <EnumType>DayOfTheWeek</EnumType>
+                <UseEnumValue>true</UseEnumValue>
+                <DefaultValue />
+                <HideEnumValues />
+            </FilterEnum>
+            <DataIndex>DayOfWeek</DataIndex>
+            <IsColumn>true</IsColumn>
+            <HeaderText />
+            <Formatter />
+            <Width>120</Width>
+            <Resizeable>true</Resizeable>
+            <PreventSortable>false</PreventSortable>
+            <Sortable>true</Sortable>
+            <ColumnHideable>true</ColumnHideable>
+            <DefaultColumn>false</DefaultColumn>
+            <Exportable>false</Exportable>
+            <ShowInExpander>true</ShowInExpander>
+            <Filterable>true</Filterable>
+            <FilterHideable>true</FilterHideable>
+            <DefaultFilter>false</DefaultFilter>
+            <RequiredFilter>false</RequiredFilter>
+            <FilterLabel />
+            <ElementValue>
+                <Value />
+            </ElementValue>
+            <ElementValue2>
+                <Value />
+            </ElementValue2>
+            <FilterReadOnly>false</FilterReadOnly>
+            <DropdownItems />
+        </Element>
+        <Element>
+            <RecordElement>true</RecordElement>
+            <AssemblyFilename>MetraTech.DomainModel.AccountTypes.Generated.dll</AssemblyFilename>
+            <ObjectName>MetraTech.DomainModel.AccountTypes.CorporateAccount</ObjectName>
+            <ID>FirstDayOfMonth</ID>
+            <DataType>Numeric</DataType>
+            <IsIdentity>false</IsIdentity>
+            <DataIndex>FirstDayOfMonth</DataIndex>
+            <IsColumn>true</IsColumn>
+            <HeaderText />
+            <Formatter />
+            <Width>120</Width>
+            <Resizeable>true</Resizeable>
+            <PreventSortable>false</PreventSortable>
+            <Sortable>true</Sortable>
+            <ColumnHideable>true</ColumnHideable>
+            <DefaultColumn>false</DefaultColumn>
+            <Exportable>true</Exportable>
+            <ShowInExpander>true</ShowInExpander>
+            <Filterable>true</Filterable>
+            <FilterHideable>true</FilterHideable>
+            <DefaultFilter>false</DefaultFilter>
+            <RequiredFilter>false</RequiredFilter>
+            <FilterLabel />
+            <ElementValue>
+                <Value />
+            </ElementValue>
+            <ElementValue2>
+                <Value />
+            </ElementValue2>
+            <FilterReadOnly>false</FilterReadOnly>
+            <DropdownItems />
+        </Element>
+        <Element>
+            <RecordElement>true</RecordElement>
+            <AssemblyFilename>MetraTech.DomainModel.AccountTypes.Generated.dll</AssemblyFilename>
+            <ObjectName>MetraTech.DomainModel.AccountTypes.CorporateAccount</ObjectName>
+            <ID>SecondDayOfMonth</ID>
+            <DataType>Numeric</DataType>
+            <IsIdentity>false</IsIdentity>
+            <DataIndex>SecondDayOfMonth</DataIndex>
+            <IsColumn>true</IsColumn>
+            <HeaderText />
+            <Formatter />
+            <Width>120</Width>
+            <Resizeable>true</Resizeable>
+            <PreventSortable>false</PreventSortable>
+            <Sortable>true</Sortable>
+            <ColumnHideable>true</ColumnHideable>
+            <DefaultColumn>false</DefaultColumn>
+            <Exportable>true</Exportable>
+            <ShowInExpander>true</ShowInExpander>
+            <Filterable>true</Filterable>
+            <FilterHideable>true</FilterHideable>
+            <DefaultFilter>false</DefaultFilter>
+            <RequiredFilter>false</RequiredFilter>
+            <FilterLabel />
+            <ElementValue>
+                <Value />
+            </ElementValue>
+            <ElementValue2>
+                <Value />
+            </ElementValue2>
+            <FilterReadOnly>false</FilterReadOnly>
+            <DropdownItems />
+        </Element>
+        <Element>
+            <RecordElement>true</RecordElement>
+            <AssemblyFilename>MetraTech.DomainModel.AccountTypes.Generated.dll</AssemblyFilename>
+            <ObjectName>MetraTech.DomainModel.AccountTypes.CorporateAccount</ObjectName>
+            <ID>StartDay</ID>
+            <DataType>Numeric</DataType>
+            <IsIdentity>false</IsIdentity>
+            <DataIndex>StartDay</DataIndex>
+            <IsColumn>true</IsColumn>
+            <HeaderText />
+            <Formatter />
+            <Width>120</Width>
+            <Resizeable>true</Resizeable>
+            <PreventSortable>false</PreventSortable>
+            <Sortable>true</Sortable>
+            <ColumnHideable>true</ColumnHideable>
+            <DefaultColumn>false</DefaultColumn>
+            <Exportable>true</Exportable>
+            <ShowInExpander>true</ShowInExpander>
+            <Filterable>true</Filterable>
+            <FilterHideable>true</FilterHideable>
+            <DefaultFilter>false</DefaultFilter>
+            <RequiredFilter>false</RequiredFilter>
+            <FilterLabel />
+            <ElementValue>
+                <Value />
+            </ElementValue>
+            <ElementValue2>
+                <Value />
+            </ElementValue2>
+            <FilterReadOnly>false</FilterReadOnly>
+            <DropdownItems />
+        </Element>
+        <Element>
+            <RecordElement>true</RecordElement>
+            <AssemblyFilename>MetraTech.DomainModel.AccountTypes.Generated.dll</AssemblyFilename>
+            <ObjectName>MetraTech.DomainModel.AccountTypes.CorporateAccount</ObjectName>
+            <ID>StartMonth</ID>
+            <DataType>List</DataType>
+            <IsIdentity>false</IsIdentity>
+            <FilterEnum>
+                <EnumClassName />
+                <EnumSpace>Global</EnumSpace>
+                <EnumType>MonthOfTheYear</EnumType>
+                <UseEnumValue>true</UseEnumValue>
+                <DefaultValue />
+                <HideEnumValues />
+            </FilterEnum>
+            <DataIndex>StartMonth</DataIndex>
+            <IsColumn>true</IsColumn>
+            <HeaderText />
+            <Formatter />
+            <Width>120</Width>
+            <Resizeable>true</Resizeable>
+            <PreventSortable>false</PreventSortable>
+            <Sortable>true</Sortable>
+            <ColumnHideable>true</ColumnHideable>
+            <DefaultColumn>false</DefaultColumn>
+            <Exportable>false</Exportable>
+            <ShowInExpander>true</ShowInExpander>
+            <Filterable>true</Filterable>
+            <FilterHideable>true</FilterHideable>
+            <DefaultFilter>false</DefaultFilter>
+            <RequiredFilter>false</RequiredFilter>
+            <FilterLabel />
+            <ElementValue>
+                <Value />
+            </ElementValue>
+            <ElementValue2>
+                <Value />
+            </ElementValue2>
+            <FilterReadOnly>false</FilterReadOnly>
+            <DropdownItems />
+        </Element>
+        <Element>
+            <RecordElement>true</RecordElement>
+            <AssemblyFilename>MetraTech.DomainModel.AccountTypes.Generated.dll</AssemblyFilename>
+            <ObjectName>MetraTech.DomainModel.AccountTypes.CorporateAccount</ObjectName>
+            <ID>StartYear</ID>
+            <DataType>Numeric</DataType>
+            <IsIdentity>false</IsIdentity>
+            <DataIndex>StartYear</DataIndex>
+            <IsColumn>true</IsColumn>
+            <HeaderText />
+            <Formatter />
+            <Width>120</Width>
+            <Resizeable>true</Resizeable>
+            <PreventSortable>false</PreventSortable>
+            <Sortable>true</Sortable>
+            <ColumnHideable>true</ColumnHideable>
+            <DefaultColumn>false</DefaultColumn>
+            <Exportable>true</Exportable>
+            <ShowInExpander>true</ShowInExpander>
+            <Filterable>true</Filterable>
+            <FilterHideable>true</FilterHideable>
+            <DefaultFilter>false</DefaultFilter>
+            <RequiredFilter>false</RequiredFilter>
+            <FilterLabel />
+            <ElementValue>
+                <Value />
+            </ElementValue>
+            <ElementValue2>
+                <Value />
+            </ElementValue2>
+            <FilterReadOnly>false</FilterReadOnly>
+            <DropdownItems />
+        </Element>
+        <Element>
+            <RecordElement>true</RecordElement>
+            <AssemblyFilename>MetraTech.DomainModel.AccountTypes.Generated.dll</AssemblyFilename>
+            <ObjectName>MetraTech.DomainModel.AccountTypes.CorporateAccount</ObjectName>
+            <ID>PayerID</ID>
+            <DataType>Account</DataType>
+            <IsIdentity>false</IsIdentity>
+            <DataIndex>PayerID</DataIndex>
+            <IsColumn>true</IsColumn>
+            <HeaderText />
+            <Formatter />
+            <Width>120</Width>
+            <Resizeable>true</Resizeable>
+            <PreventSortable>false</PreventSortable>
+            <Sortable>true</Sortable>
+            <ColumnHideable>true</ColumnHideable>
+            <DefaultColumn>false</DefaultColumn>
+            <Exportable>true</Exportable>
+            <ShowInExpander>true</ShowInExpander>
+            <Filterable>true</Filterable>
+            <FilterHideable>true</FilterHideable>
+            <DefaultFilter>false</DefaultFilter>
+            <RequiredFilter>false</RequiredFilter>
+            <FilterLabel />
+            <ElementValue>
+                <Value />
+            </ElementValue>
+            <ElementValue2>
+                <Value />
+            </ElementValue2>
+            <FilterReadOnly>false</FilterReadOnly>
+            <DropdownItems />
+        </Element>
+        <Element>
+            <RecordElement>true</RecordElement>
+            <AssemblyFilename>MetraTech.DomainModel.AccountTypes.Generated.dll</AssemblyFilename>
+            <ObjectName>MetraTech.DomainModel.AccountTypes.CorporateAccount</ObjectName>
+            <ID>PayerAccount</ID>
+            <DataType>String</DataType>
+            <IsIdentity>false</IsIdentity>
+            <DataIndex>PayerAccount</DataIndex>
+            <IsColumn>true</IsColumn>
+            <HeaderText />
+            <Formatter />
+            <Width>120</Width>
+            <Resizeable>true</Resizeable>
+            <PreventSortable>false</PreventSortable>
+            <Sortable>true</Sortable>
+            <ColumnHideable>true</ColumnHideable>
+            <DefaultColumn>false</DefaultColumn>
+            <Exportable>true</Exportable>
+            <ShowInExpander>true</ShowInExpander>
+            <Filterable>true</Filterable>
+            <FilterHideable>true</FilterHideable>
+            <DefaultFilter>false</DefaultFilter>
+            <RequiredFilter>false</RequiredFilter>
+            <FilterLabel />
+            <ElementValue>
+                <Value />
+            </ElementValue>
+            <ElementValue2>
+                <Value />
+            </ElementValue2>
+            <FilterReadOnly>false</FilterReadOnly>
+            <DropdownItems />
+        </Element>
+        <Element>
+            <RecordElement>true</RecordElement>
+            <AssemblyFilename>MetraTech.DomainModel.AccountTypes.Generated.dll</AssemblyFilename>
+            <ObjectName>MetraTech.DomainModel.AccountTypes.CorporateAccount</ObjectName>
+            <ID>PayerAccountNS</ID>
+            <DataType>String</DataType>
+            <IsIdentity>false</IsIdentity>
+            <DataIndex>PayerAccountNS</DataIndex>
+            <IsColumn>true</IsColumn>
+            <HeaderText />
+            <Formatter />
+            <Width>120</Width>
+            <Resizeable>true</Resizeable>
+            <PreventSortable>false</PreventSortable>
+            <Sortable>true</Sortable>
+            <ColumnHideable>true</ColumnHideable>
+            <DefaultColumn>false</DefaultColumn>
+            <Exportable>true</Exportable>
+            <ShowInExpander>true</ShowInExpander>
+            <Filterable>true</Filterable>
+            <FilterHideable>true</FilterHideable>
+            <DefaultFilter>false</DefaultFilter>
+            <RequiredFilter>false</RequiredFilter>
+            <FilterLabel />
+            <ElementValue>
+                <Value />
+            </ElementValue>
+            <ElementValue2>
+                <Value />
+            </ElementValue2>
+            <FilterReadOnly>false</FilterReadOnly>
+            <DropdownItems />
+        </Element>
+        <Element>
+            <RecordElement>true</RecordElement>
+            <AssemblyFilename>MetraTech.DomainModel.AccountTypes.Generated.dll</AssemblyFilename>
+            <ObjectName>MetraTech.DomainModel.AccountTypes.CorporateAccount</ObjectName>
+            <ID>Payment_StartDate</ID>
+            <DataType>Date</DataType>
+            <IsIdentity>false</IsIdentity>
+            <DataIndex>Payment_StartDate</DataIndex>
+            <IsColumn>true</IsColumn>
+            <HeaderText />
+            <Formatter />
+            <Width>120</Width>
+            <Resizeable>true</Resizeable>
+            <PreventSortable>false</PreventSortable>
+            <Sortable>true</Sortable>
+            <ColumnHideable>true</ColumnHideable>
+            <DefaultColumn>false</DefaultColumn>
+            <Exportable>true</Exportable>
+            <ShowInExpander>true</ShowInExpander>
+            <Filterable>true</Filterable>
+            <FilterHideable>true</FilterHideable>
+            <DefaultFilter>false</DefaultFilter>
+            <RequiredFilter>false</RequiredFilter>
+            <FilterLabel />
+            <ElementValue>
+                <Value />
+            </ElementValue>
+            <ElementValue2>
+                <Value />
+            </ElementValue2>
+            <FilterReadOnly>false</FilterReadOnly>
+            <DropdownItems />
+        </Element>
+        <Element>
+            <RecordElement>true</RecordElement>
+            <AssemblyFilename>MetraTech.DomainModel.AccountTypes.Generated.dll</AssemblyFilename>
+            <ObjectName>MetraTech.DomainModel.AccountTypes.CorporateAccount</ObjectName>
+            <ID>Payment_EndDate</ID>
+            <DataType>Date</DataType>
+            <IsIdentity>false</IsIdentity>
+            <DataIndex>Payment_EndDate</DataIndex>
+            <IsColumn>true</IsColumn>
+            <HeaderText />
+            <Formatter />
+            <Width>120</Width>
+            <Resizeable>true</Resizeable>
+            <PreventSortable>false</PreventSortable>
+            <Sortable>true</Sortable>
+            <ColumnHideable>true</ColumnHideable>
+            <DefaultColumn>false</DefaultColumn>
+            <Exportable>true</Exportable>
+            <ShowInExpander>true</ShowInExpander>
+            <Filterable>true</Filterable>
+            <FilterHideable>true</FilterHideable>
+            <DefaultFilter>false</DefaultFilter>
+            <RequiredFilter>false</RequiredFilter>
+            <FilterLabel />
+            <ElementValue>
+                <Value />
+            </ElementValue>
+            <ElementValue2>
+                <Value />
+            </ElementValue2>
+            <FilterReadOnly>false</FilterReadOnly>
+            <DropdownItems />
+        </Element>
+        <Element>
+            <RecordElement>true</RecordElement>
+            <AssemblyFilename>MetraTech.DomainModel.AccountTypes.Generated.dll</AssemblyFilename>
+            <ObjectName>MetraTech.DomainModel.AccountTypes.CorporateAccount</ObjectName>
+            <ID>AncestorAccountID</ID>
+            <DataType>Account</DataType>
+            <IsIdentity>false</IsIdentity>
+            <DataIndex>AncestorAccountID</DataIndex>
+            <IsColumn>true</IsColumn>
+            <HeaderText />
+            <Formatter />
+            <Width>120</Width>
+            <Resizeable>true</Resizeable>
+            <PreventSortable>false</PreventSortable>
+            <Sortable>true</Sortable>
+            <ColumnHideable>true</ColumnHideable>
+            <DefaultColumn>false</DefaultColumn>
+            <Exportable>true</Exportable>
+            <ShowInExpander>true</ShowInExpander>
+            <Filterable>true</Filterable>
+            <FilterHideable>false</FilterHideable>
+            <DefaultFilter>true</DefaultFilter>
+            <RequiredFilter>false</RequiredFilter>
+            <FilterLabel />
+            <ElementValue>
+                <Value />
+            </ElementValue>
+            <ElementValue2>
+                <Value />
+            </ElementValue2>
+            <FilterReadOnly>false</FilterReadOnly>
+            <DropdownItems />
+        </Element>
+        <Element>
+            <RecordElement>true</RecordElement>
+            <AssemblyFilename>MetraTech.DomainModel.AccountTypes.Generated.dll</AssemblyFilename>
+            <ObjectName>MetraTech.DomainModel.AccountTypes.CorporateAccount</ObjectName>
+            <ID>AncestorAccount</ID>
+            <DataType>String</DataType>
+            <IsIdentity>false</IsIdentity>
+            <DataIndex>AncestorAccount</DataIndex>
+            <IsColumn>true</IsColumn>
+            <HeaderText />
+            <Formatter />
+            <Width>120</Width>
+            <Resizeable>true</Resizeable>
+            <PreventSortable>false</PreventSortable>
+            <Sortable>true</Sortable>
+            <ColumnHideable>true</ColumnHideable>
+            <DefaultColumn>false</DefaultColumn>
+            <Exportable>true</Exportable>
+            <ShowInExpander>true</ShowInExpander>
+            <Filterable>true</Filterable>
+            <FilterHideable>true</FilterHideable>
+            <DefaultFilter>false</DefaultFilter>
+            <RequiredFilter>false</RequiredFilter>
+            <FilterLabel />
+            <ElementValue>
+                <Value />
+            </ElementValue>
+            <ElementValue2>
+                <Value />
+            </ElementValue2>
+            <FilterReadOnly>false</FilterReadOnly>
+            <DropdownItems />
+        </Element>
+        <Element>
+            <RecordElement>true</RecordElement>
+            <AssemblyFilename>MetraTech.DomainModel.AccountTypes.Generated.dll</AssemblyFilename>
+            <ObjectName>MetraTech.DomainModel.AccountTypes.CorporateAccount</ObjectName>
+            <ID>AncestorAccountNS</ID>
+            <DataType>String</DataType>
+            <IsIdentity>false</IsIdentity>
+            <DataIndex>AncestorAccountNS</DataIndex>
+            <IsColumn>true</IsColumn>
+            <HeaderText />
+            <Formatter />
+            <Width>120</Width>
+            <Resizeable>true</Resizeable>
+            <PreventSortable>false</PreventSortable>
+            <Sortable>true</Sortable>
+            <ColumnHideable>true</ColumnHideable>
+            <DefaultColumn>false</DefaultColumn>
+            <Exportable>true</Exportable>
+            <ShowInExpander>true</ShowInExpander>
+            <Filterable>true</Filterable>
+            <FilterHideable>true</FilterHideable>
+            <DefaultFilter>false</DefaultFilter>
+            <RequiredFilter>false</RequiredFilter>
+            <FilterLabel />
+            <ElementValue>
+                <Value />
+            </ElementValue>
+            <ElementValue2>
+                <Value />
+            </ElementValue2>
+            <FilterReadOnly>false</FilterReadOnly>
+            <DropdownItems />
+        </Element>
+        <Element>
+            <RecordElement>true</RecordElement>
+            <AssemblyFilename>MetraTech.DomainModel.AccountTypes.Generated.dll</AssemblyFilename>
+            <ObjectName>MetraTech.DomainModel.AccountTypes.CorporateAccount</ObjectName>
+            <ID>Hierarchy_StartDate</ID>
+            <DataType>Date</DataType>
+            <IsIdentity>false</IsIdentity>
+            <DataIndex>Hierarchy_StartDate</DataIndex>
+            <IsColumn>true</IsColumn>
+            <HeaderText />
+            <Formatter />
+            <Width>120</Width>
+            <Resizeable>true</Resizeable>
+            <PreventSortable>false</PreventSortable>
+            <Sortable>true</Sortable>
+            <ColumnHideable>true</ColumnHideable>
+            <DefaultColumn>false</DefaultColumn>
+            <Exportable>true</Exportable>
+            <ShowInExpander>true</ShowInExpander>
+            <Filterable>true</Filterable>
+            <FilterHideable>true</FilterHideable>
+            <DefaultFilter>false</DefaultFilter>
+            <RequiredFilter>false</RequiredFilter>
+            <FilterLabel />
+            <ElementValue>
+                <Value />
+            </ElementValue>
+            <ElementValue2>
+                <Value />
+            </ElementValue2>
+            <FilterReadOnly>false</FilterReadOnly>
+            <DropdownItems />
+        </Element>
+        <Element>
+            <RecordElement>true</RecordElement>
+            <AssemblyFilename>MetraTech.DomainModel.AccountTypes.Generated.dll</AssemblyFilename>
+            <ObjectName>MetraTech.DomainModel.AccountTypes.CorporateAccount</ObjectName>
+            <ID>Hierarchy_EndDate</ID>
+            <DataType>Date</DataType>
+            <IsIdentity>false</IsIdentity>
+            <DataIndex>Hierarchy_EndDate</DataIndex>
+            <IsColumn>true</IsColumn>
+            <HeaderText />
+            <Formatter />
+            <Width>120</Width>
+            <Resizeable>true</Resizeable>
+            <PreventSortable>false</PreventSortable>
+            <Sortable>true</Sortable>
+            <ColumnHideable>true</ColumnHideable>
+            <DefaultColumn>false</DefaultColumn>
+            <Exportable>true</Exportable>
+            <ShowInExpander>true</ShowInExpander>
+            <Filterable>true</Filterable>
+            <FilterHideable>true</FilterHideable>
+            <DefaultFilter>false</DefaultFilter>
+            <RequiredFilter>false</RequiredFilter>
+            <FilterLabel />
+            <ElementValue>
+                <Value />
+            </ElementValue>
+            <ElementValue2>
+                <Value />
+            </ElementValue2>
+            <FilterReadOnly>false</FilterReadOnly>
+            <DropdownItems />
+        </Element>
+        <Element>
+            <RecordElement>true</RecordElement>
+            <AssemblyFilename>MetraTech.DomainModel.AccountTypes.Generated.dll</AssemblyFilename>
+            <ObjectName>MetraTech.DomainModel.AccountTypes.CorporateAccount</ObjectName>
+            <ID>ApplyDefaultSecurityPolicy</ID>
+            <DataType>Boolean</DataType>
+            <IsIdentity>false</IsIdentity>
+            <DataIndex>ApplyDefaultSecurityPolicy</DataIndex>
+            <IsColumn>true</IsColumn>
+            <HeaderText />
+            <Formatter />
+            <Width>120</Width>
+            <Resizeable>true</Resizeable>
+            <PreventSortable>false</PreventSortable>
+            <Sortable>true</Sortable>
+            <ColumnHideable>true</ColumnHideable>
+            <DefaultColumn>false</DefaultColumn>
+            <Exportable>true</Exportable>
+            <ShowInExpander>true</ShowInExpander>
+            <Filterable>true</Filterable>
+            <FilterHideable>true</FilterHideable>
+            <DefaultFilter>false</DefaultFilter>
+            <RequiredFilter>false</RequiredFilter>
+            <FilterLabel />
+            <ElementValue>
+                <Value />
+            </ElementValue>
+            <ElementValue2>
+                <Value />
+            </ElementValue2>
+            <FilterReadOnly>false</FilterReadOnly>
+            <DropdownItems />
+        </Element>
+        <Element>
+            <RecordElement>true</RecordElement>
+            <AssemblyFilename>MetraTech.DomainModel.AccountTypes.Generated.dll</AssemblyFilename>
+            <ObjectName>MetraTech.DomainModel.AccountTypes.ContactView</ObjectName>
+            <ID>LDAP[Bill-To].ContactType</ID>
+            <DataType>List</DataType>
+            <IsIdentity>false</IsIdentity>
+            <FilterEnum>
+                <EnumClassName />
+                <EnumSpace>metratech.com/accountcreation</EnumSpace>
+                <EnumType>ContactType</EnumType>
+                <UseEnumValue>true</UseEnumValue>
+                <DefaultValue />
+                <HideEnumValues />
+            </FilterEnum>
+            <DataIndex>LDAP[ContactType == 1]/ContactType</DataIndex>
+            <IsColumn>true</IsColumn>
+            <HeaderText />
+            <Formatter />
+            <Width>120</Width>
+            <Resizeable>true</Resizeable>
+            <PreventSortable>false</PreventSortable>
+            <Sortable>true</Sortable>
+            <ColumnHideable>true</ColumnHideable>
+            <DefaultColumn>false</DefaultColumn>
+            <Exportable>false</Exportable>
+            <ShowInExpander>true</ShowInExpander>
+            <Filterable>true</Filterable>
+            <FilterHideable>true</FilterHideable>
+            <DefaultFilter>false</DefaultFilter>
+            <RequiredFilter>false</RequiredFilter>
+            <FilterLabel />
+            <ElementValue>
+                <Value />
+            </ElementValue>
+            <ElementValue2>
+                <Value />
+            </ElementValue2>
+            <FilterReadOnly>false</FilterReadOnly>
+            <DropdownItems />
+        </Element>
+        <Element>
+            <RecordElement>true</RecordElement>
+            <AssemblyFilename>MetraTech.DomainModel.AccountTypes.Generated.dll</AssemblyFilename>
+            <ObjectName>MetraTech.DomainModel.AccountTypes.ContactView</ObjectName>
+            <ID>LDAP[Bill-To].Email</ID>
+            <DataType>String</DataType>
+            <IsIdentity>false</IsIdentity>
+            <DataIndex>LDAP[ContactType == 1]/Email</DataIndex>
+            <IsColumn>true</IsColumn>
+            <HeaderText />
+            <Formatter />
+            <Width>120</Width>
+            <Resizeable>true</Resizeable>
+            <PreventSortable>false</PreventSortable>
+            <Sortable>true</Sortable>
+            <ColumnHideable>true</ColumnHideable>
+            <DefaultColumn>false</DefaultColumn>
+            <Exportable>true</Exportable>
+            <ShowInExpander>true</ShowInExpander>
+            <Filterable>true</Filterable>
+            <FilterHideable>true</FilterHideable>
+            <DefaultFilter>false</DefaultFilter>
+            <RequiredFilter>false</RequiredFilter>
+            <FilterLabel />
+            <ElementValue>
+                <Value />
+            </ElementValue>
+            <ElementValue2>
+                <Value />
+            </ElementValue2>
+            <FilterReadOnly>false</FilterReadOnly>
+            <DropdownItems />
+        </Element>
+        <Element>
+            <RecordElement>true</RecordElement>
+            <AssemblyFilename>MetraTech.DomainModel.AccountTypes.Generated.dll</AssemblyFilename>
+            <ObjectName>MetraTech.DomainModel.AccountTypes.ContactView</ObjectName>
+            <ID>LDAP[Bill-To].PhoneNumber</ID>
+            <DataType>String</DataType>
+            <IsIdentity>false</IsIdentity>
+            <DataIndex>LDAP[ContactType == 1]/PhoneNumber</DataIndex>
+            <IsColumn>true</IsColumn>
+            <HeaderText />
+            <Formatter />
+            <Width>120</Width>
+            <Resizeable>true</Resizeable>
+            <PreventSortable>false</PreventSortable>
+            <Sortable>true</Sortable>
+            <ColumnHideable>true</ColumnHideable>
+            <DefaultColumn>false</DefaultColumn>
+            <Exportable>true</Exportable>
+            <ShowInExpander>true</ShowInExpander>
+            <Filterable>true</Filterable>
+            <FilterHideable>true</FilterHideable>
+            <DefaultFilter>false</DefaultFilter>
+            <RequiredFilter>false</RequiredFilter>
+            <FilterLabel />
+            <ElementValue>
+                <Value />
+            </ElementValue>
+            <ElementValue2>
+                <Value />
+            </ElementValue2>
+            <FilterReadOnly>false</FilterReadOnly>
+            <DropdownItems />
+        </Element>
+        <Element>
+            <RecordElement>true</RecordElement>
+            <AssemblyFilename>MetraTech.DomainModel.AccountTypes.Generated.dll</AssemblyFilename>
+            <ObjectName>MetraTech.DomainModel.AccountTypes.ContactView</ObjectName>
+            <ID>LDAP[Bill-To].FacsimileTelephoneNumber</ID>
+            <DataType>String</DataType>
+            <IsIdentity>false</IsIdentity>
+            <DataIndex>LDAP[ContactType == 1]/FacsimileTelephoneNumber</DataIndex>
+            <IsColumn>true</IsColumn>
+            <HeaderText />
+            <Formatter />
+            <Width>120</Width>
+            <Resizeable>true</Resizeable>
+            <PreventSortable>false</PreventSortable>
+            <Sortable>true</Sortable>
+            <ColumnHideable>true</ColumnHideable>
+            <DefaultColumn>false</DefaultColumn>
+            <Exportable>true</Exportable>
+            <ShowInExpander>true</ShowInExpander>
+            <Filterable>true</Filterable>
+            <FilterHideable>true</FilterHideable>
+            <DefaultFilter>false</DefaultFilter>
+            <RequiredFilter>false</RequiredFilter>
+            <FilterLabel />
+            <ElementValue>
+                <Value />
+            </ElementValue>
+            <ElementValue2>
+                <Value />
+            </ElementValue2>
+            <FilterReadOnly>false</FilterReadOnly>
+            <DropdownItems />
+        </Element>
+        <Element>
+            <RecordElement>true</RecordElement>
+            <AssemblyFilename>MetraTech.DomainModel.AccountTypes.Generated.dll</AssemblyFilename>
+            <ObjectName>MetraTech.DomainModel.AccountTypes.ContactView</ObjectName>
+            <ID>LDAP[Bill-To].Company</ID>
+            <DataType>String</DataType>
+            <IsIdentity>false</IsIdentity>
+            <DataIndex>LDAP[ContactType == 1]/Company</DataIndex>
+            <IsColumn>true</IsColumn>
+            <HeaderText />
+            <Formatter />
+            <Width>120</Width>
+            <Resizeable>true</Resizeable>
+            <PreventSortable>false</PreventSortable>
+            <Sortable>true</Sortable>
+            <ColumnHideable>true</ColumnHideable>
+            <DefaultColumn>false</DefaultColumn>
+            <Exportable>true</Exportable>
+            <ShowInExpander>true</ShowInExpander>
+            <Filterable>true</Filterable>
+            <FilterHideable>true</FilterHideable>
+            <DefaultFilter>false</DefaultFilter>
+            <RequiredFilter>false</RequiredFilter>
+            <FilterLabel />
+            <ElementValue>
+                <Value />
+            </ElementValue>
+            <ElementValue2>
+                <Value />
+            </ElementValue2>
+            <FilterReadOnly>false</FilterReadOnly>
+            <DropdownItems />
+        </Element>
+        <Element>
+            <RecordElement>true</RecordElement>
+            <AssemblyFilename>MetraTech.DomainModel.AccountTypes.Generated.dll</AssemblyFilename>
+            <ObjectName>MetraTech.DomainModel.AccountTypes.ContactView</ObjectName>
+            <ID>LDAP[Bill-To].Address1</ID>
+            <DataType>String</DataType>
+            <IsIdentity>false</IsIdentity>
+            <DataIndex>LDAP[ContactType == 1]/Address1</DataIndex>
+            <IsColumn>true</IsColumn>
+            <HeaderText />
+            <Formatter />
+            <Width>120</Width>
+            <Resizeable>true</Resizeable>
+            <PreventSortable>false</PreventSortable>
+            <Sortable>true</Sortable>
+            <ColumnHideable>true</ColumnHideable>
+            <DefaultColumn>false</DefaultColumn>
+            <Exportable>true</Exportable>
+            <ShowInExpander>true</ShowInExpander>
+            <Filterable>true</Filterable>
+            <FilterHideable>true</FilterHideable>
+            <DefaultFilter>false</DefaultFilter>
+            <RequiredFilter>false</RequiredFilter>
+            <FilterLabel />
+            <ElementValue>
+                <Value />
+            </ElementValue>
+            <ElementValue2>
+                <Value />
+            </ElementValue2>
+            <FilterReadOnly>false</FilterReadOnly>
+            <DropdownItems />
+        </Element>
+        <Element>
+            <RecordElement>true</RecordElement>
+            <AssemblyFilename>MetraTech.DomainModel.AccountTypes.Generated.dll</AssemblyFilename>
+            <ObjectName>MetraTech.DomainModel.AccountTypes.ContactView</ObjectName>
+            <ID>LDAP[Bill-To].Address2</ID>
+            <DataType>String</DataType>
+            <IsIdentity>false</IsIdentity>
+            <DataIndex>LDAP[ContactType == 1]/Address2</DataIndex>
+            <IsColumn>true</IsColumn>
+            <HeaderText />
+            <Formatter />
+            <Width>120</Width>
+            <Resizeable>true</Resizeable>
+            <PreventSortable>false</PreventSortable>
+            <Sortable>true</Sortable>
+            <ColumnHideable>true</ColumnHideable>
+            <DefaultColumn>false</DefaultColumn>
+            <Exportable>true</Exportable>
+            <ShowInExpander>true</ShowInExpander>
+            <Filterable>true</Filterable>
+            <FilterHideable>true</FilterHideable>
+            <DefaultFilter>false</DefaultFilter>
+            <RequiredFilter>false</RequiredFilter>
+            <FilterLabel />
+            <ElementValue>
+                <Value />
+            </ElementValue>
+            <ElementValue2>
+                <Value />
+            </ElementValue2>
+            <FilterReadOnly>false</FilterReadOnly>
+            <DropdownItems />
+        </Element>
+        <Element>
+            <RecordElement>true</RecordElement>
+            <AssemblyFilename>MetraTech.DomainModel.AccountTypes.Generated.dll</AssemblyFilename>
+            <ObjectName>MetraTech.DomainModel.AccountTypes.ContactView</ObjectName>
+            <ID>LDAP[Bill-To].Address3</ID>
+            <DataType>String</DataType>
+            <IsIdentity>false</IsIdentity>
+            <DataIndex>LDAP[ContactType == 1]/Address3</DataIndex>
+            <IsColumn>true</IsColumn>
+            <HeaderText />
+            <Formatter />
+            <Width>120</Width>
+            <Resizeable>true</Resizeable>
+            <PreventSortable>false</PreventSortable>
+            <Sortable>true</Sortable>
+            <ColumnHideable>true</ColumnHideable>
+            <DefaultColumn>false</DefaultColumn>
+            <Exportable>true</Exportable>
+            <ShowInExpander>true</ShowInExpander>
+            <Filterable>true</Filterable>
+            <FilterHideable>true</FilterHideable>
+            <DefaultFilter>false</DefaultFilter>
+            <RequiredFilter>false</RequiredFilter>
+            <FilterLabel />
+            <ElementValue>
+                <Value />
+            </ElementValue>
+            <ElementValue2>
+                <Value />
+            </ElementValue2>
+            <FilterReadOnly>false</FilterReadOnly>
+            <DropdownItems />
+        </Element>
+        <Element>
+            <RecordElement>true</RecordElement>
+            <AssemblyFilename>MetraTech.DomainModel.AccountTypes.Generated.dll</AssemblyFilename>
+            <ObjectName>MetraTech.DomainModel.AccountTypes.ContactView</ObjectName>
+            <ID>LDAP[Bill-To].City</ID>
+            <DataType>String</DataType>
+            <IsIdentity>false</IsIdentity>
+            <DataIndex>LDAP[ContactType == 1]/City</DataIndex>
+            <IsColumn>true</IsColumn>
+            <HeaderText />
+            <Formatter />
+            <Width>120</Width>
+            <Resizeable>true</Resizeable>
+            <PreventSortable>false</PreventSortable>
+            <Sortable>true</Sortable>
+            <ColumnHideable>true</ColumnHideable>
+            <DefaultColumn>false</DefaultColumn>
+            <Exportable>true</Exportable>
+            <ShowInExpander>true</ShowInExpander>
+            <Filterable>true</Filterable>
+            <FilterHideable>true</FilterHideable>
+            <DefaultFilter>false</DefaultFilter>
+            <RequiredFilter>false</RequiredFilter>
+            <FilterLabel />
+            <ElementValue>
+                <Value />
+            </ElementValue>
+            <ElementValue2>
+                <Value />
+            </ElementValue2>
+            <FilterReadOnly>false</FilterReadOnly>
+            <DropdownItems />
+        </Element>
+        <Element>
+            <RecordElement>true</RecordElement>
+            <AssemblyFilename>MetraTech.DomainModel.AccountTypes.Generated.dll</AssemblyFilename>
+            <ObjectName>MetraTech.DomainModel.AccountTypes.ContactView</ObjectName>
+            <ID>LDAP[Bill-To].State</ID>
+            <DataType>String</DataType>
+            <IsIdentity>false</IsIdentity>
+            <DataIndex>LDAP[ContactType == 1]/State</DataIndex>
+            <IsColumn>true</IsColumn>
+            <HeaderText />
+            <Formatter />
+            <Width>120</Width>
+            <Resizeable>true</Resizeable>
+            <PreventSortable>false</PreventSortable>
+            <Sortable>true</Sortable>
+            <ColumnHideable>true</ColumnHideable>
+            <DefaultColumn>false</DefaultColumn>
+            <Exportable>true</Exportable>
+            <ShowInExpander>true</ShowInExpander>
+            <Filterable>true</Filterable>
+            <FilterHideable>true</FilterHideable>
+            <DefaultFilter>false</DefaultFilter>
+            <RequiredFilter>false</RequiredFilter>
+            <FilterLabel />
+            <ElementValue>
+                <Value />
+            </ElementValue>
+            <ElementValue2>
+                <Value />
+            </ElementValue2>
+            <FilterReadOnly>false</FilterReadOnly>
+            <DropdownItems />
+        </Element>
+        <Element>
+            <RecordElement>true</RecordElement>
+            <AssemblyFilename>MetraTech.DomainModel.AccountTypes.Generated.dll</AssemblyFilename>
+            <ObjectName>MetraTech.DomainModel.AccountTypes.ContactView</ObjectName>
+            <ID>LDAP[Bill-To].Zip</ID>
+            <DataType>String</DataType>
+            <IsIdentity>false</IsIdentity>
+            <DataIndex>LDAP[ContactType == 1]/Zip</DataIndex>
+            <IsColumn>true</IsColumn>
+            <HeaderText />
+            <Formatter />
+            <Width>120</Width>
+            <Resizeable>true</Resizeable>
+            <PreventSortable>false</PreventSortable>
+            <Sortable>true</Sortable>
+            <ColumnHideable>true</ColumnHideable>
+            <DefaultColumn>false</DefaultColumn>
+            <Exportable>true</Exportable>
+            <ShowInExpander>true</ShowInExpander>
+            <Filterable>true</Filterable>
+            <FilterHideable>true</FilterHideable>
+            <DefaultFilter>false</DefaultFilter>
+            <RequiredFilter>false</RequiredFilter>
+            <FilterLabel />
+            <ElementValue>
+                <Value />
+            </ElementValue>
+            <ElementValue2>
+                <Value />
+            </ElementValue2>
+            <FilterReadOnly>false</FilterReadOnly>
+            <DropdownItems />
+        </Element>
+        <Element>
+            <RecordElement>true</RecordElement>
+            <AssemblyFilename>MetraTech.DomainModel.AccountTypes.Generated.dll</AssemblyFilename>
+            <ObjectName>MetraTech.DomainModel.AccountTypes.ContactView</ObjectName>
+            <ID>LDAP[Bill-To].Country</ID>
+            <DataType>List</DataType>
+            <IsIdentity>false</IsIdentity>
+            <FilterEnum>
+                <EnumClassName />
+                <EnumSpace>Global</EnumSpace>
+                <EnumType>CountryName</EnumType>
+                <UseEnumValue>true</UseEnumValue>
+                <DefaultValue />
+                <HideEnumValues />
+            </FilterEnum>
+            <DataIndex>LDAP[ContactType == 1]/Country</DataIndex>
+            <IsColumn>true</IsColumn>
+            <HeaderText />
+            <Formatter />
+            <Width>120</Width>
+            <Resizeable>true</Resizeable>
+            <PreventSortable>false</PreventSortable>
+            <Sortable>true</Sortable>
+            <ColumnHideable>true</ColumnHideable>
+            <DefaultColumn>false</DefaultColumn>
+            <Exportable>false</Exportable>
+            <ShowInExpander>true</ShowInExpander>
+            <Filterable>true</Filterable>
+            <FilterHideable>true</FilterHideable>
+            <DefaultFilter>false</DefaultFilter>
+            <RequiredFilter>false</RequiredFilter>
+            <FilterLabel />
+            <ElementValue>
+                <Value />
+            </ElementValue>
+            <ElementValue2>
+                <Value />
+            </ElementValue2>
+            <FilterReadOnly>false</FilterReadOnly>
+            <DropdownItems />
+        </Element>
+        <Element>
+            <RecordElement>true</RecordElement>
+            <AssemblyFilename>MetraTech.DomainModel.AccountTypes.Generated.dll</AssemblyFilename>
+            <ObjectName>MetraTech.DomainModel.AccountTypes.InternalView</ObjectName>
+            <ID>Internal.TaxExempt</ID>
+            <DataType>Boolean</DataType>
+            <IsIdentity>false</IsIdentity>
+            <DataIndex>Internal.TaxExempt</DataIndex>
+            <IsColumn>true</IsColumn>
+            <HeaderText />
+            <Formatter />
+            <Width>120</Width>
+            <Resizeable>true</Resizeable>
+            <PreventSortable>false</PreventSortable>
+            <Sortable>true</Sortable>
+            <ColumnHideable>true</ColumnHideable>
+            <DefaultColumn>false</DefaultColumn>
+            <Exportable>true</Exportable>
+            <ShowInExpander>true</ShowInExpander>
+            <Filterable>true</Filterable>
+            <FilterHideable>true</FilterHideable>
+            <DefaultFilter>false</DefaultFilter>
+            <RequiredFilter>false</RequiredFilter>
+            <FilterLabel />
+            <ElementValue>
+                <Value />
+            </ElementValue>
+            <ElementValue2>
+                <Value />
+            </ElementValue2>
+            <FilterReadOnly>false</FilterReadOnly>
+            <DropdownItems />
+        </Element>
+        <Element>
+            <RecordElement>true</RecordElement>
+            <AssemblyFilename>MetraTech.DomainModel.AccountTypes.Generated.dll</AssemblyFilename>
+            <ObjectName>MetraTech.DomainModel.AccountTypes.InternalView</ObjectName>
+            <ID>Internal.TimezoneID</ID>
+            <DataType>List</DataType>
+            <IsIdentity>false</IsIdentity>
+            <FilterEnum>
+                <EnumClassName />
+                <EnumSpace>Global</EnumSpace>
+                <EnumType>TimeZoneID</EnumType>
+                <UseEnumValue>true</UseEnumValue>
+                <DefaultValue />
+                <HideEnumValues />
+            </FilterEnum>
+            <DataIndex>Internal.TimezoneID</DataIndex>
+            <IsColumn>true</IsColumn>
+            <HeaderText />
+            <Formatter />
+            <Width>120</Width>
+            <Resizeable>true</Resizeable>
+            <PreventSortable>false</PreventSortable>
+            <Sortable>true</Sortable>
+            <ColumnHideable>true</ColumnHideable>
+            <DefaultColumn>false</DefaultColumn>
+            <Exportable>false</Exportable>
+            <ShowInExpander>true</ShowInExpander>
+            <Filterable>true</Filterable>
+            <FilterHideable>true</FilterHideable>
+            <DefaultFilter>false</DefaultFilter>
+            <RequiredFilter>false</RequiredFilter>
+            <FilterLabel />
+            <ElementValue>
+                <Value />
+            </ElementValue>
+            <ElementValue2>
+                <Value />
+            </ElementValue2>
+            <FilterReadOnly>false</FilterReadOnly>
+            <DropdownItems />
+        </Element>
+        <Element>
+            <RecordElement>true</RecordElement>
+            <AssemblyFilename>MetraTech.DomainModel.AccountTypes.Generated.dll</AssemblyFilename>
+            <ObjectName>MetraTech.DomainModel.AccountTypes.InternalView</ObjectName>
+            <ID>Internal.PaymentMethod</ID>
+            <DataType>List</DataType>
+            <IsIdentity>false</IsIdentity>
+            <FilterEnum>
+                <EnumClassName />
+                <EnumSpace>metratech.com/accountcreation</EnumSpace>
+                <EnumType>PaymentMethod</EnumType>
+                <UseEnumValue>true</UseEnumValue>
+                <DefaultValue />
+                <HideEnumValues />
+            </FilterEnum>
+            <DataIndex>Internal.PaymentMethod</DataIndex>
+            <IsColumn>true</IsColumn>
+            <HeaderText />
+            <Formatter />
+            <Width>120</Width>
+            <Resizeable>true</Resizeable>
+            <PreventSortable>false</PreventSortable>
+            <Sortable>true</Sortable>
+            <ColumnHideable>true</ColumnHideable>
+            <DefaultColumn>false</DefaultColumn>
+            <Exportable>false</Exportable>
+            <ShowInExpander>true</ShowInExpander>
+            <Filterable>true</Filterable>
+            <FilterHideable>true</FilterHideable>
+            <DefaultFilter>false</DefaultFilter>
+            <RequiredFilter>false</RequiredFilter>
+            <FilterLabel />
+            <ElementValue>
+                <Value />
+            </ElementValue>
+            <ElementValue2>
+                <Value />
+            </ElementValue2>
+            <FilterReadOnly>false</FilterReadOnly>
+            <DropdownItems />
+        </Element>
+        <Element>
+            <RecordElement>true</RecordElement>
+            <AssemblyFilename>MetraTech.DomainModel.AccountTypes.Generated.dll</AssemblyFilename>
+            <ObjectName>MetraTech.DomainModel.AccountTypes.InternalView</ObjectName>
+            <ID>Internal.SecurityQuestion</ID>
+            <DataType>List</DataType>
+            <IsIdentity>false</IsIdentity>
+            <FilterEnum>
+                <EnumClassName />
+                <EnumSpace>metratech.com/accountcreation</EnumSpace>
+                <EnumType>SecurityQuestion</EnumType>
+                <UseEnumValue>true</UseEnumValue>
+                <DefaultValue />
+                <HideEnumValues />
+            </FilterEnum>
+            <DataIndex>Internal.SecurityQuestion</DataIndex>
+            <IsColumn>true</IsColumn>
+            <HeaderText />
+            <Formatter />
+            <Width>120</Width>
+            <Resizeable>true</Resizeable>
+            <PreventSortable>false</PreventSortable>
+            <Sortable>true</Sortable>
+            <ColumnHideable>true</ColumnHideable>
+            <DefaultColumn>false</DefaultColumn>
+            <Exportable>false</Exportable>
+            <ShowInExpander>true</ShowInExpander>
+            <Filterable>true</Filterable>
+            <FilterHideable>true</FilterHideable>
+            <DefaultFilter>false</DefaultFilter>
+            <RequiredFilter>false</RequiredFilter>
+            <FilterLabel />
+            <ElementValue>
+                <Value />
+            </ElementValue>
+            <ElementValue2>
+                <Value />
+            </ElementValue2>
+            <FilterReadOnly>false</FilterReadOnly>
+            <DropdownItems />
+        </Element>
+        <Element>
+            <RecordElement>true</RecordElement>
+            <AssemblyFilename>MetraTech.DomainModel.AccountTypes.Generated.dll</AssemblyFilename>
+            <ObjectName>MetraTech.DomainModel.AccountTypes.InternalView</ObjectName>
+            <ID>Internal.InvoiceMethod</ID>
+            <DataType>List</DataType>
+            <IsIdentity>false</IsIdentity>
+            <FilterEnum>
+                <EnumClassName />
+                <EnumSpace>metratech.com/accountcreation</EnumSpace>
+                <EnumType>InvoiceMethod</EnumType>
+                <UseEnumValue>true</UseEnumValue>
+                <DefaultValue />
+                <HideEnumValues />
+            </FilterEnum>
+            <DataIndex>Internal.InvoiceMethod</DataIndex>
+            <IsColumn>true</IsColumn>
+            <HeaderText />
+            <Formatter />
+            <Width>120</Width>
+            <Resizeable>true</Resizeable>
+            <PreventSortable>false</PreventSortable>
+            <Sortable>true</Sortable>
+            <ColumnHideable>true</ColumnHideable>
+            <DefaultColumn>false</DefaultColumn>
+            <Exportable>false</Exportable>
+            <ShowInExpander>true</ShowInExpander>
+            <Filterable>true</Filterable>
+            <FilterHideable>true</FilterHideable>
+            <DefaultFilter>false</DefaultFilter>
+            <RequiredFilter>false</RequiredFilter>
+            <FilterLabel />
+            <ElementValue>
+                <Value />
+            </ElementValue>
+            <ElementValue2>
+                <Value />
+            </ElementValue2>
+            <FilterReadOnly>false</FilterReadOnly>
+            <DropdownItems />
+        </Element>
+        <Element>
+            <RecordElement>true</RecordElement>
+            <AssemblyFilename>MetraTech.DomainModel.AccountTypes.Generated.dll</AssemblyFilename>
+            <ObjectName>MetraTech.DomainModel.AccountTypes.InternalView</ObjectName>
+            <ID>Internal.UsageCycleType</ID>
+            <DataType>List</DataType>
+            <IsIdentity>false</IsIdentity>
+            <FilterEnum>
+                <EnumClassName />
+                <EnumSpace>metratech.com/BillingCycle</EnumSpace>
+                <EnumType>UsageCycleType</EnumType>
+                <UseEnumValue>true</UseEnumValue>
+                <DefaultValue />
+                <HideEnumValues />
+            </FilterEnum>
+            <DataIndex>Internal.UsageCycleType</DataIndex>
+            <IsColumn>true</IsColumn>
+            <HeaderText />
+            <Formatter />
+            <Width>120</Width>
+            <Resizeable>true</Resizeable>
+            <PreventSortable>false</PreventSortable>
+            <Sortable>true</Sortable>
+            <ColumnHideable>true</ColumnHideable>
+            <DefaultColumn>false</DefaultColumn>
+            <Exportable>false</Exportable>
+            <ShowInExpander>true</ShowInExpander>
+            <Filterable>true</Filterable>
+            <FilterHideable>true</FilterHideable>
+            <DefaultFilter>false</DefaultFilter>
+            <RequiredFilter>false</RequiredFilter>
+            <FilterLabel />
+            <ElementValue>
+                <Value />
+            </ElementValue>
+            <ElementValue2>
+                <Value />
+            </ElementValue2>
+            <FilterReadOnly>false</FilterReadOnly>
+            <DropdownItems />
+        </Element>
+        <Element>
+            <RecordElement>true</RecordElement>
+            <AssemblyFilename>MetraTech.DomainModel.AccountTypes.Generated.dll</AssemblyFilename>
+            <ObjectName>MetraTech.DomainModel.AccountTypes.InternalView</ObjectName>
+            <ID>Internal.Language</ID>
+            <DataType>List</DataType>
+            <IsIdentity>false</IsIdentity>
+            <FilterEnum>
+                <EnumClassName />
+                <EnumSpace>Global</EnumSpace>
+                <EnumType>LanguageCode</EnumType>
+                <UseEnumValue>true</UseEnumValue>
+                <DefaultValue />
+                <HideEnumValues />
+            </FilterEnum>
+            <DataIndex>Internal.Language</DataIndex>
+            <IsColumn>true</IsColumn>
+            <HeaderText />
+            <Formatter />
+            <Width>120</Width>
+            <Resizeable>true</Resizeable>
+            <PreventSortable>false</PreventSortable>
+            <Sortable>true</Sortable>
+            <ColumnHideable>true</ColumnHideable>
+            <DefaultColumn>false</DefaultColumn>
+            <Exportable>true</Exportable>
+            <ShowInExpander>true</ShowInExpander>
+            <Filterable>true</Filterable>
+            <FilterHideable>true</FilterHideable>
+            <DefaultFilter>false</DefaultFilter>
+            <RequiredFilter>false</RequiredFilter>
+            <FilterLabel />
+            <ElementValue>
+                <Value />
+            </ElementValue>
+            <ElementValue2>
+                <Value />
+            </ElementValue2>
+            <FilterReadOnly>false</FilterReadOnly>
+            <DropdownItems />
+        </Element>
+        <Element>
+            <RecordElement>true</RecordElement>
+            <AssemblyFilename>MetraTech.DomainModel.AccountTypes.Generated.dll</AssemblyFilename>
+            <ObjectName>MetraTech.DomainModel.AccountTypes.InternalView</ObjectName>
+            <ID>Internal.StatusReason</ID>
+            <DataType>List</DataType>
+            <IsIdentity>false</IsIdentity>
+            <FilterEnum>
+                <EnumClassName />
+                <EnumSpace>metratech.com/accountcreation</EnumSpace>
+                <EnumType>StatusReason</EnumType>
+                <UseEnumValue>true</UseEnumValue>
+                <DefaultValue />
+                <HideEnumValues />
+            </FilterEnum>
+            <DataIndex>Internal.StatusReason</DataIndex>
+            <IsColumn>true</IsColumn>
+            <HeaderText />
+            <Formatter />
+            <Width>120</Width>
+            <Resizeable>true</Resizeable>
+            <PreventSortable>false</PreventSortable>
+            <Sortable>true</Sortable>
+            <ColumnHideable>true</ColumnHideable>
+            <DefaultColumn>false</DefaultColumn>
+            <Exportable>false</Exportable>
+            <ShowInExpander>true</ShowInExpander>
+            <Filterable>true</Filterable>
+            <FilterHideable>true</FilterHideable>
+            <DefaultFilter>false</DefaultFilter>
+            <RequiredFilter>false</RequiredFilter>
+            <FilterLabel />
+            <ElementValue>
+                <Value />
+            </ElementValue>
+            <ElementValue2>
+                <Value />
+            </ElementValue2>
+            <FilterReadOnly>false</FilterReadOnly>
+            <DropdownItems />
+        </Element>
+        <Element>
+            <RecordElement>true</RecordElement>
+            <AssemblyFilename>MetraTech.DomainModel.AccountTypes.Generated.dll</AssemblyFilename>
+            <ObjectName>MetraTech.DomainModel.AccountTypes.InternalView</ObjectName>
+            <ID>Internal.StatusReasonOther</ID>
+            <DataType>String</DataType>
+            <IsIdentity>false</IsIdentity>
+            <DataIndex>Internal.StatusReasonOther</DataIndex>
+            <IsColumn>true</IsColumn>
+            <HeaderText />
+            <Formatter />
+            <Width>120</Width>
+            <Resizeable>true</Resizeable>
+            <PreventSortable>false</PreventSortable>
+            <Sortable>true</Sortable>
+            <ColumnHideable>true</ColumnHideable>
+            <DefaultColumn>false</DefaultColumn>
+            <Exportable>true</Exportable>
+            <ShowInExpander>true</ShowInExpander>
+            <Filterable>true</Filterable>
+            <FilterHideable>true</FilterHideable>
+            <DefaultFilter>false</DefaultFilter>
+            <RequiredFilter>false</RequiredFilter>
+            <FilterLabel />
+            <ElementValue>
+                <Value />
+            </ElementValue>
+            <ElementValue2>
+                <Value />
+            </ElementValue2>
+            <FilterReadOnly>false</FilterReadOnly>
+            <DropdownItems />
+        </Element>
+        <Element>
+            <RecordElement>true</RecordElement>
+            <AssemblyFilename>MetraTech.DomainModel.AccountTypes.Generated.dll</AssemblyFilename>
+            <ObjectName>MetraTech.DomainModel.AccountTypes.InternalView</ObjectName>
+            <ID>Internal.Currency</ID>
+            <DataType>String</DataType>
+            <IsIdentity>false</IsIdentity>
+            <DataIndex>Internal.Currency</DataIndex>
+            <IsColumn>true</IsColumn>
+            <HeaderText />
+            <Formatter />
+            <Width>120</Width>
+            <Resizeable>true</Resizeable>
+            <PreventSortable>false</PreventSortable>
+            <Sortable>true</Sortable>
+            <ColumnHideable>true</ColumnHideable>
+            <DefaultColumn>false</DefaultColumn>
+            <Exportable>true</Exportable>
+            <ShowInExpander>true</ShowInExpander>
+            <Filterable>true</Filterable>
+            <FilterHideable>true</FilterHideable>
+            <DefaultFilter>false</DefaultFilter>
+            <RequiredFilter>false</RequiredFilter>
+            <FilterLabel />
+            <ElementValue>
+                <Value />
+            </ElementValue>
+            <ElementValue2>
+                <Value />
+            </ElementValue2>
+            <FilterReadOnly>false</FilterReadOnly>
+            <DropdownItems />
+        </Element>
+        <Element>
+            <RecordElement>true</RecordElement>
+            <AssemblyFilename>MetraTech.DomainModel.AccountTypes.Generated.dll</AssemblyFilename>
+            <ObjectName>MetraTech.DomainModel.AccountTypes.InternalView</ObjectName>
+            <ID>Internal.PriceList</ID>
+            <DataType>Numeric</DataType>
+            <IsIdentity>false</IsIdentity>
+            <DataIndex>Internal.PriceList</DataIndex>
+            <IsColumn>true</IsColumn>
+            <HeaderText />
+            <Formatter />
+            <Width>120</Width>
+            <Resizeable>true</Resizeable>
+            <PreventSortable>false</PreventSortable>
+            <Sortable>true</Sortable>
+            <ColumnHideable>true</ColumnHideable>
+            <DefaultColumn>false</DefaultColumn>
+            <Exportable>true</Exportable>
+            <ShowInExpander>true</ShowInExpander>
+            <Filterable>true</Filterable>
+            <FilterHideable>true</FilterHideable>
+            <DefaultFilter>false</DefaultFilter>
+            <RequiredFilter>false</RequiredFilter>
+            <FilterLabel />
+            <ElementValue>
+                <Value />
+            </ElementValue>
+            <ElementValue2>
+                <Value />
+            </ElementValue2>
+            <FilterReadOnly>false</FilterReadOnly>
+            <DropdownItems />
+        </Element>
+        <Element>
+            <RecordElement>true</RecordElement>
+            <AssemblyFilename>MetraTech.DomainModel.AccountTypes.Generated.dll</AssemblyFilename>
+            <ObjectName>MetraTech.DomainModel.AccountTypes.InternalView</ObjectName>
+            <ID>Internal.Billable</ID>
+            <DataType>Boolean</DataType>
+            <IsIdentity>false</IsIdentity>
+            <DataIndex>Internal.Billable</DataIndex>
+            <IsColumn>true</IsColumn>
+            <HeaderText />
+            <Formatter />
+            <Width>120</Width>
+            <Resizeable>true</Resizeable>
+            <PreventSortable>false</PreventSortable>
+            <Sortable>true</Sortable>
+            <ColumnHideable>true</ColumnHideable>
+            <DefaultColumn>false</DefaultColumn>
+            <Exportable>true</Exportable>
+            <ShowInExpander>true</ShowInExpander>
+            <Filterable>true</Filterable>
+            <FilterHideable>true</FilterHideable>
+            <DefaultFilter>false</DefaultFilter>
+            <RequiredFilter>false</RequiredFilter>
+            <FilterLabel />
+            <ElementValue>
+                <Value />
+            </ElementValue>
+            <ElementValue2>
+                <Value />
+            </ElementValue2>
+            <FilterReadOnly>false</FilterReadOnly>
+            <DropdownItems />
+        </Element>
+        <Element>
+            <RecordElement>true</RecordElement>
+            <AssemblyFilename>MetraTech.DomainModel.AccountTypes.Generated.dll</AssemblyFilename>
+            <ObjectName>MetraTech.DomainModel.AccountTypes.InternalView</ObjectName>
+            <ID>Internal.Folder</ID>
+            <DataType>Boolean</DataType>
+            <IsIdentity>false</IsIdentity>
+            <DataIndex>Internal.Folder</DataIndex>
+            <IsColumn>true</IsColumn>
+            <HeaderText />
+            <Formatter />
+            <Width>120</Width>
+            <Resizeable>true</Resizeable>
+            <PreventSortable>false</PreventSortable>
+            <Sortable>true</Sortable>
+            <ColumnHideable>true</ColumnHideable>
+            <DefaultColumn>false</DefaultColumn>
+            <Exportable>true</Exportable>
+            <ShowInExpander>true</ShowInExpander>
+            <Filterable>true</Filterable>
+            <FilterHideable>true</FilterHideable>
+            <DefaultFilter>false</DefaultFilter>
+            <RequiredFilter>false</RequiredFilter>
+            <FilterLabel />
+            <ElementValue>
+                <Value />
+            </ElementValue>
+            <ElementValue2>
+                <Value />
+            </ElementValue2>
+            <FilterReadOnly>false</FilterReadOnly>
+            <DropdownItems />
+        </Element>
+        <Element>
+            <RecordElement>false</RecordElement>
+            <ID>Options</ID>
+            <DataIndex />
+            <IsColumn>true</IsColumn>
+            <HeaderText>
+                <LocalizationTag>TEXT_ACTIONS</LocalizationTag>
+                <ResourceClassKey>Resource</ResourceClassKey>
+            </HeaderText>
+            <Formatter />
+            <Width>76</Width>
+            <Resizeable>true</Resizeable>
+            <PreventSortable>false</PreventSortable>
+            <Sortable>false</Sortable>
+            <ColumnHideable>false</ColumnHideable>
+            <DefaultColumn>true</DefaultColumn>
+            <Filterable>false</Filterable>
+        </Element>
+    </Elements>
+    <ExpanderTemplate>
+        <Section>
+            <Title>
+                <LocalizationTag>TEXT_BILLING_INFORMATION</LocalizationTag>
+                <ResourceClassKey>Resource</ResourceClassKey>
+            </Title>
+            <TabOrder>LeftToRight</TabOrder>
+            <Columns>
+                <Column>
+                    <Fields>
+                        <Field>
+                            <AssemblyFilename>MetraTech.DomainModel.AccountTypes.Generated.dll</AssemblyFilename>
+                            <ObjectName>MetraTech.DomainModel.AccountTypes.ContactView</ObjectName>
+                            <ID>LDAP[Bill-To].FirstName</ID>
+                            <Name>LDAP[Bill-To].FirstName</Name>
+                        </Field>
+                        <Field>
+                            <AssemblyFilename>MetraTech.DomainModel.AccountTypes.Generated.dll</AssemblyFilename>
+                            <ObjectName>MetraTech.DomainModel.AccountTypes.ContactView</ObjectName>
+                            <ID>LDAP[Bill-To].MiddleInitial</ID>
+                            <Name>LDAP[Bill-To].MiddleInitial</Name>
+                        </Field>
+                        <Field>
+                            <AssemblyFilename>MetraTech.DomainModel.AccountTypes.Generated.dll</AssemblyFilename>
+                            <ObjectName>MetraTech.DomainModel.AccountTypes.ContactView</ObjectName>
+                            <ID>LDAP[Bill-To].LastName</ID>
+                            <Name>LDAP[Bill-To].LastName</Name>
+                        </Field>
+                        <Field>
+                            <AssemblyFilename>MetraTech.DomainModel.AccountTypes.Generated.dll</AssemblyFilename>
+                            <ObjectName>MetraTech.DomainModel.AccountTypes.ContactView</ObjectName>
+                            <ID>LDAP[Bill-To].Email</ID>
+                            <Name>LDAP[Bill-To].Email</Name>
+                        </Field>
+                        <Field>
+                            <AssemblyFilename>MetraTech.DomainModel.AccountTypes.Generated.dll</AssemblyFilename>
+                            <ObjectName>MetraTech.DomainModel.AccountTypes.ContactView</ObjectName>
+                            <ID>LDAP[Bill-To].PhoneNumber</ID>
+                            <Name>LDAP[Bill-To].PhoneNumber</Name>
+                        </Field>
+                        <Field>
+                            <AssemblyFilename>MetraTech.DomainModel.AccountTypes.Generated.dll</AssemblyFilename>
+                            <ObjectName>MetraTech.DomainModel.AccountTypes.ContactView</ObjectName>
+                            <ID>LDAP[Bill-To].FacsimileTelephoneNumber</ID>
+                            <Name>LDAP[Bill-To].FacsimileTelephoneNumber</Name>
+                        </Field>
+                        <Field>
+                            <AssemblyFilename>MetraTech.DomainModel.AccountTypes.Generated.dll</AssemblyFilename>
+                            <ObjectName>MetraTech.DomainModel.AccountTypes.ContactView</ObjectName>
+                            <ID>LDAP[Bill-To].Company</ID>
+                            <Name>LDAP[Bill-To].Company</Name>
+                        </Field>
+                        <Field>
+                            <AssemblyFilename>MetraTech.DomainModel.AccountTypes.Generated.dll</AssemblyFilename>
+                            <ObjectName>MetraTech.DomainModel.AccountTypes.ContactView</ObjectName>
+                            <ID>LDAP[Bill-To].Address1</ID>
+                            <Name>LDAP[Bill-To].Address1</Name>
+                        </Field>
+                        <Field>
+                            <AssemblyFilename>MetraTech.DomainModel.AccountTypes.Generated.dll</AssemblyFilename>
+                            <ObjectName>MetraTech.DomainModel.AccountTypes.ContactView</ObjectName>
+                            <ID>LDAP[Bill-To].Address2</ID>
+                            <Name>LDAP[Bill-To].Address2</Name>
+                        </Field>
+                        <Field>
+                            <AssemblyFilename>MetraTech.DomainModel.AccountTypes.Generated.dll</AssemblyFilename>
+                            <ObjectName>MetraTech.DomainModel.AccountTypes.ContactView</ObjectName>
+                            <ID>LDAP[Bill-To].Address3</ID>
+                            <Name>LDAP[Bill-To].Address3</Name>
+                        </Field>
+                        <Field>
+                            <AssemblyFilename>MetraTech.DomainModel.AccountTypes.Generated.dll</AssemblyFilename>
+                            <ObjectName>MetraTech.DomainModel.AccountTypes.ContactView</ObjectName>
+                            <ID>LDAP[Bill-To].City</ID>
+                            <Name>LDAP[Bill-To].City</Name>
+                        </Field>
+                        <Field>
+                            <AssemblyFilename>MetraTech.DomainModel.AccountTypes.Generated.dll</AssemblyFilename>
+                            <ObjectName>MetraTech.DomainModel.AccountTypes.ContactView</ObjectName>
+                            <ID>LDAP[Bill-To].State</ID>
+                            <Name>LDAP[Bill-To].State</Name>
+                        </Field>
+                        <Field>
+                            <AssemblyFilename>MetraTech.DomainModel.AccountTypes.Generated.dll</AssemblyFilename>
+                            <ObjectName>MetraTech.DomainModel.AccountTypes.ContactView</ObjectName>
+                            <ID>LDAP[Bill-To].Zip</ID>
+                            <Name>LDAP[Bill-To].Zip</Name>
+                        </Field>
+                        <Field>
+                            <AssemblyFilename>MetraTech.DomainModel.AccountTypes.Generated.dll</AssemblyFilename>
+                            <ObjectName>MetraTech.DomainModel.AccountTypes.ContactView</ObjectName>
+                            <ID>LDAP[Bill-To].Country</ID>
+                            <Name>LDAP[Bill-To].Country</Name>
+                        </Field>
+                    </Fields>
+                </Column>
+            </Columns>
+        </Section>
+        <Section>
+            <Title>
+                <LocalizationTag>TEXT_LOGIN_INFORMATION</LocalizationTag>
+                <ResourceClassKey>Resource</ResourceClassKey>
+            </Title>
+            <TabOrder>LeftToRight</TabOrder>
+            <Columns>
+                <Column>
+                    <Fields>
+                        <Field>
+                            <AssemblyFilename>MetraTech.DomainModel.AccountTypes.Generated.dll</AssemblyFilename>
+                            <ObjectName>MetraTech.DomainModel.AccountTypes.CorporateAccount</ObjectName>
+                            <ID>_AccountID</ID>
+                            <Name>_AccountID</Name>
+                        </Field>
+                        <Field>
+                            <AssemblyFilename>MetraTech.DomainModel.AccountTypes.Generated.dll</AssemblyFilename>
+                            <ObjectName>MetraTech.DomainModel.AccountTypes.CorporateAccount</ObjectName>
+                            <ID>UserName</ID>
+                            <Name>UserName</Name>
+                        </Field>
+                        <Field>
+                            <AssemblyFilename>MetraTech.DomainModel.AccountTypes.Generated.dll</AssemblyFilename>
+                            <ObjectName>MetraTech.DomainModel.AccountTypes.CorporateAccount</ObjectName>
+                            <ID>Name_Space</ID>
+                            <Name>Name_Space</Name>
+                        </Field>
+                        <Field>
+                            <AssemblyFilename>MetraTech.DomainModel.AccountTypes.Generated.dll</AssemblyFilename>
+                            <ObjectName>MetraTech.DomainModel.AccountTypes.CorporateAccount</ObjectName>
+                            <ID>AncestorAccountID</ID>
+                            <Name>AncestorAccountID</Name>
+                        </Field>
+                        <Field>
+                            <AssemblyFilename>MetraTech.DomainModel.AccountTypes.Generated.dll</AssemblyFilename>
+                            <ObjectName>MetraTech.DomainModel.AccountTypes.CorporateAccount</ObjectName>
+                            <ID>AncestorAccount</ID>
+                            <Name>AncestorAccount</Name>
+                        </Field>
+                        <Field>
+                            <AssemblyFilename>MetraTech.DomainModel.AccountTypes.Generated.dll</AssemblyFilename>
+                            <ObjectName>MetraTech.DomainModel.AccountTypes.CorporateAccount</ObjectName>
+                            <ID>Hierarchy_StartDate</ID>
+                            <Name>Hierarchy_StartDate</Name>
+                        </Field>
+                        <Field>
+                            <AssemblyFilename>MetraTech.DomainModel.AccountTypes.Generated.dll</AssemblyFilename>
+                            <ObjectName>MetraTech.DomainModel.AccountTypes.CorporateAccount</ObjectName>
+                            <ID>Hierarchy_EndDate</ID>
+                            <Name>Hierarchy_EndDate</Name>
+                        </Field>
+                    </Fields>
+                </Column>
+            </Columns>
+        </Section>
+        <Section>
+            <Title>
+                <LocalizationTag>TEXT_ACCOUNT_INFORMATION</LocalizationTag>
+                <ResourceClassKey>Resource</ResourceClassKey>
+            </Title>
+            <TabOrder>LeftToRight</TabOrder>
+            <Columns>
+                <Column>
+                    <Fields>
+                        <Field>
+                            <AssemblyFilename>MetraTech.DomainModel.AccountTypes.Generated.dll</AssemblyFilename>
+                            <ObjectName>MetraTech.DomainModel.AccountTypes.InternalView</ObjectName>
+                            <ID>Internal.Currency</ID>
+                            <Name>Internal.Currency</Name>
+                        </Field>
+                        <Field>
+                            <AssemblyFilename>MetraTech.DomainModel.AccountTypes.Generated.dll</AssemblyFilename>
+                            <ObjectName>MetraTech.DomainModel.AccountTypes.InternalView</ObjectName>
+                            <ID>Internal.PriceList</ID>
+                            <Name>Internal.PriceList</Name>
+                        </Field>
+                        <Field>
+                            <AssemblyFilename>MetraTech.DomainModel.AccountTypes.Generated.dll</AssemblyFilename>
+                            <ObjectName>MetraTech.DomainModel.AccountTypes.InternalView</ObjectName>
+                            <ID>Internal.Billable</ID>
+                            <Name>Internal.Billable</Name>
+                        </Field>
+                        <Field>
+                            <AssemblyFilename>MetraTech.DomainModel.AccountTypes.Generated.dll</AssemblyFilename>
+                            <ObjectName>MetraTech.DomainModel.AccountTypes.InternalView</ObjectName>
+                            <ID>Internal.StatusReason</ID>
+                            <Name>Internal.StatusReason</Name>
+                        </Field>
+                        <Field>
+                            <AssemblyFilename>MetraTech.DomainModel.AccountTypes.Generated.dll</AssemblyFilename>
+                            <ObjectName>MetraTech.DomainModel.AccountTypes.InternalView</ObjectName>
+                            <ID>Internal.StatusReasonOther</ID>
+                            <Name>Internal.StatusReasonOther</Name>
+                        </Field>
+                        <Field>
+                            <AssemblyFilename>MetraTech.DomainModel.AccountTypes.Generated.dll</AssemblyFilename>
+                            <ObjectName>MetraTech.DomainModel.AccountTypes.InternalView</ObjectName>
+                            <ID>Internal.TaxExempt</ID>
+                            <Name>Internal.TaxExempt</Name>
+                        </Field>
+                        <Field>
+                            <AssemblyFilename />
+                            <ObjectName />
+                            <ID>Internal.TaxExemptID</ID>
+                            <Name>Internal.TaxExemptID</Name>
+                        </Field>
+                        <Field>
+                            <AssemblyFilename>MetraTech.DomainModel.AccountTypes.Generated.dll</AssemblyFilename>
+                            <ObjectName>MetraTech.DomainModel.AccountTypes.InternalView</ObjectName>
+                            <ID>Internal.Language</ID>
+                            <Name>Internal.Language</Name>
+                        </Field>
+                        <Field>
+                            <AssemblyFilename>MetraTech.DomainModel.AccountTypes.Generated.dll</AssemblyFilename>
+                            <ObjectName>MetraTech.DomainModel.AccountTypes.InternalView</ObjectName>
+                            <ID>Internal.TimeZoneID</ID>
+                            <Name>Internal.TimeZoneID</Name>
+                        </Field>
+                        <Field>
+                            <AssemblyFilename />
+                            <ObjectName />
+                            <ID>Internal.PayerID</ID>
+                            <Name>Internal.PayerID</Name>
+                        </Field>
+                        <Field>
+                            <AssemblyFilename>MetraTech.DomainModel.AccountTypes.Generated.dll</AssemblyFilename>
+                            <ObjectName>MetraTech.DomainModel.AccountTypes.InternalView</ObjectName>
+                            <ID>Internal.InvoiceMethod</ID>
+                            <Name>Internal.InvoiceMethod</Name>
+                        </Field>
+                        <Field>
+                            <AssemblyFilename>MetraTech.DomainModel.AccountTypes.Generated.dll</AssemblyFilename>
+                            <ObjectName>MetraTech.DomainModel.AccountTypes.InternalView</ObjectName>
+                            <ID>Internal.UsageCycleType</ID>
+                            <Name>Internal.UsageCycleType</Name>
+                        </Field>
+                        <Field>
+                            <AssemblyFilename />
+                            <ObjectName />
+                            <ID>Internal.SecurityQuestionType</ID>
+                            <Name>Internal.SecurityQuestionType</Name>
+                        </Field>
+                    </Fields>
+                </Column>
+            </Columns>
+        </Section>
+    </ExpanderTemplate>
+    <GridButtons />
+    <ToolbarButtons />
+</GridLayout>

@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<defineservice>
+	<name>metratech.com/NonRecurringCharge</name>
+	<description>Nonrecurring account charges.</description>
+
+	<ptype>
+		<dn>NRCEventType</dn>
+		<type>int32</type>
+		<length />
+		<required>Y</required>
+		<defaultvalue />
+		<description>Type of nonrecurring charge</description>
+	</ptype>
+	<ptype uservisible="FALSE">
+		<dn>NRCIntervalStart</dn>
+		<type>timestamp</type>
+		<length />
+		<required>Y</required>
+		<defaultvalue />
+		<description>Start date of nonrecurring charge interval.</description>
+	</ptype>
+	<ptype uservisible="FALSE">
+		<dn>NRCIntervalEnd</dn>
+		<type>timestamp</type>
+		<length />
+		<required>Y</required>
+		<defaultvalue />
+		<description>End date of nonrecurring charge interval.</description>
+	</ptype>
+
+	<ptype uservisible="FALSE">
+		<dn>NRCIntervalSubscriptionStart</dn>
+		<type>timestamp</type>
+		<length />
+		<required>Y</required>
+		<defaultvalue />
+		<description>Start date of subscription.</description>
+	</ptype>
+	<ptype uservisible="FALSE">
+		<dn>NRCIntervalSubscriptionEnd</dn>
+		<type>timestamp</type>
+		<length />
+		<required>N</required>
+		<defaultvalue />
+		<description>End date of subscription.</description>
+	</ptype>
+<!--
+	<ptype>
+		<dn>_AccountID</dn>
+		<type>int32</type>
+		<length></length>
+		<required>Y</required>
+		<defaultvalue></defaultvalue>
+		<description>account ID</description>
+	</ptype>
+
+	<ptype>
+		<dn>_PriceableItemInstanceID</dn>
+		<type>int32</type>
+		<length></length>
+		<required>Y</required>
+		<defaultvalue></defaultvalue>
+		<description>recurring charge (priceable item) instance ID</description>
+	</ptype>
+	<ptype>
+		<dn>_PriceableItemTemplateID</dn>
+		<type>int32</type>
+		<length></length>
+		<required>Y</required>
+		<defaultvalue></defaultvalue>
+		<description>recurring charge (priceable item) template ID</description>
+	</ptype>
+-->
+<ptype uservisible="False" filterable="False" exportable="False">
+    <dn>_SubscriptionID</dn>
+    <type>int32</type>
+    <length>
+    </length>
+    <required>Y</required>
+    <defaultvalue>-1</defaultvalue>
+    <description>Nonrecurring charge SubscriptionID.</description>
+  </ptype>
+</defineservice>

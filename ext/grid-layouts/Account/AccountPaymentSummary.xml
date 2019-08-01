@@ -1,0 +1,308 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<GridLayout xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <Name>AccountPaymentSummary</Name>
+    <Title>
+      <Value>Payments</Value>
+    </Title>
+    <Exportable>false</Exportable>
+    <Height>0</Height>
+    <Width>0</Width>
+    <Expandable>false</Expandable>
+    <Buttons>Custom</Buttons>
+    <DataSourceURL>~/AjaxServices/ManagedAccount.aspx?operation=paymentsummary</DataSourceURL>
+    <MultiSelect>true</MultiSelect>
+    <SelectionModel>Standard</SelectionModel>
+    <TotalProperty>TotalRows</TotalProperty>
+    <RootElement>Items</RootElement>
+    <PageSize>10</PageSize>
+    <Description>Summary of payments for this account</Description>
+    <ExpansionCssClass />
+    <ShowFilterPanel>false</ShowFilterPanel>
+    <FilterInputWidth>220</FilterInputWidth>
+    <FilterLabelWidth>75</FilterLabelWidth>
+    <FilterColumnWidth>350</FilterColumnWidth>
+    <ShowTopBar>false</ShowTopBar>
+    <ShowBottomBar>false</ShowBottomBar>
+    <ShowGridFrame>true</ShowGridFrame>
+    <ShowGridHeader>true</ShowGridHeader>
+    <ShowColumnHeaders>true</ShowColumnHeaders>
+    <NoRecordsText>
+      <Value>This account currently does not have any payments for this period.</Value>
+    </NoRecordsText>
+    <FilterPanelLayout>MultiColumn</FilterPanelLayout>
+    <FilterPanelCollapsed>false</FilterPanelCollapsed>
+    <EnableColumnConfig>false</EnableColumnConfig>
+    <EnableFilterConfig>false</EnableFilterConfig>
+    <Resizeable>true</Resizeable>
+    <ButtonAlignment>Center</ButtonAlignment>
+    <DefaultSortField />
+    <DefaultSortDirection>Ascending</DefaultSortDirection>
+    <DisplayCount>true</DisplayCount>
+    <SearchOnLoad>true</SearchOnLoad>
+    <CustomImplementationFilePath />
+    <SubGrid />
+    <Elements>
+       <Element>
+            <RecordElement>true</RecordElement>
+            <AssemblyFilename />
+            <ObjectName />
+            <ID>paymentid</ID>
+            <DataType>Numeric</DataType>
+            <IsIdentity>true</IsIdentity>
+            <DataIndex>paymentid</DataIndex>
+            <IsColumn>true</IsColumn>
+            <HeaderText>
+               <Value>Internal Id</Value>
+            </HeaderText>
+            <Formatter />
+            <Width>90</Width>
+            <Resizeable>true</Resizeable>
+            <PreventSortable>false</PreventSortable>
+            <Sortable>true</Sortable>
+            <ColumnHideable>true</ColumnHideable>
+            <DefaultColumn>true</DefaultColumn>
+            <Exportable>true</Exportable>
+            <ShowInExpander>false</ShowInExpander>
+            <Filterable>true</Filterable>
+            <FilterHideable>true</FilterHideable>
+            <DefaultFilter>true</DefaultFilter>
+            <RequiredFilter>false</RequiredFilter>
+            <FilterLabel />
+            <ElementValue>
+                <Value />
+            </ElementValue>
+            <ElementValue2>
+                <Value />
+            </ElementValue2>
+            <FilterReadOnly>false</FilterReadOnly>
+            <DropdownItems />
+        </Element>
+       <Element>
+            <RecordElement>true</RecordElement>
+            <AssemblyFilename />
+            <ObjectName />
+            <ID>paymentdate</ID>
+            <DataType>Date</DataType>
+            <IsIdentity>false</IsIdentity>
+            <DataIndex>paymentdate</DataIndex>
+            <IsColumn>true</IsColumn>
+            <HeaderText>
+                <Value>Date</Value>
+            </HeaderText>
+            <Formatter>DateRenderer</Formatter>
+            <Width>120</Width>
+            <Resizeable>true</Resizeable>
+            <PreventSortable>false</PreventSortable>
+            <Sortable>true</Sortable>
+            <ColumnHideable>true</ColumnHideable>
+            <DefaultColumn>true</DefaultColumn>
+            <Exportable>true</Exportable>
+            <ShowInExpander>false</ShowInExpander>
+            <Filterable>true</Filterable>
+            <FilterHideable>true</FilterHideable>
+            <DefaultFilter>true</DefaultFilter>
+            <RequiredFilter>false</RequiredFilter>
+            <FilterLabel />
+            <ElementValue>
+                <Value />
+            </ElementValue>
+            <ElementValue2>
+                <Value />
+            </ElementValue2>
+            <FilterReadOnly>false</FilterReadOnly>
+            <DropdownItems />
+        </Element>
+      <Element>
+        <RecordElement>true</RecordElement>
+        <AssemblyFilename />
+        <ObjectName />
+        <ID>paymentamount</ID>
+        <DataType>Numeric</DataType>
+        <IsIdentity>false</IsIdentity>
+        <DataIndex>paymentamount</DataIndex>
+        <IsColumn>true</IsColumn>
+        <HeaderText>
+          <Value>Amount</Value>
+        </HeaderText>
+        <Formatter />
+        <Width>120</Width>
+        <Resizeable>true</Resizeable>
+        <PreventSortable>false</PreventSortable>
+        <Sortable>true</Sortable>
+        <ColumnHideable>true</ColumnHideable>
+        <DefaultColumn>true</DefaultColumn>
+        <Exportable>true</Exportable>
+        <ShowInExpander>false</ShowInExpander>
+        <Filterable>true</Filterable>
+        <FilterHideable>true</FilterHideable>
+        <DefaultFilter>true</DefaultFilter>
+        <RequiredFilter>false</RequiredFilter>
+        <FilterLabel />
+        <ElementValue>
+          <Value />
+        </ElementValue>
+        <ElementValue2>
+          <Value />
+        </ElementValue2>
+        <FilterReadOnly>false</FilterReadOnly>
+        <DropdownItems />
+      </Element>
+      <Element>
+        <RecordElement>true</RecordElement>
+        <AssemblyFilename />
+        <ObjectName />
+        <ID>paymentcurrency</ID>
+        <DataType>String</DataType>
+        <IsIdentity>false</IsIdentity>
+        <DataIndex>paymentcurrency</DataIndex>
+        <IsColumn>false</IsColumn>
+        <HeaderText>
+          <Value>Currency</Value>
+        </HeaderText>
+        <Formatter />
+        <Width>50</Width>
+        <Resizeable>true</Resizeable>
+        <PreventSortable>false</PreventSortable>
+        <Sortable>true</Sortable>
+        <ColumnHideable>true</ColumnHideable>
+        <DefaultColumn>true</DefaultColumn>
+        <Exportable>true</Exportable>
+        <ShowInExpander>false</ShowInExpander>
+        <Filterable>true</Filterable>
+        <FilterHideable>true</FilterHideable>
+        <DefaultFilter>true</DefaultFilter>
+        <RequiredFilter>false</RequiredFilter>
+        <FilterLabel />
+        <ElementValue>
+          <Value />
+        </ElementValue>
+        <ElementValue2>
+          <Value />
+        </ElementValue2>
+        <FilterReadOnly>false</FilterReadOnly>
+        <DropdownItems />
+      </Element>
+      <Element>
+        <RecordElement>true</RecordElement>
+        <AssemblyFilename />
+        <ObjectName />
+        <ID>paymenttypedescription</ID>
+        <DataType>String</DataType>
+        <IsIdentity>false</IsIdentity>
+        <DataIndex>paymenttypedescription</DataIndex>
+        <IsColumn>true</IsColumn>
+        <HeaderText>
+          <Value>Type</Value>
+        </HeaderText>
+        <Formatter />
+        <Width>120</Width>
+        <Resizeable>true</Resizeable>
+        <PreventSortable>false</PreventSortable>
+        <Sortable>true</Sortable>
+        <ColumnHideable>true</ColumnHideable>
+        <DefaultColumn>true</DefaultColumn>
+        <Exportable>true</Exportable>
+        <ShowInExpander>false</ShowInExpander>
+        <Filterable>true</Filterable>
+        <FilterHideable>true</FilterHideable>
+        <DefaultFilter>true</DefaultFilter>
+        <RequiredFilter>false</RequiredFilter>
+        <FilterLabel />
+        <ElementValue>
+          <Value />
+        </ElementValue>
+        <ElementValue2>
+          <Value />
+        </ElementValue2>
+        <FilterReadOnly>false</FilterReadOnly>
+        <DropdownItems />
+      </Element>
+      <Element>
+        <RecordElement>true</RecordElement>
+        <AssemblyFilename />
+        <ObjectName />
+        <ID>paymentdescription</ID>
+        <DataType>String</DataType>
+        <IsIdentity>false</IsIdentity>
+        <DataIndex>paymentdescription</DataIndex>
+        <IsColumn>true</IsColumn>
+        <HeaderText>
+          <Value>Description</Value>
+        </HeaderText>
+        <Formatter />
+        <Width>50</Width>
+        <Resizeable>true</Resizeable>
+        <PreventSortable>false</PreventSortable>
+        <Sortable>true</Sortable>
+        <ColumnHideable>true</ColumnHideable>
+        <DefaultColumn>true</DefaultColumn>
+        <Exportable>true</Exportable>
+        <ShowInExpander>false</ShowInExpander>
+        <Filterable>true</Filterable>
+        <FilterHideable>true</FilterHideable>
+        <DefaultFilter>true</DefaultFilter>
+        <RequiredFilter>false</RequiredFilter>
+        <FilterLabel />
+        <ElementValue>
+          <Value />
+        </ElementValue>
+        <ElementValue2>
+          <Value />
+        </ElementValue2>
+        <FilterReadOnly>false</FilterReadOnly>
+        <DropdownItems />
+      </Element>
+      <Element>
+        <RecordElement>true</RecordElement>
+        <AssemblyFilename />
+        <ObjectName />
+        <ID>paymentreferenceid</ID>
+        <DataType>String</DataType>
+        <IsIdentity>false</IsIdentity>
+        <DataIndex>paymentreferenceid</DataIndex>
+        <IsColumn>true</IsColumn>
+        <HeaderText>
+          <Value>Reference</Value>
+        </HeaderText>
+        <Formatter />
+        <Width>50</Width>
+        <Resizeable>true</Resizeable>
+        <PreventSortable>false</PreventSortable>
+        <Sortable>true</Sortable>
+        <ColumnHideable>true</ColumnHideable>
+        <DefaultColumn>true</DefaultColumn>
+        <Exportable>true</Exportable>
+        <ShowInExpander>false</ShowInExpander>
+        <Filterable>true</Filterable>
+        <FilterHideable>true</FilterHideable>
+        <DefaultFilter>true</DefaultFilter>
+        <RequiredFilter>false</RequiredFilter>
+        <FilterLabel />
+        <ElementValue>
+          <Value />
+        </ElementValue>
+        <ElementValue2>
+          <Value />
+        </ElementValue2>
+        <FilterReadOnly>false</FilterReadOnly>
+        <DropdownItems />
+      </Element>      
+    </Elements>
+    <GridButtons>
+        <!--<Button>
+            <ButtonID>UpdateStatus</ButtonID>
+            <ButtonText>
+                <LocalizationTag>ChangeStatusButton</LocalizationTag>
+                <ResourceClassKey>MetraControl/Payments/App_LocalResources/PaymentTransactions.aspx</ResourceClassKey>
+            </ButtonText>
+            <ToolTip>
+                <LocalizationTag>TEXT_CHANGE_STATUS</LocalizationTag>
+                <ResourceClassKey>FailedTransactionResources</ResourceClassKey>
+            </ToolTip>
+            <IconClass></IconClass>
+            <RequiredCapabilities></RequiredCapabilities>
+            <JSHandlerFunction>onUpdateStatus</JSHandlerFunction>
+        </Button>-->
+    </GridButtons>
+  <ToolbarButtons />
+</GridLayout>

@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<mt_config>
+  <language_code>es-MX</language_code>
+  <locale_space name="metratech.com/nonrecurringcharge">
+    <locale_entry>
+      <Name>metratech.com/nonrecurringcharge</Name>
+      <Value>Cargo único</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/nonrecurringcharge/NRCEventType</Name>
+      <Value>Evento</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/nonrecurringcharge/NRCIntervalEnd</Name>
+      <Value>Término de intervalo de cargo único</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/nonrecurringcharge/NRCIntervalStart</Name>
+      <Value>Inicio de intervalo de cargo único</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/nonrecurringcharge/NRCIntervalSubscriptionEnd</Name>
+      <Value>Término de intervalo de suscripción de cargo único</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/nonrecurringcharge/NRCIntervalSubscriptionStart</Name>
+      <Value>Inicio de intervalo de suscripción de cargo único</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/NRCIntervalEnd</Name>
+      <Value>Término de intervalo de cargo único</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/NRCIntervalStart</Name>
+      <Value>Inicio de intervalo de cargo único</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/NRCIntervalSubscriptionEnd</Name>
+      <Value>Término de suscripción de cargo único</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/NRCIntervalSubscriptionStart</Name>
+      <Value>Inicio de suscripción de cargo único</Value>
+    </locale_entry>
+  </locale_space>
+</mt_config>

@@ -1,0 +1,102 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<mt_config>
+  <language_code>jp</language_code>
+  <locale_space name="metratech.com/billingcycle">
+    <locale_entry>
+      <Name>metratech.com/billingcycle/Bi-weekly/label/Bi-week1</Name>
+      <Value>隔週 1</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/billingcycle/Bi-weekly/label/Bi-week10</Name>
+      <Value>隔週 10</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/billingcycle/Bi-weekly/label/Bi-week11</Name>
+      <Value>隔週 11</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/billingcycle/Bi-weekly/label/Bi-week12</Name>
+      <Value>隔週 12</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/billingcycle/Bi-weekly/label/Bi-week13</Name>
+      <Value>隔週 13</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/billingcycle/Bi-weekly/label/Bi-week14</Name>
+      <Value>隔週 14</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/billingcycle/Bi-weekly/label/Bi-week2</Name>
+      <Value>隔週 2</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/billingcycle/Bi-weekly/label/Bi-week3</Name>
+      <Value>隔週 3</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/billingcycle/Bi-weekly/label/Bi-week4</Name>
+      <Value>隔週 4</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/billingcycle/Bi-weekly/label/Bi-week5</Name>
+      <Value>隔週 5</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/billingcycle/Bi-weekly/label/Bi-week6</Name>
+      <Value>隔週 6</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/billingcycle/Bi-weekly/label/Bi-week7</Name>
+      <Value>隔週 7</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/billingcycle/Bi-weekly/label/Bi-week8</Name>
+      <Value>隔週 8</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/billingcycle/Bi-weekly/label/Bi-week9</Name>
+      <Value>隔週 9</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/billingcycle/UsageCycleType/Annually</Name>
+      <Value>毎年</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/billingcycle/UsageCycleType/Bi-weekly</Name>
+      <Value>隔週</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/billingcycle/UsageCycleType/Daily</Name>
+      <Value>毎日</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/billingcycle/UsageCycleType/Monthly</Name>
+      <Value>metratech.com/billingcycle/UsageCycleType/Monthly</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/billingcycle/UsageCycleType/On-demand</Name>
+      <Value>オンデマンド</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/billingcycle/UsageCycleType/Quarterly</Name>
+      <Value>四半期ごと</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/billingcycle/UsageCycleType/SemiAnnually</Name>
+      <Value>年 2 回</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/billingcycle/UsageCycleType/Semi-Annually</Name>
+      <Value>年 2 回</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/billingcycle/UsageCycleType/Semi-monthly</Name>
+      <Value>月 2 回</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/billingcycle/UsageCycleType/Weekly</Name>
+      <Value>毎週</Value>
+    </locale_entry>
+  </locale_space>
+</mt_config>

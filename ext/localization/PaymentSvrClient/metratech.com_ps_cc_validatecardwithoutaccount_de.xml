@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<mt_config>
+  <language_code>DE</language_code>
+  <locale_space name="metratech.com/ps_cc_validatecardwithoutaccount">
+    <locale_entry>
+      <Name>metratech.com/ps_cc_validatecardwithoutaccount</Name>
+      <Value>Kreditkarte ohne Konto validieren</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ps_cc_validatecardwithoutaccount/address</Name>
+      <Value>Adresse</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ps_cc_validatecardwithoutaccount/city</Name>
+      <Value>Stadt</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ps_cc_validatecardwithoutaccount/country</Name>
+      <Value>Land</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ps_cc_validatecardwithoutaccount/creditcardtype</Name>
+      <Value>Kreditkartentyp</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ps_cc_validatecardwithoutaccount/customername</Name>
+      <Value>Kundenname</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ps_cc_validatecardwithoutaccount/paymentservicetransactionid</Name>
+      <Value>Transaktions-ID des Zahlungsservices</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ps_cc_validatecardwithoutaccount/respstring</Name>
+      <Value>Antwortzeichenfolge</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ps_cc_validatecardwithoutaccount/retcode</Name>
+      <Value>Rückgabecode</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ps_cc_validatecardwithoutaccount/state</Name>
+      <Value>Bundesland</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ps_cc_validatecardwithoutaccount/terminalid</Name>
+      <Value>Terminal-ID</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ps_cc_validatecardwithoutaccount/zip</Name>
+      <Value>Postleitzahl</Value>
+    </locale_entry>
+  </locale_space>
+</mt_config>

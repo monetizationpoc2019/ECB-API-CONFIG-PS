@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xmlconfig>
+  <Vendor>MetraTax</Vendor>
+  <!-- For sample invoices, this should be 'Y" -->
+  <TaxDetailsNeeded ptype="BOOLEAN">FALSE</TaxDetailsNeeded>
+  <!-- For sample invoices, this should be 'Y" -->
+  <IsAuditingNeeded ptype="BOOLEAN">TRUE</IsAuditingNeeded>
+  <!-- The maximum number of tax calculation errors permitted before stopping -->
+  <MaximumNumberOfErrors ptype="INTEGER">2</MaximumNumberOfErrors>
+  <HookQueryFolder>Queries\Tax\Customizable</HookQueryFolder>
+  <!--<HookQueryFolder>Queries\Tax\Test</HookQueryFolder>-->
+  <Queries>
+    <CreateTaxInputTable>__CREATE_METRATAX_TAX_INPUT__</CreateTaxInputTable>
+    <CreateTaxInputIndexes>__CREATE_METRATAX_TAX_INPUT_INDEXES__</CreateTaxInputIndexes>
+  </Queries>
+  <HookType>EOP</HookType>
+</xmlconfig>

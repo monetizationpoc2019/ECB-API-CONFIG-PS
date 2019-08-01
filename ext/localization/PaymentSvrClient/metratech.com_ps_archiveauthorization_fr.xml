@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<mt_config>
+  <language_code>fr</language_code>
+  <locale_space name="metratech.com/ps_archiveauthorization">
+    <locale_entry>
+      <Name>metratech.com/ps_archiveauthorization</Name>
+      <Value>Archiver la vue d'autorisation de produit</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ps_archiveauthorization/bankaccounttype</Name>
+      <Value>Type de compte bancaire</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ps_archiveauthorization/creditcardtype</Name>
+      <Value>Type de carte de crédit</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ps_archiveauthorization/description</Name>
+      <Value>Description</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ps_archiveauthorization/effectivedate</Name>
+      <Value>Date de validité</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ps_archiveauthorization/lastfourdigits</Name>
+      <Value>Quatre derniers chiffres de la carte de crédit ou numéro de compte bancaire</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ps_archiveauthorization/originalaccountid</Name>
+      <Value>Identifiant de l'abonné</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ps_archiveauthorization/password_</Name>
+      <Value>Mot de passe de l'abonné</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ps_archiveauthorization/paymenttype</Name>
+      <Value>Type de paiement</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ps_archiveauthorization/routing number</Name>
+      <Value>Code ABA/Banque</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ps_archiveauthorization/routingnumber</Name>
+      <Value>Numéro d'acheminement</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ps_archiveauthorization/username</Name>
+      <Value>Nom d'utilisateur de l'abonné</Value>
+    </locale_entry>
+  </locale_space>
+</mt_config>

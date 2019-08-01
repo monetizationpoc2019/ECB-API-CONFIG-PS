@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<mt_config>
+  <language_code>fr</language_code>
+  <locale_space name="metratech.com/endpointtestservice">
+    <locale_entry>
+      <Name>metratech.com/endpointtestservice</Name>
+      <Value>Test du point limite</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/endpointtestservice/CorporateLogin</Name>
+      <Value>ID externe de l'entreprise</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/endpointtestservice/CorporateNamespace</Name>
+      <Value>Espace de nommage externe de l'entreprise</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/endpointtestservice/DecProp1</Name>
+      <Value>Propriété décimale n°1</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/endpointtestservice/DecProp2</Name>
+      <Value>Propriété décimale n°2</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/endpointtestservice/DecProp3</Name>
+      <Value>Propriété décimale n°3</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/endpointtestservice/description</Name>
+      <Value>Description</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/endpointtestservice/EndpointLogin</Name>
+      <Value>ID externe du point limite</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/endpointtestservice/EndpointNamespace</Name>
+      <Value>Espace de nommage externe du point limite</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/endpointtestservice/time</Name>
+      <Value>Heure</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/endpointtestservice/units</Name>
+      <Value>Unités</Value>
+    </locale_entry>
+  </locale_space>
+</mt_config>

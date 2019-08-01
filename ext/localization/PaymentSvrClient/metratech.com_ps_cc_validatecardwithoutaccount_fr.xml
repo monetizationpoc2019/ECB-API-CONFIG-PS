@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<mt_config>
+  <language_code>fr</language_code>
+  <locale_space name="metratech.com/ps_cc_validatecardwithoutaccount">
+    <locale_entry>
+      <Name>metratech.com/ps_cc_validatecardwithoutaccount</Name>
+      <Value>ps_cc_validate (carte de crédit sans compte associé)</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ps_cc_validatecardwithoutaccount/address</Name>
+      <Value>Nom de la rue</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ps_cc_validatecardwithoutaccount/city</Name>
+      <Value>Ville</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ps_cc_validatecardwithoutaccount/country</Name>
+      <Value>Pays</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ps_cc_validatecardwithoutaccount/creditcardtype</Name>
+      <Value>Type de carte de crédit</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ps_cc_validatecardwithoutaccount/customername</Name>
+      <Value>Nom du client</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ps_cc_validatecardwithoutaccount/paymentservicetransactionid</Name>
+      <Value>ID de transaction du service de paiement</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ps_cc_validatecardwithoutaccount/respstring</Name>
+      <Value>Chaîne de réponse</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ps_cc_validatecardwithoutaccount/retcode</Name>
+      <Value>Code de retour</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ps_cc_validatecardwithoutaccount/state</Name>
+      <Value>État</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ps_cc_validatecardwithoutaccount/terminalid</Name>
+      <Value>ID de terminal</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ps_cc_validatecardwithoutaccount/zip</Name>
+      <Value>Code postal</Value>
+    </locale_entry>
+  </locale_space>
+</mt_config>

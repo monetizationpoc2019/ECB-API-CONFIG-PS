@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xmlconfig>
+  <MetraNetAccountNameSpace>mt</MetraNetAccountNameSpace>
+  <ARSetSize>500</ARSetSize>
+  <MetraNetSetSize>500</MetraNetSetSize>
+  <MoveBalance>true</MoveBalance>
+  <MoveCurrentCharges>true</MoveCurrentCharges>
+  
+  <!-- AR adjustment text (property: Description)-->
+  <BalanceMovedToPayerDescription>Balance moved to {0}</BalanceMovedToPayerDescription>
+  <BalanceMovedFromPayeeDescription>Balance moved from {0}</BalanceMovedFromPayeeDescription>
+
+  <!-- misc adjustment text (property: InvoiceComment)-->
+  <ChargesMovedToPayerDescription>Charges moved to {0}</ChargesMovedToPayerDescription>
+  <ChargesMovedFromPayeeDescription>Charges moved from {0}</ChargesMovedFromPayeeDescription>
+  
+  <!-- AR adjustment reason code (property: Reason)-->
+  <BalanceMovedToPayerReason>BalanceMovedToPayer</BalanceMovedToPayerReason>
+  <BalanceMovedFromPayeeReason>BalanceMovedFromPayee</BalanceMovedFromPayeeReason>
+
+  <!-- misc adjustment reason (property: Other)-->
+  <ChargesMovedToPayerReason>Charges moved to payer</ChargesMovedToPayerReason>
+  <ChargesMovedFromPayeeReason>Charges moved from payee</ChargesMovedFromPayeeReason>
+  
+  <!-- server (in servers.xml) to use for metering Misc Adjustments (Credits) and ARAdjustments to-->
+  <MeterServer>CreditAccountsServer</MeterServer>
+
+  <!-- time in seconds to wait for metered sessions to succeed -->
+  <WaitForCommitTimeout>60</WaitForCommitTimeout>
+  
+</xmlconfig>

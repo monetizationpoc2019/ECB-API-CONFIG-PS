@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<mt_config>
+  <language_code>fr</language_code>
+  <locale_space name="pipeline/error">
+    <locale_entry>
+      <Name>pipeline/error</Name>
+      <Value>Échecs système</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>pipeline/error/Code</Name>
+      <Value>Code</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>pipeline/error/ErrorMessage</Name>
+      <Value>Message d'erreur</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>pipeline/error/FailureCompoundID</Name>
+      <Value>Échec ID composé</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>pipeline/error/FailureID</Name>
+      <Value>Échec ID</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>pipeline/error/FailureServiceName</Name>
+      <Value>Échec nom de service</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>pipeline/error/FailureTime</Name>
+      <Value>Heure de l'échec</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>pipeline/error/Line</Name>
+      <Value>Ligne</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>pipeline/error/MeteredTime</Name>
+      <Value>Temps chronométré</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>pipeline/error/Method</Name>
+      <Value>Méthode</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>pipeline/error/Module</Name>
+      <Value>Module</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>pipeline/error/PlugIn</Name>
+      <Value>Plug-in</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>pipeline/error/PossibleAccountID</Name>
+      <Value>ID de compte possible</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>pipeline/error/Sender</Name>
+      <Value>Expéditeur</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>pipeline/error/StageName</Name>
+      <Value>Nom de l'étape</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>pipeline/error/State</Name>
+      <Value>État</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>pipeline/error/tx_batch</Name>
+      <Value>Lot</Value>
+    </locale_entry>
+  </locale_space>
+</mt_config>

@@ -1,0 +1,122 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xmlconfig>
+  <tag>PaymentAuthorizationAdapter</tag>
+  
+  <NumThreads>32</NumThreads>
+  
+  <ConfigFile>PaymentSvrClient\config\UsageServer\PayAuthAdapter_US.xml</ConfigFile>
+  <EndPoint>WSHttpBinding_IElectronicPaymentServices</EndPoint>
+
+	<!-- 
+		This setting determines whether or not the adapter attempts to authorize the charge. 
+		If it is pre-authorized, the Payment Submission Adapter performs a capture.  If not,
+		the Payment Submission Adapter performs a debit operation.
+	-->
+	<SubmitPreAuth>true</SubmitPreAuth>
+
+	<!--
+		These settings determine if the Payment Authorization Adapter is going to schedule the collection
+		of electronic payments in the future or whether they will be collected during the EOP process.  Set
+		SchedulePayments to true if they are to be scheduled for a future date.  Set NumDays to the number of days
+		in the future the payments are to be scheduled.  
+	-->
+	<SchedulePayments>true</SchedulePayments>
+	<NumDays>5</NumDays>
+
+	<!-- 
+		Set TryDunning if the payments are to be submitted to the dunning process if they fail.
+	-->
+	<TryDunning>true</TryDunning>
+  <IssueRefundForNegativeBalances>true</IssueRefundForNegativeBalances>
+  <!-- E-mail settings -->
+  <EmailSettingsForACHPayments>
+  
+    <serverName>mail.metratech.com</serverName>
+    <portNumber>80</portNumber>
+    <Encoding>UTF8</Encoding> <!-- possible values are ASCII or UTF8 -->
+    <Format>Html</Format>  <!-- possible values are Text or Html -->
+
+    <template>
+      <language>fr</language>
+      <From>test@metratech.com</From>
+      <CC />
+      <Bcc />
+      <Subject>ACH %%PAYMENT_REFUND%% La notification</Subject>
+      <DateFormatString>dd/MM/yyyy</DateFormatString>
+    </template>
+
+    <template>
+      <language>de</language>
+      <From>test@metratech.com</From>
+      <CC />
+      <Bcc />
+      <Subject>[DE]ACH %%PAYMENT_REFUND%% Notification</Subject>
+      <DateFormatString>MM/dd/yy</DateFormatString>
+    </template>
+
+    <template>
+      <language>it</language>
+      <From>test@metratech.com</From>
+      <CC />
+      <Bcc />
+      <Subject>[IT]ACH %%PAYMENT_REFUND%% Notification</Subject>
+      <DateFormatString>dd/mm/yyyy</DateFormatString>
+    </template>
+
+    <template>
+      <language>jp</language>
+      <From>test@metratech.com</From>
+      <CC />
+      <Bcc />
+      <Subject>[JA]ACH %%PAYMENT_REFUND%% Notification</Subject>
+      <DateFormatString>yyyy/MM/dd</DateFormatString>
+    </template>
+
+    <template>
+      <language>es</language>
+      <From>test@metratech.com</From>
+      <CC />
+      <Bcc />
+      <Subject>[ES]ACH %%PAYMENT_REFUND%% Notification</Subject>
+      <DateFormatString>dd/mm/yyyy</DateFormatString>
+    </template>
+
+    <template>
+      <language>gb</language>
+      <From>test@metratech.com</From>
+      <CC />
+      <Bcc />
+      <Subject>ACH %%PAYMENT_REFUND%% Notification</Subject>
+      <DateFormatString>dd/MM/yyyy</DateFormatString>
+    </template>
+
+    <template>
+      <language>us</language>
+      <From>test@metratech.com</From>
+      <CC />
+      <Bcc />
+      <Subject>ACH %%PAYMENT_REFUND%% Notification</Subject>
+      <DateFormatString>MM/dd/yy</DateFormatString>
+    </template>
+
+    <template>
+      <language>br</language>
+      <From>test@metratech.com</From>
+      <CC />
+      <Bcc />
+      <Subject>[pt-BR]ACH %%PAYMENT_REFUND%% Notification</Subject>
+      <DateFormatString>d/M/yyyy</DateFormatString>
+    </template>
+
+    <template>
+      <language>mx</language>
+      <From>test@metratech.com</From>
+      <CC />
+      <Bcc />
+      <Subject>[es-MX]ACH %%PAYMENT_REFUND%% Notification</Subject>
+      <DateFormatString>dd/mm/yyyy</DateFormatString>
+    </template>
+    
+  </EmailSettingsForACHPayments>
+
+</xmlconfig>

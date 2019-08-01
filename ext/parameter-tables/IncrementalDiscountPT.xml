@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<defineservice>
+    <name display_name="Incremental Discount PT" condition_header="Conditions" action_header="Actions" type="Rates" help_url="">metratech.com/IncrementalDiscountPT</name>
+    <description>Parameter table for configuring IncrementalDiscount Decision attributes</description>
+    <ptype display_name="Start Of Unit Range" condition="Y" column_operator="&gt;" filterable="Y">
+        <dn>StartOfUnitRange</dn>
+        <type>int32</type>
+        <length />
+        <required>N</required>
+        <defaultvalue />
+        <description>Tier start for the range of units covered by the incremental discount decision.</description>
+    </ptype>
+    <ptype display_name="End Of Unit Range" condition="Y" column_operator="&lt;=" filterable="Y">
+        <dn>EndOfUnitRange</dn>
+        <type>int32</type>
+        <length />
+        <required>N</required>
+        <defaultvalue />
+        <description>Tier end for the range of units covered by the incremental discount decision.</description>
+    </ptype>
+    <ptype display_name="Discount Percentage" action="Y">
+        <dn>DiscountPercentage</dn>
+        <type>int32</type>
+        <length />
+        <required>N</required>
+        <defaultvalue />
+        <description>Discount percentage for the number of units for the charge that fall within the StartOfUnitRange and EndOfUnitRange. Value must be between 0 and 100.</description>
+    </ptype>
+</defineservice>

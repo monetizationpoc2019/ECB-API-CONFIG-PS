@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<mt_config>
+    <language_code>gb</language_code>
+    <locale_space name="MetraTech.MetraNet.CreditNotes">
+        <locale_entry>
+            <Name>MetraTech.MetraNet.CreditNotes/CreditNotePDFStatus/Failed</Name>
+            <Value>[EN-GB] Failed</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>MetraTech.MetraNet.CreditNotes/CreditNotePDFStatus/NotGenerated</Name>
+            <Value>[EN-GB] Not Generated</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>MetraTech.MetraNet.CreditNotes/CreditNotePDFStatus/Pending</Name>
+            <Value>[EN-GB] Pending</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>MetraTech.MetraNet.CreditNotes/CreditNotePDFStatus/Successful</Name>
+            <Value>[EN-GB] Successful</Value>
+        </locale_entry>
+    </locale_space>
+</mt_config>

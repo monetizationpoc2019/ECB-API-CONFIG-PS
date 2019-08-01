@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xmlconfig>
+    <mtsysconfigdata>
+        <effective_date ptype="DATETIME">1998-11-19T00:00:00Z</effective_date>
+        <timeout ptype="INTEGER">30</timeout>
+        <configfiletype>CONFIG_DATA</configfiletype>
+    </mtsysconfigdata>
+    <mtconfigdata>
+        <version ptype="INTEGER">1</version>
+        <processor>
+            <name>AccountResolutionByID</name>
+            <progid>MetraPipeline.AccountResolution.1</progid>
+            <description>Resolve the account using AccountId</description>
+            <configdata>
+                <Resolution>
+                    <AccountID>_AccountID</AccountID>
+                    <Timestamp>_Timestamp</Timestamp>
+                    <FailIfNotResolved ptype="BOOLEAN">True</FailIfNotResolved>
+                </Resolution>
+                <Retrieval>
+                    <Property>
+                        <Name>PayingAccount</Name>
+                        <InSession>_PayingAccount</InSession>
+                    </Property>
+                    <Property>
+                        <Name>AccountState</Name>
+                        <InSession>_AccountState</InSession>
+                    </Property>
+                    <Property>
+                        <Extension>core</Extension>
+                        <AccountAdapter>internal</AccountAdapter>
+                        <Name>Currency</Name>
+                        <InSession>_Currency</InSession>
+                    </Property>
+                    <Property>
+                        <Name>UsageCycleID</Name>
+                        <InSession>_UsageCycleID</InSession>
+                    </Property>
+                    <Property>
+                        <Extension>core</Extension>
+                        <AccountAdapter>internal</AccountAdapter>
+                        <Name>Pricelist</Name>
+                        <InSession>_AccountPricelist</InSession>
+                    </Property>
+                    <Property>
+                        <Extension>core</Extension>
+                        <AccountAdapter>internal</AccountAdapter>
+                        <Name>DaysLate</Name>
+                        <InSession>DaysLate</InSession>
+                    </Property>
+                    <Property>
+                        <Extension>core</Extension>
+                        <AccountAdapter>internal</AccountAdapter>
+                        <Name>PercentageFee</Name>
+                        <InSession>PercentageFee</InSession>
+                    </Property>
+                </Retrieval>
+            </configdata>
+        </processor>
+    </mtconfigdata>
+</xmlconfig>

@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<mt_config>
+    <language_code>fr</language_code>
+    <locale_space name="Notification_EventType_GroupSubscriptionEndDate">
+        <locale_entry>
+            <Name>Notification_EventType_GroupSubscriptionEndDate/EventType/Group Subscription End Date</Name>
+            <Value>Date de fin de l`abonnement groupé</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>Notification_EventType_GroupSubscriptionEndDate/Template/Group Subscription End Date</Name>
+            <Value>La participation du compte {LoginName} à l`abonnement à {POInternalName} se terminera le {EndDate} &lt;a href='JavaScript:getFrameMetraNet().Account.Load({AccountID});'&gt; Afficher...&lt;/a&gt;</Value>
+        </locale_entry>
+    </locale_space>
+</mt_config>

@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xmlconfig>
+  <mtsysconfigdata>
+    <effective_date ptype="DATETIME">1998-11-19T00:00:00Z</effective_date>
+    <timeout ptype="INTEGER">30</timeout>
+    <configfiletype>CONFIG_DATA</configfiletype>
+  </mtsysconfigdata>
+
+  <mtconfigdata>
+	<version ptype="INTEGER">1</version>
+	<!-- First processor configuration -->
+	<processor>
+		<name>PriceListValidate</name>
+		<progid>MetraPipeline.MTSQLInterpreter.1</progid>
+		<description>Used for validating pricelist id</description>
+
+		<!-- Processor specific configuration data -->
+		<configdata>
+			<Program>
+			
+				CREATE PROCEDURE PriceListValidate @pricelist NVARCHAR(255),@resolved_pricelist INTEGER
+				AS
+				if (NOT @pricelist IS NULL AND (upper(CAST(@pricelist AS VARCHAR)) &lt;&gt; 'NONE' AND @resolved_pricelist IS NULL))
+					 RAISERROR ('Pricelist &lt;' + CAST(@pricelist AS VARCHAR) + '&gt; not found in product catalog.')
+			
+			</Program> 
+		<TempTable>tmp_pricelistlookup</TempTable>
+	  </configdata>
+	</processor>
+  </mtconfigdata>
+</xmlconfig>

@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<mt_config>
+    <language_code>US</language_code>
+    <locale_space name="metratech.com/nonrecurringcharge">
+        <locale_entry>
+            <Name>metratech.com/nonrecurringcharge</Name>
+            <Value>Non-Recurring Charge</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/nonrecurringcharge/NRCEventType</Name>
+            <Value>Event</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/nonrecurringcharge/NRCIntervalEnd</Name>
+            <Value>Non-Recurring Charge Interval End</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/nonrecurringcharge/NRCIntervalStart</Name>
+            <Value>Non-Recurring Charge Interval Start</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/nonrecurringcharge/NRCIntervalSubscriptionEnd</Name>
+            <Value>Non-Recurring Charge Subscription Interval End</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/nonrecurringcharge/NRCIntervalSubscriptionStart</Name>
+            <Value>Non-Recurring Charge Subscription Interval Start</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/NRCIntervalEnd</Name>
+            <Value>Non-Recurring Charge Interval End</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/NRCIntervalStart</Name>
+            <Value>Non-Recurring Charge Interval Start</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/NRCIntervalSubscriptionEnd</Name>
+            <Value>Non-Recurring Charge Subscription End</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/NRCIntervalSubscriptionStart</Name>
+            <Value>Non-Recurring Charge Subscription Start</Value>
+        </locale_entry>
+    </locale_space>
+</mt_config>

@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xmlconfig>
+
+  <mtsysconfigdata>
+    <effective_date ptype="DATETIME">1998-11-19T00:00:00Z</effective_date>
+    <timeout ptype="INTEGER">30</timeout>
+    <configfiletype>CONFIG_DATA</configfiletype>
+  </mtsysconfigdata>
+
+  <mtconfigdata>
+    <version ptype="INTEGER">1</version>
+
+    <processor>
+      <name>SetAuditProperties</name>
+      <progid>MetraPipeline.MTSQLInterpreter.1</progid>
+      <description>Set up information to be audited.</description>
+
+      <configdata>
+
+        <Program>
+          
+                    CREATE PROCEDURE SetAuditProperties @AuditEventId      INTEGER OUTPUT
+                                                        @AuditEntityTypeId INTEGER OUTPUT
+                                                        @AuditEntityId     INTEGER OUTPUT
+                                                        @AuditDetails      VARCHAR OUTPUT
+                                                        @_accountID        INTEGER
+                                                        @actiontype        ENUM -- $ICE:('metratech.com/accountcreation','ActionType')$
+                                                        @operation         ENUM -- $ICE:('metratech.com','Operation')$
+                    AS
+                      --PRINT 'SetAuditProperties: AuditEventId [' + CAST(@AuditEventId AS VARCHAR) + ']';
+                      DECLARE @strActionType VARCHAR;
+                      SET @strActionType = CAST(@actiontype AS VARCHAR);
+
+                      DECLARE @strOperation VARCHAR;
+                      SET @strOperation = CAST(@operation AS VARCHAR);
+
+                      --PRINT 'SetAuditProperties: ActionType [' + @strActionType + '] Operation[' + @strOperation + ']';
+
+                      -- Set the Event ID 
+                      -- Set the default event to be Account Update  
+                      SET @AuditEventId = 1521;
+                 
+                      IF @strActionType = 'Account' OR @strActionType = 'Both'
+                      BEGIN
+                        IF @strOperation = 'Add' 
+                          SET @AuditEventId = 1520; 
+                        IF @strOperation = 'Update'
+                          SET @AuditEventId = 1521; 
+                      END
+
+                      IF @strActionType = 'Contact'
+                      BEGIN
+                        IF @strOperation = 'Add' 
+                          SET @AuditEventId = 1525; 
+                        IF @strOperation = 'Update'
+                          SET @AuditEventId = 1526; 
+                      END
+
+                      Set @AuditEntityTypeId = 1;
+                      Set @AuditEntityId = @_accountID;
+                      Set @AuditDetails = '';
+        
+        </Program> 
+
+      </configdata>
+    </processor>
+  </mtconfigdata>
+</xmlconfig>

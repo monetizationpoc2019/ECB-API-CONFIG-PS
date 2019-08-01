@@ -1,0 +1,260 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<GridLayout xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <Name>UsageBeforeAfterAuditLayout</Name>
+    <Title>
+        <LocalizationTag>BEFORE_AFTER_GRID_TITLE</LocalizationTag>
+        <ResourceClassKey>UsageProcessingResources</ResourceClassKey>
+    </Title>
+    <Exportable>false</Exportable>
+    <Height>0</Height>
+    <Width>90%</Width>
+    <Expandable>false</Expandable>
+    <Buttons>None</Buttons>
+    <DataSourceURL>~/AjaxServices/UsageAuditService.aspx</DataSourceURL>
+    <MultiSelect>false</MultiSelect>
+    <SelectionModel>Standard</SelectionModel>
+    <TotalProperty>TotalRows</TotalProperty>
+    <RootElement>Items</RootElement>
+    <PageSize>1000</PageSize>
+    <Description>The grid layout for the Usage Audit Summary Grid.</Description>
+    <ExpansionCssClass />
+    <ShowFilterPanel>true</ShowFilterPanel>
+    <FilterInputWidth>220</FilterInputWidth>
+    <FilterLabelWidth>75</FilterLabelWidth>
+    <FilterColumnWidth>350</FilterColumnWidth>
+    <ShowTopBar>true</ShowTopBar>
+    <ShowBottomBar>true</ShowBottomBar>
+    <ShowGridFrame>true</ShowGridFrame>
+    <ShowGridHeader>true</ShowGridHeader>
+    <ShowColumnHeaders>true</ShowColumnHeaders>
+    <NoRecordsText>
+        <LocalizationTag>NO_RECORDS_TEXT</LocalizationTag>
+        <ResourceClassKey>UsageProcessingResources</ResourceClassKey>
+    </NoRecordsText>
+    <FilterPanelLayout>MultiColumn</FilterPanelLayout>
+    <FilterPanelCollapsed>true</FilterPanelCollapsed>
+    <EnableColumnConfig>false</EnableColumnConfig>
+    <EnableFilterConfig>false</EnableFilterConfig>
+    <Resizeable>true</Resizeable>
+    <ButtonAlignment>Center</ButtonAlignment>
+    <DefaultSortField />
+    <DefaultSortDirection>Ascending</DefaultSortDirection>
+    <DisplayCount>true</DisplayCount>
+    <SearchOnLoad>false</SearchOnLoad>
+    <CustomImplementationFilePath />
+    <URLParameters>
+        <URLParameter>
+            <ParameterName>q</ParameterName>
+            <SQLQuery>
+                <QueryName>__USAGE_BY_ID_SESS__</QueryName>
+                <QueryDir>..\Extensions\SystemConfig\Config\Queries\Usage</QueryDir>
+                <QueryParameters />
+                <QueryColumns>
+                    <QueryColumn>
+                        <Name>id_usage_interval</Name>
+                        <Type>System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</Type>
+                    </QueryColumn>
+                    <QueryColumn>
+                        <Name>id_sess</Name>
+                        <Type>System.Int64, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</Type>
+                    </QueryColumn>
+                    <QueryColumn>
+                        <Name>nm_pv_table</Name>
+                        <Type>System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</Type>
+                    </QueryColumn>
+                    <QueryColumn>
+                        <Name>nm_column</Name>
+                        <Type>System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</Type>
+                    </QueryColumn>
+                    <QueryColumn>
+                        <Name>tx_before</Name>
+                        <Type>System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</Type>
+                    </QueryColumn>
+                    <QueryColumn>
+                        <Name>tx_after</Name>
+                        <Type>System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</Type>
+                    </QueryColumn>
+                    <QueryColumn>
+                        <Name>b_changed</Name>
+                        <Type>System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</Type>
+                    </QueryColumn>
+                </QueryColumns>
+            </SQLQuery>
+        </URLParameter>
+    </URLParameters>
+    <CustomOverrideJavascriptIncludes />
+    <SubGrid />
+    <Elements>
+        <Element>
+            <RecordElement>true</RecordElement>
+            <ID>id_usage_interval</ID>
+            <DataType>Numeric</DataType>
+            <IsIdentity>false</IsIdentity>
+            <DataIndex>id_usage_interval</DataIndex>
+            <IsColumn>true</IsColumn>
+            <HeaderText>
+              <LocalizationTag>TEXT_ID_USAGE_INTERVAL</LocalizationTag>
+              <ResourceClassKey>UsageProcessingResources</ResourceClassKey>
+            </HeaderText>
+            <Formatter />
+            <Width>120</Width>
+            <Resizeable>true</Resizeable>
+            <PreventSortable>false</PreventSortable>
+            <Sortable>true</Sortable>
+            <ColumnHideable>true</ColumnHideable>
+            <DefaultColumn>false</DefaultColumn>
+            <Filterable>true</Filterable>
+            <FilterHideable>true</FilterHideable>
+            <DefaultFilter>true</DefaultFilter>
+            <RequiredFilter>true</RequiredFilter>
+            <FilterReadOnly>true</FilterReadOnly>
+        </Element>
+        <Element>
+            <RecordElement>true</RecordElement>
+            <ID>id_sess</ID>
+            <DataType>Numeric</DataType>
+            <IsIdentity>false</IsIdentity>
+            <DataIndex>id_sess</DataIndex>
+            <IsColumn>true</IsColumn>
+            <HeaderText>
+              <LocalizationTag>TEXT_ID_SESS</LocalizationTag>
+              <ResourceClassKey>UsageProcessingResources</ResourceClassKey>
+            </HeaderText>
+            <Formatter />
+            <Width>120</Width>
+            <Resizeable>true</Resizeable>
+            <PreventSortable>false</PreventSortable>
+            <Sortable>true</Sortable>
+            <ColumnHideable>true</ColumnHideable>
+            <DefaultColumn>false</DefaultColumn>
+            <Filterable>true</Filterable>
+            <FilterHideable>true</FilterHideable>
+            <DefaultFilter>true</DefaultFilter>
+            <RequiredFilter>true</RequiredFilter>
+            <FilterReadOnly>true</FilterReadOnly>
+        </Element>
+        <Element>
+            <RecordElement>true</RecordElement>
+            <ID>nm_pv_table</ID>
+            <DataType>String</DataType>
+            <IsIdentity>false</IsIdentity>
+            <DataIndex>nm_pv_table</DataIndex>
+            <IsColumn>true</IsColumn>
+            <HeaderText>
+              <LocalizationTag>TEXT_NM_PV_TABLE</LocalizationTag>
+              <ResourceClassKey>UsageProcessingResources</ResourceClassKey>
+            </HeaderText>
+            <Formatter />
+            <Width>120</Width>
+            <Resizeable>true</Resizeable>
+            <PreventSortable>false</PreventSortable>
+            <Sortable>true</Sortable>
+            <ColumnHideable>true</ColumnHideable>
+            <DefaultColumn>false</DefaultColumn>
+            <Filterable>true</Filterable>
+            <FilterHideable>true</FilterHideable>
+            <DefaultFilter>true</DefaultFilter>
+            <RequiredFilter>true</RequiredFilter>
+            <FilterReadOnly>true</FilterReadOnly>
+        </Element>
+        <Element>
+            <RecordElement>true</RecordElement>
+            <ID>nm_column</ID>
+            <DataType>String</DataType>
+            <IsIdentity>true</IsIdentity>
+            <DataIndex>nm_column</DataIndex>
+            <IsColumn>true</IsColumn>
+            <HeaderText>
+              <LocalizationTag>TEXT_NM_COLUMN</LocalizationTag>
+              <ResourceClassKey>UsageProcessingResources</ResourceClassKey>
+            </HeaderText>
+            <Formatter />
+            <Width>120</Width>
+            <Resizeable>true</Resizeable>
+            <PreventSortable>false</PreventSortable>
+            <Sortable>true</Sortable>
+            <ColumnHideable>true</ColumnHideable>
+            <DefaultColumn>true</DefaultColumn>
+            <Filterable>true</Filterable>
+            <FilterHideable>true</FilterHideable>
+            <DefaultFilter>true</DefaultFilter>
+            <RequiredFilter>false</RequiredFilter>
+            <FilterReadOnly>false</FilterReadOnly>
+        </Element>
+        <Element>
+            <RecordElement>true</RecordElement>
+            <ID>tx_before</ID>
+            <DataType>String</DataType>
+            <IsIdentity>false</IsIdentity>
+            <DataIndex>tx_before</DataIndex>
+            <IsColumn>true</IsColumn>
+            <HeaderText>
+              <LocalizationTag>TEXT_TX_BEFORE</LocalizationTag>
+              <ResourceClassKey>UsageProcessingResources</ResourceClassKey>
+            </HeaderText>
+            <Formatter />
+            <Width>120</Width>
+            <Resizeable>true</Resizeable>
+            <PreventSortable>false</PreventSortable>
+            <Sortable>true</Sortable>
+            <ColumnHideable>true</ColumnHideable>
+            <DefaultColumn>true</DefaultColumn>
+            <Filterable>true</Filterable>
+            <FilterHideable>true</FilterHideable>
+            <DefaultFilter>true</DefaultFilter>
+            <RequiredFilter>false</RequiredFilter>
+            <FilterReadOnly>false</FilterReadOnly>
+        </Element>
+        <Element>
+            <RecordElement>true</RecordElement>
+            <ID>tx_after</ID>
+            <DataType>String</DataType>
+            <IsIdentity>false</IsIdentity>
+            <DataIndex>tx_after</DataIndex>
+            <IsColumn>true</IsColumn>
+            <HeaderText>
+              <LocalizationTag>TEXT_TX_AFTER</LocalizationTag>
+              <ResourceClassKey>UsageProcessingResources</ResourceClassKey>
+            </HeaderText>
+            <Formatter />
+            <Width>120</Width>
+            <Resizeable>true</Resizeable>
+            <PreventSortable>false</PreventSortable>
+            <Sortable>true</Sortable>
+            <ColumnHideable>true</ColumnHideable>
+            <DefaultColumn>true</DefaultColumn>
+            <Filterable>true</Filterable>
+            <FilterHideable>true</FilterHideable>
+            <DefaultFilter>true</DefaultFilter>
+            <RequiredFilter>false</RequiredFilter>
+            <FilterReadOnly>false</FilterReadOnly>
+        </Element>
+        <Element>
+            <RecordElement>true</RecordElement>
+            <ID>b_changed</ID>
+            <DataType>Boolean</DataType>
+            <IsIdentity>false</IsIdentity>
+            <DataIndex>b_changed</DataIndex>
+            <IsColumn>true</IsColumn>
+            <HeaderText>
+              <LocalizationTag>TEXT_B_CHANGED</LocalizationTag>
+              <ResourceClassKey>UsageProcessingResources</ResourceClassKey>
+            </HeaderText>
+            <Formatter />
+            <Width>120</Width>
+            <Resizeable>true</Resizeable>
+            <PreventSortable>false</PreventSortable>
+            <Sortable>true</Sortable>
+            <ColumnHideable>true</ColumnHideable>
+            <DefaultColumn>true</DefaultColumn>
+            <Filterable>true</Filterable>
+            <FilterHideable>true</FilterHideable>
+            <DefaultFilter>true</DefaultFilter>
+            <RequiredFilter>false</RequiredFilter>
+            <FilterReadOnly>false</FilterReadOnly>
+        </Element>
+    </Elements>
+    <ExpanderTemplate />
+    <GridButtons />
+    <ToolbarButtons />
+</GridLayout>

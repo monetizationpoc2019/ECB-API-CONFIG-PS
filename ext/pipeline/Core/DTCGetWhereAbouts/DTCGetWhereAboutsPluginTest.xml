@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xmlconfig>
+  <session>
+   <ServiceID ptype="ID">AccountCreditRequestPlugin</ServiceID>
+   <inputs>
+		<_AccountID ptype="INTEGER">125</_AccountID>
+ 	  <_Amount ptype="DECIMAL">100.56</_Amount>
+ 	  <_Currency ptype="STRING">"DM"</_Currency>
+ 	  <Reason ptype="STRING">Bad Reception</Reason>
+ 	  <EmailNotification ptype="STRING">Y</EmailNotification>
+ 	  <EmailAddress ptype="STRING">test@metratech.com</EmailAddress>
+ 	  <ContentionSessionID ptype="STRING">Y</ContentionSessionID>
+ 	  <Status ptype="STRING">PENDING</Status>
+ 	  <Description ptype="STRING">Bad Reception, not going to pay</Description>
+ 	  </inputs>
+  </session>
+</xmlconfig>

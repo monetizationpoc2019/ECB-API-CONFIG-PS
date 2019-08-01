@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xmlconfig>
+        <!-- Maximum number of transactions to resubmit at a time -->
+	<MaxTxnCount ptype="INTEGER">300</MaxTxnCount>
+
+<!-- 
+Change query to include the failed transactions that you want to be resubmitted.
+
+This adapter should only be used to resubmit transactions that failed due to network failures.
+Transactions should be valid and should have no data problems or they will keep failing.
+-->
+
+<SQLServerquery>
+   
+select total.*,
+  ft.*
+from 
+  t_failed_transaction ft
+  inner join (
+    select s.id_source_sess, MIN(dt_metered) dt_metered_first, MAX(dt_metered) dt_metered_last, COUNT(*) submit_count
+    from t_session s
+    inner join t_session_set ss on ss.id_ss =  s.id_ss
+    inner join t_message m on m.id_message = ss.id_message
+    group by id_source_sess
+  ) total on total.id_source_sess = ft.tx_FailureCompoundID
+Where 
+  -- only want open transactions, that havn't been resubmitted.
+  ft.State = 'N'
+  and ft.tx_errorcodemessage = 'An ODBC error occurred.'
+  and ft.tx_ErrorMessage like 'ODBC exception caught in PlugInProcessSessions%Communication link failure;%'
+  and total.submit_count &lt; 10
+	 
+  </SQLServerquery>
+  
+  <Oraclequery>
+   
+select total.*,
+  ft.*
+from 
+  t_failed_transaction ft
+  inner join (
+    select s.id_source_sess, MIN(dt_metered) dt_metered_first, MAX(dt_metered) dt_metered_last, COUNT(*) submit_count
+    from t_session s
+    inner join t_session_set ss on ss.id_ss =  s.id_ss
+    inner join t_message m on m.id_message = ss.id_message
+    group by id_source_sess
+  ) total on total.id_source_sess = ft.tx_FailureCompoundID
+Where 
+  -- only want open transactions, that havn't been resubmitted.
+  ft.State = 'N'
+  and ft.tx_errorcodemessage = 'An ODBC error occurred.'
+  and (ft.tx_ErrorMessage like 'ODBC exception caught in PlugInProcessSessions%Communication link failure;%'
+    OR ft.tx_ErrorMessage like '%ORA-03113%')
+  and total.submit_count &lt; 10
+	
+	 
+  </Oraclequery>
+
+</xmlconfig>

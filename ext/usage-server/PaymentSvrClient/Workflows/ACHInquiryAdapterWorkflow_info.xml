@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<WorkflowInfo>
+    <Name>ACHInquiryAdapterWorkflow</Name>
+    <Type>SequentialWorkflow</Type>
+    <Assembly>MetraTech.Core.Workflows.dll</Assembly>
+    <XomlFile>ACHInquiryAdapterWorkflow.xoml</XomlFile>
+    <Description>ACH Inquiry Adapter Workflow</Description>
+</WorkflowInfo>

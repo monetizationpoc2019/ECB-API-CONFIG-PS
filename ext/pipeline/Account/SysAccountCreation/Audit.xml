@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xmlconfig>
+
+  <mtsysconfigdata>
+    <effective_date ptype="DATETIME">1998-11-19T00:00:00Z</effective_date>
+    <timeout ptype="INTEGER">30</timeout>
+    <configfiletype>CONFIG_DATA</configfiletype>
+  </mtsysconfigdata>
+
+  <mtconfigdata>
+    <version ptype="INTEGER">1</version>
+
+    <processor>
+      <name>Audit</name>
+      <progid>MetraPipeline.MTAuditPluginWriter</progid>
+      <description>Write the audit information (audit event) based on values set by the SetAuditProperties plugin.</description>
+
+      <configdata>
+        <UseBCPFlag ptype="BOOLEAN">TRUE</UseBCPFlag>
+        <Batch_Size ptype="INTEGER">2000</Batch_Size>
+
+        <AuditEventID>AuditEventId</AuditEventID>
+        <AuditEntityTypeId>AuditEntityTypeId</AuditEntityTypeId>
+        <AuditEntityId>AuditEntityId</AuditEntityId>
+        <AuditDetails>AuditDetails</AuditDetails>
+      </configdata>
+    </processor>
+  </mtconfigdata>
+</xmlconfig>

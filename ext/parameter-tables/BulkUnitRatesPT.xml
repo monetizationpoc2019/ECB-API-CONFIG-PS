@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<defineservice>
+    <name display_name="Bulk Unit Rates PT" condition_header="Conditions" action_header="Actions" type="Rates" help_url="">metratech.com/BulkUnitRatesPT</name>
+    <description>Parameter table for configuring BulkUnitRates Decision attributes</description>
+    <ptype display_name="Start Of Unit Range" condition="Y" column_operator="&gt;" filterable="Y">
+        <dn>StartOfUnitRange</dn>
+        <type>int32</type>
+        <length />
+        <required>N</required>
+        <defaultvalue />
+        <description>Tier start for the range of number of units covered by the bulk unit rates decision.</description>
+    </ptype>
+    <ptype display_name="End Of Unit Range" condition="Y" column_operator="&lt;=" filterable="Y">
+        <dn>EndOfUnitRange</dn>
+        <type>int32</type>
+        <length />
+        <required>N</required>
+        <defaultvalue />
+        <description>Tier end for the range of number of units covered by the bulk unit rates decision.</description>
+    </ptype>
+    <ptype display_name="Override Rate For Units" action="Y">
+        <dn>OverrideRateForUnits</dn>
+        <type>decimal</type>
+        <length />
+        <required>N</required>
+        <defaultvalue />
+        <description>Override rate for the charge if the number of units in the charge falls within the StartOfUnitRange to EndOfUnitRange range of units.</description>
+    </ptype>
+</defineservice>

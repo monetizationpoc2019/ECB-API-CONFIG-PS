@@ -1,0 +1,130 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<mt_config>
+  <language_code>us</language_code>
+  <locale_space name="metratech.com/account">
+    <locale_entry>
+      <Name>metratech.com/account/_AccountID</Name>
+      <Value>Account Id</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/account/AccountEndDate</Name>
+      <Value>End Date</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/account/AccountStartDate</Name>
+      <Value>Start Date</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/account/AccountStatus</Name>
+      <Value>Account Status</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/account/AccountType</Name>
+      <Value>Account Type</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/account/AncestorAccount</Name>
+      <Value>Parent Name</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/account/AncestorAccountID</Name>
+      <Value>Parent Id</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/account/AncestorAccountNS</Name>
+      <Value>Parent Namespace</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/account/ApplyDefaultSecurityPolicy</Name>
+      <Value>Apply default security policy</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/account/AuthenticationType</Name>
+      <Value>Authentication Type</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/account/DayOfMonth</Name>
+      <Value>Day of Month</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/account/DayOfWeek</Name>
+      <Value>Day of Week</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/account/FirstDayOfMonth</Name>
+      <Value>First Day of Month</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/account/Hierarchy_EndDate</Name>
+      <Value>Hierarchy end date</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/account/Hierarchy_StartDate</Name>
+      <Value>Hierarchy start date</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/account/Name_Space</Name>
+      <Value>Name space</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/account/Password_</Name>
+      <Value>Password</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/account/PayerAccount</Name>
+      <Value>Payer</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/account/PayerAccountNS</Name>
+      <Value>Payer Namespace</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/account/PayerID</Name>
+      <Value>Payer Id</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/account/Payment_EndDate</Name>
+      <Value>Payment End Date</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/account/Payment_StartDate</Name>
+      <Value>Payment Start Date</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/account/SecondDayOfMonth</Name>
+      <Value>Second Day of Month</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/account/StartDay</Name>
+      <Value>Start Day</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/account/StartMonth</Name>
+      <Value>Start Month</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/account/StartYear</Name>
+      <Value>Start Year</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/account/UserName</Name>
+      <Value>User name</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/account/AccountTypeID</Name>
+      <Value>Account Type ID</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/account/CanHaveChildren</Name>
+      <Value>Can Have Children</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/account/HasLogonCapability</Name>
+      <Value>Has Logon Capability</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/account/AccountTypeLocalizedName</Name>
+      <Value>Account Type Localized Name</Value>
+    </locale_entry>
+  </locale_space>
+</mt_config>

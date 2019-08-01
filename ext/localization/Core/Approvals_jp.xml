@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<mt_config>
+  <language_code>jp</language_code>
+  <locale_space name="Approvals">
+    <locale_entry>
+      <Name>Approvals/ChangeType/AccountUpdate</Name>
+      <Value>アカウント プロパティの更新</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Approvals/ChangeType/RateUpdate</Name>
+      <Value>料金表のルールの更新</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Approvals/ChangeState/Pending</Name>
+      <Value>保留</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Approvals/ChangeState/ApprovedWaitingToBeApplied</Name>
+      <Value>承認済み、適用待ち</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Approvals/ChangeState/FailedToApply</Name>
+      <Value>適用に失敗</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Approvals/ChangeState/Applied</Name>
+      <Value>適用</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Approvals/ChangeState/Dismissed</Name>
+      <Value>却下</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Approvals/ChangeType/ProductOfferingUpdate</Name>
+      <Value>ご利用プラン日の更新</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Approvals/ChangeType/Subscription.Add</Name>
+      <Value>New Subscription</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Approvals/ChangeType/Subscription.Update</Name>
+      <Value>Subscription Update</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Approvals/ChangeType/GroupSubscription.AddMemberHierarchies</Name>
+      <Value>グループ利用: メンバー階層の追加</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Approvals/ChangeType/GroupSubscription.AddMembers</Name>
+      <Value>グループ利用: メンバーの追加</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Approvals/ChangeType/GroupSubscription.UnsubscribeMembers</Name>
+      <Value>グループ利用: メンバーの申し込み解除</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Approvals/ChangeType/GroupSubscription.UpdateMember</Name>
+      <Value>グループ利用: メンバーの更新</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Approvals/ChangeType/GroupSubscription.DeleteMembers</Name>
+      <Value>グループ利用: メンバーの削除</Value>
+    </locale_entry>
+  </locale_space>
+</mt_config>

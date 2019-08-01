@@ -1,0 +1,170 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<mt_config>
+    <language_code>pt-br</language_code>
+    <locale_space name="metratech.com/defaultproductview">
+        <locale_entry>
+            <Name>metratech.com/DefaultProductView</Name>
+            <Value>Exibição do produto</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/DefaultProductView/AccountID</Name>
+            <Value>Conta</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/DefaultProductView/Amount</Name>
+            <Value>Valor</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/DefaultProductView/AmountWithTax</Name>
+            <Value>Valor com impostos</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/DefaultProductView/AmountWithTaxAsString</Name>
+            <Value>Valor com impostos</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/DefaultProductView/CanAdjust</Name>
+            <Value>Pode ajustar</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/DefaultProductView/CanManageAdjustments</Name>
+            <Value>Pode gerenciar ajustes</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/DefaultProductView/CanRebill</Name>
+            <Value>Pode refaturar</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/DefaultProductView/CountyTaxAmount</Name>
+            <Value>Valor do imposto do condado</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/DefaultProductView/CountyTaxAmountAsString</Name>
+            <Value>Valor do imposto do condado</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/DefaultProductView/Currency</Name>
+            <Value>Moeda</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/DefaultProductView/DisplayAmount</Name>
+            <Value>Valor exibido</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/DefaultProductView/DisplayAmountAsString</Name>
+            <Value>Valor exibido</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/DefaultProductView/FederalTaxAmount</Name>
+            <Value>Valor do imposto federal</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/DefaultProductView/FederalTaxAmountAsString</Name>
+            <Value>Valor do imposto federal</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/DefaultProductView/IntervalID</Name>
+            <Value>Intervalo</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/DefaultProductView/IsAdjusted</Name>
+            <Value>está ajustado</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/DefaultProductView/IsIntervalSoftClosed</Name>
+            <Value>é fechado simplificadamente no intervalo</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/DefaultProductView/IsPostBillAdjusted</Name>
+            <Value>é ajustado após o faturamento</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/DefaultProductView/IsPreBillAdjusted</Name>
+            <Value>é ajustado antes do faturamento</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/DefaultProductView/IsPreBillTransaction</Name>
+            <Value>é uma transação pré-faturamento</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/DefaultProductView/IsTaxInclusive</Name>
+            <Value>Inclui impostos?</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/DefaultProductView/IsTaxInformational</Name>
+            <Value>Informa impostos?</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/DefaultProductView/LocalTaxAmount</Name>
+            <Value>Valor do imposto local</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/DefaultProductView/LocalTaxAmountAsString</Name>
+            <Value>Valor do imposto local</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/DefaultProductView/OtherTaxAmount</Name>
+            <Value>Outros valores de impostos</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/DefaultProductView/OtherTaxAmountAsString</Name>
+            <Value>Outros valores de impostos</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/DefaultProductView/ParentSessionID</Name>
+            <Value>Sessão pai</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/DefaultProductView/PIInstance</Name>
+            <Value>Instância de PI</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/DefaultProductView/PITemplate</Name>
+            <Value>Modelo de PI</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/DefaultProductView/PostBillAdjustmentID</Name>
+            <Value>Ajuste pós-faturamento</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/DefaultProductView/PreBillAdjustmentID</Name>
+            <Value>Ajustes pré-faturamento</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/DefaultProductView/SessionID</Name>
+            <Value>Sessão</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/DefaultProductView/SessionType</Name>
+            <Value>Tipo de sessão</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/DefaultProductView/SessionType Value</Name>
+            <Value>Valor do tipo da seção</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/DefaultProductView/StateTaxAmount</Name>
+            <Value>Valor do imposto estadual</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/DefaultProductView/StateTaxAmountAsString</Name>
+            <Value>Valor do imposto estadual</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/DefaultProductView/TaxAmount</Name>
+            <Value>Valores do imposto</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/DefaultProductView/TaxAmountAsString</Name>
+            <Value>Valores do imposto</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/DefaultProductView/TimeStamp</Name>
+            <Value>Carimbo de data/hora</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/DefaultProductView/ViewID</Name>
+            <Value>Exibir</Value>
+        </locale_entry>
+    </locale_space>
+</mt_config>

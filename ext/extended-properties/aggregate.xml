@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<defineservice>
+  <name kind="15">aggregate</name>
+    <description>This object is a priceable item that inherits all of the properties and methods of MTPriceableItem, and also includes aggregate rating functionality. That is, this object determines rates by means of counters, which are evaluated in the conditional part of a rate schedule, thereby determining what rating data is used in determining a subscriber's rates. Its properties include: Cycle, FirstPassProductView, SecondPassServiceDefinition.</description>
+  <ptype display_name="GL Code">
+    <dn>glcode</dn>
+    <type>string</type>
+    <length>100</length>
+    <required>N</required>
+    <defaultvalue>
+    </defaultvalue>
+    <description>Sample GL Code field</description>
+  </ptype>
+</defineservice>

@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xmlconfig>
+ <version ptype="INTEGER">1</version>
+ <description>Processes a credit.</description>
+ <stage>
+  <name>AccountCredit</name>
+  <startstage ptype="BOOLEAN">YES</startstage>
+  <finalstage ptype="BOOLEAN">NO</finalstage>
+  <nextstage>WriteProductView</nextstage>
+
+
+  <dependencies>
+
+    <dependency>
+      <processor>Audit</processor>
+      <dependson>AccountCreditPlugin</dependson>
+    </dependency>
+
+    <dependency>
+      <processor>AccountCreditPlugIn</processor>
+      <dependson>SetAuditProperties</dependson>
+      <dependson>RoundAmount</dependson>
+      <dependson>IgnorePaymentRedirection</dependson>
+    </dependency> 
+
+    <dependency>
+      <processor>SetAuditProperties</processor>
+      <dependson>AuthCheck</dependson>
+      <dependson>SetAccountStateRule</dependson>
+    </dependency> 
+
+
+   <dependency>
+     <processor>RoundAmount</processor>
+     <dependson>AuthCheck</dependson>
+   </dependency>
+
+   <dependency>
+     <processor>IgnorePaymentRedirection</processor>
+     <dependson>AuthCheck</dependson>
+   </dependency>
+
+    <dependency>
+      <processor>AuthCheck</processor>
+      <dependson>SetCapabilityToCheck</dependson>
+      <dependson>SetSubscriberAccountID</dependson>
+    </dependency> 
+
+    <dependency>
+      <processor>SetSubscriberAccountID</processor>
+      <dependson>AccountResolutionByName</dependson>
+      <dependson>AccountResolutionByID</dependson>
+    </dependency> 
+
+    <dependency>
+      <processor>AccountResolutionByID</processor>
+      <dependson>AccountResolutionByName</dependson>
+    </dependency> 
+    
+    <dependency>
+      <processor>AccountResolutionByName</processor>
+      <dependson>TimestampOverride</dependson>
+    </dependency> 
+  
+
+  </dependencies>
+
+ </stage>
+ <possiblenextstages />
+</xmlconfig>

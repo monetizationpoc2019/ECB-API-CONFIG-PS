@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<defineservice>
+    <name>metratech.com/MetraTax</name>
+    <description>Defines MetraTax enumerators.</description>
+    <ptype>
+        <dn>TransactionTime</dn>
+        <type>timestamp</type>
+        <length />
+        <required>Y</required>
+        <defaultvalue />
+        <description>The time that the transaction was deemed to have occured.</description>
+    </ptype>
+    <ptype>
+        <dn>AccountId</dn>
+        <type>string</type>
+        <length>30</length>
+        <required>Y</required>
+        <defaultvalue />
+        <description>The account to be billed for the transaction.</description>
+    </ptype>
+    <ptype>
+        <dn>NumUnits</dn>
+        <type>int32</type>
+        <length />
+        <required>Y</required>
+        <defaultvalue />
+        <description>The number of units consumed.</description>
+    </ptype>
+</defineservice>

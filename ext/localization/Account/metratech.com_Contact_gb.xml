@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<mt_config>
+  <language_code>gb</language_code>
+  <locale_space name="metratech.com/Contact">
+    <locale_entry>
+      <Name>metratech.com/Contact/Address1</Name>
+      <Value>Address 1</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/Contact/Address2</Name>
+      <Value>Address 2</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/Contact/Address3</Name>
+      <Value>Address 3</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/Contact/City</Name>
+      <Value>City</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/Contact/Company</Name>
+      <Value>Company</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/Contact/ContactType</Name>
+      <Value>Contact Type</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/Contact/Country</Name>
+      <Value>Country</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/Contact/Email</Name>
+      <Value>Email</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/Contact/FacsimileTelephoneNumber</Name>
+      <Value>Fax</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/Contact/FirstName</Name>
+      <Value>First Name</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/Contact/LastName</Name>
+      <Value>Last Name</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/Contact/MiddleInitial</Name>
+      <Value>Middle Initial</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/Contact/PassportID</Name>
+      <Value>Passport ID</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/Contact/PassportIssuer</Name>
+      <Value>Passport Issuer</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/Contact/PhoneNumber</Name>
+      <Value>Phone Number</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/Contact/State</Name>
+      <Value>State</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/Contact/Zip</Name>
+      <Value>Zip</Value>
+    </locale_entry>
+  </locale_space>
+</mt_config>

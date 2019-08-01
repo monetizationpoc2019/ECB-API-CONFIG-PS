@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<mt_config>
+  <language_code>es-MX</language_code>
+  <locale_space name="metratech.com/accounttemplate">
+    <locale_entry>
+      <Name>metratech.com/accounttemplate/DetailResult/Failure</Name>
+      <Value>Error</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/accounttemplate/DetailResult/FailureDetail</Name>
+      <Value>Error de detalle</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/accounttemplate/DetailResult/Information</Name>
+      <Value>Información</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/accounttemplate/DetailResult/Success</Name>
+      <Value>Éxito</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/accounttemplate/DetailType/General</Name>
+      <Value>General</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/accounttemplate/DetailType/Subscription</Name>
+      <Value>Suscripción</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/accounttemplate/DetailType/Update</Name>
+      <Value>Actualizar</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/accounttemplate/TemplateStatus/Completed</Name>
+      <Value>Finalizado(a)</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/accounttemplate/TemplateStatus/Failed</Name>
+      <Value>Erróneo</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/accounttemplate/TemplateStatus/In-Progress</Name>
+      <Value>En curso</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/accounttemplate/TemplateStatus/Submitted</Name>
+      <Value>Enviado(a)</Value>
+    </locale_entry>
+  </locale_space>
+</mt_config>

@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<mt_config>
+    <language_code>jp</language_code>
+    <locale_space name="metratech.com/RevenueRecognition">
+        <locale_entry>
+            <Name>metratech.com/RevenueRecognition/PerformanceObligation/Delayed</Name>
+            <Value>[JP]Delayed</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/RevenueRecognition/PerformanceObligation/OnInvoice</Name>
+            <Value>[JP]On Invoice</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/RevenueRecognition/PerformanceObligation/SpecifiedDate</Name>
+            <Value>[JP]Specified Date</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/RevenueRecognition/RecognitionPattern/DailyOverTime</Name>
+            <Value>[JP]Daily Over Time</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/RevenueRecognition/RecognitionPattern/MonthlyOverTime</Name>
+            <Value>[JP]Monthly Over Time</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/RevenueRecognition/RecognitionPattern/SinglePointInTime</Name>
+            <Value>[JP]Single Point In Time</Value>
+        </locale_entry>
+    </locale_space>
+</mt_config>

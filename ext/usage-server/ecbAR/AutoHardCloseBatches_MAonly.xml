@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xmlconfig>
+	<!--AutoHardCloseARBatches -->
+  <AdapterName>AutoHardCloseARBatches</AdapterName>
+  <!--Batch Type: Value is either 0 for all batches except Misc Adj Batches or 1 for ONLY Misc Adj Batches -->
+  <BatchType>1</BatchType>
+</xmlconfig>

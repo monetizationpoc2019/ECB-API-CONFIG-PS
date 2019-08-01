@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xmlconfig>
+
+    <mtsysconfigdata>
+        <effective_date ptype="DATETIME">1998-11-19T00:00:00Z</effective_date>
+        <timeout ptype="INTEGER">30</timeout>
+        <configfiletype>CONFIG_DATA</configfiletype>
+    </mtsysconfigdata>
+
+    <mtconfigdata>
+        <version ptype="INTEGER">1</version>
+
+        <processor>
+            <name>UpdateAccount</name>
+            <progid>MetraPipeline.UpdateTableCreation.1</progid>
+      <description>Used for creating accounts in the MetraTech system.  Data is stored in all the account tables.  _AccountID is set as a property coming out of this plug-in.</description><condition>
+      
+                CREATE PROCEDURE condition @_ExecutePlugin BOOLEAN OUTPUT,
+                                          @Operation ENUM -- $ICE:('metratech.com','Operation')$
+                AS
+                  SET @_ExecutePlugin = (@Operation != #metratech.com/Operation/Add#)
+      
+      </condition>
+
+      
+
+            <configdata>
+        <actiontype>actiontype</actiontype>
+        <username>username</username>
+        <password>password_</password>
+        <name_space>name_space</name_space>
+        <language>language</language>
+        <dayofmonth>dayofmonth</dayofmonth>
+        <accounttype>accounttype</accounttype>
+        <tariffID>tariffID</tariffID>
+        <tariffname>tariffname</tariffname>
+        <taxexempt>taxexempt</taxexempt>
+        <timezoneID>timezoneID</timezoneID>
+        <timezoneoffset>timezoneoffset</timezoneoffset>
+        <accountID>_AccountID</accountID>
+        <usagecycletype>usagecycletype</usagecycletype>
+        <accountstartdate>accountstartdate</accountstartdate>
+        <accountenddate>accountenddate</accountenddate>
+        <operation>operation</operation>
+        <transactioncookie>transactioncookie</transactioncookie>
+        <accountstatus>accountstatus</accountstatus>
+        <dayofweek>dayofweek</dayofweek>
+        <firstdayofmonth>firstdayofmonth</firstdayofmonth>
+        <seconddayofmonth>seconddayofmonth</seconddayofmonth>
+        <startday>startday</startday>
+        <startmonth>startmonth</startmonth>
+        <startyear>startyear</startyear>
+        <startyear>startyear</startyear>
+        <billable>billable</billable>
+        <PayerAccountID>payerID</PayerAccountID>
+        <PayerLoginName>PayerAccount</PayerLoginName>
+        <PayerNamespace>PayerAccountNS</PayerNamespace>
+        <PayerStart>payment_startdate</PayerStart>
+        <PayerEnd>payment_enddate</PayerEnd>
+        <AncestorID>ancestorAccountID</AncestorID>
+        <OldAncestorAccountID>OldAncestorAccountID</OldAncestorAccountID>
+        <CorporateAccountID>CorporateAccountID</CorporateAccountID>
+        <Ancestorlogin>ancestorAccount</Ancestorlogin>
+        <AncestorNameSpace>ancestorAccountNS</AncestorNameSpace>
+        <AncestorStart>hierarchy_startdate</AncestorStart>
+        <AncestorEnd>hierarchy_enddate</AncestorEnd>
+        <folder>folder</folder>
+        <ApplyDefaultSecurityPolicy>ApplyDefaultSecurityPolicy</ApplyDefaultSecurityPolicy>
+        <currency>currency</currency>
+        <folder>folder</folder>
+        <b_canbepayer>b_canbepayer</b_canbepayer>
+        <b_cansubscribe>b_cansubscribe</b_cansubscribe>      
+        <b_cansyntheticroot>b_canhavesyntheticroot</b_cansyntheticroot>
+        <b_canparticipateingsub>b_canparticipateingsub</b_canparticipateingsub>
+        <b_isvisibleinhierarchy>b_isvisibleinhierarchy</b_isvisibleinhierarchy>
+        <b_canhavetemplates>b_canhavetemplates</b_canhavetemplates>
+        <b_iscorporate>b_iscorporate</b_iscorporate>
+        <loginapplication>loginapplication</loginapplication>
+      </configdata>
+        </processor>
+    </mtconfigdata>
+</xmlconfig>

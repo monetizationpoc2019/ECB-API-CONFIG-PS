@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<mt_enum_config>
+  <enum_spaces>
+    <enum_space name="metratech.com/accounttemplate">
+      <description>Enumerated Types For Account Template</description>
+      <enums>
+        <enum name="TemplateStatus">
+          <description>Status of the account template application session</description>
+          <entries>
+            <entry name="Submitted">
+              <value>0</value>
+            </entry>
+            <entry name="In-Progress">
+              <value>1</value>
+            </entry>
+            <entry name="Completed">
+              <value>2</value>
+            </entry>
+                        <entry name="Failed">
+                            <value>3</value>
+                        </entry>
+          </entries>
+        </enum>
+        <enum name="DetailType">
+          <description>Specifies the type of the detail record</description>
+          <entries>
+            <entry name="General">
+              <value>0</value>
+            </entry>
+            <entry name="Update">
+              <value>1</value>
+            </entry>
+            <entry name="Subscription">
+              <value>2</value>
+            </entry>
+          </entries>
+        </enum>
+        <enum name="DetailResult">
+          <description>Result code for the detail record</description>
+          <entries>
+            <entry name="Information">
+              <value>0</value>
+            </entry>
+            <entry name="Success">
+              <value>1</value>
+            </entry>
+            <entry name="Failure">
+              <value>2</value>
+            </entry>
+            <entry name="FailureDetail">
+              <value>3</value>
+            </entry>
+          </entries>
+        </enum>
+        </enums>
+    </enum_space>
+  </enum_spaces>
+</mt_enum_config>

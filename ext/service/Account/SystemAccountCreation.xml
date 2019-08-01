@@ -1,0 +1,474 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<defineservice>
+  <name>metratech.com/SystemAccountCreation</name>
+  <description>This service definition is used to create system accounts, contacts or both. It gets used from the CSR application.</description>
+  <!-- payment redirection properties not needed-->
+  <!-- ancestor related properties -->
+  <!-- t_av_internal related propreties. -->
+  <!-- properties to determine the usage cycle -->
+  <!-- t_av_contact properties -->
+  <ptype>
+    <dn>ActionType</dn>
+    <type EnumSpace="metratech.com/accountcreation" EnumType="ActionType">enum</type>
+    <length />
+    <required>Y</required>
+    <defaultvalue />
+    <description>Action type is used to indicate if you want to create account, contact or both.  Also used to update system accounts.</description>
+  </ptype>
+  <ptype>
+    <dn>AccountType</dn>
+    <type>string</type>
+    <length>200</length>
+    <required>Y</required>
+    <defaultvalue>SystemAccount</defaultvalue>
+    <description>Account Type to be created from one of the AccountTypes configured in the system. For this service definition, only SystemAccount or another customized AccountType related to creating a SystemAccount makes conceptual sense for this value.</description>
+  </ptype>
+  <ptype>
+    <dn>Operation</dn>
+    <type EnumSpace="metratech.com" EnumType="operation">enum</type>
+    <length />
+    <required>Y</required>
+    <defaultvalue />
+    <description>A number to indicate the operation: 0 for add, 1 for update, 2 for delete and 3 for no operation.</description>
+  </ptype>
+  <ptype>
+    <dn>UserName</dn>
+    <type>string</type>
+    <length>40</length>
+    <required>N</required>
+    <defaultvalue />
+    <description>Username or login that needs to be created.  Required for creation.</description>
+  </ptype>
+  <ptype>
+    <dn>Password_</dn>
+    <type>string</type>
+    <length>40</length>
+    <required>N</required>
+    <defaultvalue />
+    <description>Password associated with that username or login. Required for creation.</description>
+  </ptype>
+  <ptype>
+    <dn>Name_Space</dn>
+    <type>string</type>
+    <length>40</length>
+    <required>N</required>
+    <defaultvalue />
+    <description>Namespace uniquely identifying that username or login. Required for creation.</description>
+  </ptype>
+  <ptype>
+    <dn>_Accountid</dn>
+    <type>int32</type>
+    <length />
+    <required>N</required>
+    <defaultvalue />
+    <description>Uniquely generated account ID. This property gets set by the pipeline.</description>
+  </ptype>
+  <ptype>
+    <dn>accountstartdate</dn>
+    <type>timestamp</type>
+    <length />
+    <required>N</required>
+    <defaultvalue />
+    <description>This property is used to control the account start date. This property is also used when changing the account state.</description>
+  </ptype>
+  <ptype>
+    <dn>accountenddate</dn>
+    <type>timestamp</type>
+    <length />
+    <required>N</required>
+    <defaultvalue />
+    <description>This property is used to control the end of an account state and is only used on updates.</description>
+  </ptype>
+  <ptype>
+    <dn>AccountStatus</dn>
+    <type EnumSpace="metratech.com/accountcreation" EnumType="AccountStatus">enum</type>
+    <length />
+    <required>N</required>
+    <defaultvalue />
+    <description>Account State (Changed in 3.0).</description>
+  </ptype>
+  <ptype>
+    <dn>ApplyDefaultSecurityPolicy</dn>
+    <type>boolean</type>
+    <length />
+    <required>N</required>
+    <defaultvalue>T</defaultvalue>
+    <description>Flag indicates whether DSP should be applied to a newly created account. T for Yes or success or true or 1 and F for no or failure or false or 0.  Required for creation.</description>
+  </ptype>
+  <ptype>
+    <dn>ApplyAccountTemplate</dn>
+    <type>boolean</type>
+    <length />
+    <required>N</required>
+    <defaultvalue>F</defaultvalue>
+    <description>This flag indicates whether account ancestor's account template should be applied to an account.</description>
+  </ptype>
+  <ptype>
+    <dn>TruncateOldSubscriptions</dn>
+    <type>boolean</type>
+    <length />
+    <required>N</required>
+    <defaultvalue>F</defaultvalue>
+    <description>Indicates whether old subscriptions will be truncated on move account action. This property is only considered on account updates when account ancestor changed (Account Move). This property is only considered when ApplyAccountTemplate property is set to true.</description>
+  </ptype>
+  <ptype>
+    <dn>transactioncookie</dn>
+    <type>string</type>
+    <length>255</length>
+    <required>N</required>
+    <defaultvalue />
+    <description>Transaction cookie value used for processes to enlist in DTC transaction. Should have empty value when metered.  The value gets set once the pipeline retrieves it from each machine.  The cookie is machine specific and is unique to a machine.</description>
+  </ptype>
+  <ptype>
+    <dn>ancestorAccount</dn>
+    <type>string</type>
+    <length>255</length>
+    <required>N</required>
+    <defaultvalue />
+    <description>Ancestor account name.</description>
+  </ptype>
+  <ptype>
+    <dn>ancestorAccountNS</dn>
+    <type>string</type>
+    <length>255</length>
+    <required>N</required>
+    <defaultvalue />
+    <description>Ancestor account namespace.</description>
+  </ptype>
+  <ptype>
+    <dn>ancestorAccountID</dn>
+    <type>int32</type>
+    <length />
+    <required>N</required>
+    <defaultvalue />
+    <description>Ancestor account ID.  May be used instead of ancestorAccount and ancestorAccountNS.</description>
+  </ptype>
+  <ptype>
+    <dn>hierarchy_startdate</dn>
+    <type>timestamp</type>
+    <length />
+    <required>N</required>
+    <defaultvalue />
+    <description>Hierarchy start date.</description>
+  </ptype>
+  <ptype>
+    <dn>hierarchy_enddate</dn>
+    <type>timestamp</type>
+    <length />
+    <required>N</required>
+    <defaultvalue />
+    <description>Hierarchy start date.</description>
+  </ptype>
+  <ptype>
+    <dn>billable</dn>
+    <type>boolean</type>
+    <length />
+    <required>N</required>
+    <defaultvalue>T</defaultvalue>
+    <description>Indicates that the account can pay for charges T for Yes or success or true or 1 and F for no or failure or false or 0.  Required for creation.</description>
+  </ptype>
+  <ptype>
+    <dn>folder</dn>
+    <type>boolean</type>
+    <length />
+    <required>N</required>
+    <defaultvalue />
+    <description>Indicates if this account is a folder or not T for Yes or success or true or 1 and F for no or failure or false or 0.  Required for creation.</description>
+  </ptype>
+  <ptype>
+    <dn>pricelist</dn>
+    <type>string</type>
+    <length>255</length>
+    <required>N</required>
+    <defaultvalue />
+    <description>Default pricelist assigned to account.</description>
+  </ptype>
+  <ptype>
+    <dn>currency</dn>
+    <type>string</type>
+    <length>10</length>
+    <required>N</required>
+    <defaultvalue />
+    <description>Currency assigned to account. Required while creating account.</description>
+  </ptype>
+  <ptype>
+    <dn>Language</dn>
+    <type EnumSpace="Global" EnumType="LanguageCode">enum</type>
+    <length />
+    <required>N</required>
+    <defaultvalue />
+    <description>Language associated with the account. Required while creation.</description>
+  </ptype>
+  <ptype>
+    <dn>taxexempt</dn>
+    <type>boolean</type>
+    <length />
+    <required>N</required>
+    <defaultvalue />
+    <description>Tax exempt indicator: T for Yes or success or true or 1 and F for no or failure or false or 0.</description>
+  </ptype>
+  <ptype>
+    <dn>TaxExemptID</dn>
+    <type>string</type>
+    <length>255</length>
+    <required>N</required>
+    <defaultvalue />
+    <description>Tax ID, if applicable.</description>
+  </ptype>
+  <ptype>
+    <dn>timezoneID</dn>
+    <type EnumSpace="Global" EnumType="TimeZoneID">enum</type>
+    <length />
+    <required>N</required>
+    <defaultvalue />
+    <description>Timezone ID of the account.  Required for creation.</description>
+  </ptype>
+  <ptype>
+    <dn>timezoneoffset</dn>
+    <type>double</type>
+    <length />
+    <required>N</required>
+    <defaultvalue />
+    <description>Timezone offset of the account. Usually corresponds to the timezone ID. This is not used or stored for v1.2 releases and higher.</description>
+  </ptype>
+  <ptype>
+    <dn>PaymentMethod</dn>
+    <type EnumSpace="metratech.com/accountcreation" EnumType="PaymentMethod">enum</type>
+    <length />
+    <required>N</required>
+    <defaultvalue />
+    <description>Payment method of the account: 1 for CreditCard/ACH and 2 for Cash/Check.</description>
+  </ptype>
+  <ptype>
+    <dn>StatusReason</dn>
+    <type EnumSpace="metratech.com/accountcreation" EnumType="StatusReason">enum</type>
+    <length />
+    <required>N</required>
+    <defaultvalue />
+    <description>If account is not active, why?</description>
+  </ptype>
+  <ptype>
+    <dn>StatusReasonOther</dn>
+    <type>string</type>
+    <length>255</length>
+    <required>N</required>
+    <defaultvalue />
+    <description>If account is not active, and it doesn't fall under StatusReason ENUM.</description>
+  </ptype>
+  <ptype>
+    <dn>SecurityQuestion</dn>
+    <type EnumSpace="metratech.com/accountcreation" EnumType="SecurityQuestion">enum</type>
+    <length />
+    <required>N</required>
+    <defaultvalue />
+    <description>What question to ask?</description>
+  </ptype>
+  <ptype>
+    <dn>SecurityAnswer</dn>
+    <type>string</type>
+    <length>255</length>
+    <required>N</required>
+    <defaultvalue />
+    <description>The answer to the security question.</description>
+  </ptype>
+  <ptype>
+    <dn>InvoiceMethod</dn>
+    <type EnumSpace="metratech.com/accountcreation" EnumType="InvoiceMethod">enum</type>
+    <length />
+    <required>N</required>
+    <defaultvalue />
+    <description>What kind of paper invoice do I want?</description>
+  </ptype>
+  <ptype>
+    <dn>UsageCycleType</dn>
+    <type EnumSpace="metratech.com/BillingCycle" EnumType="UsageCycleType">enum</type>
+    <length />
+    <required>N</required>
+    <defaultvalue />
+    <description>Usage cycle type associated with the account (daily, weekly, biweeky, semi-monthly, monthly, quarterly, annually.) On-demand is no longer supported.</description>
+  </ptype>
+  <ptype>
+    <dn>DayOfMonth</dn>
+    <type>int32</type>
+    <length />
+    <required>N</required>
+    <defaultvalue />
+    <description>Day of month that the user wants to get billed on.</description>
+  </ptype>
+  <ptype>
+    <dn>DayOfWeek</dn>
+    <type EnumSpace="Global" EnumType="DayOfTheWeek">enum</type>
+    <length />
+    <required>N</required>
+    <defaultvalue />
+    <description>Day of week that the user wants to get billed on (for the Weekly usage cycle type).</description>
+  </ptype>
+  <ptype>
+    <dn>FirstDayOfMonth</dn>
+    <type>int32</type>
+    <length />
+    <required>N</required>
+    <defaultvalue />
+    <description>First day of month that the user wants to get billed on (for the Semi-Monthly usage cycle type).</description>
+  </ptype>
+  <ptype>
+    <dn>SecondDayOfMonth</dn>
+    <type>int32</type>
+    <length />
+    <required>N</required>
+    <defaultvalue />
+    <description>Second day of month that the user wants to get billed on (for the Semi-Monthly usage cycle type).</description>
+  </ptype>
+  <ptype>
+    <dn>StartMonth</dn>
+    <type EnumSpace="Global" EnumType="MonthOfTheYear">enum</type>
+    <length />
+    <required>N</required>
+    <defaultvalue />
+    <description>The start month that the user wants to get billed on (for the BiWeekly, Quarterly and Annual usage cycle type).</description>
+  </ptype>
+  <ptype>
+    <dn>StartDay</dn>
+    <type>int32</type>
+    <length />
+    <required>N</required>
+    <defaultvalue />
+    <description>The start month that the user wants to get billed on (for the BiWeekly, Quarterly and Annual usage cycle type).</description>
+  </ptype>
+  <ptype>
+    <dn>StartYear</dn>
+    <type>int32</type>
+    <length />
+    <required>N</required>
+    <defaultvalue />
+    <description>The start year that the user wants to get billed on (for the BiWeekly usage cycle type).</description>
+  </ptype>
+  <ptype>
+    <dn>ContactType</dn>
+    <type EnumSpace="metratech.com/accountcreation" EnumType="ContactType">enum</type>
+    <length />
+    <required>N</required>
+    <defaultvalue />
+    <description>Contact type integer value: 1 for Bill-To and 2 for Ship-To.</description>
+  </ptype>
+  <ptype>
+    <dn>FirstName</dn>
+    <type>string</type>
+    <length>40</length>
+    <required>N</required>
+    <defaultvalue />
+    <description>First name of the account.</description>
+  </ptype>
+  <ptype>
+    <dn>MiddleInitial</dn>
+    <type>string</type>
+    <length>1</length>
+    <required>N</required>
+    <defaultvalue />
+    <description>Middle initial of the account.</description>
+  </ptype>
+  <ptype>
+    <dn>LastName</dn>
+    <type>string</type>
+    <length>40</length>
+    <required>N</required>
+    <defaultvalue />
+    <description>Last name of the account</description>
+  </ptype>
+  <ptype>
+    <dn>Company</dn>
+    <type>string</type>
+    <length>255</length>
+    <required>N</required>
+    <defaultvalue />
+    <description>Company name of the associated account.</description>
+  </ptype>
+  <ptype>
+    <dn>FacsimileTelephoneNumber</dn>
+    <type>string</type>
+    <length>40</length>
+    <required>N</required>
+    <defaultvalue />
+    <description>Fax number of the account.</description>
+  </ptype>
+  <ptype>
+    <dn>email</dn>
+    <type>string</type>
+    <length>100</length>
+    <required>N</required>
+    <defaultvalue />
+    <description>Email address associated with the account.</description>
+  </ptype>
+  <ptype>
+    <dn>phonenumber</dn>
+    <type>string</type>
+    <length>40</length>
+    <required>N</required>
+    <defaultvalue />
+    <description>Phone number of the account.</description>
+  </ptype>
+  <ptype>
+    <dn>address1</dn>
+    <type>string</type>
+    <length>100</length>
+    <required>N</required>
+    <defaultvalue />
+    <description>First part of the whole address.</description>
+  </ptype>
+  <ptype>
+    <dn>address2</dn>
+    <type>string</type>
+    <length>100</length>
+    <required>N</required>
+    <defaultvalue />
+    <description>Second part of the whole address.</description>
+  </ptype>
+  <ptype>
+    <dn>address3</dn>
+    <type>string</type>
+    <length>100</length>
+    <required>N</required>
+    <defaultvalue />
+    <description>Third part of the whole address.</description>
+  </ptype>
+  <ptype>
+    <dn>city</dn>
+    <type>string</type>
+    <length>40</length>
+    <required>N</required>
+    <defaultvalue />
+    <description>City part of the address.  If geocode needs to be calculated, then this property should have a value passed in.</description>
+  </ptype>
+  <ptype>
+    <dn>state</dn>
+    <type>string</type>
+    <length>40</length>
+    <required>N</required>
+    <defaultvalue />
+    <description>State part of the address.  If geocode needs to be calculated, then this property should have a value passed in.</description>
+  </ptype>
+  <ptype>
+    <dn>zip</dn>
+    <type>string</type>
+    <length>40</length>
+    <required>N</required>
+    <defaultvalue />
+    <description>Zipcode part of the address.  If geocode needs to be calculated, then this property should have a value passed in.</description>
+  </ptype>
+  <ptype>
+    <dn>country</dn>
+    <type EnumSpace="Global" EnumType="CountryName">enum</type>
+    <length />
+    <required>N</required>
+    <defaultvalue />
+    <description>Country part of the address.</description>
+  </ptype>
+  <ptype>
+    <dn>LoginApplication</dn>
+    <type EnumSpace="metratech.com/accountcreation" EnumType="LoginApplication">enum</type>
+    <length />
+    <required>Y</required>
+    <defaultvalue />
+    <description>The application (mom, csr, mcm) that the user is going to log into.  This property is used to determine which account should be used to inherit security policy from, in case apply default security flag is set to true.</description>
+  </ptype>
+</defineservice>

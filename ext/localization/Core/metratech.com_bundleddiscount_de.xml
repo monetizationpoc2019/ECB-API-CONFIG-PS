@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<mt_config>
+  <language_code>de</language_code>
+  <locale_space name="metratech.com/BundledDiscount">
+    <locale_entry>
+      <Name>metratech.com/BundledDiscount</Name>
+      <Value>Rabatte</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/BundledDiscount/_ProductID</Name>
+      <Value>Produkt-ID</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/BundledDiscount/DiscountID</Name>
+      <Value>Rabatt-ID</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/BundledDiscount/DiscountName</Name>
+      <Value>Rabattname</Value>
+    </locale_entry>
+  </locale_space>
+</mt_config>

@@ -1,0 +1,102 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<mt_config>
+  <language_code>pt-br</language_code>
+  <locale_space name="metratech.com/billingcycle">
+    <locale_entry>
+      <Name>metratech.com/billingcycle/Bi-weekly/label/Bi-week1</Name>
+      <Value>Bissemana 1</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/billingcycle/Bi-weekly/label/Bi-week10</Name>
+      <Value>Bissemana 10</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/billingcycle/Bi-weekly/label/Bi-week11</Name>
+      <Value>Bissemana 11</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/billingcycle/Bi-weekly/label/Bi-week12</Name>
+      <Value>Bissemana 12</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/billingcycle/Bi-weekly/label/Bi-week13</Name>
+      <Value>Bissemana 13</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/billingcycle/Bi-weekly/label/Bi-week14</Name>
+      <Value>Bissemana 14</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/billingcycle/Bi-weekly/label/Bi-week2</Name>
+      <Value>Bissemana 2</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/billingcycle/Bi-weekly/label/Bi-week3</Name>
+      <Value>Bissemana 3</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/billingcycle/Bi-weekly/label/Bi-week4</Name>
+      <Value>Bissemana 4</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/billingcycle/Bi-weekly/label/Bi-week5</Name>
+      <Value>Bissemana 5</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/billingcycle/Bi-weekly/label/Bi-week6</Name>
+      <Value>Bissemana 6</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/billingcycle/Bi-weekly/label/Bi-week7</Name>
+      <Value>Bissemana 7</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/billingcycle/Bi-weekly/label/Bi-week8</Name>
+      <Value>Bissemana 8</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/billingcycle/Bi-weekly/label/Bi-week9</Name>
+      <Value>Bissemana 9</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/billingcycle/UsageCycleType/Annually</Name>
+      <Value>Anual</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/billingcycle/UsageCycleType/Bi-weekly</Name>
+      <Value>Bissemanal</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/billingcycle/UsageCycleType/Daily</Name>
+      <Value>Diariamente</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/billingcycle/UsageCycleType/Monthly</Name>
+      <Value>Mensalmente</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/billingcycle/UsageCycleType/On-demand</Name>
+      <Value>Sob solicitação</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/billingcycle/UsageCycleType/Quarterly</Name>
+      <Value>Trimestralmente</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/billingcycle/UsageCycleType/SemiAnnually</Name>
+      <Value>Semestralmente</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/billingcycle/UsageCycleType/Semi-Annually</Name>
+      <Value>Semestralmente</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/billingcycle/UsageCycleType/Semi-monthly</Name>
+      <Value>Quinzenalmente</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/billingcycle/UsageCycleType/Weekly</Name>
+      <Value>Semanalmente</Value>
+    </locale_entry>
+  </locale_space>
+</mt_config>

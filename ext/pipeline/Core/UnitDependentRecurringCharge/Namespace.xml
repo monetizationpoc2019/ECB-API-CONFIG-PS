@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xmlconfig>
+  <mtsysconfigdata>
+    <effective_date ptype="DATETIME">2007-06-30T00:00:00Z</effective_date>
+    <timeout ptype="INTEGER">30</timeout>
+    <configfiletype>CONFIG_DATA</configfiletype>
+  </mtsysconfigdata>
+
+  <mtconfigdata>
+    <version ptype="INTEGER">1</version>
+    <processor>
+      <name>Namespace</name>
+      <description>Set Namespace property for account guiding.</description>
+      <progid>MetraPipeline.MTSQLInterpreter.1</progid>
+
+      <configdata>
+        <Program>
+    CREATE PROCEDURE Namespace
+  @Namespace  VARCHAR OUTPUT
+  @Zero       DECIMAL OUTPUT
+  @BaseAmount DECIMAL OUTPUT
+AS
+  SET @Namespace = 'mt'
+  SET @Zero = 0.0
+  SET @BaseAmount = 0.0
+        </Program> 
+      </configdata>
+
+    </processor>
+  </mtconfigdata>
+</xmlconfig>

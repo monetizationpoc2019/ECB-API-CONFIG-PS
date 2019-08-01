@@ -1,0 +1,118 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<mt_config>
+    <language_code>gb</language_code>
+    <locale_space name="metratech.com/AccountCredit">
+        <locale_entry>
+            <Name>metratech.com/AccountCredit</Name>
+            <Value>Miscellaneous Adjustments</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/AccountCredit/_AccountID</Name>
+            <Value>Account #</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/AccountCredit/_Amount</Name>
+            <Value>Amount</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/AccountCredit/_Currency</Name>
+            <Value>Currency</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/AccountCredit/AccountingCode</Name>
+            <Value>Accounting Code</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/AccountCredit/Auto</Name>
+            <Value>Auto</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/AccountCredit/ContentionSessionID</Name>
+            <Value>Contention Session ID</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/AccountCredit/CreditAmount</Name>
+            <Value>Adjustment Amount</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/AccountCredit/CreditTime</Name>
+            <Value>Time of Credit</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/AccountCredit/CsrID</Name>
+            <Value>Csr ID</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/AccountCredit/EmailAddress</Name>
+            <Value>E-Mail Address</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/AccountCredit/EmailNotification</Name>
+            <Value>E-Mail Notification</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/AccountCredit/EmailText</Name>
+            <Value>E-Mail Text</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/AccountCredit/GuideIntervalID</Name>
+            <Value>GuideIntervalID</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/AccountCredit/IgnorePaymentRedirection</Name>
+            <Value>IgnorePaymentRedirection</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/AccountCredit/InternalComment</Name>
+            <Value>Internal Description</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/AccountCredit/InvoiceComment</Name>
+            <Value>Invoice Description</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/AccountCredit/Issuer</Name>
+            <Value>Issuer</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/AccountCredit/NameSpace</Name>
+            <Value>NameSpace</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/AccountCredit/Other</Name>
+            <Value>Other</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/AccountCredit/Payer</Name>
+            <Value>Payer</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/AccountCredit/Reason</Name>
+            <Value>Reason Code</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/AccountCredit/RequestAmount</Name>
+            <Value>RequestAmount</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/AccountCredit/RequestID</Name>
+            <Value>Request ID</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/AccountCredit/ResolveWithAccountIDFlag</Name>
+            <Value>Resolve With Account ID Flag</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/AccountCredit/ReturnCode</Name>
+            <Value>Return Code</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/AccountCredit/Status</Name>
+            <Value>Status</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/AccountCredit/SubscriberAccountID</Name>
+            <Value>Subscriber Account ID</Value>
+        </locale_entry>
+    </locale_space>
+</mt_config>

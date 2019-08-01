@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<mt_config>
+  <enum_spaces>
+    <enum_space name="metratech.com/audit">
+    <description>Audit enumerations</description>		
+    <enums>
+                
+    <enum name="enmApplicationID">
+                    <description>A string that identifies the application.</description>
+            <entries>
+                <entry name="MAM"><value>MAM</value></entry>
+                <entry name="MPS"><value>MPS</value></entry>
+		<entry name="UNKNOWN"><value>UNKNOWN</value></entry>
+            </entries>
+    </enum>
+             
+    <enum name="enmAuditOperation">
+            <description>enmAuditOperation enum</description>
+            <entries>
+                <entry name="Add"><value>0</value></entry>
+		<entry name="Update"><value>1</value></entry>
+		<entry name="Delete"><value>2</value></entry>
+            </entries>
+    </enum>
+             
+               
+         
+      </enums>
+    </enum_space>    
+  </enum_spaces>
+</mt_config>

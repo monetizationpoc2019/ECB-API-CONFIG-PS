@@ -1,0 +1,182 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<mt_config>
+  <language_code>da</language_code>
+  <locale_space name="metratech.com">
+    <locale_entry>
+      <Name>metratech.com/BillMessageType/FOOTER</Name>
+      <Value>metratech.com/BillMessageType/FOOTER</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/BillMessageType/HEADER</Name>
+      <Value>metratech.com/BillMessageType/HEADER</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/BillMessageType/INSERT</Name>
+      <Value>metratech.com/BillMessageType/INSERT</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/BillMessageType/OTHER</Name>
+      <Value>metratech.com/BillMessageType/OTHER</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/CreditCardType/American Express</Name>
+      <Value>metratech.com/CreditCardType/American Express</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/CreditCardType/Diners Club</Name>
+      <Value>metratech.com/CreditCardType/Diners Club</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/CreditCardType/Discover</Name>
+      <Value>metratech.com/CreditCardType/Discover</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/CreditCardType/JCB</Name>
+      <Value>metratech.com/CreditCardType/JCB</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/CreditCardType/Maestro</Name>
+      <Value>metratech.com/CreditCardType/Maestro</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/CreditCardType/MasterCard</Name>
+      <Value>metratech.com/CreditCardType/MasterCard</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/CreditCardType/None</Name>
+      <Value>metratech.com/CreditCardType/None</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/CreditCardType/Visa</Name>
+      <Value>metratech.com/CreditCardType/Visa</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/Operation/Add</Name>
+      <Value>metratech.com/Operation/Add</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/Operation/Delete</Name>
+      <Value>metratech.com/Operation/Delete</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/Operation/Update</Name>
+      <Value>metratech.com/Operation/Update</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/Position/Engineer</Name>
+      <Value>metratech.com/Position/Engineer</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/Position/Executive</Name>
+      <Value>metratech.com/Position/Executive</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/Position/Manager</Name>
+      <Value>metratech.com/Position/Manager</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/QuoteStatus/Complete</Name>
+      <Value>metratech.com/QuoteStatus/Complete</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/QuoteStatus/Converted</Name>
+      <Value>metratech.com/QuoteStatus/Converted</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/QuoteStatus/Failed</Name>
+      <Value>metratech.com/QuoteStatus/Failed</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/QuoteStatus/InProgress</Name>
+      <Value>metratech.com/QuoteStatus/InProgress</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/QuoteStatus/None</Name>
+      <Value>metratech.com/QuoteStatus/None</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/SaleForceRelationship/Account Development</Name>
+      <Value>metratech.com/SaleForceRelationship/Account Development</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/SaleForceRelationship/Account Executive</Name>
+      <Value>metratech.com/SaleForceRelationship/Account Executive</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/SaleForceRelationship/Channel Manager</Name>
+      <Value>metratech.com/SaleForceRelationship/Channel Manager</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/SaleForceRelationship/Executive Sponsor</Name>
+      <Value>metratech.com/SaleForceRelationship/Executive Sponsor</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/SaleForceRelationship/Operations Support</Name>
+      <Value>metratech.com/SaleForceRelationship/Operations Support</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/SaleForceRelationship/Program Manager</Name>
+      <Value>metratech.com/SaleForceRelationship/Program Manager</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/SaleForceRelationship/Project Manager</Name>
+      <Value>metratech.com/SaleForceRelationship/Project Manager</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/SaleForceRelationship/Sales Agent</Name>
+      <Value>metratech.com/SaleForceRelationship/Sales Agent</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/SaleForceRelationship/Technical Sales Support</Name>
+      <Value>metratech.com/SaleForceRelationship/Technical Sales Support</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/SubscriberCreditAccountRequestReason/BadService</Name>
+      <Value>metratech.com/SubscriberCreditAccountRequestReason/BadService</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/SubscriberCreditAccountRequestReason/DroppedCall</Name>
+      <Value>metratech.com/SubscriberCreditAccountRequestReason/DroppedCall</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/SubscriberCreditAccountRequestReason/GeneralDissatisfaction</Name>
+      <Value>metratech.com/SubscriberCreditAccountRequestReason/GeneralDissatisfaction</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/SubscriberCreditAccountRequestReason/Other</Name>
+      <Value>metratech.com/SubscriberCreditAccountRequestReason/Other</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/SubscriberCreditAccountRequestReason/PoorConnection</Name>
+      <Value>metratech.com/SubscriberCreditAccountRequestReason/PoorConnection</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/SubscriberCreditAccountRequestStatus/APPROVED</Name>
+      <Value>metratech.com/SubscriberCreditAccountRequestStatus/APPROVED</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/SubscriberCreditAccountRequestStatus/DENIED</Name>
+      <Value>metratech.com/SubscriberCreditAccountRequestStatus/DENIED</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/SubscriberCreditAccountRequestStatus/PENDING</Name>
+      <Value>metratech.com/SubscriberCreditAccountRequestStatus/PENDING</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/TransactionTypes/BeginDistributed</Name>
+      <Value>metratech.com/TransactionTypes/BeginDistributed</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/TransactionTypes/BeginLocal</Name>
+      <Value>metratech.com/TransactionTypes/BeginLocal</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/TransactionTypes/Commit</Name>
+      <Value>metratech.com/TransactionTypes/Commit</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/TransactionTypes/JoinDistributed</Name>
+      <Value>metratech.com/TransactionTypes/JoinDistributed</Value>
+    </locale_entry>
+  </locale_space>
+</mt_config>

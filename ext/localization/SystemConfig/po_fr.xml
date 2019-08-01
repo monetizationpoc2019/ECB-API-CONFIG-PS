@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<mt_config>
+  <language_code>fr</language_code>
+  <locale_space name="po">
+    <locale_entry>
+      <Name>po/ExternalInformationURL</Name>
+      <Value>URL externe pour information</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>po/glcode</Name>
+      <Value>Code Compta.Générale</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>po/InternalInformationURL</Name>
+      <Value>URL interne pour information</Value>
+    </locale_entry>
+  </locale_space>
+</mt_config>

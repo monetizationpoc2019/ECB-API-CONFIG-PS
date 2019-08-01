@@ -1,0 +1,272 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<defineservice>
+    <name>metratech.com/AccountCredit</name>
+    <description>Account credits.</description>
+    <!-- If credit upon credit request - request session id -->
+    <!-- For the future -->
+    <!-- From AccountCreditRequest -->
+    <ptype>
+        <dn>CreditTime</dn>
+        <type>timestamp</type>
+        <length />
+        <required>Y</required>
+        <defaultvalue />
+        <description>Current time.</description>
+    </ptype>
+    <ptype>
+        <dn>Status</dn>
+        <type>string</type>
+        <length>20</length>
+        <required>Y</required>
+        <defaultvalue />
+        <description>Could be either APPROVED or DENIED.</description>
+    </ptype>
+    <ptype>
+        <dn>RequestID</dn>
+        <type>int64</type>
+        <length />
+        <required>Y</required>
+        <defaultvalue />
+        <description>Request ID or -1 for standalone credit.</description>
+    </ptype>
+    <ptype>
+        <dn>ContentionSessionID</dn>
+        <type>string</type>
+        <length>50</length>
+        <required>Y</required>
+        <defaultvalue />
+        <description>Currently not used.</description>
+    </ptype>
+    <ptype>
+        <dn>_AccountID</dn>
+        <type>int32</type>
+        <length />
+        <required>N</required>
+        <defaultvalue />
+        <description>Account credit is applied against.</description>
+    </ptype>
+    <ptype>
+        <dn>_Amount</dn>
+        <type>decimal</type>
+        <length />
+        <required>Y</required>
+        <defaultvalue />
+        <description>Equals to credit amount.</description>
+    </ptype>
+    <ptype>
+        <dn>_Currency</dn>
+        <type>string</type>
+        <length>3</length>
+        <required>Y</required>
+        <defaultvalue />
+        <description>Credit currency.</description>
+    </ptype>
+    <ptype>
+        <dn>EmailNotification</dn>
+        <type>string</type>
+        <length>1</length>
+        <required>N</required>
+        <defaultvalue>N</defaultvalue>
+        <description>Currently not used.</description>
+    </ptype>
+    <ptype>
+        <dn>EmailAddress</dn>
+        <type>string</type>
+        <length>50</length>
+        <required>N</required>
+        <defaultvalue />
+        <description>Currently not used.</description>
+    </ptype>
+    <ptype>
+        <dn>EmailText</dn>
+        <type>string</type>
+        <length>255</length>
+        <required>N</required>
+        <defaultvalue />
+        <description>Currently not used.</description>
+    </ptype>
+    <ptype>
+        <dn>Issuer</dn>
+        <type>string</type>
+        <length>80</length>
+        <required>Y</required>
+        <defaultvalue />
+        <description>CSR ID.</description>
+    </ptype>
+    <ptype>
+        <dn>Reason</dn>
+        <type EnumSpace="metratech.com" EnumType="SubscriberCreditAccountRequestReason">enum</type>
+        <length />
+        <required>Y</required>
+        <defaultvalue />
+        <description>The reason entered by the CSR.</description>
+    </ptype>
+    <ptype>
+        <dn>Other</dn>
+        <type>string</type>
+        <length>255</length>
+        <required>N</required>
+        <defaultvalue />
+        <description>If Reason doesn't fall into Reason field categories.</description>
+    </ptype>
+    <ptype>
+        <dn>InvoiceComment</dn>
+        <type>string</type>
+        <length>255</length>
+        <required>N</required>
+        <defaultvalue />
+        <description>Comments entered by CSR, will appear on Invoice.</description>
+    </ptype>
+    <ptype>
+        <dn>InternalComment</dn>
+        <type>string</type>
+        <length>255</length>
+        <required>N</required>
+        <defaultvalue />
+        <description>Comment used only internally.</description>
+    </ptype>
+    <ptype>
+        <dn>AccountingCode</dn>
+        <type>string</type>
+        <length>10</length>
+        <required>N</required>
+        <defaultvalue />
+        <description>Currently not used.</description>
+    </ptype>
+    <ptype>
+        <dn>ReturnCode</dn>
+        <type>int32</type>
+        <length />
+        <required>Y</required>
+        <defaultvalue />
+        <description>Always set to 0.</description>
+    </ptype>
+    <ptype>
+        <dn>RequestAmount</dn>
+        <type>decimal</type>
+        <length />
+        <required>Y</required>
+        <defaultvalue />
+        <description>Amount of credit request or 0 for standalone credit.</description>
+    </ptype>
+    <ptype>
+        <dn>CreditAmount</dn>
+        <type>decimal</type>
+        <length />
+        <required>Y</required>
+        <defaultvalue />
+        <description>Credit Amount.</description>
+    </ptype>
+    <ptype>
+        <dn>Payer</dn>
+        <type>string</type>
+        <length>128</length>
+        <required>N</required>
+        <defaultvalue />
+        <description>LoginName, only needed if ResolveWithAccountIDFlag flag is set to N.</description>
+    </ptype>
+    <ptype>
+        <dn>Namespace</dn>
+        <type>string</type>
+        <length>40</length>
+        <required>N</required>
+        <defaultvalue>mt</defaultvalue>
+        <description>Namespace, only needed if ResolveWithAccountIDFlag flag is set to N.</description>
+    </ptype>
+    <ptype>
+        <dn>ResolveWithAccountIDFlag</dn>
+        <type>boolean</type>
+        <length />
+        <required>N</required>
+        <defaultvalue>T</defaultvalue>
+        <description>This flag is set only for AccountResolution plugin. If it's set (default), then it will get account information by _AccountID. If not, it will look for Payer and Namespace properties in session and get account information by Namespace and Payer (LoginName).</description>
+    </ptype>
+    <ptype>
+        <dn>IgnorePaymentRedirection</dn>
+        <type>boolean</type>
+        <length />
+        <required>N</required>
+        <defaultvalue>F</defaultvalue>
+        <description>INTERNAL USE ONLY (by payer change adapter): T forces metered account to be the payer.</description>
+    </ptype>
+    <ptype>
+        <dn>GuideIntervalID</dn>
+        <type>int32</type>
+        <length />
+        <required>N</required>
+        <defaultvalue />
+        <description>This is an optional property that specifies the desired interval id to guide the credit to.</description>
+    </ptype>
+    <ptype>
+        <dn>_FedTax</dn>
+        <type>decimal</type>
+        <length />
+        <required>N</required>
+        <defaultvalue />
+        <description>Federal tax amount for adjustment</description>
+    </ptype>
+    <ptype>
+        <dn>_StateTax</dn>
+        <type>decimal</type>
+        <length />
+        <required>N</required>
+        <defaultvalue />
+        <description>State tax amount for adjustment</description>
+    </ptype>
+    <ptype>
+        <dn>_CountyTax</dn>
+        <type>decimal</type>
+        <length />
+        <required>N</required>
+        <defaultvalue />
+        <description>County tax amount for adjustment</description>
+    </ptype>
+    <ptype>
+        <dn>_LocalTax</dn>
+        <type>decimal</type>
+        <length />
+        <required>N</required>
+        <defaultvalue />
+        <description>Local tax amount for adjustment</description>
+    </ptype>
+    <ptype>
+        <dn>_OtherTax</dn>
+        <type>decimal</type>
+        <length />
+        <required>N</required>
+        <defaultvalue />
+        <description>Other tax amount for adjustment</description>
+    </ptype>
+    <ptype>
+        <dn>IssueCreditNote</dn>
+        <type>boolean</type>
+        <length />
+        <required>N</required>
+        <defaultvalue />
+        <description>Should a credit note document be issued for this account credit? True = yes, False = no</description>
+    </ptype>
+    <ptype>
+        <dn>CreditNoteTemplateId</dn>
+        <type>int32</type>
+        <length />
+        <required>N</required>
+        <defaultvalue />
+        <description>Credit note document template to use if this account credit is to appear on a credit note</description>
+    </ptype>
+    <ptype>
+        <dn>CreditNoteComment</dn>
+        <type>string</type>
+        <length>1024</length>
+        <required>N</required>
+        <defaultvalue />
+        <description>Optional credit note comment when a credit note document is requested for this miscellaneous adjustment</description>
+    </ptype>
+    <ptype>
+        <dn>MiscAdjustmentID</dn>
+        <type>int64</type>
+        <length />
+        <required>N</required>
+        <defaultvalue />
+        <description>Optional ID passed to Account Credit from Misc. Adjustments UI screen</description>
+    </ptype>
+</defineservice>

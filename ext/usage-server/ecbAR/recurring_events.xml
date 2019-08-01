@@ -1,0 +1,188 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xmlconfig>
+    <version ptype="INTEGER">2</version>
+    <ScheduledAdapters>
+        <!--
+        <Adapter>
+            <Name>UploadBankingPayment</Name>
+            <DisplayName>Upload Banking Payment</DisplayName>
+            <ClassID>ECB.ecbAR.Adapters.UploadBankingPayment,ECB.ecbAR.Adapters</ClassID>
+            <ConfigFile>UploadBankingPayment.xml</ConfigFile>
+            <ActivationDate>10/1/2002 00:00:00</ActivationDate>
+            <Description><![CDATA[
+		  Uploads Payments into System from Banking Batch Files
+			]]></Description>
+            <RecurrencePattern>
+                <Minutely>
+                    <Start>1/1/2010 12:00:00 AM</Start>
+                    <Interval>15</Interval>
+                </Minutely>
+            </RecurrencePattern>
+        </Adapter>
+        <Adapter>
+            <Name>CreateOfflineDisputes</Name>
+            <DisplayName>Create Offline Disputes</DisplayName>
+            <ClassID>ECB.ecbAR.Adapters.CreateOfflineDisputes,ECB.ecbAR.Adapters</ClassID>
+            <ConfigFile>CreateOfflineDisputes.xml</ConfigFile>
+            <ActivationDate>9/01/2010 00:00:00</ActivationDate>
+            <Description><![CDATA[
+					Creates Offline Disputes from cvs files
+				]]></Description>
+            <RecurrencePattern>
+                <IntervalInMinutes>5</IntervalInMinutes>
+            </RecurrencePattern>
+            <Dependencies>
+            </Dependencies>
+        </Adapter>
+        <Adapter>
+            <Name>SubmitAutoPay</Name>
+            <DisplayName>AutoPay Submit Charges</DisplayName>
+            <ClassID>ECB.ecbAR.Adapters.SubmitAutoPay,ECB.ecbAR.Adapters</ClassID>
+            <ConfigFile>SubmitAutoPay.xml</ConfigFile>
+            <ActivationDate>9/01/2010 00:00:00</ActivationDate>
+            <Description><![CDATA[
+					Submits the AutoPay charges to the PaymentServer
+				]]></Description>
+            <RecurrencePattern>
+                <SystemCycle>Daily</SystemCycle>
+            </RecurrencePattern>
+            <Dependencies></Dependencies>
+        </Adapter>
+    <Adapter>
+      <Name>AutoHardCloseARBatches_noMA</Name>
+      <DisplayName>Auto Hard Close AR Batches (excluding Misc Adj)</DisplayName>
+      <ClassID>ECB.ecbAR.Adapters.AutoHardCloseBatches,ECB.ecbAR.Adapters</ClassID>
+      <ConfigFile>AutoHardCloseBatches_noMA.xml</ConfigFile>
+      <ActivationDate>9/01/2010 00:00:00</ActivationDate>
+      <Description><![CDATA[
+					Automatic hard close of all types of batches, except those related to Miscellaneous Adjustments
+				]]></Description>
+      <RecurrencePattern>
+        <SystemCycle>Daily</SystemCycle>
+      </RecurrencePattern>
+    </Adapter>
+-->
+        <!--
+    <Adapter>
+            <Name>AutoHardCloseARBatches_MAonly</Name>
+            <DisplayName>Auto Hard Close AR Batches (Misc Adj only)</DisplayName>
+            <ClassID>ECB.ecbAR.Adapters.AutoHardCloseBatches,ECB.ecbAR.Adapters</ClassID>
+            <ConfigFile>AutoHardCloseBatches_MAonly.xml</ConfigFile>
+            <ActivationDate>9/01/2010 00:00:00</ActivationDate>
+            <Description>
+				<![CDATA[
+					Automatic hard close of batches related to Miscellaneous Adjustments
+				]]>
+			</Description>
+            <RecurrencePattern>
+                <SystemCycle>Daily</SystemCycle>
+            </RecurrencePattern>
+        </Adapter>
+-->
+        <!--
+    <Adapter>
+            <Name>AutoSoftARCloseBatches</Name>
+            <DisplayName>Auto Soft Close AR Batches</DisplayName>
+            <ClassID>ECB.ecbAR.Adapters.AutoSoftCloseBatches,ECB.ecbAR.Adapters</ClassID>
+            <ConfigFile>AutoSoftCloseBatches.xml</ConfigFile>
+            <ActivationDate>9/01/2010 00:00:00</ActivationDate>
+            <Description>
+				<![CDATA[
+					Automatic soft close of Payment batches
+				]]>
+			</Description>
+            <RecurrencePattern>
+                <SystemCycle>Daily</SystemCycle>
+            </RecurrencePattern>
+        </Adapter>
+        <Adapter>
+            <Name>AgingBuckets</Name>
+            <DisplayName>Aging Buckets Calculation</DisplayName>
+            <ClassID>ECB.ecbAR.Adapters.AgingBuckets,ECB.ecbAR.Adapters</ClassID>
+            <ConfigFile>AgingBuckets.xml</ConfigFile>
+            <ActivationDate>9/01/2010 00:00:00</ActivationDate>
+            <Description><![CDATA[
+			      Calculates the Aging for the open items
+        ]]></Description>
+            <RecurrencePattern>
+                <SystemCycle>Daily</SystemCycle>
+            </RecurrencePattern>
+            <Dependencies></Dependencies>
+        </Adapter>
+        <Adapter>
+            <Name>LateFeeAdapter</Name>
+            <DisplayName>Late Fee Adapter</DisplayName>
+            <ClassID>MetraTech.UsageServer.Adapters.GenericMeteringAdapter,MetraTech.UsageServer.Adapters</ClassID>
+            <ConfigFile>LateFeeAdapter.xml</ConfigFile>
+            <Description>Adapter to calculate late fees</Description>
+            <RecurrencePattern>
+                <Daily>
+                    <Start>1/1/2010 12:00:00 AM</Start>
+                    <Interval>1</Interval>
+                    <Times>5:00 AM</Times>
+                </Daily>
+            </RecurrencePattern>
+        </Adapter>
+        <Adapter>
+            <Name>ImportCorePaymentstoAR</Name>
+            <DisplayName>Import Core Payments to AR</DisplayName>
+            <ClassID>ECB.ecbAR.Adapters.ImportCorePaymentsAdapter,ECB.ecbAR.Adapters</ClassID>
+            <ConfigFile>ImportCorePayments.xml</ConfigFile>
+            <Description>Imports the payments made by MetraView to eECB AR</Description>
+            <RecurrencePattern>
+                <Daily>
+                    <Start>1/1/2010 12:00:00 AM</Start>
+                    <Interval>1</Interval>
+                    <Times>5:00 AM</Times>
+                </Daily>
+            </RecurrencePattern>
+        </Adapter>
+        <Adapter>
+            <Name>CalculateEndOfPeriodFXGainLoss</Name>
+            <DisplayName>Calculate End Of Period FXGainLoss</DisplayName>
+            <ClassID>ECB.ecbAR.Adapters.CalculateEndOfPeriodFXGainLoss,ECB.ecbAR.Adapters</ClassID>
+            <ConfigFile>CalculateEndOfPeriodFXGainLoss.xml</ConfigFile>
+            <Description>Calculates the Unrealized Gains and Losses for the accounting period.</Description>
+            <RecurrencePattern>
+                <SystemCycle>Daily</SystemCycle>
+            </RecurrencePattern>
+        </Adapter>
+-->
+    </ScheduledAdapters>
+    <EndOfPeriodAdapters>
+        <!--
+        <Adapter>
+            <Name>CreateDFPFromInvoices</Name>
+            <DisplayName>Create DFP From Invoices</DisplayName>
+            <ClassID>ECB.ecbAR.Adapters.CreateDFPFromInvoices,ECB.ecbAR.Adapters</ClassID>
+            <ConfigFile>CreateDFPFromInvoices.xml</ConfigFile>
+            <ActivationDate>10/1/2002 00:00:00</ActivationDate>
+            <Description><![CDATA[
+        Creates DFPs after invoice creation
+        ]]></Description>
+            <RecurrencePattern>
+                <UsageCycleType>All</UsageCycleType>
+            </RecurrencePattern>
+            <Dependencies>
+                <DependsOn>PaymentCheckpoint</DependsOn>
+            </Dependencies>
+        </Adapter>
+        <Adapter>
+            <Name>AutoPay</Name>
+            <DisplayName>AutoPay Charges Calculation</DisplayName>
+            <ClassID>ECB.ecbAR.Adapters.AutoPay,ECB.ecbAR.Adapters</ClassID>
+            <ConfigFile>AutoPay.xml</ConfigFile>
+            <ActivationDate>10/1/2002 00:00:00</ActivationDate>
+            <Description><![CDATA[
+        Calculates the charges to be submitted to MetraPay for AutoPay
+        ]]></Description>
+            <RecurrencePattern>
+                <UsageCycleType>All</UsageCycleType>
+            </RecurrencePattern>
+            <Dependencies>
+                <DependsOn>CreateDFPFromInvoices</DependsOn>
+            </Dependencies>
+        </Adapter>
+    -->
+    </EndOfPeriodAdapters>
+</xmlconfig>

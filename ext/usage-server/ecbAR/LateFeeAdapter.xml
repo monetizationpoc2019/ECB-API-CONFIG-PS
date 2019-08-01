@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xmlconfig>
+    <!-- This is a sample xml config file for this generic metering adapter -->
+    <AdapterName>LateFeeAdaper</AdapterName>
+    <AllowMultipleInstances>false</AllowMultipleInstances>
+    <Batch>
+        <BatchNameSpace>LateFees</BatchNameSpace>
+        <SessionsetSize>500</SessionsetSize>
+        <QueryPath>..\Extensions\ecbAR\Config\Queries\ecbAR</QueryPath>
+        <QueryTag>__GET_LATE_FEES__</QueryTag>
+        <Meter>true</Meter>
+        <ServiceDefinition>metratech.com/LateFee</ServiceDefinition>
+        <MeteringTimeOut>500</MeteringTimeOut>
+        <FailOnMeteringErrors>false</FailOnMeteringErrors>
+        <!-- Whether to fail the adapter in case of failed transactions -->
+        <MeteringServer>RecurringChargeServer</MeteringServer>
+        <!-- Look in servers.xml -->
+        <ExecuteConnected>true</ExecuteConnected>
+        <!-- Whether to execute the rowset in a connected or disconnected manner -->
+    </Batch>
+</xmlconfig>

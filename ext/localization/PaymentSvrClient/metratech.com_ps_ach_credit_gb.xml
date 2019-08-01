@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<mt_config>
+  <language_code>gb</language_code>
+  <locale_space name="metratech.com/ps_ach_credit">
+    <locale_entry>
+      <Name>metratech.com/ps_ach_credit</Name>
+      <Value>ACH Credit</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ps_ach_credit/bankaccounttype</Name>
+      <Value />
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ps_ach_credit/csrid</Name>
+      <Value>CSR ID</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ps_ach_credit/currentstatus</Name>
+      <Value>Current Status</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ps_ach_credit/exported</Name>
+      <Value>Exported Indicator</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ps_ach_credit/lastfourdigits</Name>
+      <Value>Last Four Digits</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ps_ach_credit/originalaccountid</Name>
+      <Value>Original AccountID</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ps_ach_credit/paymentservicetransactionid</Name>
+      <Value>Payment Service Provider Transaction ID</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ps_ach_credit/reason</Name>
+      <Value>Reason for Credit</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ps_ach_credit/respstring</Name>
+      <Value>Response Description</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ps_ach_credit/retcode</Name>
+      <Value>Return Code</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ps_ach_credit/routingnumber</Name>
+      <Value>ABA/Bank Routing Number</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ps_ach_credit/transactionid</Name>
+      <Value>Caller Specified Transaction ID</Value>
+    </locale_entry>
+  </locale_space>
+</mt_config>

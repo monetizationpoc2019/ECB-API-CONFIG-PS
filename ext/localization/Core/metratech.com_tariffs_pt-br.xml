@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<mt_config>
+  <language_code>pt-br</language_code>
+  <locale_space name="metratech.com/tariffs">
+    <locale_entry>
+      <Name>metratech.com/tariffs/TariffID</Name>
+      <Value>ID da tarifa</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/tariffs/TariffID/ConferenceExpress</Name>
+      <Value>ConferenceExpress</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/tariffs/TariffID/Default</Name>
+      <Value>Padrão</Value>
+    </locale_entry>
+  </locale_space>
+</mt_config>

@@ -1,0 +1,951 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<GridLayout xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <Name>ManageNonStandardCharge</Name>
+    <Title>
+        <LocalizationTag>GRID_TITLE</LocalizationTag>
+        <ResourceClassKey />
+    </Title>
+    <Exportable>true</Exportable>
+    <Height>400</Height>
+    <Width>720</Width>
+    <Expandable>true</Expandable>
+    <Buttons>Custom</Buttons>
+    <DataSourceURL>AjaxServices/LoadCharges.aspx</DataSourceURL>
+    <MultiSelect>true</MultiSelect>
+    <SelectionModel>CheckBox</SelectionModel>
+    <TotalProperty>TotalRows</TotalProperty>
+    <RootElement>Items</RootElement>
+    <PageSize>10</PageSize>
+    <Description>Manage Nonstandard Charge</Description>
+    <ExpansionCssClass />
+    <ShowFilterPanel>true</ShowFilterPanel>
+    <FilterInputWidth>220</FilterInputWidth>
+    <FilterLabelWidth>75</FilterLabelWidth>
+    <FilterColumnWidth>350</FilterColumnWidth>
+    <ShowTopBar>true</ShowTopBar>
+    <ShowBottomBar>true</ShowBottomBar>
+    <ShowGridFrame>true</ShowGridFrame>
+    <ShowGridHeader>true</ShowGridHeader>
+    <ShowColumnHeaders>true</ShowColumnHeaders>
+    <NoRecordsText>
+        <LocalizationTag>TEXT_NO_RECORDS_FOUND</LocalizationTag>
+        <ResourceClassKey>App_GlobalResources/Resource</ResourceClassKey>
+    </NoRecordsText>
+    <FilterPanelLayout>MultiColumn</FilterPanelLayout>
+    <FilterPanelCollapsed>false</FilterPanelCollapsed>
+    <EnableColumnConfig>true</EnableColumnConfig>
+    <EnableFilterConfig>true</EnableFilterConfig>
+    <Resizeable>true</Resizeable>
+    <ButtonAlignment>Center</ButtonAlignment>
+    <DefaultSortField />
+    <DefaultSortDirection>Ascending</DefaultSortDirection>
+    <DisplayCount>true</DisplayCount>
+    <SearchOnLoad>true</SearchOnLoad>
+    <CustomImplementationFilePath />
+    <DataBinder>
+        <ServicePath>/MetraNet/AjaxServices/GetData.aspx</ServicePath>
+        <OutPropertyName />
+        <Operation>__Client</Operation>
+    </DataBinder>
+    <SubGrid />
+    <CustomOverrideJavascriptIncludes>\MetraNet\NonStandardCharges\ManageNonStandardCharges.aspx</CustomOverrideJavascriptIncludes>
+    <FilterLabelWrap>None</FilterLabelWrap>
+    <Elements>
+        <Element>
+            <RecordElement>true</RecordElement>
+            <AssemblyFilename>O:\debug\Bin\MetraTech.DomainModel.Billing.Generated.dll</AssemblyFilename>
+            <ObjectName>MetraTech.DomainModel.ProductView.Metratech_com_NonStandardChargeProductView</ObjectName>
+            <ID>ChargeAmount</ID>
+            <DataType>Numeric</DataType>
+            <IsIdentity>false</IsIdentity>
+            <DataIndex>ChargeAmount</DataIndex>
+            <IsColumn>true</IsColumn>
+            <HeaderText>
+                <LocalizationTag>TEXT_CHARGE_AMOUNT</LocalizationTag>
+                <ResourceClassKey>Resource</ResourceClassKey>
+            </HeaderText>
+            <Formatter>CurrencyRenderer</Formatter>
+            <Width>120</Width>
+            <Resizeable>true</Resizeable>
+            <PreventSortable>false</PreventSortable>
+            <Sortable>true</Sortable>
+            <ColumnHideable>true</ColumnHideable>
+            <DefaultColumn>true</DefaultColumn>
+            <Exportable>true</Exportable>
+            <ShowInExpander>false</ShowInExpander>
+            <Filterable>true</Filterable>
+            <FilterHideable>true</FilterHideable>
+            <DefaultFilter>true</DefaultFilter>
+            <RequiredFilter>false</RequiredFilter>
+            <FilterLabel />
+            <ElementValue>
+                <Value />
+            </ElementValue>
+            <ElementValue2>
+                <Value />
+            </ElementValue2>
+            <FilterReadOnly>false</FilterReadOnly>
+            <DropdownItems />
+        </Element>
+        <Element>
+            <RecordElement>true</RecordElement>
+            <AssemblyFilename>O:\debug\Bin\MetraTech.DomainModel.Billing.Generated.dll</AssemblyFilename>
+            <ObjectName>MetraTech.DomainModel.ProductView.Metratech_com_NonStandardChargeProductView</ObjectName>
+            <ID>ReasonCode</ID>
+            <DataType>List</DataType>
+            <IsIdentity>false</IsIdentity>
+            <FilterEnum>
+                <EnumClassName />
+                <EnumSpace>metratech.com/NonStandardCharge</EnumSpace>
+                <EnumType>NonStandardChargeReason</EnumType>
+                <UseEnumValue>false</UseEnumValue>
+                <DefaultValue />
+                <HideEnumValues />
+            </FilterEnum>
+            <DataIndex>ReasonCode</DataIndex>
+            <IsColumn>true</IsColumn>
+            <HeaderText>
+                <LocalizationTag>TEXT_REASON_CODE</LocalizationTag>
+                <ResourceClassKey>Resource</ResourceClassKey>
+            </HeaderText>
+            <Formatter />
+            <Width>120</Width>
+            <Resizeable>true</Resizeable>
+            <PreventSortable>false</PreventSortable>
+            <Sortable>true</Sortable>
+            <ColumnHideable>true</ColumnHideable>
+            <DefaultColumn>true</DefaultColumn>
+            <Exportable>true</Exportable>
+            <ShowInExpander>true</ShowInExpander>
+            <Filterable>true</Filterable>
+            <FilterHideable>true</FilterHideable>
+            <DefaultFilter>true</DefaultFilter>
+            <RequiredFilter>false</RequiredFilter>
+            <FilterLabel />
+            <ElementValue>
+                <Value />
+            </ElementValue>
+            <ElementValue2>
+                <Value />
+            </ElementValue2>
+            <FilterReadOnly>false</FilterReadOnly>
+            <DropdownItems />
+        </Element>
+        <Element>
+            <RecordElement>true</RecordElement>
+            <AssemblyFilename>O:\debug\Bin\MetraTech.DomainModel.Billing.Generated.dll</AssemblyFilename>
+            <ObjectName>MetraTech.DomainModel.ProductView.Metratech_com_NonStandardChargeProductView</ObjectName>
+            <ID>SessionID</ID>
+            <DataType>Numeric</DataType>
+            <IsIdentity>true</IsIdentity>
+            <DataIndex>SessionID</DataIndex>
+            <IsColumn>true</IsColumn>
+            <HeaderText>
+                <LocalizationTag>TEXT_SESSION_ID</LocalizationTag>
+                <ResourceClassKey>Resource</ResourceClassKey>
+            </HeaderText>
+            <Formatter />
+            <Width>120</Width>
+            <Resizeable>true</Resizeable>
+            <PreventSortable>false</PreventSortable>
+            <Sortable>true</Sortable>
+            <ColumnHideable>true</ColumnHideable>
+            <DefaultColumn>true</DefaultColumn>
+            <Exportable>true</Exportable>
+            <ShowInExpander>true</ShowInExpander>
+            <Filterable>true</Filterable>
+            <FilterHideable>true</FilterHideable>
+            <DefaultFilter>true</DefaultFilter>
+            <RequiredFilter>false</RequiredFilter>
+            <FilterLabel />
+            <ElementValue>
+                <Value />
+            </ElementValue>
+            <ElementValue2>
+                <Value />
+            </ElementValue2>
+            <FilterReadOnly>false</FilterReadOnly>
+            <DropdownItems />
+        </Element>
+        <Element>
+            <RecordElement>true</RecordElement>
+            <AssemblyFilename>O:\debug\Bin\MetraTech.DomainModel.Billing.Generated.dll</AssemblyFilename>
+            <ObjectName>MetraTech.DomainModel.ProductView.Metratech_com_NonStandardChargeProductView</ObjectName>
+            <ID>NumUnits</ID>
+            <DataType>Numeric</DataType>
+            <IsIdentity>false</IsIdentity>
+            <DataIndex>NumUnits</DataIndex>
+            <IsColumn>true</IsColumn>
+            <HeaderText>
+                <LocalizationTag>TEXT_NUM_UNITS</LocalizationTag>
+                <ResourceClassKey>Resource</ResourceClassKey>
+            </HeaderText>
+            <Formatter />
+            <Width>120</Width>
+            <Resizeable>true</Resizeable>
+            <PreventSortable>false</PreventSortable>
+            <Sortable>true</Sortable>
+            <ColumnHideable>true</ColumnHideable>
+            <DefaultColumn>true</DefaultColumn>
+            <Exportable>true</Exportable>
+            <ShowInExpander>true</ShowInExpander>
+            <Filterable>true</Filterable>
+            <FilterHideable>true</FilterHideable>
+            <DefaultFilter>true</DefaultFilter>
+            <RequiredFilter>false</RequiredFilter>
+            <FilterLabel />
+            <ElementValue>
+                <Value />
+            </ElementValue>
+            <ElementValue2>
+                <Value />
+            </ElementValue2>
+            <FilterReadOnly>false</FilterReadOnly>
+            <DropdownItems />
+        </Element>
+        <Element>
+            <RecordElement>true</RecordElement>
+            <AssemblyFilename>O:\debug\Bin\MetraTech.DomainModel.Billing.Generated.dll</AssemblyFilename>
+            <ObjectName>MetraTech.DomainModel.ProductView.Metratech_com_NonStandardChargeProductView</ObjectName>
+            <ID>IssueTime</ID>
+            <DataType>Date</DataType>
+            <IsIdentity>false</IsIdentity>
+            <DataIndex>IssueTime</DataIndex>
+            <IsColumn>true</IsColumn>
+            <HeaderText>
+                <LocalizationTag>TEXT_ISSUE_TIME</LocalizationTag>
+                <ResourceClassKey>Resource</ResourceClassKey>
+            </HeaderText>
+            <Formatter>DateTimeRenderer</Formatter>
+            <Width>120</Width>
+            <Resizeable>true</Resizeable>
+            <PreventSortable>false</PreventSortable>
+            <Sortable>true</Sortable>
+            <ColumnHideable>true</ColumnHideable>
+            <DefaultColumn>true</DefaultColumn>
+            <Exportable>true</Exportable>
+            <ShowInExpander>true</ShowInExpander>
+            <Filterable>true</Filterable>
+            <FilterHideable>true</FilterHideable>
+            <DefaultFilter>true</DefaultFilter>
+            <RequiredFilter>false</RequiredFilter>
+            <FilterLabel />
+            <ElementValue>
+                <Value />
+            </ElementValue>
+            <ElementValue2>
+                <Value />
+            </ElementValue2>
+            <FilterReadOnly>false</FilterReadOnly>
+            <DropdownItems />
+        </Element>
+        <Element>
+            <RecordElement>true</RecordElement>
+            <AssemblyFilename>O:\debug\Bin\MetraTech.DomainModel.Billing.Generated.dll</AssemblyFilename>
+            <ObjectName>MetraTech.DomainModel.ProductView.Metratech_com_NonStandardChargeProductView</ObjectName>
+            <ID>GLCode</ID>
+            <DataType>String</DataType>
+            <IsIdentity>false</IsIdentity>
+            <DataIndex>GLCode</DataIndex>
+            <IsColumn>true</IsColumn>
+            <HeaderText>
+                <LocalizationTag>TEXT_GLCODE</LocalizationTag>
+                <ResourceClassKey>Resource</ResourceClassKey>
+            </HeaderText>
+            <Formatter />
+            <Width>120</Width>
+            <Resizeable>true</Resizeable>
+            <PreventSortable>false</PreventSortable>
+            <Sortable>true</Sortable>
+            <ColumnHideable>true</ColumnHideable>
+            <DefaultColumn>true</DefaultColumn>
+            <Exportable>true</Exportable>
+            <ShowInExpander>true</ShowInExpander>
+            <Filterable>true</Filterable>
+            <FilterHideable>true</FilterHideable>
+            <DefaultFilter>true</DefaultFilter>
+            <RequiredFilter>false</RequiredFilter>
+            <FilterLabel />
+            <ElementValue>
+                <Value />
+            </ElementValue>
+            <ElementValue2>
+                <Value />
+            </ElementValue2>
+            <FilterReadOnly>false</FilterReadOnly>
+            <DropdownItems />
+        </Element>
+        <Element>
+            <RecordElement>true</RecordElement>
+            <AssemblyFilename>O:\debug\Bin\MetraTech.DomainModel.Billing.Generated.dll</AssemblyFilename>
+            <ObjectName>MetraTech.DomainModel.ProductView.Metratech_com_NonStandardChargeProductView</ObjectName>
+            <ID>IntervalID</ID>
+            <DataType>Numeric</DataType>
+            <IsIdentity>false</IsIdentity>
+            <DataIndex>IntervalID</DataIndex>
+            <IsColumn>true</IsColumn>
+            <HeaderText>
+                <LocalizationTag>TEXT_INTERVAL_ID</LocalizationTag>
+                <ResourceClassKey>Resource</ResourceClassKey>
+            </HeaderText>
+            <Formatter />
+            <Width>120</Width>
+            <Resizeable>true</Resizeable>
+            <PreventSortable>false</PreventSortable>
+            <Sortable>true</Sortable>
+            <ColumnHideable>true</ColumnHideable>
+            <DefaultColumn>true</DefaultColumn>
+            <Exportable>true</Exportable>
+            <ShowInExpander>true</ShowInExpander>
+            <Filterable>true</Filterable>
+            <FilterHideable>true</FilterHideable>
+            <DefaultFilter>true</DefaultFilter>
+            <RequiredFilter>false</RequiredFilter>
+            <FilterLabel />
+            <ElementValue>
+                <Value />
+            </ElementValue>
+            <ElementValue2>
+                <Value />
+            </ElementValue2>
+            <FilterReadOnly>false</FilterReadOnly>
+            <DropdownItems />
+        </Element>
+        <Element>
+            <RecordElement>true</RecordElement>
+            <AssemblyFilename>O:\debug\Bin\MetraTech.DomainModel.Billing.Generated.dll</AssemblyFilename>
+            <ObjectName>MetraTech.DomainModel.ProductView.Metratech_com_NonStandardChargeProductView</ObjectName>
+            <ID>Description</ID>
+            <DataType>String</DataType>
+            <IsIdentity>false</IsIdentity>
+            <DataIndex>Description</DataIndex>
+            <IsColumn>true</IsColumn>
+            <HeaderText>
+                <LocalizationTag>TEXT_DESCRIPTION</LocalizationTag>
+                <ResourceClassKey>Resource</ResourceClassKey>
+            </HeaderText>
+            <Formatter />
+            <Width>120</Width>
+            <Resizeable>true</Resizeable>
+            <PreventSortable>false</PreventSortable>
+            <Sortable>true</Sortable>
+            <ColumnHideable>true</ColumnHideable>
+            <DefaultColumn>true</DefaultColumn>
+            <Exportable>true</Exportable>
+            <ShowInExpander>true</ShowInExpander>
+            <Filterable>true</Filterable>
+            <FilterHideable>true</FilterHideable>
+            <DefaultFilter>true</DefaultFilter>
+            <RequiredFilter>false</RequiredFilter>
+            <FilterLabel />
+            <ElementValue>
+                <Value />
+            </ElementValue>
+            <ElementValue2>
+                <Value />
+            </ElementValue2>
+            <FilterReadOnly>false</FilterReadOnly>
+            <DropdownItems />
+        </Element>
+        <Element>
+            <RecordElement>true</RecordElement>
+            <AssemblyFilename>O:\debug\Bin\MetraTech.DomainModel.Billing.Generated.dll</AssemblyFilename>
+            <ObjectName>MetraTech.DomainModel.ProductView.Metratech_com_NonStandardChargeProductView</ObjectName>
+            <ID>AdditionalCode</ID>
+            <DataType>List</DataType>
+            <IsIdentity>false</IsIdentity>
+            <FilterEnum>
+                <EnumClassName />
+                <EnumSpace>metratech.com/NonStandardCharge</EnumSpace>
+                <EnumType>AdditionalCode</EnumType>
+                <UseEnumValue>false</UseEnumValue>
+                <DefaultValue />
+                <HideEnumValues />
+            </FilterEnum>
+            <DataIndex>AdditionalCode</DataIndex>
+            <IsColumn>true</IsColumn>
+            <HeaderText>
+                <LocalizationTag>TEXT_ADDITIONAL_CODE</LocalizationTag>
+                <ResourceClassKey>Resource</ResourceClassKey>
+            </HeaderText>
+            <Formatter />
+            <Width>120</Width>
+            <Resizeable>true</Resizeable>
+            <PreventSortable>false</PreventSortable>
+            <Sortable>true</Sortable>
+            <ColumnHideable>true</ColumnHideable>
+            <DefaultColumn>true</DefaultColumn>
+            <Exportable>true</Exportable>
+            <ShowInExpander>true</ShowInExpander>
+            <Filterable>true</Filterable>
+            <FilterHideable>true</FilterHideable>
+            <DefaultFilter>true</DefaultFilter>
+            <RequiredFilter>false</RequiredFilter>
+            <FilterLabel />
+            <ElementValue>
+                <Value />
+            </ElementValue>
+            <ElementValue2>
+                <Value />
+            </ElementValue2>
+            <FilterReadOnly>false</FilterReadOnly>
+            <DropdownItems />
+        </Element>
+        <Element>
+            <RecordElement>true</RecordElement>
+            <AssemblyFilename>O:\debug\Bin\MetraTech.DomainModel.Billing.Generated.dll</AssemblyFilename>
+            <ObjectName>MetraTech.DomainModel.ProductView.Metratech_com_NonStandardChargeProductView</ObjectName>
+            <ID>AdditionalRate</ID>
+            <DataType>String</DataType>
+            <IsIdentity>false</IsIdentity>
+            <DataIndex>AdditionalRate</DataIndex>
+            <IsColumn>true</IsColumn>
+            <HeaderText>
+                <LocalizationTag>TEXT_ADDITIONAL_RATE</LocalizationTag>
+                <ResourceClassKey>Resource</ResourceClassKey>
+            </HeaderText>
+            <Formatter>CurrencyRenderer</Formatter>
+            <Width>120</Width>
+            <Resizeable>true</Resizeable>
+            <PreventSortable>false</PreventSortable>
+            <Sortable>true</Sortable>
+            <ColumnHideable>true</ColumnHideable>
+            <DefaultColumn>true</DefaultColumn>
+            <Exportable>true</Exportable>
+            <ShowInExpander>true</ShowInExpander>
+            <Filterable>true</Filterable>
+            <FilterHideable>true</FilterHideable>
+            <DefaultFilter>true</DefaultFilter>
+            <RequiredFilter>false</RequiredFilter>
+            <FilterLabel />
+            <ElementValue>
+                <Value />
+            </ElementValue>
+            <ElementValue2>
+                <Value />
+            </ElementValue2>
+            <FilterReadOnly>false</FilterReadOnly>
+            <DropdownItems />
+        </Element>
+        <Element>
+            <RecordElement>true</RecordElement>
+            <AssemblyFilename>O:\debug\Bin\MetraTech.DomainModel.Billing.Generated.dll</AssemblyFilename>
+            <ObjectName>MetraTech.DomainModel.ProductView.Metratech_com_NonStandardChargeProductView</ObjectName>
+            <ID>InternalChargeId</ID>
+            <DataType>Numeric</DataType>
+            <IsIdentity>false</IsIdentity>
+            <DataIndex>InternalChargeId</DataIndex>
+            <IsColumn>true</IsColumn>
+            <HeaderText>
+                <LocalizationTag>TEXT_INTERNAL_CHARGE_ID</LocalizationTag>
+                <ResourceClassKey>Resource</ResourceClassKey>
+            </HeaderText>
+            <Formatter />
+            <Width>120</Width>
+            <Resizeable>true</Resizeable>
+            <PreventSortable>false</PreventSortable>
+            <Sortable>true</Sortable>
+            <ColumnHideable>true</ColumnHideable>
+            <DefaultColumn>true</DefaultColumn>
+            <Exportable>true</Exportable>
+            <ShowInExpander>true</ShowInExpander>
+            <Filterable>true</Filterable>
+            <FilterHideable>true</FilterHideable>
+            <DefaultFilter>true</DefaultFilter>
+            <RequiredFilter>false</RequiredFilter>
+            <FilterLabel />
+            <ElementValue>
+                <Value />
+            </ElementValue>
+            <ElementValue2>
+                <Value />
+            </ElementValue2>
+            <FilterReadOnly>false</FilterReadOnly>
+            <DropdownItems />
+        </Element>
+        <Element>
+            <RecordElement>true</RecordElement>
+            <AssemblyFilename>O:\debug\Bin\MetraTech.DomainModel.Billing.Generated.dll</AssemblyFilename>
+            <ObjectName>MetraTech.DomainModel.ProductView.Metratech_com_NonStandardChargeProductView</ObjectName>
+            <ID>ExternalChargeId</ID>
+            <DataType>String</DataType>
+            <IsIdentity>false</IsIdentity>
+            <DataIndex>ExternalChargeId</DataIndex>
+            <IsColumn>true</IsColumn>
+            <HeaderText>
+                <LocalizationTag>TEXT_EXTERNAL_CHARGE_ID</LocalizationTag>
+                <ResourceClassKey>Resource</ResourceClassKey>
+            </HeaderText>
+            <Formatter />
+            <Width>120</Width>
+            <Resizeable>true</Resizeable>
+            <PreventSortable>false</PreventSortable>
+            <Sortable>true</Sortable>
+            <ColumnHideable>true</ColumnHideable>
+            <DefaultColumn>true</DefaultColumn>
+            <Exportable>true</Exportable>
+            <ShowInExpander>true</ShowInExpander>
+            <Filterable>true</Filterable>
+            <FilterHideable>true</FilterHideable>
+            <DefaultFilter>true</DefaultFilter>
+            <RequiredFilter>false</RequiredFilter>
+            <FilterLabel />
+            <ElementValue>
+                <Value />
+            </ElementValue>
+            <ElementValue2>
+                <Value />
+            </ElementValue2>
+            <FilterReadOnly>false</FilterReadOnly>
+            <DropdownItems />
+        </Element>
+        <Element>
+            <RecordElement>true</RecordElement>
+            <AssemblyFilename>O:\debug\Bin\MetraTech.DomainModel.Billing.Generated.dll</AssemblyFilename>
+            <ObjectName>MetraTech.DomainModel.ProductView.Metratech_com_NonStandardChargeProductView</ObjectName>
+            <ID>SubscriberAccountID</ID>
+            <DataType>Numeric</DataType>
+            <IsIdentity>false</IsIdentity>
+            <DataIndex>SubscriberAccountID</DataIndex>
+            <IsColumn>true</IsColumn>
+            <HeaderText>
+                <LocalizationTag>TEXT_SUBSCRIBER_ACCOUNT_ID</LocalizationTag>
+                <ResourceClassKey>Resource</ResourceClassKey>
+            </HeaderText>
+            <Formatter />
+            <Width>120</Width>
+            <Resizeable>true</Resizeable>
+            <PreventSortable>false</PreventSortable>
+            <Sortable>true</Sortable>
+            <ColumnHideable>true</ColumnHideable>
+            <DefaultColumn>true</DefaultColumn>
+            <Exportable>true</Exportable>
+            <ShowInExpander>true</ShowInExpander>
+            <Filterable>true</Filterable>
+            <FilterHideable>true</FilterHideable>
+            <DefaultFilter>true</DefaultFilter>
+            <RequiredFilter>false</RequiredFilter>
+            <FilterLabel />
+            <ElementValue>
+                <Value />
+            </ElementValue>
+            <ElementValue2>
+                <Value />
+            </ElementValue2>
+            <FilterReadOnly>false</FilterReadOnly>
+            <DropdownItems />
+        </Element>
+        <Element>
+            <RecordElement>true</RecordElement>
+            <AssemblyFilename>O:\debug\Bin\MetraTech.DomainModel.Billing.Generated.dll</AssemblyFilename>
+            <ObjectName>MetraTech.DomainModel.ProductView.Metratech_com_NonStandardChargeProductView</ObjectName>
+            <ID>GuideIntervalID</ID>
+            <DataType>Numeric</DataType>
+            <IsIdentity>false</IsIdentity>
+            <DataIndex>GuideIntervalID</DataIndex>
+            <IsColumn>true</IsColumn>
+            <HeaderText>
+                <LocalizationTag>TEXT_GUIDE_INTERVAL_ID</LocalizationTag>
+                <ResourceClassKey>Resource</ResourceClassKey>
+            </HeaderText>
+            <Formatter />
+            <Width>120</Width>
+            <Resizeable>true</Resizeable>
+            <PreventSortable>false</PreventSortable>
+            <Sortable>true</Sortable>
+            <ColumnHideable>true</ColumnHideable>
+            <DefaultColumn>true</DefaultColumn>
+            <Exportable>true</Exportable>
+            <ShowInExpander>true</ShowInExpander>
+            <Filterable>true</Filterable>
+            <FilterHideable>true</FilterHideable>
+            <DefaultFilter>true</DefaultFilter>
+            <RequiredFilter>false</RequiredFilter>
+            <FilterLabel />
+            <ElementValue>
+                <Value />
+            </ElementValue>
+            <ElementValue2>
+                <Value />
+            </ElementValue2>
+            <FilterReadOnly>false</FilterReadOnly>
+            <DropdownItems />
+        </Element>
+        <Element>
+            <RecordElement>true</RecordElement>
+            <AssemblyFilename>O:\debug\Bin\MetraTech.DomainModel.Billing.Generated.dll</AssemblyFilename>
+            <ObjectName>MetraTech.DomainModel.ProductView.Metratech_com_NonStandardChargeProductView</ObjectName>
+            <ID>Rate</ID>
+            <DataType>String</DataType>
+            <IsIdentity>false</IsIdentity>
+            <DataIndex>Rate</DataIndex>
+            <IsColumn>true</IsColumn>
+            <HeaderText />
+            <Formatter>CurrencyRenderer</Formatter>
+            <Width>120</Width>
+            <Resizeable>true</Resizeable>
+            <PreventSortable>false</PreventSortable>
+            <Sortable>true</Sortable>
+            <ColumnHideable>true</ColumnHideable>
+            <DefaultColumn>true</DefaultColumn>
+            <Exportable>true</Exportable>
+            <ShowInExpander>true</ShowInExpander>
+            <Filterable>true</Filterable>
+            <FilterHideable>true</FilterHideable>
+            <DefaultFilter>true</DefaultFilter>
+            <RequiredFilter>false</RequiredFilter>
+            <FilterLabel />
+            <ElementValue>
+                <Value />
+            </ElementValue>
+            <ElementValue2>
+                <Value />
+            </ElementValue2>
+            <FilterReadOnly>false</FilterReadOnly>
+            <DropdownItems />
+        </Element>
+        <Element>
+            <RecordElement>true</RecordElement>
+            <AssemblyFilename>O:\debug\Bin\MetraTech.DomainModel.Billing.Generated.dll</AssemblyFilename>
+            <ObjectName>MetraTech.DomainModel.ProductView.Metratech_com_NonStandardChargeProductView</ObjectName>
+            <ID>ChargeCurrency</ID>
+            <DataType>List</DataType>
+            <IsIdentity>false</IsIdentity>
+            <FilterEnum>
+                <EnumClassName />
+                <EnumSpace>Global/SystemCurrencies</EnumSpace>
+                <EnumType>SystemCurrencies</EnumType>
+                <UseEnumValue>true</UseEnumValue>
+                <DefaultValue />
+                <HideEnumValues />
+            </FilterEnum>
+            <DataIndex>ChargeCurrency</DataIndex>
+            <IsColumn>true</IsColumn>
+            <HeaderText>
+                <LocalizationTag>TEXT_CHARGE_CURRENCY</LocalizationTag>
+                <ResourceClassKey>Resource</ResourceClassKey>
+            </HeaderText>
+            <Formatter />
+            <Width>120</Width>
+            <Resizeable>true</Resizeable>
+            <PreventSortable>false</PreventSortable>
+            <Sortable>true</Sortable>
+            <ColumnHideable>true</ColumnHideable>
+            <DefaultColumn>true</DefaultColumn>
+            <Exportable>true</Exportable>
+            <ShowInExpander>true</ShowInExpander>
+            <Filterable>true</Filterable>
+            <FilterHideable>true</FilterHideable>
+            <DefaultFilter>true</DefaultFilter>
+            <RequiredFilter>false</RequiredFilter>
+            <FilterLabel />
+            <ElementValue>
+                <Value />
+            </ElementValue>
+            <ElementValue2>
+                <Value />
+            </ElementValue2>
+            <FilterReadOnly>false</FilterReadOnly>
+            <DropdownItems />
+        </Element>
+        <Element>
+            <RecordElement>true</RecordElement>
+            <AssemblyFilename>O:\debug\Bin\MetraTech.DomainModel.Billing.Generated.dll</AssemblyFilename>
+            <ObjectName>MetraTech.DomainModel.ProductView.Metratech_com_NonStandardChargeProductView</ObjectName>
+            <ID>ChargeTaxAmount</ID>
+            <DataType>Numeric</DataType>
+            <IsIdentity>false</IsIdentity>
+            <DataIndex>ChargeTaxAmount</DataIndex>
+            <IsColumn>true</IsColumn>
+            <HeaderText>
+                <LocalizationTag>TEXT_CHARGE_TAX</LocalizationTag>
+                <ResourceClassKey>Resource</ResourceClassKey>
+            </HeaderText>
+            <Formatter>CurrencyRenderer</Formatter>
+            <Width>120</Width>
+            <Resizeable>true</Resizeable>
+            <PreventSortable>false</PreventSortable>
+            <Sortable>false</Sortable>
+            <ColumnHideable>true</ColumnHideable>
+            <DefaultColumn>true</DefaultColumn>
+            <Exportable>true</Exportable>
+            <ShowInExpander>true</ShowInExpander>
+            <Filterable>true</Filterable>
+            <FilterHideable>true</FilterHideable>
+            <DefaultFilter>true</DefaultFilter>
+            <RequiredFilter>false</RequiredFilter>
+            <FilterLabel />
+            <ElementValue>
+                <Value />
+            </ElementValue>
+            <ElementValue2>
+                <Value />
+            </ElementValue2>
+            <FilterReadOnly>false</FilterReadOnly>
+            <DropdownItems />
+        </Element>
+        <Element>
+            <RecordElement>true</RecordElement>
+            <AssemblyFilename>O:\debug\Bin\MetraTech.DomainModel.Billing.Generated.dll</AssemblyFilename>
+            <ObjectName>MetraTech.DomainModel.ProductView.Metratech_com_NonStandardChargeProductView</ObjectName>
+            <ID>IsTaxInclusive</ID>
+            <DataType>Boolean</DataType>
+            <IsIdentity>false</IsIdentity>
+            <DataIndex>IsTaxInclusive</DataIndex>
+            <IsColumn>true</IsColumn>
+            <HeaderText />
+            <Formatter />
+            <Width>120</Width>
+            <Resizeable>true</Resizeable>
+            <PreventSortable>false</PreventSortable>
+            <Sortable>false</Sortable>
+            <ColumnHideable>true</ColumnHideable>
+            <DefaultColumn>true</DefaultColumn>
+            <Exportable>true</Exportable>
+            <ShowInExpander>true</ShowInExpander>
+            <Filterable>true</Filterable>
+            <FilterHideable>true</FilterHideable>
+            <DefaultFilter>true</DefaultFilter>
+            <RequiredFilter>false</RequiredFilter>
+            <FilterLabel />
+            <ElementValue>
+                <Value />
+            </ElementValue>
+            <ElementValue2>
+                <Value />
+            </ElementValue2>
+            <FilterReadOnly>false</FilterReadOnly>
+            <DropdownItems />
+        </Element>
+        <Element>
+            <RecordElement>true</RecordElement>
+            <AssemblyFilename>O:\debug\Bin\MetraTech.DomainModel.Billing.Generated.dll</AssemblyFilename>
+            <ObjectName>MetraTech.DomainModel.ProductView.Metratech_com_NonStandardChargeProductView</ObjectName>
+            <ID>IsTaxInformational</ID>
+            <DataType>Boolean</DataType>
+            <IsIdentity>false</IsIdentity>
+            <DataIndex>IsTaxInformational</DataIndex>
+            <IsColumn>true</IsColumn>
+            <HeaderText />
+            <Formatter />
+            <Width>120</Width>
+            <Resizeable>true</Resizeable>
+            <PreventSortable>false</PreventSortable>
+            <Sortable>false</Sortable>
+            <ColumnHideable>true</ColumnHideable>
+            <DefaultColumn>true</DefaultColumn>
+            <Exportable>true</Exportable>
+            <ShowInExpander>true</ShowInExpander>
+            <Filterable>true</Filterable>
+            <FilterHideable>true</FilterHideable>
+            <DefaultFilter>true</DefaultFilter>
+            <RequiredFilter>false</RequiredFilter>
+            <FilterLabel />
+            <ElementValue>
+                <Value />
+            </ElementValue>
+            <ElementValue2>
+                <Value />
+            </ElementValue2>
+            <FilterReadOnly>false</FilterReadOnly>
+            <DropdownItems />
+        </Element>
+    </Elements>
+    <ExpanderTemplate>
+        <Section>
+            <Title>
+                <Value />
+            </Title>
+            <TabOrder>LeftToRight</TabOrder>
+            <Name />
+            <Columns>
+                <Column>
+                    <Fields>
+                        <Field>
+                            <AssemblyFilename>O:\debug\Bin\MetraTech.DomainModel.Billing.Generated.dll</AssemblyFilename>
+                            <ObjectName>MetraTech.DomainModel.ProductView.Metratech_com_NonStandardChargeProductView</ObjectName>
+                            <ID>ChargeAmount</ID>
+                            <Name>ChargeAmount</Name>
+                        </Field>
+                        <Field>
+                            <AssemblyFilename>O:\debug\Bin\MetraTech.DomainModel.Billing.Generated.dll</AssemblyFilename>
+                            <ObjectName>MetraTech.DomainModel.ProductView.Metratech_com_NonStandardChargeProductView</ObjectName>
+                            <ID>ReasonCode</ID>
+                            <Name>ReasonCode</Name>
+                        </Field>
+                        <Field>
+                            <AssemblyFilename>O:\debug\Bin\MetraTech.DomainModel.Billing.Generated.dll</AssemblyFilename>
+                            <ObjectName>MetraTech.DomainModel.ProductView.Metratech_com_NonStandardChargeProductView</ObjectName>
+                            <ID>NumUnits</ID>
+                            <Name>NumUnits</Name>
+                        </Field>
+                        <Field>
+                            <AssemblyFilename>O:\debug\Bin\MetraTech.DomainModel.Billing.Generated.dll</AssemblyFilename>
+                            <ObjectName>MetraTech.DomainModel.ProductView.Metratech_com_NonStandardChargeProductView</ObjectName>
+                            <ID>GLCode</ID>
+                            <Name>GLCode</Name>
+                        </Field>
+                        <Field>
+                            <AssemblyFilename>O:\debug\Bin\MetraTech.DomainModel.Billing.Generated.dll</AssemblyFilename>
+                            <ObjectName>MetraTech.DomainModel.ProductView.Metratech_com_NonStandardChargeProductView</ObjectName>
+                            <ID>Description</ID>
+                            <Name>Description</Name>
+                        </Field>
+                        <Field>
+                            <AssemblyFilename>O:\debug\Bin\MetraTech.DomainModel.Billing.Generated.dll</AssemblyFilename>
+                            <ObjectName>MetraTech.DomainModel.ProductView.Metratech_com_NonStandardChargeProductView</ObjectName>
+                            <ID>AdditionalRate</ID>
+                            <Name>AdditionalRate</Name>
+                        </Field>
+                        <Field>
+                            <AssemblyFilename>O:\debug\Bin\MetraTech.DomainModel.Billing.Generated.dll</AssemblyFilename>
+                            <ObjectName>MetraTech.DomainModel.ProductView.Metratech_com_NonStandardChargeProductView</ObjectName>
+                            <ID>ExternalChargeId</ID>
+                            <Name>ExternalChargeId</Name>
+                        </Field>
+                        <Field>
+                            <AssemblyFilename>O:\debug\Bin\MetraTech.DomainModel.Billing.Generated.dll</AssemblyFilename>
+                            <ObjectName>MetraTech.DomainModel.ProductView.Metratech_com_NonStandardChargeProductView</ObjectName>
+                            <ID>GuideIntervalID</ID>
+                            <Name>GuideIntervalID</Name>
+                        </Field>
+                        <Field>
+                            <AssemblyFilename>O:\debug\Bin\MetraTech.DomainModel.Billing.Generated.dll</AssemblyFilename>
+                            <ObjectName>MetraTech.DomainModel.ProductView.Metratech_com_NonStandardChargeProductView</ObjectName>
+                            <ID>ChargeTaxAmount</ID>
+                            <Name>ChargeTaxAmount</Name>
+                        </Field>
+                        <Field>
+                            <AssemblyFilename>O:\debug\Bin\MetraTech.DomainModel.Billing.Generated.dll</AssemblyFilename>
+                            <ObjectName>MetraTech.DomainModel.ProductView.Metratech_com_NonStandardChargeProductView</ObjectName>
+                            <ID>IsTaxInclusive</ID>
+                            <Name>IsTaxInclusive</Name>
+                        </Field>
+                    </Fields>
+                </Column>
+                <Column>
+                    <Fields>
+                        <Field>
+                            <AssemblyFilename>O:\debug\Bin\MetraTech.DomainModel.Billing.Generated.dll</AssemblyFilename>
+                            <ObjectName>MetraTech.DomainModel.ProductView.Metratech_com_NonStandardChargeProductView</ObjectName>
+                            <ID>SessionID</ID>
+                            <Name>SessionID</Name>
+                        </Field>
+                        <Field>
+                            <AssemblyFilename>O:\debug\Bin\MetraTech.DomainModel.Billing.Generated.dll</AssemblyFilename>
+                            <ObjectName>MetraTech.DomainModel.ProductView.Metratech_com_NonStandardChargeProductView</ObjectName>
+                            <ID>IssueTime</ID>
+                            <Name>IssueTime</Name>
+                        </Field>
+                        <Field>
+                            <AssemblyFilename>O:\debug\Bin\MetraTech.DomainModel.Billing.Generated.dll</AssemblyFilename>
+                            <ObjectName>MetraTech.DomainModel.ProductView.Metratech_com_NonStandardChargeProductView</ObjectName>
+                            <ID>IntervalID</ID>
+                            <Name>IntervalID</Name>
+                        </Field>
+                        <Field>
+                            <AssemblyFilename>O:\debug\Bin\MetraTech.DomainModel.Billing.Generated.dll</AssemblyFilename>
+                            <ObjectName>MetraTech.DomainModel.ProductView.Metratech_com_NonStandardChargeProductView</ObjectName>
+                            <ID>AdditionalCode</ID>
+                            <Name>AdditionalCode</Name>
+                        </Field>
+                        <Field>
+                            <AssemblyFilename>O:\debug\Bin\MetraTech.DomainModel.Billing.Generated.dll</AssemblyFilename>
+                            <ObjectName>MetraTech.DomainModel.ProductView.Metratech_com_NonStandardChargeProductView</ObjectName>
+                            <ID>InternalChargeId</ID>
+                            <Name>InternalChargeId</Name>
+                        </Field>
+                        <Field>
+                            <AssemblyFilename>O:\debug\Bin\MetraTech.DomainModel.Billing.Generated.dll</AssemblyFilename>
+                            <ObjectName>MetraTech.DomainModel.ProductView.Metratech_com_NonStandardChargeProductView</ObjectName>
+                            <ID>SubscriberAccountID</ID>
+                            <Name>SubscriberAccountID</Name>
+                        </Field>
+                        <Field>
+                            <AssemblyFilename>O:\debug\Bin\MetraTech.DomainModel.Billing.Generated.dll</AssemblyFilename>
+                            <ObjectName>MetraTech.DomainModel.ProductView.Metratech_com_NonStandardChargeProductView</ObjectName>
+                            <ID>Rate</ID>
+                            <Name>Rate</Name>
+                        </Field>
+                        <Field>
+                            <AssemblyFilename>O:\debug\Bin\MetraTech.DomainModel.Billing.Generated.dll</AssemblyFilename>
+                            <ObjectName>MetraTech.DomainModel.ProductView.Metratech_com_NonStandardChargeProductView</ObjectName>
+                            <ID>ChargeCurrency</ID>
+                            <Name>ChargeCurrency</Name>
+                        </Field>
+                        <Field>
+                            <AssemblyFilename>O:\debug\Bin\MetraTech.DomainModel.Billing.Generated.dll</AssemblyFilename>
+                            <ObjectName>MetraTech.DomainModel.ProductView.Metratech_com_NonStandardChargeProductView</ObjectName>
+                            <ID>IsTaxInformational</ID>
+                            <Name>IsTaxInformational</Name>
+                        </Field>
+                    </Fields>
+                </Column>
+            </Columns>
+            <ToolbarButtons />
+        </Section>
+    </ExpanderTemplate>
+    <GridButtons>
+        <Button>
+            <ButtonID>Approve</ButtonID>
+            <ButtonText>
+                <LocalizationTag>TEXT_APPROVE</LocalizationTag>
+                <ResourceClassKey>NonStandardCharges/App_LocalResources/ManageNonStandardCharges.aspx</ResourceClassKey>
+            </ButtonText>
+            <ToolTip>
+                <Value />
+            </ToolTip>
+            <IconClass>add</IconClass>
+            <RequiredCapabilities>
+                <Capability>Manage NonStandardCharges</Capability>
+            </RequiredCapabilities>
+            <JSHandlerFunction>onApprove</JSHandlerFunction>
+        </Button>
+        <Button>
+            <ButtonID>ApproveAll</ButtonID>
+            <ButtonText>
+                <LocalizationTag>TEXT_APPROVE_ALL</LocalizationTag>
+                <ResourceClassKey>NonStandardCharges/App_LocalResources/ManageNonStandardCharges.aspx</ResourceClassKey>
+            </ButtonText>
+            <ToolTip>
+                <Value />
+            </ToolTip>
+            <IconClass>add</IconClass>
+            <RequiredCapabilities>
+                <Capability>Manage NonStandardCharges</Capability>
+            </RequiredCapabilities>
+            <JSHandlerFunction>onApproveAll</JSHandlerFunction>
+        </Button>
+        <Button>
+            <ButtonID>Deny</ButtonID>
+            <ButtonText>
+                <LocalizationTag>TEXT_DENY</LocalizationTag>
+                <ResourceClassKey>NonStandardCharges/App_LocalResources/ManageNonStandardCharges.aspx</ResourceClassKey>
+            </ButtonText>
+            <ToolTip>
+                <Value />
+            </ToolTip>
+            <IconClass>remove</IconClass>
+            <RequiredCapabilities>
+                <Capability>Manage NonStandardCharges</Capability>
+            </RequiredCapabilities>
+            <JSHandlerFunction>onDeny</JSHandlerFunction>
+        </Button>
+        <Button>
+            <ButtonID>DenyAll</ButtonID>
+            <ButtonText>
+                <LocalizationTag>TEXT_DENY_ALL</LocalizationTag>
+                <ResourceClassKey>NonStandardCharges/App_LocalResources/ManageNonStandardCharges.aspx</ResourceClassKey>
+            </ButtonText>
+            <ToolTip>
+                <Value />
+            </ToolTip>
+            <IconClass>remove</IconClass>
+            <RequiredCapabilities>
+                <Capability>Manage NonStandardCharges</Capability>
+            </RequiredCapabilities>
+            <JSHandlerFunction>onDenyAll</JSHandlerFunction>
+        </Button>
+    </GridButtons>
+    <ToolbarButtons />
+</GridLayout>

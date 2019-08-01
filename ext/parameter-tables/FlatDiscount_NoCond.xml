@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<defineservice>
+  <name help_url="" condition_header="Conditions" action_header="Actions" display_name="Discount Rates (Flat Unconditional)" type="Rates">metratech.com/FlatDiscount_NoCond</name>
+  <description>Used to store the single, fixed discount amount.</description>
+  <!-- actions -->
+  <ptype display_name="Flat Unconditional Discount Amount" action="Y">
+    <dn>FlatUncondDiscountAmount</dn>
+    <type>decimal</type>
+    <length>
+    </length>
+    <required>Y</required>
+    <defaultvalue>
+    </defaultvalue>
+    <description>The flat unconditional discount amount.</description>
+  </ptype>
+</defineservice>

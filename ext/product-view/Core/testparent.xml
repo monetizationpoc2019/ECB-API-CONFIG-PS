@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<defineservice>
+  <name>metratech.com/TestParent</name>
+  <description>Multipoint parent transaction test.</description>
+  <ptype display_name="">
+    <dn>Description</dn>
+    <type>string</type>
+    <length>255</length>
+    <required>Y</required>
+    <defaultvalue>
+    </defaultvalue>
+    <description>Open field for testing</description>
+  </ptype>
+  <ptype display_name="">
+    <dn>Time</dn>
+    <type>timestamp</type>
+    <length>
+    </length>
+    <required>Y</required>
+    <defaultvalue>
+    </defaultvalue>
+    <description>Open field for testing that was metered (sent) into the system; not used during processing</description>
+  </ptype>
+  <ptype display_name="">
+    <dn>TotalUnits</dn>
+    <type>decimal</type>
+    <length>
+    </length>
+    <required>Y</required>
+    <defaultvalue>
+    </defaultvalue>
+    <description>Units calculated during processing</description>
+  </ptype>
+  <ptype display_name="">
+    <dn>TotalAmount</dn>
+    <type>decimal</type>
+    <length>
+    </length>
+    <required>Y</required>
+    <defaultvalue>
+    </defaultvalue>
+    <description>Amount calculated during processing</description>
+  </ptype>
+</defineservice>

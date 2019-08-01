@@ -1,0 +1,632 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<GridLayout xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <Name>AccountTemplateSelectGroupSubscription</Name>
+    <Title>
+        <LocalizationTag>GRID_TITLE</LocalizationTag>
+        <ResourceClassKey />
+    </Title>
+    <Exportable>true</Exportable>
+    <Height>400</Height>
+    <Width>720</Width>
+    <Expandable>true</Expandable>
+    <Buttons>OKCancel</Buttons>
+    <DataSourceURL />
+    <MultiSelect>true</MultiSelect>
+    <SelectionModel>CheckBox</SelectionModel>
+    <TotalProperty>TotalRows</TotalProperty>
+    <RootElement>Items</RootElement>
+    <PageSize>10</PageSize>
+    <Description>The grid layout for adding a group subscription to a template in MetraCare.</Description>
+    <ExpansionCssClass />
+    <FilterInputWidth>220</FilterInputWidth>
+    <FilterLabelWidth>75</FilterLabelWidth>
+    <FilterColumnWidth>350</FilterColumnWidth>
+    <NoRecordsText>
+        <LocalizationTag>NO_RECORDS</LocalizationTag>
+        <ResourceClassKey>MetraNet/Templates/App_LocalResources/SelectGroupSubscriptions.aspx</ResourceClassKey>
+    </NoRecordsText>
+    <FilterPanelLayout>MultiColumn</FilterPanelLayout>
+    <FilterPanelCollapsed>false</FilterPanelCollapsed>
+    <EnableColumnConfig>true</EnableColumnConfig>
+    <EnableFilterConfig>true</EnableFilterConfig>
+    <Resizeable>true</Resizeable>
+    <ButtonAlignment>Center</ButtonAlignment>
+    <DefaultSortField />
+    <DefaultSortDirection>Ascending</DefaultSortDirection>
+    <DisplayCount>true</DisplayCount>
+    <SearchOnLoad>true</SearchOnLoad>
+    <CustomImplementationFilePath />
+    <DataBinder>
+        <ServicePath>/MetraNet/AjaxServices/GetData.aspx</ServicePath>
+        <OutPropertyName>InOut_GroupSubscriptionList</OutPropertyName>
+        <Operation>TemplateEvents_GetAvailableGroupSubscriptionsList_Client</Operation>
+    </DataBinder>
+    <ShowFilterPanel>true</ShowFilterPanel>
+    <ShowTopBar>true</ShowTopBar>
+    <ShowBottomBar>true</ShowBottomBar>
+    <ShowGridFrame>true</ShowGridFrame>
+    <ShowGridHeader>true</ShowGridHeader>
+    <ShowColumnHeaders>true</ShowColumnHeaders>
+    <SubGrid />
+    <Elements>
+        <Element>
+            <RecordElement>true</RecordElement>
+            <AssemblyFilename>MetraTech.DomainModel.ProductCatalog.dll</AssemblyFilename>
+            <ObjectName>MetraTech.DomainModel.ProductCatalog.GroupSubscription</ObjectName>
+            <ID>GroupId</ID>
+            <DataType>Numeric</DataType>
+            <IsIdentity>true</IsIdentity>
+            <DataIndex>GroupId</DataIndex>
+            <IsColumn>false</IsColumn>
+            <HeaderText>
+                <LocalizationTag>GROUP_ID</LocalizationTag>
+                <ResourceClassKey>MetraNet/Templates/App_LocalResources/SelectGroupSubscriptions.aspx</ResourceClassKey>
+            </HeaderText>
+            <Formatter />
+            <Width>120</Width>
+            <Resizeable>true</Resizeable>
+            <PreventSortable>false</PreventSortable>
+            <Sortable>true</Sortable>
+            <ColumnHideable>true</ColumnHideable>
+            <DefaultColumn>true</DefaultColumn>
+            <Exportable>true</Exportable>
+            <ShowInExpander>false</ShowInExpander>
+            <Filterable>true</Filterable>
+            <FilterHideable>true</FilterHideable>
+            <DefaultFilter>false</DefaultFilter>
+            <RequiredFilter>false</RequiredFilter>
+            <FilterLabel />
+            <ElementValue>
+                <Value />
+            </ElementValue>
+            <ElementValue2>
+                <Value />
+            </ElementValue2>
+            <FilterReadOnly>false</FilterReadOnly>
+            <DropdownItems />
+        </Element>
+        <Element>
+            <RecordElement>true</RecordElement>
+            <AssemblyFilename>MetraTech.DomainModel.ProductCatalog.dll</AssemblyFilename>
+            <ObjectName>MetraTech.DomainModel.ProductCatalog.GroupSubscription</ObjectName>
+            <ID>Name</ID>
+            <DataType>String</DataType>
+            <IsIdentity>false</IsIdentity>
+            <DataIndex>Name</DataIndex>
+            <IsColumn>true</IsColumn>
+            <HeaderText>
+                <LocalizationTag>NAME</LocalizationTag>
+                <ResourceClassKey>MetraNet/Templates/App_LocalResources/SelectGroupSubscriptions.aspx</ResourceClassKey>
+            </HeaderText>
+            <Formatter />
+            <Width>120</Width>
+            <Resizeable>true</Resizeable>
+            <PreventSortable>false</PreventSortable>
+            <Sortable>true</Sortable>
+            <ColumnHideable>true</ColumnHideable>
+            <DefaultColumn>true</DefaultColumn>
+            <Exportable>true</Exportable>
+            <ShowInExpander>false</ShowInExpander>
+            <Filterable>true</Filterable>
+            <FilterHideable>true</FilterHideable>
+            <DefaultFilter>true</DefaultFilter>
+            <RequiredFilter>false</RequiredFilter>
+            <FilterLabel />
+            <ElementValue>
+                <Value />
+            </ElementValue>
+            <ElementValue2>
+                <Value />
+            </ElementValue2>
+            <FilterReadOnly>false</FilterReadOnly>
+            <DropdownItems />
+        </Element>
+        <Element>
+            <RecordElement>true</RecordElement>
+            <AssemblyFilename>MetraTech.DomainModel.ProductCatalog.dll</AssemblyFilename>
+            <ObjectName>MetraTech.DomainModel.ProductCatalog.GroupSubscription</ObjectName>
+            <ID>Description</ID>
+            <DataType>String</DataType>
+            <IsIdentity>false</IsIdentity>
+            <DataIndex>Description</DataIndex>
+            <IsColumn>true</IsColumn>
+            <HeaderText>
+                <LocalizationTag>DESCRIPTION</LocalizationTag>
+                <ResourceClassKey>MetraNet/Templates/App_LocalResources/SelectGroupSubscriptions.aspx</ResourceClassKey>
+            </HeaderText>
+            <Formatter />
+            <Width>280</Width>
+            <Resizeable>true</Resizeable>
+            <PreventSortable>false</PreventSortable>
+            <Sortable>true</Sortable>
+            <ColumnHideable>true</ColumnHideable>
+            <DefaultColumn>true</DefaultColumn>
+            <Exportable>true</Exportable>
+            <ShowInExpander>false</ShowInExpander>
+            <Filterable>true</Filterable>
+            <FilterHideable>true</FilterHideable>
+            <DefaultFilter>true</DefaultFilter>
+            <RequiredFilter>false</RequiredFilter>
+            <FilterLabel />
+            <ElementValue>
+                <Value />
+            </ElementValue>
+            <ElementValue2>
+                <Value />
+            </ElementValue2>
+            <FilterReadOnly>false</FilterReadOnly>
+            <DropdownItems />
+        </Element>
+        <Element>
+            <RecordElement>true</RecordElement>
+            <AssemblyFilename>MetraTech.DomainModel.BaseTypes.dll</AssemblyFilename>
+            <ObjectName>MetraTech.DomainModel.BaseTypes.ProdCatTimeSpan</ObjectName>
+            <ID>SubscriptionSpan.StartDate</ID>
+            <DataType>Date</DataType>
+            <IsIdentity>false</IsIdentity>
+            <DataIndex>SubscriptionSpan.StartDate</DataIndex>
+            <IsColumn>true</IsColumn>
+            <HeaderText>
+                <LocalizationTag>START_DATE</LocalizationTag>
+                <ResourceClassKey>MetraNet/Templates/App_LocalResources/SelectGroupSubscriptions.aspx</ResourceClassKey>
+            </HeaderText>
+            <Formatter />
+            <Width>120</Width>
+            <Resizeable>true</Resizeable>
+            <PreventSortable>false</PreventSortable>
+            <Sortable>true</Sortable>
+            <ColumnHideable>true</ColumnHideable>
+            <DefaultColumn>true</DefaultColumn>
+            <Exportable>true</Exportable>
+            <ShowInExpander>false</ShowInExpander>
+            <Filterable>true</Filterable>
+            <FilterHideable>true</FilterHideable>
+            <DefaultFilter>true</DefaultFilter>
+            <RequiredFilter>false</RequiredFilter>
+            <FilterLabel />
+            <ElementValue>
+                <Value />
+            </ElementValue>
+            <ElementValue2>
+                <Value />
+            </ElementValue2>
+            <FilterReadOnly>false</FilterReadOnly>
+            <DropdownItems />
+        </Element>
+        <Element>
+            <RecordElement>true</RecordElement>
+            <AssemblyFilename>MetraTech.DomainModel.BaseTypes.dll</AssemblyFilename>
+            <ObjectName>MetraTech.DomainModel.BaseTypes.ProdCatTimeSpan</ObjectName>
+            <ID>SubscriptionSpan.EndDate</ID>
+            <DataType>Date</DataType>
+            <IsIdentity>false</IsIdentity>
+            <DataIndex>SubscriptionSpan.EndDate</DataIndex>
+            <IsColumn>true</IsColumn>
+            <HeaderText>
+                <LocalizationTag>END_DATE</LocalizationTag>
+                <ResourceClassKey>MetraNet/Templates/App_LocalResources/SelectGroupSubscriptions.aspx</ResourceClassKey>
+            </HeaderText>
+            <Formatter />
+            <Width>120</Width>
+            <Resizeable>true</Resizeable>
+            <PreventSortable>false</PreventSortable>
+            <Sortable>true</Sortable>
+            <ColumnHideable>true</ColumnHideable>
+            <DefaultColumn>true</DefaultColumn>
+            <Exportable>true</Exportable>
+            <ShowInExpander>false</ShowInExpander>
+            <Filterable>true</Filterable>
+            <FilterHideable>true</FilterHideable>
+            <DefaultFilter>true</DefaultFilter>
+            <RequiredFilter>false</RequiredFilter>
+            <FilterLabel />
+            <ElementValue>
+                <Value />
+            </ElementValue>
+            <ElementValue2>
+                <Value />
+            </ElementValue2>
+            <FilterReadOnly>false</FilterReadOnly>
+            <DropdownItems />
+        </Element>
+        <Element>
+            <RecordElement>true</RecordElement>
+            <AssemblyFilename>MetraTech.DomainModel.ProductCatalog.dll</AssemblyFilename>
+            <ObjectName>MetraTech.DomainModel.ProductCatalog.GroupSubscription</ObjectName>
+            <ID>CorporateAccountId</ID>
+            <DataType>String</DataType>
+            <IsIdentity>false</IsIdentity>
+            <DataIndex>CorporateAccountId</DataIndex>
+            <IsColumn>false</IsColumn>
+            <HeaderText>
+                <LocalizationTag>CORP_ID</LocalizationTag>
+                <ResourceClassKey>MetraNet/Templates/App_LocalResources/SelectGroupSubscriptions.aspx</ResourceClassKey>
+            </HeaderText>
+            <Formatter />
+            <Width>120</Width>
+            <Resizeable>true</Resizeable>
+            <PreventSortable>false</PreventSortable>
+            <Sortable>true</Sortable>
+            <ColumnHideable>true</ColumnHideable>
+            <DefaultColumn>true</DefaultColumn>
+            <Exportable>true</Exportable>
+            <ShowInExpander>true</ShowInExpander>
+            <Filterable>true</Filterable>
+            <FilterHideable>true</FilterHideable>
+            <DefaultFilter>false</DefaultFilter>
+            <RequiredFilter>false</RequiredFilter>
+            <FilterLabel />
+            <ElementValue>
+                <Value />
+            </ElementValue>
+            <ElementValue2>
+                <Value />
+            </ElementValue2>
+            <FilterReadOnly>false</FilterReadOnly>
+            <DropdownItems />
+        </Element>
+        <Element>
+            <RecordElement>true</RecordElement>
+            <AssemblyFilename>MetraTech.DomainModel.ProductCatalog.Generated.dll</AssemblyFilename>
+            <ObjectName>MetraTech.DomainModel.ProductCatalog.ProductOffering</ObjectName>
+            <ID>ProductOffering.DisplayName</ID>
+            <DataType>String</DataType>
+            <IsIdentity>false</IsIdentity>
+            <DataIndex>ProductOffering.DisplayName</DataIndex>
+            <IsColumn>false</IsColumn>
+            <HeaderText>
+                <LocalizationTag>PO_DISPLAYNAME</LocalizationTag>
+                <ResourceClassKey>MetraNet/Templates/App_LocalResources/SelectGroupSubscriptions.aspx</ResourceClassKey>
+            </HeaderText>
+            <Formatter />
+            <Width>120</Width>
+            <Resizeable>true</Resizeable>
+            <PreventSortable>false</PreventSortable>
+            <Sortable>true</Sortable>
+            <ColumnHideable>true</ColumnHideable>
+            <DefaultColumn>true</DefaultColumn>
+            <Exportable>true</Exportable>
+            <ShowInExpander>true</ShowInExpander>
+            <Filterable>true</Filterable>
+            <FilterHideable>true</FilterHideable>
+            <DefaultFilter>true</DefaultFilter>
+            <RequiredFilter>false</RequiredFilter>
+            <FilterLabel />
+            <ElementValue>
+                <Value />
+            </ElementValue>
+            <ElementValue2>
+                <Value />
+            </ElementValue2>
+            <FilterReadOnly>false</FilterReadOnly>
+            <DropdownItems />
+        </Element>
+        <Element>
+            <RecordElement>true</RecordElement>
+            <AssemblyFilename>MetraTech.DomainModel.ProductCatalog.dll</AssemblyFilename>
+            <ObjectName>MetraTech.DomainModel.ProductCatalog.GroupSubscription</ObjectName>
+            <ID>DiscountAccountId</ID>
+            <DataType>Numeric</DataType>
+            <IsIdentity>false</IsIdentity>
+            <DataIndex>DiscountAccountId</DataIndex>
+            <IsColumn>false</IsColumn>
+            <HeaderText>
+                <LocalizationTag>DISCOUNT_ID</LocalizationTag>
+                <ResourceClassKey>MetraNet/Templates/App_LocalResources/SelectGroupSubscriptions.aspx</ResourceClassKey>
+            </HeaderText>
+            <Formatter />
+            <Width>120</Width>
+            <Resizeable>true</Resizeable>
+            <PreventSortable>false</PreventSortable>
+            <Sortable>true</Sortable>
+            <ColumnHideable>true</ColumnHideable>
+            <DefaultColumn>true</DefaultColumn>
+            <Exportable>true</Exportable>
+            <ShowInExpander>true</ShowInExpander>
+            <Filterable>true</Filterable>
+            <FilterHideable>true</FilterHideable>
+            <DefaultFilter>false</DefaultFilter>
+            <RequiredFilter>false</RequiredFilter>
+            <FilterLabel />
+            <ElementValue>
+                <Value />
+            </ElementValue>
+            <ElementValue2>
+                <Value />
+            </ElementValue2>
+            <FilterReadOnly>false</FilterReadOnly>
+            <DropdownItems />
+        </Element>
+        <Element>
+            <RecordElement>true</RecordElement>
+            <AssemblyFilename>MetraTech.DomainModel.ProductCatalog.dll</AssemblyFilename>
+            <ObjectName>MetraTech.DomainModel.ProductCatalog.GroupSubscription</ObjectName>
+            <ID>ProportionalDistribution</ID>
+            <DataType>Boolean</DataType>
+            <IsIdentity>false</IsIdentity>
+            <DataIndex>ProportionalDistribution</DataIndex>
+            <IsColumn>false</IsColumn>
+            <HeaderText>
+                <LocalizationTag>PROPORTIONAL_DISTRIBUTION</LocalizationTag>
+                <ResourceClassKey>MetraNet/Templates/App_LocalResources/SelectGroupSubscriptions.aspx</ResourceClassKey>
+            </HeaderText>
+            <Formatter />
+            <Width>120</Width>
+            <Resizeable>true</Resizeable>
+            <PreventSortable>false</PreventSortable>
+            <Sortable>true</Sortable>
+            <ColumnHideable>true</ColumnHideable>
+            <DefaultColumn>true</DefaultColumn>
+            <Exportable>true</Exportable>
+            <ShowInExpander>true</ShowInExpander>
+            <Filterable>true</Filterable>
+            <FilterHideable>true</FilterHideable>
+            <DefaultFilter>false</DefaultFilter>
+            <RequiredFilter>false</RequiredFilter>
+            <FilterLabel />
+            <ElementValue>
+                <Value />
+            </ElementValue>
+            <ElementValue2>
+                <Value />
+            </ElementValue2>
+            <FilterReadOnly>false</FilterReadOnly>
+            <DropdownItems />
+        </Element>
+        <Element>
+            <RecordElement>true</RecordElement>
+            <AssemblyFilename>MetraTech.DomainModel.ProductCatalog.dll</AssemblyFilename>
+            <ObjectName>MetraTech.DomainModel.ProductCatalog.GroupSubscription</ObjectName>
+            <ID>SupportsGroupOperations</ID>
+            <DataType>Boolean</DataType>
+            <IsIdentity>false</IsIdentity>
+            <DataIndex>SupportsGroupOperations</DataIndex>
+            <IsColumn>false</IsColumn>
+            <HeaderText>
+                <LocalizationTag>SUPPORTS_GROUP</LocalizationTag>
+                <ResourceClassKey>MetraNet/Templates/App_LocalResources/SelectGroupSubscriptions.aspx</ResourceClassKey>
+            </HeaderText>
+            <Formatter />
+            <Width>120</Width>
+            <Resizeable>true</Resizeable>
+            <PreventSortable>false</PreventSortable>
+            <Sortable>true</Sortable>
+            <ColumnHideable>true</ColumnHideable>
+            <DefaultColumn>true</DefaultColumn>
+            <Exportable>true</Exportable>
+            <ShowInExpander>true</ShowInExpander>
+            <Filterable>true</Filterable>
+            <FilterHideable>true</FilterHideable>
+            <DefaultFilter>false</DefaultFilter>
+            <RequiredFilter>false</RequiredFilter>
+            <FilterLabel />
+            <ElementValue>
+                <Value />
+            </ElementValue>
+            <ElementValue2>
+                <Value />
+            </ElementValue2>
+            <FilterReadOnly>false</FilterReadOnly>
+            <DropdownItems />
+        </Element>
+        <Element>
+            <RecordElement>true</RecordElement>
+            <AssemblyFilename>MetraTech.DomainModel.ProductCatalog.dll</AssemblyFilename>
+            <ObjectName>MetraTech.DomainModel.ProductCatalog.GroupSubscription</ObjectName>
+            <ID>DiscountDistribution</ID>
+            <DataType>String</DataType>
+            <IsIdentity>false</IsIdentity>
+            <DataIndex>DiscountDistribution</DataIndex>
+            <IsColumn>false</IsColumn>
+            <HeaderText>
+                <LocalizationTag>DISCOUNT_DISTRIBUTION</LocalizationTag>
+                <ResourceClassKey>MetraNet/Templates/App_LocalResources/SelectGroupSubscriptions.aspx</ResourceClassKey>
+            </HeaderText>
+            <Formatter />
+            <Width>120</Width>
+            <Resizeable>true</Resizeable>
+            <PreventSortable>false</PreventSortable>
+            <Sortable>true</Sortable>
+            <ColumnHideable>true</ColumnHideable>
+            <DefaultColumn>true</DefaultColumn>
+            <Exportable>true</Exportable>
+            <ShowInExpander>true</ShowInExpander>
+            <Filterable>true</Filterable>
+            <FilterHideable>true</FilterHideable>
+            <DefaultFilter>false</DefaultFilter>
+            <RequiredFilter>false</RequiredFilter>
+            <FilterLabel />
+            <ElementValue>
+                <Value />
+            </ElementValue>
+            <ElementValue2>
+                <Value />
+            </ElementValue2>
+            <FilterReadOnly>false</FilterReadOnly>
+            <DropdownItems />
+        </Element>
+        <Element>
+            <RecordElement>true</RecordElement>
+            <AssemblyFilename>MetraTech.DomainModel.ProductCatalog.dll</AssemblyFilename>
+            <ObjectName>MetraTech.DomainModel.ProductCatalog.GroupSubscription</ObjectName>
+            <ID>SubscriptionId</ID>
+            <DataType>Numeric</DataType>
+            <IsIdentity>false</IsIdentity>
+            <DataIndex>SubscriptionId</DataIndex>
+            <IsColumn>false</IsColumn>
+            <HeaderText>
+                <LocalizationTag>SUBSCRIPTION_ID</LocalizationTag>
+                <ResourceClassKey>MetraNet/Templates/App_LocalResources/SelectGroupSubscriptions.aspx</ResourceClassKey>
+            </HeaderText>
+            <Formatter />
+            <Width>120</Width>
+            <Resizeable>true</Resizeable>
+            <PreventSortable>false</PreventSortable>
+            <Sortable>true</Sortable>
+            <ColumnHideable>true</ColumnHideable>
+            <DefaultColumn>true</DefaultColumn>
+            <Exportable>true</Exportable>
+            <ShowInExpander>true</ShowInExpander>
+            <Filterable>true</Filterable>
+            <FilterHideable>true</FilterHideable>
+            <DefaultFilter>false</DefaultFilter>
+            <RequiredFilter>false</RequiredFilter>
+            <FilterLabel />
+            <ElementValue>
+                <Value />
+            </ElementValue>
+            <ElementValue2>
+                <Value />
+            </ElementValue2>
+            <FilterReadOnly>false</FilterReadOnly>
+            <DropdownItems />
+        </Element>
+        <Element>
+            <RecordElement>true</RecordElement>
+            <AssemblyFilename>MetraTech.DomainModel.ProductCatalog.dll</AssemblyFilename>
+            <ObjectName>MetraTech.DomainModel.ProductCatalog.GroupSubscription</ObjectName>
+            <ID>ProductOfferingId</ID>
+            <DataType>String</DataType>
+            <IsIdentity>false</IsIdentity>
+            <DataIndex>ProductOfferingId</DataIndex>
+            <IsColumn>false</IsColumn>
+            <HeaderText>
+                <LocalizationTag>PO_ID</LocalizationTag>
+                <ResourceClassKey>MetraNet/Templates/App_LocalResources/SelectGroupSubscriptions.aspx</ResourceClassKey>
+            </HeaderText>
+            <Formatter />
+            <Width>120</Width>
+            <Resizeable>true</Resizeable>
+            <PreventSortable>false</PreventSortable>
+            <Sortable>true</Sortable>
+            <ColumnHideable>true</ColumnHideable>
+            <DefaultColumn>true</DefaultColumn>
+            <Exportable>true</Exportable>
+            <ShowInExpander>true</ShowInExpander>
+            <Filterable>true</Filterable>
+            <FilterHideable>true</FilterHideable>
+            <DefaultFilter>false</DefaultFilter>
+            <RequiredFilter>false</RequiredFilter>
+            <FilterLabel />
+            <ElementValue>
+                <Value />
+            </ElementValue>
+            <ElementValue2>
+                <Value />
+            </ElementValue2>
+            <FilterReadOnly>false</FilterReadOnly>
+            <DropdownItems />
+        </Element>
+        <Element>
+            <RecordElement>true</RecordElement>
+            <AssemblyFilename>MetraTech.DomainModel.ProductCatalog.dll</AssemblyFilename>
+            <ObjectName>MetraTech.DomainModel.ProductCatalog.GroupSubscription</ObjectName>
+            <ID>WarnOnEBCRStartDateChange</ID>
+            <DataType>Boolean</DataType>
+            <IsIdentity>false</IsIdentity>
+            <DataIndex>WarnOnEBCRStartDateChange</DataIndex>
+            <IsColumn>false</IsColumn>
+            <HeaderText>
+                <LocalizationTag>WARNONEBCR</LocalizationTag>
+                <ResourceClassKey>MetraNet/Templates/App_LocalResources/SelectGroupSubscriptions.aspx</ResourceClassKey>
+            </HeaderText>
+            <Formatter />
+            <Width>120</Width>
+            <Resizeable>true</Resizeable>
+            <PreventSortable>false</PreventSortable>
+            <Sortable>true</Sortable>
+            <ColumnHideable>true</ColumnHideable>
+            <DefaultColumn>true</DefaultColumn>
+            <Exportable>true</Exportable>
+            <ShowInExpander>true</ShowInExpander>
+            <Filterable>true</Filterable>
+            <FilterHideable>true</FilterHideable>
+            <DefaultFilter>false</DefaultFilter>
+            <RequiredFilter>false</RequiredFilter>
+            <FilterLabel />
+            <ElementValue>
+                <Value />
+            </ElementValue>
+            <ElementValue2>
+                <Value />
+            </ElementValue2>
+            <FilterReadOnly>false</FilterReadOnly>
+            <DropdownItems />
+        </Element>
+    </Elements>
+    <ExpanderTemplate>
+        <Section>
+            <Title>
+                <LocalizationTag>DETAILS</LocalizationTag>
+                <ResourceClassKey>MetraNet/Templates/App_LocalResources/SelectGroupSubscriptions.aspx</ResourceClassKey>
+            </Title>
+            <TabOrder>LeftToRight</TabOrder>
+            <Columns>
+                <Column>
+                    <Fields>
+                        <Field>
+                            <AssemblyFilename>MetraTech.DomainModel.ProductCatalog.dll</AssemblyFilename>
+                            <ObjectName>MetraTech.DomainModel.ProductCatalog.GroupSubscription</ObjectName>
+                            <ID>ProductOfferingId</ID>
+                            <Name>ProductOfferingId</Name>
+                        </Field>
+                        <Field>
+                            <AssemblyFilename>MetraTech.DomainModel.ProductCatalog.Generated.dll</AssemblyFilename>
+                            <ObjectName>MetraTech.DomainModel.ProductCatalog.ProductOffering</ObjectName>
+                            <ID>ProductOffering.DisplayName</ID>
+                            <Name>ProductOffering.DisplayName</Name>
+                        </Field>
+                        <Field>
+                            <AssemblyFilename>MetraTech.DomainModel.ProductCatalog.dll</AssemblyFilename>
+                            <ObjectName>MetraTech.DomainModel.ProductCatalog.GroupSubscription</ObjectName>
+                            <ID>CorporateAccountId</ID>
+                            <Name>CorporateAccountId</Name>
+                        </Field>
+                        <Field>
+                            <AssemblyFilename>MetraTech.DomainModel.ProductCatalog.dll</AssemblyFilename>
+                            <ObjectName>MetraTech.DomainModel.ProductCatalog.GroupSubscription</ObjectName>
+                            <ID>DiscountAccountId</ID>
+                            <Name>DiscountAccountId</Name>
+                        </Field>
+                        <Field>
+                            <AssemblyFilename>MetraTech.DomainModel.ProductCatalog.dll</AssemblyFilename>
+                            <ObjectName>MetraTech.DomainModel.ProductCatalog.GroupSubscription</ObjectName>
+                            <ID>ProportionalDistribution</ID>
+                            <Name>ProportionalDistribution</Name>
+                        </Field>
+                    </Fields>
+                </Column>
+                <Column>
+                    <Fields>
+                        <Field>
+                            <AssemblyFilename>MetraTech.DomainModel.ProductCatalog.dll</AssemblyFilename>
+                            <ObjectName>MetraTech.DomainModel.ProductCatalog.GroupSubscription</ObjectName>
+                            <ID>SubscriptionId</ID>
+                            <Name>SubscriptionId</Name>
+                        </Field>
+                        <Field>
+                            <AssemblyFilename>MetraTech.DomainModel.ProductCatalog.dll</AssemblyFilename>
+                            <ObjectName>MetraTech.DomainModel.ProductCatalog.GroupSubscription</ObjectName>
+                            <ID>DiscountDistribution</ID>
+                            <Name>DiscountDistribution</Name>
+                        </Field>
+                        <Field>
+                            <AssemblyFilename>MetraTech.DomainModel.ProductCatalog.dll</AssemblyFilename>
+                            <ObjectName>MetraTech.DomainModel.ProductCatalog.GroupSubscription</ObjectName>
+                            <ID>WarnOnEBCRStartDateChange</ID>
+                            <Name>WarnOnEBCRStartDateChange</Name>
+                        </Field>
+                        <Field>
+                            <AssemblyFilename>MetraTech.DomainModel.ProductCatalog.dll</AssemblyFilename>
+                            <ObjectName>MetraTech.DomainModel.ProductCatalog.GroupSubscription</ObjectName>
+                            <ID>SupportsGroupOperations</ID>
+                            <Name>SupportsGroupOperations</Name>
+                        </Field>
+                    </Fields>
+                </Column>
+            </Columns>
+        </Section>
+    </ExpanderTemplate>
+    <GridButtons />
+    <ToolbarButtons />
+</GridLayout>

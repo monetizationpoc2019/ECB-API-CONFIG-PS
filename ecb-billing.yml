@@ -1,0 +1,20 @@
+server:
+  port: ${billing-port:8091}
+
+spring:
+  cloud:
+    config:
+      allowOverride: true
+      overrideNone: true
+      overrideSystemProperties: false
+report:
+  server:
+    serverName: Devjasper01.1ftoe2kk1que3fbsk5p4vfairc.bx.internal.cloudapp.net
+    secure: 1
+    userName: Administrator
+    password: '{cipher}022b5ac9a59b790c2a67ae4ff43f5b5e5475d9f144813c3f6de0705fb45cc90c'
+  config:
+      virtualDirectory: Reports_ECB
+      
+logging.level.com.ericsson: INFO
+logging.level.com.ericsson.ecb: INFO

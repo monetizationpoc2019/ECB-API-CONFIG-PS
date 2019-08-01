@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<mt_config>
+  <language_code>jp</language_code>
+  <locale_space name="metratech.com/failedtransaction">
+    <locale_entry>
+      <Name>metratech.com/failedtransaction/DismissedReasonCode/ResendOriginal</Name>
+      <Value>元の取引が測定されます</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/failedtransaction/DismissedReasonCode/Test</Name>
+      <Value>テスト レコード</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/failedtransaction/DismissedReasonCode/UnableToResolve</Name>
+      <Value>解決できない</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/failedtransaction/InvestigationReasonCode/AccountResolution</Name>
+      <Value>アカウントの解決の問題</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/failedtransaction/InvestigationReasonCode/OperationsIssue</Name>
+      <Value>運用の問題</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/failedtransaction/InvestigationReasonCode/RateResolution</Name>
+      <Value>レートの解決の問題</Value>
+    </locale_entry>
+  </locale_space>
+</mt_config>

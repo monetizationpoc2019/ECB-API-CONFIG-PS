@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<mt_config>
+    <language_code>pt-br</language_code>
+    <locale_space name="metratech.com/AddCharge">
+        <locale_entry>
+            <Name>metratech.com/AddCharge</Name>
+            <Value>Cobrança adicional</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/AddCharge/ChargeDate</Name>
+            <Value>Data da cobrança</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/AddCharge/chargetype</Name>
+            <Value>Tipo de cobrança</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/addCharge/ChargeType/Other</Name>
+            <Value>Outro</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/AddCharge/CsrID</Name>
+            <Value>ID do Csr</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/AddCharge/generalledgercode</Name>
+            <Value>Código de contabilidade</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/AddCharge/internalcomment</Name>
+            <Value>Notas internas</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/AddCharge/invoicecomment</Name>
+            <Value>Comentário</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/AddCharge/issuer</Name>
+            <Value>Emissor</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/AddCharge/NameSpace</Name>
+            <Value>Espaço de nomes</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/AddCharge/otherchargetypecomment</Name>
+            <Value>Descrição da cobrança</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/AddCharge/Payer</Name>
+            <Value>Pagador</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/AddCharge/relatetopreviouscharge</Name>
+            <Value>Link para cobrança anterior</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/AddCharge/ResolveWithAccountIDFlag</Name>
+            <Value>Resolver com sinalizador de ID de conta</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/AddCharge/taxamount</Name>
+            <Value>Valores do imposto</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/AddCharge/taxtype</Name>
+            <Value>Tributável</Value>
+        </locale_entry>
+    </locale_space>
+</mt_config>

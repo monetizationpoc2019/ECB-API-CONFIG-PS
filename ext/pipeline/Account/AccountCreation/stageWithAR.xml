@@ -1,0 +1,125 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- Developers: when checking in an update of this file please also update stageWithAR.xml -->
+<xmlconfig>
+  <version ptype="INTEGER">1</version>
+  <description>
+    Stage that creates subscriber accounts, contacts or both. All the objects involved in processing this service are in a transaction and is considered as 1 atomic unit of work. Subscriber accounts are a part of the account hierarchy, can subscribe to product offerings and can be payers and recieve usage.
+
+This stage can be modified to do custom account creation or used as a model for creating a new account creation stage.</description>
+  <stage>
+    <name>AccountCreation</name>
+    <startstage ptype="BOOLEAN">YES</startstage>
+    <finalstage ptype="BOOLEAN">YES</finalstage>
+    
+    <dependencies>
+
+      <dependson>BatchUpdate</dependson>
+      <dependson>Subscriptions</dependson>
+      <dependson>UpdateAccountSubscriptions</dependson>
+
+      <dependency>
+        <processor>Audit</processor>
+        <dependson>ARExport</dependson>
+      </dependency>
+
+      <dependency>
+        <processor>ARExport</processor>
+        <dependson>SetAuditProperties</dependson>
+        <dependson>ARResolveBillable</dependson>
+        <dependson>ARModifyAccountMapping</dependson>
+      </dependency>
+   
+      <dependency>
+        <processor>ARModifyAccountMapping</processor>
+        <dependson>ARSetAccountMapping</dependson>
+      </dependency>
+
+      <dependency>
+        <processor>ARSetAccountMapping</processor>
+        <dependson>SetSubscriberID</dependson>
+      </dependency>
+
+      <dependency>
+        <processor>SetAuditProperties</processor>
+        <dependson>PopulateExtensions</dependson>
+      </dependency>
+
+      <dependency>
+        <processor>BatchUpdate</processor>
+        <dependson>Audit</dependson>
+      </dependency>
+
+      <dependency>
+        <processor>Audit</processor>
+        <dependson>SetSubscriberID</dependson>
+        <dependson>SetAuditProperties</dependson>
+      </dependency>
+
+      <dependency>
+        <processor>SetAuditProperties</processor>
+        <dependson>PopulateExtensions</dependson>
+      </dependency>
+
+      <dependency>
+        <processor>Subscriptions</processor>
+        <dependson>PopulateExtensions</dependson>
+      </dependency>
+
+      <dependency>
+        <processor>UpdateAccountSubscriptions</processor>
+        <dependson>PopulateExtensions</dependson>
+      </dependency>
+
+      <dependency>
+        <processor>PopulateExtensions</processor>
+        <dependson>AccountResolution</dependson>
+        <dependson>ApplyTemplateProperties</dependson>
+      </dependency>
+
+
+      <dependency>
+        <processor>AccountResolution</processor>
+        <dependson>UpdateAccount</dependson>
+        <dependson>AccountTableCreation</dependson>
+      </dependency>
+
+      <dependency>
+        <processor>UpdateAccount</processor>
+        <dependson>PriceListValidate</dependson>
+        <dependson>ApplyTemplateProperties</dependson>
+      </dependency>
+      
+      <dependency>
+       <processor>ApplyRoleMembership</processor>
+       <dependson>AccountTableCreation</dependson>
+      </dependency>
+
+      <dependency>
+       <processor>AccountTableCreation</processor>
+       <dependson>atl</dependson>
+      </dependency>
+
+     <dependency>
+       <processor>UpdateAccount</processor>
+       <dependson>atl</dependson>
+     </dependency>
+
+      <dependency>
+        <processor>AccountTableCreation</processor>
+        <dependson>PriceListValidate</dependson>
+        <dependson>ApplyTemplateProperties</dependson>
+      </dependency>
+
+      <dependency>
+        <processor>PriceListValidate</processor>
+        <dependson>pll</dependson>
+        <dependson>atl</dependson>
+      </dependency>
+
+      <dependency>
+        <processor>ApplyTemplateProperties</processor>
+        <dependson>atl</dependson>
+      </dependency>
+    </dependencies>
+  </stage>
+</xmlconfig>

@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<mt_config>
+  <language_code>it</language_code>
+  <locale_space name="metratech.com/ps_ach_inquiry">
+    <locale_entry>
+      <Name>metratech.com/ps_ach_inquiry</Name>
+      <Value>Richiesta stato transazione ACH</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ps_ach_inquiry/originalresult</Name>
+      <Value>Codice Autorizzazione originale</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ps_ach_inquiry/paymentservicetransactionid</Name>
+      <Value>ID transazione del fornitore del servizio di pagamento</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ps_ach_inquiry/respstring</Name>
+      <Value>Descrizione della risposta</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ps_ach_inquiry/retcode</Name>
+      <Value>Codice restituzione</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ps_ach_inquiry/status</Name>
+      <Value>Stato corrente</Value>
+    </locale_entry>
+  </locale_space>
+</mt_config>

@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<mt_config>
+  <language_code>jp</language_code>
+  <locale_space name="metratech.com/ps_ach_debit">
+    <locale_entry>
+      <Name>metratech.com/ps_ach_debit</Name>
+      <Value>ACH 引き落とし</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ps_ach_debit/bankaccounttype</Name>
+      <Value>銀行口座種別</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ps_ach_debit/csrid</Name>
+      <Value>対応窓口 ID</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ps_ach_debit/currentstatus</Name>
+      <Value>現在の状況</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ps_ach_debit/exported</Name>
+      <Value>エクスポートされたインジケーター</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ps_ach_debit/lastfourdigits</Name>
+      <Value>最後の 4 桁</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ps_ach_debit/originalaccountid</Name>
+      <Value>元のお客様 ID</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ps_ach_debit/paymentservicetransactionid</Name>
+      <Value>支払サービス プロバイダの取引 ID</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ps_ach_debit/reason</Name>
+      <Value>引き落とし理由</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ps_ach_debit/respstring</Name>
+      <Value>応答の説明</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ps_ach_debit/retcode</Name>
+      <Value>戻りコード</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ps_ach_debit/routingnumber</Name>
+      <Value>ABA/銀行ルーティング番号</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ps_ach_debit/transactionid</Name>
+      <Value>呼び出し元が指定した取引 ID</Value>
+    </locale_entry>
+  </locale_space>
+</mt_config>

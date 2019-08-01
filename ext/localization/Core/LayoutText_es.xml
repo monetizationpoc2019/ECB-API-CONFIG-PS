@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<mt_config>
+  <language_code>es</language_code>
+  <locale_space name="LayoutText">    
+    <locale_entry>
+      <Name>LayoutText/AudioConfCall/Title</Name>
+      <Value>Detalles de la conferencia</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>LayoutText/ManageNonStandardCharge/TEXT_APPROVE</Name>
+      <Value>Aprobar</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>LayoutText/ManageNonStandardCharge/TEXT_APPROVE_ALL</Name>
+      <Value>Aprobar todos</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>LayoutText/ManageNonStandardCharge/TEXT_DENY</Name>
+      <Value>Rechazar</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>LayoutText/ManageNonStandardCharge/TEXT_DENY_ALL</Name>
+      <Value>Rechazar todo(s)</Value>
+    </locale_entry>
+  </locale_space>
+</mt_config>

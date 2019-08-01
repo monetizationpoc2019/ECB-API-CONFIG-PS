@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xmlconfig>
+    <version ptype="INTEGER">1</version>
+    <description>Nonstandard Charge pipeline stage.</description>
+    <stage>
+        <name>NonStandardCharge</name>
+        <startstage ptype="BOOLEAN">No</startstage>
+        <finalstage ptype="BOOLEAN">No</finalstage>
+        <nextstage>WriteProductView</nextstage>
+        <dependencies>
+            <dependency>
+                <processor>TimestampOverride</processor>
+            </dependency>
+            <dependency>
+                <processor>AccountResolutionByName</processor>
+                <dependson>TimestampOverride</dependson>
+            </dependency>
+            <dependency>
+                <processor>AccountResolutionByID</processor>
+                <dependson>AccountResolutionByName</dependson>
+            </dependency>
+            <dependency>
+                <processor>SetCapabilityToCheck</processor>
+                <dependson>AccountResolutionByID</dependson>
+            </dependency>
+            <dependency>
+                <processor>AuthCheck</processor>
+                <dependson>SetCapabilityToCheck</dependson>
+            </dependency>
+            <dependency>
+                <processor>SetChargePVProperties</processor>
+                <dependson>AuthCheck</dependson>
+            </dependency>
+            <dependency>
+                <processor>IgnorePaymentRedirection</processor>
+                <dependson>SetChargePVProperties</dependson>
+            </dependency>
+            <dependency>
+                <processor>RoundAmount</processor>
+                <dependson>IgnorePaymentRedirection</dependson>
+            </dependency>
+            <dependency>
+                <processor>UpdateRequestStatus</processor>
+                <dependson>RoundAmount</dependson>
+            </dependency>
+            <dependency>
+                <processor>SetAuditProperties</processor>
+                <dependson>UpdateRequestStatus</dependson>
+            </dependency>
+            <dependency>
+                <processor>Audit</processor>
+                <dependson>SetAuditProperties</dependson>
+            </dependency>
+            <dependson>Audit</dependson>
+        </dependencies>
+    </stage>
+    <possiblenextstages />
+</xmlconfig>

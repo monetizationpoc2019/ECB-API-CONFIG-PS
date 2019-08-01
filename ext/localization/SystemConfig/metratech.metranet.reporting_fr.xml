@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<mt_config>
+    <language_code>fr</language_code>
+    <locale_space name="MetraTech.MetraNet.Reporting"> 
+        <locale_entry>
+            <Name>MetraTech.MetraNet.Reporting/SystemReportCapabilities/View Summary Financial Information</Name>
+            <Value>[FR]View Summary Financial Information</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>MetraTech.MetraNet.Reporting/ReportType/Accounting</Name>
+            <Value>Comptabilité</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>MetraTech.MetraNet.Reporting/ReportType/Basic</Name>
+            <Value>De base</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>MetraTech.MetraNet.Reporting/ReportType/BillingGroupStatistics</Name>
+            <Value>Facturation Statistiques Groupe</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>MetraTech.MetraNet.Reporting/ReportType/Configured</Name>
+            <Value>Configuré</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>MetraTech.MetraNet.Reporting/ReportType/Custom</Name>
+            <Value>Personnalisé</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>MetraTech.MetraNet.Reporting/ReportType/IntervalStatistics</Name>
+            <Value>Statistiques d'intervalle</Value>
+        </locale_entry>
+    </locale_space>
+</mt_config>

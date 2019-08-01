@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<mt_config>
+  <language_code>pt-br</language_code>
+  <locale_space name="metratech.com/audit">
+    <locale_entry>
+      <Name>metratech.com/audit</Name>
+      <Value>Log da auditoria</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/audit/CsrID</Name>
+      <Value>ID do Csr</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/audit/description</Name>
+      <Value>Descrição</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/audit/enmApplicationID/MAM</Name>
+      <Value>MAM</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/audit/enmApplicationID/MPS</Name>
+      <Value>MPS</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/audit/enmApplicationID/UNKNOWN</Name>
+      <Value>DESCONHECIDO</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/audit/enmAuditOperation/Add</Name>
+      <Value>Adicionar</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/audit/enmAuditOperation/Delete</Name>
+      <Value>Excluir</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/audit/enmAuditOperation/Update</Name>
+      <Value>Atualizar</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/audit/subscriberaccountID</Name>
+      <Value>ID da conta do assinante</Value>
+    </locale_entry>
+  </locale_space>
+</mt_config>

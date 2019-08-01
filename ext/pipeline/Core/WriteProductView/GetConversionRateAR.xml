@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xmlconfig>
+    <mtconfigdata>
+        <version ptype="INTEGER">1</version>
+        <!-- First processor configuration -->
+        <processor>
+            <name>GetConversionRateAR</name>
+            <progid>MetraPipeline.MTSQLBatchQuery.1</progid>
+            <description>Retrieve currencey conversion rate.</description>
+            <condition>
+            CREATE PROCEDURE Condition
+                      @_DivisionCurrency VARCHAR 
+                      @CheckECBARInstalled VARCHAR            
+                      @_ExecutePlugin  BOOLEAN OUTPUT
+                    as
+                      SET @_ExecutePlugin = NOT((@_DivisionCurrency is null) OR NOT(CAST(CheckECBARInstalled AS BOOLEAN)))
+                              </condition>
+            <!-- Processor specific configuration data -->
+            <configdata>
+                <Program>create procedure GetConversionRateAR
+	                        @_Timestamp DATETIME 
+	                        @_Currency VARCHAR 
+	                        @_DivisionCurrency VARCHAR
+	                        @CurrencyConversionRate DECIMAL OUTPUT
+AS
+	      select c_ExchangeRates into @CurrencyConversionRate from
+       t_pt_currencyexchangerates
+       where
+       c_SourceCurrency = (SELECT id_enum_data FROM t_enum_data WHERE UPPER(nm_enum_data) = CAST(CONCAT('GLOBAL/SYSTEMCURRENCIES/SYSTEMCURRENCIES/', @_Currency) AS VARCHAR(100)))
+       and
+       c_TargetCurrency = (SELECT id_enum_data FROM t_enum_data WHERE UPPER(nm_enum_data) = CAST(CONCAT('GLOBAL/SYSTEMCURRENCIES/SYSTEMCURRENCIES/', @_DivisionCurrency) AS VARCHAR(100)))
+       and
+       @_Timestamp between tt_start and tt_end;</Program>
+                <TempTable>tmp_getconversionrateAR</TempTable>
+            </configdata>
+        </processor>
+    </mtconfigdata>
+</xmlconfig>

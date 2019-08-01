@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<mt_config>
+  <language_code>de</language_code>
+  <locale_space name="BusinessEntity/Core.BillMessages.BillMessage">
+    <locale_entry>
+      <Name>BusinessEntity/Core.BillMessages.BillMessage/MessageCode/Label</Name>
+      <Value>Message Code</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>BusinessEntity/Core.BillMessages.BillMessage/MessageFormat/Label</Name>
+      <Value>Message Format</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>BusinessEntity/Core.BillMessages.BillMessage/MessageText/Label</Name>
+      <Value>Message Text</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>BusinessEntity/Core.BillMessages.BillMessage/MessageType/Label</Name>
+      <Value>Message Type</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>BusinessEntity/Core.BillMessages.BillMessage/Language/Label</Name>
+      <Value>Language</Value>
+    </locale_entry>
+</locale_space>
+</mt_config>

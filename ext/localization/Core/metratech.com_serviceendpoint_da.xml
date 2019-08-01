@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<mt_config>
+  <language_code>da</language_code>
+  <locale_space name="metratech.com/ServiceEndpoint">
+    <locale_entry>
+      <Name>metratech.com/ServiceEndpoint/Operation/AddIDMapping</Name>
+      <Value>metratech.com/ServiceEndpoint/Operation/AddIDMapping</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ServiceEndpoint/Operation/Connect</Name>
+      <Value>metratech.com/ServiceEndpoint/Operation/Connect</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ServiceEndpoint/Operation/Create</Name>
+      <Value>metratech.com/ServiceEndpoint/Operation/Create</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ServiceEndpoint/Operation/CreateAndConnect</Name>
+      <Value>metratech.com/ServiceEndpoint/Operation/CreateAndConnect</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ServiceEndpoint/Operation/Disconnect</Name>
+      <Value>metratech.com/ServiceEndpoint/Operation/Disconnect</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ServiceEndpoint/Operation/DisconnectAndEnd</Name>
+      <Value>metratech.com/ServiceEndpoint/Operation/DisconnectAndEnd</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ServiceEndpoint/Operation/Move</Name>
+      <Value>metratech.com/ServiceEndpoint/Operation/Move</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ServiceEndpoint/Operation/RemoveIDMapping</Name>
+      <Value>metratech.com/ServiceEndpoint/Operation/RemoveIDMapping</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ServiceEndpoint/Operation/UpdateEffectiveDate</Name>
+      <Value>metratech.com/ServiceEndpoint/Operation/UpdateEffectiveDate</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ServiceEndpoint/Operation/UpdateExtendedProperties</Name>
+      <Value>metratech.com/ServiceEndpoint/Operation/UpdateExtendedProperties</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ServiceEndpoint/Operation/UpdateIDMapping</Name>
+      <Value>metratech.com/ServiceEndpoint/Operation/UpdateIDMapping</Value>
+    </locale_entry>
+  </locale_space>
+</mt_config>

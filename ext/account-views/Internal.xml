@@ -1,0 +1,277 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<defineservice>
+    <name>metratech.com/Internal</name>
+    <description>Internal account information.</description>
+    <ptype>
+        <dn>TaxExempt</dn>
+        <type>boolean</type>
+        <length />
+        <required>N</required>
+        <defaultvalue />
+        <description>Tax exempt flag.</description>
+    </ptype>
+    <ptype>
+        <dn>TaxExemptID</dn>
+        <type>string</type>
+        <length>255</length>
+        <required>N</required>
+        <defaultvalue />
+        <description>Tax exempt ID.</description>
+    </ptype>
+    <ptype>
+        <dn>TimezoneID</dn>
+        <type EnumSpace="Global" EnumType="TimeZoneID">enum</type>
+        <length />
+        <required>N</required>
+        <defaultvalue />
+        <description>Time zone ID.</description>
+    </ptype>
+    <ptype>
+        <dn>PaymentMethod</dn>
+        <type EnumSpace="metratech.com/accountcreation" EnumType="PaymentMethod">enum</type>
+        <length />
+        <required>N</required>
+        <defaultvalue />
+        <description>Payment method.</description>
+    </ptype>
+    <ptype>
+        <dn>SecurityQuestion</dn>
+        <type EnumSpace="metratech.com/accountcreation" EnumType="SecurityQuestion">enum</type>
+        <length />
+        <required>N</required>
+        <defaultvalue />
+        <description>Security question.</description>
+    </ptype>
+    <ptype>
+        <dn>SecurityQuestionText</dn>
+        <type>string</type>
+        <length>255</length>
+        <required>N</required>
+        <defaultvalue />
+        <description>User defined security question.</description>
+    </ptype>
+    <ptype>
+        <dn>SecurityAnswer</dn>
+        <type>string</type>
+        <length>255</length>
+        <required>N</required>
+        <defaultvalue />
+        <description>Answer to security question.</description>
+    </ptype>
+    <ptype>
+        <dn>InvoiceMethod</dn>
+        <type EnumSpace="metratech.com/accountcreation" EnumType="InvoiceMethod">enum</type>
+        <length />
+        <required>N</required>
+        <defaultvalue />
+        <description>Invoice method.</description>
+    </ptype>
+    <ptype>
+        <dn>UsageCycleType</dn>
+        <type EnumSpace="metratech.com/billingcycle" EnumType="UsageCycleType">enum</type>
+        <length />
+        <required>N</required>
+        <defaultvalue />
+        <description>Usage cycle type.</description>
+    </ptype>
+    <ptype>
+        <dn>Language</dn>
+        <type EnumSpace="Global" EnumType="LanguageCode">enum</type>
+        <length />
+        <required>N</required>
+        <defaultvalue />
+        <description>Language.</description>
+    </ptype>
+    <ptype>
+        <dn>StatusReason</dn>
+        <type EnumSpace="metratech.com/accountcreation" EnumType="StatusReason">enum</type>
+        <length />
+        <required>N</required>
+        <defaultvalue />
+        <description>Status reason.</description>
+    </ptype>
+    <ptype>
+        <dn>StatusReasonOther</dn>
+        <type>string</type>
+        <length>255</length>
+        <required>N</required>
+        <defaultvalue>None</defaultvalue>
+        <description>Status reason text (if Status reason is Other.)</description>
+    </ptype>
+    <ptype>
+        <dn>Currency</dn>
+        <type>string</type>
+        <length>10</length>
+        <required>N</required>
+        <defaultvalue>USD</defaultvalue>
+        <description>Currency.</description>
+    </ptype>
+    <ptype reference="t_pricelist" ref_column="id_pricelist" index="single">
+        <dn>PriceList</dn>
+        <type>int32</type>
+        <length />
+        <required>N</required>
+        <defaultvalue />
+        <description>Default account price list.</description>
+    </ptype>
+    <ptype>
+        <dn>Billable</dn>
+        <type>boolean</type>
+        <length />
+        <required>N</required>
+        <defaultvalue>T</defaultvalue>
+        <description>Billable flag</description>
+    </ptype>
+    <ptype>
+        <dn>Folder</dn>
+        <type>boolean</type>
+        <length />
+        <required>N</required>
+        <defaultvalue>F</defaultvalue>
+        <description>Account is a folder (deprecated.)</description>
+    </ptype>
+    <ptype>
+        <dn>Division</dn>
+        <type>string</type>
+        <length>255</length>
+        <required>N</required>
+        <defaultvalue />
+        <description>This is name of the division to which the account is associated</description>
+    </ptype>
+    <ptype>
+        <dn>TaxVendor</dn>
+        <type EnumSpace="metratech.com/tax" EnumType="TaxVendor">enum</type>
+        <length />
+        <required>N</required>
+        <defaultvalue />
+        <description>The tax vendor to use for tax calculations.</description>
+    </ptype>
+    <ptype>
+        <dn>MetraTaxCountryEligibility</dn>
+        <type EnumSpace="Global" EnumType="CountryName">enum</type>
+        <length />
+        <required>N</required>
+        <defaultvalue />
+        <description>If using MetraTax, the country to use in tax calculations for the caccount.</description>
+    </ptype>
+    <ptype>
+        <dn>MetraTaxCountryZone</dn>
+        <type EnumSpace="metratech.com/tax" EnumType="TaxZone">enum</type>
+        <length />
+        <required>N</required>
+        <defaultvalue />
+        <description>If using MetraTax, the special geographic zone associated with the account the can have a special tax rate.</description>
+    </ptype>
+    <ptype>
+        <dn>MetraTaxHasOverrideBand</dn>
+        <type>boolean</type>
+        <length />
+        <required>N</required>
+        <defaultvalue />
+        <description>True if using MetraTax and the account has a tax override band that may be used.</description>
+    </ptype>
+    <ptype>
+        <dn>MetraTaxOverrideBand</dn>
+        <type EnumSpace="metratech.com/tax" EnumType="TaxBand">enum</type>
+        <length />
+        <required>N</required>
+        <defaultvalue />
+        <description>If using MetraTax, the override tax band associated with the account.</description>
+    </ptype>
+    <ptype>
+        <dn>TaxServiceAddressPCode</dn>
+        <type>int32</type>
+        <length />
+        <required>N</required>
+        <defaultvalue />
+        <description>For some tax vendors the tax calculation requires a permanent  code that pinpoints the geographic location of the account.</description>
+    </ptype>
+    <ptype>
+        <dn>TaxExemptReason</dn>
+        <type EnumSpace="metratech.com/tax" EnumType="TaxExemptReason">enum</type>
+        <length />
+        <required>N</required>
+        <defaultvalue />
+        <description>Typically used for MetraTax to indicate reason, if any, for tax exemption. This field is information only and does not influence tax calculation.</description>
+    </ptype>
+    <ptype>
+        <dn>TaxExemptStartDate</dn>
+        <type>timestamp</type>
+        <length />
+        <required>N</required>
+        <defaultvalue />
+        <description>Typically used for MetraTax to indicate start date for tax exemption.  This field is information only and does not influence tax calculation.</description>
+    </ptype>
+    <ptype>
+        <dn>TaxExemptEndDate</dn>
+        <type>timestamp</type>
+        <length />
+        <required>N</required>
+        <defaultvalue />
+        <description>Typically used for MetraTax to indicate end date for tax exemption.  This field is information only and does not influence tax calculation.</description>
+    </ptype>
+    <ptype>
+        <dn>TaxRegistryReference</dn>
+        <type>string</type>
+        <length>255</length>
+        <required>N</required>
+        <defaultvalue />
+        <description>Typically used for MetraTax to store the VAT registration number.  This field is information only and does not influence tax calculation.</description>
+    </ptype>
+    <ptype>
+        <dn>UseStdImpliedTaxAlg</dn>
+        <type>boolean</type>
+        <length />
+        <required>N</required>
+        <defaultvalue>F</defaultvalue>
+        <description>Tells the calculate tax adapters which algorithm to use when calculating the tax amount for tax inclusive amounts. If set to True, then the standard implied tax algorithm is tax=amount - amount/(1.0+rate). If set to False, the alternate implied tax algorithm is tax=amount*rate.</description>
+    </ptype>
+    <ptype>
+        <dn>RecurringChargeAlignmentDate</dn>
+        <type>timestamp</type>
+        <length />
+        <required>N</required>
+        <defaultvalue />
+        <description>Recurring Charge Alignment Date</description>
+    </ptype>
+    <ptype>
+        <dn>PaymentTerms</dn>
+        <type>int32</type>
+        <length />
+        <required>N</required>
+        <defaultvalue>30</defaultvalue>
+        <description>Payment Terms on Account</description>
+    </ptype>
+    <ptype>
+        <dn>CollectorRep</dn>
+        <type>int64</type>
+        <length />
+        <required>N</required>
+        <defaultvalue />
+        <description>CSR Collector Id</description>
+    </ptype>
+    <ptype>
+        <dn>DaysLate</dn>
+        <type>int32</type>
+        <length />
+        <required>N</required>
+        <defaultvalue />
+        <description>Number of days late</description>
+    </ptype>
+    <ptype>
+        <dn>PercentageFee</dn>
+        <type>decimal</type>
+        <length />
+        <required>N</required>
+        <defaultvalue />
+        <description>Percentage of the fee</description>
+    </ptype>
+    <ptype>
+        <dn>AnonymizedDate</dn>
+        <type>timestamp</type>
+        <length />
+        <required>N</required>
+        <defaultvalue />
+        <description>Account Anonymized Date</description>
+    </ptype>
+</defineservice>

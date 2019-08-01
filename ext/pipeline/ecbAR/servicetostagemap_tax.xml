@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xmlconfig>
+  <direction>
+    <ServiceID ptype="ID">metratech.com/LateFee</ServiceID>
+    <stage>LateFee</stage>
+  </direction>
+</xmlconfig>

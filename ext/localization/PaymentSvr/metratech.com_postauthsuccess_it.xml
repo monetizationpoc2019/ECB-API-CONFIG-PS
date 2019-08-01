@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<mt_config>
+  <language_code>it</language_code>
+  <locale_space name="metratech.com/postauthsuccess">
+    <locale_entry>
+      <Name>metratech.com/postauthsuccess</Name>
+      <Value>Post-autorizzazione riuscita</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/postauthsuccess/authcode</Name>
+      <Value>Codice di autorizzazione</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/postauthsuccess/creditcardtype</Name>
+      <Value>Tipo di carta di credito</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/postauthsuccess/csrid</Name>
+      <Value>ID RSC</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/postauthsuccess/lastfourdigits</Name>
+      <Value>Ultime quattro cifre</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/postauthsuccess/originalaccountid</Name>
+      <Value>ID conto originale</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/postauthsuccess/originalid</Name>
+      <Value>ID originale</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/postauthsuccess/paymentservicetransactionid</Name>
+      <Value>ID transazione del servizio di pagamento</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/postauthsuccess/reason</Name>
+      <Value>Motivo errore</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/postauthsuccess/respstring</Name>
+      <Value>Stringa di risposta</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/postauthsuccess/terminalid</Name>
+      <Value>ID terminale</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/postauthsuccess/transactionid</Name>
+      <Value>ID transazione</Value>
+    </locale_entry>
+  </locale_space>
+</mt_config>

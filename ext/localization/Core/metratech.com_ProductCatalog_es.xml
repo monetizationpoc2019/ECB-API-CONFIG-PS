@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<mt_config>
+  <language_code>es</language_code>
+  <locale_space name="metratech.com/ProductCatalog">
+    <locale_entry>
+      <Name>metratech.com/ProductCatalog/PriceAbleItem</Name>
+      <Value>Artículo para el que se puede fijar un precio</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ProductCatalog/ProductOffering</Name>
+      <Value>Oferta de producto</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ProductCatalog/Test</Name>
+      <Value>Prueba a Fred</Value>
+    </locale_entry>
+  </locale_space>
+</mt_config>

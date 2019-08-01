@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<mt_config>
+  <language_code>es</language_code>
+  <locale_space name="BusinessEntity/Core.UI.UserProfile">
+    <locale_entry>
+      <Name>BusinessEntity/Core.UI.UserProfile/Timezone/Label</Name>
+      <Value>Zona horaria</Value>
+    </locale_entry>
+  </locale_space>
+</mt_config>

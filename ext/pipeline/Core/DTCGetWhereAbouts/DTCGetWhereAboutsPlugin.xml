@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xmlconfig>
+  <mtsysconfigdata>
+    <effective_date ptype="DATETIME">2000-1-19T00:00:00Z</effective_date>
+    <timeout ptype="INTEGER">30</timeout>
+    <configfiletype>CONFIG_DATA</configfiletype>
+  </mtsysconfigdata>
+
+  <mtconfigdata>
+
+ <version ptype="INTEGER">1</version>
+ <!-- First processor configuration -->
+ <processor>
+  <name>DTCGetWhereAboutsPlugin</name>
+  <progid>MetraPipeline.DTCGetWhereAboutsPlugin.1</progid><description>Sets the DTC Where Abouts cookie into 'WhereAboutsCookie'</description>
+
+<!--
+  <autotest>
+    <file>DTCGetWhereAboutsPluginTest.xml</file>
+  </autotest>
+ -->
+<!--
+  <inputs>
+  </inputs>
+
+  <outputs>
+  </outputs>
+-->  
+  <configdata>
+
+    <WhereAboutsCookie>WhereAboutsCookie</WhereAboutsCookie>
+  
+  </configdata>
+
+ </processor>
+
+  </mtconfigdata>
+
+</xmlconfig>

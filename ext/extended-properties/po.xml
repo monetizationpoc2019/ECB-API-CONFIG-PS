@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<defineservice>
+  <name kind="100">po</name>
+    <description>A product offering is a subscribable grouping of priceable items. This allows for a property set to the Product Offering.</description>
+  <ptype display_name="GL Code">
+    <dn>glcode</dn>
+    <type>string</type>
+    <length>100</length>
+    <required>N</required>
+    <defaultvalue>
+    </defaultvalue>
+    <description>Sample GL Code field</description>
+  </ptype>
+  <ptype display_name="Internal Information URL">
+    <dn>InternalInformationURL</dn>
+    <type>string</type>
+    <length>255</length>
+    <required>N</required>
+    <defaultvalue>
+    </defaultvalue>
+    <description>Sample field to store a url/link to more information regarding this item (internal)</description>
+  </ptype>
+  <ptype display_name="External Information URL">
+    <dn>ExternalInformationURL</dn>
+    <type>string</type>
+    <length>255</length>
+    <required>N</required>
+    <defaultvalue>
+    </defaultvalue>
+    <description>Sample field to store a url/link to more information regarding this item (external)</description>
+  </ptype>
+</defineservice>

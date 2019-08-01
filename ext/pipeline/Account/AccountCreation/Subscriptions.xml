@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xmlconfig>
+
+  <mtsysconfigdata>
+    <effective_date ptype="DATETIME">1998-11-19T00:00:00Z</effective_date>
+    <timeout ptype="INTEGER">30</timeout>
+    <configfiletype>CONFIG_DATA</configfiletype>
+  </mtsysconfigdata>
+
+  <mtconfigdata>
+    <version ptype="INTEGER">1</version>
+
+    <processor>
+      <name>Subscriptions</name>
+      <progid>MetraPipeline.Subscription.1</progid>
+      <description>Used for subscribing newly created accounts (ADD only) to any
+        subscriptions that they might inherit from a template specified by
+        thier nearest ancestor, if such a template exists.
+
+        In order for a session to be processed by this plug-in the
+        following session variables must be set as indicated:
+
+          AccountType must allow the account to be subscribable ... i.e b_cansubscribe be true.
+          ActionType must be set to either ACCOUNT or BOTH.
+          ApplyAccountTemplate must be set to TRUE.
+          Operation must be set to ADD.
+
+        Otherwise the session will be ignored by this plug-in.
+
+        AccountID, AncestorAccountID and CorporateAccountID must all be set
+        in the session.  AccountEndDate and AccountStartDate are optional
+        and default values will be used if they are not set in the session.</description><condition>
+      
+                CREATE PROCEDURE condition @_ExecutePlugin BOOLEAN OUTPUT,
+                                          @Operation ENUM -- $ICE:('metratech.com','Operation')$,
+                                          @b_cansubscribe BOOLEAN,
+                                          @ApplyAccountTemplate BOOLEAN,
+                                          @ActionType ENUM -- $ICE:('metratech.com/accountcreation','ActionType')$,
+                                          @b_CanParticipateInGSub BOOLEAN
+                AS
+                IF
+                 (
+                    ((@b_cansubscribe = TRUE) OR (@b_CanParticipateInGSub = TRUE))
+                    AND
+                   	(@ApplyAccountTemplate = TRUE) 
+                   	AND
+				            ((upper(CAST(@ActionType AS VARCHAR)) = 'ACCOUNT') OR (upper(CAST(@ActionType AS VARCHAR)) = 'BOTH'))
+				            AND
+				            (@Operation = #metratech.com/Operation/Add#)
+					       )
+					
+					
+                    SET @_ExecutePlugin = TRUE
+                  
+                 ELSE
+                    SET @_ExecutePlugin = FALSE
+                  
+      
+      
+      </condition>
+
+      
+
+      <configdata>
+        <UseBCPFlag ptype="BOOLEAN">TRUE</UseBCPFlag>
+        <Batch_Size ptype="INTEGER">2000</Batch_Size>
+
+        <AccountID>_AccountID</AccountID>
+        <AccountEndDate>AccountEndDate</AccountEndDate>
+        <AccountStartDate>AccountStartDate</AccountStartDate>
+        <AccountType>AccountType</AccountType>
+        <ActionType>ActionType</ActionType>
+        <AncestorAccountID>AncestorAccountID</AncestorAccountID>
+        <CorporateAccountID>CorporateAccountID</CorporateAccountID>
+        <ApplyAccountTemplate>ApplyAccountTemplate</ApplyAccountTemplate>
+        <Operation>Operation</Operation>
+        <b_cansubscribe>b_cansubscribe</b_cansubscribe>
+        <b_IsCorporate>b_IsCorporate</b_IsCorporate>
+        <acc_type_id>acc_type_id</acc_type_id> 
+        <b_CanParticipateInGSub>b_CanParticipateInGSub</b_CanParticipateInGSub>    
+      </configdata>
+    </processor>
+  </mtconfigdata>
+</xmlconfig>

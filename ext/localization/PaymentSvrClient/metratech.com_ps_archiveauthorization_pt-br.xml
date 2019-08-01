@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<mt_config>
+  <language_code>pt-br</language_code>
+  <locale_space name="metratech.com/ps_archiveauthorization">
+    <locale_entry>
+      <Name>metratech.com/ps_archiveauthorization</Name>
+      <Value>Exibição Arquivar autorização de produto</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ps_archiveauthorization/bankaccounttype</Name>
+      <Value>Tipo de conta bancária</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ps_archiveauthorization/creditcardtype</Name>
+      <Value>Tipo de cartão de crédito</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ps_archiveauthorization/description</Name>
+      <Value>Descrição</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ps_archiveauthorization/effectivedate</Name>
+      <Value>Data de vigência</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ps_archiveauthorization/lastfourdigits</Name>
+      <Value>Último quatro dígitos do cartão de crédito ou número da conta bancária</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ps_archiveauthorization/originalaccountid</Name>
+      <Value>Identificador do assinante</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ps_archiveauthorization/password_</Name>
+      <Value>Senha do assinante</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ps_archiveauthorization/paymenttype</Name>
+      <Value>Tipo de pagamento</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ps_archiveauthorization/routing number</Name>
+      <Value>ABA/Número de identificação</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ps_archiveauthorization/routingnumber</Name>
+      <Value>Número de identificação</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ps_archiveauthorization/username</Name>
+      <Value>Nome de usuário do assinante</Value>
+    </locale_entry>
+  </locale_space>
+</mt_config>

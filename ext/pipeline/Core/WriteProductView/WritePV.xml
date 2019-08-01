@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xmlconfig>
+  <mtsysconfigdata>
+    <effective_date ptype="DATETIME">1998-11-20T00:00:00Z</effective_date>
+    <timeout ptype="INTEGER">30</timeout>
+    <configfiletype>CONFIG_DATA</configfiletype>
+  </mtsysconfigdata>
+
+  <mtconfigdata>
+
+ <version ptype="INTEGER">1</version>
+ <!-- Configuration to write product view data -->
+ <processor>
+  <name>WritePV</name>
+  <description>Write product view to database.</description>
+  <progid>MetraPipeline.WriteProductView.1</progid>
+
+  <!-- autotest -->
+    <!-- file>test_testservice.xml</file -->
+    <!-- <file>test_audiocallleg.xml</file> -->
+  <!-- /autotest -->
+
+<!--
+  <inputs>
+  </inputs>
+
+  <outputs>
+  </outputs>
+-->
+
+      <condition>
+        
+            -- User may set _WPVDrop to TRUE to skip writing a UDR to the database.
+            CREATE PROCEDURE condition  @_ExecutePlugin BOOLEAN OUTPUT 
+                                        @_WPVDrop BOOLEAN
+	          AS
+                  SET @_ExecutePlugin = CASE WHEN @_WPVDrop IS NULL THEN TRUE ELSE NOT @_WPVDrop END
+	        
+      </condition>
+
+  <!-- Processor specific configuration data -->
+  <configdata>
+     <usebcpflag ptype="BOOLEAN">TRUE</usebcpflag>
+     <stagedatabase>NetMeterStage</stagedatabase>
+  </configdata>
+
+ </processor>
+
+ </mtconfigdata>
+</xmlconfig>

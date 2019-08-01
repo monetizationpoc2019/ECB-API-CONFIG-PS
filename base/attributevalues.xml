@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mt_config>
+	<!-- Starting with 6.0.5, the only supported attribute will be "overrideable". 
+		PCWS will not recognize other attribute types -->
+
+	<!-- usage charge -->
+
+	<attribute_value pcentitytype="10">
+		<property>Name</property>
+		<attribute>overrideable</attribute>
+		<value>true</value>
+	</attribute_value>
+
+	<attribute_value pcentitytype="10">
+		<property>DisplayName</property>
+		<attribute>overrideable</attribute>
+		<value>true</value>
+	</attribute_value>
+
+	<attribute_value pcentitytype="10">
+		<property>DisplayNames</property>
+		<attribute>overrideable</attribute>
+		<value>true</value>
+	</attribute_value>
+
+	<attribute_value pcentitytype="10">
+		<property>Description</property>
+		<attribute>overrideable</attribute>
+		<value>false</value>
+	</attribute_value>
+
+	<attribute_value pcentitytype="10">
+		<property>glcode</property>
+		<attribute>overrideable</attribute>
+		<value>true</value>
+	</attribute_value>
+
+	<attribute_value pcentitytype="10">
+		<property>IsLiabilityProduct</property>
+		<attribute>overrideable</attribute>
+		<value>true</value>
+	</attribute_value>
+
+	<attribute_value pcentitytype="10">
+		<property>RevenueCode</property>
+		<attribute>overrideable</attribute>
+		<value>true</value>
+	</attribute_value>
+
+	<attribute_value pcentitytype="10">
+		<property>DeferredRevenueCode</property>
+		<attribute>overrideable</attribute>
+		<value>false</value>
+	</attribute_value>
+
+	<!-- aggregate charge -->
+
+	<attribute_value pcentitytype="15">
+		<property>Name</property>
+		<attribute>overrideable</attribute>
+		<value>true</value>
+	</attribute_value>
+
+	<attribute_value pcentitytype="15">
+		<property>DisplayName</property>
+		<attribute>overrideable</attribute>
+		<value>true</value>
+	</attribute_value>
+
+	<attribute_value pcentitytype="15">
+		<property>DisplayNames</property>
+		<attribute>overrideable</attribute>
+		<value>true</value>
+	</attribute_value>
+
+	<attribute_value pcentitytype="15">
+		<property>Description</property>
+		<attribute>overrideable</attribute>
+		<value>true</value>
+	</attribute_value>
+
+	<attribute_value pcentitytype="15">
+		<property>Cycle</property>
+		<attribute>overrideable</attribute>
+		<value>true</value>
+	</attribute_value>
+
+	<attribute_value pcentitytype="15">
+		<property>glcode</property>
+		<attribute>overrideable</attribute>
+		<value>true</value>
+	</attribute_value>
+
+	<attribute_value pcentitytype="15">
+		<property>IsLiabilityProduct</property>
+		<attribute>overrideable</attribute>
+		<value>true</value>
+	</attribute_value>
+
+	<attribute_value pcentitytype="15">
+		<property>RevenueCode</property>
+		<attribute>overrideable</attribute>
+		<value>true</value>
+	</attribute_value>
+
+	<attribute_value pcentitytype="15">
+		<property>DeferredRevenueCode</property>
+		<attribute>overrideable</attribute>
+		<value>true</value>
+	</attribute_value>
+	<!-- recurring charge -->
+
+	<attribute_value pcentitytype="20">
+		<property>Name</property>
+		<attribute>overrideable</attribute>
+		<value>true</value>
+	</attribute_value>
+
+	<attribute_value pcentitytype="20">
+		<property>DisplayName</property>
+		<attribute>overrideable</attribute>
+		<value>true</value>
+	</attribute_value>
+
+	<attribute_value pcentitytype="20">
+		<property>DisplayNames</property>
+		<attribute>overrideable</attribute>
+		<value>true</value>
+	</attribute_value>
+
+	<attribute_value pcentitytype="20">
+		<property>Description</property>
+		<attribute>overrideable</attribute>
+		<value>true</value>
+	</attribute_value>
+
+	<attribute_value pcentitytype="20">
+		<property>glcode</property>
+		<attribute>overrideable</attribute>
+		<value>true</value>
+	</attribute_value>
+
+	<attribute_value pcentitytype="20">
+		<property>IsLiabilityProduct</property>
+		<attribute>overrideable</attribute>
+		<value>true</value>
+	</attribute_value>
+
+	<attribute_value pcentitytype="20">
+		<property>RevenueCode</property>
+		<attribute>overrideable</attribute>
+		<value>true</value>
+	</attribute_value>
+
+	<attribute_value pcentitytype="20">
+		<property>DeferredRevenueCode</property>
+		<attribute>overrideable</attribute>
+		<value>true</value>
+	</attribute_value>
+
+	<!-- Unit Dependent recurring charge -->
+
+	<attribute_value pcentitytype="25">
+		<property>Name</property>
+		<attribute>overrideable</attribute>
+		<value>true</value>
+	</attribute_value>
+
+	<attribute_value pcentitytype="25">
+		<property>DisplayName</property>
+		<attribute>overrideable</attribute>
+		<value>true</value>
+	</attribute_value>
+
+	<attribute_value pcentitytype="25">
+		<property>DisplayNames</property>
+		<attribute>overrideable</attribute>
+		<value>true</value>
+	</attribute_value>
+
+	<attribute_value pcentitytype="25">
+		<property>Description</property>
+		<attribute>overrideable</attribute>
+		<value>true</value>
+	</attribute_value>
+
+	<attribute_value pcentitytype="25">
+		<property>glcode</property>
+		<attribute>overrideable</attribute>
+		<value>true</value>
+	</attribute_value>
+
+	<attribute_value pcentitytype="25">
+		<property>IsLiabilityProduct</property>
+		<attribute>overrideable</attribute>
+		<value>false</value>
+	</attribute_value>
+
+	<attribute_value pcentitytype="25">
+		<property>RevenueCode</property>
+		<attribute>overrideable</attribute>
+		<value>true</value>
+	</attribute_value>
+
+	<attribute_value pcentitytype="25">
+		<property>DeferredRevenueCode</property>
+		<attribute>overrideable</attribute>
+		<value>true</value>
+	</attribute_value>
+
+	<!-- non-recurring charge -->
+
+	<attribute_value pcentitytype="30">
+		<property>Name</property>
+		<attribute>overrideable</attribute>
+		<value>true</value>
+	</attribute_value>
+
+	<attribute_value pcentitytype="30">
+		<property>DisplayName</property>
+		<attribute>overrideable</attribute>
+		<value>true</value>
+	</attribute_value>
+
+	<attribute_value pcentitytype="30">
+		<property>DisplayNames</property>
+		<attribute>overrideable</attribute>
+		<value>true</value>
+	</attribute_value>
+
+	<attribute_value pcentitytype="30">
+		<property>Description</property>
+		<attribute>overrideable</attribute>
+		<value>true</value>
+	</attribute_value>
+
+	<attribute_value pcentitytype="30">
+		<property>glcode</property>
+		<attribute>overrideable</attribute>
+		<value>true</value>
+	</attribute_value>
+
+	<attribute_value pcentitytype="30">
+		<property>IsLiabilityProduct</property>
+		<attribute>overrideable</attribute>
+		<value>true</value>
+	</attribute_value>
+
+	<attribute_value pcentitytype="30">
+		<property>RevenueCode</property>
+		<attribute>overrideable</attribute>
+		<value>false</value>
+	</attribute_value>
+
+	<attribute_value pcentitytype="30">
+		<property>DeferredRevenueCode</property>
+		<attribute>overrideable</attribute>
+		<value>false</value>
+	</attribute_value>
+
+
+	<!-- discount -->
+
+	<attribute_value pcentitytype="40">
+		<property>Name</property>
+		<attribute>overrideable</attribute>
+		<value>true</value>
+	</attribute_value>
+
+	<attribute_value pcentitytype="40">
+		<property>DisplayName</property>
+		<attribute>overrideable</attribute>
+		<value>true</value>
+	</attribute_value>
+
+	<attribute_value pcentitytype="40">
+		<property>DisplayNames</property>
+		<attribute>overrideable</attribute>
+		<value>true</value>
+	</attribute_value>
+
+	<attribute_value pcentitytype="40">
+		<property>Description</property>
+		<attribute>overrideable</attribute>
+		<value>true</value>
+	</attribute_value>
+	<attribute_value pcentitytype="40">
+		<property>glcode</property>
+		<attribute>overrideable</attribute>
+		<value>true</value>
+	</attribute_value>
+
+	<attribute_value pcentitytype="40">
+		<property>IsLiabilityProduct</property>
+		<attribute>overrideable</attribute>
+		<value>true</value>
+	</attribute_value>
+
+	<attribute_value pcentitytype="40">
+		<property>RevenueCode</property>
+		<attribute>overrideable</attribute>
+		<value>false</value>
+	</attribute_value>
+
+	<attribute_value pcentitytype="40">
+		<property>DeferredRevenueCode</property>
+		<attribute>overrideable</attribute>
+		<value>true</value>
+	</attribute_value>
+
+</mt_config>

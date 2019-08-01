@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<mt_config>
+  <language_code>jp</language_code>
+  <locale_space name="metratech.com/ps_cc_validatecardwithoutaccount">
+    <locale_entry>
+      <Name>metratech.com/ps_cc_validatecardwithoutaccount</Name>
+      <Value>ps_cc_validate アカウントなしのクレジット カード</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ps_cc_validatecardwithoutaccount/address</Name>
+      <Value>番地</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ps_cc_validatecardwithoutaccount/city</Name>
+      <Value>市町村</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ps_cc_validatecardwithoutaccount/country</Name>
+      <Value>国</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ps_cc_validatecardwithoutaccount/creditcardtype</Name>
+      <Value>クレジット カード種別</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ps_cc_validatecardwithoutaccount/customername</Name>
+      <Value>お客様のお名前</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ps_cc_validatecardwithoutaccount/paymentservicetransactionid</Name>
+      <Value>支払サービスの取引 ID</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ps_cc_validatecardwithoutaccount/respstring</Name>
+      <Value>応答文字列</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ps_cc_validatecardwithoutaccount/retcode</Name>
+      <Value>戻りコード</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ps_cc_validatecardwithoutaccount/state</Name>
+      <Value>都道府県</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ps_cc_validatecardwithoutaccount/terminalid</Name>
+      <Value>端末 ID</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ps_cc_validatecardwithoutaccount/zip</Name>
+      <Value>郵便番号</Value>
+    </locale_entry>
+  </locale_space>
+</mt_config>

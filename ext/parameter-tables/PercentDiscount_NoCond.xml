@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<defineservice>
+  <name help_url="" condition_header="Conditions" action_header="Actions" display_name="Discount Rates (Percent Unconditional)" type="Rates">metratech.com/PercentDiscount_NoCond</name>
+  <description>Stores the single, fixed discount percentage.</description>
+  <!-- actions -->
+  <ptype display_name="Discount Percent" action="Y">
+    <dn>DiscountPercent</dn>
+    <type>decimal</type>
+    <length>
+    </length>
+    <required>Y</required>
+    <defaultvalue>
+    </defaultvalue>
+    <description>The discount percentage.</description>
+  </ptype>
+</defineservice>

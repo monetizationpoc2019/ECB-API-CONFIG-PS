@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xmlconfig>
+    <mtsysconfigdata>
+        <effective_date ptype="DATETIME">1998-11-19T00:00:00Z</effective_date>
+        <timeout ptype="INTEGER">30</timeout>
+        <configfiletype>CONFIG_DATA</configfiletype>
+    </mtsysconfigdata>
+    <mtconfigdata>
+        <version ptype="INTEGER">1</version>
+        <!-- First processor configuration -->
+        <processor>
+            <name>AuthCheck</name>
+            <progid>MTPipeline.MTAuthCheck.1</progid><description>Perform the authorization check to verify the user is allowed to issue credits and credits of this amount (uses values set by SetCapabilityToCheck plugin).</description>
+            <!--
+  <inputs>
+  </inputs>
+
+  <outputs>
+  </outputs>
+-->
+            <!-- Processor specific configuration data -->
+            <configdata>
+                <!-- Set the property _AuthFailed to be false -->
+                <on_failure>
+                    <action>SetProp</action>
+                    <prop_name>_AuthFailure</prop_name>
+                </on_failure>
+            </configdata>
+        </processor>
+    </mtconfigdata>
+</xmlconfig>

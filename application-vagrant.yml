@@ -1,0 +1,50 @@
+server:
+  ssl:
+    key-store: "${KEYSTORE_FILE}"
+    key-store-assword: "${KEYSTORE_PWD}"
+    key-password: "${KEYSTORE_PWD}"
+    keyAlias: "${KEY_ALIAS}"
+    trustStoreType: JKS
+    
+eureka:
+  client:
+    healthcheck:
+      enabled: true
+    registerWithEureka: true
+    serviceUrl:
+      defaultZone: https://registry:8078/eureka/
+    sslTrust:
+      keyStore: "${KEYSTORE_FILE}"
+      keyStorePassword: "${KEYSTORE_PWD}"
+  instance:
+    securePortEnabled: true
+    homePageUrl: /swagger-ui.html
+    statusPageUrlPath: /swagger-ui.html
+    statusPageUrl: "https://${DOCKER_HOST}:${HOST_PORT0}/swagger-ui.html"
+    hostname: "${DOCKER_HOST}"
+    securePort: "${HOST_PORT0}"
+    metadataMap.instanceId: "${spring.application.name}:${DOCKER_HOST}:${HOST_PORT0}"
+    
+feign.hystrix.enabled: false
+hystrix:
+  stream:
+    queue:
+      enabled: false
+      
+spring:
+  datasource:
+    dataSourceProperties:
+      serverName: saltelematics.metratech.com
+  cloud:
+    stream:
+      kafka:
+        binder:
+   #       zkNodes: "192.168.50.4,${ZK_NODES}"
+   #       brokers: "192.168.50.4:9092,kafka:9092,${HOST_IP_ADDRESS}:9092"
+      
+logging.level.com.ericsson: DEBUG
+logging.level.com.ericsson.ecb: DEBUG
+logging.level.org.springframework: DEBUG
+logging.level.org.eclipse.jetty: DEBUG
+logging.level.org.eclipse.jetty.util: DEBUG
+

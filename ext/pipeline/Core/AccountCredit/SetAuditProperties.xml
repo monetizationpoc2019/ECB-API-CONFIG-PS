@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xmlconfig>
+  <mtsysconfigdata>
+    <effective_date ptype="DATETIME">1998-11-19T00:00:00Z</effective_date>
+    <timeout ptype="INTEGER">30</timeout>
+    <configfiletype>CONFIG_DATA</configfiletype>
+  </mtsysconfigdata>
+
+  <mtconfigdata>
+
+ <version ptype="INTEGER">1</version>
+ <!-- First processor configuration -->
+ <processor>
+  <name>SetAuditProperties</name>
+  <progid>MetraPipeline.MTSQLInterpreter.1</progid>
+  <description>Set up information to be audited. The audit event against the subscriber account will show the amount of the credit that was issued.</description>
+
+<!--
+  <autotest>
+    <file>ratedatetest.xml</file>
+  </autotest>
+-->
+  
+<!--
+  <inputs>
+  </inputs>
+
+  <outputs>
+  </outputs>
+-->
+
+  <!-- Processor specific configuration data -->
+  <configdata>
+
+  <Program>
+	  
+		CREATE PROCEDURE SetAuditProperties @SuccessAuditEventId 	INTEGER OUTPUT
+                                        @AuditEntityTypeId     INTEGER OUTPUT
+                                        @AuditEntityId         INTEGER OUTPUT
+                                        @AuditDetails          VARCHAR OUTPUT
+                                        @_AccountID            INTEGER
+                                        @_Amount			 				DECIMAL
+                                        @_Currency             VARCHAR
+																				@FailureAuditEventID	 INTEGER OUTPUT
+		AS
+      --PRINT 'SetAuditProperties: AuditEventId [' + CAST(@AuditEventId AS VARCHAR) + ']';
+    
+      Set @SuccessAuditEventId = 1510;
+      Set @AuditEntityTypeId = 1;
+      Set @AuditDetails = 'Amount ' + CAST(@_Amount AS VARCHAR) + ' ' + @_Currency;
+      Set @AuditEntityId = @_AccountID;
+      Set @FailureAuditEventID = 1512;
+
+      
+	  
+  </Program> 
+			
+  </configdata>
+
+ </processor>
+
+  </mtconfigdata>
+</xmlconfig>

@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xmlconfig>
+ <version ptype="INTEGER">1</version>
+ <description>Applies a flat discount.</description>
+ <stage>
+  <name>FlatDiscount</name>
+  <startstage ptype="BOOLEAN">YES</startstage>
+  <finalstage ptype="BOOLEAN">NO</finalstage>
+  <nextstage>WriteProductView</nextstage>
+
+
+  <dependencies>
+
+   <dependency>
+     <processor>GroupDiscount</processor>
+     <dependson>CalcAmount</dependson>
+   </dependency>
+
+   <dependency>
+     <processor>CalcAmount</processor>
+     <dependson>DiscountRateLookup</dependson>
+   </dependency>
+
+   <dependency>
+     <processor>DiscountRateLookup</processor>
+     <dependson>AccountResolution</dependson>
+   </dependency>
+
+   <dependency>
+      <processor>AccountResolution</processor>
+      <dependson>InitProps</dependson>
+   </dependency>
+
+  </dependencies>
+
+ </stage>
+ <possiblenextstages />
+</xmlconfig>

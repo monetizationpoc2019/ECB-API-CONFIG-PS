@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<mt_config>
+    <language_code>fr</language_code>
+    <locale_space name="nonrecurring">
+        <locale_entry>
+            <Name>nonrecurring/DeferredRevenueCode</Name>
+            <Value>Code PCA</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>nonrecurring/glcode</Name>
+            <Value>Code Compta.Générale</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>nonrecurring/IsLiabilityProduct</Name>
+            <Value>Constitue un passif</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>nonrecurring/RevenueCode</Name>
+            <Value>Code Produit</Value>
+        </locale_entry>
+    </locale_space>
+</mt_config>

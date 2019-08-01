@@ -1,0 +1,160 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<mt_enum_config>
+    <enum_spaces>
+        <enum_space name="metratech.com/accountcreation">
+            <description>Enumerated Types For Account Creation</description>
+            <enums>
+                <enum name="ActionType">
+                    <description>What do I want to create?</description>
+                    <entries>
+                        <entry name="Account">
+                            <value>0</value>
+                        </entry>
+                        <entry name="Contact">
+                            <value>1</value>
+                        </entry>
+                        <entry name="Both">
+                            <value>2</value>
+                        </entry>
+                    </entries>
+                </enum>
+                <enum name="PaymentMethod">
+                    <description>Payment method</description>
+                    <entries>
+                        <entry name="CreditOrACH">
+                            <value>1</value>
+                        </entry>
+                        <entry name="CashOrCheck">
+                            <value>2</value>
+                        </entry>
+                        <entry name="CreditCard">
+                            <value>3</value>
+                        </entry>
+                    </entries>
+                </enum>
+                <enum name="StatusReason">
+                    <description>If account is not active, what's the reason for that?</description>
+                    <entries>
+                        <entry name="PendingPaymentSetUp">
+                            <value>0</value>
+                        </entry>
+                        <entry name="PendingApproval">
+                            <value>1</value>
+                        </entry>
+                        <entry name="AccountTerminated">
+                            <value>2</value>
+                        </entry>
+                        <entry name="AccountDeactivated">
+                            <value>3</value>
+                        </entry>
+                        <entry name="Other">
+                            <value>4</value>
+                        </entry>
+                        <entry name="None">
+                            <value>5</value>
+                        </entry>
+                    </entries>
+                </enum>
+                <enum name="SecurityQuestion">
+                    <description>Security Question</description>
+                    <entries>
+                        <entry name="None">
+                            <value>0</value>
+                        </entry>
+                        <entry name="MothersMaidenName">
+                            <value>1</value>
+                        </entry>
+                        <entry name="SSN">
+                            <value>2</value>
+                        </entry>
+                        <entry name="PIN">
+                            <value>3</value>
+                        </entry>
+                        <entry name="FirstSchool">
+                            <value>4</value>
+                        </entry>
+                    </entries>
+                </enum>
+                <enum name="InvoiceMethod">
+                    <description>Invoice Method</description>
+                    <entries>
+                        <entry name="None">
+                            <value>0</value>
+                        </entry>
+                        <entry name="Standard">
+                            <value>1</value>
+                        </entry>
+                        <entry name="Detailed">
+                            <value>2</value>
+                        </entry>
+                        <entry name="StandardWithBillMessages">
+                            <value>3</value>
+                        </entry>
+                    </entries>
+                </enum>
+                <enum name="AccountStatus">
+                    <description>Enum for field account status: The reason, if any, for why the account is in the current state</description>
+                    <entries>
+                        <entry name="PendingActiveApproval">
+                            <value>PA</value>
+                        </entry>
+                        <entry name="Active">
+                            <value>AC</value>
+                        </entry>
+                        <entry name="Suspended">
+                            <value>SU</value>
+                        </entry>
+                        <entry name="PendingFinalBill">
+                            <value>PF</value>
+                        </entry>
+                        <entry name="Closed">
+                            <value>CL</value>
+                        </entry>
+                        <entry name="Archived">
+                            <value>AR</value>
+                        </entry>
+                    </entries>
+                </enum>
+                <enum name="ContactType">
+                    <description>Contact Type</description>
+                    <entries>
+                        <entry name="None">
+                            <value>0</value>
+                        </entry>
+                        <entry name="Bill-To">
+                            <value>1</value>
+                        </entry>
+                        <entry name="Ship-To">
+                            <value>2</value>
+                        </entry>
+                    </entries>
+                </enum>
+                <enum name="LoginApplication">
+                    <description>For system accounts, which application is this account going to log in. </description>
+                    <entries>
+                        <entry name="CSR">
+                            <value>CSR</value>
+                        </entry>
+                        <entry name="MOM">
+                            <value>MOM</value>
+                        </entry>
+                        <entry name="MCM">
+                            <value>MCM</value>
+                        </entry>
+                    </entries>
+                </enum>
+                <enum name="AuthenticationType">
+                    <description>List of authentication types available for MetraNet accounts. For internal use.</description>
+                    <entries>
+                        <entry name="MetraNetInternal">
+                            <value>1</value>
+                        </entry>
+                        <entry name="ActiveDirectory">
+                            <value>2</value>
+                        </entry>
+                    </entries>
+                </enum>
+            </enums>
+        </enum_space>
+    </enum_spaces>
+</mt_enum_config>

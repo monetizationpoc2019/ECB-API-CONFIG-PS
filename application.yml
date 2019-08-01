@@ -1,0 +1,205 @@
+ecb-keystore: ecbapikeystore.jks
+ecb-keystore-password: ecbapipwd
+ecb-keystore-alias: ecb-server
+config-registry-port: 8888
+security-port: 8443
+billing-port: 8091
+customer-port: 8095
+foundation-port: 8097
+metraoffer-ui-port: 8074
+pricing-port: 8099
+catalog-port: 8093
+ecb-api-zuul-gateway: 8711
+ecb-eureka-host: https://localhost:8888/eureka/
+ecb-permissions: ecb-api-permissions.yml
+server:
+  session:
+    cookie:
+      http-only: true
+  ssl:
+    key-store: ${ecb-keystore}
+    key-store-password: ${ecb-keystore-password}
+    keyAlias: ${ecb-keystore-alias}
+    trustStoreType: JKS
+eureka:
+  client:
+    registerWithEureka: true
+    fetchRegistry: true
+    eurekaServerPort: 8078
+    eurekaServerURLContext: eureka
+    initialInstanceInfoReplicationIntervalSeconds: 15
+    healthcheck:
+      enabled: true
+    sslTrust:
+      keyStore: ${ecb-trust-store:ecbkeystore.jks}
+      keyStorePassword: ${ecb-trust-store-password:ecbapipwd}
+      keyStoreType: JKS
+    serviceUrl:
+      defaultZone: ${ecb-eureka-host:https://localhost:8888/eureka/}
+      registerWithEureka: true
+      fetchRegistry: true
+  instance:
+    securePortEnabled: true
+    nonSecurePortEnabled: false
+    preferIpAddress: false
+    healthCheckUrl: https://${eureka.instance.hostname}:${server.port}/health
+    homePageUrl: https://${eureka.instance.hostname}:${server.port}/
+    statusPageUrlPath: /swagger-ui.html
+    statusPageUrl: https://${eureka.instance.hostname}:${HOST_PORT:${server.port}}/swagger-ui.html
+    hostname: ${HOST:${host-name:localhost}}
+    securePort: ${HOST_PORT:${server.port}}
+    metadataMap.instanceId: ${spring.application.name}:${HOST:HOST}:${HOST_PORT:${server.port}}
+spring:
+  datasource:
+    dataSourceClassName: ${ecb-datasource-classname:com.microsoft.sqlserver.jdbc.SQLServerDataSource}
+    username: ${ecb-db-username:nmdbo}
+    password: '{cipher}8a9174be312e9a47e9bb94590b8b3da802ea98086552aca7a2c367e33368a9e8'
+    dataSourceProperties:
+      serverName: ${ecb-db-servername:zveve3sql-db.5ddbugkzdome5c5kvc525adeod.bx.internal.cloudapp.net}
+      databaseName: ${ecb-db-name:NetMeter}
+      queryTimeout: 120
+      lockTimeout: 60000
+    maximumPoolSize: 25
+    leakDetectionThreshold: 4000
+    minimumIdle: 15
+  jackson:
+    serialization:
+      write_dates_as_timestamps: false
+  cloud:
+    config:
+      allowOverride: true
+      overrideSystemProperties: false
+      overrideNone: true
+    stream:
+      kafka:
+        binder:
+          zkNodes: ${kafka-binder-zknodes:localhost}
+          brokers: ${kafka-binder-brokers:localhost}
+liquibase:
+  enabled: false
+ribbon:
+  ConnectTimeout: 30000
+  ReadTimeout: 60000
+  eureka:
+    enabled: true
+swagger:
+  registration:
+    client:
+      uri: https://localhost:8443/uaa/register
+    access:
+      token: YtlS6z9Qw43bzfzTnP1AOSXPCgv4NORcNTbboyW6Csc
+  client:
+    id: 1ab27183-ad8a-3736-80f5-ee31f5f30579
+    issued:
+      at: 1525312353
+    secret: W2IDObFGrR7QHRdX6A1W1Lu2smOO5-5eV73TLm2bLlc
+    expires:
+      at: 1556848353
+    name: swagger-ui
+    jwks:
+      uri: https://localhost:8443/uaa/certs/jwks_uri
+ecb:
+  fileName:
+    errorMessagesFileName: error-messages.yml
+    capabilitiesFileName: ecb-api-permissions.yml
+    uiCapabilitiesFileName: ui-metraoffer-permissions.yml
+  jwt:
+    accessToken:
+      timeToLive: 1200
+    refreshToken:
+      timeToLive: 43200
+  jws:
+    algorithm:
+      name: RS256
+  jwe:
+    algorithm:
+      name: RSA-OAEP-256
+  dbms: ${ecb-dbms:sqlserver}
+  auth:
+    db:
+      config: config
+    user:
+      loginAttemptsAllowed: 6
+      minutesBeforeAutoResetPassword: 30
+      ensureStrongPasswords: False
+      numberOfLastPasswordsThatAreUnique: 4
+      passwordStrengthRegex: ^.*(?=.{7,1024})(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).*$
+      daysBeforePasswordExpires: 90
+      daysOfInactivityBeforeAccountLocked: 90
+      daysToStartWarningPasswordWillExpire: 14
+    hash:
+      config: config
+      keys:
+        1095ffa1-8cfb-46cc-b30e-2d5d32c0e848: '{cipher}86852da2bff7a929039a0318de8dee9e193077f7b6bb4be7370cf5d1505cdfcffabfc77a43a5ab0e406d1cb2bbede7b7367db0ba131474743510ceedc8c9a97b'
+    ticket:
+      api: '{cipher}8d4ae37236622f1216fe76541537ecf2d7b16fb609360c94f6f880cded39ed67819fef421b709b237ac43b9465ba04f95c8120ab12014cb555b16baa62fdd177'
+      ui: '{cipher}94a928b991a2db97278e98a9f5f94ad2da7e046ec64e0900738771042a1ccd96a09e6304e2eadf3411c23c5790afd841'
+  rmp:
+    config:
+      resolver: config
+      path: C:\Dev\MetraNetDev\RMP\Config
+  stash:
+    destination: ${logstash-server-name:arc-tp-poc04.metratech.com:5045}
+    appender-1: STDOUT-APPENDER
+    appender-2: NONE
+  rules:
+    businessrules:
+      All_NoEmptyRequiredProperty: True
+      All_CheckStringLength: True
+      Account_NoConflictingProdOff: True
+      Account_NoDuplicateProdOff: True
+      EffDate_CheckDateCompatibility: True
+      EffDate_NoEndBeforeStart: True
+      PITempl_NoDuplicateName: True
+      PIType_NoDuplicateName: True
+      PIType_NoRemoveIfTemplate: True
+      PriceList_NoDuplicateName: True
+      ProdOff_CheckConfiguration: True
+      ProdOff_CheckCurrency: True
+      ProdOff_CheckDates: True
+      ProdOff_NoDuplicateUsageTemplate: True
+      ProdOff_NoDuplicateTemplate: True
+      ProdOff_NoDuplicateInstanceName: True
+      ProdOff_NoDuplicateName: True
+      ProdOff_NoModificationIfAvailable: True
+      Account_CheckBillingCycleChange: True
+      IgnoreDateCheckOnSubscriptionDelete: False
+      OnlyAbsoluteRateSchedulesWithGroupSubscription: True
+      PI_CheckCycleChange: True
+      Rates_DeleteOverride: True
+      Adjustments_NoGreaterThanCharge: True
+      Hierarchy_RestrictedOperations: True
+      Subscription_TruncateTimeValues: True
+      Hierarchy_AllowCurrencyDiffFromCorporate: False
+      ProdOff_AllowAccountPOCurrencyMismatch: False
+      ProdOff_AllowMultiplePISubscriptionRCNRC: False
+      ImmediateSubscriptionTermination: False
+      IgnoreDateCheckOnGroupSubDelete: False
+      ProdOff_CheckModification: True
+hystrix:
+  command:
+    default:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 91000
+  stream:
+    queue:
+      enabled: false
+logging.level.com.ericsson: ERROR
+logging.level.com.ericsson.ecb: INFO
+logging.level.org.springframework: INFO
+logging.level.com.zaxxer.hikari.pool.HikariPool: INFO
+logging.level.org.springframework.jdbc.datasource.DataSourceTransactionManager: DEBUG
+logging.level.org.springframework.transaction.support.AbstractPlatformTransactionManager: DEBUG
+logging.level.org.springframework.transaction.interceptor: DEBUG
+logging.level.org.springframework.beans: ERROR
+logging.level.org.springframework.boot.actuate.endpoint: ERROR
+logging.level.org.springframework.cloud.config.server.environment: ERROR
+logging.level.org.springframework.context: ERROR
+logging.level.org.springframework.jmx: ERROR
+logging.level.org.springframework.web.servlet.mvc.method.annotation: ERROR
+logging.level.org.eclipse.jetty: INFO
+logging.level.org.eclipse.jetty.util: INFO
+logging.path: logs
+...

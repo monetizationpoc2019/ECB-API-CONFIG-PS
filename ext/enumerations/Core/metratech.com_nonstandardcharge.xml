@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<mt_config>
+    <enum_spaces>
+        <enum_space name="metratech.com/NonStandardCharge">
+            <description>NonStandard Charge</description>
+            <enums>
+                <enum name="NonStandardChargeType">
+                    <description>NonStandandard Charge Type</description>
+                    <entries>
+                        <entry name="Other">
+                            <!-- The Name -->
+                            <value>1</value>
+                            <!-- The Id used to meter, for now they are the same -->
+                        </entry>
+                    </entries>
+                </enum>
+                <enum name="AdditionalCode">
+                    <description>An additonal code for non-standard charges</description>
+                    <entries>
+                        <entry name="Other">
+                            <value>0</value>
+                        </entry>
+                    </entries>
+                </enum>
+                <enum name="NonStandardChargeReason">
+                    <description>Reason for issuing nonstandard charge reason</description>
+                    <entries>
+                        <entry name="Credit">
+                            <value>0</value>
+                        </entry>
+                        <entry name="Debit">
+                            <value>1</value>
+                        </entry>
+                        <entry name="Other">
+                            <value>2</value>
+                        </entry>
+                    </entries>
+                </enum>
+            </enums>
+        </enum_space>
+    </enum_spaces>
+</mt_config>

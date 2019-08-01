@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<mt_config>
+  <language_code>DE</language_code>
+  <locale_space name="metratech.com/ps_cc_preauth">
+    <locale_entry>
+      <Name>metratech.com/ps_cc_preauth</Name>
+      <Value>Erfolge vor Autorisierung</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ps_cc_preauth/_AccountID</Name>
+      <Value>Accountkennung</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ps_cc_preauth/CreditCardType</Name>
+      <Value>Kreditkartentyp</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ps_cc_preauth/LastFourDigits</Name>
+      <Value>Die letzten vier Ziffern</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ps_cc_preauth/OriginalAccountID</Name>
+      <Value>Ursprüngliche Konto-ID</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ps_cc_preauth/paymentservicetransactionid</Name>
+      <Value>Transaktions-ID des Zahlungsdienstleisters</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ps_cc_preauth/RespString</Name>
+      <Value>Antwortbeschreibung</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ps_cc_preauth/retcode</Name>
+      <Value>Rückgabecode</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ps_cc_preauth/terminalid</Name>
+      <Value>Terminal-ID</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ps_cc_preauth/TransactionID</Name>
+      <Value>Transaktions-ID</Value>
+    </locale_entry>
+  </locale_space>
+</mt_config>

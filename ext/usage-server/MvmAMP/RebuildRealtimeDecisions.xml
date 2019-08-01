@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xmlconfig>
+    <!--  Adapter Name  -->
+    <AdapterName>Aggregate Metrics Processor (Scheduled)</AdapterName>
+      <!--  Insert Custom Tags here -->
+  <externalApp>mvm.exe</externalApp>
+  <!--Full path to exe (excluding name), defaults to env var MTRMPBIN -->
+  <workingDirectory />
+  <!-- possible variables are %%UserID%%, %%Password%%, %%ServerName%%, %%IntervalID%% (only valid if running in EOP mode) & %%RunID%%-->
+  <commandArgs>-proc=generate_sub_work_for_system -runid=%%RunID%%</commandArgs>
+  <reverseArgs>1</reverseArgs>
+</xmlconfig>

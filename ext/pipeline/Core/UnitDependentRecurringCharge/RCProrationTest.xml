@@ -1,0 +1,488 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xmlconfig>
+
+  <!-- ADVANCE CASES -->
+
+  <session>
+   <!-- Simple case - no proration necessary -->
+   <ServiceID ptype="ID">metratech.com/FlatRecurringCharge</ServiceID>
+   <inputs>
+    <RCActionType ptype="STRING">Advance</RCActionType>
+    <RCIntervalStart ptype="DATETIME">2001-05-01T00:00:00Z</RCIntervalStart>
+    <RCIntervalEnd ptype="DATETIME">2001-05-07T23:59:59Z</RCIntervalEnd>
+    <RCIntervalSubscriptionStart ptype="DATETIME">2001-05-01T00:00:00Z</RCIntervalSubscriptionStart>
+    <RCIntervalSubscriptionEnd ptype="DATETIME">2001-05-07T23:59:59Z</RCIntervalSubscriptionEnd>
+    <Advance ptype="BOOL">TRUE</Advance>
+    <ProrateOnSubscription ptype="BOOL">FALSE</ProrateOnSubscription>
+    <ProrateOnUnsubscription ptype="BOOL">FALSE</ProrateOnUnsubscription>
+	<ProrationCycleLength ptype="INTEGER">0</ProrationCycleLength>
+    <RCAmount ptype="DECIMAL">10.00</RCAmount>
+   </inputs>
+   <outputs>
+    <_Amount ptype="DECIMAL">10.00</_Amount>
+    <ProratedIntervalStart ptype="DATETIME">2001-05-01T00:00:00Z</ProratedIntervalStart>
+    <ProratedIntervalEnd ptype="DATETIME">2001-05-07T23:59:59Z</ProratedIntervalEnd>
+    <ProratedOnSubscription ptype="BOOL">FALSE</ProratedOnSubscription>
+    <ProratedOnUnsubscription ptype="BOOL">FALSE</ProratedOnUnsubscription>
+   </outputs>
+  </session>
+
+  <session>
+   <!-- Proration on subscription, using actual number of days - 22 out of 31 -->
+   <ServiceID ptype="ID">metratech.com/FlatRecurringCharge</ServiceID>
+   <inputs>
+    <RCActionType ptype="STRING">Initial</RCActionType>
+    <RCIntervalStart ptype="DATETIME">2001-05-01T00:00:00Z</RCIntervalStart>
+    <RCIntervalEnd ptype="DATETIME">2001-05-31T23:59:59Z</RCIntervalEnd>
+    <RCIntervalSubscriptionStart ptype="DATETIME">2001-05-10T00:00:00Z</RCIntervalSubscriptionStart>
+    <RCIntervalSubscriptionEnd ptype="DATETIME">2001-05-31T23:59:59Z</RCIntervalSubscriptionEnd>
+    <Advance ptype="BOOL">TRUE</Advance>
+    <ProrateOnSubscription ptype="BOOL">TRUE</ProrateOnSubscription>
+    <ProrateOnUnsubscription ptype="BOOL">FALSE</ProrateOnUnsubscription>
+	<ProrationCycleLength ptype="INTEGER">0</ProrationCycleLength>
+    <RCAmount ptype="DECIMAL">30.00</RCAmount>
+   </inputs>
+   <outputs>
+    <!-- 22 days out of 31 -->
+    <_Amount ptype="DECIMAL">21.29</_Amount>
+    <ProratedIntervalStart ptype="DATETIME">2001-05-10T00:00:00Z</ProratedIntervalStart>
+    <ProratedIntervalEnd ptype="DATETIME">2001-05-31T23:59:59Z</ProratedIntervalEnd>
+    <ProratedOnSubscription ptype="BOOL">TRUE</ProratedOnSubscription>
+    <ProratedOnUnsubscription ptype="BOOL">FALSE</ProratedOnUnsubscription>
+   </outputs>
+  </session>
+
+  <session>
+   <!-- Proration on subscription, using fixed number of days (30) - 22 out of 31 -->
+   <ServiceID ptype="ID">metratech.com/FlatRecurringCharge</ServiceID>
+   <inputs>
+    <RCActionType ptype="STRING">Initial</RCActionType>
+    <RCIntervalStart ptype="DATETIME">2001-05-01T00:00:00Z</RCIntervalStart>
+    <RCIntervalEnd ptype="DATETIME">2001-05-31T23:59:59Z</RCIntervalEnd>
+    <RCIntervalSubscriptionStart ptype="DATETIME">2001-05-10T00:00:00Z</RCIntervalSubscriptionStart>
+    <RCIntervalSubscriptionEnd ptype="DATETIME">2001-05-31T23:59:59Z</RCIntervalSubscriptionEnd>
+    <Advance ptype="BOOL">TRUE</Advance>
+    <ProrateOnSubscription ptype="BOOL">TRUE</ProrateOnSubscription>
+    <ProrateOnUnsubscription ptype="BOOL">FALSE</ProrateOnUnsubscription>
+	<ProrationCycleLength ptype="INTEGER">30</ProrationCycleLength>
+    <RCAmount ptype="DECIMAL">30.00</RCAmount>
+   </inputs>
+   <outputs>
+    <!-- 22 days out of 31 -->
+    <_Amount ptype="DECIMAL">22</_Amount>
+    <ProratedIntervalStart ptype="DATETIME">2001-05-10T00:00:00Z</ProratedIntervalStart>
+    <ProratedIntervalEnd ptype="DATETIME">2001-05-31T23:59:59Z</ProratedIntervalEnd>
+    <ProratedOnSubscription ptype="BOOL">TRUE</ProratedOnSubscription>
+    <ProratedOnUnsubscription ptype="BOOL">FALSE</ProratedOnUnsubscription>
+   </outputs>
+  </session>
+
+  <session>
+   <!-- Proration on unsubscription, using actual number of days - 20 out of 31 -->
+   <ServiceID ptype="ID">metratech.com/FlatRecurringCharge</ServiceID>
+   <inputs>
+    <RCActionType ptype="STRING">Credit</RCActionType>
+    <RCIntervalStart ptype="DATETIME">2001-05-01T00:00:00Z</RCIntervalStart>
+    <RCIntervalEnd ptype="DATETIME">2001-05-31T23:59:59Z</RCIntervalEnd>
+    <RCIntervalSubscriptionStart ptype="DATETIME">2001-05-21T00:00:00Z</RCIntervalSubscriptionStart>
+    <RCIntervalSubscriptionEnd ptype="DATETIME">2001-05-31T23:59:59Z</RCIntervalSubscriptionEnd>
+    <Advance ptype="BOOL">TRUE</Advance>
+    <ProrateOnSubscription ptype="BOOL">TRUE</ProrateOnSubscription>
+    <ProrateOnUnsubscription ptype="BOOL">TRUE</ProrateOnUnsubscription>
+	<ProrationCycleLength ptype="INTEGER">0</ProrationCycleLength>
+    <RCAmount ptype="DECIMAL">30.00</RCAmount>
+   </inputs>
+   <outputs>
+    <!-- credit for 11 days out of 31 -->
+    <_Amount ptype="DECIMAL">-10.65</_Amount>
+    <ProratedIntervalStart ptype="DATETIME">2001-05-21T00:00:00Z</ProratedIntervalStart>
+    <ProratedIntervalEnd ptype="DATETIME">2001-05-31T23:59:59Z</ProratedIntervalEnd>
+    <ProratedDays ptype="INTEGER">11</ProratedDays>
+    <ProratedOnSubscription ptype="BOOL">FALSE</ProratedOnSubscription>
+    <ProratedOnUnsubscription ptype="BOOL">TRUE</ProratedOnUnsubscription>
+   </outputs>
+  </session>
+
+  <session>
+   <!-- Proration on unsubscription, using fixed number of days (30) - 20 out of 31 -->
+   <ServiceID ptype="ID">metratech.com/FlatRecurringCharge</ServiceID>
+   <inputs>
+    <RCActionType ptype="STRING">Credit</RCActionType>
+    <RCIntervalStart ptype="DATETIME">2001-05-01T00:00:00Z</RCIntervalStart>
+    <RCIntervalEnd ptype="DATETIME">2001-05-31T23:59:59Z</RCIntervalEnd>
+    <RCIntervalSubscriptionStart ptype="DATETIME">2001-05-21T00:00:00Z</RCIntervalSubscriptionStart>
+    <RCIntervalSubscriptionEnd ptype="DATETIME">2001-05-31T23:59:59Z</RCIntervalSubscriptionEnd>
+    <Advance ptype="BOOL">TRUE</Advance>
+    <ProrateOnSubscription ptype="BOOL">TRUE</ProrateOnSubscription>
+    <ProrateOnUnsubscription ptype="BOOL">TRUE</ProrateOnUnsubscription>
+	<ProrationCycleLength ptype="INTEGER">30</ProrationCycleLength>
+    <RCAmount ptype="DECIMAL">30.00</RCAmount>
+   </inputs>
+   <outputs>
+    <!-- credit for 11 days out of 30 -->
+    <_Amount ptype="DECIMAL">-11.00</_Amount>
+    <ProratedIntervalStart ptype="DATETIME">2001-05-21T00:00:00Z</ProratedIntervalStart>
+    <ProratedIntervalEnd ptype="DATETIME">2001-05-31T23:59:59Z</ProratedIntervalEnd>
+    <ProratedDays ptype="INTEGER">11</ProratedDays>
+    <ProratedOnSubscription ptype="BOOL">FALSE</ProratedOnSubscription>
+    <ProratedOnUnsubscription ptype="BOOL">TRUE</ProratedOnUnsubscription>
+   </outputs>
+  </session>
+
+  <session>
+   <!-- Special case where we need to credit the entire charge (regardless of proration) because the entire RC is after the Subscription End -->
+   <ServiceID ptype="ID">metratech.com/FlatRecurringCharge</ServiceID>
+   <inputs>
+    <RCActionType ptype="STRING">Credit</RCActionType>
+    <RCIntervalStart ptype="DATETIME">2001-05-01T00:00:00Z</RCIntervalStart>
+    <RCIntervalEnd ptype="DATETIME">2001-05-31T23:59:59Z</RCIntervalEnd>
+    <RCIntervalSubscriptionStart ptype="DATETIME">2001-05-1T00:00:00Z</RCIntervalSubscriptionStart>
+    <RCIntervalSubscriptionEnd ptype="DATETIME">2001-05-31T23:59:59Z</RCIntervalSubscriptionEnd>
+    <Advance ptype="BOOL">TRUE</Advance>
+    <ProrateOnSubscription ptype="BOOL">TRUE</ProrateOnSubscription>
+    <ProrateOnUnsubscription ptype="BOOL">TRUE</ProrateOnUnsubscription>
+	  <ProrationCycleLength ptype="INTEGER">0</ProrationCycleLength>
+    <RCAmount ptype="DECIMAL">30.00</RCAmount>
+   </inputs>
+   <outputs>
+    <!-- credit for entire period -->
+    <_Amount ptype="DECIMAL">-30.00</_Amount>
+   </outputs>
+  </session>
+    
+  <session>
+   <!-- Subscribed and unsubscribeed. using fixed number of days (30) - 11 out of 31 -->
+   <ServiceID ptype="ID">metratech.com/FlatRecurringCharge</ServiceID>
+   <inputs>
+    <RCActionType ptype="STRING">Initial</RCActionType>
+    <RCIntervalStart ptype="DATETIME">2001-05-01T00:00:00Z</RCIntervalStart>
+    <RCIntervalEnd ptype="DATETIME">2001-05-31T23:59:59Z</RCIntervalEnd>
+    <RCIntervalSubscriptionStart ptype="DATETIME">2001-05-10T00:00:00Z</RCIntervalSubscriptionStart>
+    <RCIntervalSubscriptionEnd ptype="DATETIME">2001-05-20T23:59:59Z</RCIntervalSubscriptionEnd>
+    <Advance ptype="BOOL">TRUE</Advance>
+    <ProrateOnSubscription ptype="BOOL">TRUE</ProrateOnSubscription>
+    <ProrateOnUnsubscription ptype="BOOL">TRUE</ProrateOnUnsubscription>
+	<ProrationCycleLength ptype="INTEGER">30</ProrationCycleLength>
+    <RCAmount ptype="DECIMAL">30.00</RCAmount>
+   </inputs>
+   <outputs>
+    <!-- 11 days out of 30 -->
+    <_Amount ptype="DECIMAL">11.00</_Amount>
+    <ProratedIntervalStart ptype="DATETIME">2001-05-10T00:00:00Z</ProratedIntervalStart>
+    <ProratedIntervalEnd ptype="DATETIME">2001-05-20T23:59:59Z</ProratedIntervalEnd>
+    <ProratedDays ptype="INTEGER">11</ProratedDays>
+    <ProratedOnSubscription ptype="BOOL">TRUE</ProratedOnSubscription>
+    <ProratedOnUnsubscription ptype="BOOL">TRUE</ProratedOnUnsubscription>
+   </outputs>
+  </session>
+
+  <session>
+   <!-- Subscribed and unsubscribeed. Proration on subscription only. using fixed number of days (30) - 22 out of 31 -->
+   <ServiceID ptype="ID">metratech.com/FlatRecurringCharge</ServiceID>
+   <inputs>
+    <RCActionType ptype="STRING">Initial</RCActionType>
+    <RCIntervalStart ptype="DATETIME">2001-05-01T00:00:00Z</RCIntervalStart>
+    <RCIntervalEnd ptype="DATETIME">2001-05-31T23:59:59Z</RCIntervalEnd>
+    <RCIntervalSubscriptionStart ptype="DATETIME">2001-05-10T00:00:00Z</RCIntervalSubscriptionStart>
+    <RCIntervalSubscriptionEnd ptype="DATETIME">2001-05-20T23:59:59Z</RCIntervalSubscriptionEnd>
+    <Advance ptype="BOOL">TRUE</Advance>
+    <ProrateOnSubscription ptype="BOOL">TRUE</ProrateOnSubscription>
+    <ProrateOnUnsubscription ptype="BOOL">FALSE</ProrateOnUnsubscription>
+	<ProrationCycleLength ptype="INTEGER">30</ProrationCycleLength>
+    <RCAmount ptype="DECIMAL">30.00</RCAmount>
+   </inputs>
+   <outputs>
+    <!-- 22 days out of 30 -->
+    <_Amount ptype="DECIMAL">22.00</_Amount>
+    <ProratedIntervalStart ptype="DATETIME">2001-05-10T00:00:00Z</ProratedIntervalStart>
+    <ProratedIntervalEnd ptype="DATETIME">2001-05-31T23:59:59Z</ProratedIntervalEnd>
+    <ProratedDays ptype="INTEGER">22</ProratedDays>
+    <ProratedOnSubscription ptype="BOOL">TRUE</ProratedOnSubscription>
+    <ProratedOnUnsubscription ptype="BOOL">FALSE</ProratedOnUnsubscription>
+   </outputs>
+  </session>
+
+  <session>
+   <!-- Subscribed and unsubscribeed. Proration on unsubscription only. using fixed number of days (30) - 20 out of 31 -->
+   <ServiceID ptype="ID">metratech.com/FlatRecurringCharge</ServiceID>
+   <inputs>
+    <RCActionType ptype="STRING">Initial</RCActionType>
+    <RCIntervalStart ptype="DATETIME">2001-05-01T00:00:00Z</RCIntervalStart>
+    <RCIntervalEnd ptype="DATETIME">2001-05-31T23:59:59Z</RCIntervalEnd>
+    <RCIntervalSubscriptionStart ptype="DATETIME">2001-05-10T00:00:00Z</RCIntervalSubscriptionStart>
+    <RCIntervalSubscriptionEnd ptype="DATETIME">2001-05-20T23:59:59Z</RCIntervalSubscriptionEnd>
+    <Advance ptype="BOOL">TRUE</Advance>
+    <ProrateOnSubscription ptype="BOOL">FALSE</ProrateOnSubscription>
+    <ProrateOnUnsubscription ptype="BOOL">TRUE</ProrateOnUnsubscription>
+	<ProrationCycleLength ptype="INTEGER">30</ProrationCycleLength>
+    <RCAmount ptype="DECIMAL">30.00</RCAmount>
+   </inputs>
+   <outputs>
+    <!-- charge for actual number of days, starting at the beginning of the interval - 20 days out of 30 -->
+    <_Amount ptype="DECIMAL">20.00</_Amount>
+    <ProratedIntervalStart ptype="DATETIME">2001-05-01T00:00:00Z</ProratedIntervalStart>
+    <ProratedIntervalEnd ptype="DATETIME">2001-05-20T23:59:59Z</ProratedIntervalEnd>
+    <ProratedDays ptype="INTEGER">20</ProratedDays>
+    <ProratedOnSubscription ptype="BOOL">FALSE</ProratedOnSubscription>
+    <ProratedOnUnsubscription ptype="BOOL">TRUE</ProratedOnUnsubscription>
+   </outputs>
+  </session>
+
+  <session>
+   <!-- Subscribed and unsubscribeed in one day. using fixed number of days (30) -->
+   <ServiceID ptype="ID">metratech.com/FlatRecurringCharge</ServiceID>
+   <inputs>
+    <RCActionType ptype="STRING">Initial</RCActionType>
+    <RCIntervalStart ptype="DATETIME">2001-05-01T00:00:00Z</RCIntervalStart>
+    <RCIntervalEnd ptype="DATETIME">2001-05-31T23:59:59Z</RCIntervalEnd>
+    <RCIntervalSubscriptionStart ptype="DATETIME">2001-05-10T05:00:00Z</RCIntervalSubscriptionStart>
+    <RCIntervalSubscriptionEnd ptype="DATETIME">2001-05-10T23:59:59Z</RCIntervalSubscriptionEnd>
+    <Advance ptype="BOOL">TRUE</Advance>
+    <ProrateOnSubscription ptype="BOOL">TRUE</ProrateOnSubscription>
+    <ProrateOnUnsubscription ptype="BOOL">TRUE</ProrateOnUnsubscription>
+	<ProrationCycleLength ptype="INTEGER">30</ProrationCycleLength>
+    <RCAmount ptype="DECIMAL">30.00</RCAmount>
+   </inputs>
+   <outputs>
+    <!-- 1 day out of 30 -->
+    <_Amount ptype="DECIMAL">1.00</_Amount>
+    <ProratedIntervalStart ptype="DATETIME">2001-05-10T05:00:00Z</ProratedIntervalStart>
+    <ProratedIntervalEnd ptype="DATETIME">2001-05-10T23:59:59Z</ProratedIntervalEnd>
+    <ProratedDays ptype="INTEGER">1</ProratedDays>
+    <ProratedOnSubscription ptype="BOOL">TRUE</ProratedOnSubscription>
+    <ProratedOnUnsubscription ptype="BOOL">TRUE</ProratedOnUnsubscription>
+   </outputs>
+  </session>
+
+  <!-- ARREARS CASES -->
+
+  <session>
+   <!-- Simple case - no proration necessary -->
+   <ServiceID ptype="ID">metratech.com/FlatRecurringCharge</ServiceID>
+   <inputs>
+    <RCActionType ptype="STRING">Arrears</RCActionType>
+    <RCIntervalStart ptype="DATETIME">2001-05-01T00:00:00Z</RCIntervalStart>
+    <RCIntervalEnd ptype="DATETIME">2001-05-07T23:59:59Z</RCIntervalEnd>
+    <RCIntervalSubscriptionStart ptype="DATETIME">2001-05-01T00:00:00Z</RCIntervalSubscriptionStart>
+    <RCIntervalSubscriptionEnd ptype="DATETIME">2001-05-07T23:59:59Z</RCIntervalSubscriptionEnd>
+    <Advance ptype="BOOL">FALSE</Advance>
+    <ProrateOnSubscription ptype="BOOL">FALSE</ProrateOnSubscription>
+    <ProrateOnUnsubscription ptype="BOOL">FALSE</ProrateOnUnsubscription>
+	<ProrationCycleLength ptype="INTEGER">0</ProrationCycleLength>
+    <RCAmount ptype="DECIMAL">10.00</RCAmount>
+   </inputs>
+   <outputs>
+    <_Amount ptype="DECIMAL">10.00</_Amount>
+    <ProratedIntervalStart ptype="DATETIME">2001-05-01T00:00:00Z</ProratedIntervalStart>
+    <ProratedIntervalEnd ptype="DATETIME">2001-05-07T23:59:59Z</ProratedIntervalEnd>
+    <ProratedOnSubscription ptype="BOOL">FALSE</ProratedOnSubscription>
+    <ProratedOnUnsubscription ptype="BOOL">FALSE</ProratedOnUnsubscription>
+   </outputs>
+  </session>
+
+  <session>
+   <!-- Proration on subscription, using actual number of days - 22 out of 31 -->
+   <ServiceID ptype="ID">metratech.com/FlatRecurringCharge</ServiceID>
+   <inputs>
+    <RCActionType ptype="STRING">Arrears</RCActionType>
+    <RCIntervalStart ptype="DATETIME">2001-05-01T00:00:00Z</RCIntervalStart>
+    <RCIntervalEnd ptype="DATETIME">2001-05-31T23:59:59Z</RCIntervalEnd>
+    <RCIntervalSubscriptionStart ptype="DATETIME">2001-05-10T00:00:00Z</RCIntervalSubscriptionStart>
+    <RCIntervalSubscriptionEnd ptype="DATETIME">2001-05-31T23:59:59Z</RCIntervalSubscriptionEnd>
+    <Advance ptype="BOOL">FALSE</Advance>
+    <ProrateOnSubscription ptype="BOOL">TRUE</ProrateOnSubscription>
+    <ProrateOnUnsubscription ptype="BOOL">FALSE</ProrateOnUnsubscription>
+	<ProrationCycleLength ptype="INTEGER">0</ProrationCycleLength>
+    <RCAmount ptype="DECIMAL">30.00</RCAmount>
+   </inputs>
+   <outputs>
+    <!-- 22 days out of 31 -->
+    <_Amount ptype="DECIMAL">21.29</_Amount>
+    <ProratedIntervalStart ptype="DATETIME">2001-05-10T00:00:00Z</ProratedIntervalStart>
+    <ProratedIntervalEnd ptype="DATETIME">2001-05-31T23:59:59Z</ProratedIntervalEnd>
+    <ProratedOnSubscription ptype="BOOL">TRUE</ProratedOnSubscription>
+    <ProratedOnUnsubscription ptype="BOOL">FALSE</ProratedOnUnsubscription>
+   </outputs>
+  </session>
+
+  <session>
+   <!-- Proration on subscription, using fixed number of days (30) - 22 out of 31 -->
+   <ServiceID ptype="ID">metratech.com/FlatRecurringCharge</ServiceID>
+   <inputs>
+    <RCActionType ptype="STRING">Arrears</RCActionType>
+    <RCIntervalStart ptype="DATETIME">2001-05-01T00:00:00Z</RCIntervalStart>
+    <RCIntervalEnd ptype="DATETIME">2001-05-31T23:59:59Z</RCIntervalEnd>
+    <RCIntervalSubscriptionStart ptype="DATETIME">2001-05-10T00:00:00Z</RCIntervalSubscriptionStart>
+    <RCIntervalSubscriptionEnd ptype="DATETIME">2001-05-31T23:59:59Z</RCIntervalSubscriptionEnd>
+    <Advance ptype="BOOL">FALSE</Advance>
+    <ProrateOnSubscription ptype="BOOL">TRUE</ProrateOnSubscription>
+    <ProrateOnUnsubscription ptype="BOOL">FALSE</ProrateOnUnsubscription>
+	<ProrationCycleLength ptype="INTEGER">30</ProrationCycleLength>
+    <RCAmount ptype="DECIMAL">30.00</RCAmount>
+   </inputs>
+   <outputs>
+    <!-- 22 days out of 31 -->
+    <_Amount ptype="DECIMAL">22</_Amount>
+    <ProratedIntervalStart ptype="DATETIME">2001-05-10T00:00:00Z</ProratedIntervalStart>
+    <ProratedIntervalEnd ptype="DATETIME">2001-05-31T23:59:59Z</ProratedIntervalEnd>
+    <ProratedOnSubscription ptype="BOOL">TRUE</ProratedOnSubscription>
+    <ProratedOnUnsubscription ptype="BOOL">FALSE</ProratedOnUnsubscription>
+   </outputs>
+  </session>
+
+  <session>
+   <!-- Proration on unsubscription, using actual number of days - 20 out of 31 -->
+   <ServiceID ptype="ID">metratech.com/FlatRecurringCharge</ServiceID>
+   <inputs>
+    <RCActionType ptype="STRING">Arrears</RCActionType>
+    <RCIntervalStart ptype="DATETIME">2001-05-01T00:00:00Z</RCIntervalStart>
+    <RCIntervalEnd ptype="DATETIME">2001-05-31T23:59:59Z</RCIntervalEnd>
+    <RCIntervalSubscriptionStart ptype="DATETIME">2001-05-01T00:00:00Z</RCIntervalSubscriptionStart>
+    <RCIntervalSubscriptionEnd ptype="DATETIME">2001-05-20T23:59:59Z</RCIntervalSubscriptionEnd>
+    <Advance ptype="BOOL">FALSE</Advance>
+    <ProrateOnSubscription ptype="BOOL">TRUE</ProrateOnSubscription>
+    <ProrateOnUnsubscription ptype="BOOL">TRUE</ProrateOnUnsubscription>
+	<ProrationCycleLength ptype="INTEGER">0</ProrationCycleLength>
+    <RCAmount ptype="DECIMAL">30.00</RCAmount>
+   </inputs>
+   <outputs>
+    <!-- 20 days out of 31 -->
+    <_Amount ptype="DECIMAL">19.35</_Amount>
+    <ProratedIntervalStart ptype="DATETIME">2001-05-01T00:00:00Z</ProratedIntervalStart>
+    <ProratedIntervalEnd ptype="DATETIME">2001-05-20T23:59:59Z</ProratedIntervalEnd>
+    <ProratedOnSubscription ptype="BOOL">FALSE</ProratedOnSubscription>
+    <ProratedOnUnsubscription ptype="BOOL">TRUE</ProratedOnUnsubscription>
+   </outputs>
+  </session>
+
+  <session>
+   <!-- Proration on unsubscription, using fixed number of days (30) - 20 out of 31 -->
+   <ServiceID ptype="ID">metratech.com/FlatRecurringCharge</ServiceID>
+   <inputs>
+    <RCActionType ptype="STRING">Arrears</RCActionType>
+    <RCIntervalStart ptype="DATETIME">2001-05-01T00:00:00Z</RCIntervalStart>
+    <RCIntervalEnd ptype="DATETIME">2001-05-31T23:59:59Z</RCIntervalEnd>
+    <RCIntervalSubscriptionStart ptype="DATETIME">2001-05-01T00:00:00Z</RCIntervalSubscriptionStart>
+    <RCIntervalSubscriptionEnd ptype="DATETIME">2001-05-20T23:59:59Z</RCIntervalSubscriptionEnd>
+    <Advance ptype="BOOL">FALSE</Advance>
+    <ProrateOnSubscription ptype="BOOL">TRUE</ProrateOnSubscription>
+    <ProrateOnUnsubscription ptype="BOOL">TRUE</ProrateOnUnsubscription>
+	<ProrationCycleLength ptype="INTEGER">30</ProrationCycleLength>
+    <RCAmount ptype="DECIMAL">30.00</RCAmount>
+   </inputs>
+   <outputs>
+    <!-- 20 days out of 30 -->
+    <_Amount ptype="DECIMAL">20.00</_Amount>
+    <ProratedIntervalStart ptype="DATETIME">2001-05-01T00:00:00Z</ProratedIntervalStart>
+    <ProratedIntervalEnd ptype="DATETIME">2001-05-20T23:59:59Z</ProratedIntervalEnd>
+    <ProratedDays ptype="INTEGER">20</ProratedDays>
+    <ProratedOnSubscription ptype="BOOL">FALSE</ProratedOnSubscription>
+    <ProratedOnUnsubscription ptype="BOOL">TRUE</ProratedOnUnsubscription>
+   </outputs>
+  </session>
+
+  <session>
+   <!-- Subscribed and unsubscribeed. using fixed number of days (30) - 11 out of 31 -->
+   <ServiceID ptype="ID">metratech.com/FlatRecurringCharge</ServiceID>
+   <inputs>
+    <RCActionType ptype="STRING">Arrears</RCActionType>
+    <RCIntervalStart ptype="DATETIME">2001-05-01T00:00:00Z</RCIntervalStart>
+    <RCIntervalEnd ptype="DATETIME">2001-05-31T23:59:59Z</RCIntervalEnd>
+    <RCIntervalSubscriptionStart ptype="DATETIME">2001-05-10T00:00:00Z</RCIntervalSubscriptionStart>
+    <RCIntervalSubscriptionEnd ptype="DATETIME">2001-05-20T23:59:59Z</RCIntervalSubscriptionEnd>
+    <Advance ptype="BOOL">FALSE</Advance>
+    <ProrateOnSubscription ptype="BOOL">TRUE</ProrateOnSubscription>
+    <ProrateOnUnsubscription ptype="BOOL">TRUE</ProrateOnUnsubscription>
+	<ProrationCycleLength ptype="INTEGER">30</ProrationCycleLength>
+    <RCAmount ptype="DECIMAL">30.00</RCAmount>
+   </inputs>
+   <outputs>
+    <!-- 11 days out of 30 -->
+    <_Amount ptype="DECIMAL">11.00</_Amount>
+    <ProratedIntervalStart ptype="DATETIME">2001-05-10T00:00:00Z</ProratedIntervalStart>
+    <ProratedIntervalEnd ptype="DATETIME">2001-05-20T23:59:59Z</ProratedIntervalEnd>
+    <ProratedDays ptype="INTEGER">11</ProratedDays>
+    <ProratedOnSubscription ptype="BOOL">TRUE</ProratedOnSubscription>
+    <ProratedOnUnsubscription ptype="BOOL">TRUE</ProratedOnUnsubscription>
+   </outputs>
+  </session>
+
+  <session>
+   <!-- Subscribed and unsubscribeed. Proration on subscription only. using fixed number of days (30) - 22 out of 31 -->
+   <ServiceID ptype="ID">metratech.com/FlatRecurringCharge</ServiceID>
+   <inputs>
+    <RCActionType ptype="STRING">Arrears</RCActionType>
+    <RCIntervalStart ptype="DATETIME">2001-05-01T00:00:00Z</RCIntervalStart>
+    <RCIntervalEnd ptype="DATETIME">2001-05-31T23:59:59Z</RCIntervalEnd>
+    <RCIntervalSubscriptionStart ptype="DATETIME">2001-05-10T00:00:00Z</RCIntervalSubscriptionStart>
+    <RCIntervalSubscriptionEnd ptype="DATETIME">2001-05-20T23:59:59Z</RCIntervalSubscriptionEnd>
+    <Advance ptype="BOOL">FALSE</Advance>
+    <ProrateOnSubscription ptype="BOOL">TRUE</ProrateOnSubscription>
+    <ProrateOnUnsubscription ptype="BOOL">FALSE</ProrateOnUnsubscription>
+	<ProrationCycleLength ptype="INTEGER">30</ProrationCycleLength>
+    <RCAmount ptype="DECIMAL">30.00</RCAmount>
+   </inputs>
+   <outputs>
+    <!-- 22 days out of 30 -->
+    <_Amount ptype="DECIMAL">22.00</_Amount>
+    <ProratedIntervalStart ptype="DATETIME">2001-05-10T00:00:00Z</ProratedIntervalStart>
+    <ProratedIntervalEnd ptype="DATETIME">2001-05-31T23:59:59Z</ProratedIntervalEnd>
+    <ProratedDays ptype="INTEGER">22</ProratedDays>
+    <ProratedOnSubscription ptype="BOOL">TRUE</ProratedOnSubscription>
+    <ProratedOnUnsubscription ptype="BOOL">FALSE</ProratedOnUnsubscription>
+   </outputs>
+  </session>
+
+  <session>
+   <!-- Subscribed and unsubscribeed. Proration on unsubscription only. using fixed number of days (30) - 20 out of 31 -->
+   <ServiceID ptype="ID">metratech.com/FlatRecurringCharge</ServiceID>
+   <inputs>
+    <RCActionType ptype="STRING">Arrears</RCActionType>
+    <RCIntervalStart ptype="DATETIME">2001-05-01T00:00:00Z</RCIntervalStart>
+    <RCIntervalEnd ptype="DATETIME">2001-05-31T23:59:59Z</RCIntervalEnd>
+    <RCIntervalSubscriptionStart ptype="DATETIME">2001-05-10T00:00:00Z</RCIntervalSubscriptionStart>
+    <RCIntervalSubscriptionEnd ptype="DATETIME">2001-05-20T23:59:59Z</RCIntervalSubscriptionEnd>
+    <Advance ptype="BOOL">FALSE</Advance>
+    <ProrateOnSubscription ptype="BOOL">FALSE</ProrateOnSubscription>
+    <ProrateOnUnsubscription ptype="BOOL">TRUE</ProrateOnUnsubscription>
+	<ProrationCycleLength ptype="INTEGER">30</ProrationCycleLength>
+    <RCAmount ptype="DECIMAL">30.00</RCAmount>
+   </inputs>
+   <outputs>
+    <!-- 20 days out of 30 -->
+    <_Amount ptype="DECIMAL">20.00</_Amount>
+    <ProratedIntervalStart ptype="DATETIME">2001-05-01T00:00:00Z</ProratedIntervalStart>
+    <ProratedIntervalEnd ptype="DATETIME">2001-05-20T23:59:59Z</ProratedIntervalEnd>
+    <ProratedDays ptype="INTEGER">20</ProratedDays>
+    <ProratedOnSubscription ptype="BOOL">FALSE</ProratedOnSubscription>
+    <ProratedOnUnsubscription ptype="BOOL">TRUE</ProratedOnUnsubscription>
+   </outputs>
+  </session>
+
+  <session>
+   <!-- Subscribed and unsubscribeed in one day. using fixed number of days (30) -->
+   <ServiceID ptype="ID">metratech.com/FlatRecurringCharge</ServiceID>
+   <inputs>
+    <RCActionType ptype="STRING">Arrears</RCActionType>
+    <RCIntervalStart ptype="DATETIME">2001-05-01T00:00:00Z</RCIntervalStart>
+    <RCIntervalEnd ptype="DATETIME">2001-05-31T23:59:59Z</RCIntervalEnd>
+    <RCIntervalSubscriptionStart ptype="DATETIME">2001-05-10T05:00:00Z</RCIntervalSubscriptionStart>
+    <RCIntervalSubscriptionEnd ptype="DATETIME">2001-05-10T23:59:59Z</RCIntervalSubscriptionEnd>
+    <Advance ptype="BOOL">FALSE</Advance>
+    <ProrateOnSubscription ptype="BOOL">TRUE</ProrateOnSubscription>
+    <ProrateOnUnsubscription ptype="BOOL">TRUE</ProrateOnUnsubscription>
+	<ProrationCycleLength ptype="INTEGER">30</ProrationCycleLength>
+    <RCAmount ptype="DECIMAL">30.00</RCAmount>
+   </inputs>
+   <outputs>
+    <!-- 1 day out of 30 -->
+    <_Amount ptype="DECIMAL">1.00</_Amount>
+    <ProratedIntervalStart ptype="DATETIME">2001-05-10T05:00:00Z</ProratedIntervalStart>
+    <ProratedIntervalEnd ptype="DATETIME">2001-05-10T23:59:59Z</ProratedIntervalEnd>
+    <ProratedDays ptype="INTEGER">1</ProratedDays>
+    <ProratedOnSubscription ptype="BOOL">TRUE</ProratedOnSubscription>
+    <ProratedOnUnsubscription ptype="BOOL">TRUE</ProratedOnUnsubscription>
+   </outputs>
+  </session>
+
+</xmlconfig>

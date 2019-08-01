@@ -1,0 +1,334 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<mt_config>
+  <language_code>es-mx</language_code>
+  <locale_space name="metratech.com">
+    <locale_entry>
+      <Name>metratech.com/accountcreation/InvoiceMethod/Paper Invoice</Name>
+      <Value>Factura impresa</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/AccountID</Name>
+      <Value>ID de cuenta</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/AccountingCodeView</Name>
+      <Value>Agrupar por código de contabilidad</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/Amount</Name>
+      <Value>Monto</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/AmountWithTax</Name>
+      <Value>Monto con impuesto</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/audit/enmApplicationID/MAM</Name>
+      <Value>MetraCare</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/audit/enmApplicationID/MPS</Name>
+      <Value>MPS</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/audit/enmApplicationID/UNKNOWN</Name>
+      <Value>Desconocido(a)</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/audit/enmAuditOperation/Add</Name>
+      <Value>Agregar</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/audit/enmAuditOperation/Delete</Name>
+      <Value>Eliminar</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/audit/enmAuditOperation/Update</Name>
+      <Value>Actualizar</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/BillMessageType/FOOTER</Name>
+      <Value>Footer</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/BillMessageType/HEADER</Name>
+      <Value>Header</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/BillMessageType/INSERT</Name>
+      <Value>Insert</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/BillMessageType/OTHER</Name>
+      <Value>Other</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/CountyTaxAmount</Name>
+      <Value>Monto del impuesto del condado</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/CreditCardType/American Express</Name>
+      <Value>American Express</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/CreditCardType/Diners Club</Name>
+      <Value>Diners Club</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/CreditCardType/Discover</Name>
+      <Value>Discover</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/CreditCardType/JCB</Name>
+      <Value>JCB</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/CreditCardType/Maestro</Name>
+      <Value>Maestro</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/CreditCardType/Master Card</Name>
+      <Value>Master Card</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/CreditCardType/MasterCard</Name>
+      <Value>MasterCard</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/CreditCardType/None</Name>
+      <Value>None</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/CreditCardType/Visa</Name>
+      <Value>Visa</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/Currency</Name>
+      <Value>Divisa</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/DisplayAmount</Name>
+      <Value>Monto</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/FederalTaxAmount</Name>
+      <Value>Monto del impuesto federal</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/GroupByLeaderNameView</Name>
+      <Value>Agrupar por nombre de líder</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/IntervalID</Name>
+      <Value>ID de intervalo</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/LocalTaxAmount</Name>
+      <Value>Monto del impuesto local</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/mam/DayOfWeek/Friday</Name>
+      <Value>Viernes</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/mam/DayOfWeek/Monday</Name>
+      <Value>Lunes</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/mam/DayOfWeek/Saturday</Name>
+      <Value>Sábado</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/mam/DayOfWeek/Sunday</Name>
+      <Value>Domingo</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/mam/DayOfWeek/Thursday</Name>
+      <Value>Jueves</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/mam/DayOfWeek/Tuesday</Name>
+      <Value>Martes</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/mam/DayOfWeek/Wednesday</Name>
+      <Value>Miércoles</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/Operation/Add</Name>
+      <Value>Agregar</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/Operation/Delete</Name>
+      <Value>Eliminar</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/Operation/Update</Name>
+      <Value>Actualizar</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/OtherTaxAmount</Name>
+      <Value>Otro monto del impuesto</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/PayeeDisplayName</Name>
+      <Value>Suscriptor</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/Position/Engineer</Name>
+      <Value>Ingeniero</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/Position/Executive</Name>
+      <Value>Ejecutivo</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/Position/Manager</Name>
+      <Value>Administrador</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/PostbillAdjustmentAmount</Name>
+      <Value>Monto del ajuste posterior a la facturación</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/PrebillAdjustmentAmount</Name>
+      <Value>Monto del ajuste previo a la facturación</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/QuoteStatus/Actualized</Name>
+      <Value>Actualized</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/QuoteStatus/Complete</Name>
+      <Value>Complete</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/QuoteStatus/Converted</Name>
+      <Value>Converted</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/QuoteStatus/Failed</Name>
+      <Value>Failed</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/QuoteStatus/InProgress</Name>
+      <Value>InProgress</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/QuoteStatus/None</Name>
+      <Value>None</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/SaleForceRelationship/Account Development</Name>
+      <Value>Desarrollo de cuenta</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/SaleForceRelationship/Account Executive</Name>
+      <Value>Ejecutivo de cuentas</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/SaleForceRelationship/Channel Manager</Name>
+      <Value>Administrador de canales</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/SaleForceRelationship/Executive Sponsor</Name>
+      <Value>Patrocinador ejecutivo</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/SaleForceRelationship/Operations Support</Name>
+      <Value>Asistencia de operaciones</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/SaleForceRelationship/Program Manager</Name>
+      <Value>Administrador de programa</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/SaleForceRelationship/Project Manager</Name>
+      <Value>Administrador de proyectos</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/SaleForceRelationship/Sales Agent</Name>
+      <Value>Agente de ventas</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/SaleForceRelationship/Technical Sales Support</Name>
+      <Value>Soporte técnico de ventas</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/SessionID</Name>
+      <Value>ID de sesión</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/SessionType</Name>
+      <Value>Tipo de sesión</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ShowAllConnectionsView</Name>
+      <Value>Mostrar todas las conexiones</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/StateTaxAmount</Name>
+      <Value>Monto del impuesto estatal</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/SubscriberCreditAccountRequestReason/BadService</Name>
+      <Value>BadService</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/SubscriberCreditAccountRequestReason/DroppedCall</Name>
+      <Value>DroppedCall</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/SubscriberCreditAccountRequestReason/GeneralDissatisfaction</Name>
+      <Value>GeneralDissatisfaction</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/SubscriberCreditAccountRequestReason/Other</Name>
+      <Value>Other</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/SubscriberCreditAccountRequestReason/PoorConnection</Name>
+      <Value>PoorConnection</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/SubscriberCreditAccountRequestStatus/APPROVED</Name>
+      <Value>APPROVED</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/SubscriberCreditAccountRequestStatus/DENIED</Name>
+      <Value>DENIED</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/SubscriberCreditAccountRequestStatus/PENDING</Name>
+      <Value>PENDING</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/TaxAmount</Name>
+      <Value>Monto del impuesto</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/Timestamp</Name>
+      <Value>Marca de tiempo</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/TransactionTypes/BeginDistributed</Name>
+      <Value>BeginDistributed</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/TransactionTypes/BeginLocal</Name>
+      <Value>BeginLocal</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/TransactionTypes/Commit</Name>
+      <Value>Confirmar</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/TransactionTypes/JoinDistributed</Name>
+      <Value>JoinDistributed</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ViewID</Name>
+      <Value>Ver ID</Value>
+    </locale_entry>
+  </locale_space>
+</mt_config>

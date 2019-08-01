@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<mt_enum_config>
+    <enum_spaces>
+        <enum_space name="metratech.com/balanceadjustments">
+            <description>Enumerated Types for Balance Adjustments</description>
+            <enums>
+                <enum name="PaymentMethod">
+                    <description>Payment Method</description>
+                    <entries>
+                        <entry name="CreditCard">
+                            <value>0</value>
+                            <value>Credit Card</value>
+                        </entry>
+                        <entry name="ACH">
+                            <value>1</value>
+                            <value>ACH</value>
+                        </entry>
+                        <entry name="Check">
+                            <value>2</value>
+                            <value>Check</value>
+                        </entry>
+                        <entry name="Cash">
+                            <value>3</value>
+                            <value>Cash</value>
+                        </entry>
+                        <entry name="WireTransfer">
+                            <value>4</value>
+                            <value>BT - Wire Transfer</value>
+                        </entry>
+                        <entry name="WriteOff">
+                            <value>5</value>
+                            <value>Write-Off</value>
+                        </entry>
+                        <entry name="InterCompany">
+                            <value>6</value>
+                            <value>InterCompany</value>
+                        </entry>
+                        <entry name="TerminalCreditCard">
+                            <value>7</value>
+                            <value>Terminal Credit Card</value>
+                        </entry>
+                        <entry name="Wholesale">
+                            <value>8</value>
+                            <value>Wholesale</value>
+                        </entry>
+                        <entry name="Lockbox">
+                            <value>9</value>
+                            <value>Lockbox</value>
+                        </entry>
+                        <entry name="DirectDebit">
+                            <value>10</value>
+                            <value>Direct Debit</value>
+                        </entry>
+                    </entries>
+                </enum>
+                <enum name="ReasonCode">
+                    <description>Reason code for balance adjustments</description>
+                    <entries>
+                        <entry name="1">
+                            <value>BalanceMovedToPayer</value>
+                        </entry>
+                        <entry name="2">
+                            <value>BalanceMovedFromPayee</value>
+                        </entry>
+                        <entry name="3">
+                            <value>Other</value>
+                        </entry>
+                    </entries>
+                </enum>
+            </enums>
+        </enum_space>
+    </enum_spaces>
+</mt_enum_config>

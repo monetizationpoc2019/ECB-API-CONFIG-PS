@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xmlconfig>
+
+  <mtsysconfigdata>
+    <effective_date ptype="DATETIME">1998-11-19T00:00:00Z</effective_date>
+    <timeout ptype="INTEGER">30</timeout>
+    <configfiletype>CONFIG_DATA</configfiletype>
+  </mtsysconfigdata>
+
+  <mtconfigdata>
+    <version ptype="INTEGER">1</version>
+    <processor>
+      <name>ApplyRoleMembership</name>
+      <progid>MetraPipeline.ApplyRoleMembership</progid><description>Add the account to the following security/capability roles within the system: Subscriber (MetraView)</description><condition>
+      
+      CREATE PROCEDURE condition
+         @_ExecutePlugin BOOLEAN OUTPUT,
+      	 @ActionType ENUM -- $ICE:('metratech.com/accountcreation','ActionType')$
+      AS
+	    -- only execute if 
+	    -- action is either ACCOUNT or BOTH
+	    IF 
+      ( (upper(CAST(@ActionType AS VARCHAR)) = 'ACCOUNT') OR (upper(CAST(@ActionType AS VARCHAR)) = 'BOTH') )
+  		  SET @_ExecutePlugin = TRUE
+      ELSE
+      	SET @_ExecutePlugin = FALSE
+	    
+      </condition>
+
+      
+
+      <configdata>
+        <Operation>Operation</Operation>
+    		<AccountID>_AccountID</AccountID>
+    		<AccountType>AccountType</AccountType>
+    		<UserName>username</UserName>
+    		<Namespace>name_space</Namespace>
+    		<roles>
+    		  <role>Subscriber (MetraView)</role>
+    		  <!-- role>CSR (MetraCare)</role Do NOT add automatically -->
+    		</roles>
+      </configdata>
+    </processor>
+  </mtconfigdata>
+</xmlconfig>

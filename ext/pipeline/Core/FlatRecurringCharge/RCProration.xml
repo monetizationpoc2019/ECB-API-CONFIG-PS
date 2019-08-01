@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xmlconfig>
+    <mtsysconfigdata>
+        <effective_date ptype="DATETIME">1998-11-19T00:00:00Z</effective_date>
+        <timeout ptype="INTEGER">30</timeout>
+        <configfiletype>CONFIG_DATA</configfiletype>
+    </mtsysconfigdata>
+    <mtconfigdata>
+        <version ptype="INTEGER">1</version>
+        <processor>
+            <name>RCProration</name>
+            <description>Recurring charge proration.</description>
+            <progid>MetraPipeline.RecurringChargeProration.1</progid>
+            <!--      
+			<autotest>
+			   <file>RCProrationTest.xml</file>
+			</autotest>
+-->
+            <!--
+			<inputs>
+			</inputs>
+
+			<outputs>
+			</outputs>
+-->
+            <configdata>
+				<rcactiontype>RCActionType</rcactiontype>
+				<rcintervalstart>RCIntervalStart</rcintervalstart>
+				<rcintervalend>RCIntervalEnd</rcintervalend>
+
+				<rcintervalsubscriptionstart>RCIntervalSubscriptionStart</rcintervalsubscriptionstart>
+				<rcintervalsubscriptionend>RCIntervalSubscriptionEnd</rcintervalsubscriptionend>
+				<realsubscriptionend>SubscriptionEnd</realsubscriptionend>	
+				
+				<advance>Advance</advance>
+
+				<prorateonsubscription>ProrateOnSubscription</prorateonsubscription>
+				<prorateinstantly>ProrateInstantly</prorateinstantly>
+				<prorateonunsubscription>ProrateOnUnsubscription</prorateonunsubscription>
+
+
+				<!-- // prorate for 28 days, prorate for actual month, etc. -->
+				<!-- 0 means use actual number of days -->
+				<prorationcyclelength>ProrationCycleLength</prorationcyclelength>
+
+				<recurringchargeamount>RCAmount</recurringchargeamount>
+
+				<!-- outputs -->
+
+				<proratedrecurringchargeamount>_Amount</proratedrecurringchargeamount>
+
+				<proratedstartdate>ProratedIntervalStart</proratedstartdate>
+				<proratedenddate>ProratedIntervalEnd</proratedenddate>
+				<prorateddays>ProratedDays</prorateddays>
+				<prorateddailyrate>ProratedDailyRate</prorateddailyrate>
+
+				<proratedonsubscription>ProratedOnSubscription</proratedonsubscription>
+				<proratedonunsubscription>ProratedOnUnsubscription</proratedonunsubscription>
+				<proratedinstantly>ProratedInstantly</proratedinstantly>
+			</configdata>
+        </processor>
+    </mtconfigdata>
+</xmlconfig>

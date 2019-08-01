@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<mt_config>
+  <language_code>es-MX</language_code>
+  <locale_space name="metratech.com/flatrecurringcharge">
+    <locale_entry>
+      <Name>metratech.com/flatrecurringcharge</Name>
+      <Value>Cargo recurrente fijo</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/flatrecurringcharge/Advance</Name>
+      <Value>Avance</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/flatrecurringcharge/BillingIntervalEnd</Name>
+      <Value>Fin del intervalo de facturación</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/flatrecurringcharge/BillingIntervalStart</Name>
+      <Value>Inicio del intervalo de facturación</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/flatrecurringcharge/ProratedDailyRate</Name>
+      <Value>Tarifa diaria prorrateada</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/flatrecurringcharge/ProratedDays</Name>
+      <Value>Días prorrateados</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/flatrecurringcharge/ProratedIntervalEnd</Name>
+      <Value>Fin del intervalo prorrateado</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/flatrecurringcharge/ProratedIntervalStart</Name>
+      <Value>Inicio del intervalo prorrateado</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/flatrecurringcharge/ProratedOnSubscription</Name>
+      <Value>Prorrateada debido a suscripción</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/flatrecurringcharge/ProratedOnUnSubscription</Name>
+      <Value>Prorrateada debido a cancelación de suscripción</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/flatrecurringcharge/ProrateOnSubscription</Name>
+      <Value>Prorratear debido a suscripción</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/flatrecurringcharge/ProrateOnUnSubscription</Name>
+      <Value>Prorratear debido a cancelación de suscripción</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/flatrecurringcharge/RCAmount</Name>
+      <Value>Monto del cargo recurrente</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/flatrecurringcharge/RCIntervalEnd</Name>
+      <Value>Fecha de finalización de cargos recurrentes</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/flatrecurringcharge/RCIntervalStart</Name>
+      <Value>Fecha de inicio de cargos recurrentes</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/flatrecurringcharge/RCIntervalSubscriptionEnd</Name>
+      <Value>Fecha de finalización de suscripción de cargos recurrentes</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/flatrecurringcharge/RCIntervalSubscriptionStart</Name>
+      <Value>Fecha de inicio de suscripción de cargos recurrentes</Value>
+    </locale_entry>
+  </locale_space>
+</mt_config>

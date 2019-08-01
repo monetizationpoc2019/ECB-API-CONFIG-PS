@@ -1,0 +1,151 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<defineservice>
+    <name>metratech.com/NonStandardChargeRequest</name>
+    <description>Nonstandard charge requests.</description>
+    <ptype>
+        <dn>_AccountId</dn>
+        <type>int32</type>
+        <length />
+        <required>N</required>
+        <defaultvalue />
+        <description>The account to be billed for the transaction.</description>
+    </ptype>
+    <ptype>
+        <dn>NumUnits</dn>
+        <type>int32</type>
+        <length />
+        <required>N</required>
+        <defaultvalue />
+        <description>The number of units consumed.</description>
+    </ptype>
+    <ptype>
+        <dn>Rate</dn>
+        <type>decimal</type>
+        <length />
+        <required>Y</required>
+        <defaultvalue />
+        <description>This is the rate that we want to use</description>
+    </ptype>
+    <ptype>
+        <dn>IssuerAccountId</dn>
+        <type>int32</type>
+        <length />
+        <required>Y</required>
+        <defaultvalue />
+        <description>The csr that entered the charge</description>
+    </ptype>
+    <ptype>
+        <dn>AccountName</dn>
+        <type>string</type>
+        <length>20</length>
+        <required>N</required>
+        <defaultvalue />
+        <description>The account name</description>
+    </ptype>
+    <ptype>
+        <dn>AccountNameSpace</dn>
+        <type>string</type>
+        <length>20</length>
+        <required>N</required>
+        <defaultvalue>mt</defaultvalue>
+        <description>The accounts namespace</description>
+    </ptype>
+    <ptype>
+        <dn>GLCode</dn>
+        <type>string</type>
+        <length>20</length>
+        <required>N</required>
+        <defaultvalue />
+        <description>GL Code for taxing purposes</description>
+    </ptype>
+    <ptype>
+        <dn>Description</dn>
+        <type>string</type>
+        <length>100</length>
+        <required>N</required>
+        <defaultvalue />
+        <description>Any charge related description</description>
+    </ptype>
+    <ptype>
+        <dn>ReasonCode</dn>
+        <type EnumSpace="metratech.com/NonStandardCharge" EnumType="NonStandardChargeReason">enum</type>
+        <length />
+        <required>Y</required>
+        <defaultvalue />
+        <description>Reason Code</description>
+    </ptype>
+    <ptype>
+        <dn>AdditionalCode</dn>
+        <type EnumSpace="metratech.com/NonStandardCharge" EnumType="AdditionalCode">enum</type>
+        <length />
+        <required>N</required>
+        <defaultvalue />
+        <description>Non standard charge reason code</description>
+    </ptype>
+    <ptype>
+        <dn>_Currency</dn>
+        <type>string</type>
+        <length>3</length>
+        <required>Y</required>
+        <defaultvalue />
+        <description>Charge currency.</description>
+    </ptype>
+    <ptype>
+        <dn>AdditionalRate</dn>
+        <type>decimal</type>
+        <length />
+        <required>N</required>
+        <defaultvalue />
+        <description>Additional Rate</description>
+    </ptype>
+    <ptype>
+        <dn>ResolveWithAccountIDFlag</dn>
+        <type>boolean</type>
+        <length />
+        <required>N</required>
+        <defaultvalue>T</defaultvalue>
+        <description>This flag is set only for AccountResolution plugin. If it's set (default), then it will get account information by _AccountID. If not, it will look for Payer and Namespace properties in session and get account information by Namespace and Payer (LoginName).</description>
+    </ptype>
+    <ptype>
+        <dn>Status</dn>
+        <type>string</type>
+        <length>1</length>
+        <required>Y</required>
+        <defaultvalue />
+        <description>Pending, Approved, or Denied Status</description>
+    </ptype>
+    <ptype>
+        <dn>ExternalChargeId</dn>
+        <type>string</type>
+        <length>10</length>
+        <required>N</required>
+        <defaultvalue />
+        <description>External System Charge Id</description>
+    </ptype>
+    <ptype>
+        <dn>InternalChargeId</dn>
+        <type>int64</type>
+        <length />
+        <required>Y</required>
+        <defaultvalue />
+        <description>External System Charge Id</description>
+    </ptype>
+    <ptype>
+        <dn>GuideIntervalID</dn>
+        <type>int32</type>
+        <length />
+        <required>N</required>
+        <defaultvalue />
+        <description>Guide Interval Id</description>
+    </ptype>
+    <ptype filterable="False">
+      <dn>IssueTime</dn>
+      <type>timestamp</type>
+      <length>
+      </length>
+      <required>Y</required>
+      <defaultvalue>
+      </defaultvalue>
+      <description>Current time.</description>
+    </ptype>
+</defineservice>

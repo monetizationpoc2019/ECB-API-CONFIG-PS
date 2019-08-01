@@ -1,0 +1,125 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<defineservice>
+    <name>metratech.com/Contact</name>
+    <description>Contact information.</description>
+    <ptype partofkey="True">
+        <dn>ContactType</dn>
+        <type EnumSpace="metratech.com/accountcreation" EnumType="ContactType">enum</type>
+        <length />
+        <required>Y</required>
+        <defaultvalue />
+        <description>Contact type: None, Bill-To, or Ship-To.</description>
+    </ptype>
+    <ptype index="composite">
+        <dn>FirstName</dn>
+        <type>string</type>
+        <length>40</length>
+        <required>N</required>
+        <defaultvalue />
+        <description>First name.</description>
+    </ptype>
+    <ptype>
+        <dn>MiddleInitial</dn>
+        <type>string</type>
+        <length>1</length>
+        <required>N</required>
+        <defaultvalue />
+        <description>Middle Initial.</description>
+    </ptype>
+    <ptype index="composite">
+        <dn>LastName</dn>
+        <type>string</type>
+        <length>40</length>
+        <required>N</required>
+        <defaultvalue />
+        <description>Last name.</description>
+    </ptype>
+    <ptype index="single">
+        <dn>Email</dn>
+        <type>string</type>
+        <length>100</length>
+        <required>N</required>
+        <defaultvalue />
+        <description>E-mail address.</description>
+    </ptype>
+    <ptype>
+        <dn>PhoneNumber</dn>
+        <type>string</type>
+        <length>40</length>
+        <required>N</required>
+        <defaultvalue />
+        <description>Telephone number.</description>
+    </ptype>
+    <ptype>
+        <dn>Company</dn>
+        <type>string</type>
+        <length>255</length>
+        <required>N</required>
+        <defaultvalue />
+        <description>Company name.</description>
+    </ptype>
+    <ptype>
+        <dn>Address1</dn>
+        <type>string</type>
+        <length>100</length>
+        <required>N</required>
+        <defaultvalue />
+        <description>Address line 1.</description>
+    </ptype>
+    <ptype>
+        <dn>Address2</dn>
+        <type>string</type>
+        <length>100</length>
+        <required>N</required>
+        <defaultvalue />
+        <description>Address line 2.</description>
+    </ptype>
+    <ptype>
+        <dn>Address3</dn>
+        <type>string</type>
+        <length>100</length>
+        <required>N</required>
+        <defaultvalue />
+        <description>Address line 3.</description>
+    </ptype>
+    <ptype>
+        <dn>City</dn>
+        <type>string</type>
+        <length>40</length>
+        <required>N</required>
+        <defaultvalue />
+        <description>City/Town.</description>
+    </ptype>
+    <ptype>
+        <dn>State</dn>
+        <type>string</type>
+        <length>40</length>
+        <required>N</required>
+        <defaultvalue />
+        <description>State/Province.</description>
+    </ptype>
+    <ptype>
+        <dn>Zip</dn>
+        <type>string</type>
+        <length>40</length>
+        <required>N</required>
+        <defaultvalue />
+        <description>Zip/Postal code.</description>
+    </ptype>
+    <ptype>
+        <dn>Country</dn>
+        <type EnumSpace="Global" EnumType="CountryName">enum</type>
+        <length />
+        <required>N</required>
+        <defaultvalue />
+        <description>Country.</description>
+    </ptype>
+    <ptype>
+        <dn>FacsimileTelephoneNumber</dn>
+        <type>string</type>
+        <length>40</length>
+        <required>N</required>
+        <defaultvalue />
+        <description>FAX number.</description>
+    </ptype>
+</defineservice>

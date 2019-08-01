@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xmlconfig>
+	<!--AutoPayTransactionsTypes: All | CreditCard | DirectDebit -->
+  <AdapterName>SubmitAutoPay</AdapterName>
+  <WCFConfigFile>ecbAR\Config\ActivityServices\ecbARAdapterEndpoints.config</WCFConfigFile>
+  <EndpointName>NetTcpBinding_IECB.ecbAR.WCF.ecbARService</EndpointName>
+</xmlconfig>

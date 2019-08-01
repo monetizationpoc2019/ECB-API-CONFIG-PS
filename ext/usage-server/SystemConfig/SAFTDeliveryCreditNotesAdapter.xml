@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xmlconfig>
+    <!--  Adapter Name  -->
+    <AdapterName>Send Credit Notes To Portuguese Authority Webservice</AdapterName>
+    <!--  Insert Custom Tags here -->
+    <externalApp>java.exe</externalApp>
+    <!--Full path to exe (excluding name), defaults to env var MTRMPBIN -->
+    <workingDirectory>%JAVA_HOME%\bin</workingDirectory>
+    <!-- possible variables are %%UserID%%, %%Password%%, %%ServerName%%, %%IntervalID%% (only valid if running in EOP mode) & %%RunID%%-->
+    <commandArgs>-jar %MTRMPBIN%\jar\saftAdapter.jar %MTRMP%\config\SAFTDelivery\SAFTCreditNoteConfig.xml %MTRMP%\config\SAFTDelivery\SAFTDeliveryConfiguration.xml</commandArgs>
+    <reverseArgs>1</reverseArgs>
+</xmlconfig>

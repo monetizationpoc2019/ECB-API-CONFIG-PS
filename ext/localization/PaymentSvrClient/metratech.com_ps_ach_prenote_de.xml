@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<mt_config>
+  <language_code>DE</language_code>
+  <locale_space name="metratech.com/ps_ach_prenote">
+    <locale_entry>
+      <Name>metratech.com/ps_ach_prenote</Name>
+      <Value>ACH-Vorbenachrichtigung</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ps_ach_prenote/address</Name>
+      <Value>Adresse des Teilnehmers</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ps_ach_prenote/bankaccounttype</Name>
+      <Value>Bankkontoart</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ps_ach_prenote/city</Name>
+      <Value>Stadt</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ps_ach_prenote/country</Name>
+      <Value>Land</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ps_ach_prenote/customername</Name>
+      <Value>Name des Teilnehmers</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ps_ach_prenote/lastfourdigits</Name>
+      <Value>Die letzten vier Ziffern</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ps_ach_prenote/originalaccountid</Name>
+      <Value>Ursprüngliche Konto-ID</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ps_ach_prenote/paymentservicetransactionid</Name>
+      <Value>Transaktions-ID des Zahlungsdienstleisters</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ps_ach_prenote/respstring</Name>
+      <Value>Antwortbeschreibung</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ps_ach_prenote/retcode</Name>
+      <Value>Rückgabecode</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ps_ach_prenote/routingnumber</Name>
+      <Value>ABA/Bankleitzahl</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ps_ach_prenote/state</Name>
+      <Value>Bundesland</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ps_ach_prenote/zip</Name>
+      <Value>Postleitzahl</Value>
+    </locale_entry>
+  </locale_space>
+</mt_config>

@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xmlconfig>
+  <Version>1</Version>
+   
+  <Metering>
+    <!-- Maximum number of sessions to put in a session set.
+    NOTE: this number should be tuned depending on hardware
+    characteristics and transactionality concerns (expected failure rates) -->
+    <SessionSetSize>1000</SessionSetSize>
+
+    <!-- The amount of time in seconds to wait for a batch of sessions to commit.
+    A commit is having every session go to a product view or the failed transaction table -->
+    <CommitTimeout>3600</CommitTimeout>
+
+    <!-- If true, fails the adapter as soon as a batch of sessions is committed
+    with at least one failed transaction in it. Otherwise, fails the adapter if a
+    failed transaction has occurred but only after processing all other aggregate charge
+    templates --> 
+    <FailImmediately>False</FailImmediately>
+  </Metering>
+
+</xmlconfig>

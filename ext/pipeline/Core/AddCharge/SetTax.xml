@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xmlconfig>
+  <mtsysconfigdata>
+    <effective_date ptype="DATETIME">2007-06-30T00:00:00Z</effective_date>
+    <timeout ptype="INTEGER">30</timeout>
+    <configfiletype>CONFIG_DATA</configfiletype>
+  </mtsysconfigdata>
+
+  <mtconfigdata>
+    <version ptype="INTEGER">1</version>
+    <processor>
+      <name>SetTax</name>
+      <description>Set all tax amounts.</description>
+      <progid>MetraPipeline.MTSQLInterpreter.1</progid>
+
+      <configdata>
+        <Program>
+    CREATE PROCEDURE SetTax
+  @_FedTax DECIMAL OUTPUT
+  @_StateTax DECIMAL OUTPUT
+  @_CountyTax DECIMAL OUTPUT
+  @_LocalTax DECIMAL OUTPUT
+  @_OtherTax DECIMAL OUTPUT
+AS
+  SET @_FedTax    = 0.0
+  SET @_StateTax  = 0.0
+  SET @_CountyTax = 0.0
+  SET @_LocalTax  = 0.0
+  SET @_OtherTax  = 0.0
+        </Program>
+      </configdata>
+
+    </processor>
+  </mtconfigdata>
+</xmlconfig>

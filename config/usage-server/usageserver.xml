@@ -1,0 +1,131 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xmlconfig>
+	<version>2</version>
+	  <!-- NOTE:  
+	     The multicast settings are used for billing servers signalling.  The multicast address
+		 field is typically left commented out and at installation time, a random 
+		 multicast address is assigned to avoid collision with other installed systems
+		 on the same subnet. The multicast settings are stored in the database table t_billing_server_settings.
+		 After t_billing_server_settings is populated, you must edit this table if you want
+		 to change the multicast settings.  If you want specific multicast settings at installation
+		 time then these fields should be uncommented and it set to the appropriate value prior
+		 to installation. -->
+    <Multicast>
+      <!-- The multicast address is used to broadcast
+           billing server messages to all billing servers
+           in the subnet.  This configuration item is typicallyThis address must start with 224. 
+           Must be unique for each unique billing system installed in the same subnet. 
+		   This field is typically left commented out and a random address is assigned. -->
+	    <!-- <Address>224.10.11.12</Address> -->
+		<!-- The port to use for multicast communication. -->
+      <Port>5001</Port>
+		<!-- TTL (Time To Live) controls the live time of the 
+           datagram to avoid it being looped forever due to 
+           routing errors.  Routers decrement the TTL of every 
+           datagram as it traverses from one network to another. -->
+      <TTL>2</TTL>
+    </Multicast>
+	<Intervals>
+		<!-- number of days to create usage intervals in advance -->
+		<AdvanceIntervalCreationDays>7</AdvanceIntervalCreationDays>
+		<PastStartDate>12/31/1999</PastStartDate>
+		<!-- soft close grace periods (in days) for various usage cycle types -->
+		<!-- NOTE: do not edit these fields.  Grace period settings are read
+               from the database. Use MetraControl for changes.  The xml settings
+               are only used for initializing the database. --> 
+		<GracePeriods>
+			<Daily enabled="TRUE">0</Daily>
+			<Weekly enabled="TRUE">0</Weekly>
+			<Bi-weekly enabled="TRUE">0</Bi-weekly>
+			<Semi-monthly enabled="TRUE">0</Semi-monthly>
+			<Monthly enabled="TRUE">0</Monthly>
+			<Quarterly enabled="TRUE">0</Quarterly>
+			<Annually enabled="TRUE">0</Annually>
+      <SemiAnnually enabled="TRUE">0</SemiAnnually>
+		</GracePeriods>
+	</Intervals>
+	<Service>
+		<!-- the number of minutes to wait between attempting to execute/reverse recurring events -->
+		<ProcessEventsPeriod>15</ProcessEventsPeriod>
+		<!-- the time, given in Universal Time, at which daily activities are kicked off -->
+		<DailyTriggerTime>05:00:00</DailyTriggerTime>
+		<!-- whether to automatically create new usage intervals as needed -->
+		<CreateIntervals>True</CreateIntervals>
+		<!-- whether to automatically soft close open intervals when their grace period has ended -->
+		<!-- NOTE: the SoftCloseIntervals setting is stored BOTH in the database and in this 
+               xml file.  If the database setting is false, then the xml setting is ignored.
+               If the database settings is true, then this local xml setting is used to
+               determine behavior. Use MetraControl for changing the database setting. --> 
+		<!-- NOTE: do not edit the blockNewAccounts setting.  blockNewAccounts is read
+               from the database. Use MetraControl for changing.  This blockNewAccounts setting
+               is only used for initializing the database. --> 
+		<SoftCloseIntervals blockNewAccounts="TRUE">False</SoftCloseIntervals>
+		<!-- whether to automatically submit any NotYetRun events for execution at the end of the day -->
+		<!-- NOTE: do not edit the SubmitEventsForExecution setting.  SubmitEventsForExecution is read
+               from the database. Use MetraControl for changing.  This SubmitEventsForExecution setting
+               is only used for initializing the database. --> 
+		<SubmitEventsForExecution>False</SubmitEventsForExecution>
+		<SubmitCheckpointsForExecution>False</SubmitCheckpointsForExecution>
+		<!-- whether to automatically instantiate scheduled events based on the events recurrence pattern. -->
+		<InstantiateScheduledEvents>True</InstantiateScheduledEvents>
+		<!-- whether to automatically submit scheduled events for execution after the
+         event was automatically instantiated by the system -->
+    <!-- NOTE: the SubmitForExecutionAfterInstantiation setting is stored BOTH in the database and in this 
+               xml file.  If the database setting is false, then the xml setting is ignored.
+               If the database settings is true, then this local xml setting is used to
+               determine behavior. Use MetraControl for changing the database setting. --> 
+		<SubmitForExecutionAfterInstantiation>True</SubmitForExecutionAfterInstantiation>
+		<!-- Maximum number of adapters that can run at the same time on this machine. Must be at least 1. -->
+		<MaximumNumberOfAdaptersToRunConcurrentlyOnThisMachine>3</MaximumNumberOfAdaptersToRunConcurrentlyOnThisMachine>
+		<!-- Determines if machine/service will run adapters that are available to run on any machine or if this machine will run only adapters explicitly assigned to it.
+		Default is ‘False’ such that service will run adapters 	explicitly assigned to it and those not explicitly assigned to a particular machine as it does today  -->
+		<OnlyRunAdaptersExplicitlyAssignedToThisMachine>False</OnlyRunAdaptersExplicitlyAssignedToThisMachine>
+		<!--  Specify any additional machine roles/aliases for this machine, in addition to those stored in the database. Allows machine specific
+		configuration to specify additioal machine roles to use when checking adapter machine rules (which adapters can be run on this machine) -->
+		<!--<AdditionalMachineRolesToProcess>
+		  <MachineRole>Primary BillingServer</MachineRole>
+		  <MachineRole>Exporting BillingServer</MachineRole>
+		</AdditionalMachineRolesToProcess>   --> 
+  </Service>
+	<Partitions>
+		<!-- Enable partitioning for all usage tables, true or false. -->
+		<Enable>True</Enable>
+		<!-- Cycle types supported are Quarterly, Monthly, Semi-Monthly, and Weekly. -->
+		<Type>Quarterly</Type>
+		<!-- Allocation size of partition database data files in megabytes. -->
+		<DataSize>100</DataSize>
+		<!-- Allocation size of partition database log file in megabytes. -->
+		<LogSize>25</LogSize>
+		<!-- Storage locations for partition databases.  Used in round robin fashion. -->
+		<StoragePaths><Path>C:\Program Files\Microsoft SQL Server\MSSQL13.MSSQLSERVER\MSSQL\DATA</Path></StoragePaths>
+	</Partitions>
+	
+	<BillingGroups>
+    <RecurringBillingGroups>
+      <!-- query responsible for mapping accounts to billing groups -->
+      <AssignmentQuery>
+        <QueryPath>Queries\UsageServer\Samples</QueryPath>
+        <QueryTag>__ASSIGN_BILLING_GROUPS_BY_CONTINENT__</QueryTag>
+      </AssignmentQuery>
+
+      <!-- query responsible for adding descriptions to billing groups -->
+      <DescriptionQuery>
+        <QueryPath>Queries\UsageServer\Samples</QueryPath>
+        <QueryTag>__DESCRIBE_BILLING_GROUPS_BY_CONTINENT__</QueryTag>
+      </DescriptionQuery>
+    </RecurringBillingGroups>
+
+    <AllowPullLists>True</AllowPullLists>
+  </BillingGroups>
+  <MetraFlow>
+    <PartitionList>
+      <Name>Database</Name>
+      <Partition>0</Partition>
+    </PartitionList>
+  </MetraFlow>
+  
+  <ReRun>
+    <TTL>4.0</TTL>
+  </ReRun>
+
+</xmlconfig>

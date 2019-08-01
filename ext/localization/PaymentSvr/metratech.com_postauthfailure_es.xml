@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<mt_config>
+  <language_code>es</language_code>
+  <locale_space name="metratech.com/postauthfailure">
+    <locale_entry>
+      <Name>metratech.com/postauthfailure</Name>
+      <Value>Error de la autorización posterior</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/postauthfailure/authcode</Name>
+      <Value>Código de autorización</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/postauthfailure/creditcardtype</Name>
+      <Value>Tipo de tarjeta de crédito</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/postauthfailure/csrid</Name>
+      <Value>ID de Csr</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/postauthfailure/lastfourdigits</Name>
+      <Value>Últimos cuatro dígitos</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/postauthfailure/originalaccountid</Name>
+      <Value>ID de cuenta original</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/postauthfailure/originalid</Name>
+      <Value>ID original</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/postauthfailure/paymentservicetransactionid</Name>
+      <Value>ID de transacción del servicio de pago</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/postauthfailure/reason</Name>
+      <Value>Motivo del fallo</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/postauthfailure/respstring</Name>
+      <Value>Cadena de respuesta</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/postauthfailure/terminalid</Name>
+      <Value>ID de terminal</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/postauthfailure/transactionid</Name>
+      <Value>ID de la transacción</Value>
+    </locale_entry>
+  </locale_space>
+</mt_config>

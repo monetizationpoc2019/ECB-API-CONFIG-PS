@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xmlconfig>
+	<tag>OutgoingPaymentsCreditCardAdapter</tag>
+	<WCFConfigFile>PaymentSvrClient\config\UsageServer\PayAuthAdapter_US.xml</WCFConfigFile>
+	<EPSEndpoint>NetTcpBinding_IMetraTech.Core.Services.ElectronicPaymentServices</EPSEndpoint>
+	<NumThreads>1</NumThreads>
+</xmlconfig>

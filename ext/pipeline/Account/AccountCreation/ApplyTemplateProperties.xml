@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xmlconfig>
+
+  <mtsysconfigdata>
+    <effective_date ptype="DATETIME">1998-11-19T00:00:00Z</effective_date>
+    <timeout ptype="INTEGER">30</timeout>
+    <configfiletype>CONFIG_DATA</configfiletype>
+  </mtsysconfigdata>
+
+  <mtconfigdata>
+    <version ptype="INTEGER">1</version>
+    <processor>
+      <name>ApplyTemplateProperties</name>
+      <progid>MetraPipeline.ApplyTemplateProperties</progid><description>This plug-in applies to the account the properties present in the appropriate account template. (This is the template belonging to the nearest parent folder or corporate account with a template in the account hierarchy.) The plug-in locates the template, if one exists, for the account being created or updated and sets the session values for the properties specified by the template if those properties are not already set in the session.
+</description><condition>
+        
+      
+       CREATE PROCEDURE condition
+         @_ExecutePlugin BOOLEAN OUTPUT,
+													 @ApplyAccountTemplate BOOLEAN,
+      													 @ActionType ENUM -- $ICE:('metratech.com/accountcreation','ActionType')$,
+      													 @AncestorAccountID INTEGER,
+      													 @OldAncestorAccountID INTEGER
+      													 
+	    AS
+	    -- only execute if 
+	    -- ApplyAccountTemplateProperty is set to true
+	    -- AND account is a subscriber
+	    -- AND action is either ACCOUNT or BOTH
+	    -- AND (if operation is account update) new ancestor not equals to old encestor
+	    -- AND account is not a corporation (ancestor must be greater than 1)
+      IF 
+      (
+					(@ApplyAccountTemplate = TRUE) AND
+					(
+					((upper(CAST(@ActionType AS VARCHAR)) = 'ACCOUNT') OR (upper(CAST(@ActionType AS VARCHAR)) = 'BOTH')
+					)
+
+					AND ((@OldAncestorAccountID IS NULL) OR @OldAncestorAccountID &lt;&gt; @AncestorAccountID)
+					)
+				)
+			  SET @_ExecutePlugin = TRUE
+      ELSE
+      	SET @_ExecutePlugin = FALSE
+	    
+      </condition>
+
+      
+
+      <configdata>
+        <Operation>Operation</Operation>
+    		<AccountID>_AccountID</AccountID>
+    		<!-- Account Start Date is specified when we create an account -->
+    		<AccountStartDate>accountstartdate</AccountStartDate>
+    		<!--.. but in case of account update start date is hierarchy_startdate. -->
+    		<hierarchy_startdate>hierarchy_startdate</hierarchy_startdate>
+    		
+    		<AncestorAccountID>ancestorAccountID</AncestorAccountID>
+    		<AncestorAccount>ancestorAccount</AncestorAccount>
+    		<AncestorAccountNameSpace>ancestorAccountNS</AncestorAccountNameSpace>
+    		<OldAncestorAccountID>OldAncestorAccountID</OldAncestorAccountID>
+    		<UserName>username</UserName>
+    		<Namespace>name_space</Namespace>
+    		<AccountTypeID>acc_type_id</AccountTypeID>
+      </configdata>
+    </processor>
+  </mtconfigdata>
+</xmlconfig>

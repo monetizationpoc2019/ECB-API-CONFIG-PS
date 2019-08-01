@@ -1,0 +1,118 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<mt_config>
+    <language_code>jp</language_code>
+    <locale_space name="metratech.com/AccountCredit">
+        <locale_entry>
+            <Name>metratech.com/AccountCredit</Name>
+            <Value>各種調整</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/AccountCredit/_AccountID</Name>
+            <Value>お客様 #</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/AccountCredit/_Amount</Name>
+            <Value>金額</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/AccountCredit/_Currency</Name>
+            <Value>通貨</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/AccountCredit/AccountingCode</Name>
+            <Value>勘定コード</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/AccountCredit/Auto</Name>
+            <Value>自動</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/AccountCredit/ContentionSessionID</Name>
+            <Value>競合セッション ID</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/AccountCredit/CreditAmount</Name>
+            <Value>調整金額</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/AccountCredit/CreditTime</Name>
+            <Value>返金タイミング</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/AccountCredit/CsrID</Name>
+            <Value>対応窓口 ID</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/AccountCredit/EmailAddress</Name>
+            <Value>電子メール アドレス</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/AccountCredit/EmailNotification</Name>
+            <Value>電子メールによる通知</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/AccountCredit/EmailText</Name>
+            <Value>電子メール 本文</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/AccountCredit/GuideIntervalID</Name>
+            <Value>ガイド期間 ID</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/AccountCredit/IgnorePaymentRedirection</Name>
+            <Value>[JA]IgnorePaymentRedirection</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/AccountCredit/InternalComment</Name>
+            <Value>[JA]Internal Description</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/AccountCredit/InvoiceComment</Name>
+            <Value>[JA]Invoice Description</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/AccountCredit/Issuer</Name>
+            <Value>発信者</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/AccountCredit/NameSpace</Name>
+            <Value>ネームスペース</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/AccountCredit/Other</Name>
+            <Value>その他</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/AccountCredit/Payer</Name>
+            <Value>支払者</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/AccountCredit/Reason</Name>
+            <Value>理由コード</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/AccountCredit/RequestAmount</Name>
+            <Value>要求金額</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/AccountCredit/RequestID</Name>
+            <Value>要求 ID</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/AccountCredit/ResolveWithAccountIDFlag</Name>
+            <Value>お客様 ID との解決フラグ</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/AccountCredit/ReturnCode</Name>
+            <Value>戻りコード</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/AccountCredit/Status</Name>
+            <Value>状況</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/AccountCredit/SubscriberAccountID</Name>
+            <Value>[JA]Subscriber Account ID</Value>
+        </locale_entry>
+    </locale_space>
+</mt_config>

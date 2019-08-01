@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<defineservice>
+  <name>metratech.com/AccountMapping</name>
+  <description>Account mapping.</description>
+  <ptype>
+    <dn>Operation</dn>
+    <type EnumSpace="metratech.com" EnumType="operation">enum</type>
+    <length>
+    </length>
+    <required>Y</required>
+    <defaultvalue>
+    </defaultvalue>
+    <description>0 - Add, 1 - Update, 2 - Delete.</description>
+  </ptype>
+  <ptype>
+    <dn>LoginName</dn>
+    <type>string</type>
+    <length>255</length>
+    <required>N</required>
+    <defaultvalue>
+    </defaultvalue>
+    <description>Existing Login Name.</description>
+  </ptype>
+  <ptype>
+    <dn>NameSpace</dn>
+    <type>string</type>
+    <length>40</length>
+    <required>Y</required>
+    <defaultvalue>
+    </defaultvalue>
+    <description>Existing Name Space.</description>
+  </ptype>
+  <ptype>
+    <dn>NewLoginName</dn>
+    <type>string</type>
+    <length>255</length>
+    <required>N</required>
+    <defaultvalue>
+    </defaultvalue>
+    <description>New Login Name.</description>
+  </ptype>
+  <ptype>
+    <dn>NewNameSpace</dn>
+    <type>string</type>
+    <length>50</length>
+    <required>Y</required>
+    <defaultvalue>
+    </defaultvalue>
+    <description>New Name Space.</description>
+  </ptype>
+  <ptype>
+    <dn>_Timestamp</dn>
+    <type>timestamp</type>
+    <length>
+    </length>
+    <required>N</required>
+    <defaultvalue>
+    </defaultvalue>
+    <description>Time mapping should start.</description>
+  </ptype>
+</defineservice>

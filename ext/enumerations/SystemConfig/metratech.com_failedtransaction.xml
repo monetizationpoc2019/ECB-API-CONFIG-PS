@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<mt_config>
+  <enum_spaces>
+    <enum_space name="metratech.com/failedtransaction">
+      <description>failed transaction namespace</description>
+      <enums>
+    		<enum name="InvestigationReasonCode">
+					<description>Configurable Reason Codes For Marking 'Under Investigation' Failed Transactions</description>
+					<entries>
+						<entry name="AccountResolution">
+							<value>AccountResolution</value>
+						</entry>
+						<entry name="RateResolution">
+							<value>RateResolution</value>
+						</entry>
+						<entry name="OperationsIssue">
+			  	 			<value>OperationsIssue</value>
+						</entry>      
+			  	</entries>
+				</enum>
+    		<enum name="DismissedReasonCode">
+					<description>Configurable Reason Codes For Marking Dismissed Failed Transactions</description>
+					<entries>
+						<entry name="Test">
+							<value>Test</value>
+						</entry>
+						<entry name="ResendOriginal">
+							<value>ResendOriginal</value>
+						</entry>
+						<entry name="UnableToResolve">
+			  	 			<value>UnableToResolve</value>
+						</entry>
+			  	</entries>
+				</enum>
+      </enums>
+    </enum_space>
+  </enum_spaces>
+</mt_config>

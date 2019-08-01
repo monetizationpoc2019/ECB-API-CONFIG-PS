@@ -1,0 +1,25 @@
+ecb:
+  catalog:
+    rest:
+      AdjustmentController:
+        addReasonCodeMapping: MetraTech.Auth.Capabilities.ApplyAdjustmentsCapability, Metratech.MTAllCapability
+        deleteAdjustment: MetraTech.Auth.Capabilities.ApplyAdjustmentsCapability, Metratech.MTAllCapability
+        findAdjustmentTemplateReasonCodeMapping: ~
+        removeReasonCodeMappings: MetraTech.Auth.Capabilities.ApplyAdjustmentsCapability, Metratech.MTAllCapability
+      BaseAdjustmentController:
+        createAdjustment: MetraTech.Auth.Capabilities.ApplyAdjustmentsCapability, Metratech.MTAllCapability
+        findAdjustment: Metratech.MTAllCapability
+        getAdjustment: Metratech.MTAllCapability
+        updateAdjustment: MetraTech.Auth.Capabilities.ApplyAdjustmentsCapability, Metratech.MTAllCapability
+        updateSelectiveAdjustment: MetraTech.Auth.Capabilities.ApplyAdjustmentsCapability, Metratech.MTAllCapability
+    default: None
+
+ecb:
+  customer:
+    rest:
+      SubscriptionController:
+        createSubscriptionEntity: Metratech.MTCreateSubscriptionCapability, Metratech.MTAllCapability
+      AccountController:
+        updateAccountEntity: Metratech.MTUpdateCSRCapability, Metratech.CMTUpdateCorporateAccountCapability, Metratech.MTUpdateSubscriberCapability, Metratech.MTManageAHCapability, Metratech.MTAllCapability
+        updateAccountState: Metratech.MTUpdAccFromActiveToSuspendedCapability, Metratech.MTAllCapability        
+    default: None    

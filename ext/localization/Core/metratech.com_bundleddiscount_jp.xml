@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<mt_config>
+  <language_code>jp</language_code>
+  <locale_space name="metratech.com/BundledDiscount">
+    <locale_entry>
+      <Name>metratech.com/BundledDiscount</Name>
+      <Value>割引</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/BundledDiscount/_ProductID</Name>
+      <Value>製品 ID</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/BundledDiscount/DiscountID</Name>
+      <Value>割引 ID</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/BundledDiscount/DiscountName</Name>
+      <Value>割引名</Value>
+    </locale_entry>
+  </locale_space>
+</mt_config>

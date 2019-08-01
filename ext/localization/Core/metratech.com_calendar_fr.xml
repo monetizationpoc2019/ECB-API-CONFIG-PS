@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<mt_config>
+    <language_code>fr</language_code>
+    <locale_space name="metratech.com/calendar">
+        <locale_entry>
+            <Name>metratech.com/calendar/CalendarCode/Holiday</Name>
+            <Value>Vacances</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/calendar/CalendarCode/Off-Peak</Name>
+            <Value>Période creuse</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/calendar/CalendarCode/Peak</Name>
+            <Value>Période d'affluence</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/calendar/CalendarCode/Weekend</Name>
+            <Value>Week-end</Value>
+        </locale_entry>
+    </locale_space>
+</mt_config>

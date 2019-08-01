@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<mt_config>
+  <language_code>es-MX</language_code>
+  <locale_space name="metratech.com/ps_cc_postauth">
+    <locale_entry>
+      <Name>metratech.com/ps_cc_postauth</Name>
+      <Value>Autorización posterior</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ps_cc_postauth/CreditCardType</Name>
+      <Value>Tipo de tarjeta de crédito</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ps_cc_postauth/CsrId</Name>
+      <Value>ID de CSR</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ps_cc_postauth/exported</Name>
+      <Value>Indicador exportado</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ps_cc_postauth/LastFourDigits</Name>
+      <Value>Últimos cuatro dígitos</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ps_cc_postauth/OriginalAccountID</Name>
+      <Value>Original AccountID</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ps_cc_postauth/originalid</Name>
+      <Value>ID original</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ps_cc_postauth/paymentservicetransactionid</Name>
+      <Value>Proveedor de servicio de pago ID de transacción (Posterior a la autorización)</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ps_cc_postauth/Reason</Name>
+      <Value>Motivo del débito</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ps_cc_postauth/RespString</Name>
+      <Value>Descripción de respuesta</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ps_cc_postauth/retcode</Name>
+      <Value>Código de devolución</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ps_cc_postauth/terminalid</Name>
+      <Value>ID de terminal</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ps_cc_postauth/TransactionID</Name>
+      <Value>TransactionID</Value>
+    </locale_entry>
+  </locale_space>
+</mt_config>

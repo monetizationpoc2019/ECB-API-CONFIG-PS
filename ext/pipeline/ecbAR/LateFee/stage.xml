@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xmlconfig>
+    <version ptype="INTEGER">1</version>
+    <description>Calculates Late Fee for an account</description>
+    <stage>
+        <name>LateFee</name>
+        <startstage ptype="BOOLEAN">Yes</startstage>
+        <finalstage ptype="BOOLEAN">No</finalstage>
+        <nextstage>WriteProductView</nextstage>
+        <dependencies>
+            <dependency>
+                <processor>SetInitialValues</processor>
+            </dependency>
+            <dependency>
+                <processor>ResolvePayerId</processor>
+                <dependson>SetInitialValues</dependson>
+            </dependency>
+            <dependency>
+                <processor>PriceableItemLookup</processor>
+                <dependson>ResolvePayerId</dependson>
+            </dependency>
+            <dependency>
+                <processor>ResolveCurrency</processor>
+                <dependson>PriceableItemLookup</dependson>
+            </dependency>
+            <dependency>
+                <processor>AccountResolutionByID</processor>
+                <dependson>ResolveCurrency</dependson>
+            </dependency>
+            <dependency>
+                <processor>CalculateLateFeeAmount</processor>
+                <dependson>AccountResolutionByID</dependson>
+            </dependency>
+            <dependson>CalculateLateFeeAmount</dependson>
+        </dependencies>
+    </stage>
+    <possiblenextstages />
+</xmlconfig>

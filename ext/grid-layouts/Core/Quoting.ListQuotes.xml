@@ -1,0 +1,643 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<GridLayout xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <Name>Quoting.ListQuotes</Name>
+    <Title>
+        <LocalizationTag>QUOTE_LIST</LocalizationTag>
+        <ResourceClassKey>Quoting/App_LocalResources/QuoteList.aspx</ResourceClassKey>
+    </Title>
+    <Exportable>true</Exportable>
+    <Height>0</Height>
+    <Width>75%</Width>
+    <Expandable>true</Expandable>
+    <Buttons>None</Buttons>
+    <DataSourceURL>../AjaxServices/LoadQuotesList.aspx</DataSourceURL>
+    <MultiSelect>true</MultiSelect>
+    <SelectionModel>CheckBox</SelectionModel>
+    <TotalProperty>TotalRows</TotalProperty>
+    <RootElement>Items</RootElement>
+    <PageSize>10</PageSize>
+    <Description />
+    <ExpansionCssClass />
+    <ShowFilterPanel>true</ShowFilterPanel>
+    <FilterInputWidth>220</FilterInputWidth>
+    <FilterLabelWidth>75</FilterLabelWidth>
+    <FilterColumnWidth>350</FilterColumnWidth>
+    <ShowTopBar>true</ShowTopBar>
+    <ShowBottomBar>true</ShowBottomBar>
+    <ShowGridFrame>true</ShowGridFrame>
+    <ShowGridHeader>true</ShowGridHeader>
+    <ShowColumnHeaders>true</ShowColumnHeaders>
+    <NoRecordsText>
+        <LocalizationTag>TEXT_NO_RECORDS_FOUND</LocalizationTag>
+        <ResourceClassKey>Resource</ResourceClassKey>
+    </NoRecordsText>
+    <FilterPanelLayout>MultiColumn</FilterPanelLayout>
+    <FilterPanelCollapsed>true</FilterPanelCollapsed>
+    <EnableColumnConfig>true</EnableColumnConfig>
+    <EnableFilterConfig>true</EnableFilterConfig>
+    <Resizeable>true</Resizeable>
+    <ButtonAlignment>Center</ButtonAlignment>
+    <DefaultSortField />
+    <DefaultSortDirection>Ascending</DefaultSortDirection>
+    <DisplayCount>true</DisplayCount>
+    <SearchOnLoad>true</SearchOnLoad>
+    <CustomImplementationFilePath />
+    <CustomOverrideJavascriptIncludes>\MetraNet\Quoting\QuoteList.aspx</CustomOverrideJavascriptIncludes>
+    <DataBinder>
+        <ServicePath>/MetraNet/AjaxServices/GetData.aspx</ServicePath>
+        <OutPropertyName>quotes</OutPropertyName>
+        <Operation>QuotingService_GetQuotes_Client</Operation>
+    </DataBinder>
+    <SubGrid />
+    <Elements>
+        <Element>
+            <RecordElement>false</RecordElement>
+            <ID>Actions</ID>
+            <DataIndex>actions</DataIndex>
+            <IsColumn>true</IsColumn>
+            <HeaderText>
+                <LocalizationTag>TEXT_ACTIONS</LocalizationTag>
+                <ResourceClassKey>Resource</ResourceClassKey>
+            </HeaderText>
+            <Formatter />
+            <Width>75</Width>
+            <Resizeable>true</Resizeable>
+            <PreventSortable>false</PreventSortable>
+            <Sortable>false</Sortable>
+            <ColumnHideable>false</ColumnHideable>
+            <DefaultColumn>true</DefaultColumn>
+            <Filterable>false</Filterable>
+        </Element>
+        <Element>
+            <RecordElement>true</RecordElement>
+            <AssemblyFilename>C:\dev\MetraNetDev\output\Debug\Bin\Core.Quoting.Entity.dll</AssemblyFilename>
+            <ObjectName>Core.Quoting.QuoteHeader</ObjectName>
+            <ID>Status</ID>
+            <DataType>List</DataType>
+            <IsIdentity>false</IsIdentity>
+            <FilterEnum>
+                <EnumClassName />
+                <EnumSpace>metratech.com</EnumSpace>
+                <EnumType>QuoteStatus</EnumType>
+                <UseEnumValue>true</UseEnumValue>
+                <DefaultValue />
+                <HideEnumValues>
+                    <EnumValue>None</EnumValue>
+                </HideEnumValues>
+            </FilterEnum>
+            <DataIndex>Status</DataIndex>
+            <IsColumn>true</IsColumn>
+            <HeaderText>
+                <LocalizationTag>QUOTE_STATUS</LocalizationTag>
+                <ResourceClassKey>Quoting/App_LocalResources/QuoteList.aspx</ResourceClassKey>
+            </HeaderText>
+            <Formatter />
+            <Width>120</Width>
+            <Resizeable>true</Resizeable>
+            <PreventSortable>true</PreventSortable>
+            <Sortable>true</Sortable>
+            <ColumnHideable>true</ColumnHideable>
+            <DefaultColumn>true</DefaultColumn>
+            <Exportable>true</Exportable>
+            <ShowInExpander>false</ShowInExpander>
+            <Filterable>true</Filterable>
+            <FilterHideable>true</FilterHideable>
+            <DefaultFilter>true</DefaultFilter>
+            <RequiredFilter>false</RequiredFilter>
+            <FilterLabel />
+            <ElementValue>
+                <Value />
+            </ElementValue>
+            <ElementValue2>
+                <Value />
+            </ElementValue2>
+            <FilterReadOnly>false</FilterReadOnly>
+            <DropdownItems />
+        </Element>
+        <Element>
+            <RecordElement>true</RecordElement>
+            <AssemblyFilename>C:\dev\MetraNetDev\output\Debug\Bin\Core.Quoting.Entity.dll</AssemblyFilename>
+            <ObjectName>Core.Quoting.QuoteHeader</ObjectName>
+            <ID>IdQuote</ID>
+            <DataType>Numeric</DataType>
+            <IsIdentity>true</IsIdentity>
+            <DataIndex>IdQuote</DataIndex>
+            <IsColumn>true</IsColumn>
+            <HeaderText>
+                <LocalizationTag>QUOTE_NUM</LocalizationTag>
+                <ResourceClassKey>Quoting/App_LocalResources/QuoteList.aspx</ResourceClassKey>
+            </HeaderText>
+            <Formatter />
+            <Width>75</Width>
+            <Resizeable>true</Resizeable>
+            <PreventSortable>true</PreventSortable>
+            <Sortable>true</Sortable>
+            <ColumnHideable>true</ColumnHideable>
+            <DefaultColumn>true</DefaultColumn>
+            <Exportable>true</Exportable>
+            <ShowInExpander>false</ShowInExpander>
+            <Filterable>true</Filterable>
+            <FilterHideable>true</FilterHideable>
+            <DefaultFilter>true</DefaultFilter>
+            <RequiredFilter>false</RequiredFilter>
+            <FilterLabel />
+            <ElementValue>
+                <Value />
+            </ElementValue>
+            <ElementValue2>
+                <Value />
+            </ElementValue2>
+            <FilterReadOnly>false</FilterReadOnly>
+            <DropdownItems />
+        </Element>
+        <Element>
+            <RecordElement>true</RecordElement>
+            <AssemblyFilename>C:\dev\MetraNetDev\output\Debug\Bin\Core.Quoting.Entity.dll</AssemblyFilename>
+            <ObjectName>Core.Quoting.QuoteHeader</ObjectName>
+            <ID>QuoteDescription</ID>
+            <DataType>String</DataType>
+            <IsIdentity>false</IsIdentity>
+            <DataIndex>QuoteDescription</DataIndex>
+            <IsColumn>true</IsColumn>
+            <HeaderText>
+                <LocalizationTag>QUOTE_DESCRIPTION</LocalizationTag>
+                <ResourceClassKey>Quoting/App_LocalResources/QuoteList.aspx</ResourceClassKey>
+            </HeaderText>
+            <Formatter />
+            <Width>240</Width>
+            <Resizeable>true</Resizeable>
+            <PreventSortable>true</PreventSortable>
+            <Sortable>false</Sortable>
+            <ColumnHideable>true</ColumnHideable>
+            <DefaultColumn>true</DefaultColumn>
+            <Exportable>true</Exportable>
+            <ShowInExpander>false</ShowInExpander>
+            <Filterable>false</Filterable>
+            <FilterHideable>true</FilterHideable>
+            <DefaultFilter>true</DefaultFilter>
+            <RequiredFilter>false</RequiredFilter>
+            <FilterLabel />
+            <ElementValue>
+                <Value />
+            </ElementValue>
+            <ElementValue2>
+                <Value />
+            </ElementValue2>
+            <FilterReadOnly>false</FilterReadOnly>
+            <DropdownItems />
+        </Element>
+        <Element>
+            <RecordElement>true</RecordElement>
+            <AssemblyFilename>C:\dev\MetraNetDev\output\Debug\Bin\Core.Quoting.Entity.dll</AssemblyFilename>
+            <ObjectName>Core.Quoting.QuoteHeader</ObjectName>
+            <ID>QuoteCreationDate</ID>
+            <DataType>Date</DataType>
+            <IsIdentity>false</IsIdentity>
+            <DataIndex>QuoteCreationDate</DataIndex>
+            <IsColumn>true</IsColumn>
+            <HeaderText>
+                <LocalizationTag>CREATION_DATE</LocalizationTag>
+                <ResourceClassKey>Quoting/App_LocalResources/QuoteList.aspx</ResourceClassKey>
+            </HeaderText>
+            <Formatter />
+            <Width>120</Width>
+            <Resizeable>true</Resizeable>
+            <PreventSortable>true</PreventSortable>
+            <Sortable>false</Sortable>
+            <ColumnHideable>true</ColumnHideable>
+            <DefaultColumn>true</DefaultColumn>
+            <Exportable>true</Exportable>
+            <ShowInExpander>false</ShowInExpander>
+            <Filterable>true</Filterable>
+            <FilterHideable>true</FilterHideable>
+            <DefaultFilter>true</DefaultFilter>
+            <RequiredFilter>false</RequiredFilter>
+            <FilterLabel />
+            <ElementValue>
+                <Value />
+            </ElementValue>
+            <ElementValue2>
+                <Value />
+            </ElementValue2>
+            <FilterReadOnly>false</FilterReadOnly>
+            <DropdownItems />
+        </Element>
+        <Element>
+            <RecordElement>true</RecordElement>
+            <AssemblyFilename>C:\dev\MetraNetDev\output\Debug\Bin\Core.Quoting.Entity.dll</AssemblyFilename>
+            <ObjectName>Core.Quoting.QuoteHeader</ObjectName>
+            <ID>TotalAmount</ID>
+            <DataType>Numeric</DataType>
+            <IsIdentity>false</IsIdentity>
+            <DataIndex>TotalAmount</DataIndex>
+            <IsColumn>true</IsColumn>
+            <HeaderText>
+                <LocalizationTag>TOTAL_AMOUNT</LocalizationTag>
+                <ResourceClassKey>Quoting/App_LocalResources/QuoteList.aspx</ResourceClassKey>
+            </HeaderText>
+            <Formatter>CurrencyRenderer</Formatter>
+            <Width>120</Width>
+            <Resizeable>true</Resizeable>
+            <PreventSortable>true</PreventSortable>
+            <Sortable>false</Sortable>
+            <ColumnHideable>true</ColumnHideable>
+            <DefaultColumn>true</DefaultColumn>
+            <Exportable>true</Exportable>
+            <ShowInExpander>false</ShowInExpander>
+            <Filterable>true</Filterable>
+            <FilterHideable>true</FilterHideable>
+            <DefaultFilter>true</DefaultFilter>
+            <RequiredFilter>false</RequiredFilter>
+            <FilterLabel />
+            <ElementValue>
+                <Value />
+            </ElementValue>
+            <ElementValue2>
+                <Value />
+            </ElementValue2>
+            <FilterReadOnly>false</FilterReadOnly>
+            <DropdownItems />
+        </Element>
+        <Element>
+            <RecordElement>true</RecordElement>
+            <AssemblyFilename>C:\dev\MetraNetDev\output\Debug\Bin\Core.Quoting.Entity.dll</AssemblyFilename>
+            <ObjectName>Core.Quoting.QuoteHeader</ObjectName>
+            <ID>TotalTax</ID>
+            <DataType>Numeric</DataType>
+            <IsIdentity>false</IsIdentity>
+            <DataIndex>TotalTax</DataIndex>
+            <IsColumn>true</IsColumn>
+            <HeaderText>
+                <LocalizationTag>TOTAL_TAX</LocalizationTag>
+                <ResourceClassKey>Quoting/App_LocalResources/QuoteList.aspx</ResourceClassKey>
+            </HeaderText>
+            <Formatter>CurrencyRenderer</Formatter>
+            <Width>120</Width>
+            <Resizeable>true</Resizeable>
+            <PreventSortable>true</PreventSortable>
+            <Sortable>false</Sortable>
+            <ColumnHideable>true</ColumnHideable>
+            <DefaultColumn>true</DefaultColumn>
+            <Exportable>true</Exportable>
+            <ShowInExpander>false</ShowInExpander>
+            <Filterable>false</Filterable>
+            <FilterHideable>true</FilterHideable>
+            <DefaultFilter>true</DefaultFilter>
+            <RequiredFilter>false</RequiredFilter>
+            <FilterLabel />
+            <ElementValue>
+                <Value />
+            </ElementValue>
+            <ElementValue2>
+                <Value />
+            </ElementValue2>
+            <FilterReadOnly>false</FilterReadOnly>
+            <DropdownItems />
+        </Element>
+        <Element>
+            <RecordElement>true</RecordElement>
+            <AssemblyFilename>C:\dev\MetraNetDev\output\Debug\Bin\Core.Quoting.Entity.dll</AssemblyFilename>
+            <ObjectName>Core.Quoting.QuoteHeader</ObjectName>
+            <ID>Currency</ID>
+            <DataType>List</DataType>
+            <IsIdentity>false</IsIdentity>
+            <FilterEnum>
+                <EnumClassName />
+                <EnumSpace>Global/SystemCurrencies</EnumSpace>
+                <EnumType>SystemCurrencies</EnumType>
+                <UseEnumValue>true</UseEnumValue>
+                <DefaultValue />
+                <HideEnumValues />
+            </FilterEnum>
+            <DataIndex>Currency</DataIndex>
+            <IsColumn>true</IsColumn>
+            <HeaderText>
+                <LocalizationTag>CURRENCY</LocalizationTag>
+                <ResourceClassKey>Quoting/App_LocalResources/QuoteList.aspx</ResourceClassKey>
+            </HeaderText>
+            <Formatter />
+            <Width>120</Width>
+            <Resizeable>true</Resizeable>
+            <PreventSortable>true</PreventSortable>
+            <Sortable>false</Sortable>
+            <ColumnHideable>true</ColumnHideable>
+            <DefaultColumn>true</DefaultColumn>
+            <Exportable>true</Exportable>
+            <ShowInExpander>false</ShowInExpander>
+            <Filterable>true</Filterable>
+            <FilterHideable>true</FilterHideable>
+            <DefaultFilter>true</DefaultFilter>
+            <RequiredFilter>false</RequiredFilter>
+            <FilterLabel />
+            <ElementValue>
+                <Value />
+            </ElementValue>
+            <ElementValue2>
+                <Value />
+            </ElementValue2>
+            <FilterReadOnly>false</FilterReadOnly>
+            <DropdownItems />
+        </Element>
+        <Element>
+            <RecordElement>true</RecordElement>
+            <AssemblyFilename>C:\dev\MetraNetDev\output\Debug\Bin\Core.Quoting.Entity.dll</AssemblyFilename>
+            <ObjectName>Core.Quoting.QuoteHeader</ObjectName>
+            <ID>FailedMessage</ID>
+            <DataType>String</DataType>
+            <IsIdentity>false</IsIdentity>
+            <DataIndex>FailedMessage</DataIndex>
+            <IsColumn>false</IsColumn>
+            <HeaderText>
+                <LocalizationTag>QUOTE_FAILEDMESSAGE</LocalizationTag>
+                <ResourceClassKey>Quoting/App_LocalResources/QuoteList.aspx</ResourceClassKey>
+            </HeaderText>
+            <Formatter />
+            <Width>120</Width>
+            <Resizeable>true</Resizeable>
+            <PreventSortable>true</PreventSortable>
+            <Sortable>false</Sortable>
+            <ColumnHideable>true</ColumnHideable>
+            <DefaultColumn>true</DefaultColumn>
+            <Exportable>true</Exportable>
+            <ShowInExpander>true</ShowInExpander>
+            <Filterable>false</Filterable>
+            <FilterHideable>true</FilterHideable>
+            <DefaultFilter>true</DefaultFilter>
+            <RequiredFilter>false</RequiredFilter>
+            <FilterLabel />
+            <ElementValue>
+                <Value />
+            </ElementValue>
+            <ElementValue2>
+                <Value />
+            </ElementValue2>
+            <FilterReadOnly>false</FilterReadOnly>
+            <DropdownItems />
+        </Element>
+        <Element>
+            <RecordElement>true</RecordElement>
+            <AssemblyFilename>C:\dev\MetraNetDev\output\Debug\Bin\Core.Quoting.Entity.dll</AssemblyFilename>
+            <ObjectName>Core.Quoting.QuoteHeader</ObjectName>
+            <ID>ReportLink</ID>
+            <DataType>String</DataType>
+            <IsIdentity>false</IsIdentity>
+            <DataIndex>ReportLink</DataIndex>
+            <IsColumn>false</IsColumn>
+            <HeaderText>
+                <LocalizationTag>REPORT_LINK</LocalizationTag>
+                <ResourceClassKey>Quoting/App_LocalResources/QuoteList.aspx</ResourceClassKey>
+            </HeaderText>
+            <Formatter />
+            <Width>120</Width>
+            <Resizeable>true</Resizeable>
+            <PreventSortable>true</PreventSortable>
+            <Sortable>false</Sortable>
+            <ColumnHideable>true</ColumnHideable>
+            <DefaultColumn>true</DefaultColumn>
+            <Exportable>true</Exportable>
+            <ShowInExpander>true</ShowInExpander>
+            <Filterable>false</Filterable>
+            <FilterHideable>true</FilterHideable>
+            <DefaultFilter>true</DefaultFilter>
+            <RequiredFilter>false</RequiredFilter>
+            <FilterLabel />
+            <ElementValue>
+                <Value />
+            </ElementValue>
+            <ElementValue2>
+                <Value />
+            </ElementValue2>
+            <FilterReadOnly>false</FilterReadOnly>
+            <DropdownItems />
+        </Element>
+        <Element>
+            <RecordElement>true</RecordElement>
+            <AssemblyFilename>C:\dev\MetraNetDev\output\Debug\Bin\Core.Quoting.Entity.dll</AssemblyFilename>
+            <ObjectName>Core.Quoting.QuoteHeader</ObjectName>
+            <ID>AccountsInfo</ID>
+            <DataType>String</DataType>
+            <IsIdentity>false</IsIdentity>
+            <DataIndex>AccountsInfo</DataIndex>
+            <IsColumn>false</IsColumn>
+            <HeaderText>
+                <LocalizationTag>QUOTE_ACCOUNTS</LocalizationTag>
+                <ResourceClassKey>Quoting/App_LocalResources/QuoteList.aspx</ResourceClassKey>
+            </HeaderText>
+            <Formatter />
+            <Width>120</Width>
+            <Resizeable>true</Resizeable>
+            <PreventSortable>true</PreventSortable>
+            <Sortable>false</Sortable>
+            <ColumnHideable>true</ColumnHideable>
+            <DefaultColumn>true</DefaultColumn>
+            <Exportable>true</Exportable>
+            <ShowInExpander>true</ShowInExpander>
+            <Filterable>false</Filterable>
+            <FilterHideable>true</FilterHideable>
+            <DefaultFilter>true</DefaultFilter>
+            <RequiredFilter>false</RequiredFilter>
+            <FilterLabel />
+            <ElementValue>
+                <Value />
+            </ElementValue>
+            <ElementValue2>
+                <Value />
+            </ElementValue2>
+            <FilterReadOnly>false</FilterReadOnly>
+            <DropdownItems />
+        </Element>
+        <Element>
+            <RecordElement>true</RecordElement>
+            <AssemblyFilename>C:\dev\MetraNetDev\output\Debug\Bin\Core.Quoting.Entity.dll</AssemblyFilename>
+            <ObjectName>Core.Quoting.QuoteHeader</ObjectName>
+            <ID>POsInfo</ID>
+            <DataType>String</DataType>
+            <IsIdentity>false</IsIdentity>
+            <DataIndex>POsInfo</DataIndex>
+            <IsColumn>false</IsColumn>
+            <HeaderText>
+                <LocalizationTag>QUOTE_POS</LocalizationTag>
+                <ResourceClassKey>Quoting/App_LocalResources/QuoteList.aspx</ResourceClassKey>
+            </HeaderText>
+            <Formatter />
+            <Width>120</Width>
+            <Resizeable>true</Resizeable>
+            <PreventSortable>true</PreventSortable>
+            <Sortable>false</Sortable>
+            <ColumnHideable>true</ColumnHideable>
+            <DefaultColumn>true</DefaultColumn>
+            <Exportable>true</Exportable>
+            <ShowInExpander>true</ShowInExpander>
+            <Filterable>false</Filterable>
+            <FilterHideable>true</FilterHideable>
+            <DefaultFilter>true</DefaultFilter>
+            <RequiredFilter>false</RequiredFilter>
+            <FilterLabel />
+            <ElementValue>
+                <Value />
+            </ElementValue>
+            <ElementValue2>
+                <Value />
+            </ElementValue2>
+            <FilterReadOnly>false</FilterReadOnly>
+            <DropdownItems />
+        </Element>
+        <Element>
+            <RecordElement>true</RecordElement>
+            <AssemblyFilename>C:\dev\MetraNetDev\output\Debug\Bin\Core.Quoting.Entity.dll</AssemblyFilename>
+            <ObjectName>Core.Quoting.QuoteHeader</ObjectName>
+            <ID>GroupSubscription</ID>
+            <DataType>Boolean</DataType>
+            <IsIdentity>false</IsIdentity>
+            <DataIndex>GroupSubscription</DataIndex>
+            <IsColumn>false</IsColumn>
+            <HeaderText>
+                <LocalizationTag>IS_GROUPSUBSCRIPTION</LocalizationTag>
+                <ResourceClassKey>Quoting/App_LocalResources/QuoteList.aspx</ResourceClassKey>
+            </HeaderText>
+            <Formatter />
+            <Width>120</Width>
+            <Resizeable>true</Resizeable>
+            <PreventSortable>true</PreventSortable>
+            <Sortable>false</Sortable>
+            <ColumnHideable>true</ColumnHideable>
+            <DefaultColumn>true</DefaultColumn>
+            <Exportable>true</Exportable>
+            <ShowInExpander>true</ShowInExpander>
+            <Filterable>true</Filterable>
+            <FilterHideable>true</FilterHideable>
+            <DefaultFilter>true</DefaultFilter>
+            <RequiredFilter>false</RequiredFilter>
+            <FilterLabel />
+            <ElementValue>
+                <Value />
+            </ElementValue>
+            <ElementValue2>
+                <Value />
+            </ElementValue2>
+            <FilterReadOnly>false</FilterReadOnly>
+            <DropdownItems />
+        </Element>
+        <Element>
+            <RecordElement>true</RecordElement>
+            <AssemblyFilename>C:\dev\MetraNetDev\output\Debug\Bin\Core.Quoting.Entity.dll</AssemblyFilename>
+            <ObjectName>Core.Quoting.QuoteHeader</ObjectName>
+            <ID>QuoteIdentifier</ID>
+            <DataType>String</DataType>
+            <IsIdentity>false</IsIdentity>
+            <DataIndex>QuoteIdentifier</DataIndex>
+            <IsColumn>false</IsColumn>
+            <HeaderText>
+                <LocalizationTag>ID_QUOTE</LocalizationTag>
+                <ResourceClassKey>Quoting/App_LocalResources/QuoteList.aspx</ResourceClassKey>
+            </HeaderText>
+            <Formatter />
+            <Width>120</Width>
+            <Resizeable>true</Resizeable>
+            <PreventSortable>true</PreventSortable>
+            <Sortable>false</Sortable>
+            <ColumnHideable>true</ColumnHideable>
+            <DefaultColumn>true</DefaultColumn>
+            <Exportable>true</Exportable>
+            <ShowInExpander>true</ShowInExpander>
+            <Filterable>true</Filterable>
+            <FilterHideable>true</FilterHideable>
+            <DefaultFilter>true</DefaultFilter>
+            <RequiredFilter>false</RequiredFilter>
+            <FilterLabel />
+            <ElementValue>
+                <Value />
+            </ElementValue>
+            <ElementValue2>
+                <Value />
+            </ElementValue2>
+            <FilterReadOnly>false</FilterReadOnly>
+            <DropdownItems />
+        </Element>
+    </Elements>
+    <ExpanderTemplate>
+        <Section>
+            <Title>
+                <Value />
+            </Title>
+            <TabOrder>LeftToRight</TabOrder>
+            <Name />
+            <Columns>
+                <Column>
+                    <Fields>
+                        <Field>
+                            <AssemblyFilename>C:\dev\MetraNetDev\output\Debug\Bin\Core.Quoting.Entity.dll</AssemblyFilename>
+                            <ObjectName>Core.Quoting.QuoteHeader</ObjectName>
+                            <ID>QuoteIdentifier</ID>
+                            <Name>QuoteIdentifier</Name>
+                        </Field>
+                        <Field>
+                            <AssemblyFilename>C:\dev\MetraNetDev\output\Debug\Bin\Core.Quoting.Entity.dll</AssemblyFilename>
+                            <ObjectName>Core.Quoting.QuoteHeader</ObjectName>
+                            <ID>AccountsInfo</ID>
+                            <Name>AccountsInfo</Name>
+                        </Field>
+                        <Field>
+                            <AssemblyFilename>C:\dev\MetraNetDev\output\Debug\Bin\Core.Quoting.Entity.dll</AssemblyFilename>
+                            <ObjectName>Core.Quoting.QuoteHeader</ObjectName>
+                            <ID>GroupSubscription</ID>
+                            <Name>GroupSubscription</Name>
+                        </Field>
+                        <Field>
+                            <AssemblyFilename>C:\dev\MetraNetDev\output\Debug\Bin\Core.Quoting.Entity.dll</AssemblyFilename>
+                            <ObjectName>Core.Quoting.QuoteHeader</ObjectName>
+                            <ID>POsInfo</ID>
+                            <Name>POsInfo</Name>
+                        </Field>
+                    </Fields>
+                </Column>
+                <Column>
+                    <Fields>
+                        <Field>
+                            <AssemblyFilename>C:\dev\MetraNetDev\output\Debug\Bin\Core.Quoting.Entity.dll</AssemblyFilename>
+                            <ObjectName>Core.Quoting.QuoteHeader</ObjectName>
+                            <ID>FailedMessage</ID>
+                            <Name>FailedMessage</Name>
+                        </Field>
+                    </Fields>
+                </Column>
+            </Columns>
+            <ToolbarButtons />
+        </Section>
+    </ExpanderTemplate>
+    <GridButtons />
+    <ToolbarButtons>
+        <Button>
+            <ButtonID>Add</ButtonID>
+            <ButtonText>
+                <LocalizationTag>TEXT_BUTTON_ADD</LocalizationTag>
+                <ResourceClassKey>Resource</ResourceClassKey>
+            </ButtonText>
+            <ToolTip>
+                <LocalizationTag>TEXT_BUTTON_ADD</LocalizationTag>
+                <ResourceClassKey>Resource</ResourceClassKey>
+            </ToolTip>
+            <IconClass>add</IconClass>
+            <RequiredCapabilities>
+                <Capability>Manage Quoting</Capability>
+            </RequiredCapabilities>
+            <JSHandlerFunction>onNew</JSHandlerFunction>
+        </Button>
+        <Button>
+            <ButtonID>DeleteBulk</ButtonID>
+            <ButtonText>
+                <LocalizationTag>TEXT_BUTTON_DELETE</LocalizationTag>
+                <ResourceClassKey>Resource</ResourceClassKey>
+            </ButtonText>
+            <ToolTip>
+                <LocalizationTag>TEXT_BUTTON_DELETE</LocalizationTag>
+                <ResourceClassKey>Resource</ResourceClassKey>
+            </ToolTip>
+            <IconClass>remove</IconClass>
+            <RequiredCapabilities>
+                <Capability>Manage Quoting</Capability>
+            </RequiredCapabilities>
+            <JSHandlerFunction>onDeleteBulk</JSHandlerFunction>
+        </Button>
+    </ToolbarButtons>
+</GridLayout>

@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<mt_config>
+  <language_code>es-MX</language_code>
+  <locale_space name="metratech.com/endpointtestservice">
+    <locale_entry>
+      <Name>metratech.com/endpointtestservice</Name>
+      <Value>Prueba de terminal</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/endpointtestservice/CorporateLogin</Name>
+      <Value>ID corporativa externa</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/endpointtestservice/CorporateNamespace</Name>
+      <Value>Espacio de nombre corporativo externo</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/endpointtestservice/DecProp1</Name>
+      <Value>Propiedad decimal N.° 1</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/endpointtestservice/DecProp2</Name>
+      <Value>Propiedad decimal N.° 2</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/endpointtestservice/DecProp3</Name>
+      <Value>Propiedad decimal N.° 3</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/endpointtestservice/description</Name>
+      <Value>Descripción</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/endpointtestservice/EndpointLogin</Name>
+      <Value>ID externa de terminal</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/endpointtestservice/EndpointNamespace</Name>
+      <Value>Espacio de nombre externo de terminal</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/endpointtestservice/time</Name>
+      <Value>Hora</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/endpointtestservice/units</Name>
+      <Value>Unidades</Value>
+    </locale_entry>
+  </locale_space>
+</mt_config>

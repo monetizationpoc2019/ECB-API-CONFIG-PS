@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xmlconfig>
+  <mtsysconfigdata>
+    <effective_date ptype="DATETIME">2000-11-19T00:00:00Z</effective_date>
+    <timeout ptype="INTEGER">30</timeout>
+    <configfiletype>CONFIG_DATA</configfiletype>
+  </mtsysconfigdata>
+
+  <mtconfigdata>
+
+ <version ptype="INTEGER">1</version>
+ <!-- First processor configuration -->
+ <processor>
+  <name>ModifyAccountMapping</name>
+  <progid>MetraPipeline.ModifyAccountMapping.1</progid>
+  <description>
+This plugin is used to Add, Update or Delete account mapping.
+Action is 1 for Add, 2 for Update and 3 for Delete account mapping.
+1. 	Internal metratech account id is found for LoginName and NameSpace pair
+2.	If action is Add, then new mapping record is added to t_account_mapper table
+	for NewLoginName, NewNameSpace (it has to exist in t_namespace table) and internal account id
+	found in step 1.
+3. If action is update, a record for LoginName and NameSpace gets deleted from t_account_mapper table
+	and the new one for NewLoginName and NewNameSpace gets added there.
+4. If action is Delete, then a record for LoginName and NameSpace gets deleted from t_account_mapper table
+	NewLoginName and NewNameSpace are ignored in theis case.
+</description>
+
+
+<!--
+  <autotest>
+    <file>ModifyAccountMappingTest.xml</file>
+  </autotest>
+-->
+  <inputs>
+  	<input type="STRING" internal_name="Action">Action</input>
+	<input type="STRING" internal_name="LoginName">LoginName</input>
+	<input type="STRING" internal_name="NameSpace">NameSpace</input>
+	<input type="STRING" internal_name="NewLoginName">NewLoginName</input>
+	<input type="STRING" internal_name="NewNameSpace">NewNameSpace</input>
+  </inputs>
+
+  <outputs>
+  </outputs>
+  
+  <configdata>
+    <Operation>Operation</Operation>
+    <LoginName>LoginName</LoginName>
+    <NameSpace>NameSpace</NameSpace>
+    <NewLoginName>NewLoginName</NewLoginName>
+    <NewNameSpace>NewNameSpace</NewNameSpace>
+  </configdata>
+
+ </processor>
+
+  </mtconfigdata>
+
+</xmlconfig>

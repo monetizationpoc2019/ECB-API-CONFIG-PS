@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<mt_config>
+  <language_code>pt-br</language_code>
+  <locale_space name="BusinessEntity/Core.BillMessages.BillMessageAccount">
+    <locale_entry>
+      <Name>BusinessEntity/Core.BillMessages.BillMessageAccount/EndDate/Label</Name>
+      <Value>Data de término da mensagem</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>BusinessEntity/Core.BillMessages.BillMessageAccount/MessageCode/Label</Name>
+      <Value>Código da mensagem</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>BusinessEntity/Core.BillMessages.BillMessageAccount/StartDate/Label</Name>
+      <Value>Data de início da mensagem</Value>
+    </locale_entry>
+  </locale_space>
+</mt_config>

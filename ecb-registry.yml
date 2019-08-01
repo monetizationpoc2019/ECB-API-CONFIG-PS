@@ -1,0 +1,13 @@
+server:
+  port: 8078
+  
+eureka:
+  client:
+    registerWithEureka: false
+    fetchRegistry: false
+  dashboard:
+    path: /dashboard
+  server:
+    waitTimeInMsWhenSyncEmpty: 1
+    enableSelfPreservation: false
+    defaultOpenForTrafficCount: 0

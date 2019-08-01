@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<mt_config>
+    <enum_spaces>
+        <enum_space name="CDE">
+            <description>CDE owned enumerations</description>
+            <enums>
+                <enum name="BucketType">
+                    <description>What type of tiers are being used, e.g., Single-Bucket or Multi-Bucket.</description>
+                    <entries>
+                        <entry name="SINGLEBUCKET">
+                            <value>0</value>
+                        </entry>
+                        <entry name="MULTIBUCKET">
+                            <value>1</value>
+                        </entry>
+                    </entries>
+                </enum>
+            </enums>
+        </enum_space>
+    </enum_spaces>
+</mt_config>

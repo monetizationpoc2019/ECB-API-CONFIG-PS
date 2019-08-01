@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xmlconfig>
+    <version ptype="INTEGER">1</version>
+    <description>Commits data to the MetraNet database using the WriteProductView plug-in.</description>
+    <stage>
+        <name>WriteProductView</name>
+        <startstage ptype="BOOLEAN">No</startstage>
+        <finalstage ptype="BOOLEAN">Yes</finalstage>
+        <nextstage />
+        <dependencies>
+            <dependency>
+                <processor>IntervalResolution</processor>
+            </dependency>
+            <dependency>
+                <processor>PropagateProps</processor>
+                <dependson>IntervalResolution</dependson>
+            </dependency>
+            <dependency>
+                <processor>AccountStateCheck</processor>
+                <dependson>PropagateProps</dependson>
+            </dependency>
+            <dependency>
+                <processor>CheckECBARInstalled</processor>
+                <dependson>AccountStateCheck</dependson>
+            </dependency>
+            <dependency>
+                <processor>GetDivisionCurrency</processor>
+                <dependson>CheckECBARInstalled</dependson>
+            </dependency>
+            <dependency>
+                <processor>GetDivisionCurrencyAR</processor>
+                <dependson>GetDivisionCurrency</dependson>
+            </dependency>
+            <dependency>
+                <processor>ConvertDomainCurrency</processor>
+                <dependson>GetDivisionCurrencyAR</dependson>
+            </dependency>
+            <dependency>
+                <processor>GetConversionRate</processor>
+                <dependson>ConvertDomainCurrency</dependson>
+            </dependency>
+            <dependency>
+                <processor>GetConversionRateAR</processor>
+                <dependson>GetConversionRate</dependson>
+            </dependency>
+            <dependency>
+                <processor>CalculateDivisionCurrency</processor>
+                <dependson>GetConversionRateAR</dependson>
+            </dependency>
+            <dependency>
+                <processor>InsertTaxInclusive</processor>
+                <dependson>CalculateDivisionCurrency</dependson>
+            </dependency>
+            <dependency>
+                <processor>WritePV</processor>
+                <dependson>InsertTaxInclusive</dependson>
+            </dependency>
+            <dependency>
+                <processor>FirstPassUpdate</processor>
+                <dependson>WritePV</dependson>
+            </dependency>
+            <dependency>
+                <processor>BatchUpdate</processor>
+                <dependson>FirstPassUpdate</dependson>
+            </dependency>
+            <dependson>BatchUpdate</dependson>
+        </dependencies>
+    </stage>
+    <possiblenextstages />
+</xmlconfig>

@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xmlconfig>
+
+  <session>
+   <ServiceID ptype="ID">metratech.com/TestService</ServiceID>
+   <inputs>
+    <_Timestamp ptype="DATETIME">1998-10-13T18:54:39Z</_Timestamp>
+   </inputs>
+   <outputs>
+    <tod ptype="TIME">6:54:39pm</tod>
+   </outputs>
+  </session>
+</xmlconfig>

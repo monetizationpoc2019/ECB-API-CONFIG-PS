@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<mt_config>
+  <language_code>it</language_code>
+  <locale_space name="metratech.com/ps_cc_validatecardwithoutaccount">
+    <locale_entry>
+      <Name>metratech.com/ps_cc_validatecardwithoutaccount</Name>
+      <Value>ps_cc_validate Carta di credito senza conto</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ps_cc_validatecardwithoutaccount/address</Name>
+      <Value>Via</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ps_cc_validatecardwithoutaccount/city</Name>
+      <Value>Città</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ps_cc_validatecardwithoutaccount/country</Name>
+      <Value>Stato</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ps_cc_validatecardwithoutaccount/creditcardtype</Name>
+      <Value>Tipo di carta di credito</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ps_cc_validatecardwithoutaccount/customername</Name>
+      <Value>Nome cliente</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ps_cc_validatecardwithoutaccount/paymentservicetransactionid</Name>
+      <Value>ID transazione del servizio di pagamento</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ps_cc_validatecardwithoutaccount/respstring</Name>
+      <Value>Stringa di risposta</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ps_cc_validatecardwithoutaccount/retcode</Name>
+      <Value>Codice restituzione</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ps_cc_validatecardwithoutaccount/state</Name>
+      <Value>Stato/Provincia</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ps_cc_validatecardwithoutaccount/terminalid</Name>
+      <Value>ID terminale</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ps_cc_validatecardwithoutaccount/zip</Name>
+      <Value>CAP (Codice di avviamento postale)</Value>
+    </locale_entry>
+  </locale_space>
+</mt_config>

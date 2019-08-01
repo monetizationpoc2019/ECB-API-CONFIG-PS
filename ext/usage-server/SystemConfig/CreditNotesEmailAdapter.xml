@@ -1,0 +1,294 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xmlconfig>
+  <AdapterName>CreditNotesEmailAdapter</AdapterName>
+  <ServerName>mail.metratech.com</ServerName>
+  <Encoding>UTF8</Encoding> <!-- possible values are ASCII or UTF8 -->
+  <Format>Html</Format>  <!-- possible values are Text or Html -->
+  <TestMode>true</TestMode>
+  <TestModeTo>noreply@metratech.com</TestModeTo> <!-- this is the email address to which emails will be sent when using the test mode -->
+  <!-- The query below is expected to return a rowset, each rowset will correspond to an email to be sent out.
+	     The query MUST return the Language, this language is used to determine which email template is to be
+	     used. For each %%%% substitution variable in each template, the query MUST return a column aliased to the same names as the 
+       %%%% substitution variable in the template. For example if your email template contains %%FirstName%%,
+       your query MUST select a column aliased as FirstName.
+       Please place the query in RMP\config\<SqlCore or SqlCustom>\Queries\UsageServer\Adapters\ScheduledEmailAdpater.
+       
+       To support including amounts formatted with a currency symbol, please follow the following convention:
+       
+       1. In the <MessageBody> for each template below that needs an amount to be formatted with its currency symbol, the %%%% substitution 
+          variable must end with "AsCurrency". For example %%TotalAmountAsCurrency%%
+       2. The query MUST return the amount and the currency for the amount that is to be formatted with its currency symbol. For example if the
+          <MessageBody> for a template contains %%TotalAmountAsCurrency%%, the query must select the amount that is to be formatted into 
+          %%TotalAmountAsCurrency%% aliased in the query as the same name as the %%%% substitution variable minus the "AsCurrency". In this
+          example, the query must return an amount column aliased as TotalAmount. To specify the currency for the amount that is to be formatted with its currency symbol, the query must select the three letter currency code for the amount into a column aliased in the query 
+          as the same name as the %%%% substitution variable minus the "As". In this example, the query must return a currency code column 
+          aliased as TotalAmountCurrency.
+       3. The scheduled email adapter instance will look up the appropriate currency symbol to use for the currency code returned by the query
+          from \RMP\config\PresServer\LocaleCurrency.xml
+       -->      
+  <QueryForRetrievingDataToConstructEmail>__GET_CREDITNOTES_TO_EMAIL__</QueryForRetrievingDataToConstructEmail>
+  <EntityIdColumnName>c_CreditNote_Id</EntityIdColumnName>
+  <NumberOfRetriesForFailedEmails>3</NumberOfRetriesForFailedEmails>
+  <DefaultLanguage>US</DefaultLanguage>   
+  <Template>
+    <Language>US</Language>
+    <LanguageCode>840</LanguageCode>
+    <To>%%AddressedTo%%</To>
+    <From>noreply@metratech.com</From>
+    <CC />
+    <Bcc />
+    <Subject>Credit Note Notification</Subject>
+    <!-- DateFormatString accepts the same format specifiers supported by Microsoft .Net C#. See https://msdn.microsoft.com/en-us/library/8kb3ddd4(v=vs.110).aspx#escape 
+    for a chart of accepted format specifiers -->
+    <DateFormatString>MM/dd/yy</DateFormatString>
+    <MessageBody>
+      
+      &lt;br&gt;
+      %%CREATE_DATE%%
+      &lt;br&gt;
+      Dear %%FIRST_NAME%% %%LAST_NAME%%,
+      &lt;br&gt;
+      A credit has been provided to your account in the amount of %%CREDIT_AMOUNTASCURRENCY%%.  For more information, please refer to the following link %%METRAVIEW_PDF_LINK%%.
+      &lt;br&gt;
+      %%COMMENT%%
+      &lt;br&gt;
+      Your business is important to us.  If you have any questions regarding this item, please contact our customer service department.
+      &lt;br&gt;
+      Thank you.
+      &lt;br&gt;
+                
+    </MessageBody>
+  </Template>
+  <Template>
+    <Language>DE</Language>
+    <LanguageCode>276</LanguageCode>
+    <To>%%AddressedTo%%</To>
+    <From>noreply@metratech.com</From>
+    <CC />
+    <Bcc />
+    <Subject>[DE] Credit Note Notification</Subject>
+    <!-- DateFormatString accepts the same format specifiers supported by Microsoft .Net C#. See https://msdn.microsoft.com/en-us/library/8kb3ddd4(v=vs.110).aspx#escape 
+    for a chart of accepted format specifiers -->
+    <DateFormatString>dd.MM.yy</DateFormatString>
+    <MessageBody>
+      
+      &lt;br&gt;
+      %%CREATE_DATE%%
+      &lt;br&gt;
+      [DE]Dear %%FIRST_NAME%% %%LAST_NAME%%,
+      &lt;br&gt;
+      A credit has been provided to your account in the amount of %%CREDIT_AMOUNTASCURRENCY%%.  For more information, please refer to the following link %%METRAVIEW_PDF_LINK%%.
+      &lt;br&gt;
+      %%COMMENT%%
+      &lt;br&gt;
+      Your business is important to us.  If you have any questions regarding this item, please contact our customer service department.
+      &lt;br&gt;
+      Thank you.
+      &lt;br&gt;
+                
+    </MessageBody>
+  </Template>
+  <Template>
+    <Language>FR</Language>
+    <LanguageCode>250</LanguageCode>
+    <To>%%AddressedTo%%</To>
+    <From>noreply@metratech.com</From>
+    <CC />
+    <Bcc />
+    <Subject>[FR]Credit Note Notification</Subject>
+    <!-- DateFormatString accepts the same format specifiers supported by Microsoft .Net C#. See https://msdn.microsoft.com/en-us/library/8kb3ddd4(v=vs.110).aspx#escape 
+    for a chart of accepted format specifiers -->
+    <DateFormatString>dd/MM/yy</DateFormatString>
+    <MessageBody>
+      
+      &lt;br&gt;
+      %%CREATE_DATE%%
+      &lt;br&gt;
+      Cher/Chère %%FIRST_NAME%% %%LAST_NAME%%,
+      &lt;br&gt;
+      Nous avons le plaisir de vous informer que votre compte a été crédité d’une valeur totale de %%CREDIT_AMOUNTASCURRENCY%%. Pour de plus amples informations, veuillez-vous référer au lien suivant %%METRAVIEW_PDF_LINK%%.
+      &lt;br&gt;
+      %%COMMENT%%
+      &lt;br&gt;
+      Votre entreprise est importante pour nous. Si vous avez des questions concernant cet avoir, veuillez contacter notre service clientèle.
+      &lt;br&gt;
+      Merci.
+     &lt;br&gt;
+                
+    </MessageBody>
+  </Template>
+  <Template>
+    <Language>IT</Language>
+    <LanguageCode>380</LanguageCode>
+    <To>%%AddressedTo%%</To>
+    <From>noreply@metratech.com</From>
+    <CC />
+    <Bcc />
+    <Subject>[IT] Credit Note Notification</Subject>
+    <!-- DateFormatString accepts the same format specifiers supported by Microsoft .Net C#. See https://msdn.microsoft.com/en-us/library/8kb3ddd4(v=vs.110).aspx#escape 
+    for a chart of accepted format specifiers -->
+    <DateFormatString>dd/MM/yy</DateFormatString>
+    <MessageBody>
+      
+      &lt;br&gt;
+      %%CREATE_DATE%%
+      &lt;br&gt;
+      [IT]Dear %%FIRST_NAME%% %%LAST_NAME%%,
+      &lt;br&gt;
+      A credit has been provided to your account in the amount of %%CREDIT_AMOUNTASCURRENCY%%.  For more information, please refer to the following link %%METRAVIEW_PDF_LINK%%.
+      &lt;br&gt;
+      %%COMMENT%%
+      &lt;br&gt;
+      Your business is important to us.  If you have any questions regarding this item, please contact our customer service department.
+      &lt;br&gt;
+      Thank you.
+      &lt;br&gt;
+                
+    </MessageBody>
+  </Template>
+  <Template>
+    <Language>JP</Language>
+    <LanguageCode>392</LanguageCode>
+    <To>%%AddressedTo%%</To>
+    <From>noreply@metratech.com</From>
+    <CC />
+    <Bcc />
+    <Subject>[JA] Credit Note Notification</Subject>
+    <!-- DateFormatString accepts the same format specifiers supported by Microsoft .Net C#. See https://msdn.microsoft.com/en-us/library/8kb3ddd4(v=vs.110).aspx#escape 
+    for a chart of accepted format specifiers -->
+    <DateFormatString>dd/MM/yy</DateFormatString>
+    <MessageBody>
+      
+      &lt;br&gt;
+      %%CREATE_DATE%%
+      &lt;br&gt;
+      [JA]Dear %%FIRST_NAME%% %%LAST_NAME%%,
+      &lt;br&gt;
+      A credit has been provided to your account in the amount of %%CREDIT_AMOUNTASCURRENCY%%.  For more information, please refer to the following link %%METRAVIEW_PDF_LINK%%.
+      &lt;br&gt;
+      %%COMMENT%%
+      &lt;br&gt;
+      Your business is important to us.  If you have any questions regarding this item, please contact our customer service department.
+      &lt;br&gt;
+      Thank you.
+      &lt;br&gt;
+                
+    </MessageBody>
+  </Template>  
+  <Template>
+    <Language>ES</Language>
+    <LanguageCode>724</LanguageCode>
+    <To>%%AddressedTo%%</To>
+    <From>noreply@metratech.com</From>
+    <CC />
+    <Bcc />
+    <Subject>[ES] Credit Note Notification</Subject>
+    <!-- DateFormatString accepts the same format specifiers supported by Microsoft .Net C#. See https://msdn.microsoft.com/en-us/library/8kb3ddd4(v=vs.110).aspx#escape 
+    for a chart of accepted format specifiers -->
+    <DateFormatString>dd/MM/yy</DateFormatString>
+    <MessageBody>
+      
+      &lt;br&gt;
+      %%CREATE_DATE%%
+      &lt;br&gt;
+      [ES]Dear %%FIRST_NAME%% %%LAST_NAME%%,
+      &lt;br&gt;
+      A credit has been provided to your account in the amount of %%CREDIT_AMOUNTASCURRENCY%%.  For more information, please refer to the following link %%METRAVIEW_PDF_LINK%%.
+      &lt;br&gt;
+      %%COMMENT%%
+      &lt;br&gt;
+      Your business is important to us.  If you have any questions regarding this item, please contact our customer service department.
+      &lt;br&gt;
+      Thank you.
+      &lt;br&gt;
+                
+    </MessageBody>
+  </Template>
+  <Template>
+    <Language>GB</Language>
+    <LanguageCode>826</LanguageCode>
+    <To>%%AddressedTo%%</To>
+    <From>noreply@metratech.com</From>
+    <CC />
+    <Bcc />
+    <Subject>Credit Note Notification</Subject>
+    <!-- DateFormatString accepts the same format specifiers supported by Microsoft .Net C#. See https://msdn.microsoft.com/en-us/library/8kb3ddd4(v=vs.110).aspx#escape 
+    for a chart of accepted format specifiers -->
+    <DateFormatString>dd/MM/yy</DateFormatString>
+    <MessageBody>
+      
+      &lt;br&gt;
+      %%CREATE_DATE%%
+      &lt;br&gt;
+      Dear %%FIRST_NAME%% %%LAST_NAME%%,
+      &lt;br&gt;
+      A credit has been provided to your account in the amount of %%CREDIT_AMOUNTASCURRENCY%%.  For more information, please refer to the following link %%METRAVIEW_PDF_LINK%%.
+      &lt;br&gt;
+      %%COMMENT%%
+      &lt;br&gt;
+      Your business is important to us.  If you have any questions regarding this item, please contact our customer service department.
+      &lt;br&gt;
+      Thank you.
+      &lt;br&gt;
+                
+    </MessageBody>
+  </Template>
+  <Template>
+    <Language>MX</Language>
+    <LanguageCode>2058</LanguageCode>
+    <To>%%AddressedTo%%</To>
+    <From>noreply@metratech.com</From>
+    <CC />
+    <Bcc />
+    <Subject>[es-MX] Credit Note Notification</Subject>
+    <!-- DateFormatString accepts the same format specifiers supported by Microsoft .Net C#. See https://msdn.microsoft.com/en-us/library/8kb3ddd4(v=vs.110).aspx#escape 
+    for a chart of accepted format specifiers -->
+    <DateFormatString>dd/MM/yy</DateFormatString>
+    <MessageBody>
+      
+      &lt;br&gt;
+      %%CREATE_DATE%%
+      &lt;br&gt;
+      [es-MX]Dear %%FIRST_NAME%% %%LAST_NAME%%,
+      &lt;br&gt;
+      A credit has been provided to your account in the amount of %%CREDIT_AMOUNTASCURRENCY%%.  For more information, please refer to the following link %%METRAVIEW_PDF_LINK%%.
+      &lt;br&gt;
+      %%COMMENT%%
+      &lt;br&gt;
+      Your business is important to us.  If you have any questions regarding this item, please contact our customer service department.
+      &lt;br&gt;
+      Thank you.
+      &lt;br&gt;
+                
+    </MessageBody>
+  </Template>
+   <Template>
+    <Language>BR</Language>
+    <LanguageCode>1046</LanguageCode>
+    <To>%%AddressedTo%%</To>
+    <From>noreply@metratech.com</From>
+    <CC />
+    <Bcc />
+    <Subject>[pt-BR] Credit Note Notification</Subject>
+    <!-- DateFormatString accepts the same format specifiers supported by Microsoft .Net C#. See https://msdn.microsoft.com/en-us/library/8kb3ddd4(v=vs.110).aspx#escape 
+    for a chart of accepted format specifiers -->    
+    <DateFormatString>dd/MM/yy</DateFormatString>
+    <MessageBody>
+      
+      &lt;br&gt;
+      %%CREATE_DATE%%
+      &lt;br&gt;
+      Prezado(a) %%FIRST_NAME%% %%LAST_NAME%%,
+      &lt;br&gt;
+      Foi gerado um crédito para sua conta no valor de %%CREDIT_AMOUNTASCURRENCY%%.  Para mais informações, por favor consulte o seguinte link %%METRAVIEW_PDF_LINK%%.
+      &lt;br&gt;
+      %%COMMENT%%
+      &lt;br&gt;
+      O seu negócio é muito importante para nós. Caso tenha alguma dúvida sobre esse item, por favor entre em contato com o nosso departamento de atendimento ao cliente.
+      &lt;br&gt;
+      Obrigado.
+      &lt;br&gt;
+                
+    </MessageBody>
+  </Template>  
+</xmlconfig>

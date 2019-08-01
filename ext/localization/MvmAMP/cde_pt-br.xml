@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<mt_config>
+  <language_code>pt-br</language_code>
+  <locale_space name="CDE">
+    <locale_entry>
+      <Name>CDE/BucketType/MULTIBUCKET</Name>
+      <Value>MULTIBUCKET</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>CDE/BucketType/SINGLEBUCKET</Name>
+      <Value>SINGLEBUCKET</Value>
+    </locale_entry>
+  </locale_space>
+</mt_config>

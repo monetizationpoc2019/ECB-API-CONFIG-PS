@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<mt_config>
+  <language_code>it</language_code>
+  <locale_space name="metratech.com/testservice">
+    <locale_entry>
+      <Name>metratech.com/testservice</Name>
+      <Value>Verifica servizio</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/testservice/DecProp1</Name>
+      <Value>Proprietà decimale 1</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/testservice/DecProp2</Name>
+      <Value>Proprietà decimale 2</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/testservice/DecProp3</Name>
+      <Value>Proprietà decimale 3</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/testservice/Description</Name>
+      <Value>Descrizione</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/testservice/optionaltime</Name>
+      <Value>Tempo facoltativo</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/testservice/Time</Name>
+      <Value>Ora</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/testservice/Units</Name>
+      <Value>Unità</Value>
+    </locale_entry>
+  </locale_space>
+</mt_config>

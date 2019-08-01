@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<mt_config>
+  <language_code>DE</language_code>
+  <locale_space name="metratech.com/ps_ach_debit">
+    <locale_entry>
+      <Name>metratech.com/ps_ach_debit</Name>
+      <Value>ACH-Belastung</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ps_ach_debit/bankaccounttype</Name>
+      <Value>Bankkontoart</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ps_ach_debit/csrid</Name>
+      <Value>Kundendienstmitarbeiter-ID</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ps_ach_debit/currentstatus</Name>
+      <Value>Aktueller Status</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ps_ach_debit/exported</Name>
+      <Value>Export-Kennzeichen</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ps_ach_debit/lastfourdigits</Name>
+      <Value>Die letzten vier Ziffern</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ps_ach_debit/originalaccountid</Name>
+      <Value>Ursprüngliche Konto-ID</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ps_ach_debit/paymentservicetransactionid</Name>
+      <Value>Transaktions-ID des Zahlungsdienstleisters</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ps_ach_debit/reason</Name>
+      <Value>Grund für Soll</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ps_ach_debit/respstring</Name>
+      <Value>Antwortbeschreibung</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ps_ach_debit/retcode</Name>
+      <Value>Rückgabecode</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ps_ach_debit/routingnumber</Name>
+      <Value>ABA/Bankleitzahl</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ps_ach_debit/transactionid</Name>
+      <Value>Vom Anrufer angegebene Transaktions-ID</Value>
+    </locale_entry>
+  </locale_space>
+</mt_config>

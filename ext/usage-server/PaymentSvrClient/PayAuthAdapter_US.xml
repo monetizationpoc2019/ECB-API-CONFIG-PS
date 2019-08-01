@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<configuration>
+  <system.serviceModel>
+    <bindings>
+      <wsHttpBinding>
+        <binding name="WSHttpBinding_IElectronicPaymentServices" closeTimeout="00:01:00" openTimeout="00:01:00" receiveTimeout="00:10:00" sendTimeout="00:01:00" bypassProxyOnLocal="false" transactionFlow="false" hostNameComparisonMode="StrongWildcard" maxBufferPoolSize="524288" maxReceivedMessageSize="9999999" messageEncoding="Text" textEncoding="utf-8" useDefaultWebProxy="true" allowCookies="false">
+          <readerQuotas maxDepth="32" maxStringContentLength="8192" maxArrayLength="16384" maxBytesPerRead="4096" maxNameTableCharCount="16384" />
+          <reliableSession ordered="true" inactivityTimeout="00:10:00" enabled="false" />
+          <security mode="Message">
+            <transport clientCredentialType="Basic" proxyCredentialType="None" realm="" />
+            <message clientCredentialType="UserName" negotiateServiceCredential="false" establishSecurityContext="false" />
+          </security>
+        </binding>
+		  <binding name="WSHttpBinding_IMetraTech.Core.Services.NotificationService" closeTimeout="00:01:00" openTimeout="00:01:00" receiveTimeout="00:10:00" sendTimeout="00:01:00" bypassProxyOnLocal="false" transactionFlow="false" hostNameComparisonMode="StrongWildcard" maxBufferPoolSize="524288" maxReceivedMessageSize="9999999" messageEncoding="Text" textEncoding="utf-8" useDefaultWebProxy="true" allowCookies="false">
+			  <readerQuotas maxDepth="32" maxStringContentLength="8192" maxArrayLength="16384" maxBytesPerRead="4096" maxNameTableCharCount="16384" />
+			  <reliableSession ordered="true" inactivityTimeout="00:10:00" enabled="false" />
+			  <security mode="Message">
+				  <transport clientCredentialType="Basic" proxyCredentialType="None" realm="" />
+				  <message clientCredentialType="UserName" negotiateServiceCredential="false" establishSecurityContext="false" />
+			  </security>
+		  </binding>
+	  </wsHttpBinding>
+		<netTcpBinding>
+			<binding name="NetTcpBinding_IMetraTech.Core.Services.NotificationService" closeTimeout="00:01:00" openTimeout="00:01:00" receiveTimeout="00:10:00" sendTimeout="00:01:00" transactionFlow="false" transferMode="Buffered" transactionProtocol="OleTransactions" hostNameComparisonMode="StrongWildcard" listenBacklog="1000" maxBufferPoolSize="524288" maxBufferSize="65536" maxConnections="1000" maxReceivedMessageSize="65536">
+				<readerQuotas maxDepth="32" maxStringContentLength="8192" maxArrayLength="16384" maxBytesPerRead="4096" maxNameTableCharCount="16384" />
+				<reliableSession ordered="true" inactivityTimeout="00:10:00" enabled="false" />
+				<security mode="TransportWithMessageCredential">
+					<transport clientCredentialType="None" protectionLevel="EncryptAndSign">
+					</transport>
+					<message clientCredentialType="UserName" />
+				</security>
+			</binding>
+			<binding name="NetTcpBinding_IMetraTech.Core.Services.ElectronicPaymentServices" closeTimeout="00:01:00" openTimeout="00:01:00" receiveTimeout="00:10:00" sendTimeout="00:01:00" transactionFlow="false" transferMode="Buffered" transactionProtocol="OleTransactions" hostNameComparisonMode="StrongWildcard" listenBacklog="1000" maxBufferPoolSize="524288" maxBufferSize="65536" maxConnections="1000" maxReceivedMessageSize="65536">
+				<readerQuotas maxDepth="32" maxStringContentLength="8192" maxArrayLength="16384" maxBytesPerRead="4096" maxNameTableCharCount="16384" />
+				<reliableSession ordered="true" inactivityTimeout="00:10:00" enabled="false" />
+				<security mode="TransportWithMessageCredential">
+					<transport clientCredentialType="None" protectionLevel="EncryptAndSign">
+					</transport>
+					<message clientCredentialType="UserName" />
+				</security>
+			</binding>
+		</netTcpBinding>
+		</bindings>
+    <client>
+      <endpoint address="http://localhost:8001/ElectronicPaymentServices/RecurringPaymentsService" binding="wsHttpBinding" bindingConfiguration="WSHttpBinding_IElectronicPaymentServices" contract="IRecurringPaymentsService" name="WSHttpBinding_IElectronicPaymentServices" behaviorConfiguration="myServiceBehaviour">
+        <identity>
+          <dns value="ActivityServicesCert" />
+        </identity>
+      </endpoint>
+		<endpoint address="net.tcp://localhost:99/ElectronicPaymentServices/RecurringPaymentsService" binding="netTcpBinding" bindingConfiguration="NetTcpBinding_IMetraTech.Core.Services.ElectronicPaymentServices" contract="IRecurringPaymentsService" name="NetTcpBinding_IMetraTech.Core.Services.ElectronicPaymentServices">
+			<identity>
+				<dns value="ActivityServicesCert" />
+			</identity>
+		</endpoint>
+		<endpoint address="http://localhost:8001/NotificationService" binding="wsHttpBinding" bindingConfiguration="WSHttpBinding_IMetraTech.Core.Services.NotificationService" contract="INotificationService" name="WSHttpBinding_NotificationService" behaviorConfiguration="myServiceBehaviour">
+			<identity>
+				<dns value="ActivityServicesCert" />
+			</identity>
+		</endpoint>
+		<endpoint address="net.tcp://localhost:99/NotificationService" binding="netTcpBinding" bindingConfiguration="NetTcpBinding_IMetraTech.Core.Services.NotificationService" contract="INotificationService" name="NetTcpBinding_IMetraTech.Core.Services.NotificationService">
+			<identity>
+				<dns value="ActivityServicesCert" />
+			</identity>
+		</endpoint>
+
+	</client>
+  <behaviors>
+      <endpointBehaviors>
+        <behavior name="myServiceBehaviour">
+          <clientCredentials>
+            <serviceCertificate>
+              <defaultCertificate storeLocation="LocalMachine" storeName="Root" findValue="ActivityServicesCert" x509FindType="FindBySubjectName" />
+            </serviceCertificate>
+          </clientCredentials>
+        </behavior>            
+      </endpointBehaviors> 
+   </behaviors>
+  </system.serviceModel>
+</configuration>

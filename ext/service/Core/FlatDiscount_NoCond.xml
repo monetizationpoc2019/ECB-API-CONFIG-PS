@@ -1,0 +1,190 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<defineservice>
+  <name>metratech.com/FlatDiscount_NoCond</name>
+  <description>Flat rate unconditional discounts.</description>
+  <ptype>
+    <dn>_AccountID</dn>
+    <type>int32</type>
+    <length>
+    </length>
+    <required>Y</required>
+    <defaultvalue>
+    </defaultvalue>
+    <description>The payee's account ID.</description>
+  </ptype>
+  <ptype>
+    <dn>_PayingAccount</dn>
+    <type>int32</type>
+    <length>
+    </length>
+    <required>N</required>
+    <defaultvalue>
+    </defaultvalue>
+    <description>The payer's account ID. Required for pass 0.</description>
+  </ptype>
+  <ptype>
+    <dn>BillingIntervalStart</dn>
+    <type>timestamp</type>
+    <length>
+    </length>
+    <required>N</required>
+    <defaultvalue>
+    </defaultvalue>
+    <description>Start date of billing interval. Required for pass 0.</description>
+  </ptype>
+  <ptype>
+    <dn>BillingIntervalEnd</dn>
+    <type>timestamp</type>
+    <length>
+    </length>
+    <required>N</required>
+    <defaultvalue>
+    </defaultvalue>
+    <description>End date of billing interval. Required for pass 0.</description>
+  </ptype>
+  <ptype>
+    <dn>_PriceableItemInstanceID</dn>
+    <type>int32</type>
+    <length>
+    </length>
+    <required>Y</required>
+    <defaultvalue>
+    </defaultvalue>
+    <description>Flat rate discount (priceable item) instance ID.</description>
+  </ptype>
+  <ptype>
+    <dn>_PriceableItemTemplateID</dn>
+    <type>int32</type>
+    <length>
+    </length>
+    <required>Y</required>
+    <defaultvalue>
+    </defaultvalue>
+    <description>Flat rate discount (priceable item) template ID.</description>
+  </ptype>
+  <ptype>
+    <dn>_ProductOfferingID</dn>
+    <type>int32</type>
+    <length>
+    </length>
+    <required>Y</required>
+    <defaultvalue>
+    </defaultvalue>
+    <description>Product Offering ID.</description>
+  </ptype>
+  <ptype>
+    <dn>DiscountIntervalStart</dn>
+    <type>timestamp</type>
+    <length>
+    </length>
+    <required>Y</required>
+    <defaultvalue>
+    </defaultvalue>
+    <description>Start date of discount interval.</description>
+  </ptype>
+  <ptype>
+    <dn>DiscountIntervalEnd</dn>
+    <type>timestamp</type>
+    <length>
+    </length>
+    <required>Y</required>
+    <defaultvalue>
+    </defaultvalue>
+    <description>End date of discount interval.</description>
+  </ptype>
+  <ptype>
+    <dn>SubscriptionStart</dn>
+    <type>timestamp</type>
+    <length>
+    </length>
+    <required>Y</required>
+    <defaultvalue>
+    </defaultvalue>
+    <description>Start date of subscription.</description>
+  </ptype>
+  <ptype>
+    <dn>SubscriptionEnd</dn>
+    <type>timestamp</type>
+    <length>
+    </length>
+    <required>N</required>
+    <defaultvalue>
+    </defaultvalue>
+    <description>End date of subscription.</description>
+  </ptype>
+  <ptype>
+    <dn>DiscountIntervalSubStart</dn>
+    <type>timestamp</type>
+    <length>
+    </length>
+    <required>Y</required>
+    <defaultvalue>
+    </defaultvalue>
+    <description>Start date of intersection of the discount and subscription interval.</description>
+  </ptype>
+  <ptype>
+    <dn>DiscountIntervalSubEnd</dn>
+    <type>timestamp</type>
+    <length>
+    </length>
+    <required>Y</required>
+    <defaultvalue>
+    </defaultvalue>
+    <description>End date of intersection of the discount and subscription interval.</description>
+  </ptype>
+  <ptype>
+    <dn>GroupDiscountPass</dn>
+    <type>int32</type>
+    <length>
+    </length>
+    <required>N</required>
+    <defaultvalue>0</defaultvalue>
+    <description>0 = normal discounting, 1 = store group rates, 2 = final group discounting.</description>
+  </ptype>
+  <ptype>
+    <dn>GroupSubscriptionID</dn>
+    <type>int32</type>
+    <length>
+    </length>
+    <required>N</required>
+    <defaultvalue>0</defaultvalue>
+    <description>The group subscription ID (used in pass 1).</description>
+  </ptype>
+  <ptype>
+    <dn>GroupSubscriptionName</dn>
+    <type>string</type>
+    <length>100</length>
+    <required>N</required>
+    <defaultvalue>
+    </defaultvalue>
+    <description>The group subscription name (used in pass 2).</description>
+  </ptype>
+  <ptype>
+    <dn>GroupDiscountAmount</dn>
+    <type>decimal</type>
+    <length>
+    </length>
+    <required>N</required>
+    <defaultvalue>0.0</defaultvalue>
+    <description>The account's share of the group discount (used in pass 2).</description>
+  </ptype>
+  <ptype>
+    <dn>DistributionCounter</dn>
+    <type>decimal</type>
+    <length>
+    </length>
+    <required>N</required>
+    <defaultvalue>0.0</defaultvalue>
+    <description>The total count of the distribution counter for the group (used in pass 1).</description>
+  </ptype>
+  <ptype>
+    <dn>GroupDiscountIntervalID</dn>
+    <type>int32</type>
+    <length>
+    </length>
+    <required>N</required>
+    <defaultvalue>
+    </defaultvalue>
+    <description>The discount interval ID - used to keep things unique (used in pass 1 and 2).</description>
+  </ptype>
+</defineservice>

@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xmlconfig>
+
+	<mtsysconfigdata>
+		<effective_date ptype="DATETIME">1998-11-19T00:00:00Z</effective_date>
+		<timeout ptype="INTEGER">30</timeout>
+		<configfiletype>CONFIG_DATA</configfiletype>
+	</mtsysconfigdata>
+
+	<mtconfigdata>
+		<version ptype="INTEGER">1</version>
+		<processor>
+			<name>FirstPassUpdate</name>
+			<progid>MetraTech.Pipeline.PlugIns.FirstPassUpdate</progid>
+			<description>
+        Update first pass product views when errors are resubmitted.
+			</description>
+
+			<!--
+			  this plug-in is executed conditionally because it is written in C#
+				and currently has a high overhead when it doesn't have to do any work
+				(which is most of the time)
+		  -->
+      <condition>
+        
+            CREATE PROCEDURE condition  @_ExecutePlugin BOOLEAN OUTPUT 
+                                        @_Resubmit BOOLEAN
+                                        @_FirstPassID INTEGER
+	          AS
+            IF not @_Resubmit is null and @_Resubmit and not @_FirstPassID is null
+	            SET @_ExecutePlugin = TRUE
+            ELSE
+              SET @_ExecutePlugin = FALSE
+	        
+      </condition>
+
+			<configdata>
+			</configdata>
+
+		</processor>
+	</mtconfigdata>
+</xmlconfig>

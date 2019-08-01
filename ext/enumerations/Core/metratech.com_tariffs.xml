@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<mt_enum_config>
+  <enum_spaces>
+    <enum_space name="metratech.com/tariffs">
+      <description>Enumerated Types For Tariffs</description>
+      <enums>
+        <enum name="TariffID">
+          <description>Tariffs</description>
+          <entries>
+            <entry name="Default">
+              <value>0</value>
+              <value>Default</value>
+            </entry>
+            <entry name="ConferenceExpress">
+              <value>1</value>
+              <value>ConferenceExpress</value>
+            </entry>
+          </entries>
+        </enum>
+      </enums>
+    </enum_space>
+  </enum_spaces>
+</mt_enum_config>

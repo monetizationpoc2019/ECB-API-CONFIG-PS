@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xmlconfig>
+    <mtconfigdata>
+        <version ptype="INTEGER">1</version>
+        <processor>
+            <name>PriceableItemLookup</name>
+            <progid>MetraPipeline.PILookup.1</progid>
+            <description>Priceable Item Lookup</description>
+            <configdata>
+                <_timestamp>_timestamp</_timestamp>
+                <_PriceableItemName>_PriceableItemName</_PriceableItemName>
+                <_AccountID>_AccountID</_AccountID>
+                <_PriceableItemTemplateID>_PriceableItemTemplateID</_PriceableItemTemplateID>
+                <_PriceableItemInstanceID>_PriceableItemInstanceID</_PriceableItemInstanceID>
+                <_ProductOfferingID>_ProductOfferingID</_ProductOfferingID>
+                <_SubscriptionID>_SubscriptionID</_SubscriptionID>
+                <lookupbyid ptype="BOOLEAN">False</lookupbyid>
+            </configdata>
+        </processor>
+    </mtconfigdata>
+</xmlconfig>

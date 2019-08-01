@@ -1,0 +1,31 @@
+spring:
+  datasource:
+    dataSourceClassName: com.microsoft.sqlserver.jdbc.SQLServerDataSource
+    username: sa
+    password: MetraTech1
+    dataSourceProperties:
+      serverName: xsarmad
+      databaseName: NetMeter
+    maximumPoolSize: 30
+    
+ribbon:
+  ConnectTimeout: 30000
+  ReadTimeout: 60000
+  eureka:
+    enabled: true
+
+hystrix:
+  command:
+    default:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 90000    
+            
+ecb:
+  dbms: sqlserver
+  auth:
+    hash:
+      config: config
+      keys:
+        1095ffa1-8cfb-46cc-b30e-2d5d32c0e848: MZXghq8A4RPbjhh8K8nwFT3NzgeaWSTv6jrJ+hYWIXc=

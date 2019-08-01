@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<mt_config>
+  <language_code>jp</language_code>
+  <locale_space name="metratech.com/NonStandardCharge">
+    <locale_entry>
+      <Name>metratech.com/NonStandardCharge</Name>
+      <Value>非標準料金</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/NonStandardCharge/AdditionalCode/Other</Name>
+      <Value>その他</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/NonStandardCharge/NonStandardChargeReason/Credit</Name>
+      <Value>返金</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/NonStandardCharge/NonStandardChargeReason/Debit</Name>
+      <Value>引き落とし</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/NonStandardCharge/NonStandardChargeReason/Other</Name>
+      <Value>その他</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/NonStandardCharge/NonStandardChargeType/Other</Name>
+      <Value>その他</Value>
+    </locale_entry>
+  </locale_space>
+</mt_config>

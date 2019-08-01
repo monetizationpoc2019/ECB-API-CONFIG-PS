@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<mt_config>
+  <language_code>fr</language_code>
+  <locale_space name="metratech.com/postauthfailure">
+    <locale_entry>
+      <Name>metratech.com/postauthfailure</Name>
+      <Value>Échec après autorisation</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/postauthfailure/authcode</Name>
+      <Value>Code d'autorisation</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/postauthfailure/creditcardtype</Name>
+      <Value>Type de carte de crédit</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/postauthfailure/csrid</Name>
+      <Value>ID du CSR</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/postauthfailure/lastfourdigits</Name>
+      <Value>Quatre derniers chiffres</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/postauthfailure/originalaccountid</Name>
+      <Value>ID du compte d'origine</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/postauthfailure/originalid</Name>
+      <Value>ID d'origine</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/postauthfailure/paymentservicetransactionid</Name>
+      <Value>ID de transaction du service de paiement</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/postauthfailure/reason</Name>
+      <Value>Cause de l'échec</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/postauthfailure/respstring</Name>
+      <Value>Chaîne de réponse</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/postauthfailure/terminalid</Name>
+      <Value>ID de terminal</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/postauthfailure/transactionid</Name>
+      <Value>ID de transaction</Value>
+    </locale_entry>
+  </locale_space>
+</mt_config>

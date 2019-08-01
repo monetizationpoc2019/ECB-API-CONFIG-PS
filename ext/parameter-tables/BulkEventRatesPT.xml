@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<defineservice>
+    <name display_name="Bulk Event Rates PT" condition_header="Conditions" action_header="Actions" type="Rates" help_url="">metratech.com/BulkEventRatesPT</name>
+    <description>Parameter table for configuring BulkEventRates Decision attributes</description>
+    <ptype display_name="Start Of Event Count Range" condition="Y" column_operator="&gt;" filterable="Y">
+        <dn>StartOfEventCountRange</dn>
+        <type>int32</type>
+        <length />
+        <required>N</required>
+        <defaultvalue />
+        <description>Tier start for the range of number of events covered by the bulk event rates decision.</description>
+    </ptype>
+    <ptype display_name="End Of Event Count Range" condition="Y" column_operator="&lt;=" filterable="Y">
+        <dn>EndOfEventCountRange</dn>
+        <type>int32</type>
+        <length />
+        <required>N</required>
+        <defaultvalue />
+        <description>Tier end for the range of number of events covered by the bulk event rates decision.</description>
+    </ptype>
+    <ptype display_name="Override Rate For Events" action="Y">
+        <dn>OverrideRateForEvents</dn>
+        <type>decimal</type>
+        <length />
+        <required>N</required>
+        <defaultvalue />
+        <description>Override rate for the events if the number of events falls within the StartOfEventCountRange to EndOfEventCountRange number of events.</description>
+    </ptype>
+</defineservice>

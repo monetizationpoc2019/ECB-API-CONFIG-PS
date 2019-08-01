@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<mt_config>
+  <language_code>it</language_code>
+  <locale_space name="pipeline/error">
+    <locale_entry>
+      <Name>pipeline/error</Name>
+      <Value>Errori di sistema</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>pipeline/error/Code</Name>
+      <Value>Codice</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>pipeline/error/ErrorMessage</Name>
+      <Value>Messaggi di errore</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>pipeline/error/FailureCompoundID</Name>
+      <Value>ID composto errato</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>pipeline/error/FailureID</Name>
+      <Value>ID errore</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>pipeline/error/FailureServiceName</Name>
+      <Value>Nome servizio in errore</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>pipeline/error/FailureTime</Name>
+      <Value>Ora dell'errore</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>pipeline/error/Line</Name>
+      <Value>Linea</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>pipeline/error/MeteredTime</Name>
+      <Value>Tempo misurato</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>pipeline/error/Method</Name>
+      <Value>Metodo</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>pipeline/error/Module</Name>
+      <Value>Modulo</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>pipeline/error/PlugIn</Name>
+      <Value>Plug-in</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>pipeline/error/PossibleAccountID</Name>
+      <Value>Possibile ID conto</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>pipeline/error/Sender</Name>
+      <Value>Mittente</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>pipeline/error/StageName</Name>
+      <Value>Nome della fase</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>pipeline/error/State</Name>
+      <Value>Stato/Provincia</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>pipeline/error/tx_batch</Name>
+      <Value>Batch</Value>
+    </locale_entry>
+  </locale_space>
+</mt_config>

@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<mt_config>
+  <language_code>de</language_code>
+  <locale_space name="metratech.com/AccountCreditRequest">
+    <locale_entry>
+      <Name>metratech.com/AccountCreditRequest</Name>
+      <Value>Sonstige Anpassungen</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/AccountCreditRequest/_AccountID</Name>
+      <Value>Kontonr.</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/AccountCreditRequest/_Amount</Name>
+      <Value>Betrag</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/AccountCreditRequest/_Currency</Name>
+      <Value>Währung</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/AccountCreditRequest/Auto</Name>
+      <Value>Automatisch genehmigt</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/AccountCreditRequest/ContentionSessionID</Name>
+      <Value>Konflikt Sitzungs-ID</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/AccountCreditRequest/CreditAmount</Name>
+      <Value>Anpassungsbetrag</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/AccountCreditRequest/Description</Name>
+      <Value>Beschreibung</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/AccountCreditRequest/EmailAddress</Name>
+      <Value>E-Mail-Adresse</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/AccountCreditRequest/EmailNotification</Name>
+      <Value>E-Mail-Benachrichtigung</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/accountcreditrequest/guideintervalid</Name>
+      <Value>Guide Interval Id</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/AccountCreditRequest/Other</Name>
+      <Value>Andere</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/AccountCreditRequest/Reason</Name>
+      <Value>Ursache</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/AccountCreditRequest/Status</Name>
+      <Value>Status</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/AccountCreditRequest/SubscriberAccountID</Name>
+      <Value>Teilnehmerkonto-ID</Value>
+    </locale_entry>
+  </locale_space>
+</mt_config>

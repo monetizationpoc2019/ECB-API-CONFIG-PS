@@ -1,0 +1,121 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xmlconfig xsi:schemaLocation="http://localhost/validation/view_hierarchy_1_1.xsd" xmlns:xsi="http://www.w3.org/1999/XMLSchema/instance">
+	<version>1.0</version>
+	<view_hierarchy>
+		<view>
+			<id_view ptype="ENUM">Root</id_view>
+			<id_parent_view ptype="INTEGER">-99</id_parent_view>
+			<nm_view_type>Summary</nm_view_type>
+		</view>
+		<view>
+			<id_view ptype="ENUM">ProductOfferingParent</id_view>
+			<id_parent_view ptype="INTEGER">-99</id_parent_view>
+			<nm_view_type>Summary</nm_view_type>
+		</view>
+		<view>
+			<id_view ptype="ENUM">metratech.com/testservice</id_view>
+			<id_parent_view ptype="ENUM">Root</id_parent_view>
+			<nm_view_type>Product</nm_view_type>
+		</view>
+		<view>
+			<id_view ptype="ENUM">metratech.com/flatrecurringcharge</id_view>
+			<id_parent_view ptype="ENUM">ProductOfferingParent</id_parent_view>
+			<nm_view_type>Product</nm_view_type>
+		</view>
+		<view>
+			<id_view ptype="ENUM">metratech.com/udrecurringcharge</id_view>
+			<id_parent_view ptype="ENUM">ProductOfferingParent</id_parent_view>
+			<nm_view_type>Product</nm_view_type>
+		</view>
+		<view>
+			<id_view ptype="ENUM">metratech.com/nonrecurringcharge</id_view>
+			<id_parent_view ptype="ENUM">ProductOfferingParent</id_parent_view>
+			<nm_view_type>Product</nm_view_type>
+		</view>
+		<view>
+			<id_view ptype="ENUM">metratech.com/flatdiscount</id_view>
+			<id_parent_view ptype="ENUM">NonRoot</id_parent_view>
+			<nm_view_type>Product</nm_view_type>
+		</view>
+		<view>
+			<id_view ptype="ENUM">metratech.com/flatdiscount_nocond</id_view>
+			<id_parent_view ptype="ENUM">NonRoot</id_parent_view>
+			<nm_view_type>Product</nm_view_type>
+		</view>
+		<view>
+			<id_view ptype="ENUM">metratech.com/percentdiscount</id_view>
+			<id_parent_view ptype="ENUM">NonRoot</id_parent_view>
+			<nm_view_type>Product</nm_view_type>
+		</view>
+		<view>
+			<id_view ptype="ENUM">metratech.com/percentdiscount_nocond</id_view>
+			<id_parent_view ptype="ENUM">NonRoot</id_parent_view>
+			<nm_view_type>Product</nm_view_type>
+		</view>
+		<view>
+			<id_view ptype="ENUM">metratech.com/testservice</id_view>
+			<id_parent_view ptype="ENUM">metratech.com/testparent</id_parent_view>
+			<nm_view_type>Product</nm_view_type>
+		</view>
+		<view>
+			<id_view ptype="ENUM">metratech.com/testparent</id_view>
+			<id_parent_view ptype="ENUM">Root</id_parent_view>
+			<nm_view_type>Product</nm_view_type>
+		</view>
+		<view>
+			<id_view ptype="ENUM">metratech.com/audit</id_view>
+			<id_parent_view ptype="ENUM">NonRoot</id_parent_view>
+			<nm_view_type>Product</nm_view_type>
+		</view>
+		<view>
+			<id_view ptype="ENUM">metratech.com/AccountCredit</id_view>
+			<id_parent_view ptype="ENUM">Root</id_parent_view>
+			<nm_view_type>Product</nm_view_type>
+		</view>
+    <view>
+			<id_view ptype="ID">metratech.com/NonStandardCharge</id_view>
+			<id_parent_view ptype="ID">Root</id_parent_view>
+			<nm_view_type>Product</nm_view_type>
+		</view>
+		<!--
+      This service should not be displayed to the subscriber
+      So set its parent to NonRoot so it will not be displayed
+-->
+		<view>
+			<id_view ptype="ENUM">metratech.com/AccountCreditRequest</id_view>
+			<id_parent_view ptype="ENUM">NonRoot</id_parent_view>
+			<nm_view_type>Product</nm_view_type>
+		</view>
+		<view>
+			<id_view ptype="ENUM">metratech.com/AddCharge</id_view>
+			<id_parent_view ptype="ENUM">Root</id_parent_view>
+			<nm_view_type>Product</nm_view_type>
+		</view>
+		<view>
+			<id_view ptype="ID">metratech.com/Payment</id_view>
+			<id_parent_view ptype="ID">NonRoot</id_parent_view>
+			<nm_view_type>Product</nm_view_type>
+		</view>
+		<view>
+			<id_view ptype="ID">metratech.com/ARAdjustment</id_view>
+			<id_parent_view ptype="ID">NonRoot</id_parent_view>
+			<nm_view_type>Product</nm_view_type>
+		</view>
+		<view>
+			<id_view ptype="ID">metratech.com/NonStandardChargeRequest</id_view>
+			<id_parent_view ptype="ID">NonRoot</id_parent_view>
+			<nm_view_type>Product</nm_view_type>
+		</view>
+		<view>
+			<id_view ptype="ID">metratech.com/GroupDiscount_Temp</id_view>
+			<id_parent_view ptype="ID">NonRoot</id_parent_view>
+			<nm_view_type>Product</nm_view_type>
+		</view>
+			<view>
+			<id_view ptype="ID">metratech.com/PaymentDetails</id_view>
+			<id_parent_view ptype="ID">NonRoot</id_parent_view>
+			<nm_view_type>Product</nm_view_type>
+		</view>
+
+</view_hierarchy>
+</xmlconfig>

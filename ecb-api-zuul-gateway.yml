@@ -1,0 +1,61 @@
+server:
+  port: ${ecb-api-zuul-gateway:8711}
+  
+zuul:
+  semaphore:
+    max-semaphores: 1000
+  host:
+    connect-timeout-millis: 5000000
+    socket-timeout-millis: 10000000  
+  routes:
+    ecb-security:
+      sensitiveHeaders: Cookie,Set-Cookie
+      path: /ecb-security/**
+      serviceId: ecb-security
+      stripPrefix: true
+    ecb-billing:
+      sensitiveHeaders: Cookie,Set-Cookie
+      path: /ecb-billing/**
+      serviceId: ecb-billing
+      stripPrefix: true
+    ecb-product-catalog:
+      sensitiveHeaders: Cookie,Set-Cookie
+      path: /ecb-product-catalog/**
+      serviceId: ecb-product-catalog
+      stripPrefix: true
+    ecb-customer:
+      sensitiveHeaders: Cookie,Set-Cookie
+      path: /ecb-customer/**
+      serviceId: ecb-customer
+      stripPrefix: true
+    ecb-foundation:
+      sensitiveHeaders: Cookie,Set-Cookie
+      path: /ecb-foundation/**
+      serviceId: ecb-foundation
+      stripPrefix: true
+    ecb-metadata:
+      sensitiveHeaders: Cookie,Set-Cookie
+      path: /ecb-metadata/**
+      serviceId: ecb-metadata
+      stripPrefix: true
+    ecb-pricing:
+      sensitiveHeaders: Cookie,Set-Cookie
+      path: /ecb-pricing/**
+      serviceId: ecb-pricing
+      stripPrefix: true
+  add-proxy-headers: true
+
+ribbon:
+  ReadTimeout: 100000
+  ConnectTimeout: 100000
+  eureka:
+    enabled: true
+    
+hystrix:
+  command:
+    default:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 90000 
+                   

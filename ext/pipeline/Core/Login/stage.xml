@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xmlconfig>
+ <version ptype="INTEGER">1</version>
+ <description>Generates a serialized security context based on metered credentials.</description>
+ <stage>
+  <name>Login</name>
+  <startstage ptype="BOOLEAN">YES</startstage>
+  <finalstage ptype="BOOLEAN">YES</finalstage>
+  <dependencies>
+    <dependson>Login</dependson>
+  </dependencies>
+ </stage>
+ <possiblenextstages />
+</xmlconfig>

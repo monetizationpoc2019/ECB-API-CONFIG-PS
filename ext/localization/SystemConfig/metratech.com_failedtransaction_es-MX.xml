@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<mt_config>
+  <language_code>es-MX</language_code>
+  <locale_space name="metratech.com/failedtransaction">
+    <locale_entry>
+      <Name>metratech.com/failedtransaction/DismissedReasonCode/ResendOriginal</Name>
+      <Value>La transacción original se medirá nuevamente</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/failedtransaction/DismissedReasonCode/Test</Name>
+      <Value>Probar registro</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/failedtransaction/DismissedReasonCode/UnableToResolve</Name>
+      <Value>No se puede resolver</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/failedtransaction/InvestigationReasonCode/AccountResolution</Name>
+      <Value>Problema de resolución de la cuenta</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/failedtransaction/InvestigationReasonCode/OperationsIssue</Name>
+      <Value>Problema operativo</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/failedtransaction/InvestigationReasonCode/RateResolution</Name>
+      <Value>Problema de resolución de tarifa</Value>
+    </locale_entry>
+  </locale_space>
+</mt_config>

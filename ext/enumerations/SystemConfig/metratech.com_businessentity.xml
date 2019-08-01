@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<mt_config>
+  <enum_spaces>
+    <enum_space name="metratech.com/BusinessEntity">
+      <description>BE enums</description>
+      <enums>
+        <enum name="BusinessEntityExtension">
+          <description>Each entry is an extension name that contains business entities</description>
+          <entries>
+            <entry name="Core">
+              <value>Core</value>
+            </entry>
+            <entry name="Acme">
+              <value>Acme</value>
+            </entry>
+            <entry name="smoketest">
+              <value>smoketest</value>
+            </entry>
+            <entry name="Messaging">
+              <value>Messaging</value>
+            </entry>
+            <entry name="MetraTech.Account">
+              <value>MetraTech.Account</value>
+            </entry>
+            <entry name="MetraTech.SmokeTest">
+              <value>MetraTech.SmokeTest</value>
+            </entry>
+            <entry name="MetraTech.Core">
+              <value>MetraTech.Core</value>
+            </entry>
+            <entry name="MetraTech.Reporting">
+              <value>MetraTech.Reporting</value>
+            </entry>
+            <entry name="MetraTech.SystemConfig">
+              <value>MetraTech.SystemConfig</value>
+            </entry>
+          </entries>
+        </enum>
+      </enums>
+    </enum_space>
+  </enum_spaces>
+</mt_config>

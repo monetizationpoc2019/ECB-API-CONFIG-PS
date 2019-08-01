@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<defineservice>
+  <name condition_header="Conditions" action_header="Actions" display_name="Calendar" help_url="" type="Reference Data">metratech.com/Calendar</name>
+  <description>Parameter table to store Peak/Off-Peak/Holiday rating calendar to be used during processing.</description>
+  <!-- conditions -->
+  <!-- No conditions exit -->
+  <!-- actions -->
+  <ptype display_name="Calendar ID" action="Y">
+    <dn>Calendar_ID</dn>
+    <type>int32</type>
+    <length>
+    </length>
+    <required>Y</required>
+    <defaultvalue>
+    </defaultvalue>
+    <description>The calendar ID.</description>
+  </ptype>
+</defineservice>

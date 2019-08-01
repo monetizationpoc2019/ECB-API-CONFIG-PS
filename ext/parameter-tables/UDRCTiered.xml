@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<defineservice>
+  <name help_url="" condition_header="Conditions" action_header="Actions" display_name="UDRC Tiered Rates" type="Rates">metratech.com/UDRCTiered</name>
+  <description>Stores the base recurring charge amount and per unit recurring charge amounts for a given rating tier</description>
+  <!-- conditions -->
+  <!-- actions -->
+  <ptype operator="Y">
+    <dn>UnitValue_op</dn>
+    <type>string</type>
+    <length>5</length>
+    <required>N</required>
+    <defaultvalue>
+    </defaultvalue>
+    <description>
+    </description>
+  </ptype>
+  <ptype display_name="Number Of Units" condition="Y" operator_per_rule="Y" filterable="Y">
+    <dn>UnitValue</dn>
+    <type>decimal</type>
+    <length>
+    </length>
+    <required>N</required>
+    <defaultvalue>
+    </defaultvalue>
+    <description>The value of the units.</description>
+  </ptype>
+  <ptype display_name="Recurring Charge Base Amount" action="Y">
+    <dn>BaseAmount</dn>
+    <type>decimal</type>
+    <length>
+    </length>
+    <required>Y</required>
+    <defaultvalue>
+    </defaultvalue>
+    <description>Recurring charge base amount.</description>
+  </ptype>
+  <ptype display_name="Recurring Charge Per-Unit Amount" action="Y">
+    <dn>UnitAmount</dn>
+    <type>decimal</type>
+    <length>
+    </length>
+    <required>Y</required>
+    <defaultvalue>
+    </defaultvalue>
+    <description>Recurring charge per-unit amount.</description>
+  </ptype>
+</defineservice>

@@ -1,0 +1,298 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<mt_config>
+    <enum_spaces>
+        <enum_space name="metratech.com/paymentserver">
+            <description>Payment Server Namespace</description>
+            <enums>
+                <enum name="PaymentStatus">
+                    <description>Scheduled Payment Status</description>
+                    <entries>
+                        <!-- 
+						This name is a little misleading.  This status is here
+					  primarily for purposes of reversing the PaymentBillingAdapter.
+						The idea here is that since we cannot backout/reverse once a
+						transaction has been sent to Verisign, the mechanism will be
+						good only to the point where the transactions are scheduled
+						i.e. they are in the t_pv_ps_paymentscheduler table.  This new
+						value for the paymentstatus column will be the default value for
+						all transactions entering this table.  A new adapter and a new
+						pipeline called "ApprovePayments" will be used to flip this
+						status from PendingApproval to Pending
+						-->
+                        <entry name="PendingApproval">
+                            <value>0</value>
+                        </entry>
+                        <entry name="Pending">
+                            <value>1</value>
+                        </entry>
+                        <entry name="Sent">
+                            <value>2</value>
+                        </entry>
+                        <entry name="Open">
+                            <value>3</value>
+                        </entry>
+                        <entry name="Settled">
+                            <value>4</value>
+                        </entry>
+                        <entry name="Failed">
+                            <value>5</value>
+                        </entry>
+                        <entry name="IncompleteAccountInformation">
+                            <value>6</value>
+                        </entry>
+                        <entry name="Investigate">
+                            <value>7</value>
+                        </entry>
+                        <entry name="Archive">
+                            <value>8</value>
+                        </entry>
+                        <entry name="Retry">
+                            <value>9</value>
+                        </entry>
+                        <entry name="NotPaid">
+                            <value>10</value>
+                        </entry>
+                    </entries>
+                </enum>
+                <enum name="CreditCardType">
+                    <description>Credit Card Type</description>
+                    <entries>
+                        <entry name="Visa">
+                            <value>1</value>
+                        </entry>
+                        <entry name="MasterCard">
+                            <value>2</value>
+                        </entry>
+                        <entry name="American Express">
+                            <value>3</value>
+                        </entry>
+                        <entry name="Discover">
+                            <value>4</value>
+                        </entry>
+                        <entry name="JCB">
+                            <value>5</value>
+                        </entry>
+                        <entry name="Diners Club">
+                            <value>6</value>
+                        </entry>
+                        <entry name="Visa - Purchase Card">
+                            <value>7</value>
+                        </entry>
+                        <entry name="MasterCard - Purchase Card">
+                            <value>8</value>
+                        </entry>
+                        <entry name="American Express - Purchase Card">
+                            <value>9</value>
+                        </entry>
+                        <entry name="Visa - Purchase Card Intl">
+                            <value>10</value>
+                        </entry>
+                        <entry name="MasterCard - Purchase Card Intl">
+                            <value>11</value>
+                        </entry>
+                        <entry name="American Express - Purchase Card Intl">
+                            <value>12</value>
+                        </entry>
+                        <entry name="Maestro">
+                            <value>13</value>
+                        </entry>
+                    </entries>
+                </enum>
+                <enum name="CreditCard">
+                    <description>Credit Card</description>
+                    <entries>
+                        <entry name="Visa">
+                            <value>1</value>
+                        </entry>
+                        <entry name="MasterCard">
+                            <value>2</value>
+                        </entry>
+                        <entry name="American Express">
+                            <value>3</value>
+                        </entry>
+                        <entry name="Discover">
+                            <value>4</value>
+                        </entry>
+                        <!--
+            <entry name="JCB">
+              <value>5</value>
+            </entry>	
+            <entry name="Diners Club">
+              <value>6</value>
+            </entry>	
+            <entry name="Maestro">
+              <value>13</value>
+            </entry>
+            -->
+                    </entries>
+                </enum>
+                <enum name="PurchaseCard">
+                    <description>Credit Card</description>
+                    <entries>
+                        <entry name="Visa - Purchase Card">
+                            <value>7</value>
+                        </entry>
+                        <entry name="MasterCard - Purchase Card">
+                            <value>8</value>
+                        </entry>
+                        <entry name="American Express - Purchase Card">
+                            <value>9</value>
+                        </entry>
+                        <entry name="Visa - Purchase Card Intl">
+                            <value>10</value>
+                        </entry>
+                        <entry name="MasterCard - Purchase Card Intl">
+                            <value>11</value>
+                        </entry>
+                        <entry name="American Express - Purchase Card Intl">
+                            <value>12</value>
+                        </entry>
+                    </entries>
+                </enum>
+                <enum name="BankAccountType">
+                    <description>Bank Account Type</description>
+                    <entries>
+                        <entry name="Savings">
+                            <value>0</value>
+                        </entry>
+                        <entry name="Checking">
+                            <value>1</value>
+                        </entry>
+                    </entries>
+                </enum>
+                <enum name="PaymentType">
+                    <description>Payment Type</description>
+                    <entries>
+                        <entry name="Credit Card">
+                            <value>0</value>
+                        </entry>
+                        <entry name="ACH">
+                            <value>1</value>
+                        </entry>
+                    </entries>
+                </enum>
+                <!--Commenting this out as it seems to be a duplicate of PaymentType
+		<enum name="PaymentMethod">
+        <description>Payment Method</description>
+          <entries>
+            <entry name="Credit Card">
+             <value>0</value>
+            </entry>
+            <entry name="ACH">
+              <value>1</value>
+            </entry>
+            <entry name="Purchase Card">
+              <value>2</value>
+            </entry>
+          </entries>
+        </enum>-->
+                <enum name="PaymentRequestType">
+                    <description>Payment Request Type</description>
+                    <entries>
+                        <entry name="Credit Card Debit">
+                            <value>0</value>
+                        </entry>
+                        <entry name="Credit Card Credit">
+                            <value>1</value>
+                        </entry>
+                        <entry name="Credit Card PreAuth">
+                            <value>2</value>
+                        </entry>
+                        <entry name="Credit Card Capture">
+                            <value>3</value>
+                        </entry>
+                        <entry name="Credit Card Add">
+                            <value>4</value>
+                        </entry>
+                        <entry name="Credit Card Delete">
+                            <value>5</value>
+                        </entry>
+                        <entry name="Credit Card Update">
+                            <value>6</value>
+                        </entry>
+                        <entry name="ACH Debit">
+                            <value>7</value>
+                        </entry>
+                        <entry name="ACH Credit">
+                            <value>8</value>
+                        </entry>
+                        <entry name="ACH Account Add">
+                            <value>9</value>
+                        </entry>
+                        <entry name="ACH Account Delete">
+                            <value>10</value>
+                        </entry>
+                        <entry name="ACH Account Update">
+                            <value>11</value>
+                        </entry>
+                        <entry name="Credit Card Auth Reversal">
+                            <value>12</value>
+                        </entry>
+                    </entries>
+                </enum>
+                <enum name="ErrorSource">
+                    <description>Error Source enum</description>
+                    <entries>
+                        <entry name="Adapter">
+                            <value>0</value>
+                        </entry>
+                        <entry name="EPS">
+                            <value>1</value>
+                        </entry>
+                        <entry name="MetraPay">
+                            <value>2</value>
+                        </entry>
+                        <entry name="PaymentProcessor">
+                            <value>3</value>
+                        </entry>
+                    </entries>
+                </enum>
+                <enum name="BatchStatus">
+                    <description>Batch Status enum</description>
+                    <entries>
+                        <entry name="Error">
+                            <value>-1</value>
+                        </entry>
+                        <entry name="AwaitingSubmit">
+                            <value>0</value>
+                        </entry>
+                        <entry name="AwaitingValidation">
+                            <value>1</value>
+                        </entry>
+                        <entry name="AwaitingReconciliation">
+                            <value>2</value>
+                        </entry>
+                        <entry name="Complete">
+                            <value>3</value>
+                        </entry>
+                    </entries>
+                </enum>
+                <enum name="CreditCardTransactionType">
+                    <description>Credit Card Transaction Type enum</description>
+                    <entries>
+                        <entry name="Capture">
+                            <value>0</value>
+                        </entry>
+                        <entry name="Debit">
+                            <value>1</value>
+                        </entry>
+                        <entry name="Credit">
+                            <value>2</value>
+                        </entry>
+                    </entries>
+                </enum>
+                 <enum name="PayUsing">
+                    <description />
+                    <entries>
+                        <entry name="New Payment Method">
+                            <value>0</value>
+                        </entry>
+                        <entry name="Existing Payment Method">
+                            <value>1</value>
+                        </entry>
+                    </entries>
+                </enum>
+            </enums>
+        </enum_space>
+    </enum_spaces>
+</mt_config>

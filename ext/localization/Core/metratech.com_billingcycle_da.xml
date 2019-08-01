@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<mt_config>
+  <language_code>da</language_code>
+  <locale_space name="metratech.com/billingcycle">
+    <locale_entry>
+      <Name>metratech.com/billingcycle/UsageCycleType/Annually</Name>
+      <Value>metratech.com/billingcycle/UsageCycleType/Annually</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/billingcycle/UsageCycleType/Bi-weekly</Name>
+      <Value>metratech.com/billingcycle/UsageCycleType/Bi-weekly</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/billingcycle/UsageCycleType/Daily</Name>
+      <Value>metratech.com/billingcycle/UsageCycleType/Daily</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/billingcycle/UsageCycleType/Monthly</Name>
+      <Value>metratech.com/billingcycle/UsageCycleType/Monthly</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/billingcycle/UsageCycleType/Quarterly</Name>
+      <Value>metratech.com/billingcycle/UsageCycleType/Quarterly</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/billingcycle/UsageCycleType/Semi-Annually</Name>
+      <Value>metratech.com/billingcycle/UsageCycleType/Semi-Annually</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/billingcycle/UsageCycleType/Semi-monthly</Name>
+      <Value>metratech.com/billingcycle/UsageCycleType/Semi-monthly</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/billingcycle/UsageCycleType/Weekly</Name>
+      <Value>metratech.com/billingcycle/UsageCycleType/Weekly</Value>
+    </locale_entry>
+  </locale_space>
+</mt_config>

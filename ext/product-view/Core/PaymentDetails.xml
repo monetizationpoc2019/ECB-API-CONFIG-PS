@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<defineservice>
+    <name>metratech.com/PaymentDetails</name>
+    <description>Details about account payments.</description>
+    <ptype uservisible="False" exportable="False" filterable="False">
+        <dn>InvoiceNum</dn>
+        <type>string</type>
+        <length>40</length>
+        <required>N</required>
+        <defaultvalue />
+        <description>Invoice Number associated for this payment.</description>
+    </ptype>
+    <ptype uservisible="False" exportable="False" filterable="False">
+        <dn>PONumber</dn>
+        <type>string</type>
+        <length>40</length>
+        <required>N</required>
+        <defaultvalue />
+        <description>PONUmber associated for this payment.</description>
+    </ptype>
+    <ptype uservisible="False" exportable="False" filterable="False">
+        <dn>InvoiceDate</dn>
+        <type>timestamp</type>
+        <length />
+        <required>N</required>
+        <defaultvalue />
+        <description>Invoice Date for the associated Invoice number.</description>
+    </ptype>
+</defineservice>

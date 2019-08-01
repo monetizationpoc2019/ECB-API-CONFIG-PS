@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xmlconfig>
+	<DataMartDB>
+		<Size>5</Size>  <!-- should be a whole number greater than 0, size is in MB -->
+
+		<!-- MSSQL server -->
+		<FilePath>C:\Temp</FilePath>
+
+		<!-- Oracle unix -->
+		<!--FilePath>/u01/app/oracle/oradata/netmeter</FilePath-->
+
+		<!-- Oracle windows -->
+		<!--FilePath>C:\ORACLE\PRODUCT\10.2.0\ORADATA\PLUTO</FilePath-->
+
+		<!-- name is in the ReportConfig.xml -->
+	</DataMartDB>
+
+	<ReportType>Account</ReportType>
+
+  <GenerateSchemaQueryPath>SqlCore\Queries\GenerateSchemaQueries</GenerateSchemaQueryPath>
+
+  <!-- Use the following query files for On-Demand Billing process -->
+  <PopulateQueryPath>SqlCore\Queries\PopulateQueriesOnDemand</PopulateQueryPath>
+
+  <ReverseAdapterQueryPath>SqlCore\Queries\ReverseDatamartAdapterOnDemand</ReverseAdapterQueryPath>
+
+  <SplitReverseAdapterQueryPath>SqlCore\Queries\SplitReverseDatamartAdapter</SplitReverseAdapterQueryPath>
+
+</xmlconfig>

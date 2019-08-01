@@ -1,0 +1,197 @@
+ecb:
+  base:
+    rest:
+      CapabilityController:
+        addUserCapability: Metratech.MTManageSubscriberAuthCapability, Metratech.MTManageCSRAuthCapability, Metratech.MTAllCapability
+        findAssignedUserCapability: Metratech.MTManageSubscriberAuthCapability, Metratech.MTManageCSRAuthCapability, Metratech.MTAllCapability
+        findAssignableUserCapability: Metratech.MTManageSubscriberAuthCapability, Metratech.MTManageCSRAuthCapability, Metratech.MTAllCapability
+        getUserCapability: Metratech.MTManageSubscriberAuthCapability, Metratech.MTManageCSRAuthCapability, Metratech.MTAllCapability
+        deleteUserCapability: Metratech.MTManageSubscriberAuthCapability, Metratech.MTManageCSRAuthCapability, Metratech.MTAllCapability
+        updateAtomicCapability: Metratech.MTManageSubscriberAuthCapability, Metratech.MTManageCSRAuthCapability, Metratech.MTAllCapability
+      BaseRoleController:
+        getRole: Metratech.MTManageGlobalAuthCapability, Metratech.MTAllCapability
+        createRole: Metratech.MTManageGlobalAuthCapability, Metratech.MTAllCapability
+        updateRole: Metratech.MTManageGlobalAuthCapability, Metratech.MTAllCapability
+        updateSelectiveRole: Metratech.MTManageGlobalAuthCapability, Metratech.MTAllCapability
+      RoleController:
+        findAssignableRoleMembers: Metratech.MTManageGlobalAuthCapability, Metratech.MTAllCapability
+        findAssignableRoleCapability: Metratech.MTManageGlobalAuthCapability, Metratech.MTAllCapability
+        findAssignedUserRoles: Metratech.MTManageSubscriberAuthCapability, Metratech.MTManageCSRAuthCapability, Metratech.MTAllCapability
+        findAssignableUserRoles: Metratech.MTManageSubscriberAuthCapability, Metratech.MTManageCSRAuthCapability, Metratech.MTAllCapability
+        deleteRole: Metratech.MTManageGlobalAuthCapability, Metratech.MTAllCapability
+        findAssignedRoleMembers: Metratech.MTManageGlobalAuthCapability, Metratech.MTAllCapability
+        addRoleMembers: Metratech.MTManageGlobalAuthCapability, Metratech.MTAllCapability
+        deleteRoleMember: Metratech.MTManageGlobalAuthCapability, Metratech.MTAllCapability
+        addRoleCapability: Metratech.MTManageGlobalAuthCapability, Metratech.MTAllCapability
+        updateRoleCompositeCapability: Metratech.MTManageGlobalAuthCapability, Metratech.MTAllCapability
+        deleteRoleCapability: Metratech.MTManageGlobalAuthCapability, Metratech.MTAllCapability
+        getRoleCapability: Metratech.MTManageGlobalAuthCapability, Metratech.MTAllCapability
+        findAssignedRoleCapability: Metratech.MTManageGlobalAuthCapability, Metratech.MTAllCapability
+    default: None   
+  catalog:
+    rest:
+      AdjustmentController:
+        addReasonCodeMapping: MetraTech.Auth.Capabilities.ApplyAdjustmentsCapability, Metratech.MTAllCapability
+        deleteAdjustment: MetraTech.Auth.Capabilities.ApplyAdjustmentsCapability, Metratech.MTAllCapability
+        findAdjustmentTemplateReasonCodeMapping: Metratech.MTApplicationLogOnCapability, Metratech.MTAllCapability
+        removeReasonCodeMappings: MetraTech.Auth.Capabilities.ApplyAdjustmentsCapability, Metratech.MTAllCapability
+      BaseAdjustmentController:
+        createAdjustment: MetraTech.Auth.Capabilities.ApplyAdjustmentsCapability, Metratech.MTAllCapability
+        findAdjustment: Metratech.MTApplicationLogOnCapability, Metratech.MTAllCapability
+        getAdjustment: Metratech.MTApplicationLogOnCapability, Metratech.MTAllCapability
+        updateAdjustment: MetraTech.Auth.Capabilities.ApplyAdjustmentsCapability, Metratech.MTAllCapability
+        updateSelectiveAdjustment: MetraTech.Auth.Capabilities.ApplyAdjustmentsCapability, Metratech.MTAllCapability
+      BasePricelistController:
+        getPricelist: Metratech.MTAllCapability, Metratech.MTPathCapability, Metratech.MTApplicationLogOnCapability
+        findPricelist: Metratech.MTApplicationLogOnCapability, Metratech.MTAllCapability
+      BaseProductOfferController:
+        createProductOffer: MetraTech.Auth.Capabilities.ManageOfferingsCapability, Metratech.MTAllCapability
+        updateProductOffer: MetraTech.Auth.Capabilities.ManageOfferingsCapability, Metratech.MTAllCapability
+        getProductOffer: Metratech.MTApplicationLogOnCapability, Metratech.MTAllCapability
+        findProductOffer: Metratech.MTApplicationLogOnCapability, Metratech.MTAllCapability
+      BasePriceableItemTemplateController:
+        getPriceableItemTemplate: Metratech.MTApplicationLogOnCapability, Metratech.MTAllCapability
+        findPriceableItemTemplate: Metratech.MTApplicationLogOnCapability, Metratech.MTAllCapability
+      PriceableItemTemplateController:
+        deletePriceableItemTemplate: Metratech.MTApplicationLogOnCapability, Metratech.MTAllCapability
+      BasePricelistMappingController:
+        createPricelistMapping: MetraTech.Auth.Capabilities.ManageSharedRatesCapability, Metratech.MTAllCapability
+        findPricelistMapping: Metratech.MTApplicationLogOnCapability, Metratech.MTAllCapability
+      PricelistMappingController: 
+        updatePricelistMapping: MetraTech.Auth.Capabilities.ManageSharedRatesCapability, Metratech.MTAllCapability, MetraTech.Auth.Capabilities.ManageRatesTableCapability
+      PriceableItemInstanceController:
+        updatePriceableItemInstanceSelectiveMap: MetraTech.Auth.Capabilities.ManageOfferingsCapability, Metratech.MTAllCapability
+        getPriceableItemInstance: Metratech.MTApplicationLogOnCapability, Metratech.MTAllCapability
+        findPriceableItemInstanceOnOffering: Metratech.MTApplicationLogOnCapability, Metratech.MTAllCapability
+        deletePriceableItemInstanceFromOffering: MetraTech.Auth.Capabilities.ManageOfferingsCapability, Metratech.MTAllCapability
+      BaseRateScheduleController:
+        createRateSchedule: MetraTech.Auth.Capabilities.ManageRatesSchedulesandRatesCapability, Metratech.MTAllCapability
+        updateRateSchedule: MetraTech.Auth.Capabilities.ManageRatesSchedulesandRatesCapability, Metratech.MTAllCapability, MetraTech.Auth.Capabilities.ManageSharedRatesCapability, MetraTech.Auth.Capabilities.ManageRatesTableCapability
+        getRateSchedule: Metratech.MTApplicationLogOnCapability, Metratech.MTAllCapability
+        findRateSchedule: Metratech.MTApplicationLogOnCapability, Metratech.MTAllCapability
+        deleteRateSchedule: MetraTech.Auth.Capabilities.DeleteRatesSchedulesCapability, Metratech.MTAllCapability
+    default: None
+  customer:
+    rest:
+      BaseAccountController:
+        getAccount: Metratech.MTManageAHCapability, Metratech.MTAllCapability, Metratech.MTApplicationLogOnCapability
+      AccountController:
+        createAccountEntity: Metratech.MTManageAHCapability, Metratech.MTCreateSubscriberCapability, Metratech.CMTCreateCorporateAccountCapability, Metratech.MTCreateCSRCapability, Metratech.MTManageBillableCapability, Metratech.MTManagePaymentCapability, Metratech.MTAllCapability
+        updateAccountEntity: Metratech.MTUpdateCSRCapability, Metratech.CMTUpdateCorporateAccountCapability, Metratech.MTUpdateSubscriberCapability, Metratech.MTManageAHCapability, Metratech.MTManageBillableCapability, Metratech.MTManagePaymentCapability, Metratech.MTAllCapability
+        updateAccountState: Metratech.MTUpdAccFromActiveToClosedCapability, Metratech.MTUpdAccFromActiveToSuspendedCapability, Metratech.MTUpdAccFromPendingFinalBillToActiveCapability, Metratech.MTUpdAccFromSuspendedToActiveCapability, Metratech.MTAllCapability      
+        loadAccountWithViews: Metratech.MTManageAHCapability, Metratech.MTAllCapability
+      AccountMapperController: 
+        createAccountMapper: Metratech.MTManageAHCapability, Metratech.MTAllCapability 
+      BaseSubscriptionController:
+        getSubscription: Metratech.MTViewSubscriptionsCapability, Metratech.MTAllCapability, Metratech.MTApplicationLogOnCapability
+        findSubscription: Metratech.MTViewSubscriptionsCapability, Metratech.MTAllCapability, Metratech.MTApplicationLogOnCapability
+      SubscriptionController:
+        createSubscriptionEntity: Metratech.MTCreateSubscriptionCapability, Metratech.MTAllCapability
+        updateSubscriptionEntity: Metratech.MTUpdateSubscriptionCapability, Metratech.MTAllCapability
+        deleteSubscription: MetraTech.MTDeleteSubscriptionCapability.1, Metratech.MTAllCapability
+      AccountTemplateController: 
+        createAccountTemplateEntity: Metratech.MTManageAHCapability, Metratech.MTUpdateSubscriberCapability, Metratech.MTAllCapability 
+        updateAccountTemplateEntity: Metratech.MTManageAHCapability, Metratech.MTUpdateSubscriberCapability, Metratech.MTAllCapability
+        deleteAccountTemplate: Metratech.MTManageAHCapability, Metratech.MTAllCapability
+      BaseAccountTemplateController: 
+        createAccountTemplate: Metratech.MTManageAHCapability, Metratech.MTUpdateSubscriberCapability, Metratech.MTAllCapability  
+        updateAccountTemplate: Metratech.MTManageAHCapability, Metratech.MTUpdateSubscriberCapability, Metratech.MTAllCapability        
+    default: None  
+  billing:
+    rest:
+      BaseInvoiceController:
+        getInvoice: Metratech.MTManageAHCapability, Metratech.MTAllCapability, Metratech.MTApplicationLogOnCapability
+      UsageServerController:
+        createUsageIntervals: 
+    default: None
+
+UIPoDetailsPage:
+  Properties_View: Metratech.MTAllCapability,Metratech.MTApplicationLogOnCapability
+  SubsSettings_View: Metratech.MTAllCapability,Metratech.MTApplicationLogOnCapability
+  SubsProps_View: Metratech.MTAllCapability,Metratech.MTApplicationLogOnCapability
+  ExtProps_View: Metratech.MTAllCapability,Metratech.MTApplicationLogOnCapability
+  PIs_View: Metratech.MTAllCapability,Metratech.MTApplicationLogOnCapability
+  Delete: Metratech.MTAllCapability,MetraTech.MTManageProductOfferingsCapability
+  Properties_Edit: Metratech.MTAllCapability,MetraTech.Auth.Capabilities.ManageOfferingsCapability
+  SubsSettings_Edit: Metratech.MTAllCapability,MetraTech.Auth.Capabilities.ManageOfferingsCapability
+  SubsProps_Add: Metratech.MTAllCapability,MetraTech.Auth.Capabilities.ManageOfferingsCapability
+  ExtProps_Edit: Metratech.MTAllCapability,MetraTech.Auth.Capabilities.ManageOfferingsCapability
+  Name_Edit: Metratech.MTAllCapability,MetraTech.Auth.Capabilities.ManageOfferingsCapability
+  PIs_Add: Metratech.MTAllCapability,MetraTech.Auth.Capabilities.ManageOfferingsCapability
+  POs_View: Metratech.MTAllCapability,Metratech.MTApplicationLogOnCapability
+  POs_Add: Metratech.MTAllCapability,MetraTech.Auth.Capabilities.ManageOfferingsCapability
+UIPIDetailsPage:
+  Props_View: Metratech.MTAllCapability,Metratech.MTApplicationLogOnCapability
+  ExtProps_View: Metratech.MTAllCapability,Metratech.MTApplicationLogOnCapability
+  RateTables_View: Metratech.MTAllCapability,Metratech.MTApplicationLogOnCapability
+  Name_Edit: Metratech.MTAllCapability,MetraTech.Auth.Capabilities.ManageOfferingsCapability
+  description_Edit: Metratech.MTAllCapability,MetraTech.Auth.Capabilities.ManageOfferingsCapability
+  Props_Edit: Metratech.MTAllCapability,MetraTech.Auth.Capabilities.ManageOfferingsCapability
+  ExtProps_Edit: Metratech.MTAllCapability,MetraTech.Auth.Capabilities.ManageOfferingsCapability
+  RateTables_Edit: Metratech.MTAllCapability,MetraTech.Auth.Capabilities.ManageRatesTableCapability
+  RateTables_Delete: Metratech.MTAllCapability,MetraTech.Auth.Capabilities.DeleteRatesSchedulesCapability
+  Permission_View: Metratech.MTAllCapability,Metratech.MTApplicationLogOnCapability
+  Adjustments_View: Metratech.MTAllCapability,Metratech.MTApplicationLogOnCapability
+  Adjustments_Edit: Metratech.MTAllCapability,MetraTech.Auth.Capabilities.ManageOfferingsCapability
+  Billing_View: Metratech.MTAllCapability,Metratech.MTApplicationLogOnCapability
+  Billing_Edit: Metratech.MTAllCapability,MetraTech.Auth.Capabilities.ManageOfferingsCapability
+  UnitDetails_View: Metratech.MTAllCapability,Metratech.MTApplicationLogOnCapability
+  UnitDetails_Edit: Metratech.MTAllCapability,MetraTech.Auth.Capabilities.ManageOfferingsCapability
+  ChildPI_View: Metratech.MTAllCapability,Metratech.MTApplicationLogOnCapability
+  ChildPI_Edit: Metratech.MTAllCapability,MetraTech.Auth.Capabilities.ManageOfferingsCapability
+  Schedules_View: Metratech.MTAllCapability,Metratech.MTApplicationLogOnCapability
+  Schedules_Edit: Metratech.MTAllCapability,MetraTech.Auth.Capabilities.ManageRatesSchedulesandRatesCapability,MetraTech.Auth.Capabilities.ManageRatesTableCapability
+  Schedules_Delete: Metratech.MTAllCapability,MetraTech.Auth.Capabilities.DeleteRatesSchedulesCapability
+  Rates_View: Metratech.MTAllCapability,Metratech.MTApplicationLogOnCapability
+  Rates_Edit: Metratech.MTAllCapability,MetraTech.Auth.Capabilities.ManageRatesTableCapability,MetraTech.Auth.Capabilities.ManageRatesSchedulesandRatesCapability,MetraTech.Auth.Capabilities.ManageRatesCapability
+  Rates_Delete: Metratech.MTAllCapability,MetraTech.MTManageRatesCapability,MetraTech.Auth.Capabilities.DeleteRatesCapability,MetraTech.Auth.Capabilities.DeleteRatesSchedulesCapability
+  download_View: Metratech.MTAllCapability,Metratech.MTApplicationLogOnCapability
+  upload_View: Metratech.MTAllCapability,MetraTech.Auth.Capabilities.ManageRatesSchedulesandRatesCapability,MetraTech.Auth.Capabilities.ManageRatesCapability,MetraTech.Auth.Capabilities.ManageRatesTableCapability
+UIPOGrid:
+  Delete_Column_(un)hide: Metratech.MTAllCapability,MetraTech.MTManageProductOfferingsCapability
+  copy_column_(un)hide: Metratech.MTAllCapability,MetraTech.Auth.Capabilities.ManageOfferingsCapability
+  hide_column_(un)hide: Metratech.MTAllCapability,MetraTech.Auth.Capabilities.ManageOfferingsCapability
+  Download: Metratech.MTAllCapability,Metratech.MTApplicationLogOnCapability
+  Create: Metratech.MTAllCapability,MetraTech.Auth.Capabilities.ManageOfferingsCapability
+UISubsProperties:
+  SubsProperties_View: Metratech.MTAllCapability,Metratech.MTApplicationLogOnCapability
+  SubsProperties_Edit: Metratech.MTAllCapability,MetraTech.Auth.Capabilities.ManageSubscriptionPropertiesCapability
+  SubsProperties_Delete: Metratech.MTAllCapability,MetraTech.Auth.Capabilities.DeleteSubscriptionPropertiesCapability
+  SubsProperties_Add: Metratech.MTAllCapability,MetraTech.Auth.Capabilities.ManageSubscriptionPropertiesCapability
+UISharedRates:
+  SharedRates_View: Metratech.MTAllCapability,Metratech.MTApplicationLogOnCapability
+  SharedRates_Edit: Metratech.MTAllCapability,MetraTech.Auth.Capabilities.ManageSharedRatesCapability
+  SharedRates_Delete: Metratech.MTAllCapability,MetraTech.Auth.Capabilities.DeleteSharedRatesCapability
+  SharedRates_Add:  Metratech.MTAllCapability,MetraTech.Auth.Capabilities.ManageSharedRatesCapability
+  SharedRates_Copy: Metratech.MTAllCapability,MetraTech.Auth.Capabilities.ManageSharedRatesCapability
+UISharedRateDetailsPage:
+  Props_View: Metratech.MTAllCapability,Metratech.MTApplicationLogOnCapability
+  Props_Edit: Metratech.MTAllCapability,MetraTech.Auth.Capabilities.ManageSharedRatesCapability
+  SharedRatesDetails_Delete: Metratech.MTAllCapability,MetraTech.Auth.Capabilities.DeleteSharedRatesCapability
+  RateTables_Add: Metratech.MTAllCapability,MetraTech.Auth.Capabilities.ManageSharedRatesCapability
+  RateTables_View: Metratech.MTAllCapability,Metratech.MTApplicationLogOnCapability
+  RateTables_Edit: Metratech.MTAllCapability,MetraTech.Auth.Capabilities.ManageSharedRatesCapability
+  RateTables_Delete: Metratech.MTAllCapability,MetraTech.Auth.Capabilities.DeleteSharedRatesCapability
+  Schedules_View: Metratech.MTAllCapability,Metratech.MTApplicationLogOnCapability
+  Schedules_Edit: Metratech.MTAllCapability,MetraTech.Auth.Capabilities.ManageSharedRatesCapability
+  Schedules_Delete: Metratech.MTAllCapability,MetraTech.Auth.Capabilities.DeleteSharedRatesCapability
+  Schedules_Add: Metratech.MTAllCapability,MetraTech.Auth.Capabilities.ManageSharedRatesCapability
+  Schedules_Copy: Metratech.MTAllCapability,MetraTech.Auth.Capabilities.ManageSharedRatesCapability
+  Rates_View: Metratech.MTAllCapability,Metratech.MTApplicationLogOnCapability
+  Rates_Edit: Metratech.MTAllCapability,MetraTech.Auth.Capabilities.ManageSharedRatesCapability
+  Rates_Delete: Metratech.MTAllCapability,MetraTech.Auth.Capabilities.DeleteSharedRatesCapability
+  Rates_Add: Metratech.MTAllCapability,MetraTech.Auth.Capabilities.ManageSharedRatesCapability
+  Rates_Copy: Metratech.MTAllCapability,MetraTech.Auth.Capabilities.ManageSharedRatesCapability
+  download_View: Metratech.MTAllCapability,Metratech.MTApplicationLogOnCapability
+  upload_View: Metratech.MTAllCapability,MetraTech.Auth.Capabilities.ManageSharedRatesCapability
+UIPartitionBreadCrumb:
+  Offerings: Metratech.MTApplicationLogOnCapability
+  Localization: Metratech.MTApplicationLogOnCapability
+  SharedRates: Metratech.MTApplicationLogOnCapability
+  SubscriptionProperties: MetraTech.Auth.Capabilities.ManageSubscriptionPropertiesCapability,MetraTech.Auth.Capabilities.DeleteSubscriptionPropertiesCapability
+  AuditLog: false
+  PriceableItemTemplate: false
+  AdjustmentReasons: false
+  Calendars: false
+UIMoLogOnCapability:
+  Logon: Metratech.MTApplicationLogOnCapability,Metratech.MTAllCapability

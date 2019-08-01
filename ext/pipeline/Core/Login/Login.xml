@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xmlconfig>
+  <mtsysconfigdata>
+    <effective_date ptype="DATETIME">2000-1-19T00:00:00Z</effective_date>
+    <timeout ptype="INTEGER">30</timeout>
+    <configfiletype>CONFIG_DATA</configfiletype>
+  </mtsysconfigdata>
+
+  <mtconfigdata>
+
+ <version ptype="INTEGER">1</version>
+ <!-- First processor configuration -->
+ <processor>
+  <name>Login</name>
+  <progid>MetraPipeline.MTLogin.1</progid>
+  <description>
+		Authenticate a user based on passed in credentials and return
+		serialized session context
+  </description>
+
+  <inputs>
+	<input type="STRING" internal_name="UserName">username</input>
+	<input type="STRING" internal_name="password">password</input>
+	<input type="STRING" internal_name="Namespace">namespace</input>
+  </inputs>
+
+  <outputs>
+	<output type="STRING" internal_name="SessionContext">SessionContext</output>
+  </outputs>
+  
+  <configdata>
+    <username>UserName</username>
+    <password>Password_</password>
+    <namespace>Namespace</namespace>
+    <sessioncontext>SessionContext</sessioncontext>
+  </configdata>
+
+ </processor>
+
+  </mtconfigdata>
+
+</xmlconfig>

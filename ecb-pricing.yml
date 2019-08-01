@@ -1,0 +1,2 @@
+server:
+  port: ${pricing-port:8099}

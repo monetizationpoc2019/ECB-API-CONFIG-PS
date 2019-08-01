@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xmlconfig>
+  <mtsysconfigdata>
+    <effective_date ptype="DATETIME">2001-04-06T21:46:29Z</effective_date>
+    <timeout ptype="INTEGER">365</timeout>
+    <configfiletype>CONFIG_DATA</configfiletype>
+  </mtsysconfigdata>
+  <mtconfigdata>
+    <version ptype="INTEGER">1</version>
+    <processor>
+      <name>DiscountRateLookup</name>
+      <description>PCRate plug-in unconditional discount rate lookup.</description>
+      <progid>MetraPipeline.PCRate.1</progid>
+      <inputs>
+      </inputs>
+      <outputs>
+        <output type="DECIMAL">DiscountPercent</output>
+      </outputs>
+
+      <condition>
+      
+        CREATE PROCEDURE condition @_ExecutePlugin BOOLEAN OUTPUT @GroupDiscountPass INTEGER
+        AS
+
+	-- pass 0: rate an individual discount
+	-- pass 1: rate a group discount
+	-- pass 2: don't rate (already rated), let the member's group discount pass through
+
+	IF @GroupDiscountPass = 2 
+          SET @_ExecutePlugin = FALSE
+	ELSE
+	  SET @_ExecutePlugin = TRUE
+      
+      </condition>
+
+      <configdata>
+        <!-- lookup from a named parameter table -->
+        <RateLookup>
+          <ParamTable>metratech.com/PercentDiscount_NoCond</ParamTable>
+        </RateLookup>
+        <properties>
+           <_Timestamp>DiscountIntervalSubEnd</_Timestamp>
+        </properties>
+      </configdata>
+    </processor>
+  </mtconfigdata>
+</xmlconfig>

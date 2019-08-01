@@ -1,0 +1,257 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xmlconfig>
+  <version ptype="INTEGER">2</version>
+
+  <ScheduledAdapters>
+
+    <!--<Adapter>
+      <Name>ARPaymentAndAdjustment</Name>
+      <DisplayName>AR Payment and Adjustment Export</DisplayName>	  
+      <ClassID>MetraTech.AR.Adapters.PaymentAndAdjustmentAdapter,MetraTech.AR.Adapters</ClassID>
+      <ConfigFile>PaymentAndAdjustmentAdapter.xml</ConfigFile>
+      <ActivationDate>10/1/2002 00:00:00</ActivationDate>
+      <Description>Export payments, A/R adjustments, and post bill adjustments to the A/R System.</Description>
+      <LocalizedItems>
+		<item lang="FR">
+			<DisplayName>Exportation des paiements et ajustements de créances</DisplayName>
+			<Description>Exportez les paiements, les ajustements de créances et les ajustements post-facturation vers le système de créances.</Description>
+		</item>
+		<item lang="IT">
+			<DisplayName>[IT] AR Payment and Adjustment Export</DisplayName>
+			<Description>[IT] Export payments, A/R adjustments, and post bill adjustments to the A/R System.</Description>
+		</item>
+		<item lang="ES">
+			<DisplayName>[ES] AR Payment and Adjustment Export</DisplayName>
+			<Description>[ES] Export payments, A/R adjustments, and post bill adjustments to the A/R System.</Description>
+		</item>
+		<item lang="DE">
+			<DisplayName>[DE] AR Payment and Adjustment Export</DisplayName>
+			<Description>[DE] Export payments, A/R adjustments, and post bill adjustments to the A/R System.</Description>
+		</item>
+		<item lang="es-MX">
+			<DisplayName>[es-MX] AR Payment and Adjustment Export</DisplayName>
+			<Description>[es-MX] Export payments, A/R adjustments, and post bill adjustments to the A/R System.</Description>
+		</item>
+		<item lang="pt-BR">
+			<DisplayName>Pagamento de AR e exportação de ajuste</DisplayName>
+			<Description>Exportar pagamentos, ajustes de A/R e postar ajustes de fatura ao sistema A/R.</Description>
+		</item>
+		<item lang="en-GB">
+			<DisplayName>[en-GB] AR Payment and Adjustment Export</DisplayName>
+			<Description>[en-GB] Export payments, A/R adjustments, and post bill adjustments to the A/R System.</Description>
+		</item>
+		<item lang="JA">
+			<DisplayName>[JA] AR Payment and Adjustment Export</DisplayName>
+			<Description>[JA] Export payments, A/R adjustments, and post bill adjustments to the A/R System.</Description>
+		</item>		
+	  </LocalizedItems>     
+      <RecurrencePattern>
+        <IntervalInMinutes>15</IntervalInMinutes>
+      </RecurrencePattern>
+      <Dependencies>
+        <DependsOnMe>PayerChange</DependsOnMe>
+      </Dependencies>
+    </Adapter>
+
+    <Adapter>
+      <Name>ARApplyCredits</Name>
+      <DisplayName>AR Apply Credits</DisplayName>      
+      <ClassID>MetraTech.AR.Adapters.ProcedureAdapter,MetraTech.AR.Adapters</ClassID>
+      <ConfigFile>ProcedureAdapter_ApplyCredits.xml</ConfigFile>
+      <ActivationDate>10/1/2002 00:00:00</ActivationDate>
+      <Description>Apply any credits to outstanding debits in the A/R system.</Description>      
+	  	<LocalizedItems>
+		<item lang="FR">
+			<DisplayName>Appliquer crédits créances</DisplayName>
+			<Description>Appliquez les crédits éventuels aux débits en instance dans le système de créances.</Description>
+		</item>
+		<item lang="IT">
+			<DisplayName>[IT] AR Apply Credits</DisplayName>
+			<Description>[IT] Apply any credits to outstanding debits in the A/R system.</Description>
+		</item>
+		<item lang="ES">
+			<DisplayName>[ES] AR Apply Credits</DisplayName>
+			<Description>[ES] Apply any credits to outstanding debits in the A/R system.</Description>
+		</item>
+		<item lang="DE">
+			<DisplayName>[DE] AR Apply Credits</DisplayName>
+			<Description>[DE] Apply any credits to outstanding debits in the A/R system.</Description>
+		</item>
+		<item lang="es-MX">
+			<DisplayName>[es-MX] AR Apply Credits</DisplayName>
+			<Description>[es-MX] Apply any credits to outstanding debits in the A/R system.</Description>
+		</item>
+		<item lang="pt-BR">
+			<DisplayName>Créditos de aplicação de AR</DisplayName>
+			<Description>Aplicar créditos aos débitos pendentes no sistema A/R.</Description>
+		</item>
+		<item lang="en-GB">
+			<DisplayName>[en-GB] AR Apply Credits</DisplayName>
+			<Description>[en-GB] Apply any credits to outstanding debits in the A/R system.</Description>
+		</item>
+		<item lang="JA">
+			<DisplayName>[JA] AR Apply Credits</DisplayName>
+			<Description>[JA] Apply any credits to outstanding debits in the A/R system.</Description>
+		</item>		
+	  </LocalizedItems>
+      <RecurrencePattern>
+        <SystemCycle>Daily</SystemCycle>
+      </RecurrencePattern>
+      <Dependencies>
+        <DependsOn>ARPaymentAndAdjustment</DependsOn>
+      </Dependencies>
+    </Adapter>
+
+    <Adapter>
+      <Name>ARRunAging</Name>
+      <DisplayName>AR Run Aging</DisplayName>
+      <ClassID>MetraTech.AR.Adapters.ProcedureAdapter,MetraTech.AR.Adapters</ClassID>
+      <ConfigFile>ProcedureAdapter_RunAging.xml</ConfigFile>
+      <ActivationDate>10/1/2002 00:00:00</ActivationDate>
+      <Description>Run Aging in the A/R System. This adjusts the balances in the aging buckets.</Description>
+	  <LocalizedItems>
+		<item lang="FR">
+			<DisplayName>Classement des créances par âge</DisplayName>
+			<Description>Lancez le classement par âge dans le système de créances pour ajuster les soldes dans les catégories chronologiques.</Description>
+		</item>
+		<item lang="IT">
+			<DisplayName>[IT] AR Run Aging</DisplayName>
+			<Description>[IT] Run Aging in the A/R System. This adjusts the balances in the aging buckets.</Description>
+		</item>
+		<item lang="ES">
+			<DisplayName>[ES] AR Run Aging</DisplayName>
+			<Description>[ES] Run Aging in the A/R System. This adjusts the balances in the aging buckets.</Description>
+		</item>
+		<item lang="DE">
+			<DisplayName>[DE] AR Run Aging</DisplayName>
+			<Description>[DE] Run Aging in the A/R System. This adjusts the balances in the aging buckets.</Description>
+		</item>
+		<item lang="es-MX">
+			<DisplayName>[es-MX] AR Run Aging</DisplayName>
+			<Description>[es-MX] Run Aging in the A/R System. This adjusts the balances in the aging buckets.</Description>
+		</item>
+		<item lang="pt-BR">
+			<DisplayName>Vencimento de execução de AR</DisplayName>
+			<Description>Vencimento de execução no sistema A/R. Isso ajusta os saldos nos períodos de vencimento.</Description>
+		</item>
+		<item lang="en-GB">
+			<DisplayName>[en-GB] AR Run Aging</DisplayName>
+			<Description>[en-GB] Run Aging in the A/R System. This adjusts the balances in the aging buckets.</Description>
+		</item>
+		<item lang="JA">
+			<DisplayName>[JA] AR Run Aging</DisplayName>
+			<Description>[JA] Run Aging in the A/R System. This adjusts the balances in the aging buckets.</Description>
+		</item>		
+	  </LocalizedItems>
+      <RecurrencePattern>
+        <SystemCycle>Daily</SystemCycle>
+      </RecurrencePattern>
+    </Adapter> -->
+
+    <!-- The account state adapter is unsupported in the v3.7 release
+    
+    <Adapter>
+      <Name>ARAccountState</Name>
+      <DisplayName>AR Account State Import and Export</DisplayName>
+      <ClassID>MetraTech.AR.Adapters.AccountStateAdapter,MetraTech.AR.Adapters</ClassID>
+      <ConfigFile>AccountStateAdapter.xml</ConfigFile>
+      <Description>Export state changes to A/R. Import state changes from A/R.</Description>
+	  	<LocalizedItems>
+		    <item lang="FR">
+			    <DisplayName>[FR] AR Account State Import and Export</DisplayName>
+			    <Description>[FR] Export state changes to A/R. Import state changes from A/R.</Description>
+		    </item>
+		    <item lang="IT">
+			    <DisplayName>[IT] AR Account State Import and Export</DisplayName>
+			    <Description>[IT] Export state changes to A/R. Import state changes from A/R.</Description>
+		    </item>
+		    <item lang="ES">
+			    <DisplayName>[ES] AR Account State Import and Export</DisplayName>
+			    <Description>[ES] Export state changes to A/R. Import state changes from A/R.</Description>
+		    </item>
+		    <item lang="DE">
+			    <DisplayName>[DE] AR Account State Import and Export</DisplayName>
+			    <Description>[DE] Export state changes to A/R. Import state changes from A/R.</Description>
+		    </item>
+		    <item lang="es-MX">
+			    <DisplayName>[es-MX] AR Account State Import and Export</DisplayName>
+			    <Description>[es-MX] Export state changes to A/R. Import state changes from A/R.</Description>
+		    </item>
+		    <item lang="pt-BR">
+			    <DisplayName>[pt-BR] AR Account State Import and Export</DisplayName>
+			    <Description>[pt-BR] Export state changes to A/R. Import state changes from A/R.</Description>
+		    </item>
+		    <item lang="en-GB">
+			    <DisplayName>[en-GB] AR Account State Import and Export</DisplayName>
+			    <Description>[en-GB] Export state changes to A/R. Import state changes from A/R.</Description>
+		    </item>
+		    <item lang="JA">
+			    <DisplayName>[JA] AR Account State Import and Export</DisplayName>
+			    <Description>[JA] Export state changes to A/R. Import state changes from A/R.</Description>
+		    </item>		
+	    </LocalizedItems>
+      <RecurrencePattern>
+        <IntervalInMinutes>15</IntervalInMinutes>
+      </RecurrencePattern>
+      <Dependencies>
+        
+      </Dependencies>
+    </Adapter> -->
+
+  </ScheduledAdapters>
+
+  <EndOfPeriodAdapters>
+
+    <!--<Adapter>
+      <Name>ARInvoice</Name>
+      <DisplayName>AR Invoice Export</DisplayName>
+      <ClassID>MetraTech.AR.Adapters.InvoiceAdapter,MetraTech.AR.Adapters</ClassID>
+      <ConfigFile>InvoiceAdapter.xml</ConfigFile>
+      <Description>Exports invoices to AR and verifies balances.</Description>
+	  	<LocalizedItems>
+		    <item lang="FR">
+			    <DisplayName>AR facture Export</DisplayName>
+			    <Description>Exportations factures à Ar et vérifie les soldes.</Description>
+		    </item>
+		    <item lang="IT">
+			    <DisplayName>[IT] AR Invoice Export</DisplayName>
+			    <Description>[IT] Exports invoices to AR and verifies balances.</Description>
+		    </item>
+		    <item lang="ES">
+			    <DisplayName>[ES] AR Invoice Export</DisplayName>
+			    <Description>[ES] Exports invoices to AR and verifies balances.</Description>
+		    </item>
+		    <item lang="DE">
+			    <DisplayName>[DE] AR Invoice Export</DisplayName>
+			    <Description>[DE] Exports invoices to AR and verifies balances.</Description>
+		    </item>
+		    <item lang="es-MX">
+			    <DisplayName>[es-MX] AR Invoice Export</DisplayName>
+			    <Description>[es-MX] Exports invoices to AR and verifies balances.</Description>
+		    </item>
+		    <item lang="pt-BR">
+			    <DisplayName>AR Invoice Export</DisplayName>
+			    <Description>Exportações faturas a AR e verifica saldos.</Description>
+		    </item>
+		    <item lang="en-GB">
+			    <DisplayName>[en-GB] AR Invoice Export</DisplayName>
+			    <Description>[en-GB] Exports invoices to AR and verifies balances.</Description>
+		    </item>
+		    <item lang="JA">
+			    <DisplayName>[JA] AR Invoice Export</DisplayName>
+			    <Description>[JA] Exports invoices to AR and verifies balances.</Description>
+		    </item>		
+	    </LocalizedItems>
+      <RecurrencePattern>
+         <UsageCycleType>All</UsageCycleType>
+      </RecurrencePattern>
+      <Dependencies>
+        <DependsOn>Invoices</DependsOn>-->
+        <!-- <DependsOn>ARPaymentAndAdjustment</DependsOn> -->
+        <!--<DependsOn>InvoiceSignatureAdapter</DependsOn>-->
+      <!--</Dependencies>
+    </Adapter>-->
+
+  </EndOfPeriodAdapters>
+
+</xmlconfig>

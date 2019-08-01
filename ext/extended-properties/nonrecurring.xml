@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<defineservice>
+    <name kind="30">nonrecurring</name>
+    <description>A charge that is not based on usage or periodic events such as a one-time activation or sign up fee. Its properties.</description>
+    <ptype display_name="GL Code">
+        <dn>glcode</dn>
+        <type>string</type>
+        <length>100</length>
+        <required>N</required>
+        <defaultvalue />
+        <description>Sample GL Code field</description>
+    </ptype>
+    <ptype display_name="Is Liability Product">
+        <dn>IsLiabilityProduct</dn>
+        <type>boolean</type>
+        <length />
+        <required>Y</required>
+        <defaultvalue>N</defaultvalue>
+        <description>Shows is this a liability product</description>
+    </ptype>
+    <ptype display_name="Revenue Code">
+        <dn>RevenueCode</dn>
+        <type>string</type>
+        <length>128</length>
+        <required>N</required>
+        <defaultvalue />
+        <description>Revenue Code for product</description>
+    </ptype>
+    <ptype display_name="Deferred Revenue Code">
+        <dn>DeferredRevenueCode</dn>
+        <type>string</type>
+        <length>128</length>
+        <required>N</required>
+        <defaultvalue />
+        <description>Deferred Revenue Code for product</description>
+    </ptype>
+</defineservice>

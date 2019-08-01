@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xmlconfig>
+	<GenericWorkflowAdapter>
+		<AllowMultipleInstances>false</AllowMultipleInstances>
+		
+		<!-- 
+			 BillingGroupSupport is an enum that defines the adapter's billing group support.  
+			 Valid values are:
+					Interval
+					BillingGroup
+					Account
+		-->
+		<BillingGroupSupport>BillingGroup</BillingGroupSupport>
+		<HasBillingGroupConstraints>false</HasBillingGroupConstraints>
+		<BillingGroupConstraintQueryPath />
+		<BillingGroupConstraintQueryTag />
+		
+		<!--
+			ReverseMode is an enum that defines how the adapter is reversed.  
+			Valid values are:
+					NotImplemented
+					NotNeeded
+					Auto
+					Custom
+		-->
+		<ReverseMode>NotNeeded</ReverseMode>
+		<SupportsEOPEvents>false</SupportsEOPEvents>
+		<SupportsScheduledEvents>true</SupportsScheduledEvents>
+		
+		<!-- 
+			Workflows can be specified in the following ways:
+			1) Aboslute path to a XOML file
+			2) Path to XOML file relative to RMP\Extensions
+			3) An assembly-qualified type name (e.g. "<namespace>.<type>, <assembly details>")
+		-->
+		<ExecuteWorkflow>PaymentSvrClient\Config\UsageServer\Workflows\ACHInquiryAdapterWorkflow.xoml</ExecuteWorkflow>
+		<ReverseWorkflow />
+	</GenericWorkflowAdapter>
+
+	<ACHInquiryAdapter>
+		<WCFConfigFile>PaymentSvrClient\config\UsageServer\PayAuthAdapter_US.xml</WCFConfigFile>
+		<EPSEndpoint>WSHttpBinding_IElectronicPaymentServices</EPSEndpoint>
+
+		<!--
+			Specifies the number of concurrent requests to be sent to the payment
+			server at the same time.  Maximum is 64.
+		-->
+		<MaxConcurrentRequests>64</MaxConcurrentRequests>
+
+		<!-- 
+		  Specifies the number of sessions to include in the set when metering to the
+		  metratech.com/Payment pipeline
+		-->
+		<SessionSetSize>1000</SessionSetSize>
+		
+		<!-- 
+		  Specifies the number of delete statements to execute in a batch
+		  when deleting processed ach transactions
+		-->
+		<DeleteSetSize>100</DeleteSetSize>
+    <ReportURL>C:\PaymentEventsReport.xml</ReportURL>
+    <MaxProcessingDays>60</MaxProcessingDays>
+	</ACHInquiryAdapter>
+</xmlconfig>

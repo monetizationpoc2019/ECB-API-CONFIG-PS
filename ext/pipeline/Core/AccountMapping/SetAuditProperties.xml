@@ -1,0 +1,94 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xmlconfig>
+  <mtsysconfigdata>
+    <effective_date ptype="DATETIME">1998-11-19T00:00:00Z</effective_date>
+    <timeout ptype="INTEGER">30</timeout>
+    <configfiletype>CONFIG_DATA</configfiletype>
+  </mtsysconfigdata>
+
+  <mtconfigdata>
+
+ <version ptype="INTEGER">1</version>
+ <!-- First processor configuration -->
+ <processor>
+  <name>SetAuditProperties</name>
+  <progid>MetraPipeline.MTSQLInterpreter.1</progid>
+  <description>Set up information to be audited.</description>
+
+<!--
+  <autotest>
+    <file>ratedatetest.xml</file>
+  </autotest>
+-->
+  
+<!--
+  <inputs>
+  </inputs>
+
+  <outputs>
+  </outputs>
+-->
+
+  <!-- Processor specific configuration data -->
+  <configdata>
+
+  <Program>
+	  
+		CREATE PROCEDURE SetAuditProperties @AuditEventId               INTEGER OUTPUT
+                                        @AuditEntityTypeId          INTEGER OUTPUT
+                                        @AuditEntityId              INTEGER OUTPUT
+                                        @AuditDetails               NVARCHAR OUTPUT
+                                        @_AccountID                 INTEGER
+                                        @Operation                  ENUM -- $ICE:('metratech.com','Operation')$
+                                        @LoginName                  NVARCHAR
+                                        @Namespace                  NVARCHAR
+                                        @NewLoginName               NVARCHAR OUTPUT -- $ICE:INOUT$
+                                        @NewNamespace               NVARCHAR
+
+		AS
+      --PRINT 'SetAuditProperties: AuditEventId [' + CAST(@AuditEventId AS NVARCHAR) + ']';
+			
+			if (@NewLoginName IS NULL)
+				SET @NewLoginName = @LoginName
+
+			DECLARE @strOperation VARCHAR;
+      SET @strOperation = CAST(@Operation AS VARCHAR);
+      
+      -- Set the Event ID 
+      -- Set the default event to be Account Mapping Update  
+      SET @AuditEventId = 1531;
+
+      IF (@strOperation = 'Add')
+      BEGIN
+        SET @AuditEventId = 1530
+        SET @AuditDetails = @NewLoginName + CAST('/' AS NVARCHAR) + @NewNamespace
+      END
+      ELSE 
+      BEGIN
+        IF (@strOperation = 'Update')
+        BEGIN
+          SET @AuditEventId = 1531
+          SET @AuditDetails = @LoginName + CAST('/' AS NVARCHAR) + @Namespace + CAST(' --&gt; ' AS NVARCHAR) + @NewLoginName + CAST('/' AS NVARCHAR) + @NewNamespace
+        END
+        ELSE
+        BEGIN
+          IF (@strOperation = 'Delete')
+          BEGIN
+            SET @AuditEventId = 1532
+            SET @AuditDetails = @LoginName + CAST('/' AS NVARCHAR) + @Namespace 
+          END
+        END
+      END
+      
+      Set @AuditEntityTypeId = 1;
+      Set @AuditEntityId = @_AccountID;
+      
+	  
+  </Program> 
+			
+  </configdata>
+
+ </processor>
+
+  </mtconfigdata>
+</xmlconfig>

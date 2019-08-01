@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<mt_config>
+  <language_code>es</language_code>
+  <locale_space name="metratech.com/calendar">
+    <locale_entry>
+      <Name>metratech.com/calendar/CalendarCode/Holiday</Name>
+      <Value>Festivo</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/calendar/CalendarCode/Off-Peak</Name>
+      <Value>Valle</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/calendar/CalendarCode/Peak</Name>
+      <Value>Pico</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/calendar/CalendarCode/Weekend</Name>
+      <Value>Fin de semana</Value>
+    </locale_entry>
+  </locale_space>
+</mt_config>

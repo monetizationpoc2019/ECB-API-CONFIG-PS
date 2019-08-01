@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<defineservice>
+    <name display_name="Commitment PT" condition_header="Conditions" action_header="Actions" type="Rates" help_url="">metratech.com/CommitmentPT</name>
+    <description>Parameter table for configuring Commitment Decision attributes</description>
+    <ptype display_name="End Of Amount Range" action="Y">
+        <dn>EndOfAmountRange</dn>
+        <type>decimal</type>
+        <length />
+        <required>N</required>
+        <defaultvalue />
+        <description>Commitment amount</description>
+    </ptype>
+    <ptype display_name="Base MinimumCommitment" action="Y">
+        <dn>IncreaseAmount</dn>
+        <type>decimal</type>
+        <length />
+        <required>N</required>
+        <defaultvalue>0.00</defaultvalue>
+        <description>Base minimum Commitment</description>
+    </ptype>
+    <ptype display_name="Usage Qualification Group" action="Y">
+        <dn>UsgQualGroup</dn>
+        <type>string</type>
+        <length>1000</length>
+        <required>N</required>
+        <defaultvalue />
+        <description>Usage Qualification Group</description>
+    </ptype>
+</defineservice>

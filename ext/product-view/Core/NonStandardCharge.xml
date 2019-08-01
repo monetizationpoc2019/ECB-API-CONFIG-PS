@@ -1,0 +1,143 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<defineservice>
+    <name>metratech.com/NonStandardCharge</name>
+    <description>This is the product view ofthat stores the processed non standar charge</description>
+    <ptype>
+        <dn>Description</dn>
+        <type>string</type>
+        <length>100</length>
+        <required>N</required>
+        <defaultvalue />
+        <description>The reason for the charge</description>
+    </ptype>
+    <ptype>
+        <dn>Status</dn>
+        <type>string</type>
+        <length>1</length>
+        <required>Y</required>
+        <defaultvalue />
+        <description>Pending, Approved, or Denied Status</description>
+    </ptype>
+    <ptype>
+        <dn>ChargeCurrency</dn>
+        <type>string</type>
+        <length>3</length>
+        <required>Y</required>
+        <defaultvalue />
+        <description>Currency</description>
+    </ptype>
+    <ptype>
+        <dn>GLCode</dn>
+        <type>string</type>
+        <length>10</length>
+        <required>N</required>
+        <defaultvalue />
+        <description>This is the GLCode</description>
+    </ptype>
+    <ptype>
+        <dn>IssuerAccountId</dn>
+        <type>int32</type>
+        <length />
+        <required>Y</required>
+        <defaultvalue />
+        <description>The account id of the issue</description>
+    </ptype>
+    <ptype>
+        <dn>ReasonCode</dn>
+        <type EnumSpace="metratech.com/NonStandardCharge" EnumType="NonStandardChargeReason">enum</type>
+        <length />
+        <required>Y</required>
+        <defaultvalue>Credit</defaultvalue>
+        <description>Non standard charge reason code</description>
+    </ptype>
+    <ptype>
+        <dn>AdditionalCode</dn>
+        <type EnumSpace="metratech.com/NonStandardCharge" EnumType="AdditionalCode">enum</type>
+        <length />
+        <required>N</required>
+        <defaultvalue />
+        <description>Non standard charge reason code</description>
+    </ptype>
+    <ptype>
+        <dn>ChargeTaxAmount</dn>
+        <type>decimal</type>
+        <length />
+        <required>N</required>
+        <defaultvalue />
+        <description>Any tax amount</description>
+    </ptype>
+    <ptype>
+        <dn>ChargeAmount</dn>
+        <type>decimal</type>
+        <length />
+        <required>Y</required>
+        <defaultvalue />
+        <description>Charge Amount</description>
+    </ptype>
+    <ptype>
+        <dn>ExternalChargeId</dn>
+        <type>string</type>
+        <length>10</length>
+        <required>N</required>
+        <defaultvalue />
+        <description>External System Charge Id</description>
+    </ptype>
+    <ptype>
+        <dn>InternalChargeId</dn>
+        <type>int64</type>
+        <length />
+        <required>Y</required>
+        <defaultvalue />
+        <description>External System Charge Id</description>
+    </ptype>
+    <ptype>
+        <dn>NumUnits</dn>
+        <type>int32</type>
+        <length />
+        <required>N</required>
+        <defaultvalue />
+        <description>The number of units</description>
+    </ptype>
+    <ptype>
+        <dn>Rate</dn>
+        <type>decimal</type>
+        <length />
+        <required>Y</required>
+        <defaultvalue />
+        <description>This is the rate of the charge</description>
+    </ptype>
+    <ptype>
+        <dn>AdditionalRate</dn>
+        <type>decimal</type>
+        <length />
+        <required>N</required>
+        <defaultvalue />
+        <description>Additional Rate</description>
+    </ptype>
+    <ptype>
+        <dn>SubscriberAccountID</dn>
+        <type>int32</type>
+        <length />
+        <required>Y</required>
+        <defaultvalue />
+        <description>Real account ID.</description>
+    </ptype>
+    <ptype>
+        <dn>GuideIntervalID</dn>
+        <type>int32</type>
+        <length />
+        <required>N</required>
+        <defaultvalue />
+        <description>This is the desired interval id.</description>
+    </ptype>
+    <ptype filterable="False">
+      <dn>IssueTime</dn>
+      <type>timestamp</type>
+      <length>
+      </length>
+      <required>Y</required>
+      <defaultvalue>
+      </defaultvalue>
+      <description>Current time.</description>
+    </ptype>
+</defineservice>

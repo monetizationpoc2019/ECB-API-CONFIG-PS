@@ -1,0 +1,219 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<mt_config>
+    <enum_spaces>
+        <enum_space name="metratech.com/FileLandingService">
+            <description>This is the collection of enumerations relative to the File Landing Service</description>
+            <enums>
+                <enum name="ESecurityTokenType">
+                    <description>Token Type for security analysis of File Landing Service Record Files</description>
+                    <entries>
+                        <entry name="SHA1">
+                            <value>0</value>
+                        </entry>
+                        <entry name="MD5">
+                            <value>1</value>
+                        </entry>
+                        <entry name="TOKEN">
+                            <value>2</value>
+                        </entry>
+                    </entries>
+                </enum>
+                <enum name="EInvocationState">
+                    <description>This enum represents the life cycle state of a file that arrives and is processed by the File Landing Service</description>
+                    <entries>
+                        <entry name="UNKNOWN">
+                            <value>0</value>
+                        </entry>
+                        <entry name="NEW">
+                            <value>1</value>
+                        </entry>
+                        <entry name="ACTIVE">
+                            <value>2</value>
+                        </entry>
+                        <entry name="FAILED">
+                            <value>4</value>
+                        </entry>
+                        <entry name="COMPLETED">
+                            <value>8</value>
+                        </entry>
+                    </entries>
+                </enum>
+                <enum name="EServiceState">
+                    <description>This is the Service State of the FileLandingService instance on a machine.</description>
+                    <entries>
+                        <entry name="STOPPED">
+                            <value>0</value>
+                        </entry>
+                        <entry name="STARTING">
+                            <value>1</value>
+                        </entry>
+                        <entry name="READY">
+                            <value>2</value>
+                        </entry>
+                        <entry name="SYNCING">
+                            <value>3</value>
+                        </entry>
+                        <entry name="STOPPING">
+                            <value>4</value>
+                        </entry>
+                    </entries>
+                </enum>
+                <enum name="eArgumentType">
+                    <description>Argument type</description>
+                    <entries>
+                        <entry name="FILE">
+                            <value>1</value>
+                        </entry>
+                        <entry name="FIXED">
+                            <value>2</value>
+                        </entry>
+                        <entry name="TRACKINGID">
+                            <value>3</value>
+                        </entry>
+                        <entry name="BATCHID">
+                            <value>4</value>
+                        </entry>
+                    </entries>
+                </enum>
+                <enum name="eFileNameFilterType">
+                    <description>FileNameFilterType</description>
+                    <entries>
+                        <entry name="WILDCARD">
+                            <value>0</value>
+                        </entry>
+                        <entry name="REGEX">
+                            <value>1</value>
+                        </entry>
+                    </entries>
+                </enum>
+                <enum name="eEventFilterType">
+                    <description>Event Filter Types</description>
+                    <entries>
+                        <entry name="RENAMED">
+                            <value>0</value>
+                        </entry>
+                        <entry name="CREATED">
+                            <value>1</value>
+                        </entry>
+                        <entry name="DELETED">
+                            <value>2</value>
+                        </entry>
+                        <entry name="CHANGED">
+                            <value>3</value>
+                        </entry>
+                        <entry name="ALL">
+                            <value>4</value>
+                        </entry>
+                    </entries>
+                </enum>
+                <enum name="eFileSetRequirementType">
+                    <description>FileSet requirement type</description>
+                    <entries>
+                        <entry name="DEPENDENT">
+                            <value>0</value>
+                        </entry>
+                        <entry name="INDEPENDENT">
+                            <value>1</value>
+                        </entry>
+                    </entries>
+                </enum>
+                <enum name="eDirectoryType">
+                    <description>Directory type</description>
+                    <entries>
+                        <entry name="FAILED">
+                            <value>0</value>
+                        </entry>
+                        <entry name="WATCHED">
+                            <value>1</value>
+                        </entry>
+                        <entry name="METERED">
+                            <value>2</value>
+                        </entry>
+                        <entry name="COMPLETED">
+                            <value>3</value>
+                        </entry>
+                        <entry name="TEMP">
+                            <value>4</value>
+                        </entry>
+                    </entries>
+                </enum>
+                <enum name="eTargetType">
+                    <description>target type</description>
+                    <entries>
+                        <entry name="EXECUTABLE">
+                            <value>0</value>
+                        </entry>
+                        <entry name="GENERATED">
+                            <value>1</value>
+                        </entry>
+                    </entries>
+                </enum>
+                <enum name="eLanguageType">
+                    <description>CSharp or VBasic</description>
+                    <entries>
+                        <entry name="CSHARP">
+                            <value>0</value>
+                        </entry>
+                        <entry name="VBASIC">
+                            <value>1</value>
+                        </entry>
+                    </entries>
+                </enum>
+                <enum name="eConditionalType">
+                    <description>eConditionalType is for conditional arguments</description>
+                    <entries>
+                        <entry name="ALWAYS">
+                            <value>0</value>
+                        </entry>
+                        <entry name="ON_RETRY">
+                            <value>100</value>
+                        </entry>
+                        <entry name="ON_NEW">
+                            <value>101</value>
+                        </entry>
+                    </entries>
+                </enum>
+                <enum name="eRejectionReason">
+                    <description>Reason the file was rejected</description>
+                    <entries>
+                        <entry name="NO_ERROR">
+                            <value>0</value>
+                        </entry>
+                        <entry name="IMPROPERLY_NAMED">
+                            <value>1</value>
+                        </entry>
+                        <entry name="TARGET_NOT_FOUND">
+                            <value>2</value>
+                        </entry>
+                        <entry name="INTERFERENCE">
+                            <value>3</value>
+                        </entry>
+                        <entry name="CONTROL_NUMBER_REUSED">
+                            <value>4</value>
+                        </entry>
+                        <entry name="NOT_ENOUGH_FILES">
+                            <value>5</value>
+                        </entry>
+                        <entry name="INTERNAL_ERROR">
+                            <value>6</value>
+                        </entry>
+                    </entries>
+                </enum>
+                <enum name="eFileState">
+                    <description>The state of the file.</description>
+                    <entries>
+                        <entry name="PENDING">
+                            <value>0</value>
+                        </entry>
+                        <entry name="ASSIGNED">
+                            <value>1</value>
+                        </entry>
+                        <entry name="REJECTED">
+                            <value>2</value>
+                        </entry>
+                    </entries>
+                </enum>
+            </enums>
+        </enum_space>
+    </enum_spaces>
+</mt_config>

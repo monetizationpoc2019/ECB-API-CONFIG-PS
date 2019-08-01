@@ -1,0 +1,98 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<defineservice>
+  <name>metratech.com/AddCharge</name>
+  <description>Account charges.</description>
+  <!-- this is the product view definition -->
+  <!--
+	<ptype>
+		<dn>chargetype</dn>
+		<type>string</type>
+		<length>32</length>
+		<required>Y</required>
+		<defaultvalue></defaultvalue>
+	</ptype>
+-->
+  <!--
+	We do not this here because _TaxAmount is core reserved property
+	<ptype>
+		<dn>taxamount</dn>
+		<type>decimal</type>
+		<length></length>
+		<required>N</required>
+		<defaultvalue></defaultvalue>
+	</ptype>
+-->
+  <ptype display_name="">
+    <dn>ChargeType</dn>
+    <type EnumSpace="metratech.com/AddCharge" EnumType="ChargeType">enum</type>
+    <length>
+    </length>
+    <required>Y</required>
+    <defaultvalue>Other</defaultvalue>
+    <description>Additional charge type.</description>
+  </ptype>
+  <ptype display_name="">
+    <dn>OtherChargeTypeComment</dn>
+    <type>string</type>
+    <length>128</length>
+    <required>N</required>
+    <defaultvalue>
+    </defaultvalue>
+    <description>Description of additional charge.</description>
+  </ptype>
+  <ptype display_name="">
+    <dn>TaxType</dn>
+    <type>int32</type>
+    <length>
+    </length>
+    <required>N</required>
+    <defaultvalue>
+    </defaultvalue>
+    <description>Applicable type of tax.</description>
+  </ptype>
+  <ptype display_name="">
+    <dn>Issuer</dn>
+    <type>string</type>
+    <length>80</length>
+    <required>Y</required>
+    <defaultvalue>
+    </defaultvalue>
+    <description>CSR ID.</description>
+  </ptype>
+  <ptype display_name="">
+    <dn>RelateToPreviousCharge</dn>
+    <type>string</type>
+    <length>128</length>
+    <required>N</required>
+    <defaultvalue>
+    </defaultvalue>
+    <description>Open field for referring to previous charges; unused by the product</description>
+  </ptype>
+  <ptype display_name="">
+    <dn>InvoiceComment</dn>
+    <type>string</type>
+    <length>255</length>
+    <required>Y</required>
+    <defaultvalue>
+    </defaultvalue>
+    <description>Comment to appear on invoice.</description>
+  </ptype>
+  <ptype display_name="" uservisible="False">
+    <dn>InternalComment</dn>
+    <type>string</type>
+    <length>255</length>
+    <required>N</required>
+    <defaultvalue>
+    </defaultvalue>
+    <description>Internal CSR comment.</description>
+  </ptype>
+  <ptype display_name="" uservisible="False">
+    <dn>GeneralLedgerCode</dn>
+    <type>string</type>
+    <length>32</length>
+    <required>N</required>
+    <defaultvalue>
+    </defaultvalue>
+    <description>GL code.</description>
+  </ptype>
+</defineservice>

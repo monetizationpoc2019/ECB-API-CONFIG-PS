@@ -1,0 +1,93 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xmlconfig>
+  <mtsysconfigdata>
+    <effective_date ptype="DATETIME">1998-11-19T00:00:00Z</effective_date>
+    <timeout ptype="INTEGER">30</timeout>
+    <configfiletype>CONFIG_DATA</configfiletype>
+  </mtsysconfigdata>
+  <mtconfigdata>
+    <version ptype="INTEGER">1</version>
+    <!-- First processor configuration -->
+    <processor>
+      <name>UDRCProration</name>
+      <description>Pro-rate recurring charge amount.</description>	
+      <progid>MetraPipeline.MTSQLInterpreter.1</progid>
+      <!--
+      <autotest>
+        <file>ratedatetest.xml</file>
+      </autotest>
+      -->
+      <!--
+      <inputs></inputs>
+      <outputs></outputs>
+      -->
+      <!-- Processor specific configuration data -->
+      <configdata>
+        <Program>
+          
+          CREATE PROCEDURE NewProration 
+            -- Inputs
+            @RCActionType VARCHAR @RCAmount DECIMAL
+            @BillingIntervalStart DATETIME @BillingIntervalEnd DATETIME 
+            @RCIntervalSubscriptionStart DATETIME @RCIntervalSubscriptionEnd DATETIME 
+            @RCIntervalStart DATETIME @RCIntervalEnd DATETIME 
+            @SubscriptionStart DATETIME @SubscriptionEnd DATETIME 
+            @UnitValueStart DATETIME @UnitValueEnd DATETIME 
+            @ProrateOnSubscription BOOLEAN @ProrateOnUnsubscription BOOLEAN
+            @ProrationCycleLength INTEGER
+            -- Outputs
+            @ProratedAmount DECIMAL OUTPUT
+            @ProratedIntervalStart DATETIME OUTPUT
+            @ProratedIntervalEnd DATETIME OUTPUT
+            @ProratedDays INTEGER OUTPUT
+            @ProratedDailyRate DECIMAL OUTPUT
+            @ProratedOnSubscription BOOLEAN OUTPUT
+            @ProratedOnUnsubscription BOOLEAN OUTPUT
+            @ProratedOnUnitValueChange BOOLEAN OUTPUT
+          AS
+            DECLARE @SubscribedThisInterval BOOLEAN
+            DECLARE @UnsubscribedThisInterval BOOLEAN
+            DECLARE @UnitValueChangedInInterval BOOLEAN
+            DECLARE @ProrationBasis INTEGER
+
+            -- These rules figure out whether we have a proration scenario at all
+            SET @SubscribedThisInterval = (@RCIntervalStart &lt; @RCIntervalSubscriptionStart)
+            SET @UnsubscribedThisInterval = (@RCIntervalEnd &gt; @RCIntervalSubscriptionEnd)
+
+            -- Set up the interval we will actually charge for
+            -- Note that the special logic for the credit case is due the fact that in the
+            -- credit case, the interval [@RCIntervalSubscriptionStart, @RCIntervalSubscriptionEnd]
+            -- is the set difference of the recurring charge interval and the subscription adjusted recurring charge interval.
+            SET @ProratedIntervalStart = CASE WHEN @ProrateOnSubscription THEN @RCIntervalSubscriptionStart ELSE @RCIntervalStart END
+            SET @ProratedIntervalEnd = CASE WHEN @ProrateOnUnsubscription THEN @RCIntervalSubscriptionEnd ELSE @RCIntervalEnd END
+
+            -- We always prorate on unit value change.
+            SET @UnitValueChangedInInterval = (@UnitValueStart &gt; @ProratedIntervalStart) OR (@UnitValueEnd &lt; @ProratedIntervalEnd)
+            SET @ProratedIntervalStart = CASE WHEN @UnitValueStart &gt; @ProratedIntervalStart THEN @UnitValueStart ELSE @ProratedIntervalStart END
+            SET @ProratedIntervalEnd = CASE WHEN @UnitValueEnd &lt; @ProratedIntervalEnd THEN @UnitValueEnd ELSE @ProratedIntervalEnd END
+
+            -- Find the number of days to use as the basis of proration
+            SET @ProrationBasis = CASE @ProrationCycleLength WHEN 0 THEN intervaldays(@RCIntervalStart, @RCIntervalEnd) ELSE @ProrationCycleLength END
+            SET @ProratedDays = intervaldays(@ProratedIntervalStart, @ProratedIntervalEnd)
+            -- Make sure that the number of days that we prorate does not exceed the proration basis!
+            SET @ProratedDays = CASE WHEN @ProratedDays &gt; @ProrationBasis THEN @ProrationBasis ELSE @ProratedDays END
+
+            -- Return information that let's the world know whether proration actually occurred.  Say no
+            -- to proration if the prorated interval equals the basis (e.g. change unit value on the last
+            -- day of a 31 day month when using proration based on 30 days...
+            SET @ProratedOnSubscription = @ProratedDays &lt;&gt; @ProrationBasis AND @ProrateOnSubscription AND @SubscribedThisInterval
+            SET @ProratedOnUnsubscription = @ProratedDays &lt;&gt; @ProrationBasis AND @ProrateOnUnsubscription AND @UnsubscribedThisInterval
+            SET @ProratedOnUnitValueChange = @ProratedDays &lt;&gt; @ProrationBasis AND @UnitValueChangedInInterval AND NOT (@SubscribedThisInterval OR @UnsubscribedThisInterval)
+
+            -- Now let's do the actual calculation
+            SET @ProratedDailyRate = @RCAmount / CAST(@ProrationBasis AS DECIMAL)
+            SET @ProratedAmount = CASE WHEN @ProratedOnSubscription OR @ProratedOnUnsubscription OR @ProratedOnUnitValueChange THEN @ProratedDailyRate * CAST(@ProratedDays AS DECIMAL) ELSE @RCAmount END
+
+            -- Change to negative in case of issueing a credit
+            SET @ProratedAmount = CASE WHEN @RCActionType = 'Credit' OR @RCActionType = 'AdvanceCorrection' THEN -@ProratedAmount ELSE @ProratedAmount END
+          
+        </Program> 
+      </configdata>
+    </processor>
+  </mtconfigdata>
+</xmlconfig>

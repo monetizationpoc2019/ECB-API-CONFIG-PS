@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xmlconfig>
+	<!--AutoPayTransactionsTypesToSend: All | CreditCard | DirectDebit -->
+	<AdapterName>UploadBankingPayment</AdapterName>
+
+	<!-- Location of Banking Batch Files -->
+	<UploadSourceFolder>D:\MTDATA\Lockbox\upload</UploadSourceFolder>
+
+	<!-- .Net Culture to use when uploading files -->
+	<!-- Leave blank to use OS Culture -->
+	<!-- For a list of supported cultures, check the link below -->
+	<!-- http://msdn.microsoft.com/en-us/library/system.globalization.cultureinfo.aspx -->
+	<Culture>en-US</Culture>
+	
+</xmlconfig>

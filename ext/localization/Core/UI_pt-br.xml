@@ -1,0 +1,142 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<mt_config>
+    <language_code>pt-br</language_code>
+    <locale_space name="UI">
+        <locale_entry>
+            <Name>UI/AuthenticationType/MetraNet</Name>
+            <Value>MetraNet</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>UI/DashboardColumnWidth/ExtraLarge</Name>
+            <Value>Extra Grande</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>UI/DashboardColumnWidth/ExtraSmall</Name>
+            <Value>Extra pequeno</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>UI/DashboardColumnWidth/Large</Name>
+            <Value>Grande</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>UI/DashboardColumnWidth/Medium</Name>
+            <Value>Médio</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>UI/DashboardColumnWidth/Small</Name>
+            <Value>Pequeno</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>UI/NegativeRepresentationType/Negative Sign</Name>
+            <Value>Sinal negativo</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>UI/NegativeRepresentationType/Parenthesis</Name>
+            <Value>Parênteses</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>UI/ReportType/Chart</Name>
+            <Value>Gráfico</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>UI/ReportType/Grid</Name>
+            <Value>Grade</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>UI/Themes/blue</Name>
+            <Value>azul</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>UI/Themes/gold</Name>
+            <Value>ouro</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>UI/Themes/gray</Name>
+            <Value>cinza</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>UI/Themes/green</Name>
+            <Value>verde</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>UI/Themes/orange</Name>
+            <Value>laranja</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>UI/Themes/purple</Name>
+            <Value>púrpura</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>UI/Themes/red</Name>
+            <Value>vermelho</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>UI/UICultures/Arabic</Name>
+            <Value>Árabe</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>UI/UICultures/Deutsch</Name>
+            <Value>Deutsch</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>UI/UICultures/English</Name>
+            <Value>English (US)</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>UI/UICultures/English (US)</Name>
+            <Value>English (US)</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>UI/UICultures/English GB</Name>
+            <Value>English (GB)</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>UI/UICultures/Español</Name>
+            <Value>Español</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>UI/UICultures/Français</Name>
+            <Value>Français (France)</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>UI/UICultures/Français (France)</Name>
+            <Value>Français (France)</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>UI/UICultures/French</Name>
+            <Value>Français (France)</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>UI/UICultures/German</Name>
+            <Value>Deutsch</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>UI/UICultures/Italian</Name>
+            <Value>Italiano</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>UI/UICultures/Italiano</Name>
+            <Value>Italiano</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>UI/UICultures/Japanese</Name>
+            <Value>日本語</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>UI/UICultures/Portuguese - Brazil</Name>
+            <Value>Português-Brasil</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>UI/UICultures/Spanish</Name>
+            <Value>Español</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>UI/UICultures/Spanish - Mexican</Name>
+            <Value>Espanhol-México</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>UI/UICultures/日本語</Name>
+            <Value>日本語</Value>
+        </locale_entry>
+    </locale_space>
+</mt_config>

@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xmlconfig>
+  <mtsysconfigdata>
+    <effective_date ptype="DATETIME">2001-04-06T21:46:29Z</effective_date>
+    <timeout ptype="INTEGER">365</timeout>
+    <configfiletype>CONFIG_DATA</configfiletype>
+  </mtsysconfigdata>
+  <mtconfigdata>
+    <version ptype="INTEGER">1</version>
+    <processor>
+      <name>TaperedRateLookup</name>
+      <progid>MetraPipeline.PCRate.1</progid>
+      <description>Look up tapered rate.</description>
+
+      <condition>
+      
+        CREATE PROCEDURE condition @_ExecutePlugin BOOLEAN OUTPUT @RatingType INTEGER
+        AS
+        SET @_ExecutePlugin = (@RatingType = 1)
+      
+      </condition>
+
+      <configdata>
+
+        <ResolveSubscription ptype="BOOLEAN">False</ResolveSubscription>
+  
+        <!-- lookup from a named parameter table -->
+        <RateLookup>
+          <ParamTable>metratech.com/UDRCTapered</ParamTable>
+	        <WeightOnKey>UnitAmount</WeightOnKey>
+	        <StartAt>Zero</StartAt>
+	        <InSession>UnitValue</InSession>
+        </RateLookup>
+
+        <properties>
+            <_Timestamp>RateDate</_Timestamp>
+        </properties>
+
+      </configdata>
+    </processor>
+  </mtconfigdata>
+</xmlconfig>

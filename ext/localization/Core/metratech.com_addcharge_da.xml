@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<mt_config>
+  <language_code>da</language_code>
+  <locale_space name="metratech.com/addCharge">
+    <locale_entry>
+      <Name>metratech.com/addCharge/ChargeType/Other</Name>
+      <Value>metratech.com/addCharge/ChargeType/Other</Value>
+    </locale_entry>
+  </locale_space>
+</mt_config>

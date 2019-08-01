@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xmlconfig>
+<schreports>
+	<query>
+     <path>..\Extensions\DataExport\Config\SqlCore\Queries\Service</path>
+		<queuetag>__QUEUE_SCHEDULED_REPORTS__</queuetag>
+		<reversetag>__REVERSE_QUEUED_SCHEDULED_REPORTS__</reversetag>
+		<pulllisttag>__DUMMY_PULL_LIST_QUERY__</pulllisttag>
+	</query>
+</schreports>
+</xmlconfig>

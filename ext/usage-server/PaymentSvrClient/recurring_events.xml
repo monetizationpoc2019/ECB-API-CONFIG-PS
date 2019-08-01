@@ -1,0 +1,590 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xmlconfig>
+  <version ptype="INTEGER">2</version>
+
+  <ScheduledAdapters>
+
+    <Adapter>
+      <Name>CreditCardDunningAdapter</Name>
+      <DisplayName>Failed Credit Card Payment Dunning</DisplayName>
+      <ClassID>MetraTech.UsageServer.Adapters.GenericWorkflowAdapter, MetraTech.UsageServer.Adapters</ClassID>
+      <ConfigFile>CreditCardDunningAdapter.xml</ConfigFile>
+      <ActivationDate>10/1/2002 00:00:00</ActivationDate>
+      <Description>
+        The adapter resubmits failed credit card payments on a periodic basis for a configured number of retries.
+       
+      </Description>
+      <LocalizedItems>
+        <item lang="FR">
+          <DisplayName>Relace des paiements par carte de crédit en échec</DisplayName>
+          <Description>
+            [FR] The adapter resubmits failed credit card payments on a periodic basis for a configured number of retries.
+          </Description>
+        </item>
+        <item lang="IT">
+          <DisplayName>[IT] Failed Credit Card Payment Dunning</DisplayName>
+          <Description>
+            [IT] The adapter resubmits failed credit card payments on a periodic basis for a configured number of retries.
+       
+          </Description>
+        </item>
+        <item lang="ES">
+          <DisplayName>[ES] Failed Credit Card Payment Dunning</DisplayName>
+          <Description>
+            [ES] The adapter resubmits failed credit card payments on a periodic basis for a configured number of retries.
+       
+          </Description>
+        </item>
+        <item lang="DE">
+          <DisplayName>[DE] Failed Credit Card Payment Dunning</DisplayName>
+          <Description>
+            [DE] The adapter resubmits failed credit card payments on a periodic basis for a configured number of retries.
+       
+          </Description>
+        </item>
+        <item lang="es-MX">
+          <DisplayName>[es-MX] Failed Credit Card Payment Dunning</DisplayName>
+          <Description>
+            [es-MX] The adapter resubmits failed credit card payments on a periodic basis for a configured number of retries.
+       
+          </Description>
+        </item>
+        <item lang="pt-BR">
+          <DisplayName>Falha na cobrança do pagamento de cartão de crédito</DisplayName>
+          <Description>
+            [pt-BR] The adapter resubmits failed credit card payments on a periodic basis for a configured number of retries.
+          </Description>
+        </item>
+        <item lang="en-GB">
+          <DisplayName>[en-GB] Failed Credit Card Payment Dunning</DisplayName>
+          <Description>
+            [en-GB] The adapter resubmits failed credit card payments on a periodic basis for a configured number of retries.
+       
+          </Description>
+        </item>
+        <item lang="JA">
+          <DisplayName>[JA] Failed Credit Card Payment Dunning</DisplayName>
+          <Description>
+            [JA] The adapter resubmits failed credit card payments on a periodic basis for a configured number of retries.
+       
+          </Description>
+        </item>
+      </LocalizedItems>
+      <RecurrencePattern>
+        <SystemCycle>Daily</SystemCycle>
+      </RecurrencePattern>
+    </Adapter>
+
+    <Adapter>
+      <Name>ACHInquiryAdapter</Name>
+      <DisplayName>ACH Inquiry Adapter</DisplayName>
+      <ClassID>MetraTech.UsageServer.Adapters.GenericWorkflowAdapter, MetraTech.UsageServer.Adapters</ClassID>
+      <ConfigFile>ACHInquiryAdapter.xml</ConfigFile>
+      <ActivationDate>10/1/2002 00:00:00</ActivationDate>
+      <Description>
+        This adapter checks to see if a given ach transaction has cleared.
+       
+      </Description>
+      <LocalizedItems>
+        <item lang="FR">
+          <DisplayName>Adaptateur de requête ACH</DisplayName>
+          <Description>
+            Cet adaptateur vérifie si une transaction ACH spécifique a été autorisée.
+       
+          </Description>
+        </item>
+        <item lang="IT">
+          <DisplayName>[IT] ACH Inquiry Adapter</DisplayName>
+          <Description>
+            [IT] This adapter checks to see if a given ach transaction has cleared.
+       
+          </Description>
+        </item>
+        <item lang="ES">
+          <DisplayName>[ES] ACH Inquiry Adapter</DisplayName>
+          <Description>
+            [ES] This adapter checks to see if a given ach transaction has cleared.
+       
+          </Description>
+        </item>
+        <item lang="DE">
+          <DisplayName>[DE] ACH Inquiry Adapter</DisplayName>
+          <Description>
+            [DE] This adapter checks to see if a given ach transaction has cleared.
+       
+          </Description>
+        </item>
+        <item lang="es-MX">
+          <DisplayName>[es-MX] ACH Inquiry Adapter</DisplayName>
+          <Description>
+            [es-MX] This adapter checks to see if a given ach transaction has cleared.
+       
+          </Description>
+        </item>
+        <item lang="pt-BR">
+          <DisplayName>Adaptador de Consulta ACH</DisplayName>
+          <Description>
+            Este adaptador verifica se uma determinada transação ach cancelou.
+          </Description>
+        </item>
+        <item lang="en-GB">
+          <DisplayName>[en-GB] ACH Inquiry Adapter</DisplayName>
+          <Description>
+            [en-GB] This adapter checks to see if a given ach transaction has cleared.
+       
+          </Description>
+        </item>
+        <item lang="JA">
+          <DisplayName>[JA] ACH Inquiry Adapter</DisplayName>
+          <Description>
+            [JA] This adapter checks to see if a given ach transaction has cleared.
+       
+          </Description>
+        </item>
+      </LocalizedItems>
+      <RecurrencePattern>
+        <SystemCycle>Daily</SystemCycle>
+      </RecurrencePattern>
+    </Adapter>
+
+    <Adapter>
+      <Name>ExecutePaymentsAdapter</Name>
+      <DisplayName>Submit Scheduled Payments to Payment Processors</DisplayName>
+      <ClassID>MetraTech.UsageServer.Adapters.GenericWorkflowAdapter,MetraTech.UsageServer.Adapters</ClassID>
+      <ConfigFile>ExecutePaymentsAdapter.xml</ConfigFile>
+      <ActivationDate>10/1/2002 00:00:00</ActivationDate>
+      <Description>
+        Adapter to send scheduled payment transactions to payment processors.   
+      
+      </Description>
+      <LocalizedItems>
+        <item lang="FR">
+          <DisplayName>Envoyer les paiements planifiés au processeur de paiements </DisplayName>
+          <Description>
+           L'adaptateur doit envoyer les transactions de paiement planifiées au processeur de paiements.   
+      
+          </Description>
+        </item>
+        <item lang="IT">
+          <DisplayName>[IT] Submit Scheduled Payments to Payment Processors</DisplayName>
+          <Description>
+            [IT]
+            Adapter to send scheduled payment transactions to payment processors.   
+      
+          </Description>
+        </item>
+        <item lang="ES">
+          <DisplayName>[ES] Submit Scheduled Payments to Payment Processors</DisplayName>
+          <Description>
+            [ES]
+            Adapter to send scheduled payment transactions to payment processors.   
+      
+          </Description>
+        </item>
+        <item lang="DE">
+          <DisplayName>[DE] Submit Scheduled Payments to Payment Processors</DisplayName>
+          <Description>
+            [DE]
+            Adapter to send scheduled payment transactions to payment processors.   
+      
+          </Description>
+        </item>
+        <item lang="es-MX">
+          <DisplayName>[es-MX] Submit Scheduled Payments to Payment Processors</DisplayName>
+          <Description>
+            [es-MX]
+            Adapter to send scheduled payment transactions to payment processors.   
+      
+          </Description>
+        </item>
+        <item lang="pt-BR">
+          <DisplayName>Enviar pagamentos agendados aos processadores de pagamento</DisplayName>
+          <Description>
+            Adaptador para enviar operações de pagamento agendadas para processadores de pagamento.
+          </Description>
+        </item>
+        <item lang="en-GB">
+          <DisplayName>[en-GB] Submit Scheduled Payments to Payment Processors</DisplayName>
+          <Description>
+            [en-GB]
+            Adapter to send scheduled payment transactions to payment processors.   
+      
+          </Description>
+        </item>
+        <item lang="JA">
+          <DisplayName>[JA] Submit Scheduled Payments to Payment Processors</DisplayName>
+          <Description>
+            [JA]
+            Adapter to send scheduled payment transactions to payment processors.   
+      
+          </Description>
+        </item>
+      </LocalizedItems>
+      <RecurrencePattern>
+        <SystemCycle>Daily</SystemCycle>
+      </RecurrencePattern>
+    </Adapter>
+    
+    <Adapter>
+            <Name>CleanupAdapter</Name>
+            <DisplayName>Failed Payment Cleanup Adapter </DisplayName>
+            <ClassID>MetraTech.UsageServer.Adapters.CleanupFailedTransactionsAdapter,MetraTech.UsageServer.Adapters</ClassID>
+            <ConfigFile>CleanupAdapter.xml</ConfigFile>
+            <ActivationDate>10/1/2002 00:00:00</ActivationDate>
+            <Description>Cleanup and void failed transactions.</Description>
+            <LocalizedItems>
+                <item lang="FR">
+                    <DisplayName>Adaptateur de nettoyage des paiements en échec </DisplayName>
+                    <Description>Nettoie et annule les transactions en échec.</Description>
+                </item>
+                <item lang="IT">
+                    <DisplayName>[IT] Failed Payment Cleanup Adapter </DisplayName>
+                    <Description>[IT] Cleanup and void failed transactions.</Description>
+                </item>
+                <item lang="ES">
+                    <DisplayName>[ES] Failed Payment Cleanup Adapter </DisplayName>
+                    <Description>[ES] Cleanup and void failed transactions.</Description>
+                </item>
+                <item lang="DE">
+                    <DisplayName>[DE] Failed Payment Cleanup Adapter </DisplayName>
+                    <Description>[DE] Cleanup and void failed transactions.</Description>
+                </item>
+                <item lang="es-MX">
+                    <DisplayName>[es-MX] Failed Payment Cleanup Adapter </DisplayName>
+                    <Description>[es-MX] Cleanup and void failed transactions.</Description>
+                </item>
+                <item lang="pt-BR">
+                    <DisplayName>Adaptador de limpeza de pagamento com falha </DisplayName>
+                    <Description>Limpa e evita transações com falha.</Description>
+                </item>
+                <item lang="en-GB">
+                    <DisplayName>[en-GB] Failed Payment Cleanup Adapter </DisplayName>
+                    <Description>[en-GB] Cleanup and void failed transactions.</Description>
+                </item>
+                <item lang="JA">
+                    <DisplayName>[JA] Failed Payment Cleanup Adapter </DisplayName>
+                    <Description>[JA] Cleanup and void failed transactions.</Description>
+                </item>
+            </LocalizedItems>
+            <RecurrencePattern>
+                <IntervalInMinutes>60</IntervalInMinutes>
+            </RecurrencePattern>
+        </Adapter>
+
+  </ScheduledAdapters>
+
+  <EndOfPeriodAdapters>
+
+    <Adapter>
+      <Name>PaymentAuthorizationAdapter</Name>
+      <DisplayName>Generate and Pre-Authorize Payment Transactions</DisplayName>
+      <ClassID>MetraTech.UsageServer.Adapters.PaymentAuthorizationAdapter,MetraTech.UsageServer.Adapters</ClassID>
+      <ConfigFile>PaymentAuthorizationAdapter.xml</ConfigFile>
+      <Description>
+        
+		This adapter generates the list of payment transactions for the bill group.  It tries to pre-authorize
+		the transactions for those method types that support it (e.g. credit cards).
+      
+      </Description>
+      <LocalizedItems>
+        <item lang="FR">
+          <DisplayName>Générer et pré-autoriser les transactions de paiement</DisplayName>
+          <Description>Cet adaptateur génère la liste des transactions de paiement pour le groupe de projet de loi. Il essaie d'effectuer une pré-autorisation
+les transactions pour ces types de méthodes qui prennent en charge (par exemple cartes de crédit).
+          </Description>
+        </item>
+        <item lang="IT">
+          <DisplayName>[IT] Generate and Pre-Authorize Payment Transactions</DisplayName>
+          <Description>
+            [IT]
+            
+		This adapter generates the list of payment transactions for the bill group.  It tries to pre-authorize
+		the transactions for those method types that support it (e.g. credit cards).
+      
+          </Description>
+        </item>
+        <item lang="ES">
+          <DisplayName>[ES] Generate and Pre-Authorize Payment Transactions</DisplayName>
+          <Description>
+            [ES]
+            
+		This adapter generates the list of payment transactions for the bill group.  It tries to pre-authorize
+		the transactions for those method types that support it (e.g. credit cards).
+      
+          </Description>
+        </item>
+        <item lang="DE">
+          <DisplayName>[DE] Generate and Pre-Authorize Payment Transactions</DisplayName>
+          <Description>
+            [DE]
+            
+		This adapter generates the list of payment transactions for the bill group.  It tries to pre-authorize
+		the transactions for those method types that support it (e.g. credit cards).
+      
+          </Description>
+        </item>
+        <item lang="es-MX">
+          <DisplayName>[es-MX] Generate and Pre-Authorize Payment Transactions</DisplayName>
+          <Description>
+            [es-MX]
+            
+		This adapter generates the list of payment transactions for the bill group.  It tries to pre-authorize
+		the transactions for those method types that support it (e.g. credit cards).
+      
+          </Description>
+        </item>
+        <item lang="pt-BR">
+          <DisplayName>Gerar e pré-autorizar operações de pagamento</DisplayName>
+          <Description>Este adaptador gera a lista de operações de pagamento para o grupo conta. Ele tenta pré-autorizar o
+as operações para esses tipos de métodos que o suportam (por exemplo, cartões de crédito).
+          </Description>
+        </item>
+        <item lang="en-GB">
+          <DisplayName>[en-GB] Generate and Pre-Authorize Payment Transactions</DisplayName>
+          <Description>
+            [en-GB]
+            
+		This adapter generates the list of payment transactions for the bill group.  It tries to pre-authorize
+		the transactions for those method types that support it (e.g. credit cards).
+      
+          </Description>
+        </item>
+        <item lang="JA">
+          <DisplayName>[JA] Generate and Pre-Authorize Payment Transactions</DisplayName>
+          <Description>
+            [JA]
+            
+		This adapter generates the list of payment transactions for the bill group.  It tries to pre-authorize
+		the transactions for those method types that support it (e.g. credit cards).
+      
+          </Description>
+        </item>
+      </LocalizedItems>
+      <RecurrencePattern>
+        <UsageCycleType>All</UsageCycleType>
+      </RecurrencePattern>
+      <Dependencies>
+        <DependsOn>Invoices</DependsOn>
+      </Dependencies>
+    </Adapter>
+
+    <Checkpoint>
+      <Name>PaymentCheckpoint</Name>
+      <DisplayName>Payment Processing Checkpoint</DisplayName>
+      <LocalizedItems>
+        <item lang="FR">
+          <DisplayName>Traitement des paiements Checkpoint</DisplayName>
+        </item>
+        <item lang="IT">
+          <DisplayName>[IT] Payment Processing Checkpoint</DisplayName>
+        </item>
+        <item lang="ES">
+          <DisplayName>[ES] Payment Processing Checkpoint</DisplayName>
+        </item>
+        <item lang="DE">
+          <DisplayName>[DE] Payment Processing Checkpoint</DisplayName>
+        </item>
+        <item lang="es-MX">
+          <DisplayName>[es-MX] Payment Processing Checkpoint</DisplayName>
+        </item>
+        <item lang="pt-BR">
+          <DisplayName>Processamento de Pagamentos Checkpoint</DisplayName>
+        </item>
+        <item lang="en-GB">
+          <DisplayName>[en-GB] Payment Processing Checkpoint</DisplayName>
+        </item>
+        <item lang="JA">
+          <DisplayName>[JA] Payment Processing Checkpoint</DisplayName>
+        </item>
+      </LocalizedItems>
+      <RecurrencePattern>
+        <UsageCycleType>All</UsageCycleType>
+      </RecurrencePattern>
+      <Dependencies>
+        <DependsOn>PaymentAuthorizationAdapter</DependsOn>
+      </Dependencies>
+    </Checkpoint>
+    
+    <Adapter>
+      <Name>PaymentSubmissionAdapter</Name>
+      <DisplayName>Submit Payments to Payment Processors</DisplayName>
+      <ClassID>MetraTech.UsageServer.Adapters.GenericWorkflowAdapter,MetraTech.UsageServer.Adapters</ClassID>
+      <ConfigFile>PaymentSubmissionAdapter.xml</ConfigFile>
+      <Description>
+        
+      Adapter to send payment transactions to payment processors.   
+      
+      </Description>
+      <LocalizedItems>
+        <item lang="FR">
+          <DisplayName>Proposez Paiements aux processeurs de paiement</DisplayName>
+          <Description>
+            Adaptateur pour envoyer des transactions de paiement pour les processeurs de paiement.
+          </Description>
+        </item>
+        <item lang="IT">
+          <DisplayName>[IT] Submit Payments to Payment Processors</DisplayName>
+          <Description>
+            [IT]
+            
+      Adapter to send payment transactions to payment processors.   
+      
+          </Description>
+        </item>
+        <item lang="ES">
+          <DisplayName>[ES] Submit Payments to Payment Processors</DisplayName>
+          <Description>
+            [ES]
+            
+      Adapter to send payment transactions to payment processors.   
+      
+          </Description>
+        </item>
+        <item lang="DE">
+          <DisplayName>[DE] Submit Payments to Payment Processors</DisplayName>
+          <Description>
+            [DE]
+            
+      Adapter to send payment transactions to payment processors.   
+      
+          </Description>
+        </item>
+        <item lang="es-MX">
+          <DisplayName>[es-MX] Submit Payments to Payment Processors</DisplayName>
+          <Description>
+            [es-MX]
+            
+      Adapter to send payment transactions to payment processors.   
+      
+          </Description>
+        </item>
+        <item lang="pt-BR">
+          <DisplayName>Enviar Pagamentos aos Processadores de Pagamento</DisplayName>
+          <Description>
+            Adaptador para enviar operações de pagamento para processadores de pagamento.
+          </Description>
+        </item>
+        <item lang="en-GB">
+          <DisplayName>[en-GB] Submit Payments to Payment Processors</DisplayName>
+          <Description>
+            [en-GB]
+            
+      Adapter to send payment transactions to payment processors.   
+      
+          </Description>
+        </item>
+        <item lang="JA">
+          <DisplayName>[JA] Submit Payments to Payment Processors</DisplayName>
+          <Description>
+            [JA]
+            
+      Adapter to send payment transactions to payment processors.   
+      
+          </Description>
+        </item>
+      </LocalizedItems>
+      <RecurrencePattern>
+        <UsageCycleType>All</UsageCycleType>
+      </RecurrencePattern>
+      <Dependencies>
+        <DependsOn>PaymentCheckpoint</DependsOn>
+        <!-- <DependsOnMe>InvoiceSignatureCheckpoint</DependsOnMe> -->
+      </Dependencies>
+    </Adapter>
+    <!-- Adapter>
+      <Name>PaymentSubmissionAdapter</Name>
+      <DisplayName>Capture Payments</DisplayName>
+      <ClassID>MetraTech.UsageServer.Adapters.PaymentSubmissionAdapter,MetraTech.UsageServer.Adapters</ClassID>
+      <ConfigFile>PaymentSubmissionAdapter.xml</ConfigFile>
+      <Description>
+      <![CDATA[
+      Since we do not support reversals after data has been sent to Verisign,
+      the job of this adapter is to make sure that reversals for scheduled
+      hits to Verisign are reversed.
+      ]]>
+      </Description>
+      <LocalizedItems>
+        <item lang="FR">
+          <DisplayName>[FR] Capture Payments</DisplayName>
+          <Description>[FR] 
+      <![CDATA[
+      Since we do not support reversals after data has been sent to Verisign,
+      the job of this adapter is to make sure that reversals for scheduled
+      hits to Verisign are reversed.
+      ]]></Description>
+        </item>
+        <item lang="IT">
+          <DisplayName>[IT] Capture Payments</DisplayName>
+          <Description>[IT] 
+      <![CDATA[
+      Since we do not support reversals after data has been sent to Verisign,
+      the job of this adapter is to make sure that reversals for scheduled
+      hits to Verisign are reversed.
+      ]]></Description>
+        </item>
+        <item lang="ES">
+          <DisplayName>[ES] Capture Payments</DisplayName>
+          <Description>[ES] 
+      <![CDATA[
+      Since we do not support reversals after data has been sent to Verisign,
+      the job of this adapter is to make sure that reversals for scheduled
+      hits to Verisign are reversed.
+      ]]></Description>
+        </item>
+        <item lang="DE">
+          <DisplayName>[DE] Capture Payments</DisplayName>
+          <Description>[DE] 
+      <![CDATA[
+      Since we do not support reversals after data has been sent to Verisign,
+      the job of this adapter is to make sure that reversals for scheduled
+      hits to Verisign are reversed.
+      ]]></Description>
+        </item>
+        <item lang="es-MX">
+          <DisplayName>[es-MX] Capture Payments</DisplayName>
+          <Description>[es-MX] 
+      <![CDATA[
+      Since we do not support reversals after data has been sent to Verisign,
+      the job of this adapter is to make sure that reversals for scheduled
+      hits to Verisign are reversed.
+      ]]></Description>
+        </item>
+        <item lang="pt-BR">
+          <DisplayName>[pt-BR] Capture Payments</DisplayName>
+          <Description>[pt-BR] 
+      <![CDATA[
+      Since we do not support reversals after data has been sent to Verisign,
+      the job of this adapter is to make sure that reversals for scheduled
+      hits to Verisign are reversed.
+      ]]></Description>
+        </item>
+        <item lang="en-GB">
+          <DisplayName>[en-GB] Capture Payments</DisplayName>
+          <Description>[en-GB] 
+      <![CDATA[
+      Since we do not support reversals after data has been sent to Verisign,
+      the job of this adapter is to make sure that reversals for scheduled
+      hits to Verisign are reversed.
+      ]]></Description>
+        </item>
+        <item lang="JA">
+          <DisplayName>[JA] Capture Payments</DisplayName>
+          <Description>[JA] 
+      <![CDATA[
+      Since we do not support reversals after data has been sent to Verisign,
+      the job of this adapter is to make sure that reversals for scheduled
+      hits to Verisign are reversed.
+      ]]></Description>
+        </item>	
+      </LocalizedItems>
+      <RecurrencePattern>
+        <UsageCycleType>All</UsageCycleType>
+      </RecurrencePattern>
+      <Dependencies>
+        <DependsOn>PaymentCheckpoint</DependsOn>
+      </Dependencies>
+    </Adapter -->
+
+  </EndOfPeriodAdapters>
+
+</xmlconfig>

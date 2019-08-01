@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<defineservice>
+    <name>metratech.com/MetraTax</name>
+    <description>MetraTax</description>
+    <ptype uservisible="False" exportable="False" filterable="False">
+        <dn>TransactionTime</dn>
+        <type>timestamp</type>
+        <length />
+        <required>Y</required>
+        <defaultvalue />
+        <description>The time that the transaction was deemed to have occured.</description>
+    </ptype>
+</defineservice>

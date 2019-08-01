@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xmlconfig>
+  <tag>PaymentBillingAdapter</tag>
+  <sessioncount>10</sessioncount>
+  <sessionsetsize>10</sessionsetsize>
+  <!-- time in seconds to wait for metered sessions to succeed -->
+  <waitforcommittimeout>60</waitforcommittimeout>
+  <server>paymentserver</server>
+  <service>metratech.com/ps_paymentscheduler</service>
+  <enumspace>metratech.com/accountcreation</enumspace>
+  <enumname>PaymentMethod</enumname>
+  <enumvalue>CreditOrACH</enumvalue>
+</xmlconfig>

@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xmlconfig>
+  <mtsysconfigdata>
+    <effective_date ptype="DATETIME">1998-11-19T00:00:00Z</effective_date>
+    <timeout ptype="INTEGER">30</timeout>
+    <configfiletype>CONFIG_DATA</configfiletype>
+  </mtsysconfigdata>
+
+  <mtconfigdata>
+
+ <version ptype="INTEGER">1</version>
+ <processor>
+  <name>GroupDiscount</name>
+  <progid>MetraPipeline.MTSQLInterpreter.1</progid><description>Based on if this is first or second pass, writes the Group Discount to the appropriate usage table. This technique allows us to use the same stage for first and second pass processing.</description>
+
+
+  <configdata>
+
+  <Program>
+  
+     CREATE PROCEDURE GroupDiscount  @_Amount DECIMAL OUTPUT
+				 @_ProductViewID INTEGER OUTPUT
+				 @_AccountID INTEGER OUTPUT
+				 @_PayingAccount INTEGER OUTPUT
+				 @GroupDiscountPass INTEGER
+				 @GroupDiscountAmount DECIMAL OUTPUT -- $ICE:INOUT$
+				 @GroupDiscountPayingAccount INTEGER
+     AS
+       IF @GroupDiscountPass = 1
+       BEGIN
+
+         -- overrides the product view to store group subscription amounts 
+         SET @_ProductViewID = CAST(CAST('metratech.com/groupdiscount_temp' AS ENUM) AS INTEGER)
+
+         -- stores the amount in the product view instead of in t_acc_usage
+         SET @GroupDiscountAmount = @_Amount
+         SET @_Amount = 0.0
+
+         -- uses the 'demo' account for the sake of t_acc_usage
+         SET @_AccountID = 123
+         SET @_PayingAccount = 123
+       END
+
+       IF @GroupDiscountPass = 2
+       BEGIN
+         SET @_Amount = @GroupDiscountAmount
+
+         -- sets the payer retrieved by accountres
+         SET @_PayingAccount = @GroupDiscountPayingAccount
+       END
+
+  </Program> 
+			
+  </configdata>
+
+ </processor>
+
+  </mtconfigdata>
+</xmlconfig>

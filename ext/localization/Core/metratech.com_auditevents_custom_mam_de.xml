@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<mt_config>
+  <language_code>de</language_code>
+  <locale_space name="metratech.com/auditevents/custom/mam">
+    <locale_entry>
+      <Name>metratech.com/auditevents/custom/mam/note</Name>
+      <Value>Bezeichnung für Kundendienstmitarbeiter</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/auditevents/custom/mam/telephone</Name>
+      <Value>Teilnehmer hat angerufen</Value>
+    </locale_entry>
+  </locale_space>
+</mt_config>

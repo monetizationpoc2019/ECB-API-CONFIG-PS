@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<mt_config>
+    <language_code>jp</language_code>
+    <locale_space name="usage">
+        <locale_entry>
+            <Name>usage/DeferredRevenueCode</Name>
+            <Value>Deferred Revenue Code</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>usage/glcode</Name>
+            <Value>GL Code</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>usage/IsLiabilityProduct</Name>
+            <Value>Is Liability Product</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>usage/RevenueCode</Name>
+            <Value>Revenue Code</Value>
+        </locale_entry>
+    </locale_space>
+</mt_config>

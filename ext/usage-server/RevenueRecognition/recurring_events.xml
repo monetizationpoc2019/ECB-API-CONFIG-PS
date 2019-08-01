@@ -1,0 +1,142 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xmlconfig>
+  <version ptype="INTEGER">2</version>
+  <ScheduledAdapters>
+  <!--
+    <Adapter>
+      <Name>UpdateRevenueScheduleAfterEOPAdapter</Name>
+      <DisplayName>Update Revenue Schedule after EOP</DisplayName>
+      <ClassID>MetraTech.RevenueRecognition.Adapters.UpdateRevenueScheduleAfterEOPAdapter,MetraTech.RevenueRecognition.Adapters</ClassID>
+      <ConfigFile>UpdateRevenueScheduleAfterEOPAdapter.xml</ConfigFile>
+      <Description>Adapter to update revenue schedule for subscriptions in the financial interval corresponding to qualifying hard-closed billing intervals</Description>
+      <LocalizedItems>
+        <item lang="FR">
+          <DisplayName>[FR]Update Revenue Schedule after EOP</DisplayName>
+          <Description>[FR]Adapter to update revenue schedule for subscriptions in the financial interval corresponding to qualifying hard-closed billing intervals</Description>
+        </item>
+        <item lang="IT">
+          <DisplayName>[IT]Update Revenue Schedule after EOP</DisplayName>
+          <Description>[IT]Adapter to update revenue schedule for subscriptions in the financial interval corresponding to qualifying hard-closed billing intervals</Description>
+        </item>
+        <item lang="ES">
+          <DisplayName>[ES]Update Revenue Schedule after EOP</DisplayName>
+          <Description>[ES]Adapter to update revenue schedule for subscriptions in the financial interval corresponding to qualifying hard-closed billing intervals</Description>
+        </item>
+        <item lang="DE">
+          <DisplayName>[DE]Update Revenue Schedule after EOP</DisplayName>
+          <Description>[DE]Adapter to update revenue schedule for subscriptions in the financial interval corresponding to qualifying hard-closed billing intervals</Description>
+        </item>
+        <item lang="es-MX">
+          <DisplayName>[es-MX]Update Revenue Schedule after EOP</DisplayName>
+          <Description>[es-MX]Adapter to update revenue schedule for subscriptions in the financial interval corresponding to qualifying hard-closed billing intervals</Description>
+        </item>
+        <item lang="pt-BR">
+          <DisplayName>[pt-BR]Update Revenue Schedule after EOP</DisplayName>
+          <Description>[pt-BR]Adapter to update revenue schedule for subscriptions in the financial interval corresponding to qualifying hard-closed billing intervals</Description>
+        </item>
+        <item lang="en-GB">
+          <DisplayName>[en-GB]Update Revenue Schedule after EOP</DisplayName>
+          <Description>[en-GB]Adapter to update revenue schedule for subscriptions in the financial interval corresponding to qualifying hard-closed billing intervals</Description>
+        </item>
+        <item lang="JA">
+          <DisplayName>[JA]Update Revenue Schedule after EOP</DisplayName>
+          <Description>[JA]Adapter to update revenue schedule for subscriptions in the financial interval corresponding to qualifying hard-closed billing intervals</Description>
+        </item>
+      </LocalizedItems>
+      <RecurrencePattern>
+        <Manual />
+      </RecurrencePattern>
+    </Adapter>
+    <Adapter>
+      <Name>UpdateRevenueScheduleOnSubscriptionChangesAdapter</Name>
+      <DisplayName>Update Revenue Schedule on subscription changes</DisplayName>
+      <ClassID>MetraTech.RevenueRecognition.Adapters.UpdateRevenueScheduleOnSubscriptionChangesAdapter,MetraTech.RevenueRecognition.Adapters</ClassID>
+      <ConfigFile>UpdateRevenueScheduleOnSubscriptionChangesAdapter.xml</ConfigFile>
+      <Description>Adapter to update revenue schedule for new and updated subscriptions</Description>
+      <LocalizedItems>
+        <item lang="FR">
+          <DisplayName>Update Revenue Schedule on subscription changes</DisplayName>
+          <Description>Adapter to update revenue schedule for new and updated subscriptions</Description>
+        </item>
+        <item lang="IT">
+          <DisplayName>[IT]Update Revenue Schedule on subscription changes</DisplayName>
+          <Description>[IT]Adapter to update revenue schedule for new and updated subscriptions</Description>
+        </item>
+        <item lang="ES">
+          <DisplayName>[ES]Update Revenue Schedule on subscription changes</DisplayName>
+          <Description>[ES]Adapter to update revenue schedule for new and updated subscriptions</Description>
+        </item>
+        <item lang="DE">
+          <DisplayName>[DE]Update Revenue Schedule on subscription changes</DisplayName>
+          <Description>[DE]Adapter to update revenue schedule for new and updated subscriptions</Description>
+        </item>
+        <item lang="es-MX">
+          <DisplayName>[es-MX]Update Revenue Schedule on subscription changes</DisplayName>
+          <Description>[es-MX]Adapter to update revenue schedule for new and updated subscriptions</Description>
+        </item>
+        <item lang="pt-BR">
+          <DisplayName>[pt-BR]Update Revenue Schedule on subscription changes</DisplayName>
+          <Description>[pt-BR]Adapter to update revenue schedule for new and updated subscriptions</Description>
+        </item>
+        <item lang="en-GB">
+          <DisplayName>[en-GB]Generate Revenue Schedule Adapter</DisplayName>
+          <Description>[en-GB]Adapter to update revenue schedule for new and updated subscriptions</Description>
+        </item>
+        <item lang="JA">
+          <DisplayName>[JA]Generate Revenue Schedule Adapter</DisplayName>
+          <Description>[JA]Adapter to update revenue schedule for new and updated subscriptions</Description>
+        </item>
+      </LocalizedItems>
+      <RecurrencePattern>
+        <Manual />
+      </RecurrencePattern>
+    </Adapter>
+    <Adapter>
+      <Name>JEExportAdapter</Name>
+      <DisplayName>Exports journal entries for all hard-closed financial intervals</DisplayName>
+      <ClassID>MetraTech.RevenueRecognition.Adapters.JEExportAdapter,MetraTech.RevenueRecognition.Adapters</ClassID>
+      <ConfigFile>JEExportAdapter.xml</ConfigFile>
+      <Description>Adapter to export journal entries for all hard-closed financial intervals</Description>
+      <LocalizedItems>
+        <item lang="FR">
+          <DisplayName>[FR]Journal Entries Export Adapter</DisplayName>
+          <Description>[FR]Adapter to export journal entries for all hard-closed financial intervals</Description>
+        </item>
+        <item lang="IT">
+          <DisplayName>[IT]Journal Entries Export Adapter</DisplayName>
+          <Description>[IT]Adapter to export journal entries for all hard-closed financial intervals</Description>
+        </item>
+        <item lang="ES">
+          <DisplayName>[ES]Journal Entries Export Adapter</DisplayName>
+          <Description>[ES]Adapter to export journal entries for all hard-closed financial intervals</Description>
+        </item>
+        <item lang="DE">
+          <DisplayName>[DE]Journal Entries Export Adapter</DisplayName>
+          <Description>[DE]Adapter to export journal entries for all hard-closed financial intervals</Description>
+        </item>
+        <item lang="es-MX">
+          <DisplayName>[es-MX]Journal Entries Export Adapter</DisplayName>
+          <Description>[es-MX]Adapter to export journal entries for all hard-closed financial intervals</Description>
+        </item>
+        <item lang="pt-BR">
+          <DisplayName>[pt-BR]Journal Entries Export Adapter</DisplayName>
+          <Description>[pt-BR]Adapter to export journal entries for all hard-closed financial intervals</Description>
+        </item>
+        <item lang="en-GB">
+          <DisplayName>[en-GB]Journal Entries Export Adapter</DisplayName>
+          <Description>[en-GB]Adapter to export journal entries for all hard-closed financial intervals</Description>
+        </item>
+        <item lang="JA">
+          <DisplayName>[JA]Journal Entries Export Adapter</DisplayName>
+          <Description>[JA]Adapter to export journal entries for all hard-closed financial intervals</Description>
+        </item>
+      </LocalizedItems>
+      <RecurrencePattern>
+        <SystemCycle>Daily</SystemCycle>
+      </RecurrencePattern>
+        </Adapter>        
+        -->
+  </ScheduledAdapters>
+  <EndOfPeriodAdapters>
+  </EndOfPeriodAdapters>
+</xmlconfig>

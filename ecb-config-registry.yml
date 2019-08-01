@@ -1,0 +1,28 @@
+server:
+  port: ${config-registry-port:8888}
+  
+eureka:
+  numberRegistrySyncRetries: 0
+  client:
+    registerWithEureka: false
+    fetchRegistry: false
+    serviceUrl:
+      defaultZone: ${ecb-eureka-host:https://localhost:8888/eureka}
+      registerWithEureka: false
+      fetchRegistry: false
+  dashboard:
+    path: /dashboard
+  server:
+    waitTimeInMsWhenSyncEmpty: 0
+    enableSelfPreservation: false
+    defaultOpenForTrafficCount: 0
+    
+spring:
+  cloud:
+    config:
+      allowOverride: true
+      overrideNone: true
+      overrideSystemProperties: false
+      
+      
+logging.level.org.springframework.context.annotation: ERROR

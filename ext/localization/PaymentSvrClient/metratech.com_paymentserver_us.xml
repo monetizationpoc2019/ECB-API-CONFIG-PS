@@ -1,0 +1,326 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<mt_config>
+  <language_code>us</language_code>
+  <locale_space name="metratech.com/paymentserver">
+    <locale_entry>
+      <Name>metratech.com/paymentserver</Name>
+      <Value>Payment Server</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/paymentserver/BankAccountType</Name>
+      <Value>Bank Account Type</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/paymentserver/BankAccountType/Checking</Name>
+      <Value>Checking</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/paymentserver/BankAccountType/Savings</Name>
+      <Value>Savings</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/paymentserver/BatchStatus/AwaitingReconciliation</Name>
+      <Value>AwaitingReconciliation</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/paymentserver/BatchStatus/AwaitingSubmit</Name>
+      <Value>AwaitingSubmit</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/paymentserver/BatchStatus/AwaitingValidation</Name>
+      <Value>AwaitingValidation</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/paymentserver/BatchStatus/Complete</Name>
+      <Value>Complete</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/paymentserver/BatchStatus/Error</Name>
+      <Value>Error</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/paymentserver/CreditCard</Name>
+      <Value>Credit Card Type</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/paymentserver/CreditCard/American Express</Name>
+      <Value>American Express</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/paymentserver/CreditCard/Diners Club</Name>
+      <Value>Diners Club</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/paymentserver/CreditCard/Discover</Name>
+      <Value>Discover</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/paymentserver/CreditCard/JCB</Name>
+      <Value>JCB</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/paymentserver/CreditCard/Maestro</Name>
+      <Value>Maestro</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/paymentserver/CreditCard/MasterCard</Name>
+      <Value>MasterCard</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/paymentserver/CreditCard/Visa</Name>
+      <Value>Visa</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/paymentserver/CreditCardTransactionType/Capture</Name>
+      <Value>Capture</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/paymentserver/CreditCardTransactionType/Credit</Name>
+      <Value>Credit</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/paymentserver/CreditCardTransactionType/Debit</Name>
+      <Value>Debit</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/paymentserver/CreditCardType</Name>
+      <Value>Credit Card Type</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/paymentserver/CreditCardType/American Express</Name>
+      <Value>American Express</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/paymentserver/CreditCardType/American Express - Purchase Card</Name>
+      <Value>American Express - Purchase Card</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/paymentserver/CreditCardType/American Express - Purchase Card Intl</Name>
+      <Value>American Express - Purchase Card Intl</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/paymentserver/CreditCardType/Diners Club</Name>
+      <Value>Diners Club</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/paymentserver/CreditCardType/Discover</Name>
+      <Value>Discover</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/paymentserver/CreditCardType/JCB</Name>
+      <Value>JCB</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/paymentserver/CreditCardType/Maestro</Name>
+      <Value>Maestro</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/paymentserver/CreditCardType/MasterCard</Name>
+      <Value>MasterCard</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/paymentserver/CreditCardType/MasterCard - Purchase Card</Name>
+      <Value>MasterCard - Purchase Card</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/paymentserver/CreditCardType/MasterCard - Purchase Card Intl</Name>
+      <Value>MasterCard - Purchase Card Intl</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/paymentserver/CreditCardType/Visa</Name>
+      <Value>Visa</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/paymentserver/CreditCardType/Visa - Purchase Card</Name>
+      <Value>Visa - Purchase Card</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/paymentserver/CreditCardType/Visa - Purchase Card Intl</Name>
+      <Value>Visa - Purchase Card Intl</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/paymentserver/ErrorSource/Adapter</Name>
+      <Value>Adapter</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/paymentserver/ErrorSource/EPS</Name>
+      <Value>EPS</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/paymentserver/ErrorSource/MetraPay</Name>
+      <Value>MetraPay</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/paymentserver/ErrorSource/PaymentProcessor</Name>
+      <Value>PaymentProcessor</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/paymentserver/PaymentMethod/ACH</Name>
+      <Value>ACH</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/paymentserver/PaymentMethod/Credit Card</Name>
+      <Value>Credit Card</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/paymentserver/PaymentMethod/Purchase Card</Name>
+      <Value>Purchase Card</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/paymentserver/PaymentRequestType/ACH Account Add</Name>
+      <Value>ACH Account Add</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/paymentserver/PaymentRequestType/ACH Account Delete</Name>
+      <Value>ACH Account Delete</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/paymentserver/PaymentRequestType/ACH Account Update</Name>
+      <Value>ACH Account Update</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/paymentserver/PaymentRequestType/ACH Credit</Name>
+      <Value>ACH Credit</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/paymentserver/PaymentRequestType/ACH Debit</Name>
+      <Value>ACH Debit</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/paymentserver/PaymentRequestType/Credit Card Add</Name>
+      <Value>Credit Card Add</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/paymentserver/PaymentRequestType/Credit Card Auth Reversal</Name>
+      <Value>Credit Card Auth Reversal</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/paymentserver/PaymentRequestType/Credit Card Capture</Name>
+      <Value>Credit Card Capture</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/paymentserver/PaymentRequestType/Credit Card Credit</Name>
+      <Value>Credit Card Credit</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/paymentserver/PaymentRequestType/Credit Card Debit</Name>
+      <Value>Credit Card Debit</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/paymentserver/PaymentRequestType/Credit Card Delete</Name>
+      <Value>Credit Card Delete</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/paymentserver/PaymentRequestType/Credit Card PreAuth</Name>
+      <Value>Credit Card PreAuth</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/paymentserver/PaymentRequestType/Credit Card Update</Name>
+      <Value>Credit Card Update</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/paymentserver/PaymentRequestType/One-Time Credit Card Credit</Name>
+      <Value>One-Time Credit Card Credit</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/paymentserver/PaymentRequestType/One-Time Credit Card Debit</Name>
+      <Value>One-Time Credit Card Debit</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/paymentserver/PaymentStatus/Archive</Name>
+      <Value>Archive</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/paymentserver/PaymentStatus/Failed</Name>
+      <Value>Failed</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/paymentserver/PaymentStatus/IncompleteAccountInformation</Name>
+      <Value>IncompleteAccountInformation</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/paymentserver/PaymentStatus/Investigate</Name>
+      <Value>Investigate</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/paymentserver/PaymentStatus/NotPaid</Name>
+      <Value>Not Paid</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/paymentserver/PaymentStatus/Open</Name>
+      <Value>Open</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/paymentserver/PaymentStatus/Pending</Name>
+      <Value>Pending</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/paymentserver/PaymentStatus/PendingApproval</Name>
+      <Value>Pending Approval</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/paymentserver/PaymentStatus/Retry</Name>
+      <Value>Retry</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/paymentserver/PaymentStatus/Sent</Name>
+      <Value>Sent</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/paymentserver/PaymentStatus/Settled</Name>
+      <Value>Settled</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/paymentserver/PaymentType</Name>
+      <Value>Payment Type</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/paymentserver/PaymentType/ACH</Name>
+      <Value>ACH</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/paymentserver/PaymentType/Credit Card</Name>
+      <Value>Credit Card</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/paymentserver/PaymentType/Credit Card Credit</Name>
+      <Value>Credit Card Credit</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/paymentserver/PaymentType/Credit Card Debit</Name>
+      <Value>Credit Card Debit</Value>
+    </locale_entry>
+    <locale_entry>
+    <Name>metratech.com/paymentserver/PayUsing/Existing Payment Method</Name>
+            <Value>metratech.com/paymentserver/PayUsing/Existing Payment Method</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/paymentserver/PayUsing/New Payment Method</Name>
+            <Value>New Payment Methodmetratech.com/paymentserver/PayUsing/New Payment Method</Value>
+        </locale_entry>
+        <locale_entry>
+      <Name>metratech.com/paymentserver/PurchaseCard/American Express - Purchase Card</Name>
+      <Value>American Express - Purchase Card</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/paymentserver/PurchaseCard/American Express - Purchase Card Intl</Name>
+      <Value>American Express - Purchase Card Intl</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/paymentserver/PurchaseCard/MasterCard - Purchase Card</Name>
+      <Value>MasterCard - Purchase Card</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/paymentserver/PurchaseCard/MasterCard - Purchase Card Intl</Name>
+      <Value>MasterCard - Purchase Card Intl</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/paymentserver/PurchaseCard/Visa - Purchase Card</Name>
+      <Value>Visa - Purchase Card</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/paymentserver/PurchaseCard/Visa - Purchase Card Intl</Name>
+      <Value>Visa - Purchase Card Intl</Value>
+    </locale_entry>
+  </locale_space>
+</mt_config>

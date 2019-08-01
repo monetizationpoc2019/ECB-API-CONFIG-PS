@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<mt_config>
+  <language_code>gb</language_code>
+  <locale_space name="metratech.com/testparent">
+    <locale_entry>
+      <Name>metratech.com/testparent</Name>
+      <Value>Test Parent</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/testparent/description</Name>
+      <Value>Description</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/testparent/time</Name>
+      <Value>Time</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/testparent/totalamount</Name>
+      <Value>Total Amount</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/testparent/totalunits</Name>
+      <Value>Total Units</Value>
+    </locale_entry>
+  </locale_space>
+</mt_config>

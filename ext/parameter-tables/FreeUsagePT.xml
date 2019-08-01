@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<defineservice>
+    <name display_name="Free Usage PT" condition_header="Conditions" action_header="Actions" type="Rates" help_url="">metratech.com/FreeUsagePT</name>
+    <description>Parameter table for configuring FreeUsage Decision attributes
+</description>
+    <ptype display_name="End Of Unit Range" action="Y">
+        <dn>EndOfUnitRange</dn>
+        <type>int32</type>
+        <length />
+        <required>N</required>
+        <defaultvalue />
+        <description>Tier end for the range of number of units covered by the free usage decision. This number is the maximum number of units that will be free for the charge.</description>
+    </ptype>
+</defineservice>

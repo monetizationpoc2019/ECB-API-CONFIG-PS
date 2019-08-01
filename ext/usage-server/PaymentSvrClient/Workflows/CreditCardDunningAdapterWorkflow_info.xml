@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<WorkflowInfo>
+    <Name>CreditCardDunningAdapterWorkflow</Name>
+    <Type>SequentialWorkflow</Type>
+    <Assembly>MetraTech.Payments.Dunning.dll</Assembly>
+    <XomlFile>CreditCardDunningAdapterWorkflow.xoml</XomlFile>
+    <Description>Failed Payment Dunning Adapter Workflow</Description>
+</WorkflowInfo>

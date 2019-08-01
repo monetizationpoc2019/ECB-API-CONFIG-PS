@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xmlconfig>
+    <mtconfigdata>
+        <version ptype="INTEGER">1</version>
+        <!-- First processor configuration -->
+        <processor>
+            <name>LogNoPaymentDate</name>
+            <progid>MetraPipeline.MTSQLInterpreter.1</progid>
+            <description>This plug-in displays message in MT Log if EventDate is null</description>
+            <!-- Processor specific configuration data -->
+            <configdata>
+                <Program>CREATE PROCEDURE LogNoPaymentDate
+	@EventDate DATETIME
+as
+IF (@EventDate IS NULL)
+	print('EventDate is null, will be defaulted to 1/1/1900 in MetraView');
+
+</Program>
+            </configdata>
+        </processor>
+    </mtconfigdata>
+</xmlconfig>

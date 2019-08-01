@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<mt_config>
+  <language_code>gb</language_code>
+  <locale_space name="metratech.com/udrecurringcharge">
+    <locale_entry>
+      <Name>metratech.com/udrecurringcharge</Name>
+      <Value>Unit Dependent Recurring Charge</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/udrecurringcharge/Advance</Name>
+      <Value>Advance</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/udrecurringcharge/BillingIntervalEnd</Name>
+      <Value>Billing Interval End</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/udrecurringcharge/BillingIntervalStart</Name>
+      <Value>Billing Interval Start</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/udrecurringcharge/ProratedDailyRate</Name>
+      <Value>Prorated Daily Rate</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/udrecurringcharge/ProratedDays</Name>
+      <Value>Prorated Days</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/udrecurringcharge/ProratedIntervalEnd</Name>
+      <Value>Prorated Interval End</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/udrecurringcharge/ProratedIntervalStart</Name>
+      <Value>Prorated Interval Start</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/udrecurringcharge/ProratedOnSubscription</Name>
+      <Value>Prorated Because Of Subscription</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/udrecurringcharge/ProratedOnUnSubscription</Name>
+      <Value>Prorated Because Of Unsubscription</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/udrecurringcharge/ProrateOnSubscription</Name>
+      <Value>Prorate Because Of Subscription</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/udrecurringcharge/ProrateOnUnSubscription</Name>
+      <Value>Prorate Because Of Unsubscription</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/udrecurringcharge/RCAmount</Name>
+      <Value>Recurring Charge Amount</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/udrecurringcharge/RCIntervalEnd</Name>
+      <Value>Recurring Charge End Date</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/udrecurringcharge/RCIntervalStart</Name>
+      <Value>Recurring Charge Start Date</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/udrecurringcharge/RCIntervalSubscriptionEnd</Name>
+      <Value>Recurring Charge Subscription End Date</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/udrecurringcharge/RCIntervalSubscriptionStart</Name>
+      <Value>Recurring Charge Subscription Start Date</Value>
+    </locale_entry>
+  </locale_space>
+</mt_config>

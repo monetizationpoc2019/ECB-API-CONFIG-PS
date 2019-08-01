@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<mt_config>
+  <language_code>jp</language_code>
+  <locale_space name="pipeline/error">
+    <locale_entry>
+      <Name>pipeline/error</Name>
+      <Value>システム障害</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>pipeline/error/Code</Name>
+      <Value>コード</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>pipeline/error/ErrorMessage</Name>
+      <Value>エラー メッセージ</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>pipeline/error/FailureCompoundID</Name>
+      <Value>失敗の複合 ID</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>pipeline/error/FailureID</Name>
+      <Value>失敗 ID</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>pipeline/error/FailureServiceName</Name>
+      <Value>失敗のサービス名</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>pipeline/error/FailureTime</Name>
+      <Value>失敗の時刻</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>pipeline/error/Line</Name>
+      <Value>行</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>pipeline/error/MeteredTime</Name>
+      <Value>測定された時間</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>pipeline/error/Method</Name>
+      <Value>方式</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>pipeline/error/Module</Name>
+      <Value>モジュール</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>pipeline/error/PlugIn</Name>
+      <Value>プラグイン</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>pipeline/error/PossibleAccountID</Name>
+      <Value>可能なお客様 ID</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>pipeline/error/Sender</Name>
+      <Value>送信者</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>pipeline/error/StageName</Name>
+      <Value>ステージ名</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>pipeline/error/State</Name>
+      <Value>都道府県</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>pipeline/error/tx_batch</Name>
+      <Value>バッチ</Value>
+    </locale_entry>
+  </locale_space>
+</mt_config>

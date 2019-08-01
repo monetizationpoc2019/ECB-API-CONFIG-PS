@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<mt_config>
+  <language_code>de</language_code>
+  <locale_space name="metratech.com/SingleBucketPricing">
+    <locale_entry>
+      <Name>metratech.com/SingleBucketPricing</Name>
+      <Value>SingleBucketPricing</Value>
+    </locale_entry>
+  </locale_space>
+</mt_config>

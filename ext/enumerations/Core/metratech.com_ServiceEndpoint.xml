@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<mt_enum_config>
+  <enum_spaces>
+    <enum_space name="metratech.com/ServiceEndpoint">
+      <description>Service endpoint namespace</description>
+      <enums>
+        <enum name="Operation">
+          <description>Endpoint Operation</description>
+          <entries>
+            <entry name="Create">
+              <value>Create</value>
+            </entry>
+            <entry name="CreateAndConnect">
+              <value>CreateAndConnect</value>
+            </entry>
+            <entry name="Connect">
+              <value>Connect</value>
+            </entry>
+            <entry name="Disconnect">
+              <value>Disconnect</value>
+            </entry>
+            <entry name="DisconnectAndEnd">
+              <value>DisconnectAndEnd</value>
+            </entry>
+            <entry name="Move">
+              <value>Move</value>
+            </entry>
+            <entry name="AddIDMapping">
+              <value>AddIDMapping</value>
+            </entry>
+            <entry name="UpdateIDMapping">
+              <value>UpdateIDMapping</value>
+            </entry>
+            <entry name="RemoveIDMapping">
+              <value>RemoveIDMapping</value>
+            </entry>
+            <entry name="UpdateEffectiveDate">
+              <value>UpdateEffectiveDate</value>
+            </entry>
+	    <entry name="UpdateExtendedProperties">
+	      <value>UpdateExtendedProperties</value>
+	    </entry>
+          </entries>
+        </enum>
+      </enums>
+    </enum_space>
+  </enum_spaces>
+</mt_enum_config>

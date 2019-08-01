@@ -1,0 +1,49 @@
+ecb-keystore: /ecb/ecbkeystore.jks
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: "${ecb-eureka-host:https://localhost:8888/eureka/}"
+    
+spring:
+  datasource:
+    username: ${ecb-db-username:sa}
+    password: ${ecb-db-password:MetraTech1}
+    dataSourceProperties:
+      serverName: ${ecb-db-servername:saltelematics.metratech.com}
+
+  cloud:
+    stream:
+      kafka:
+        binder:
+   #       zkNodes: "192.168.50.4,${ZK_NODES}"
+   #       brokers: "192.168.50.4:9092,kafka:9092,${HOST_IP_ADDRESS}:9092"
+      
+logging.level.com.ericsson: ERROR
+logging.level.com.ericsson.ecb: INFO
+logging.level.org.springframework: INFO
+logging.level.org.springframework.beans: ERROR
+logging.level.org.springframework.web.servlet.mvc.method.annotation: ERROR
+logging.level.org.springframework.context.annotation: ERROR
+logging.level.org.springframework.cloud.config.server.environment: ERROR
+logging.level.org.eclipse.jetty: INFO
+logging.level.org.eclipse.jetty.util: INFO
+
+ecb:
+  auth:
+    hash: 
+      keys:
+        1095ffa1-8cfb-46cc-b30e-2d5d32c0e848: HhSd42p5Fg2TCMAhMKj9Aa1wSOHxfGpX3ZCEInlvQ/4=
+
+  log:
+    stash:
+      profile: develop
+      destination: ${logstash-server-name:arc-tp-poc04.metratech.com:5045}
+      appender-1: STDOUT-APPENDER
+      appender-2: ""
+
+
+hystrix:
+  stream:
+    queue:
+      enabled: false

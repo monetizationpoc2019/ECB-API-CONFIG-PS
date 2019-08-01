@@ -1,0 +1,200 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xmlconfig>
+
+  <mtsysconfigdata>
+    <effective_date ptype="DATETIME">1998-11-19T00:00:00Z</effective_date>
+    <timeout ptype="INTEGER">30</timeout>
+    <configfiletype>CONFIG_DATA</configfiletype>
+  </mtsysconfigdata>
+
+  <mtconfigdata>
+    <version ptype="INTEGER">1</version>
+
+    <processor>
+      <name>ARExport</name>
+      <progid>MetraPipeline.ComPlusPlugin</progid>
+      <description>
+        Export account properties to AR for billable subscriber or independent accounts.
+      </description>
+
+      <condition>
+      
+       CREATE PROCEDURE condition
+                                          @_ExecutePlugin BOOLEAN OUTPUT
+                                          @Billable BOOLEAN
+                                          @AccountType VARCHAR(200)
+                                          @ContactType ENUM -- $ICE:('metratech.com/accountcreation','ContactType')$
+                AS
+                  SET @_ExecutePlugin = ((@Billable)
+                                    AND ((upper(@AccountType) &lt;&gt; 'SYSTEMACCOUNT'))
+                                    AND (@ContactType = #metratech.com/accountcreation/ContactType/Bill-To#));
+
+                  -- IF @Billable IS NULL
+                  --   PRINT 'ARExport: Billable [NULL] AccountType [' + CAST(@AccountType AS VARCHAR) + '] ContactType [' + CAST(@ContactType AS VARCHAR) + '] _ExecutePlugin [' + CAST(@_ExecutePlugin AS VARCHAR) + ']';
+                  -- ELSE
+                  --   PRINT 'ARExport: Billable [' + CAST(@Billable AS VARCHAR) + '] AccountType [' + CAST(@AccountType AS VARCHAR) + '] ContactType [' + CAST(@ContactType AS VARCHAR) + '] _ExecutePlugin [' + CAST(@_ExecutePlugin AS VARCHAR) + ']';
+      
+      </condition>
+
+      <configdata>
+        <ExecutantProgid>MetraTech.ARPropagationWriter</ExecutantProgid>
+        <ExecutantConfigdata>
+          <Method>CreateOrUpdateAccounts</Method>
+          <ARDocument>CreateOrUpdateAccount.xml</ARDocument>
+          <LanguageCode />
+          <Properties>
+            <Property>
+              <PropertyName>username</PropertyName>
+              <NodeName>UserName</NodeName>
+              <Type>string</Type>
+            </Property>
+            <Property>
+              <PropertyName>extaccountid</PropertyName>
+              <NodeName>ExtAccountID</NodeName>
+              <Type>string</Type>
+            </Property>
+            <Property>
+              <PropertyName>accountname</PropertyName>
+              <NodeName>AccountName</NodeName>
+              <Type>string</Type>
+            </Property>
+            <Property>
+              <PropertyName>contactname</PropertyName>
+              <NodeName>ContactName</NodeName>
+              <Type>string</Type>
+            </Property>
+            <Property>
+              <PropertyName>address1</PropertyName>
+              <NodeName>Address1</NodeName>
+              <Type>string</Type>
+            </Property>
+            <Property>
+              <PropertyName>address2</PropertyName>
+              <NodeName>Address2</NodeName>
+              <Type>string</Type>
+            </Property>
+            <Property>
+              <PropertyName>address3</PropertyName>
+              <NodeName>Address3</NodeName>
+              <Type>string</Type>
+            </Property>
+            <Property>
+              <PropertyName>city</PropertyName>
+              <NodeName>City</NodeName>
+              <Type>string</Type>
+            </Property>
+            <Property>
+              <PropertyName>state</PropertyName>
+              <NodeName>State</NodeName>
+              <Type>string</Type>
+            </Property>
+            <Property>
+              <PropertyName>zip</PropertyName>
+              <NodeName>Zip</NodeName>
+              <Type>string</Type>
+            </Property>
+            <Property>
+              <PropertyName>country</PropertyName>
+              <NodeName>Country</NodeName>
+              <Type>enum</Type>
+              <LocalizeValue ptype="BOOLEAN">false</LocalizeValue>
+            </Property>
+            <Property>
+              <PropertyName>phonenumber</PropertyName>
+              <NodeName>PhoneNumber</NodeName>
+              <Type>string</Type>
+            </Property>
+            <Property>
+              <PropertyName>faxnumber</PropertyName>
+              <NodeName>FaxNumber</NodeName>
+              <Type>string</Type>
+            </Property>
+            <Property>
+              <PropertyName>email</PropertyName>
+              <NodeName>EMail</NodeName>
+              <Type>string</Type>
+            </Property>
+            <Property>
+              <PropertyName>currency</PropertyName>
+              <NodeName>Currency</NodeName>
+              <Type>string</Type>
+            </Property>
+             <Property>
+              <PropertyName>payer</PropertyName>
+              <NodeName>Payer</NodeName>
+              <Type>string</Type>
+            </Property>
+             <Property>
+              <PropertyName>ancestoraccountid</PropertyName>
+              <NodeName>AncestorAccountID</NodeName>
+              <Type>string</Type>
+            </Property>
+            <Property>
+              <PropertyName>shiptocontactname</PropertyName>
+              <NodeName>ShipToContactName</NodeName>
+              <Type>string</Type>
+            </Property>
+            <Property>
+              <PropertyName>shiptoaddress1</PropertyName>
+              <NodeName>ShipToAddress1</NodeName>
+              <Type>string</Type>
+            </Property>
+            <Property>
+              <PropertyName>shiptoaddress2</PropertyName>
+              <NodeName>ShipToAddress2</NodeName>
+              <Type>string</Type>
+            </Property>
+            <Property>
+              <PropertyName>shiptoaddress3</PropertyName>
+              <NodeName>ShipToAddress3</NodeName>
+              <Type>string</Type>
+            </Property>
+            <Property>
+              <PropertyName>shiptocity</PropertyName>
+              <NodeName>ShipToCity</NodeName>
+              <Type>string</Type>
+            </Property>
+            <Property>
+              <PropertyName>shiptostate</PropertyName>
+              <NodeName>ShipToState</NodeName>
+              <Type>string</Type>
+            </Property>
+            <Property>
+              <PropertyName>shiptozip</PropertyName>
+              <NodeName>ShipToZip</NodeName>
+              <Type>string</Type>
+            </Property>
+            <Property>
+              <PropertyName>shiptocountry</PropertyName>
+              <NodeName>ShipToCountry</NodeName>
+              <Type>enum</Type>
+              <LocalizeValue ptype="BOOLEAN">false</LocalizeValue>
+            </Property>
+            <Property>
+              <PropertyName>shiptophonenumber</PropertyName>
+              <NodeName>ShipToPhoneNumber</NodeName>
+              <Type>string</Type>
+            </Property>
+            <Property>
+              <PropertyName>shiptofaxnumber</PropertyName>
+              <NodeName>ShipToFaxNumber</NodeName>
+              <Type>string</Type>
+            </Property>
+<!--
+            <Property>
+              <PropertyName>TerritoryID</PropertyName>
+              <NodeName>TerritoryID</NodeName>
+              <Type>string</Type>
+            </Property>
+            <Property>
+              <PropertyName>SalesPersonID</PropertyName>
+              <NodeName>SalesPersonID</NodeName>
+              <Type>string</Type>
+            </Property>
+-->
+          </Properties>
+        </ExecutantConfigdata>
+      </configdata>
+    </processor>
+  </mtconfigdata>
+</xmlconfig>

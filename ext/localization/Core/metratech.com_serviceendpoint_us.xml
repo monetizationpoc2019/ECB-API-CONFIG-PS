@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<mt_config>
+  <language_code>us</language_code>
+  <locale_space name="metratech.com/ServiceEndpoint">
+    <locale_entry>
+      <Name>metratech.com/ServiceEndpoint/Operation/AddIDMapping</Name>
+      <Value>AddIDMapping</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ServiceEndpoint/Operation/Connect</Name>
+      <Value>Connect</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ServiceEndpoint/Operation/Create</Name>
+      <Value>Create</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ServiceEndpoint/Operation/CreateAndConnect</Name>
+      <Value>CreateAndConnect</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ServiceEndpoint/Operation/Disconnect</Name>
+      <Value>Disconnect</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ServiceEndpoint/Operation/DisconnectAndEnd</Name>
+      <Value>DisconnectAndEnd</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ServiceEndpoint/Operation/Move</Name>
+      <Value>Operation/Move</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ServiceEndpoint/Operation/RemoveIDMapping</Name>
+      <Value>RemoveIDMapping</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ServiceEndpoint/Operation/UpdateEffectiveDate</Name>
+      <Value>UpdateEffectiveDate</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ServiceEndpoint/Operation/UpdateExtendedProperties</Name>
+      <Value>UpdateExtendedProperties</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ServiceEndpoint/Operation/UpdateIDMapping</Name>
+      <Value>UpdateIDMapping</Value>
+    </locale_entry>
+  </locale_space>
+</mt_config>

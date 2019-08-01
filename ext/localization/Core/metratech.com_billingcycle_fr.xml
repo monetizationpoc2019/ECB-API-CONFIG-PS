@@ -1,0 +1,102 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<mt_config>
+  <language_code>fr</language_code>
+  <locale_space name="metratech.com/billingcycle">
+    <locale_entry>
+      <Name>metratech.com/billingcycle/Bi-weekly/label/Bi-week1</Name>
+      <Value>Toutes les deux semaines 1</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/billingcycle/Bi-weekly/label/Bi-week10</Name>
+      <Value>Toutes les deux semaines 10</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/billingcycle/Bi-weekly/label/Bi-week11</Name>
+      <Value>Toutes les deux semaines 11</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/billingcycle/Bi-weekly/label/Bi-week12</Name>
+      <Value>Toutes les deux semaines 12</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/billingcycle/Bi-weekly/label/Bi-week13</Name>
+      <Value>Toutes les deux semaines 13</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/billingcycle/Bi-weekly/label/Bi-week14</Name>
+      <Value>Toutes les deux semaines 14</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/billingcycle/Bi-weekly/label/Bi-week2</Name>
+      <Value>Toutes les deux semaines 2</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/billingcycle/Bi-weekly/label/Bi-week3</Name>
+      <Value>Toutes les deux semaines 3</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/billingcycle/Bi-weekly/label/Bi-week4</Name>
+      <Value>Toutes les deux semaines 4</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/billingcycle/Bi-weekly/label/Bi-week5</Name>
+      <Value>Toutes les deux semaines 5</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/billingcycle/Bi-weekly/label/Bi-week6</Name>
+      <Value>Toutes les deux semaines 6</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/billingcycle/Bi-weekly/label/Bi-week7</Name>
+      <Value>Toutes les deux semaines 7</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/billingcycle/Bi-weekly/label/Bi-week8</Name>
+      <Value>Toutes les deux semaines 8</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/billingcycle/Bi-weekly/label/Bi-week9</Name>
+      <Value>Toutes les deux semaines 9</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/billingcycle/UsageCycleType/Annually</Name>
+      <Value>Tous les ans</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/billingcycle/UsageCycleType/Bi-weekly</Name>
+      <Value>Toutes les deux semaines</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/billingcycle/UsageCycleType/Daily</Name>
+      <Value>Tous les jours</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/billingcycle/UsageCycleType/Monthly</Name>
+      <Value>Tous les mois</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/billingcycle/UsageCycleType/On-demand</Name>
+      <Value>A la demande</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/billingcycle/UsageCycleType/Quarterly</Name>
+      <Value>Trimestriel</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/billingcycle/UsageCycleType/SemiAnnually</Name>
+      <Value>Deux fois par an</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/billingcycle/UsageCycleType/Semi-Annually</Name>
+      <Value>Deux fois par an</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/billingcycle/UsageCycleType/Semi-monthly</Name>
+      <Value>Deux fois par mois</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/billingcycle/UsageCycleType/Weekly</Name>
+      <Value>Toutes les semaines</Value>
+    </locale_entry>
+  </locale_space>
+</mt_config>

@@ -1,0 +1,425 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xmlconfig>
+<version ptype="integer">1</version>
+<billingCycles>
+
+  <description>
+     This file configures the available billing cycles and their
+     options for use in MetraCare/MetraNet. To remove a billing cycle from 
+     the MetraCare/MetraNet dropdown, one would remove the corresponding
+     billingCycle block from this file. Each billingCycle block
+     must have a cycleType property. This property's type is enum
+     and had the following possible values: "Daily",
+     "Weekly", "Bi-weekly", "Monthly", "Semi-monthly", "Quarterly", "Semi-annually",
+     and "Annually". Which properties are requried for a billingCycle
+     block depend on the cycleType specified.
+  </description>
+
+
+   <billingCycle>
+      <cycleType ptype="enum" enumspace="metratech.com/billingcycle" enumtype="UsageCycleType">Daily</cycleType>
+
+      <description>
+         The daily cycle bills at the end of every day. It requires no
+         additional properties.
+      </description>
+   </billingCycle>
+
+
+   <billingCycle>
+      <cycleType ptype="enum" enumspace="metratech.com/billingcycle" enumtype="UsageCycleType">Weekly</cycleType>
+
+      <description>
+         The weekly cycle bills once every week. A closingPoints block is
+	 required with at least one closingPoint block within that.
+	 Within a closingPoint block, a namedDay property is required.
+	 Its type is enum and can take on the following values: "Monday",
+	 "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday",
+	 "Sunday". To allow for all possibilities, 7 closingPoint blocks
+	 are needed, each with a different day of the week.
+      </description>
+
+      <closingPoints>
+         <closingPoint>
+            <namedDay ptype="enum" enumspace="global" enumtype="DayOfTheWeek">Monday</namedDay>
+         </closingPoint>
+         <closingPoint>
+            <namedDay ptype="enum" enumspace="global" enumtype="DayOfTheWeek">Tuesday</namedDay>
+         </closingPoint>
+         <closingPoint>
+            <namedDay ptype="enum" enumspace="global" enumtype="DayOfTheWeek">Wednesday</namedDay>
+         </closingPoint>
+         <closingPoint>
+            <namedDay ptype="enum" enumspace="global" enumtype="DayOfTheWeek">Thursday</namedDay>
+         </closingPoint>
+         <closingPoint>
+            <namedDay ptype="enum" enumspace="global" enumtype="DayOfTheWeek">Friday</namedDay>
+         </closingPoint>
+         <closingPoint>
+            <namedDay ptype="enum" enumspace="global" enumtype="DayOfTheWeek">Saturday</namedDay>
+         </closingPoint>
+         <closingPoint>
+            <namedDay ptype="enum" enumspace="global" enumtype="DayOfTheWeek">Sunday</namedDay>
+         </closingPoint>
+      </closingPoints>
+   </billingCycle>
+
+
+   <billingCycle>
+      <cycleType ptype="enum" enumspace="metratech.com/billingcycle" enumtype="UsageCycleType">Bi-weekly</cycleType>
+
+      <description>
+         The bi-weekly cycle bills once every two weeks (14 days).
+	 A startingPoints block is required with at least one
+	 startingPoint block within that. Within a startingPoint block,
+	 a month, day, year, and label property is required. The month
+	 property's type is enum and can take on values such as "January",
+	 "March", "3", "12", etc... The day property is an integer and
+	 can range from 1 - 31. The day must exist for the month specified.
+	 A the year property takes a value of the form "yyyy", so for example, 
+	 2000 would be a valid value. A bi-weekly cycle is specified by
+	 giving the starting date on which the 14-day intervals will begin.
+      </description>
+
+      <startingPoints>
+         <startingPoint>
+            <month ptype="enum" enumspace="global" enumtype="MonthOfTheYear">January</month>
+            <day ptype="INTEGER">1</day>
+	    <year ptype="INTEGER">2000</year>
+	    <label>Bi-week1</label>
+         </startingPoint>
+         <startingPoint>
+            <month ptype="enum" enumspace="global" enumtype="MonthOfTheYear">January</month>
+            <day ptype="INTEGER">2</day>
+	    <year ptype="INTEGER">2000</year>
+	    <label>Bi-week2</label>
+         </startingPoint>
+         <startingPoint>
+            <month ptype="enum" enumspace="global" enumtype="MonthOfTheYear">January</month>
+            <day ptype="INTEGER">3</day>
+	    <year ptype="INTEGER">2000</year>
+	    <label>Bi-week3</label>
+         </startingPoint>
+         <startingPoint>
+            <month ptype="enum" enumspace="global" enumtype="MonthOfTheYear">January</month>
+            <day ptype="INTEGER">4</day>
+	    <year ptype="INTEGER">2000</year>
+	    <label>Bi-week4</label>
+         </startingPoint>
+         <startingPoint>
+            <month ptype="enum" enumspace="global" enumtype="MonthOfTheYear">January</month>
+            <day ptype="INTEGER">5</day>
+	    <year ptype="INTEGER">2000</year>
+	    <label>Bi-week5</label>
+         </startingPoint>
+         <startingPoint>
+            <month ptype="enum" enumspace="global" enumtype="MonthOfTheYear">January</month>
+            <day ptype="INTEGER">6</day>
+	    <year ptype="INTEGER">2000</year>
+	    <label>Bi-week6</label>
+         </startingPoint>
+         <startingPoint>
+            <month ptype="enum" enumspace="global" enumtype="MonthOfTheYear">January</month>
+            <day ptype="INTEGER">7</day>
+	    <year ptype="INTEGER">2000</year>
+	    <label>Bi-week7</label>
+         </startingPoint>
+         <startingPoint>
+            <month ptype="enum" enumspace="global" enumtype="MonthOfTheYear">January</month>
+            <day ptype="INTEGER">8</day>
+	    <year ptype="INTEGER">2000</year>
+	    <label>Bi-week8</label>
+         </startingPoint>
+         <startingPoint>
+            <month ptype="enum" enumspace="global" enumtype="MonthOfTheYear">January</month>
+            <day ptype="INTEGER">9</day>
+	    <year ptype="INTEGER">2000</year>
+	    <label>Bi-week9</label>
+         </startingPoint>
+         <startingPoint>
+            <month ptype="enum" enumspace="global" enumtype="MonthOfTheYear">January</month>
+            <day ptype="INTEGER">10</day>
+	    <year ptype="INTEGER">2000</year>
+	    <label>Bi-week10</label>
+         </startingPoint>
+         <startingPoint>
+            <month ptype="enum" enumspace="global" enumtype="MonthOfTheYear">January</month>
+            <day ptype="INTEGER">11</day>
+	    <year ptype="INTEGER">2000</year>
+	    <label>Bi-week11</label>
+         </startingPoint>
+         <startingPoint>
+            <month ptype="enum" enumspace="global" enumtype="MonthOfTheYear">January</month>
+            <day ptype="INTEGER">12</day>
+	    <year ptype="INTEGER">2000</year>
+	    <label>Bi-week12</label>
+         </startingPoint>
+         <startingPoint>
+            <month ptype="enum" enumspace="global" enumtype="MonthOfTheYear">January</month>
+            <day ptype="INTEGER">13</day>
+	    <year ptype="INTEGER">2000</year>
+	    <label>Bi-week13</label>
+         </startingPoint>
+         <startingPoint>
+            <month ptype="enum" enumspace="global" enumtype="MonthOfTheYear">January</month>
+            <day ptype="INTEGER">14</day>
+	    <year ptype="INTEGER">2000</year>
+	    <label>Bi-week14</label>
+         </startingPoint>
+      </startingPoints>
+   </billingCycle>
+
+
+   <billingCycle>
+      <cycleType ptype="enum" enumspace="metratech.com/billingcycle" enumtype="UsageCycleType">Monthly</cycleType>
+
+      <description>
+         Monthly bills once every month. A closingPoints block is
+	 required with at least one closingPoint block within that.
+	 Within a closingPoint block, a day property is required.
+         The day property is an integer and can range from 0 - 31.
+	 If the value is &gt;= 28 then it is treated as an End Of Month
+	 (EOM) condition. If the value of day is 0, then all choices
+	 will be enabled in MetraCare/MetraNet.
+      </description>
+
+      <closingPoints>  
+         <closingPoint>    
+            <day ptype="INTEGER">0</day>
+         </closingPoint>
+      </closingPoints>
+   </billingCycle>
+
+
+   <billingCycle>
+      <cycleType ptype="enum" enumspace="metratech.com/billingcycle" enumtype="UsageCycleType">Semi-monthly</cycleType>
+
+      <description>
+         Semi-monthly bills twice every month. A closingPoints block is
+	 required with at least one closingPoint block within that.
+	 Within a closingPoint block, two day properties are required.
+         Each day property is an integer and can range from 0 - 31.
+	 If the value is &gt;= 28 then it is treated as an End Of Month
+	 (EOM) condition. If the value of a property is 0, then all
+	 choices will be enabled in MetraCare/MetraNet. The first day property must
+	 be less than the second day property. The intervals between
+	 the closing days do not need to be equal.
+      </description>
+
+      <closingPoints>
+         <closingPoint>
+            <day ptype="INTEGER">0</day>
+            <day ptype="INTEGER">0</day>
+	 </closingPoint>
+      </closingPoints> 
+   </billingCycle>
+
+
+   <billingCycle>
+      <cycleType ptype="enum" enumspace="metratech.com/billingcycle" enumtype="UsageCycleType">Quarterly</cycleType>
+
+      <description>
+         The quarterly cycle bills four times a year (once every 3 months).
+	 A startingPoints block is required with at least one
+	 startingPoint block within that. Within a startingPoint block,
+	 a month property and a day property is required. The month
+	 property's type is enum and can take on values such as "January",
+	 "March", "3", "12", etc... The day property is an integer and
+	 can range from 0 - 31. The day must exist for the month specified.
+	 If the day is 0, then all choices for the day of the given month
+	 will be enabled in MetraCare/MetraNet. We specifiy a quaterly cycle by
+	 giving the starting date on which the 3 month intervals begin.
+      </description>
+
+      <startingPoints>
+         <startingPoint>
+            <month ptype="enum" enumspace="global" enumtype="MonthOfTheYear">January</month>
+            <day ptype="INTEGER">0</day>
+         </startingPoint>
+         <startingPoint>
+            <month ptype="enum" enumspace="global" enumtype="MonthOfTheYear">February</month>
+            <day ptype="INTEGER">0</day>
+         </startingPoint>
+         <startingPoint>
+            <month ptype="enum" enumspace="global" enumtype="MonthOfTheYear">March</month>
+            <day ptype="INTEGER">0</day>
+         </startingPoint>
+         <startingPoint>
+            <month ptype="enum" enumspace="global" enumtype="MonthOfTheYear">April</month>
+            <day ptype="INTEGER">0</day>
+         </startingPoint>
+         <startingPoint>
+            <month ptype="enum" enumspace="global" enumtype="MonthOfTheYear">May</month>
+            <day ptype="INTEGER">0</day>
+         </startingPoint>
+         <startingPoint>
+            <month ptype="enum" enumspace="global" enumtype="MonthOfTheYear">June</month>
+            <day ptype="INTEGER">0</day>
+         </startingPoint>
+         <startingPoint>
+            <month ptype="enum" enumspace="global" enumtype="MonthOfTheYear">July</month>
+            <day ptype="INTEGER">0</day>
+         </startingPoint>
+         <startingPoint>
+            <month ptype="enum" enumspace="global" enumtype="MonthOfTheYear">August</month>
+            <day ptype="INTEGER">0</day>
+         </startingPoint>
+         <startingPoint>
+            <month ptype="enum" enumspace="global" enumtype="MonthOfTheYear">September</month>
+            <day ptype="INTEGER">0</day>
+         </startingPoint>
+         <startingPoint>
+            <month ptype="enum" enumspace="global" enumtype="MonthOfTheYear">October</month>
+            <day ptype="INTEGER">0</day>
+         </startingPoint>
+         <startingPoint>
+            <month ptype="enum" enumspace="global" enumtype="MonthOfTheYear">November</month>
+            <day ptype="INTEGER">0</day>
+         </startingPoint>
+         <startingPoint>
+            <month ptype="enum" enumspace="global" enumtype="MonthOfTheYear">December</month>
+            <day ptype="INTEGER">0</day>
+         </startingPoint>
+      </startingPoints>	 
+   </billingCycle>
+  
+  <billingCycle>
+    <cycleType ptype="enum" enumspace="metratech.com/billingcycle" enumtype="UsageCycleType">Semi-Annually</cycleType>
+
+    <description>
+      The semi-annual cycle bills twice a year, with a starting point 
+      at any day during the year. A startingPoints block
+      is required with at least one startingPoint block within that.
+      Within a startingPoint block, a month property and a day
+      property is required. The month property's type is enum and can
+      take on values such as "January", "March", "3", "12", etc...
+      The day property is an integer and can range from 0 - 31. The day
+      must exist for the month specified. If the day is 0, then all
+      choices for the day of the given month will be enabled in
+      MetraCare/MetraNet. We specifiy a semi-annual cycle by giving the starting date on
+      which the year begins.
+    </description>
+
+    <startingPoints>
+      <startingPoint>
+        <month ptype="enum" enumspace="global" enumtype="MonthOfTheYear">January</month>
+        <day ptype="INTEGER">0</day>
+      </startingPoint>
+      <startingPoint>
+        <month ptype="enum" enumspace="global" enumtype="MonthOfTheYear">February</month>
+        <day ptype="INTEGER">0</day>
+      </startingPoint>
+      <startingPoint>
+        <month ptype="enum" enumspace="global" enumtype="MonthOfTheYear">March</month>
+        <day ptype="INTEGER">0</day>
+      </startingPoint>
+      <startingPoint>
+        <month ptype="enum" enumspace="global" enumtype="MonthOfTheYear">April</month>
+        <day ptype="INTEGER">0</day>
+      </startingPoint>
+      <startingPoint>
+        <month ptype="enum" enumspace="global" enumtype="MonthOfTheYear">May</month>
+        <day ptype="INTEGER">0</day>
+      </startingPoint>
+      <startingPoint>
+        <month ptype="enum" enumspace="global" enumtype="MonthOfTheYear">June</month>
+        <day ptype="INTEGER">0</day>
+      </startingPoint>
+      <startingPoint>
+        <month ptype="enum" enumspace="global" enumtype="MonthOfTheYear">July</month>
+        <day ptype="INTEGER">0</day>
+      </startingPoint>
+      <startingPoint>
+        <month ptype="enum" enumspace="global" enumtype="MonthOfTheYear">August</month>
+        <day ptype="INTEGER">0</day>
+      </startingPoint>
+      <startingPoint>
+        <month ptype="enum" enumspace="global" enumtype="MonthOfTheYear">September</month>
+        <day ptype="INTEGER">0</day>
+      </startingPoint>
+      <startingPoint>
+        <month ptype="enum" enumspace="global" enumtype="MonthOfTheYear">October</month>
+        <day ptype="INTEGER">0</day>
+      </startingPoint>
+      <startingPoint>
+        <month ptype="enum" enumspace="global" enumtype="MonthOfTheYear">November</month>
+        <day ptype="INTEGER">0</day>
+      </startingPoint>
+      <startingPoint>
+        <month ptype="enum" enumspace="global" enumtype="MonthOfTheYear">December</month>
+        <day ptype="INTEGER">0</day>
+      </startingPoint>
+    </startingPoints>
+  </billingCycle>
+
+
+  <billingCycle>
+      <cycleType ptype="enum" enumspace="metratech.com/billingcycle" enumtype="UsageCycleType">Annually</cycleType>
+
+      <description>
+         The annual cycle bills once a year. A startingPoints block 
+	 is required with at least one startingPoint block within that.
+	 Within a startingPoint block, a month property and a day
+	 property is required. The month property's type is enum and can
+	 take on values such as "January", "March", "3", "12", etc...
+	 The day property is an integer and can range from 0 - 31. The day
+	 must exist for the month specified. If the day is 0, then all
+	 choices for the day of the given month will be enabled in
+	 MetraCare/MetraNet. We specifiy a annual cycle by giving the starting date on
+	 which the year begins.
+      </description>
+
+      <startingPoints>
+         <startingPoint>
+            <month ptype="enum" enumspace="global" enumtype="MonthOfTheYear">January</month>
+            <day ptype="INTEGER">0</day>
+         </startingPoint>
+         <startingPoint>
+            <month ptype="enum" enumspace="global" enumtype="MonthOfTheYear">February</month>
+            <day ptype="INTEGER">0</day>
+         </startingPoint>
+         <startingPoint>
+            <month ptype="enum" enumspace="global" enumtype="MonthOfTheYear">March</month>
+            <day ptype="INTEGER">0</day>
+         </startingPoint>
+         <startingPoint>
+            <month ptype="enum" enumspace="global" enumtype="MonthOfTheYear">April</month>
+            <day ptype="INTEGER">0</day>
+         </startingPoint>
+         <startingPoint>
+            <month ptype="enum" enumspace="global" enumtype="MonthOfTheYear">May</month>
+            <day ptype="INTEGER">0</day>
+         </startingPoint>
+         <startingPoint>
+            <month ptype="enum" enumspace="global" enumtype="MonthOfTheYear">June</month>
+            <day ptype="INTEGER">0</day>
+         </startingPoint>
+         <startingPoint>
+            <month ptype="enum" enumspace="global" enumtype="MonthOfTheYear">July</month>
+            <day ptype="INTEGER">0</day>
+         </startingPoint>
+         <startingPoint>
+            <month ptype="enum" enumspace="global" enumtype="MonthOfTheYear">August</month>
+            <day ptype="INTEGER">0</day>
+         </startingPoint>
+         <startingPoint>
+            <month ptype="enum" enumspace="global" enumtype="MonthOfTheYear">September</month>
+            <day ptype="INTEGER">0</day>
+         </startingPoint>
+         <startingPoint>
+            <month ptype="enum" enumspace="global" enumtype="MonthOfTheYear">October</month>
+            <day ptype="INTEGER">0</day>
+         </startingPoint>
+         <startingPoint>
+            <month ptype="enum" enumspace="global" enumtype="MonthOfTheYear">November</month>
+            <day ptype="INTEGER">0</day>
+         </startingPoint>
+         <startingPoint>
+            <month ptype="enum" enumspace="global" enumtype="MonthOfTheYear">December</month>
+            <day ptype="INTEGER">0</day>
+         </startingPoint>
+      </startingPoints>
+   </billingCycle>
+
+</billingCycles>
+</xmlconfig>

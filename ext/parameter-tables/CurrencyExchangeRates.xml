@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<defineservice>
+    <name display_name="Currency Exchange Rates" condition_header="Conditions" action_header="Actions" type="Rates" help_url="">metratech.com/CurrencyExchangeRates</name>
+    <description>Foreign Currency Exchange Rate Parameter Table</description>
+    <ptype display_name="Source Currency" condition="Y" column_operator="=" filterable="Y">
+        <dn>SourceCurrency</dn>
+        <type EnumSpace="Global/SystemCurrencies" EnumType="SystemCurrencies">enum</type>
+        <length />
+        <required>Y</required>
+        <defaultvalue>USD</defaultvalue>
+        <description>This is the source currency</description>
+    </ptype>
+    <ptype display_name="Target Currency" condition="Y" column_operator="=" filterable="Y">
+        <dn>TargetCurrency</dn>
+        <type EnumSpace="Global/SystemCurrencies" EnumType="SystemCurrencies">enum</type>
+        <length />
+        <required>Y</required>
+        <defaultvalue>USD</defaultvalue>
+        <description>This is the target currency</description>
+    </ptype>
+    <ptype display_name="Exchange Rates" action="Y">
+        <dn>ExchangeRates</dn>
+        <type>decimal</type>
+        <length />
+        <required>Y</required>
+        <defaultvalue>1.0</defaultvalue>
+        <description>Currency Exchange Rates</description>
+    </ptype>
+</defineservice>

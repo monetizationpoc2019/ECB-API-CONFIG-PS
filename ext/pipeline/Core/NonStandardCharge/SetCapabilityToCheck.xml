@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xmlconfig>
+    <mtsysconfigdata>
+        <effective_date ptype="DATETIME">1998-11-19T00:00:00Z</effective_date>
+        <timeout ptype="INTEGER">30</timeout>
+        <configfiletype>CONFIG_DATA</configfiletype>
+    </mtsysconfigdata>
+    <mtconfigdata>
+        <version ptype="INTEGER">1</version>
+        <!-- First processor configuration -->
+        <processor>
+            <name>SetCapabilityToCheck</name>
+            <progid>MetraPipeline.MTSQLInterpreter.1</progid>
+            <description>Specifies name for the capability that Auth Check plugin will check for</description>
+            <!--
+  <autotest>
+    <file>setstarttime.xml</file>
+  </autotest>
+  -->
+            <inputs />
+            <outputs />
+            <!-- Processor specific configuration data -->
+            <configdata>
+                <Program>
+  CREATE PROCEDURE SetCapabilityName
+	@NumUnits INTEGER 
+	@AdditionalRate DECIMAL 
+	@Rate DECIMAL
+	@GuideIntervalID INTEGER
+	@_Currency VARCHAR  
+  @ReasonCode ENUM -- $ICE:('metratech.com/balanceadjustments','ReasonCode')$
+  @CapabilityName VARCHAR OUTPUT
+  @AmountToAuthorize DECIMAL OUTPUT
+  @_Amount DECIMAL OUTPUT
+  @ChargeCurrency VARCHAR OUTPUT
+	@ChargeAmount DECIMAL OUTPUT
+	@_IntervalID INTEGER OUTPUT
+AS
+	DECLARE @strReasonCode VARCHAR;
+  SET @strReasonCode = CAST(@ReasonCode AS VARCHAR);			
+  
+  SET @ChargeCurrency = @_Currency
+  SET @CapabilityName = 'Apply NonStandardCharges'
+  SET @AmountToAuthorize =  @NumUnits * @AdditionalRate * @Rate
+  
+  if @strReasonCode = 'Credit'
+      SET @AmountToAuthorize = -@AmountToAuthorize
+  
+  
+  SET @_IntervalID = @GuideIntervalID
+  SET @_Amount = @AmountToAuthorize  
+  SET @ChargeAmount = @AmountToAuthorize
+  </Program>
+            </configdata>
+        </processor>
+    </mtconfigdata>
+</xmlconfig>

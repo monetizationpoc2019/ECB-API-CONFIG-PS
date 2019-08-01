@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<mt_config>
+  <enum_spaces>
+    <enum_space name="metratech.com/addCharge">
+    <description>Additional Charge</description>
+    <enums>
+
+      <enum name="ChargeType">
+      <description>Additional Charge Type</description>
+        <entries>
+          <entry name="Other"> <!-- The Name -->
+            <value>1</value> <!-- The Id used to meter, for now they are the same -->
+          </entry>
+        </entries>
+      </enum>
+      </enums>
+    </enum_space>    
+  </enum_spaces>
+</mt_config>

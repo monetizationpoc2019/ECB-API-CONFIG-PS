@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<mt_config>
+  <language_code>es-MX</language_code>
+  <locale_space name="pipeline/error">
+    <locale_entry>
+      <Name>pipeline/error</Name>
+      <Value>Errores del sistema</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>pipeline/error/Code</Name>
+      <Value>Código</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>pipeline/error/ErrorMessage</Name>
+      <Value>Mensaje de error</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>pipeline/error/FailureCompoundID</Name>
+      <Value>Error de ID de compuesto</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>pipeline/error/FailureID</Name>
+      <Value>Error de ID</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>pipeline/error/FailureServiceName</Name>
+      <Value>Error de nombre de servicio</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>pipeline/error/FailureTime</Name>
+      <Value>Error de hora</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>pipeline/error/Line</Name>
+      <Value>Línea</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>pipeline/error/MeteredTime</Name>
+      <Value>Hora medida</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>pipeline/error/Method</Name>
+      <Value>Método</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>pipeline/error/Module</Name>
+      <Value>Módulo</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>pipeline/error/PlugIn</Name>
+      <Value>Plugin</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>pipeline/error/PossibleAccountID</Name>
+      <Value>ID de posible cuenta</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>pipeline/error/Sender</Name>
+      <Value>Remitente</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>pipeline/error/StageName</Name>
+      <Value>Nombre de etapa</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>pipeline/error/State</Name>
+      <Value>Estado</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>pipeline/error/tx_batch</Name>
+      <Value>Lote</Value>
+    </locale_entry>
+  </locale_space>
+</mt_config>

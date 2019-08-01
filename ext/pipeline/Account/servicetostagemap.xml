@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xmlconfig>
+	<direction>
+		<ServiceID ptype="ID">metratech.com/AccountCreation</ServiceID>
+		<stage>AccountCreation</stage>
+	</direction>
+	<direction>
+		<ServiceID ptype="ID">metratech.com/SystemAccountCreation</ServiceID>
+		<stage>SysAccountCreation</stage>
+	</direction>
+</xmlconfig>

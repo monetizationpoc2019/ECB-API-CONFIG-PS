@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<mt_config>
+  <language_code>us</language_code>
+  <locale_space name="metratech.com/endpointtestservice">
+    <locale_entry>
+      <Name>metratech.com/endpointtestservice</Name>
+      <Value>Endpoint Test</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/endpointtestservice/CorporateLogin</Name>
+      <Value>Corporate External ID</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/endpointtestservice/CorporateNamespace</Name>
+      <Value>Corporate External Namespace</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/endpointtestservice/DecProp1</Name>
+      <Value>Decimal Property #1</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/endpointtestservice/DecProp2</Name>
+      <Value>Decimal Property #2</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/endpointtestservice/DecProp3</Name>
+      <Value>Decimal Property #3</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/endpointtestservice/description</Name>
+      <Value>Description</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/endpointtestservice/EndpointLogin</Name>
+      <Value>Endpoint External ID</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/endpointtestservice/EndpointNamespace</Name>
+      <Value>Endpoint External Namespace</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/endpointtestservice/time</Name>
+      <Value>Time</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/endpointtestservice/units</Name>
+      <Value>Units</Value>
+    </locale_entry>
+  </locale_space>
+</mt_config>

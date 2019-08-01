@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<defineservice>
+    <name>metratech.com/MultiBucketPricing</name>
+    <description>Dummy service definition for the MultiBucketPricing priceable item.</description>
+    <ptype>
+        <dn>dummyProperty</dn>
+        <type>int32</type>
+        <length />
+        <required>N</required>
+        <defaultvalue />
+        <description>Service Definition must have a property in order for ICE sync to succeed.</description>
+    </ptype>
+</defineservice>

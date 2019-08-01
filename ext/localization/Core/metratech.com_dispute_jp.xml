@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<mt_config>
+  <language_code>jp</language_code>
+  <locale_space name="metratech.com/Dispute">
+    <locale_entry>
+      <Name>metratech.com/Dispute/DisputeStatus/Approved</Name>
+      <Value>承認済み</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/Dispute/DisputeStatus/Pending</Name>
+      <Value>保留</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/Dispute/DisputeStatus/Rejected</Name>
+      <Value>拒否済み</Value>
+    </locale_entry>
+  </locale_space>
+</mt_config>

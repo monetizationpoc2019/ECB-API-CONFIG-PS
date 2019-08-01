@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<mt_config>
+    <enum_spaces>
+        <enum_space name="metratech.com/Events">
+            <description>Events</description>
+            <enums>
+                <enum name="Status">
+                    <description>Event statuses</description>
+                    <entries>
+                        <entry name="NotYetRun">
+                            <value>NotYetRun</value>
+                        </entry>
+                        <entry name="ReadyToRun">
+                            <value>ReadyToRun</value>
+                        </entry>
+                        <entry name="Succeeded">
+                            <value>Succeeded</value>
+                        </entry>
+                        <entry name="Failed">
+                            <value>Failed</value>
+                        </entry>
+                        <entry name="SucceededWithWarning">
+                            <value>SucceededWithWarning</value>
+                        </entry>
+                    </entries>
+                </enum>
+                <enum name="Action">
+                    <description>Event Actions enum</description>
+                    <entries>
+                        <entry name="Execute">
+                            <value>Execute</value>
+                        </entry>
+                        <entry name="Reverse">
+                            <value>Reverse</value>
+                        </entry>
+                    </entries>
+                </enum>
+            </enums>
+        </enum_space>
+    </enum_spaces>
+</mt_config>

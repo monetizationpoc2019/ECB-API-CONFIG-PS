@@ -1,0 +1,140 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xmlconfig>
+<AdapterName>AnonymizeCustomerData</AdapterName>
+<AccountRetentionPeriod>18</AccountRetentionPeriod>
+<Entities>  
+  <AccountViews>
+    <AccountView>
+      <name>t_av_Contact</name>
+      <fields>
+        <field>
+          <name>c_FirstName</name>
+        </field>
+        <field>
+          <name>c_MiddleInitial</name>
+        </field>
+          <field>
+          <name>c_LastName</name>
+        </field>
+          <field>
+          <name>c_Email</name>
+        </field>
+          <field>
+          <name>c_PhoneNumber</name>
+        </field>
+          <field>
+          <name>c_Company</name>
+        </field>
+        <field>
+          <name>c_Address1</name>
+        </field> 
+        <field>
+          <name>c_Address2</name>
+        </field> 
+        <field>
+          <name>c_Address3</name>
+        </field> 
+        <field>
+          <name>c_City</name>
+        </field> 
+        <field>
+          <name>c_State</name>
+        </field> 
+        <field>
+          <name>c_Zip</name>
+        </field> 
+        <field>
+          <name>c_Country</name>
+        </field> 
+        <field>
+          <name>c_FacsimileTelephoneNumber</name>
+        </field>         
+      </fields>
+    </AccountView>
+    <AccountView>
+      <name>t_av_internal</name>
+      <fields>
+        <field>
+          <name>c_SecurityQuestionText</name>
+        </field>
+        <field>
+          <name>c_SecurityAnswer</name>
+        </field> 
+        </fields>
+    </AccountView>
+  </AccountViews>
+ 
+  <ProductViews>
+    <ProductView>
+      <name>t_pv_AccountCredit</name>
+      <fields>
+        <field>
+          <name>c_EmailAddress</name>
+        </field>              
+      </fields>
+    </ProductView>
+     <ProductView>
+      <name>t_pv_AccountCreditRequest</name>
+      <fields>
+        <field>
+          <name>c_EmailAddress</name>
+        </field>              
+      </fields>
+    </ProductView>
+    <!-- <ProductView>
+      <name>t_pv_TaxAudioConfConn</name>
+      <fields>
+        <field>
+          <name>c_UserName</name>
+        </field>
+        <field>
+          <name>c_userphonenumber</name>
+        </field>         
+      </fields>
+    </ProductView> -->
+    <!-- <ProductView>
+      <name>t_pv_audioconfconnection</name>
+      <fields>
+        <field>
+          <name>c_UserName</name>
+        </field>
+        <field>
+          <name>c_userphonenumber</name>
+        </field>         
+      </fields>
+    </ProductView> -->
+    <!-- <ProductView>
+      <name>t_pv_SMSService</name>
+      <fields>
+        <field>
+          <name>c_MobileNumber</name>
+        </field>              
+      </fields>
+    </ProductView> -->
+  </ProductViews>
+ 
+  <CustomTables>
+    <CustomTable>
+      <name>T_AR_WORKING_BATCH</name>
+      <QueryTag>__T_AR_WORKING_BATCH__</QueryTag>
+    </CustomTable>
+    <CustomTable>
+      <name>t_payment_instrument</name>
+      <QueryTag>__T_PAYMENT_INSTRUMENT__</QueryTag>
+    </CustomTable>
+     <CustomTable>
+      <name>t_ps_payment_instrument</name>
+      <QueryTag>__T_PS_PAYMENT_INSTRUMENT__</QueryTag>
+    </CustomTable>
+    <CustomTable>
+      <name>T_AR_ONE_OFF_CHARGE</name>
+      <QueryTag>__T_AR_ONE_OFF_CHARGE__</QueryTag>
+    </CustomTable>
+    <CustomTable>
+      <name>T_PS_ACH</name>
+      <QueryTag>__T_PS_ACH__</QueryTag>
+    </CustomTable>
+  </CustomTables>
+ 
+</Entities>
+</xmlconfig>

@@ -1,0 +1,167 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xmlconfig>
+  <!-- This file contains the meta-data surrounding the account states -->
+  <!-- This will be read during the Initialize method of the Account -->
+  <!-- State Manager object -->
+  <!--
+  ACTIONS         
+  These are the rules that the design team came up with, which are 
+  allowed as configurable.   
+              Rate Usage?
+              |   Generate RC?
+              |   |   Generate NRC?
+              |   |   |   Generate Disc.?
+              |   |   |   |   Apply Credits?
+              |   |   |   |   |   Can they subscribe?
+              |   |   |   |   |   |   Add Charges?  
+              |   |   |   |   |   |   |   Generate Invoices?  
+              |   |   |   |   |   |   |   |   Can Login To MetraView?
+              |   |   |   |   |   |   |   |   |   Visible in MAM
+              |   |   |   |   |   |   |   |   |   |    Self Care?
+              |   |   |   |   |   |   |   |   |   |    |    Move Account?
+  STATE       |   |   |   |   |   |   |   |   |   |    |    |
+              |   |   |   |   |   |   |   |   |   |    |    |
+  PAA         Y   Y   Y   Y   Y   Y   Y   Y   Y   Y    Y    Y
+  Active      Y   Y   Y   Y   Y   Y   Y   Y   Y   Y    Y    Y
+  Suspended   N   Y   Y   Y   Y   N   Y   N   Y   Y    N    Y
+  PFB         Y   Y   Y   Y   Y   N   Y   Y   Y   Y    Y    Y
+  Closed      Y   N   N   N   N   N   N   Y   Y   Y    N    N
+  Archived    N   N   N   N   N   N   N   N   N   N    N    N
+  -->
+  
+  <!-- 0 indicates that it will not be picked up -->
+  <archiveage ptype="INTEGER">0</archiveage>
+
+  <!-- PENDING ACTIVE APPROVAL STATE -->
+  <state>
+    <name>PA</name>
+    <longname>pendingactiveapproval</longname>
+    <progID>MTAccountStates.PendingActiveApproval</progID>
+    
+    <!-- configurable business rules -->
+    <businessrules>
+      <rule type="rateusage">Y</rule>
+      <rule type="generaterc">Y</rule>
+      <rule type="generatenrc">Y</rule>
+      <rule type="generatediscount">Y</rule>
+      <rule type="applycredit">Y</rule>
+      <rule type="subscribe">Y</rule>
+      <rule type="addcharge">Y</rule>
+      <rule type="generateinvoice">Y</rule>
+      <rule type="canlogintoMetraView">Y</rule>
+      <rule type="visibleinMAM">Y</rule>
+      <rule type="selfcare">Y</rule>
+      <rule type="MoveAccount">Y</rule>
+    </businessrules>
+  </state>
+
+  <!-- ACTIVE STATE -->
+  <state>
+    <name>AC</name>
+    <longname>active</longname>
+    <progID>MTAccountStates.Active</progID>
+    
+    <businessrules>
+      <rule type="rateusage">Y</rule>
+      <rule type="generaterc">Y</rule>
+      <rule type="generatenrc">Y</rule>
+      <rule type="generatediscount">Y</rule>
+      <rule type="applycredit">Y</rule>
+      <rule type="subscribe">Y</rule>
+      <rule type="addcharge">Y</rule>
+      <rule type="generateinvoice">Y</rule>
+      <rule type="canlogintoMetraView">Y</rule>
+      <rule type="visibleinMAM">Y</rule>
+      <rule type="selfcare">Y</rule>
+      <rule type="MoveAccount">Y</rule>
+    </businessrules>
+  </state>
+
+  <!-- SUSPENDED STATE -->
+  <state>
+    <name>SU</name>
+    <longname>suspended</longname>
+    <progID>MTAccountStates.Suspended</progID>
+    
+    <businessrules>
+      <rule type="rateusage">N</rule>
+      <rule type="generaterc">Y</rule>
+      <rule type="generatenrc">Y</rule>
+      <rule type="generatediscount">Y</rule>
+      <rule type="applycredit">Y</rule>
+      <rule type="subscribe">N</rule>
+      <rule type="addcharge">Y</rule>
+      <rule type="generateinvoice">N</rule>
+      <rule type="canlogintoMetraView">Y</rule>
+      <rule type="visibleinMAM">Y</rule>
+      <rule type="selfcare">N</rule>
+      <rule type="MoveAccount">Y</rule>
+    </businessrules>
+  </state>
+
+  <!-- PENDING FINAL BILL STATE -->
+  <state>
+    <name>PF</name>
+    <longname>pendingfinalbill</longname>
+    <progID>MTAccountStates.PendingFinalBill</progID>
+    
+    <businessrules>
+      <rule type="rateusage">Y</rule>
+      <rule type="generaterc">Y</rule>
+      <rule type="generatenrc">Y</rule>
+      <rule type="generatediscount">Y</rule>
+      <rule type="applycredit">Y</rule>
+      <rule type="subscribe">N</rule>
+      <rule type="addcharge">Y</rule>
+      <rule type="generateinvoice">Y</rule>
+      <rule type="canlogintoMetraView">Y</rule>
+      <rule type="visibleinMAM">Y</rule>
+      <rule type="selfcare">N</rule>
+      <rule type="MoveAccount">Y</rule>
+    </businessrules>
+  </state>
+
+  <!-- CLOSED STATE -->
+  <state>
+    <name>CL</name>
+    <longname>closed</longname>
+    <progID>MTAccountStates.Closed</progID>
+    
+    <businessrules>
+      <rule type="rateusage">Y</rule>
+      <rule type="generaterc">N</rule>
+      <rule type="generatenrc">N</rule>
+      <rule type="generatediscount">N</rule>
+      <rule type="applycredit">N</rule>
+      <rule type="subscribe">N</rule>
+      <rule type="addcharge">N</rule>
+      <rule type="generateinvoice">Y</rule>
+      <rule type="canlogintoMetraView">Y</rule>
+      <rule type="visibleinMAM">N</rule>
+      <rule type="selfcare">N</rule>
+      <rule type="MoveAccount">N</rule>
+    </businessrules>
+  </state>
+
+  <!-- ARCHIVED STATE -->
+  <state>
+    <name>AR</name>
+    <longname>archived</longname>
+    <progID>MTAccountStates.Archived</progID>
+    
+    <businessrules>
+      <rule type="rateusage">N</rule>
+      <rule type="generaterc">N</rule>
+      <rule type="generatenrc">N</rule>
+      <rule type="generatediscount">N</rule>
+      <rule type="applycredit">N</rule>
+      <rule type="subscribe">N</rule>
+      <rule type="addcharge">N</rule>
+      <rule type="generateinvoice">N</rule>
+      <rule type="canlogintoMetraView">N</rule>
+      <rule type="visibleinMAM">N</rule>
+      <rule type="selfcare">N</rule>
+      <rule type="MoveAccount">N</rule>
+    </businessrules>
+  </state>
+</xmlconfig>

@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xmlconfig>
+    <mtconfigdata>
+        <version ptype="INTEGER">1</version>
+        <!-- First processor configuration -->
+        <processor>
+            <name>NonStandardChargeRequestPlugin</name>
+            <progid>MetraPipeline.MTSQLInterpreter.1</progid>
+            <description>Nonstandard charge request plug-in.</description>
+            <!-- Processor specific configuration data -->
+            <configdata>
+                <Program>
+                CREATE PROCEDURE NonStandardChargeRequestPlugin
+                    @Status VARCHAR OUTPUT
+                    @AuditEventId INTEGER OUTPUT
+                    @_AccountID INTEGER 
+                    @SubscriberAccountID INTEGER OUTPUT
+                as
+                    SET @SubscriberAccountID = @_AccountID
+                    SET @Status = 'P';
+                    SET @AuditEventId = 23500;
+              
+				</Program>
+            </configdata>
+        </processor>
+    </mtconfigdata>
+</xmlconfig>

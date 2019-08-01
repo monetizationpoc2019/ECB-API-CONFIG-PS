@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xmlconfig>
+	<GenericWorkflowAdapter>
+		<AllowMultipleInstances>false</AllowMultipleInstances>
+		
+		<!-- 
+			 BillingGroupSupport is an enum that defines the adapter's billing group support.  
+			 Valid values are:
+					Interval
+					BillingGroup
+					Account
+		-->
+		<BillingGroupSupport>Account</BillingGroupSupport>
+		<HasBillingGroupConstraints>false</HasBillingGroupConstraints>
+		<BillingGroupConstraintQueryPath />
+		<BillingGroupConstraintQueryTag />
+		
+		<!--
+			ReverseMode is an enum that defines how the adapter is reversed.  
+			Valid values are:
+					NotImplemented
+					NotNeeded
+					Auto
+					Custom
+		-->
+		<ReverseMode>NotNeeded</ReverseMode>
+		<SupportsEOPEvents>true</SupportsEOPEvents>
+		<SupportsScheduledEvents>false</SupportsScheduledEvents>
+		
+		<!-- 
+			Workflows can be specified in the following ways:
+			1) Aboslute path to a XOML file
+			2) Path to XOML file relative to RMP\Extensions
+			3) An assembly-qualified type name (e.g. "<namespace>.<type>, <assembly details>")
+		-->
+		<ExecuteWorkflow>PaymentSvrClient\Config\UsageServer\Workflows\PaymentSubmissionAdapterWorkflow.xoml</ExecuteWorkflow>
+		<ReverseWorkflow />
+	</GenericWorkflowAdapter>
+
+	<PaymentSubmissionAdapter>
+		<WCFConfigFile>PaymentSvrClient\config\UsageServer\PayAuthAdapter_US.xml</WCFConfigFile>
+		<EPSEndpoint>NetTcpBinding_IMetraTech.Core.Services.ElectronicPaymentServices</EPSEndpoint>
+
+		<!--
+			Specifies the number of concurrent requests to be sent to the payment
+			server at the same time.  Maximum is 64.
+		-->
+		<MaxConcurrentRequests>40</MaxConcurrentRequests>
+
+		<!-- 
+		  Specifies the number of sessions to include in the set when metering to the
+		  metratech.com/Payment pipeline
+		-->
+		<SessionSetSize>1000</SessionSetSize>
+		
+		<!-- 
+		  Specifies the number of update statements to execute in a batch
+		  when updating successful transactions 
+		-->
+		<UpdateSetSize>100</UpdateSetSize>
+    
+    <!--Specificies max time to wait for a result from the payment server-->
+    <PaymentServerTimeout>30000</PaymentServerTimeout>
+		
+	</PaymentSubmissionAdapter>
+</xmlconfig>

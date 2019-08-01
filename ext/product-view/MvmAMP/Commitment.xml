@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<defineservice>
+    <name>metratech.com/Commitment</name>
+    <description>Commitment product view. This is the generated charge for the AMP Commitment Decision Type.</description>
+    <ptype uservisible="False" exportable="False" filterable="False">
+        <dn>TrueUpAmount</dn>
+        <type>decimal</type>
+        <length />
+        <required>Y</required>
+        <defaultvalue />
+        <description>True Up Amount</description>
+    </ptype>
+</defineservice>

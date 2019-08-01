@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<mt_config>
+  <language_code>it</language_code>
+  <locale_space name="metratech.com/nonrecurringcharge">
+    <locale_entry>
+      <Name>metratech.com/nonrecurringcharge</Name>
+      <Value>Addebito non ricorrente</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/nonrecurringcharge/NRCEventType</Name>
+      <Value>Evento</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/nonrecurringcharge/NRCIntervalEnd</Name>
+      <Value>Fine intervallo addebito non ricorrente</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/nonrecurringcharge/NRCIntervalStart</Name>
+      <Value>Inizio intervallo addebito non ricorrente</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/nonrecurringcharge/NRCIntervalSubscriptionEnd</Name>
+      <Value>Fine intervallo abbonamento con addebito non ricorrente</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/nonrecurringcharge/NRCIntervalSubscriptionStart</Name>
+      <Value>Inizio intervallo abbonamento con addebito non ricorrente</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/NRCIntervalEnd</Name>
+      <Value>Fine intervallo addebito non ricorrente</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/NRCIntervalStart</Name>
+      <Value>Inizio intervallo addebito non ricorrente</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/NRCIntervalSubscriptionEnd</Name>
+      <Value>Fine abbonamento con addebito non ricorrente</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/NRCIntervalSubscriptionStart</Name>
+      <Value>Inizio abbonamento con addebito non ricorrente</Value>
+    </locale_entry>
+  </locale_space>
+</mt_config>

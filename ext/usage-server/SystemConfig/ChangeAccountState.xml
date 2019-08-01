@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xmlconfig>
+  <tag>ChangeAccountStateStandInAdapter</tag>
+  <batchcount>0</batchcount>
+  <sessioncount>0</sessioncount>
+  <errorcount>0</errorcount>
+  <sessionsetsize>0</sessionsetsize>
+  <extradelay>0</extradelay>
+  <reversemode>Auto</reversemode>
+  <scheduled>true</scheduled>
+  <endofperiod>false</endofperiod>
+  <multiinstance>true</multiinstance>
+  <failinitialize>false</failinitialize>
+  <failexecute>false</failexecute>
+  <failreverse>false</failreverse>
+  <failshutdown>false</failshutdown>
+  <service />
+  <query />
+</xmlconfig>

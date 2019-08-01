@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<mt_config>
+  <language_code>pt-br</language_code>
+  <locale_space name="metratech.com/ps_ach_credit">
+    <locale_entry>
+      <Name>metratech.com/ps_ach_credit</Name>
+      <Value>Crédito ACH</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ps_ach_credit/bankaccounttype</Name>
+      <Value>Tipo de conta bancária</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ps_ach_credit/csrid</Name>
+      <Value>ID do CSR</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ps_ach_credit/currentstatus</Name>
+      <Value>Status atual</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ps_ach_credit/exported</Name>
+      <Value>Indicador exportado</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ps_ach_credit/lastfourdigits</Name>
+      <Value>Último quatro dígitos</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ps_ach_credit/originalaccountid</Name>
+      <Value>AccountID original</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ps_ach_credit/paymentservicetransactionid</Name>
+      <Value>ID da transação do provedor do serviço de pagamento</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ps_ach_credit/reason</Name>
+      <Value>Motivo para crédito</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ps_ach_credit/respstring</Name>
+      <Value>Descrição da resposta</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ps_ach_credit/retcode</Name>
+      <Value>Código de retorno</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ps_ach_credit/routingnumber</Name>
+      <Value>ABA/Número de identificação bancária</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ps_ach_credit/transactionid</Name>
+      <Value>ID da transação especificada pelo chamante</Value>
+    </locale_entry>
+  </locale_space>
+</mt_config>

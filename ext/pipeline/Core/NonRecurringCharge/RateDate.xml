@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xmlconfig>
+  <mtsysconfigdata>
+    <effective_date ptype="DATETIME">1998-11-19T00:00:00Z</effective_date>
+    <timeout ptype="INTEGER">30</timeout>
+    <configfiletype>CONFIG_DATA</configfiletype>
+  </mtsysconfigdata>
+
+  <mtconfigdata>
+
+ <version ptype="INTEGER">1</version>
+ <!-- First processor configuration -->
+ <processor>
+  <name>RateDate</name>
+  <description>Determine date for rate lookup.</description>
+  <progid>MetraPipeline.MTSQLInterpreter.1</progid>
+
+<!--
+  <autotest>
+    <file>mtsqlautotest.xml</file>
+  </autotest>
+-->
+
+<!--
+  <inputs>
+  </inputs>
+
+  <outputs>
+  </outputs>
+-->
+
+  <!-- Processor specific configuration data -->
+  <configdata>
+
+  <Program>
+	  
+		-- We are choosing the point of time, when we look up the rates.
+    -- For subscription charges we will use the subscription start date for rate lookup
+    -- For unsubscription charges we will use the subscription end date for rate lookup
+		CREATE PROCEDURE RateDate @NRCEventType INTEGER @NRCIntervalSubscriptionStart DATETIME @NRCIntervalSubscriptionEnd DATETIME @_timestamp DATETIME OUTPUT
+		AS
+			--PRINT 'ratedate: NRCIntervalSubscriptionStart = ' + CAST( @NRCIntervalSubscriptionStart AS VARCHAR) + ';   NRCIntervalSubscriptionEnd = ' + CAST( @NRCIntervalSubscriptionEnd AS VARCHAR);
+      
+      IF @NRCEventType = 1
+        -- Subscription Event
+        BEGIN
+          SET @_timestamp = @NRCIntervalSubscriptionStart;
+        END
+      ELSE
+        BEGIN
+          IF @NRCEventType = 2
+            -- Unsubscription Event 
+            BEGIN
+              SET @_timestamp = @NRCIntervalSubscriptionEnd;
+            END
+          ELSE
+            BEGIN
+              -- Unknown event type
+              PRINT 'ratedate: Unknown NRCEventType of [' + CAST(@NRCEventType AS VARCHAR) + '] was metered. Using Subscription Start Date for rate lookup by default.'
+              SET @_timestamp = @NRCIntervalSubscriptionStart;
+            END
+        END
+         
+			PRINT 'ratedate: nrcratelookup uses rates effective on ' + CAST( @_timestamp AS VARCHAR);
+	  
+  </Program> 
+			
+  </configdata>
+
+ </processor>
+
+  </mtconfigdata>
+</xmlconfig>

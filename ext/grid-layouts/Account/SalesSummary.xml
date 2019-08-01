@@ -1,0 +1,195 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<GridLayout xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <Name>SalesSummary</Name>
+    <Title>
+        <Value>Sales Summary</Value>
+    </Title>
+    <Exportable>false</Exportable>
+    <Height>150</Height>
+    <Width>360</Width>
+    <Expandable>false</Expandable>
+    <Buttons>None</Buttons>
+    <DataSourceURL>~/AjaxServices/Analytics.aspx?operation=salessummary</DataSourceURL>
+    <MultiSelect>false</MultiSelect>
+    <SelectionModel>Standard</SelectionModel>
+    <TotalProperty>TotalRows</TotalProperty>
+    <RootElement>Items</RootElement>
+    <PageSize>10</PageSize>
+    <Description />
+    <ExpansionCssClass />
+    <ShowFilterPanel>false</ShowFilterPanel>
+    <FilterInputWidth>220</FilterInputWidth>
+    <FilterLabelWidth>75</FilterLabelWidth>
+    <FilterColumnWidth>350</FilterColumnWidth>
+    <ShowTopBar>false</ShowTopBar>
+    <ShowBottomBar>false</ShowBottomBar>
+    <ShowGridFrame>true</ShowGridFrame>
+    <ShowGridHeader>true</ShowGridHeader>
+    <ShowColumnHeaders>true</ShowColumnHeaders>
+    <NoRecordsText>
+        <Value>No data found</Value>
+    </NoRecordsText>
+    <FilterPanelLayout>MultiColumn</FilterPanelLayout>
+    <FilterPanelCollapsed>false</FilterPanelCollapsed>
+    <EnableColumnConfig>false</EnableColumnConfig>
+    <EnableFilterConfig>false</EnableFilterConfig>
+    <Resizeable>false</Resizeable>
+    <ButtonAlignment>Center</ButtonAlignment>
+    <DefaultSortField />
+    <DefaultSortDirection>Ascending</DefaultSortDirection>
+    <DisplayCount>false</DisplayCount>
+    <SearchOnLoad>true</SearchOnLoad>
+    <CustomImplementationFilePath />
+    <CustomOverrideJavascriptIncludes />
+    <DataBinder>
+        <ServicePath>/MetraNet/AjaxServices/GetData.aspx</ServicePath>
+        <OutPropertyName />
+        <Operation>__Client</Operation>
+    </DataBinder>
+    <SubGrid />
+    <Elements>
+		<Element>
+            <RecordElement>true</RecordElement>
+            <AssemblyFilename />
+            <ObjectName />
+            <ID>id_acc</ID>
+            <DataType>Numeric</DataType>
+            <IsIdentity>true</IsIdentity>
+            <DataIndex>id_acc</DataIndex>
+            <IsColumn>false</IsColumn>
+            <HeaderText>
+               <Value>Account Id</Value>
+            </HeaderText>
+            <Formatter />
+            <Width>90</Width>
+            <Resizeable>true</Resizeable>
+            <PreventSortable>false</PreventSortable>
+            <Sortable>true</Sortable>
+            <ColumnHideable>true</ColumnHideable>
+            <DefaultColumn>true</DefaultColumn>
+            <Exportable>true</Exportable>
+            <ShowInExpander>false</ShowInExpander>
+            <Filterable>true</Filterable>
+            <FilterHideable>true</FilterHideable>
+            <DefaultFilter>true</DefaultFilter>
+            <RequiredFilter>false</RequiredFilter>
+            <FilterLabel />
+            <ElementValue>
+                <Value />
+            </ElementValue>
+            <ElementValue2>
+                <Value />
+            </ElementValue2>
+            <FilterReadOnly>false</FilterReadOnly>
+            <DropdownItems />
+        </Element>
+		<Element>
+        <RecordElement>true</RecordElement>
+        <AssemblyFilename />
+        <ObjectName />
+        <ID>ltv</ID>
+        <DataType>Numeric</DataType>
+        <IsIdentity>false</IsIdentity>
+        <DataIndex>ltv</DataIndex>
+        <IsColumn>true</IsColumn>
+        <HeaderText>
+          <Value>LTV</Value>
+        </HeaderText>
+        <Formatter />
+        <Width>120</Width>
+        <Resizeable>true</Resizeable>
+        <PreventSortable>false</PreventSortable>
+        <Sortable>true</Sortable>
+        <ColumnHideable>true</ColumnHideable>
+        <DefaultColumn>true</DefaultColumn>
+        <Exportable>true</Exportable>
+        <ShowInExpander>false</ShowInExpander>
+        <Filterable>true</Filterable>
+        <FilterHideable>true</FilterHideable>
+        <DefaultFilter>true</DefaultFilter>
+        <RequiredFilter>false</RequiredFilter>
+        <FilterLabel />
+        <ElementValue>
+          <Value />
+        </ElementValue>
+        <ElementValue2>
+          <Value />
+        </ElementValue2>
+        <FilterReadOnly>false</FilterReadOnly>
+        <DropdownItems />
+      </Element>
+	  <Element>
+        <RecordElement>true</RecordElement>
+        <AssemblyFilename />
+        <ObjectName />
+        <ID>mrr</ID>
+        <DataType>Numeric</DataType>
+        <IsIdentity>false</IsIdentity>
+        <DataIndex>mrr</DataIndex>
+        <IsColumn>true</IsColumn>
+        <HeaderText>
+          <Value>MRR</Value>
+        </HeaderText>
+        <Formatter />
+        <Width>120</Width>
+        <Resizeable>true</Resizeable>
+        <PreventSortable>false</PreventSortable>
+        <Sortable>true</Sortable>
+        <ColumnHideable>true</ColumnHideable>
+        <DefaultColumn>true</DefaultColumn>
+        <Exportable>true</Exportable>
+        <ShowInExpander>false</ShowInExpander>
+        <Filterable>true</Filterable>
+        <FilterHideable>true</FilterHideable>
+        <DefaultFilter>true</DefaultFilter>
+        <RequiredFilter>false</RequiredFilter>
+        <FilterLabel />
+        <ElementValue>
+          <Value />
+        </ElementValue>
+        <ElementValue2>
+          <Value />
+        </ElementValue2>
+        <FilterReadOnly>false</FilterReadOnly>
+        <DropdownItems />
+      </Element>
+      <Element>
+        <RecordElement>true</RecordElement>
+        <AssemblyFilename />
+        <ObjectName />
+        <ID>Currency</ID>
+        <DataType>String</DataType>
+        <IsIdentity>false</IsIdentity>
+        <DataIndex>currency</DataIndex>
+        <IsColumn>true</IsColumn>
+        <HeaderText>
+          <Value>Currency</Value>
+        </HeaderText>
+        <Formatter />
+        <Width>100</Width>
+        <Resizeable>true</Resizeable>
+        <PreventSortable>false</PreventSortable>
+        <Sortable>true</Sortable>
+        <ColumnHideable>true</ColumnHideable>
+        <DefaultColumn>true</DefaultColumn>
+        <Exportable>true</Exportable>
+        <ShowInExpander>false</ShowInExpander>
+        <Filterable>true</Filterable>
+        <FilterHideable>true</FilterHideable>
+        <DefaultFilter>true</DefaultFilter>
+        <RequiredFilter>false</RequiredFilter>
+        <FilterLabel />
+        <ElementValue>
+          <Value />
+        </ElementValue>
+        <ElementValue2>
+          <Value />
+        </ElementValue2>
+        <FilterReadOnly>false</FilterReadOnly>
+        <DropdownItems />
+      </Element>
+	</Elements>
+    <ExpanderTemplate />
+    <GridButtons />
+    <ToolbarButtons />
+</GridLayout>

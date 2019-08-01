@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xmlconfig>
+    <mtconfigdata>
+        <version ptype="INTEGER">1</version>
+        <!-- First processor configuration -->
+        <processor>
+            <name>ConvertDomainCurrency</name>
+            <progid>MetraPipeline.MTSQLInterpreter.1</progid>
+            <description>Ensures that all records have a division currency</description>
+            <condition>
+			
+            CREATE PROCEDURE Condition
+                        @_DivisionCurrency VARCHAR             
+                      @_ExecutePlugin  BOOLEAN OUTPUT
+                    as
+                      SET @_ExecutePlugin = NOT(@_DivisionCurrency is null)
+             
+			</condition>
+            <!-- Processor specific configuration data -->
+            <configdata>
+                <Program>
+		
+        CREATE PROCEDURE ConvertDomainCurrency
+                            @_AccountID INTEGER 
+	                          @_DivisionCurrency VARCHAR OUTPUT 
+                          as
+      
+        set @_DivisionCurrency = substr(Trim(@_DivisionCurrency), len(Trim(@_DivisionCurrency)) - 2, 3);
+      </Program>
+            </configdata>
+        </processor>
+    </mtconfigdata>
+</xmlconfig>

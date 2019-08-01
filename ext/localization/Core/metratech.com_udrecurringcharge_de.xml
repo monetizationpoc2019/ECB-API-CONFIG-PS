@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<mt_config>
+  <language_code>de</language_code>
+  <locale_space name="metratech.com/udrecurringcharge">
+    <locale_entry>
+      <Name>metratech.com/udrecurringcharge</Name>
+      <Value>Einheitenabhängige regelmäßige Gebühr</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/udrecurringcharge/Advance</Name>
+      <Value>Anzahlung</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/udrecurringcharge/BillingIntervalEnd</Name>
+      <Value>Ende des Rechnungszeitraums</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/udrecurringcharge/BillingIntervalStart</Name>
+      <Value>Beginn des Rechnungszeitraums</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/udrecurringcharge/ProratedDailyRate</Name>
+      <Value>Anteilig berechneter Tagesbetrag</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/udrecurringcharge/ProratedDays</Name>
+      <Value>Anteilig berechnete Tage</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/udrecurringcharge/ProratedIntervalEnd</Name>
+      <Value>Ende des anteilig berechneten Zeitraums</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/udrecurringcharge/ProratedIntervalStart</Name>
+      <Value>Beginn des anteilig berechneten Zeitraums</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/udrecurringcharge/ProratedOnSubscription</Name>
+      <Value>Anteilig berechnet wegen Nutzungsanmeldung</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/udrecurringcharge/ProratedOnUnSubscription</Name>
+      <Value>Anteilig berechnet wegen Nutzungsabmeldung</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/udrecurringcharge/ProrateOnSubscription</Name>
+      <Value>Anteilig wegen Nutzungsanmeldung</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/udrecurringcharge/ProrateOnUnSubscription</Name>
+      <Value>Anteilig wegen Nutzungsabmeldung</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/udrecurringcharge/RCAmount</Name>
+      <Value>Betrag der regelmäßigen Gebühr</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/udrecurringcharge/RCIntervalEnd</Name>
+      <Value>Enddatum für regelmäßige Gebühr</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/udrecurringcharge/RCIntervalStart</Name>
+      <Value>Anfangsdatum für regelmäßige Gebühr</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/udrecurringcharge/RCIntervalSubscriptionEnd</Name>
+      <Value>Enddatum der Nutzungsanmeldung mit regelmäßiger Gebühr</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/udrecurringcharge/RCIntervalSubscriptionStart</Name>
+      <Value>Anfangsdatum der Nutzungsanmeldung mit regelmäßiger Gebühr</Value>
+    </locale_entry>
+  </locale_space>
+</mt_config>

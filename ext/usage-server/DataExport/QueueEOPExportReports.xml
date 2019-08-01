@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xmlconfig>
+            <name>QueueEOPExportReports</name>
+            <queueeopquery>
+                        <path>..\Extensions\DataExport\Config\SqlCore\Queries\Service</path>
+                        <querytag>__INSERT_EOPQUEUEREPORTS__</querytag>
+                        <reversequerytag>__REVERSE_EOPQUEUEREPORTS__</reversequerytag>
+						<pulllisttag>__DUMMY_PULL_LIST_QUERY__</pulllisttag>
+            </queueeopquery>
+ 
+            <eopcompletequery>
+                        <path>..\Extensions\DataExport\Config\SqlCore\Queries\Service</path>
+                        <checkqueuequery>__QUEUEEOP_REPORTS_COMPLETE__</checkqueuequery>
+                        <checkexecstatustag>__QUEUEEOP_REPORTS_STATUS__</checkexecstatustag>
+            </eopcompletequery>
+ 
+            <timeout>
+                        <period>14400</period>    <!--in seconds -->
+                        <pause>10</pause>       <!-- in seconds -->
+            </timeout>
+            
+</xmlconfig>

@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<mt_config>
+    <language_code>fr</language_code>
+    <locale_space name="metratech.com/nonrecurringcharge">
+        <locale_entry>
+            <Name>metratech.com/nonrecurringcharge</Name>
+            <Value>Frais non récurrents</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/nonrecurringcharge/NRCEventType</Name>
+            <Value>Événement</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/nonrecurringcharge/NRCIntervalEnd</Name>
+            <Value>Fin de l'intervalle des frais non-récurrents</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/nonrecurringcharge/NRCIntervalStart</Name>
+            <Value>Début de l'intervalle des frais non-récurrents</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/nonrecurringcharge/NRCIntervalSubscriptionEnd</Name>
+            <Value>Fin de l'intervalle d'abonnement aux frais non-récurrents</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/nonrecurringcharge/NRCIntervalSubscriptionStart</Name>
+            <Value>Début de l'intervalle d'abonnement aux frais non-récurrents</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/NRCIntervalEnd</Name>
+            <Value>Fin de l'intervalle des frais non-récurrents</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/NRCIntervalStart</Name>
+            <Value>Début de l'intervalle des frais non-récurrents</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/NRCIntervalSubscriptionEnd</Name>
+            <Value>Fin de l'abonnement aux frais non-récurrents</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/NRCIntervalSubscriptionStart</Name>
+            <Value>Début de l'abonnement aux frais non-récurrents</Value>
+        </locale_entry>
+    </locale_space>
+</mt_config>

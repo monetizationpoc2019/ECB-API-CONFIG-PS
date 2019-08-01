@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xmlconfig>
+  <mtsysconfigdata>
+    <effective_date ptype="DATETIME">1998-11-19T00:00:00Z</effective_date>
+    <timeout ptype="INTEGER">30</timeout>
+    <configfiletype>CONFIG_DATA</configfiletype>
+  </mtsysconfigdata>
+  <mtconfigdata>
+  <version ptype="INTEGER">1</version>
+
+ <processor>
+  <name>InitProps</name>
+  <progid>MetraPipeline.MTSQLInterpreter.1</progid><description>Sets various initial properties for processing discounts. Sets  _Timestamp for account resolution based on either the billing interval end date or the group discount subscription end date. Sets the account's namespace and the account state rule.</description>
+
+  <configdata>
+  <Program>
+
+CREATE PROCEDURE InitProps
+  @GroupDiscountPass INTEGER
+  @BillingIntervalEnd DATETIME
+  @SubscriptionEnd DATETIME
+  @DiscountIntervalSubEnd DATETIME
+  @Namespace VARCHAR OUTPUT
+  @_Timestamp DATETIME OUTPUT
+  @AccountStateRule VARCHAR OUTPUT
+AS
+  -- sets the account's namespace
+  SET @Namespace = 'mt'
+
+  IF @GroupDiscountPass = 0
+    -- resolves account based on the billing interval's end
+    SET @_Timestamp = CASE WHEN @SubscriptionEnd &lt; @BillingIntervalEnd THEN @SubscriptionEnd ELSE @BillingIntervalEnd END
+  ELSE
+    -- resolves account and guides usage based on the
+    -- subscription adjusted discount interval
+    SET @_Timestamp = @DiscountIntervalSubEnd
+
+  -- this business rule will be checked in WriteProductView
+  SET @AccountStateRule = 'generatediscount'
+
+  </Program> 
+
+  </configdata>
+ </processor>
+  </mtconfigdata>
+</xmlconfig>

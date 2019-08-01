@@ -1,0 +1,1270 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<mt_config>
+    <enum_spaces>
+        <enum_space name="metratech.com/AR">
+            <description>Enums for ecbAR.</description>
+            <enums>
+                <enum name="AccountNotesPriorityType">
+                    <description>AccountNotesPriorityType
+</description>
+                    <entries>
+                        <entry name="Low">
+                            <value>0</value>
+                        </entry>
+                        <entry name="High">
+                            <value>1</value>
+                        </entry>
+                    </entries>
+                </enum>
+                <enum name="AccountPaymentStatus">
+                    <description>AccountPaymentStatus
+</description>
+                    <entries>
+                        <entry name="A">
+                            <value>0</value>
+                        </entry>
+                        <entry name="B">
+                            <value>1</value>
+                        </entry>
+                        <entry name="C">
+                            <value>2</value>
+                        </entry>
+                        <entry name="R">
+                            <value>3</value>
+                        </entry>
+                        <entry name="S">
+                            <value>4</value>
+                        </entry>
+                    </entries>
+                </enum>
+                <enum name="AccountType">
+                    <description>AccountType
+</description>
+                    <entries>
+                        <entry name="CoreSubscriber">
+                            <value>0</value>
+                        </entry>
+                        <entry name="CorporateAccount">
+                            <value>1</value>
+                        </entry>
+                        <entry name="DepartmentAccount">
+                            <value>2</value>
+                        </entry>
+                        <entry name="IndependentAccount">
+                            <value>3</value>
+                        </entry>
+                        <entry name="Root">
+                            <value>4</value>
+                        </entry>
+                        <entry name="SystemAccount">
+                            <value>5</value>
+                        </entry>
+                        <entry name="Account">
+                            <value>6</value>
+                        </entry>
+                        <entry name="BusinessUnit">
+                            <value>7</value>
+                        </entry>
+                        <entry name="Company">
+                            <value>8</value>
+                        </entry>
+                        <entry name="Division">
+                            <value>9</value>
+                        </entry>
+                        <entry name="Office">
+                            <value>10</value>
+                        </entry>
+                        <entry name="Owner">
+                            <value>11</value>
+                        </entry>
+                        <entry name="SalesRegion">
+                            <value>12</value>
+                        </entry>
+                    </entries>
+                </enum>
+                <enum name="AdjustmentCreationType">
+                    <description>AdjustmentCreationType
+</description>
+                    <entries>
+                        <entry name="Percentage">
+                            <value>0</value>
+                        </entry>
+                        <entry name="Amount">
+                            <value>1</value>
+                        </entry>
+                    </entries>
+                </enum>
+                <enum name="AdjustmentType">
+                    <description>AdjustmentType
+</description>
+                    <entries>
+                        <entry name="Conference">
+                            <value>0</value>
+                        </entry>
+                        <entry name="Miscellaneous">
+                            <value>1</value>
+                        </entry>
+                    </entries>
+                </enum>
+                <enum name="AutoPayStatusRetry">
+                    <description>AutoPayStatusRetry
+</description>
+                    <entries>
+                        <entry name="Yes">
+                            <value>0</value>
+                        </entry>
+                        <entry name=" No">
+                            <value>1</value>
+                        </entry>
+                        <entry name="Never">
+                            <value>2</value>
+                        </entry>
+                    </entries>
+                </enum>
+                <enum name="AutoPayStatusType">
+                    <description>AutoPayStatusType
+</description>
+                    <entries>
+                        <entry name="Open">
+                            <value>0</value>
+                        </entry>
+                        <entry name="Approved">
+                            <value>1</value>
+                        </entry>
+                        <entry name="Failed">
+                            <value>2</value>
+                        </entry>
+                        <entry name="Submitted">
+                            <value>3</value>
+                        </entry>
+                        <entry name="Reviewed">
+                            <value>4</value>
+                        </entry>
+                        <entry name="Offline">
+                            <value>5</value>
+                        </entry>
+                        <entry name="PaymentCreated">
+                            <value>6</value>
+                        </entry>
+                        <entry name="Executed">
+                            <value>7</value>
+                        </entry>
+                    </entries>
+                </enum>
+                <enum name="BankAccountType">
+                    <description>BankAccountType
+</description>
+                    <entries>
+                        <entry name="Checking">
+                            <value>0</value>
+                        </entry>
+                        <entry name="Savings">
+                            <value>1</value>
+                        </entry>
+                    </entries>
+                </enum>
+                <enum name="BatchStatus">
+                    <description>Status of batches</description>
+                    <entries>
+                        <entry name="Open">
+                            <value>0</value>
+                        </entry>
+                        <entry name="SoftClosed">
+                            <value>1</value>
+                        </entry>
+                        <entry name="HardClosed">
+                            <value>2</value>
+                        </entry>
+                        <entry name="Pending">
+                            <value>3</value>
+                        </entry>
+                    </entries>
+                </enum>
+                <enum name="BatchType">
+                    <description>BatchType
+</description>
+                    <entries>
+                        <entry name=" PaymentCQ">
+                            <value>0</value>
+                        </entry>
+                        <entry name="PaymentCC">
+                            <value>1</value>
+                        </entry>
+                        <entry name="PaymentDD">
+                            <value>2</value>
+                        </entry>
+                        <entry name="PaymentIC">
+                            <value>3</value>
+                        </entry>
+                        <entry name="PaymentBT">
+                            <value>4</value>
+                        </entry>
+                        <entry name="PaymentWO">
+                            <value>5</value>
+                        </entry>
+                        <entry name="PaymentTCC">
+                            <value>6</value>
+                        </entry>
+                        <entry name="PaymentLB">
+                            <value>7</value>
+                        </entry>
+                        <entry name="PaymentWH">
+                            <value>8</value>
+                        </entry>
+                        <entry name="Matching">
+                            <value>9</value>
+                        </entry>
+                        <entry name="PaymentACH">
+                            <value>10</value>
+                        </entry>
+                    </entries>
+                </enum>
+                <enum name="BillingMethod">
+                    <description>BillingMethod
+</description>
+                    <entries>
+                        <entry name="Account">
+                            <value>0</value>
+                        </entry>
+                        <entry name="Owner">
+                            <value>1</value>
+                        </entry>
+                        <entry name="Conference">
+                            <value>2</value>
+                        </entry>
+                        <entry name="OnDemand">
+                            <value>3</value>
+                        </entry>
+                    </entries>
+                </enum>
+                <enum name="ConfigTransactionType">
+                    <description>ConfigTransactionType
+</description>
+                    <entries>
+                        <entry name="Placeholder_DONOTUSE">
+                            <value>0</value>
+                        </entry>
+                        <entry name="DebitNotes">
+                            <value>1</value>
+                        </entry>
+                        <entry name="RecurringInvoices">
+                            <value>2</value>
+                        </entry>
+                        <entry name="PaymentOrCreditUNAllocation">
+                            <value>3</value>
+                        </entry>
+                        <entry name="PaymentFile">
+                            <value>4</value>
+                        </entry>
+                        <entry name="OutgoingPayment">
+                            <value>5</value>
+                        </entry>
+                        <entry name="Credits">
+                            <value>6</value>
+                        </entry>
+                        <entry name="BadDebtWriteoffs">
+                            <value>7</value>
+                        </entry>
+                        <entry name="CreditsReversal">
+                            <value>8</value>
+                        </entry>
+                        <entry name="BadDebtWriteoffsReversal">
+                            <value>9</value>
+                        </entry>
+                        <entry name="BankTransfer">
+                            <value>10</value>
+                        </entry>
+                        <entry name="LockBox ">
+                            <value>11</value>
+                        </entry>
+                        <entry name="Wholesaler">
+                            <value>12</value>
+                        </entry>
+                        <entry name="Check">
+                            <value>13</value>
+                        </entry>
+                        <entry name="EmeaBadDebt">
+                            <value>14</value>
+                        </entry>
+                        <entry name="CreditCardAmex">
+                            <value>15</value>
+                        </entry>
+                        <entry name="CreditCardVisa">
+                            <value>16</value>
+                        </entry>
+                        <entry name="CrediCardMastercard">
+                            <value>17</value>
+                        </entry>
+                        <entry name=" CreditCardDisc">
+                            <value>18</value>
+                        </entry>
+                        <entry name="CreditCardDiners">
+                            <value>19</value>
+                        </entry>
+                        <entry name="CreditCardMaestro">
+                            <value>20</value>
+                        </entry>
+                        <entry name="DirectDebit">
+                            <value>21</value>
+                        </entry>
+                        <entry name="Intercompany">
+                            <value>22</value>
+                        </entry>
+                        <entry name="SmallBalanceWriteOff">
+                            <value>23</value>
+                        </entry>
+                        <entry name="OutGoingPaymentsBT ">
+                            <value>24</value>
+                        </entry>
+                        <entry name="OutGoingPaymentsCK">
+                            <value>25</value>
+                        </entry>
+                        <entry name="OutGoingPaymentsCC">
+                            <value>26</value>
+                        </entry>
+                        <entry name="OutgoingPaymentsIC">
+                            <value>27</value>
+                        </entry>
+                        <entry name="PaymentReversal">
+                            <value>28</value>
+                        </entry>
+                        <entry name="IntercompanyTransfer">
+                            <value>29</value>
+                        </entry>
+                        <entry name="OutGoingSmallBalance">
+                            <value>30</value>
+                        </entry>
+                        <entry name="GainLoss">
+                            <value>31</value>
+                        </entry>
+                        <entry name="OutGoingUnRefundable">
+                            <value>32</value>
+                        </entry>
+                        <entry name=" OutGoingDirectDebit">
+                            <value>33</value>
+                        </entry>
+                        <entry name="Goodwill">
+                            <value>34</value>
+                        </entry>
+                        <entry name="IntercompanyWriteOff">
+                            <value>35</value>
+                        </entry>
+                        <entry name="GoodwillReversal">
+                            <value>36</value>
+                        </entry>
+                        <entry name="IntercompanyWriteOffReversal">
+                            <value>37</value>
+                        </entry>
+                        <entry name="CreditCardJCB">
+                            <value>38</value>
+                        </entry>
+                        <entry name="PaymentTCC">
+                            <value>39</value>
+                        </entry>
+                        <entry name="Placeholder1_DONOTUSE">
+                            <value>40</value>
+                        </entry>
+                        <entry name="InterCompanyTransferUK">
+                            <value>41</value>
+                        </entry>
+                        <entry name="InterCompanyTransferAustralia">
+                            <value>42</value>
+                        </entry>
+                        <entry name="InterCompanyTransferWestIP">
+                            <value>43</value>
+                        </entry>
+                        <entry name="InterCompanyTransferIndia">
+                            <value>44</value>
+                        </entry>
+                        <entry name="InterCompanyTransferJapan">
+                            <value>45</value>
+                        </entry>
+                        <entry name="InterCompanyTransferHongKong">
+                            <value>46</value>
+                        </entry>
+                        <entry name="InterCompanyTransferSingapore">
+                            <value>47</value>
+                        </entry>
+                    </entries>
+                </enum>
+                <enum name="CreditCardType">
+                    <description>CreditCardType
+</description>
+                    <entries>
+                        <entry name=" Visa">
+                            <value>0</value>
+                        </entry>
+                        <entry name="MasterCard">
+                            <value>1</value>
+                        </entry>
+                        <entry name="AmericanExpress">
+                            <value>2</value>
+                        </entry>
+                        <entry name="Discover">
+                            <value>3</value>
+                        </entry>
+                        <entry name="JCB">
+                            <value>4</value>
+                        </entry>
+                        <entry name="DinersClub">
+                            <value>5</value>
+                        </entry>
+                        <entry name="Maestro">
+                            <value>6</value>
+                        </entry>
+                    </entries>
+                </enum>
+                <enum name="CreditStatus">
+                    <description>CreditStatus
+</description>
+                    <entries>
+                        <entry name="Open">
+                            <value>0</value>
+                        </entry>
+                        <entry name="Denied">
+                            <value>1</value>
+                        </entry>
+                        <entry name="Approved">
+                            <value>2</value>
+                        </entry>
+                    </entries>
+                </enum>
+                <enum name="CreditType">
+                    <description>CreditType
+</description>
+                    <entries>
+                        <entry name="Intercompany">
+                            <value>0</value>
+                        </entry>
+                        <entry name="Goodwill">
+                            <value>1</value>
+                        </entry>
+                        <entry name="BadDebt">
+                            <value>2</value>
+                        </entry>
+                        <entry name="Normal">
+                            <value>3</value>
+                        </entry>
+                    </entries>
+                </enum>
+                <enum name="CurrencyView">
+                    <description>CurrencyView
+</description>
+                    <entries>
+                        <entry name="Invoice">
+                            <value>0</value>
+                        </entry>
+                        <entry name="Division">
+                            <value>1</value>
+                        </entry>
+                    </entries>
+                </enum>
+                <enum name="DfpStatus">
+                    <description>DfpStatus
+</description>
+                    <entries>
+                        <entry name="Open">
+                            <value>0</value>
+                        </entry>
+                        <entry name="Cancelled">
+                            <value>1</value>
+                        </entry>
+                        <entry name="Split">
+                            <value>2</value>
+                        </entry>
+                        <entry name="Closed">
+                            <value>3</value>
+                        </entry>
+                        <entry name="Dispute">
+                            <value>4</value>
+                        </entry>
+                        <entry name="Pending">
+                            <value>5</value>
+                        </entry>
+                        <entry name="Unallocated">
+                            <value>6</value>
+                        </entry>
+                    </entries>
+                </enum>
+                <enum name="DisputeCreationStatus">
+                    <description>DisputeCreationStatus
+</description>
+                    <entries>
+                        <entry name="Pending">
+                            <value>0</value>
+                        </entry>
+                        <entry name="Approved">
+                            <value>1</value>
+                        </entry>
+                    </entries>
+                </enum>
+                <enum name="DisputeExchangeRateFormat">
+                    <description>DisputeExchangeRateFormat
+</description>
+                    <entries>
+                        <entry name="CurrentDate">
+                            <value>0</value>
+                        </entry>
+                        <entry name="DivisionAmount">
+                            <value>1</value>
+                        </entry>
+                        <entry name="Override">
+                            <value>2</value>
+                        </entry>
+                    </entries>
+                </enum>
+                <enum name="DisputeSearchMode">
+                    <description>DisputeSearchMode
+</description>
+                    <entries>
+                        <entry name="AllSessions">
+                            <value>0</value>
+                        </entry>
+                        <entry name="OpenItems">
+                            <value>1</value>
+                        </entry>
+                        <entry name="Invoices">
+                            <value>2</value>
+                        </entry>
+                        <entry name="Offline">
+                            <value>3</value>
+                        </entry>
+                    </entries>
+                </enum>
+                <enum name="DisputeStatus">
+                    <description>DisputeStatus
+</description>
+                    <entries>
+                        <entry name="Open">
+                            <value>0</value>
+                        </entry>
+                        <entry name="Denied">
+                            <value>1</value>
+                        </entry>
+                        <entry name="Approved">
+                            <value>2</value>
+                        </entry>
+                        <entry name="Failed">
+                            <value>3</value>
+                        </entry>
+                    </entries>
+                </enum>
+                <enum name="DocumentType">
+                    <description>DocumentType
+</description>
+                    <entries>
+                        <entry name="Invoice">
+                            <value>0</value>
+                        </entry>
+                        <entry name="Payment">
+                            <value>1</value>
+                        </entry>
+                        <entry name="DFP">
+                            <value>2</value>
+                        </entry>
+                        <entry name="CreditNote">
+                            <value>3</value>
+                        </entry>
+                        <entry name="Refund">
+                            <value>4</value>
+                        </entry>
+                        <entry name="TransferOut">
+                            <value>5</value>
+                        </entry>
+                        <entry name="TransferIn">
+                            <value>6</value>
+                        </entry>
+                    </entries>
+                </enum>
+                <enum name="FeedType">
+                    <description>FeedType
+</description>
+                    <entries>
+                        <entry name="CashFeed">
+                            <value>0</value>
+                        </entry>
+                        <entry name="GLFeed">
+                            <value>1</value>
+                        </entry>
+                        <entry name="Both">
+                            <value>2</value>
+                        </entry>
+                    </entries>
+                </enum>
+                <enum name="FileExtension">
+                    <description>FileExtension
+</description>
+                    <entries>
+                        <entry name="XLS">
+                            <value>0</value>
+                        </entry>
+                        <entry name="CSV">
+                            <value>1</value>
+                        </entry>
+                    </entries>
+                </enum>
+                <enum name="GLBatchDetailType">
+                    <description>GLBatchDetailType
+</description>
+                    <entries>
+                        <entry name="Payment ">
+                            <value>0</value>
+                        </entry>
+                        <entry name="GainLoss">
+                            <value>1</value>
+                        </entry>
+                        <entry name="Refund">
+                            <value>2</value>
+                        </entry>
+                        <entry name="DebitNotes">
+                            <value>3</value>
+                        </entry>
+                        <entry name="CreditNotes">
+                            <value>4</value>
+                        </entry>
+                    </entries>
+                </enum>
+                <enum name="GLType">
+                    <description>GLType
+</description>
+                    <entries>
+                        <entry name="Payment">
+                            <value>0</value>
+                        </entry>
+                        <entry name="OutgoingPayment">
+                            <value>1</value>
+                        </entry>
+                        <entry name="Credit">
+                            <value>2</value>
+                        </entry>
+                        <entry name="Debit">
+                            <value>3</value>
+                        </entry>
+                        <entry name="GainLoss">
+                            <value>4</value>
+                        </entry>
+                    </entries>
+                </enum>
+                <enum name="InvoiceDelivery">
+                    <description>InvoiceDelivery
+</description>
+                    <entries>
+                        <entry name="Paper">
+                            <value>0</value>
+                        </entry>
+                        <entry name="Email">
+                            <value>1</value>
+                        </entry>
+                        <entry name="EmailLink">
+                            <value>2</value>
+                        </entry>
+                        <entry name="Mail">
+                            <value>3</value>
+                        </entry>
+                    </entries>
+                </enum>
+                <enum name="OneOffChargeStatus">
+                    <description>OneOffChargeStatus
+</description>
+                    <entries>
+                        <entry name="Open">
+                            <value>0</value>
+                        </entry>
+                        <entry name="Approved">
+                            <value>1</value>
+                        </entry>
+                        <entry name="Failed ">
+                            <value>2</value>
+                        </entry>
+                        <entry name="Reviewed ">
+                            <value>3</value>
+                        </entry>
+                        <entry name="Submitted">
+                            <value>4</value>
+                        </entry>
+                        <entry name="Executed">
+                            <value>5</value>
+                        </entry>
+                        <entry name="PaymentCreated">
+                            <value>6</value>
+                        </entry>
+                    </entries>
+                </enum>
+                <enum name="OutgoingDebitsType">
+                    <description>OutgoingDebitsType
+</description>
+                    <entries>
+                        <entry name="Refundcheck">
+                            <value>0</value>
+                        </entry>
+                        <entry name="RefundCreditCard">
+                            <value>1</value>
+                        </entry>
+                        <entry name="RefundDirectDebit">
+                            <value>2</value>
+                        </entry>
+                        <entry name="PaymentReversal">
+                            <value>3</value>
+                        </entry>
+                        <entry name="InterCompanyTransfer">
+                            <value>4</value>
+                        </entry>
+                        <entry name="CreditReversal">
+                            <value>5</value>
+                        </entry>
+                        <entry name="UnrefundableCredit">
+                            <value>6</value>
+                        </entry>
+                    </entries>
+                </enum>
+                <enum name="OutgoingPaymentType">
+                    <description>OutgoingPaymentType
+</description>
+                    <entries>
+                        <entry name="RefundCheck">
+                            <value>0</value>
+                        </entry>
+                        <entry name="RefundCreditCard">
+                            <value>1</value>
+                        </entry>
+                        <entry name="RefundDirectDebit">
+                            <value>2</value>
+                        </entry>
+                        <entry name="PaymentReversal">
+                            <value>3</value>
+                        </entry>
+                        <entry name="InterCompanyTransfer">
+                            <value>4</value>
+                        </entry>
+                        <entry name="CreditReversal">
+                            <value>5</value>
+                        </entry>
+                        <entry name="UnRefundableCredit">
+                            <value>6</value>
+                        </entry>
+                        <entry name="InterCompanyTransferUK">
+                            <value>8</value>
+                        </entry>
+                        <entry name="InterCompanyTransferAustralia">
+                            <value>9</value>
+                        </entry>
+                        <entry name="InterCompanyTransferWestIP">
+                            <value>10</value>
+                        </entry>
+                        <entry name="InterCompanyTransferIndia">
+                            <value>11</value>
+                        </entry>
+                        <entry name="InterCompanyTransferJapan">
+                            <value>12</value>
+                        </entry>
+                        <entry name="InterCompanyTransferHongKong">
+                            <value>13</value>
+                        </entry>
+                        <entry name="InterCompanyTransferSingapore">
+                            <value>14</value>
+                        </entry>
+                    </entries>
+                </enum>
+                <enum name="PaymentDistributionOriginType">
+                    <description>PaymentDistributionOriginType
+</description>
+                    <entries>
+                        <entry name="Payment">
+                            <value>0</value>
+                        </entry>
+                        <entry name="Credit">
+                            <value>1</value>
+                        </entry>
+                        <entry name="Adjustment">
+                            <value>2</value>
+                        </entry>
+                    </entries>
+                </enum>
+                <enum name="PaymentDistributionStatus">
+                    <description>PaymentDistributionStatus
+</description>
+                    <entries>
+                        <entry name="Open">
+                            <value>0</value>
+                        </entry>
+                        <entry name="Cancelled">
+                            <value>1</value>
+                        </entry>
+                        <entry name="Split">
+                            <value>2</value>
+                        </entry>
+                        <entry name="Closed">
+                            <value>3</value>
+                        </entry>
+                        <entry name="Pending">
+                            <value>4</value>
+                        </entry>
+                        <entry name="Transfered">
+                            <value>5</value>
+                        </entry>
+                        <entry name="Unallocated">
+                            <value>6</value>
+                        </entry>
+                        <entry name="Refunded">
+                            <value>7</value>
+                        </entry>
+                    </entries>
+                </enum>
+                <enum name="PaymentMethod">
+                    <description>PaymentMethod
+</description>
+                    <entries>
+                        <entry name="CreditCard">
+                            <value>0</value>
+                        </entry>
+                        <entry name="ACH">
+                            <value>1</value>
+                        </entry>
+                        <entry name="Check">
+                            <value>2</value>
+                        </entry>
+                        <entry name="Cash">
+                            <value>3</value>
+                        </entry>
+                        <entry name="WireTransfer">
+                            <value>4</value>
+                        </entry>
+                        <entry name="WriteOff">
+                            <value>5</value>
+                        </entry>
+                        <entry name="InterCompany">
+                            <value>6</value>
+                        </entry>
+                        <entry name="TerminalCreditCard">
+                            <value>7</value>
+                        </entry>
+                        <entry name="Wholesale">
+                            <value>8</value>
+                        </entry>
+                        <entry name="Lockbox">
+                            <value>9</value>
+                        </entry>
+                        <entry name="DirectDebit">
+                            <value>10</value>
+                        </entry>
+                    </entries>
+                </enum>
+                <enum name="PaymentMethodAccount">
+                    <description>PaymentMethodAccount
+</description>
+                    <entries>
+                        <entry name="CashOrCheck">
+                            <value>0</value>
+                        </entry>
+                        <entry name="CreditCard">
+                            <value>1</value>
+                        </entry>
+                        <entry name="CreditOrACH">
+                            <value>2</value>
+                        </entry>
+                        <entry name="None">
+                            <value>3</value>
+                        </entry>
+                    </entries>
+                </enum>
+                <enum name="PaymentStatus">
+                    <description>PaymentStatus
+</description>
+                    <entries>
+                        <entry name="Open">
+                            <value>0</value>
+                        </entry>
+                        <entry name="Closed">
+                            <value>1</value>
+                        </entry>
+                    </entries>
+                </enum>
+                <enum name="PaymentSubmitStatus">
+                    <description>PaymentSubmitStatus
+</description>
+                    <entries>
+                        <entry name="NotSubmitted">
+                            <value>0</value>
+                        </entry>
+                        <entry name="Failed">
+                            <value>1</value>
+                        </entry>
+                        <entry name="Succeeded">
+                            <value>2</value>
+                        </entry>
+                    </entries>
+                </enum>
+                <enum name="PreAllocationStatus">
+                    <description>PreAllocationStatus
+</description>
+                    <entries>
+                        <entry name="Pending">
+                            <value>0</value>
+                        </entry>
+                        <entry name="Finished">
+                            <value>1</value>
+                        </entry>
+                    </entries>
+                </enum>
+                <enum name="PreAllocationType">
+                    <description>PreAllocationType
+</description>
+                    <entries>
+                        <entry name="Regular">
+                            <value>0</value>
+                        </entry>
+                        <entry name="Invoice">
+                            <value>1</value>
+                        </entry>
+                    </entries>
+                </enum>
+                <enum name="ReasonCode">
+                    <description>ReasonCode
+</description>
+                    <entries>
+                        <entry name="BalanceMovedToPayer">
+                            <value>0</value>
+                        </entry>
+                        <entry name="BalanceMovedFromPayee">
+                            <value>1</value>
+                        </entry>
+                        <entry name="Other">
+                            <value>2</value>
+                        </entry>
+                    </entries>
+                </enum>
+                <enum name="RefundStatus">
+                    <description>RefundStatus
+</description>
+                    <entries>
+                        <entry name="Prepared">
+                            <value>0</value>
+                        </entry>
+                        <entry name="Paid">
+                            <value>1</value>
+                        </entry>
+                        <entry name="Cancelled">
+                            <value>2</value>
+                        </entry>
+                    </entries>
+                </enum>
+                <enum name="RefundType">
+                    <description>RefundType
+</description>
+                    <entries>
+                        <entry name="Payment">
+                            <value>0</value>
+                        </entry>
+                        <entry name="Credit">
+                            <value>1</value>
+                        </entry>
+                    </entries>
+                </enum>
+                <enum name="RemittanceStatus">
+                    <description>RemittanceStatus
+</description>
+                    <entries>
+                        <entry name="ToBeProcessed">
+                            <value>0</value>
+                        </entry>
+                        <entry name="Processed">
+                            <value>1</value>
+                        </entry>
+                        <entry name="Failed">
+                            <value>2</value>
+                        </entry>
+                        <entry name="Canceled">
+                            <value>3</value>
+                        </entry>
+                    </entries>
+                </enum>
+                <enum name="RemittanceType">
+                    <description>RemittanceType
+</description>
+                    <entries>
+                        <entry name="Payment">
+                            <value>0</value>
+                        </entry>
+                        <entry name="Credit">
+                            <value>1</value>
+                        </entry>
+                        <entry name="DFP">
+                            <value>2</value>
+                        </entry>
+                        <entry name="WorkingPayment">
+                            <value>3</value>
+                        </entry>
+                        <entry name="PaymentOnAccount">
+                            <value>4</value>
+                        </entry>
+                        <entry name="WriteOff">
+                            <value>5</value>
+                        </entry>
+                        <entry name="Available">
+                            <value>6</value>
+                        </entry>
+                    </entries>
+                </enum>
+                <enum name="ReturnStatus">
+                    <description>ReturnStatus
+</description>
+                    <entries>
+                        <entry name="Failed">
+                            <value>0</value>
+                        </entry>
+                        <entry name="Succeeded">
+                            <value>1</value>
+                        </entry>
+                        <entry name="Delayed">
+                            <value>2</value>
+                        </entry>
+                    </entries>
+                </enum>
+                <enum name="SubscriberCreditAccountRequestReason">
+                    <description>SubscriberCreditAccountRequestReason
+</description>
+                    <entries>
+                        <entry name="RC01">
+                            <value>0</value>
+                        </entry>
+                        <entry name="RC02">
+                            <value>1</value>
+                        </entry>
+                        <entry name="RC03">
+                            <value>2</value>
+                        </entry>
+                        <entry name="RC04">
+                            <value>3</value>
+                        </entry>
+                        <entry name="RC05">
+                            <value>4</value>
+                        </entry>
+                        <entry name="RC06">
+                            <value>5</value>
+                        </entry>
+                        <entry name="RC07">
+                            <value>6</value>
+                        </entry>
+                        <entry name="RC08">
+                            <value>7</value>
+                        </entry>
+                        <entry name="RC09">
+                            <value>8</value>
+                        </entry>
+                        <entry name="RC10">
+                            <value>9</value>
+                        </entry>
+                        <entry name="RC11">
+                            <value>10</value>
+                        </entry>
+                        <entry name="RC12">
+                            <value>11</value>
+                        </entry>
+                        <entry name="RC13">
+                            <value>12</value>
+                        </entry>
+                        <entry name="RC14">
+                            <value>13</value>
+                        </entry>
+                        <entry name="RC15">
+                            <value>14</value>
+                        </entry>
+                        <entry name="RC16">
+                            <value>15</value>
+                        </entry>
+                        <entry name="RC17">
+                            <value>16</value>
+                        </entry>
+                        <entry name="RC18">
+                            <value>17</value>
+                        </entry>
+                        <entry name="RC19">
+                            <value>18</value>
+                        </entry>
+                        <entry name="RC20">
+                            <value>19</value>
+                        </entry>
+                        <entry name="RC21">
+                            <value>20</value>
+                        </entry>
+                        <entry name="RC22">
+                            <value>21</value>
+                        </entry>
+                        <entry name="RC23">
+                            <value>22</value>
+                        </entry>
+                        <entry name="RC24">
+                            <value>23</value>
+                        </entry>
+                        <entry name="RC25">
+                            <value>24</value>
+                        </entry>
+                        <entry name="RC26">
+                            <value>25</value>
+                        </entry>
+                        <entry name="RC27">
+                            <value>26</value>
+                        </entry>
+                        <entry name="RC28">
+                            <value>27</value>
+                        </entry>
+                        <entry name="RC29">
+                            <value>28</value>
+                        </entry>
+                        <entry name="RC30">
+                            <value>29</value>
+                        </entry>
+                        <entry name="RC31">
+                            <value>30</value>
+                        </entry>
+                        <entry name="RC32">
+                            <value>31</value>
+                        </entry>
+                        <entry name="RC33">
+                            <value>32</value>
+                        </entry>
+                        <entry name="RC47">
+                            <value>33</value>
+                        </entry>
+                        <entry name="DroppedCall">
+                            <value>34</value>
+                        </entry>
+                        <entry name="PoorConnection">
+                            <value>35</value>
+                        </entry>
+                        <entry name="BadService">
+                            <value>36</value>
+                        </entry>
+                        <entry name="GeneralDissatisfaction">
+                            <value>37</value>
+                        </entry>
+                        <entry name="Other">
+                            <value>38</value>
+                        </entry>
+                    </entries>
+                </enum>
+                <enum name="TransactionAdjustmentFormat">
+                    <description>TransactionAdjustmentFormat
+</description>
+                    <entries>
+                        <entry name="FullTransaction">
+                            <value>0</value>
+                        </entry>
+                        <entry name="PreTaxOnly">
+                            <value>1</value>
+                        </entry>
+                        <entry name="TaxOnly">
+                            <value>2</value>
+                        </entry>
+                    </entries>
+                </enum>
+                <enum name="TransBatchType">
+                    <description>Transaction batch type</description>
+                    <entries>
+                        <entry name="RefundCheck">
+                            <value>0</value>
+                        </entry>
+                        <entry name="RefundCreditCard">
+                            <value>1</value>
+                        </entry>
+                        <entry name="RefundDirectDebit">
+                            <value>2</value>
+                        </entry>
+                        <entry name="CreditNote">
+                            <value>3</value>
+                        </entry>
+                        <entry name="DebitNote">
+                            <value>4</value>
+                        </entry>
+                        <entry name="RefundPaymentReversal">
+                            <value>5</value>
+                        </entry>
+                        <entry name="CreditReversal">
+                            <value>6</value>
+                        </entry>
+                        <entry name="InterCompanyTransfer">
+                            <value>7</value>
+                        </entry>
+                        <entry name="UnrefundableCredit">
+                            <value>8</value>
+                        </entry>
+                    </entries>
+                </enum>
+                <enum name="UploadFields">
+                    <description>UploadFields
+</description>
+                    <entries>
+                        <entry name="Order">
+                            <value>1</value>
+                        </entry>
+                        <entry name="AccountNumber">
+                            <value>2</value>
+                        </entry>
+                        <entry name="Company">
+                            <value>3</value>
+                        </entry>
+                        <entry name="Amount">
+                            <value>4</value>
+                        </entry>
+                        <entry name="InvoiceNumber">
+                            <value>5</value>
+                        </entry>
+                        <entry name="CheckNumber">
+                            <value>6</value>
+                        </entry>
+                        <entry name="CheckName">
+                            <value>7</value>
+                        </entry>
+                        <entry name="CheckDate">
+                            <value>8</value>
+                        </entry>
+                        <entry name="Description">
+                            <value>9</value>
+                        </entry>
+                        <entry name="CheckTransitRoutingNumber">
+                            <value>10</value>
+                        </entry>
+                        <entry name="DivisionAmount">
+                            <value>11</value>
+                        </entry>
+                    </entries>
+                </enum>
+                <enum name="WorkingBatchStatus">
+                    <description>WorkingBatchStatus
+</description>
+                    <entries>
+                        <entry name="Open">
+                            <value>0</value>
+                        </entry>
+                        <entry name="Guided">
+                            <value>1</value>
+                        </entry>
+                    </entries>
+                </enum>
+                <enum name="ScheduledPaymentStatus">
+                    <description>Scheduled Payment Status</description>
+                    <entries>
+                        <entry name="Closed">
+                            <value>0</value>
+                        </entry>
+                        <entry name="RemitFailure">
+                            <value>1</value>
+                        </entry>
+                        <entry name="Pending">
+                            <value>2</value>
+                        </entry>
+                        <entry name="PaymentDenied">
+                            <value>3</value>
+                        </entry>
+                        <entry name="PDCreateFailure">
+                            <value>4</value>
+                        </entry>
+                        <entry name="Cancelled">
+                            <value>5</value>
+                        </entry>
+                    </entries>
+                </enum>
+            </enums>
+        </enum_space>
+    </enum_spaces>
+</mt_config>

@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xmlconfig>
+
+  <session>
+   <_ServiceID ptype="ID">metratech.com/TestService</_ServiceID>
+   <inputs>
+    <!-- metered properties -->
+
+    <_AccountID ptype="INTEGER">123</_AccountID>
+    <Description>Pipeline autotest generated session</Description>
+    <_Amount ptype="DECIMAL">10.00</_Amount>
+    <_Currency>USD</_Currency>
+    <Time ptype="DATETIME">1999-03-01T04:20:00Z</Time>
+
+    <!-- properties added by the pipeline -->
+    <_ProductViewID ptype="ID">TestService</_ProductViewID>
+    <_ProductID ptype="INTEGER">0</_ProductID>
+
+   </inputs>
+  </session>
+
+</xmlconfig>

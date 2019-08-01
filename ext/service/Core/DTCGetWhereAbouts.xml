@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<defineservice>
+  <name>metratech.com/DTCGetWhereAbouts</name>
+  <description>DTC Whereabouts cookie.</description>
+  <ptype>
+    <dn>WhereAboutsCookie</dn>
+    <type>string</type>
+    <length>512</length>
+    <required>N</required>
+    <defaultvalue>
+    </defaultvalue>
+    <description>DTC WhereAbouts cookie</description>
+  </ptype>
+</defineservice>

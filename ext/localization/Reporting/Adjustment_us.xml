@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<mt_config>
+  <language_code>us</language_code>
+  <locale_space name="Adjustment">
+    <locale_entry>
+      <Name>Adjustment/AdjustmentType/CreditNote</Name>
+      <Value>CreditNote</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Adjustment/AdjustmentType/MiscAdjustment</Name>
+      <Value>MiscAdjustment</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>Adjustment/AdjustmentType/Test</Name>
+      <Value>Test</Value>
+    </locale_entry>
+  </locale_space>
+</mt_config>

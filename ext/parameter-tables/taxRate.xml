@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<defineservice>
+    <name display_name="Tax Rate" condition_header="Conditions" action_header="Actions" type="Rates" help_url="">metratech.com/taxRate</name>
+    <description>Maps a given tax band and country to a tax rate.  The country may have special zones which receive special rates.</description>
+    <ptype display_name="Tax Country Eligibility" condition="Y" column_operator="=" filterable="Y">
+        <dn>Country</dn>
+        <type EnumSpace="Global" EnumType="CountryName">enum</type>
+        <length />
+        <required>Y</required>
+        <defaultvalue />
+        <description>Tax Country Eligibility</description>
+    </ptype>
+    <ptype display_name="Tax Zone" condition="Y" column_operator="=" filterable="Y">
+        <dn>TaxZone</dn>
+        <type EnumSpace="metratech.com/tax" EnumType="TaxZone">enum</type>
+        <length />
+        <required>Y</required>
+        <defaultvalue />
+        <description>Tax Zone</description>
+    </ptype>
+    <ptype display_name="Tax Band" condition="Y" column_operator="=" filterable="Y">
+        <dn>TaxBand</dn>
+        <type EnumSpace="metratech.com/tax" EnumType="TaxBand">enum</type>
+        <length />
+        <required>Y</required>
+        <defaultvalue />
+        <description>Tax Band</description>
+    </ptype>
+    <ptype display_name="Tax Rate" action="Y">
+        <dn>TaxRate</dn>
+        <type>decimal</type>
+        <length />
+        <required>Y</required>
+        <defaultvalue />
+        <description>Tax Rate</description>
+    </ptype>
+    <ptype display_name="Tax Name" action="Y">
+        <dn>TaxName</dn>
+        <type>string</type>
+        <length>64</length>
+        <required>Y</required>
+        <defaultvalue />
+        <description>Tax Name</description>
+    </ptype>
+</defineservice>

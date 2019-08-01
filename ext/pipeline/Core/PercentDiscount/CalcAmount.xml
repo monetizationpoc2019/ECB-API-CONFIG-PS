@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xmlconfig>
+  <mtsysconfigdata>
+    <effective_date ptype="DATETIME">1998-11-19T00:00:00Z</effective_date>
+    <timeout ptype="INTEGER">30</timeout>
+    <configfiletype>CONFIG_DATA</configfiletype>
+  </mtsysconfigdata>
+
+  <mtconfigdata>
+
+ <version ptype="INTEGER">1</version>
+ <processor>
+  <name>CalcAmount</name>
+  <description>Calculate discount amount.</description>
+  <progid>MetraPipeline.MTSQLInterpreter.1</progid>
+
+
+  <configdata>
+
+  <Program>
+  
+CREATE PROCEDURE CalcAmount @Target DECIMAL 
+			    @_Amount DECIMAL OUTPUT
+			    @DiscountPercent DECIMAL
+			    @GroupDiscountPass INTEGER
+          @_WPVDrop BOOLEAN OUTPUT
+AS
+	-- take x percent off
+	IF @GroupDiscountPass &lt; 2
+	   SET @_Amount = round(0.0 - (@Target * @DiscountPercent * 0.01), 2);
+  -- CR 6067 fix - drop the 0 amount records
+  IF @GroupDiscountPass = 0 AND @_Amount = 0.0
+    SET @_WPVDrop = TRUE;
+
+  </Program> 
+			
+  </configdata>
+
+ </processor>
+
+  </mtconfigdata>
+</xmlconfig>

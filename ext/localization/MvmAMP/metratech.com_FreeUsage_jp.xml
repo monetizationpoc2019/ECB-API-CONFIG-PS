@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<mt_config>
+  <language_code>jp</language_code>
+  <locale_space name="metratech.com/FreeUsage">
+    <locale_entry>
+      <Name>metratech.com/FreeUsage</Name>
+      <Value>FreeUsage</Value>
+    </locale_entry>
+  </locale_space>
+</mt_config>

@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xmlconfig>
+    <version ptype="INTEGER">1</version>
+    <description>Applies a flat recurring charge.</description>
+    <stage>
+        <name>FlatRecurringCharge</name>
+        <startstage ptype="BOOLEAN">Yes</startstage>
+        <finalstage ptype="BOOLEAN">No</finalstage>
+        <nextstage>WriteProductView</nextstage>
+        <dependencies>
+            <dependency>
+                <processor>Namespace</processor>
+            </dependency>
+            <dependency>
+                <processor>SetAccountStateRule</processor>
+                <dependson>Namespace</dependson>
+            </dependency>
+            <dependency>
+                <processor>RateDate</processor>
+                <dependson>SetAccountStateRule</dependson>
+            </dependency>
+            <dependency>
+                <processor>AccountResolution</processor>
+                <dependson>RateDate</dependson>
+            </dependency>
+            <dependency>
+                <processor>RCRateLookup</processor>
+                <dependson>AccountResolution</dependson>
+            </dependency>
+            <dependency>
+                <processor>RCProration</processor>
+                <dependson>RCRateLookup</dependson>
+            </dependency>
+            <dependson>RCProration</dependson>
+        </dependencies>
+    </stage>
+    <possiblenextstages />
+</xmlconfig>

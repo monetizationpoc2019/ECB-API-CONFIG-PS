@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<mt_config>
+    <language_code>de</language_code>
+    <locale_space name="discount">
+        <locale_entry>
+            <Name>discount/DeferredRevenueCode</Name>
+            <Value>Deferred Revenue Code</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>discount/glcode</Name>
+            <Value>GL Code</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>discount/IsLiabilityProduct</Name>
+            <Value>Is Liability Product</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>discount/RevenueCode</Name>
+            <Value>Revenue Code</Value>
+        </locale_entry>
+    </locale_space>
+</mt_config>

@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<mt_config>
+  <language_code>it</language_code>
+  <locale_space name="metratech.com/flatrecurringcharge">
+    <locale_entry>
+      <Name>metratech.com/flatrecurringcharge</Name>
+      <Value>Addebito ricorrente fisso</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/flatrecurringcharge/Advance</Name>
+      <Value>Anticipo</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/flatrecurringcharge/BillingIntervalEnd</Name>
+      <Value>Fine intervallo di fatturazione</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/flatrecurringcharge/BillingIntervalStart</Name>
+      <Value>Inizio intervallo di fatturazione</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/flatrecurringcharge/ProratedDailyRate</Name>
+      <Value>Tariffa giornaliera ripartizione proporzionale</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/flatrecurringcharge/ProratedDays</Name>
+      <Value>Giorni ripartizione proporzionale</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/flatrecurringcharge/ProratedIntervalEnd</Name>
+      <Value>Fine intervallo ripartizione proporzionale</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/flatrecurringcharge/ProratedIntervalStart</Name>
+      <Value>Inizio intervallo ripartizione proporzionale</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/flatrecurringcharge/ProratedOnSubscription</Name>
+      <Value>Ripartito proporzionalmente per abbonamento</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/flatrecurringcharge/ProratedOnUnSubscription</Name>
+      <Value>Ripartito proporzionalmente per annullamento abbonamento</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/flatrecurringcharge/ProrateOnSubscription</Name>
+      <Value>Ripartizione proporzionale per abbonamento</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/flatrecurringcharge/ProrateOnUnSubscription</Name>
+      <Value>Ripartizione proporzionale per annullamento abbonamento</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/flatrecurringcharge/RCAmount</Name>
+      <Value>Importo addebito ricorrente</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/flatrecurringcharge/RCIntervalEnd</Name>
+      <Value>Data di fine addebito ricorrente</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/flatrecurringcharge/RCIntervalStart</Name>
+      <Value>Data di inizio addebito ricorrente</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/flatrecurringcharge/RCIntervalSubscriptionEnd</Name>
+      <Value>Data di fine abbonamento con addebito ricorrente</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/flatrecurringcharge/RCIntervalSubscriptionStart</Name>
+      <Value>Data di inizio abbonamento con addebito ricorrente</Value>
+    </locale_entry>
+  </locale_space>
+</mt_config>

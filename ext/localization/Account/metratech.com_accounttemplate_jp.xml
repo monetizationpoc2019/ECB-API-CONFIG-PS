@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<mt_config>
+  <language_code>jp</language_code>
+  <locale_space name="metratech.com/accounttemplate">
+    <locale_entry>
+      <Name>metratech.com/accounttemplate/DetailResult/Failure</Name>
+      <Value>失敗</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/accounttemplate/DetailResult/FailureDetail</Name>
+      <Value>失敗の詳細</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/accounttemplate/DetailResult/Information</Name>
+      <Value>情報</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/accounttemplate/DetailResult/Success</Name>
+      <Value>成功</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/accounttemplate/DetailType/General</Name>
+      <Value>一般</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/accounttemplate/DetailType/Subscription</Name>
+      <Value>申し込み</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/accounttemplate/DetailType/Update</Name>
+      <Value>更新</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/accounttemplate/TemplateStatus/Completed</Name>
+      <Value>完了</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/accounttemplate/TemplateStatus/Failed</Name>
+      <Value>失敗</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/accounttemplate/TemplateStatus/In-Progress</Name>
+      <Value>進行中</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/accounttemplate/TemplateStatus/Submitted</Name>
+      <Value>送信済み</Value>
+    </locale_entry>
+  </locale_space>
+</mt_config>

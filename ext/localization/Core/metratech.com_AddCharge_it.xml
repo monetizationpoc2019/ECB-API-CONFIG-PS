@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<mt_config>
+  <language_code>it</language_code>
+  <locale_space name="metratech.com/AddCharge">
+    <locale_entry>
+      <Name>metratech.com/AddCharge</Name>
+      <Value>Addebito aggiuntivo</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/AddCharge/ChargeDate</Name>
+      <Value>Data addebito</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/AddCharge/chargetype</Name>
+      <Value>Tipo di addebito</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/addCharge/ChargeType/Other</Name>
+      <Value>Altro</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/AddCharge/CsrID</Name>
+      <Value>ID RSC</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/AddCharge/generalledgercode</Name>
+      <Value>Codice contabile</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/AddCharge/internalcomment</Name>
+      <Value>Note interne</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/AddCharge/invoicecomment</Name>
+      <Value>Commento</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/AddCharge/issuer</Name>
+      <Value>Emittente</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/AddCharge/NameSpace</Name>
+      <Value>Spazio nome</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/AddCharge/otherchargetypecomment</Name>
+      <Value>Descrizione addebito</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/AddCharge/Payer</Name>
+      <Value>Pagatore</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/AddCharge/relatetopreviouscharge</Name>
+      <Value>Collega ad addebito precedente</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/AddCharge/ResolveWithAccountIDFlag</Name>
+      <Value>Flag Risoluzione con ID conto</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/AddCharge/taxamount</Name>
+      <Value>Importo imposte</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/AddCharge/taxtype</Name>
+      <Value>Soggetto a imposta</Value>
+    </locale_entry>
+  </locale_space>
+</mt_config>

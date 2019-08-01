@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<mt_config>
+  <language_code>da</language_code>
+  <locale_space name="metratech.com/accounttemplate">
+    <locale_entry>
+      <Name>metratech.com/accounttemplate/DetailResult/Failure</Name>
+      <Value>metratech.com/accounttemplate/DetailResult/Failure</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/accounttemplate/DetailResult/FailureDetail</Name>
+      <Value>metratech.com/accounttemplate/DetailResult/FailureDetail</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/accounttemplate/DetailResult/Information</Name>
+      <Value>metratech.com/accounttemplate/DetailResult/Information</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/accounttemplate/DetailResult/Success</Name>
+      <Value>metratech.com/accounttemplate/DetailResult/Success</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/accounttemplate/DetailType/General</Name>
+      <Value>metratech.com/accounttemplate/DetailType/General</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/accounttemplate/DetailType/Subscription</Name>
+      <Value>metratech.com/accounttemplate/DetailType/Subscription</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/accounttemplate/DetailType/Update</Name>
+      <Value>metratech.com/accounttemplate/DetailType/Update</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/accounttemplate/TemplateStatus/Completed</Name>
+      <Value>metratech.com/accounttemplate/TemplateStatus/Completed</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/accounttemplate/TemplateStatus/Failed</Name>
+      <Value>metratech.com/accounttemplate/TemplateStatus/Failed</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/accounttemplate/TemplateStatus/In-Progress</Name>
+      <Value>metratech.com/accounttemplate/TemplateStatus/In-Progress</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/accounttemplate/TemplateStatus/Submitted</Name>
+      <Value>metratech.com/accounttemplate/TemplateStatus/Submitted</Value>
+    </locale_entry>
+  </locale_space>
+</mt_config>

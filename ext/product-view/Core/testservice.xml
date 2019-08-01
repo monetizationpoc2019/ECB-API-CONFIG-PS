@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<defineservice>
+  <name>metratech.com/TestService</name>
+  <description>Simple test service (for verifying basic MetraNet functionality and MetraConnect-SDK connectivity).</description>
+  <!--
+	<uniquekey>
+		<name> unique_desc </name>
+		<col> description </col>
+	</uniquekey>
+	-->
+  <ptype display_name="">
+    <dn>Description</dn>
+    <type>string</type>
+    <length>255</length>
+    <required>Y</required>
+    <defaultvalue>
+    </defaultvalue>
+    <description>Open field for testing</description>
+  </ptype>
+  <ptype display_name="">
+    <dn>Time</dn>
+    <type>timestamp</type>
+    <length>
+    </length>
+    <required>Y</required>
+    <defaultvalue>
+    </defaultvalue>
+    <description>Open field for testing that was metered (sent) into the system; not used during processing</description>
+  </ptype>
+  <ptype display_name="">
+    <dn>Units</dn>
+    <type>decimal</type>
+    <length>
+    </length>
+    <required>Y</required>
+    <defaultvalue>
+    </defaultvalue>
+    <description>Unit value passed into system and used to calculate the amount</description>
+  </ptype>
+  <ptype display_name="">
+    <dn>DecProp1</dn>
+    <type>decimal</type>
+    <length>
+    </length>
+    <required>N</required>
+    <defaultvalue>0.000000</defaultvalue>
+    <description>Test decimal property (passed through from metering).</description>
+  </ptype>
+  <ptype display_name="">
+    <dn>DecProp2</dn>
+    <type>decimal</type>
+    <length>
+    </length>
+    <required>N</required>
+    <defaultvalue>0.000000</defaultvalue>
+    <description>Test decimal property (passed through from metering).</description>
+  </ptype>
+  <ptype display_name="">
+    <dn>DecProp3</dn>
+    <type>decimal</type>
+    <length>
+    </length>
+    <required>N</required>
+    <defaultvalue>5.5555556</defaultvalue>
+    <description>Test decimal property (passed through from metering).</description>
+  </ptype>
+</defineservice>

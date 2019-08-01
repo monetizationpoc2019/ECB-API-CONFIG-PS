@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xmlconfig>
+  <mtsysconfigdata>
+    <effective_date ptype="DATETIME">2000-1-19T00:00:00Z</effective_date>
+    <timeout ptype="INTEGER">30</timeout>
+    <configfiletype>CONFIG_DATA</configfiletype>
+  </mtsysconfigdata>
+
+  <mtconfigdata>
+
+ <version ptype="INTEGER">1</version>
+ <!-- First processor configuration -->
+ <processor>
+  <name>AccountCreditRequestPlugin</name>
+  <progid>MetraPipeline.AccountCreditRequestPlugin.1</progid>
+  <description>
+  Used to meter subscriber-based credit request. Does following before WriteProductView takes over:
+  1. Evaluates if correct status string is being metered (only "PENDING")
+  2. Look if request amount qualifies for auto credit (this condition is set in config.xml for this plugin)
+  3. If request qualifies for auto credit, set status to "APPROVED", credit amount to request amount
+  	 and meter AccountCredit session.
+  4. Return
+  </description>
+
+<!--
+  <autotest>
+    <file>AccountCreditRequestPluginTest.xml</file>
+  </autotest>
+ -->
+  <inputs>
+  	<input type="LONG" internal_name="_AccountID">_AccountID</input>
+	<input type="DECIMAL" internal_name="_Amount">_Amount</input>
+	<input type="STRING" internal_name="_Currency">_Currency</input>
+   	<input type="STRING" internal_name="Reason">Reason</input>
+	<input type="STRING" internal_name="Status">Status</input>
+   	<input type="STRING" internal_name="Description">Description</input>
+ 	<input type="LONG" internal_name="SubscriberAccountID">SubscriberAccountID</input>
+  </inputs>
+
+  <outputs>
+  	<output type="STRING" internal_name="Auto">Auto</output> 
+  	<output type="STRING" internal_name="Status">Status</output>
+  	<output type="DECIMAL" internal_name="CreditAmount">CreditAmount</output>
+  </outputs>
+  <configdata>
+    <MaxAutoCreditAmount>3.0</MaxAutoCreditAmount>
+    <Auto>Auto</Auto>
+    <_AccountID>_AccountID</_AccountID>
+    <_Amount>_Amount</_Amount>
+    <_Currency>_Currency</_Currency>
+    <Reason>Reason</Reason>
+    <Other>Other</Other>
+    <Status>Status</Status>
+    <Description>Description</Description>
+    <CreditAmount>CreditAmount</CreditAmount>
+    <SubscriberAccountID>SubscriberAccountID</SubscriberAccountID>
+    
+  
+  </configdata>
+
+ </processor>
+
+  </mtconfigdata>
+
+</xmlconfig>

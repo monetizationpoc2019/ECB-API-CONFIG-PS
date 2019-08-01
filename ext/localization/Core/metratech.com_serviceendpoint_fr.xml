@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<mt_config>
+  <language_code>fr</language_code>
+  <locale_space name="metratech.com/ServiceEndpoint">
+    <locale_entry>
+      <Name>metratech.com/ServiceEndpoint/Operation/AddIDMapping</Name>
+      <Value>AjouterMappageID</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ServiceEndpoint/Operation/Connect</Name>
+      <Value>Connexion</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ServiceEndpoint/Operation/Create</Name>
+      <Value>Créer</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ServiceEndpoint/Operation/CreateAndConnect</Name>
+      <Value>CréerEtConnecter</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ServiceEndpoint/Operation/Disconnect</Name>
+      <Value>Déconnexion</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ServiceEndpoint/Operation/DisconnectAndEnd</Name>
+      <Value>DéconnecterEtTerminer</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ServiceEndpoint/Operation/Move</Name>
+      <Value>Opération/Déplacer</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ServiceEndpoint/Operation/RemoveIDMapping</Name>
+      <Value>SupprimerMappageID</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ServiceEndpoint/Operation/UpdateEffectiveDate</Name>
+      <Value>MàJDateValidité</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ServiceEndpoint/Operation/UpdateExtendedProperties</Name>
+      <Value>MàJPropriétésÉtendues</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ServiceEndpoint/Operation/UpdateIDMapping</Name>
+      <Value>MàJMappageID</Value>
+    </locale_entry>
+  </locale_space>
+</mt_config>

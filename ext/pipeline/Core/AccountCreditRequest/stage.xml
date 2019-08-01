@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xmlconfig>
+ <version ptype="INTEGER">1</version>
+ <description>Processes a credit request.</description>
+ <stage>
+  <name>AccountCreditRequest</name>
+  <startstage ptype="BOOLEAN">YES</startstage>
+  <finalstage ptype="BOOLEAN">NO</finalstage>
+  <nextstage>WriteProductView</nextstage>
+
+	<dependencies>
+
+    <dependency>
+	     <processor>AccountCreditRequestPlugin</processor>
+	     <dependson>RoundAmount</dependson>
+	     <dependson>AccountResolutionByID</dependson>
+	  </dependency>
+	  
+	  <dependency>
+	     <processor>AccountCreditRequestPlugin</processor>
+	     <dependson>RoundAmount</dependson>
+	     <dependson>SetPayingAccount</dependson>
+	  </dependency> 	
+
+  	</dependencies>
+ </stage>
+ <possiblenextstages />
+</xmlconfig>

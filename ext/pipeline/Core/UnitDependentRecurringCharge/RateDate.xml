@@ -1,0 +1,115 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xmlconfig>
+  <mtsysconfigdata>
+    <effective_date ptype="DATETIME">1998-11-19T00:00:00Z</effective_date>
+    <timeout ptype="INTEGER">30</timeout>
+    <configfiletype>CONFIG_DATA</configfiletype>
+  </mtsysconfigdata>
+
+  <mtconfigdata>
+
+ <version ptype="INTEGER">1</version>
+ <!-- First processor configuration -->
+ <processor>
+  <name>RateDate</name>
+  <description>Determine date for rate lookup.</description>
+  <progid>MetraPipeline.MTSQLInterpreter.1</progid>
+
+<!--
+  <autotest>
+    <file>ratedatetest.xml</file>
+  </autotest>
+-->
+  
+<!--
+  <inputs>
+  </inputs>
+
+  <outputs>
+  </outputs>
+-->
+
+  <!-- Processor specific configuration data -->
+  <configdata>
+
+  <Program>
+	  
+		-- We are setting the property RateDate which will be the date we use to lookup rates
+    -- For RC charges that are not credits, we will use the rates that in effect on the Billing Cycle End date.
+    -- For RC credits, in order to ensure we are using the same rate as when the charge was first billed in advance, we use the
+    -- BilledRateDate passed by the adapter. This should be the Billing Cycle End Date of the cycle the charge was billed in.
+		CREATE PROCEDURE RateDate @RateDate DATETIME OUTPUT @RCActionType VARCHAR @RCIntervalSubscriptionEnd DATETIME @BillingIntervalStart DATETIME @BillingIntervalEnd DATETIME @BilledRateDate DATETIME @SubscriptionEnd DATETIME @_Timestamp DATETIME OUTPUT @FinalizeDate DATETIME OUTPUT
+		AS
+      --PRINT 'ratedate: RCActionType [' + @RCActionType + ']';
+			--PRINT 'ratedate: BillingCycleStart [' + CAST( @BillingIntervalStart AS VARCHAR) + '] BillingCycleEnd [' + CAST( @BillingIntervalEnd AS VARCHAR) + ']';
+ 
+    IF (@RCActionType = 'Arrears') 
+    BEGIN
+      -- For arrears charges we will use the Recurring Charge Interval End Date or the Subscription End Date (whichever is earlier). This date
+      -- is already passed to us as RCIntervalSubscriptionEnd.
+      Set @RateDate = @RCIntervalSubscriptionEnd; 
+      --PRINT 'ratedate: ' + @RCActionType + ' charge using rates effective on [' + CAST(@RateDate AS VARCHAR) + ']'; 
+    END
+    ELSE  
+    BEGIN
+      IF @RCActionType = 'Credit' OR @RCActionType = 'InitialCredit' OR @RCActionType = 'InitialCorrection' OR @RCActionType = 'AdvanceCorrection' OR @RCActionType = 'DebitCorrection' 
+      BEGIN
+        -- For credits we will use the BilledRateDate which should be the BillingCycleEndDate from the billing cycle the
+        -- advance or initial charges were billed in.
+        Set @RateDate = @BilledRateDate
+        --PRINT 'ratedate: Credit using rates effective on [' + CAST(@RateDate AS VARCHAR) + '] which is the BillingCyleEndDate from the billing cycle the advance or initial charge was billed in.';
+      END
+      ELSE
+      IF (@RCActionType = 'Advance') OR (@RCActionType = 'Initial') OR (@RCActionType = 'InitialDebit')
+      BEGIN
+        -- For advance charges we will use the Billing Cycle End Date. This is so we can match the rates used by 'Credits' above.
+        -- The exception is if the Subscription End Date is less then the Billing Cycle End Date (they unsubscribed during the period of this bill), then
+        -- we use the Subscription End date for rate lookup because after the subscription ends, all ICB and PO prices are no longer in effect. This is OK
+        -- because no credits will be issued for these charges because this is the last bill of this product offering.
+        
+        -- Because SubscriptionEnd may not be passed, we check SubscriptionEnd against a known default value from the service definition
+        -- Eventually, Is Null support will be added and we can check SubscriptionEnd against NULL directly.
+        DECLARE @_DefaultSubscriptionEnd DATETIME;
+        DECLARE @_TempString VARCHAR;
+        SET @_TempString = '1/1/1970 12:00:00AM'
+        SET @_DefaultSubscriptionEnd = CAST(@_TempString AS DATETIME)
+      
+        IF (@SubscriptionEnd != @_DefaultSubscriptionEnd) AND (@SubscriptionEnd &lt; @BillingIntervalEnd)
+        BEGIN
+          Set @RateDate = @SubscriptionEnd;
+          --PRINT 'ratedate: ' + @RCActionType + ' charge using rates effective on [' + CAST(@RateDate AS VARCHAR) + '] which is the Subscription End Date and not the later Billing Cycle End Date of [' + CAST(@BillingIntervalEnd AS VARCHAR) + ']';
+        END
+        ELSE
+        BEGIN
+          Set @RateDate = @BillingIntervalEnd;    
+          --PRINT 'ratedate: ' + @RCActionType + ' charge using rates effective on [' + CAST(@RateDate AS VARCHAR) + '] which is the Billing Cycle End Date'; 
+        END 
+      END
+      ELSE
+      BEGIN
+        -- Unknown ActionType, we shouldn't get here but we will default the rates to the Billing Cycle End Date
+        Set @RateDate = @BillingIntervalEnd;      
+        PRINT 'ratedate: UNKNOWN RECURRING CHARGE ACTION TYPE [' + @RCActionType + '] defaulting to using rates effective on [' + CAST(@RateDate AS VARCHAR) + '] which is the Billing Cycle End Date'; 
+      END
+    END
+      
+    DECLARE @_DfltSubscriptionEnd DATETIME;
+    DECLARE @_TmpString VARCHAR;
+    SET @_TmpString = '1/1/1970 12:00:00AM'
+    SET @_DfltSubscriptionEnd = CAST(@_TmpString AS DATETIME)
+      
+    IF (@SubscriptionEnd != @_DfltSubscriptionEnd) AND (@SubscriptionEnd &lt; @BillingIntervalEnd)
+    BEGIN
+	  Set @FinalizeDate = @SubscriptionEnd;
+    END
+
+    SET @_Timestamp = @RateDate      
+	  
+  </Program> 
+			
+  </configdata>
+
+ </processor>
+
+  </mtconfigdata>
+</xmlconfig>

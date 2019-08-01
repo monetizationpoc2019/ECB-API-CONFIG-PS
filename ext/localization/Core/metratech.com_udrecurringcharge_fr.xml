@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<mt_config>
+    <language_code>fr</language_code>
+    <locale_space name="metratech.com/udrecurringcharge">
+        <locale_entry>
+            <Name>metratech.com/udrecurringcharge</Name>
+            <Value>Frais récurrents en fonction de l'unité</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/udrecurringcharge/Advance</Name>
+            <Value>Avance</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/udrecurringcharge/BillingIntervalEnd</Name>
+            <Value>Fin de l'intervalle de facturation</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/udrecurringcharge/BillingIntervalStart</Name>
+            <Value>Début de l'intervalle de facturation</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/udrecurringcharge/ProratedDailyRate</Name>
+            <Value>Frais journaliers proportionnels</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/udrecurringcharge/ProratedDays</Name>
+            <Value>Jours proportionnels</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/udrecurringcharge/ProratedIntervalEnd</Name>
+            <Value>Fin de l'intervalle proportionnel</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/udrecurringcharge/ProratedIntervalStart</Name>
+            <Value>Début de l'intervalle proportionnel</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/udrecurringcharge/ProratedOnSubscription</Name>
+            <Value>Estimé au prorata à cause de l'abonnement</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/udrecurringcharge/ProratedOnUnSubscription</Name>
+            <Value>Estimé au prorata à cause du non-abonnement</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/udrecurringcharge/ProrateOnSubscription</Name>
+            <Value>Estimer au prorata à cause de l'abonnement</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/udrecurringcharge/ProrateOnUnSubscription</Name>
+            <Value>Estimer au prorata à cause du non-abonnement</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/udrecurringcharge/RCAmount</Name>
+            <Value>Montant des frais récurrents</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/udrecurringcharge/RCIntervalEnd</Name>
+            <Value>Date de fin des frais récurrents</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/udrecurringcharge/RCIntervalStart</Name>
+            <Value>Date de début des frais récurrents</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/udrecurringcharge/RCIntervalSubscriptionEnd</Name>
+            <Value>Date de fin de l'abonnement aux frais récurrents</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/udrecurringcharge/RCIntervalSubscriptionStart</Name>
+            <Value>Date de début de l'abonnement aux frais récurrents</Value>
+        </locale_entry>
+    </locale_space>
+</mt_config>

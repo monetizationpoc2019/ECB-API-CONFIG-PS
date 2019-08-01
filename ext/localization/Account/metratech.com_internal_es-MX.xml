@@ -1,0 +1,170 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<mt_config>
+    <language_code>es-MX</language_code>
+    <locale_space name="metratech.com/internal">
+        <locale_entry>
+            <Name>metratech.com/internal/Billable</Name>
+            <Value>Facturable</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/internal/Currency</Name>
+            <Value>Divisa</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/Internal/Division</Name>
+            <Value>Division</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/internal/Folder</Name>
+            <Value>Carpeta</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/internal/InvoiceMethod</Name>
+            <Value>Factura impresa</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/internal/Language</Name>
+            <Value>Idioma</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/Internal/MetraTaxCountryEligibility</Name>
+            <Value>MetraTax Country Eligibilty</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/Internal/MetraTaxCountryZone</Name>
+            <Value>MetraTax Country Zone</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/Internal/MetraTaxHasOverrideBand</Name>
+            <Value>MetraTax Has Override Band</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/Internal/MetraTaxOverrideBand</Name>
+            <Value>MetraTax Override Band</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/internal/metratech.com/Internal/Division</Name>
+            <Value>Division</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/internal/metratech.com/Internal/MetraTaxCountryEligibility</Name>
+            <Value>MetraTax Country Eligibilty</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/internal/metratech.com/Internal/MetraTaxCountryZone</Name>
+            <Value>MetraTax Country Zone</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/internal/metratech.com/Internal/MetraTaxHasOverrideBand</Name>
+            <Value>MetraTax Has Override Band</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/internal/metratech.com/Internal/MetraTaxOverrideBand</Name>
+            <Value>MetraTax Override Band</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/internal/metratech.com/Internal/TaxExemptEndDate</Name>
+            <Value>Tax Exempt End Date</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/internal/metratech.com/Internal/TaxExemptReason</Name>
+            <Value>Tax Exempt Reason</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/internal/metratech.com/Internal/TaxExemptStartDate</Name>
+            <Value>Tax Exempt Start Date</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/internal/metratech.com/Internal/TaxRegistryReference</Name>
+            <Value>Tax Registry Reference</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/internal/metratech.com/Internal/TaxServiceAddressPCode</Name>
+            <Value>Tax Service Address PCode</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/internal/metratech.com/Internal/TaxVendor</Name>
+            <Value>Tax Vendor</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/internal/metratech.com/Internal/UseStdImpliedTaxAlg</Name>
+            <Value>Use Standard Inclusive Tax Calculation</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/internal/PaymentMethod</Name>
+            <Value>Método de pago</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/internal/PriceList</Name>
+            <Value>Lista de precios</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/internal/RecurringChargeAlignmentDate</Name>
+            <Value>[ES-MX]Recurring Charge Alignment Date</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/internal/SecurityAnswer</Name>
+            <Value>Respuesta de seguridad</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/internal/SecurityQuestion</Name>
+            <Value>Pregunta de seguridad</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/internal/SecurityQuestionText</Name>
+            <Value>Custom Security Question</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/internal/StatusReason</Name>
+            <Value>Motivo del estado</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/internal/StatusReasonOther</Name>
+            <Value>Otro motivo del estado</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/internal/TaxExempt</Name>
+            <Value>Exento de impuestos</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/Internal/TaxExemptEndDate</Name>
+            <Value>Tax Exempt End Date</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/internal/TaxExemptID</Name>
+            <Value>ID exenta de impuestos</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/Internal/TaxExemptReason</Name>
+            <Value>Tax Exempt Reason</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/Internal/TaxExemptStartDate</Name>
+            <Value>Tax Exempt Start Date</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/Internal/TaxRegistryReference</Name>
+            <Value>Tax Registry Reference</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/Internal/TaxServiceAddressPCode</Name>
+            <Value>Tax Service Address PCode</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/Internal/TaxVendor</Name>
+            <Value>Tax Vendor</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/internal/TimezoneID</Name>
+            <Value>Zona horaria</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/internal/UsageCycleType</Name>
+            <Value>Ciclo de facturación</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/Internal/UseStdImpliedTaxAlg</Name>
+            <Value>Use Standard Inclusive Tax Calculation</Value>
+        </locale_entry>
+    </locale_space>
+</mt_config>

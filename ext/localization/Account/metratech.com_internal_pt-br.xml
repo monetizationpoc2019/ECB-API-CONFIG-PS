@@ -1,0 +1,170 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<mt_config>
+    <language_code>pt-br</language_code>
+    <locale_space name="metratech.com/internal">
+        <locale_entry>
+            <Name>metratech.com/internal/Billable</Name>
+            <Value>Faturável</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/internal/Currency</Name>
+            <Value>Moeda</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/Internal/Division</Name>
+            <Value>Divisão</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/internal/Folder</Name>
+            <Value>Pasta</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/internal/InvoiceMethod</Name>
+            <Value>Fatura em papel</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/internal/Language</Name>
+            <Value>Idioma</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/Internal/MetraTaxCountryEligibility</Name>
+            <Value>Qualificação do país do MetraTax</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/Internal/MetraTaxCountryZone</Name>
+            <Value>Zona do país do MetraTax</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/Internal/MetraTaxHasOverrideBand</Name>
+            <Value>MetraTax tem faixa de substituição</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/Internal/MetraTaxOverrideBand</Name>
+            <Value>Faixa de substituição do MetraTax</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/internal/metratech.com/Internal/Division</Name>
+            <Value>Divisão</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/internal/metratech.com/Internal/MetraTaxCountryEligibility</Name>
+            <Value>Qualificação do país do MetraTax</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/internal/metratech.com/Internal/MetraTaxCountryZone</Name>
+            <Value>Zona do país do MetraTax</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/internal/metratech.com/Internal/MetraTaxHasOverrideBand</Name>
+            <Value>MetraTax tem faixa de substituição</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/internal/metratech.com/Internal/MetraTaxOverrideBand</Name>
+            <Value>Faixa de substituição do MetraTax</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/internal/metratech.com/Internal/TaxExemptEndDate</Name>
+            <Value>Data de término de isenção de imposto</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/internal/metratech.com/Internal/TaxExemptReason</Name>
+            <Value>Motivo de isenção de imposto</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/internal/metratech.com/Internal/TaxExemptStartDate</Name>
+            <Value>Data de início de isenção de imposto</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/internal/metratech.com/Internal/TaxRegistryReference</Name>
+            <Value>Referência do registro de imposto</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/internal/metratech.com/Internal/TaxServiceAddressPCode</Name>
+            <Value>PCode do endereço de serviço do imposto</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/internal/metratech.com/Internal/TaxVendor</Name>
+            <Value>Fornecedor tributável</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/internal/metratech.com/Internal/UseStdImpliedTaxAlg</Name>
+            <Value>Usar cálculo padrão de imposto incluso</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/internal/PaymentMethod</Name>
+            <Value>Método de pagamento</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/internal/PriceList</Name>
+            <Value>Lista de preços</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/internal/RecurringChargeAlignmentDate</Name>
+            <Value>[PT-BR]Recurring Charge Alignment Date</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/internal/SecurityAnswer</Name>
+            <Value>Resposta de segurança</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/internal/SecurityQuestion</Name>
+            <Value>Pergunta de segurança</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/internal/SecurityQuestionText</Name>
+            <Value>Pergunta de segurança personalizada</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/internal/StatusReason</Name>
+            <Value>Motivo do status</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/internal/StatusReasonOther</Name>
+            <Value>Motivo outros status</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/internal/TaxExempt</Name>
+            <Value>Isenção de imposto</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/Internal/TaxExemptEndDate</Name>
+            <Value>Data de término de isenção de imposto</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/internal/TaxExemptID</Name>
+            <Value>ID de isenção de imposto</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/Internal/TaxExemptReason</Name>
+            <Value>Motivo de isenção de imposto</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/Internal/TaxExemptStartDate</Name>
+            <Value>Data de início de isenção de imposto</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/Internal/TaxRegistryReference</Name>
+            <Value>Referência do registro de imposto</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/Internal/TaxServiceAddressPCode</Name>
+            <Value>PCode do endereço de serviço do imposto</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/Internal/TaxVendor</Name>
+            <Value>Fornecedor tributável</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/internal/TimezoneID</Name>
+            <Value>Fuso horário</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/internal/UsageCycleType</Name>
+            <Value>Ciclo de faturamento</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/Internal/UseStdImpliedTaxAlg</Name>
+            <Value>Usar cálculo padrão de imposto incluso</Value>
+        </locale_entry>
+    </locale_space>
+</mt_config>

@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<defineservice>
+  <name>metratech.com/GroupDiscount_Temp</name>
+  <description>MetraNet internal use.</description>
+  <!-- 
+    NOTE: This product view is used internally by the discount adapter
+          to calculate group discounts. It is truncated for each group
+	  discount being processed.
+  -->
+  <ptype>
+    <dn>GroupDiscountIntervalID</dn>
+    <type>int32</type>
+    <length>
+    </length>
+    <required>Y</required>
+    <defaultvalue>
+    </defaultvalue>
+    <description>The discount interval ID - a unique identifier.</description>
+  </ptype>
+  <ptype>
+    <dn>GroupSubscriptionID</dn>
+    <type>int32</type>
+    <length>
+    </length>
+    <required>Y</required>
+    <defaultvalue>
+    </defaultvalue>
+    <description>The group subscription's ID.</description>
+  </ptype>
+  <ptype>
+    <dn>GroupDiscountAmount</dn>
+    <type>decimal</type>
+    <length>
+    </length>
+    <required>Y</required>
+    <defaultvalue>
+    </defaultvalue>
+    <description>The total amount of the discount for the entire group.</description>
+  </ptype>
+  <ptype>
+    <dn>DiscountPercent</dn>
+    <type>decimal</type>
+    <length>
+    </length>
+    <required>N</required>
+    <defaultvalue>
+    </defaultvalue>
+    <description>The rated discount percent (if any).</description>
+  </ptype>
+  <ptype>
+    <dn>DistributionCounter</dn>
+    <type>decimal</type>
+    <length>
+    </length>
+    <required>Y</required>
+    <defaultvalue>
+    </defaultvalue>
+    <description>The total count of the distribution counter for the group.</description>
+  </ptype>
+</defineservice>

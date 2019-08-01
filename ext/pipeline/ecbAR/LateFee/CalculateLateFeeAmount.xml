@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xmlconfig>
+    <mtsysconfigdata>
+        <effective_date ptype="DATETIME">1998-11-19T00:00:00Z</effective_date>
+        <timeout ptype="INTEGER">30</timeout>
+        <configfiletype>CONFIG_DATA</configfiletype>
+    </mtsysconfigdata>
+    <mtconfigdata>
+        <version ptype="INTEGER">1</version>
+        <!-- First processor configuration -->
+        <processor>
+            <name>CalculateLateFeeAmount</name>
+            <progid>MetraPipeline.MTSQLInterpreter.1</progid>
+            <description>Calculates Late Fee Amount for an account</description>
+            <!--
+  <autotest>
+    <file></file>
+  </autotest>
+  -->
+            <inputs />
+            <outputs />
+            <!-- Processor specific configuration data -->
+            <configdata>
+                <Program>CREATE PROCEDURE CalculateLateFeeAmount
+					@DFPAmount DECIMAL,
+					@DFP_Id	INTEGER,
+					@num_days 	INTEGER,
+					@_AccountID INTEGER,
+					@late_fee_amount DECIMAL OUTPUT,					
+					@_Currency NVARCHAR(3),
+					@DaysLate INTEGER,
+					@PercentageFee DECIMAL,
+					@_WPVDrop BOOLEAN OUTPUT,
+					@late_fee_curr NVARCHAR(3) OUTPUT
+					@_Amount DECIMAL OUTPUT 
+					@accountnumber INTEGER OUTPUT 
+AS
+
+IF (@num_days&gt;@DaysLate)
+				BEGIN
+					SET @late_fee_amount =@DFPAmount * @PercentageFee/100;
+					set @_Amount=@late_fee_amount;
+					set @accountnumber=@_AccountID;
+				END;
+				
+			ELSE
+				BEGIN
+					SET @_WPVDrop=TRUE;
+					SET @_Amount=0;
+					SET @late_fee_amount=0;
+				END;
+
+PRINT 'LateFeeAmount: ' + CAST(@late_fee_amount AS NVARCHAR);
+
+set @late_fee_curr = @_Currency;
+</Program>
+            </configdata>
+        </processor>
+    </mtconfigdata>
+</xmlconfig>

@@ -1,0 +1,39 @@
+server:
+  port: ${security-port:8443}
+
+spring:
+  #datasource:
+  #  dataSourceClassName: com.microsoft.sqlserver.jdbc.SQLServerDataSource
+  #  username: sa
+  #  password: MetraTech1
+  #  dataSourceProperties:
+   #   serverName: localhost # saltelematics.metratech.com
+   #   databaseName: NetMeter
+  #  maximumPoolSize: 5
+  cloud:
+    config:
+#      allowOverride: true
+#      overrideNone: true
+#      overrideSystemProperties: false
+  ldap:
+    urls: ldap://corpdc1.metratech.com
+    base: dc=metratech,dc=com
+ecb:
+  auth:
+    user:
+      loginAttemptsAllowed: 6
+      minutesBeforeAutoResetPassword: 30
+      ensureStrongPasswords: false
+      numberOfLastPasswordsThatAreUnique: 4
+      minPasswordLength: 7 
+      maxPasswordLength: 1024
+    ldap:
+      enabled: true
+      domain: metratech.com
+      url:  ldap://corpdc1.metratech.com
+      root: 
+      filter: 
+    ssl:
+      keyStore: ${ecb-keystore:ecbkeystore.jks}
+      keyStorePassword: ${ecb-keystore-password:ecbapipwd}
+      keyAlias: ${ecb-keystore-alias:ecb-server}

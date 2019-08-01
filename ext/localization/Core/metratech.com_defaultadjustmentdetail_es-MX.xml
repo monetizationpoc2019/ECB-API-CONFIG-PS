@@ -1,0 +1,98 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<mt_config>
+  <language_code>es-MX</language_code>
+  <locale_space name="metratech.com/defaultadjustmentdetail">
+    <locale_entry>
+      <Name>metratech.com/DefaultAdjustmentDetail</Name>
+      <Value>Detalle del ajuste</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/DefaultAdjustmentDetail/AdjustedAmount</Name>
+      <Value>Monto ajustado</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/DefaultAdjustmentDetail/AdjustedAmountAsString</Name>
+      <Value>Monto ajustado</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/DefaultAdjustmentDetail/AdjustedAmountWithTax</Name>
+      <Value>Monto ajustado con impuesto</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/DefaultAdjustmentDetail/AdjustedAmountWithTaxAsString</Name>
+      <Value>Monto ajustado con impuesto</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/DefaultAdjustmentDetail/AdjustmentAmount</Name>
+      <Value>Monto del ajuste</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/DefaultAdjustmentDetail/AdjustmentAmountAsString</Name>
+      <Value>Monto del ajuste</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/DefaultAdjustmentDetail/AdjustmentAmountWithTax</Name>
+      <Value>Monto del ajuste con impuesto</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/DefaultAdjustmentDetail/AdjustmentAmountWithTaxAsString</Name>
+      <Value>Monto del ajuste con impuesto</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/DefaultAdjustmentDetail/AdjustmentInstanceDisplayName</Name>
+      <Value>Nombre para mostrar de la instancia de ajuste</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/DefaultAdjustmentDetail/AdjustmentReason</Name>
+      <Value>Motivo del ajuste</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/DefaultAdjustmentDetail/AdjustmentTemplateDisplayName</Name>
+      <Value>Nombre para mostrar de la plantilla de ajuste</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/DefaultAdjustmentDetail/CountyTax</Name>
+      <Value>Impuesto del condado</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/DefaultAdjustmentDetail/Description</Name>
+      <Value>Descripción</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/DefaultAdjustmentDetail/FederalTax</Name>
+      <Value>Impuesto federal</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/DefaultAdjustmentDetail/LocalTax</Name>
+      <Value>Impuesto local</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/DefaultAdjustmentDetail/OtherTax</Name>
+      <Value>Otro impuesto</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/DefaultAdjustmentDetail/SessionID</Name>
+      <Value>Sesión</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/DefaultAdjustmentDetail/StateTax</Name>
+      <Value>Impuesto estatal</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/DefaultAdjustmentDetail/UnadjustedAmount</Name>
+      <Value>Monto no ajustado</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/DefaultAdjustmentDetail/UnadjustedAmountAsString</Name>
+      <Value>Monto no ajustado</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/DefaultAdjustmentDetail/UnadjustedAmountWithTax</Name>
+      <Value>Monto no ajustado con impuesto</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/DefaultAdjustmentDetail/UnadjustedAmountWithTaxAsString</Name>
+      <Value>Monto no ajustado con impuesto</Value>
+    </locale_entry>
+  </locale_space>
+</mt_config>

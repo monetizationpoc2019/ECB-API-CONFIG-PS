@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<mt_config>
+  <language_code>gb</language_code>
+  <locale_space name="metratech.com/ps_cc_postauth">
+    <locale_entry>
+      <Name>metratech.com/ps_cc_postauth</Name>
+      <Value>Post-Authorization</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ps_cc_postauth/CreditCardType</Name>
+      <Value />
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ps_cc_postauth/CsrId</Name>
+      <Value>CSR ID</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ps_cc_postauth/exported</Name>
+      <Value>Exported Indicator</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ps_cc_postauth/LastFourDigits</Name>
+      <Value>Last Four Digits</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ps_cc_postauth/OriginalAccountID</Name>
+      <Value>Original AccountID</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ps_cc_postauth/originalid</Name>
+      <Value>Original ID</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ps_cc_postauth/paymentservicetransactionid</Name>
+      <Value>Payment Service Provider Transaction ID (Post-Authorization)</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ps_cc_postauth/Reason</Name>
+      <Value>Reason for Debit</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ps_cc_postauth/RespString</Name>
+      <Value>Response Description</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ps_cc_postauth/retcode</Name>
+      <Value>Return Code</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ps_cc_postauth/terminalid</Name>
+      <Value>Terminal ID</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ps_cc_postauth/TransactionID</Name>
+      <Value>Transaction ID</Value>
+    </locale_entry>
+  </locale_space>
+</mt_config>

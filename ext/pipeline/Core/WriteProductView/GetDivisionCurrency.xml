@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xmlconfig>
+    <mtconfigdata>
+        <version ptype="INTEGER">1</version>
+        <!-- First processor configuration -->
+        <processor>
+            <name>GetDivisionCurrency</name>
+            <progid>MetraPipeline.MTSQLBatchQuery.1</progid>
+            <description>This plugin retrieves the division currency set for the division to which the specified account is associated</description>
+            <condition>CREATE PROCEDURE Condition
+	@CheckECBARInstalled VARCHAR
+  @_ExecutePlugin  BOOLEAN OUTPUT
+as
+  SET @_ExecutePlugin = NOT(CAST(CheckECBARInstalled AS BOOLEAN))</condition>
+            <!-- Processor specific configuration data -->
+            <configdata>
+                <Program>create procedure GetDivisionCurrency @_AccountID INTEGER
+													 @_DivisionCurrency VARCHAR OUTPUT --$ICE:('Global/SystemCurrencies','SystemCurrencies')$
+AS
+       select cast(ed.nm_enum_data as VARCHAR(255)) into @_DivisionCurrency from
+					t_av_Internal avInternal
+					join
+					t_be_cor_cor_division div on upper(avInternal.c_Division) = upper(div.c_Name)
+          join
+          t_enum_data ed on div.c_currency = ed.id_enum_data
+				where avInternal.id_acc = @_AccountID;
+        </Program>
+                <TempTable>tmp_getdivisioncurrency</TempTable>
+            </configdata>
+        </processor>
+    </mtconfigdata>
+</xmlconfig>

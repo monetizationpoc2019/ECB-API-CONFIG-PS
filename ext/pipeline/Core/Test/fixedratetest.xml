@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xmlconfig>
+
+  <session>
+   <ServiceID ptype="ID">metratech.com/TestService</ServiceID>
+
+   <inputs>
+    <Units ptype="double">10</Units>
+   </inputs>
+
+   <outputs>
+     <_Amount ptype="double">1</_Amount>
+   </outputs>
+
+  </session>
+
+</xmlconfig>

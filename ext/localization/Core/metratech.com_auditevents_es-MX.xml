@@ -1,0 +1,1252 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<mt_config>
+  <language_code>es-MX</language_code>
+  <locale_space name="metratech.com/auditevents">
+    <!-- Batch Stuff Starts Here -->
+    <!-- Batch Stuff Ends Here -->
+    <!-- Service Endpoints -->
+    <!-- billing rerun related audit entries, audit event type id is 7 -->
+    <!-- Login Audit Events -->
+    <!-- Change password events -->
+    <!-- Unlock and Lock account events -->
+    <!--Credit card events-->
+    <locale_entry>
+      <Name>metratech.com/auditevents/accountcredit</Name>
+      <Value>Se crearon ajustes varios</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/auditevents/accountcreditDENIED</Name>
+      <Value>Se denegaron ajustes varios</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/auditevents/accountcredittorequest</Name>
+      <Value>Se crearon ajustes varios pendientes</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/auditevents/AccountOwnershipCreated</Name>
+      <Value>Creación de propiedad</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/auditevents/AccountOwnershipCreateDENIED</Name>
+      <Value>Creación de propiedad denegada</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/auditevents/AccountOwnershipDeleted</Name>
+      <Value>Eliminación de propiedad</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/auditevents/AccountOwnershipDeleteDENIED</Name>
+      <Value>Eliminación de propiedad denegada</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/auditevents/addgroupsubmember</Name>
+      <Value>Agregar miembro a suscripción a grupo</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/auditevents/addgroupsubmemberDENIED</Name>
+      <Value>Agregar miembro a suscripción a grupo DENEGADO</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/auditevents/additionalcharge</Name>
+      <Value>Cargo adicional emitido</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/auditevents/additionalchargeDENIED</Name>
+      <Value>Cargo adicional DENEGADO</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/auditevents/addPItoPO</Name>
+      <Value>Agregar instancia de elemento con precio calculable de oferta de productos</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/auditevents/addPItoPODENIED</Name>
+      <Value>Agregar instancia de elemento con precio calculable de oferta de productos DENEGADO</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/auditevents/AnalyzeFailed</Name>
+      <Value>Error al analizar</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/auditevents/AnalyzeSuccessful</Name>
+      <Value>Análisis correcto</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/auditevents/AUDITEVENT_ACCOUNT_TEMPLATE_APPLY_FAILED</Name>
+      <Value>No se pudo aplicar la plantilla de cuenta</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/auditevents/AUDITEVENT_ACCOUNT_TEMPLATE_APPLY_SUCCESS</Name>
+      <Value>La plantilla de cuenta se aplicó correctamente</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/auditevents/AUDITEVENT_ACCOUNT_TEMPLATE_DELETE_DENIED</Name>
+      <Value>Delete account template denied</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/auditevents/AUDITEVENT_ACCOUNT_TEMPLATE_DELETE_FAILED</Name>
+      <Value>No se pudo eliminar la plantilla de cuenta</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/auditevents/AUDITEVENT_ACCOUNT_TEMPLATE_DELETE_SUCCESS</Name>
+      <Value>La plantilla de cuenta se eliminó correctamente</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/auditevents/AUDITEVENT_ACCOUNT_TEMPLATE_SAVE_FAILED</Name>
+      <Value>No se pudo guardar la plantilla de cuenta</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/auditevents/AUDITEVENT_ACCOUNT_TEMPLATE_SAVE_SUCCESS</Name>
+      <Value>La plantilla de cuenta se guardó correctamente</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/auditevents/AUDITEVENT_ACCOUNT_TEMPLATE_UPDATE_FAILED</Name>
+      <Value>No se pudo actualizar la plantilla de cuenta</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/auditevents/AUDITEVENT_ACCOUNT_TEMPLATE_UPDATE_SUCCESS</Name>
+      <Value>Se actualizó la plantilla de cuenta correctamente</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/auditevents/AUDITEVENT_ADD_ACH_FAILED</Name>
+      <Value>No se pudo agregar ACH</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/auditevents/AUDITEVENT_ADD_ACH_SUCCESS</Name>
+      <Value>Se agregó ACH correctamente</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/auditevents/AUDITEVENT_ADD_CREDITCARD_FAILED</Name>
+      <Value>No se pudo crear la tarjeta de crédito</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/auditevents/AUDITEVENT_ADD_CREDITCARD_SUCCESS</Name>
+      <Value>Se agregó correctamente la tarjeta de crédito</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/auditevents/AUDITEVENT_ASSIGN_ACH_FAILED</Name>
+      <Value>No se pudo asignar ACH</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/auditevents/AUDITEVENT_ASSIGN_ACH_SUCCESS</Name>
+      <Value>Se asignó ACH correctamente</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/auditevents/AUDITEVENT_ASSIGN_CREDITCARD_FAILED</Name>
+      <Value>No se pudo asignar la tarjeta de crédito</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/auditevents/AUDITEVENT_ASSIGN_CREDITCARD_SUCCESS</Name>
+      <Value>Se asignó correctamente la tarjeta de crédito</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/auditevents/AUDITEVENT_CHANGE_PASSWORD_INVALID_FAILED</Name>
+      <Value>Error al realizar el cambio de contraseña</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/auditevents/AUDITEVENT_CHANGE_PASSWORD_NO_CAPABILITY_FAILED</Name>
+      <Value>Error al realizar el cambio de contraseña No tiene capacidad</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/auditevents/AUDITEVENT_CHANGE_PASSWORD_SUCCESS</Name>
+      <Value>La contraseña se cambió correctamente</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/auditevents/AUDITEVENT_CHECK_ACH_TX_STAT_FAILED</Name>
+      <Value>Error en la verificación del estado de la transacción ACH</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/auditevents/AUDITEVENT_CHECK_ACH_TX_STAT_SUCCESS</Name>
+      <Value>El estado de la transacción ACH se verificó correctamente</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/auditevents/AUDITEVENT_CREDIT_ACH_FAILED</Name>
+      <Value>Credit ACH failed</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/auditevents/AUDITEVENT_CREDIT_ACH_SUCCESS</Name>
+      <Value>Credit ACH succeeded</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/auditevents/AUDITEVENT_ADD_ACH_SUCCESS</Name>
+      <Value>Add ACH succeeded</Value>
+    </locale_entry>
+
+    <locale_entry>
+      <Name>metratech.com/auditevents/AUDITEVENT_UPDATE_ACH_SUCCESS</Name>
+      <Value>Update ACH Succeeded</Value>
+    </locale_entry>
+
+    <locale_entry>
+      <Name>metratech.com/auditevents/AUDITEVENT_DELETE_ACH_SUCCESS</Name>
+      <Value>Delete ACH succeeded</Value>
+    </locale_entry>
+
+    <locale_entry>
+      <Name>metratech.com/auditevents/AUDITEVENT_ASSIGN_ACH_SUCCESS</Name>
+      <Value>Assign ACH succeeded</Value>
+    </locale_entry>
+
+    <locale_entry>
+      <Name>metratech.com/auditevents/AUDITEVENT_ADD_ACH_FAILED</Name>
+      <Value>Add ACH failed</Value>
+    </locale_entry>
+
+    <locale_entry>
+      <Name>metratech.com/auditevents/AUDITEVENT_UPDATE_ACH_FAILED</Name>
+      <Value>Update ACH failed</Value>
+    </locale_entry>
+
+    <locale_entry>
+      <Name>metratech.com/auditevents/AUDITEVENT_DELETE_ACH_FAILED</Name>
+      <Value>Delete ACH failed</Value>
+    </locale_entry>
+
+    <locale_entry>
+      <Name>metratech.com/auditevents/AUDITEVENT_ASSIGN_ACH_FAILED</Name>
+      <Value>Assign ACH failed</Value>
+    </locale_entry>
+
+    <locale_entry>
+      <Name>metratech.com/auditevents/AUDITEVENT_CREDIT_CREDITCARD_FAILED</Name>
+      <Value>No se pudo solicitar el crédito de la tarjeta de crédito</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/auditevents/AUDITEVENT_CREDIT_CREDITCARD_SUCCESS</Name>
+      <Value>Se solicitó el crédito de la tarjeta de crédito correctamente</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/auditevents/AUDITEVENT_DEBIT_ACH_FAILED</Name>
+      <Value>Debit ACH failed</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/auditevents/AUDITEVENT_DEBIT_ACH_SUCCESS</Name>
+      <Value>Debit ACH succeeded</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/auditevents/AUDITEVENT_DEBIT_CREDITCARD_FAILED</Name>
+      <Value>Débito de la tarjeta de crédito erróneo</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/auditevents/AUDITEVENT_DEBIT_CREDITCARD_SUCCESS</Name>
+      <Value>Débito de la tarjeta de crédito correcto</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/auditevents/AUDITEVENT_DELETE_ACH_FAILED</Name>
+      <Value>No se pudo eliminar ACH</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/auditevents/AUDITEVENT_DELETE_ACH_SUCCESS</Name>
+      <Value>ACH se eliminó correctamente</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/auditevents/AUDITEVENT_DELETE_CREDITCARD_FAILED</Name>
+      <Value>No se pudo eliminar la tarjeta de crédito</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/auditevents/AUDITEVENT_DELETE_CREDITCARD_SUCCESS</Name>
+      <Value>Se eliminó correctamente la tarjeta de crédito</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/auditevents/AUDITEVENT_DOWNLOAD_ACH_TX_REP_FAILED</Name>
+      <Value>No se pudo descargar el informe de transacciones ACH</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/auditevents/AUDITEVENT_DOWNLOAD_ACH_TX_REP_SUCCESS</Name>
+      <Value>El informe de transacciones ACH se descargó correctamente</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/auditevents/AUDITEVENT_LOCK_ACCOUNT_FAILED</Name>
+      <Value>No se pudo bloquear la cuenta</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/auditevents/AUDITEVENT_LOCK_ACCOUNT_SUCCESS</Name>
+      <Value>La cuenta se bloqueó correctamente</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/auditevents/AUDITEVENT_LOGIN_ACCOUNT_LOCKED_FAILED</Name>
+      <Value>Error de inicio de sesión Se bloqueó la cuenta</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/auditevents/AUDITEVENT_LOGIN_DORMANT_ACCOUNT_FAILED</Name>
+      <Value>Error de inicio de sesión Cuenta inactiva</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/auditevents/AUDITEVENT_LOGIN_NO_CAPABILITY_FAILED</Name>
+      <Value>Error de inicio de sesión No tiene capacidad</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/auditevents/AUDITEVENT_LOGIN_PASSWORD_EXPIRED_FAILED</Name>
+      <Value>Error de inicio de sesión Expiró la contraseña</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/auditevents/AUDITEVENT_NON_STANDARD_CHARGE_APPROVED</Name>
+      <Value>Cargo no estándar aprobado</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/auditevents/AUDITEVENT_NON_STANDARD_CHARGE_DENY</Name>
+      <Value>Cargo no estándar denegado</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/auditevents/AUDITEVENT_NON_STANDARD_CHARGE_FAILED</Name>
+      <Value>Cargo no estándar erróneo</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/auditevents/AUDITEVENT_NON_STANDARD_CHARGE_PENDING</Name>
+      <Value>Se emitió cargo no estándar pendiente</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/auditevents/AUDITEVENT_CREATE_SPEC_CHAR</Name>
+      <Value>Created specfication charactertistic.</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/auditevents/AUDITEEVENT_DELETE_SPEC_CHAR</Name>
+      <Value>Deleted specification characteristic</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/auditevents/AUDITEVENT_UPDATE_SPEC_CHAR</Name>
+      <Value>Updated specification characteristic</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/auditevents/AUDITEVENT_CREATE_SPEC_CHAR_VAL</Name>
+      <Value>Created specification characteristic value</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/auditevents/AUDITEVENT_DELETE_SPEC_CHAR_VAL</Name>
+      <Value>Deleted specfication charactertistic value</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/auditevents/AUDITEVENT_UPDATE_SPEC_CHAR_VAL</Name>
+      <Value>Updated specification characteristic value</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/auditevents/AUDITEVENT_CREATED_CHAR_VAL</Name>
+      <Value>Created characteristic value</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/auditevents/AUDITEVENT_REMOVED_CHAR_VAL</Name>
+      <Value>Removed characteristic value</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/auditevents/AUDITEVENT_CREATE_SPEC_CHAR_FAILED</Name>
+      <Value>Created specfication charactertistic failed.</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/auditevents/AUDITEEVENT_DELETE_SPEC_CHAR_FAILED</Name>
+      <Value>Deleted specification characteristic failed</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/auditevents/AUDITEVENT_UPDATE_SPEC_CHAR_FAILED</Name>
+      <Value>Updated specification characteristic failed</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/auditevents/AUDITEVENT_CREATE_SPEC_CHAR_VAL_FAILED</Name>
+      <Value>Created specification characteristic value failed</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/auditevents/AUDITEVENT_DELETE_SPEC_CHAR_VAL_FAILED</Name>
+      <Value>Deleted specfication charactertistic value failed</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/auditevents/AUDITEVENT_UPDATE_SPEC_CHAR_VAL_FAILED</Name>
+      <Value>Updated specification characteristic value failed</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/auditevents/AUDITEVENT_CREATED_CHAR_VAL_FAILED</Name>
+      <Value>Created characteristic value failed</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/auditevents/AUDITEVENT_REMOVED_CHAR_VAL_FAILED</Name>
+      <Value>Removed characteristic value failed</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/auditevents/AUDITEVENT_ADD_SPEC_TO_ENTITY</Name>
+      <Value>Added specification characteristic to entity</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/auditevents/AUDITEVENT_REMOVE_SPEC_FROM_ENTITY</Name>
+      <Value>Removed specification characteristic from entity</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/auditevents/AUDITEVENT_ONETIME_CREDIT_ACH_FAILED</Name>
+      <Value>One-time Credit ACH failed</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/auditevents/AUDITEVENT_ONETIME_CREDIT_ACH_SUCCESS</Name>
+      <Value>One-time Credit ACH succeeded</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/auditevents/AUDITEVENT_ONETIME_CREDIT_CREDITCARD_FAILED</Name>
+      <Value>No se pudo solicitar el crédito único de la tarjeta de crédito</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/auditevents/AUDITEVENT_ONETIME_CREDIT_CREDITCARD_SUCCESS</Name>
+      <Value>Solicitud de crédito único de la tarjeta de crédito correcta</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/auditevents/AUDITEVENT_ONETIME_DEBIT_ACH_FAILED</Name>
+      <Value>One-time Debit ACH failed</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/auditevents/AUDITEVENT_ONETIME_DEBIT_ACH_SUCCESS</Name>
+      <Value>One-time Debit ACH succeeded</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/auditevents/AUDITEVENT_ONETIME_DEBIT_CREDITCARD_FAILED</Name>
+      <Value>No se pudo solicitar el debito único de la tarjeta de crédito</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/auditevents/AUDITEVENT_ONETIME_DEBIT_CREDITCARD_SUCCESS</Name>
+      <Value>Credit card one-time debit succeeded</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/auditevents/AUDITEVENT_PLM_CREATE</Name>
+      <Value>PLM create succeeded</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/auditevents/AUDITEVENT_PLM_CREATE_DENIED</Name>
+      <Value>PLM Create denied</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/auditevents/AUDITEVENT_PLM_CREATE_FAILED</Name>
+      <Value>PLM create failed</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/auditevents/AUDITEVENT_PLM_DELETE</Name>
+      <Value>PLM delete succeeded</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/auditevents/AUDITEVENT_PLM_DELETE_DENIED</Name>
+      <Value>PLM Delete denied</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/auditevents/AUDITEVENT_PLM_DELETE_FAILED</Name>
+      <Value>PLM delete failed</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/auditevents/AUDITEVENT_PLM_UPDATE</Name>
+      <Value>PLM update succeeded</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/auditevents/AUDITEVENT_PLM_UPDATE_DENIED</Name>
+      <Value>PLM Update denied</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/auditevents/AUDITEVENT_PLM_UPDATE_FAILED</Name>
+      <Value>PLM update failed</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/auditevents/AUDITEVENT_PREAUTH_CAPTURE_CREDITCARD_FAILED</Name>
+      <Value>No se pudo capturar la tarjeta de crédito de solicitud de autorización previa</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/auditevents/AUDITEVENT_PREAUTH_CAPTURE_CREDITCARD_SUCCESS</Name>
+      <Value>La captura de tarjeta de crédito de solicitud de autorización previa se realizó correctamente</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/auditevents/AUDITEVENT_PREAUTH_CREDITCARD_FAILED</Name>
+      <Value>Autorización previa de tarjeta de crédito errónea</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/auditevents/AUDITEVENT_PREAUTH_CREDITCARD_SUCCESS</Name>
+      <Value>Autorización previa de tarjeta de crédito correcta</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/auditevents/AUDITEVENT_SCHEDULE_PAYMENT_FAILURE</Name>
+      <Value>Error de programación de pago electrónico</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/auditevents/AUDITEVENT_SCHEDULE_PAYMENT_SUCCESS</Name>
+      <Value>Pago electrónico programado correctamente</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/auditevents/AUDITEVENT_UNLOCK_ACCOUNT_FAILED</Name>
+      <Value>No se pudo desbloquear la cuenta</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/auditevents/AUDITEVENT_UNLOCK_ACCOUNT_SUCCESS</Name>
+      <Value>La cuenta se desbloqueó correctamente</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/auditevents/AUDITEVENT_UPDATE_ACH_FAILED</Name>
+      <Value>No se pudo actualizar ACH</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/auditevents/AUDITEVENT_UPDATE_ACH_SUCCESS</Name>
+      <Value>Se actualizó ACH correctamente</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/auditevents/AUDITEVENT_UPDATE_CREDITCARD_FAILED</Name>
+      <Value>No se pudo actualizar la tarjeta de crédito</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/auditevents/AUDITEVENT_UPDATE_CREDITCARD_SUCCESS</Name>
+      <Value>Tarjeta de crédito actualizada correctamente</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/auditevents/BackoutDeleteFailed</Name>
+      <Value>Error en devolución y eliminación</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/auditevents/BackoutDeleteSuccessful</Name>
+      <Value>Devolución y eliminación correctas</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/auditevents/BackoutResubmitFailed</Name>
+      <Value>Error en devolución y reenvío</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/auditevents/BackoutResubmitSuccessful</Name>
+      <Value>Devolución y reenvío correctos</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/auditevents/BatchActive</Name>
+      <Value>Lote marcado como activo</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/auditevents/BatchBackedOut</Name>
+      <Value>Devolución de lote</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/auditevents/BatchCompleted</Name>
+      <Value>Lote marcado como finalizado</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/auditevents/BatchCreated</Name>
+      <Value>Lote creado</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/auditevents/BatchDismissed</Name>
+      <Value>Lote marcado como descartado</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/auditevents/BatchFailed</Name>
+      <Value>Lote marcado como erróneo</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/auditevents/BatchResubmitted</Name>
+      <Value>Lote reenviado</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/auditevents/bulksubscriptionchange</Name>
+      <Value>Cambio de suscripción en grandes cantidades</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/auditevents/bulksubscriptionchangeDENIED</Name>
+      <Value>Cambio de suscripción en grandes cantidades DENEGADO</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/auditevents/createaccount</Name>
+      <Value>Creación de cuenta</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/auditevents/createaccountDENIED</Name>
+      <Value>Creación de cuenta DENEGADA</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/auditevents/createaccountmapping</Name>
+      <Value>Creación de asignación de cuenta</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/auditevents/createaccountmappingDENIED</Name>
+      <Value>Creación de asignación de cuenta DENEGADA</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/auditevents/createcontact</Name>
+      <Value>Creación de información de contacto</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/auditevents/createcontactDENIED</Name>
+      <Value>Creación de información de contacto DENEGADA</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/auditevents/createGroupICB</Name>
+      <Value>Crear tarifa personal de grupo</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/auditevents/createGroupICBDENIED</Name>
+      <Value>Creación de tarifa personal de grupo DENEGADA</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/auditevents/creategroupsubscription</Name>
+      <Value>Creación de suscripción a grupo</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/auditevents/creategroupsubscriptionDENIED</Name>
+      <Value>Creación de suscripción a grupo DENEGADA</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/auditevents/createICB</Name>
+      <Value>Crear tarifa personal</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/auditevents/createICBDENIED</Name>
+      <Value>Creación de tarifa personal DENEGADA</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/auditevents/createpo</Name>
+      <Value>Creación de oferta de productos</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/auditevents/createpoDENIED</Name>
+      <Value>Creación de oferta de productos DENEGADA</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/auditevents/createpricelist</Name>
+      <Value>Creación de lista de precios</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/auditevents/createpricelistDENIED</Name>
+      <Value>Creación de lista de precios DENEGADA</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/auditevents/createrateschedule</Name>
+      <Value>Creación de lista de tarifas</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/auditevents/createratescheduleDENIED</Name>
+      <Value>Creación de lista de tarifas DENEGADA</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/auditevents/createrole</Name>
+      <Value>Creación de función</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/auditevents/createroleDENIED</Name>
+      <Value>Creación de función DENEGADA</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/auditevents/createsubscription</Name>
+      <Value>Creación de suscripción</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/auditevents/createsubscriptionDENIED</Name>
+      <Value>Creación de suscripción DENEGADA</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/auditevents/createtemplate</Name>
+      <Value>Creación de plantilla</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/auditevents/createtemplateDENIED</Name>
+      <Value>Creación de plantilla DENEGADA</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/auditevents/deleteaccountmapping</Name>
+      <Value>Eliminación de asignación de cuenta</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/auditevents/deleteaccountmappingDENIED</Name>
+      <Value>Eliminación de asignación de cuenta DENEGADA</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/auditevents/deleteGroupICB</Name>
+      <Value>Eliminar tarifa personal de grupo</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/auditevents/deleteGroupICBDENIED</Name>
+      <Value>Eliminación de tarifa personal de grupo DENEGADO</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/auditevents/deletegroupsubmember</Name>
+      <Value>Eliminar miembro de suscripción a grupo</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/auditevents/deletegroupsubmemberDENIED</Name>
+      <Value>Eliminación de miembro de suscripción a grupo DENEGADA</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/auditevents/deletegroupsubscription</Name>
+      <Value>Eliminación de suscripción a grupo</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/auditevents/deletegroupsubscriptionDENIED</Name>
+      <Value>Eliminación de suscripción a grupo DENEGADA</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/auditevents/deleteICB</Name>
+      <Value>Eliminar tarifa personal</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/auditevents/deleteICBDENIED</Name>
+      <Value>Eliminación de tarifa personal DENEGADA</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/auditevents/deletePIfromPO</Name>
+      <Value>Eliminar instancia de elemento con precio calculable de oferta de producto</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/auditevents/deletePIfromPODENIED</Name>
+      <Value>Eliminación de instancia de elemento con precio calculable de oferta de producto DENEGADA</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/auditevents/deletePO</Name>
+      <Value>Eliminación de oferta de productos</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/auditevents/deletePODENIED</Name>
+      <Value>Eliminación de oferta de productos DENEGADA</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/auditevents/deletepricelist</Name>
+      <Value>Eliminación de lista de precios</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/auditevents/deletepricelistDENIED</Name>
+      <Value>Eliminación de lista de precios DENEGADA</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/auditevents/deleterateschedule</Name>
+      <Value>Eliminación de lista de tarifas</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/auditevents/deleteratescheduleDENIED</Name>
+      <Value>Eliminación de lista de tarifas DENEGADA</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/auditevents/deleterole</Name>
+      <Value>Eliminación de función</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/auditevents/deleteroleDENIED</Name>
+      <Value>Eliminación de función DENEGADA</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/auditevents/deletesubscription</Name>
+      <Value>Eliminación de suscripción</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/auditevents/deletesubscriptionDENIED</Name>
+      <Value>Eliminación de suscripción DENEGADA</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/auditevents/deletetemplate</Name>
+      <Value>Eliminación de plantilla</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/auditevents/deletetemplateDENIED</Name>
+      <Value>Eliminación de plantilla DENEGADA</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/auditevents/FailedTransactionResubmit</Name>
+      <Value>Volver a enviar transacción errónea</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/auditevents/FailedTransactionUpdateStatus</Name>
+      <Value>Actualizar el estado de la transacción</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/auditevents/FailedTransactionUpdateTransactionDetails</Name>
+      <Value>Actualizar detalles de la transacción</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/auditevents/IdentifyFailed</Name>
+      <Value>Identificación errónea</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/auditevents/IdentifySuccessful</Name>
+      <Value>Identificación correcta</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/auditevents/LoginFailed</Name>
+      <Value>Error en el inicio de sesión</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/auditevents/LoginSuccessful</Name>
+      <Value>Inicio de sesión correcto</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/auditevents/NewRerunCreated</Name>
+      <Value>Se creó correctamente una nueva repetición</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/auditevents/other</Name>
+      <Value>Otro(a)</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/auditevents/PostbillAdjustmentApprove</Name>
+      <Value>Ajuste posterior a la facturación aprobado</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/auditevents/PostbillAdjustmentApproveDENIED</Name>
+      <Value>Aprobación de acción de ajuste posterior a la facturación denegada</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/auditevents/PostbillAdjustmentCreate</Name>
+      <Value>Ajuste posterior a la facturación creado</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/auditevents/PostbillAdjustmentCreateDENIED</Name>
+      <Value>Ajuste posterior a la facturación denegado</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/auditevents/PostbillAdjustmentCreatePending</Name>
+      <Value>Ajuste pendiente posterior a la facturación creado</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/auditevents/PostbillAdjustmentDelete</Name>
+      <Value>Ajuste posterior a la facturación eliminado</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/auditevents/PostbillAdjustmentDeleteDENIED</Name>
+      <Value>Acción de eliminación de ajuste posterior a la facturación denegada</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/auditevents/PostbillMIUReassign</Name>
+      <Value>Transacción posterior a la facturación reasignada a cuenta desconocida (Se envió a la unidad de investigación de mensajes)</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/auditevents/PostbillMIUReassignDENIED</Name>
+      <Value>Reasignación posterior a la facturación a una cuenta desconocida denegada</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/auditevents/PostbillReassign</Name>
+      <Value>Transacción posterior a la facturación reasignada a otra cuenta</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/auditevents/PostbillReassignDENIED</Name>
+      <Value>Reasignación posterior a la facturación de una transacción denegada</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/auditevents/PrebillAdjustmentApprove</Name>
+      <Value>Ajuste previo a la facturación aprobado</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/auditevents/PrebillAdjustmentApproveDENIED</Name>
+      <Value>Aprobación de acción de ajuste previo a la facturación denegada</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/auditevents/PrebillAdjustmentCreate</Name>
+      <Value>Ajuste previo a la facturación creado</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/auditevents/PrebillAdjustmentCreateDENIED</Name>
+      <Value>Ajuste previo a la facturación denegado</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/auditevents/PrebillAdjustmentCreatePending</Name>
+      <Value>Ajuste pendiente previo a la facturación creado</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/auditevents/PrebillAdjustmentDelete</Name>
+      <Value>Ajuste previo a la facturación eliminado</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/auditevents/PrebillAdjustmentDeleteDENIED</Name>
+      <Value>Eliminación de acción de ajuste previo a la facturación denegada</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/auditevents/PrebillMIUReassign</Name>
+      <Value>Transacción previa a la facturación reasignada a cuenta desconocida (Se envió a la unidad de investigación de mensajes)</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/auditevents/PrebillMIUReassignDENIED</Name>
+      <Value>Reasignación previa a la facturación a una cuenta desconocida denegada</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/auditevents/PrebillReassign</Name>
+      <Value>Transacción previa a la facturación reasignada a otra cuenta</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/auditevents/PrebillReassignDENIED</Name>
+      <Value>Reasignación previa a la facturación de una transacción denegada</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/auditevents/RerunCreateFailed</Name>
+      <Value>No se pudo crear una nueva repetición</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/auditevents/SelfSubscription</Name>
+      <Value>Self Subscription succeeded</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/auditevents/SelfSubscriptionDENIED</Name>
+      <Value>Self Subscription denied</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/auditevents/SelfUnsubscription</Name>
+      <Value>Self Unsubscription succeeded</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/auditevents/ServiceEndpointConnected</Name>
+      <Value>Service endpoint connected</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/auditevents/ServiceEndpointConnectedDENIED</Name>
+      <Value>Service endpoint denied</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/auditevents/ServiceEndpointConnectionMoved</Name>
+      <Value>Service endpoint moved</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/auditevents/ServiceEndpointConnectionMovedDENIED</Name>
+      <Value>Service endpoint move denied</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/auditevents/ServiceEndpointConnectionRemoved</Name>
+      <Value>Service endpoint removed</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/auditevents/ServiceEndpointConnectionRemovedDENIED</Name>
+      <Value>Service endpoint remove denied</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/auditevents/ServiceEndpointConnectionUpdated</Name>
+      <Value>Service endpoint updated</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/auditevents/ServiceEndpointConnectionUpdatedDENIED</Name>
+      <Value>Service endpoint update denied</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/auditevents/ServiceEndpointManageAccountDENIED</Name>
+      <Value>Service endpoint manage account denied</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/auditevents/unknown</Name>
+      <Value>Desconocido(a)</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/auditevents/unsubscribe</Name>
+      <Value>Cancelación de suscripción</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/auditevents/unsubscribeDENIED</Name>
+      <Value>Cancelación de suscripción DENEGADA</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/auditevents/unsubscribegroupsubscription</Name>
+      <Value>Cancelar suscripción a grupo</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/auditevents/unsubscribegroupsubscriptionDENIED</Name>
+      <Value>Cancelación de suscripción a grupo DENEGADA</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/auditevents/updateaccount</Name>
+      <Value>Actualización de la cuenta</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/auditevents/updateaccountDENIED</Name>
+      <Value>Actualización de la cuenta DENEGADA</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/auditevents/updateaccountmapping</Name>
+      <Value>Actualización de asignación de cuenta</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/auditevents/updateaccountmappingDENIED</Name>
+      <Value>Actualización de asignación de cuenta DENEGADA</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/auditevents/updatecontact</Name>
+      <Value>Actualización de información de contacto</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/auditevents/updatecontactDENIED</Name>
+      <Value>Actualización de información de contacto DENEGADA</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/auditevents/updateCSRauth</Name>
+      <Value>Actualización de seguridad de CSR</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/auditevents/updateCSRauthDENIED</Name>
+      <Value>Actualización de seguridad de CSR DENEGADA</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/auditevents/updateGroupICB</Name>
+      <Value>Actualizar tarifa personal de grupo</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/auditevents/updateGroupICBDENIED</Name>
+      <Value>Actualizar tarifa personal de grupo DENE</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/auditevents/updategroupsubmember</Name>
+      <Value>Actualizar miembro de suscripción a grupo</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/auditevents/updategroupsubmemberDENIED</Name>
+      <Value>Actualización de miembro de suscripción a grupo DENEGADA</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/auditevents/updategroupsubscription</Name>
+      <Value>Actualizar suscripción a grupo</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/auditevents/updategroupsubscriptionDENIED</Name>
+      <Value>Actualización de suscripción a grupo DENEGADA</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/auditevents/updateICB</Name>
+      <Value>Actualizar tarifa personal</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/auditevents/updateICBDENIED</Name>
+      <Value>Actualizar tarifa personal DENEGADA</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/auditevents/updatePIinPO</Name>
+      <Value>Actualización de instancia de elemento con precio calculable de oferta de producto </Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/auditevents/updatePIinPODENIED</Name>
+      <Value>Actualización de instancia de elemento con precio calculable de oferta de producto DENEGADA</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/auditevents/updatePLMinPO</Name>
+      <Value>Actualización la oferta de productos Asignación de lista de precios</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/auditevents/updatePLMinPODENIED</Name>
+      <Value>Actualización la oferta de productos Asignación de lista de precios DENEGADA</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/auditevents/updatepo</Name>
+      <Value>Actualizar la oferta de productos</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/auditevents/updatepoDENIED</Name>
+      <Value>Actualización la oferta de productos DENEGADA</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/auditevents/updatepricelist</Name>
+      <Value>Actualización de lista de precios</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/auditevents/updatepricelistDENIED</Name>
+      <Value>Actualización de lista de precios DENEGADA</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/auditevents/updaterateschedule</Name>
+      <Value>Actualización de propiedad de lista de tarifas</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/auditevents/updateratescheduleDENIED</Name>
+      <Value>Actualización de propiedad de lista de tarifas DENEGADA</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/auditevents/updaterateschedulerules</Name>
+      <Value>Actualización de normas de lista de tarifas</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/auditevents/updaterateschedulerulesDENIED</Name>
+      <Value>Actualización de normas de lista de tarifas DENEGADA</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/auditevents/updaterole</Name>
+      <Value>Actualización de función</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/auditevents/updateroleDENIED</Name>
+      <Value>Actualización de función DENEGADA</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/auditevents/updatesubscriberauth</Name>
+      <Value>Actualización de seguridad de suscriptor</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/auditevents/updatesubscriberauthDENIED</Name>
+      <Value>Actualización de seguridad de suscriptor DENEGADO</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/auditevents/updatesubscription</Name>
+      <Value>Actualización de suscripción</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/auditevents/updatesubscriptionDENIED</Name>
+      <Value>Actualización de suscripción DENEGADA</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/auditevents/updatetemplate</Name>
+      <Value>Actualización de plantilla</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/auditevents/updatetemplateDENIED</Name>
+      <Value>Actualización de plantilla DENEGADA</Value>
+    </locale_entry>
+
+    <!-- Audit Event Localization for Approval Framework-->
+    <locale_entry>
+      <Name>metratech.com/auditevents/AUDITEVENT_APPROVALMANAGEMENT_CHANGESUBMITTED</Name>
+      <Value>Change Submitted for Approval</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/auditevents/AUDITEVENT_APPROVALMANAGEMENT_CHANGEAPPROVED</Name>
+      <Value>Change Approved</Value>
+    </locale_entry>
+
+    <locale_entry>
+      <Name>metratech.com/auditevents/AUDITEVENT_APPROVALMANAGEMENT_CHANGEAPPLIED</Name>
+      <Value>Approved Change Applied</Value>
+    </locale_entry>
+
+    <locale_entry>
+      <Name>metratech.com/auditevents/AUDITEVENT_APPROVALMANAGEMENT_CHANGEDENIED</Name>
+      <Value>Change Denied</Value>
+    </locale_entry>
+
+    <locale_entry>
+      <Name>metratech.com/auditevents/AUDITEVENT_APPROVALMANAGEMENT_CHANGEREMOVED</Name>
+      <Value>Change Removed</Value>
+    </locale_entry>
+
+    <locale_entry>
+      <Name>metratech.com/auditevents/AUDITEVENT_APPROVALMANAGEMENT_CHANGEDETAILSUPDATED</Name>
+      <Value>Change Details Updated</Value>
+    </locale_entry>
+
+    <locale_entry>
+      <Name>metratech.com/auditevents/AUDITEVENT_APPROVALMANAGEMENT_CHANGEAPPLYFAILED</Name>
+      <Value>Apply Change Failed</Value>
+    </locale_entry>
+
+    <locale_entry>
+      <Name>metratech.com/auditevents/AUDITEVENT_APPROVALMANAGEMENT_CHANGEDISMISSED</Name>
+      <Value>Change Dismissed</Value>
+    </locale_entry>
+
+    <locale_entry>
+      <Name>metratech.com/auditevents/AUDITEVENT_APPROVALMANAGEMENT_FAILEDCHANGERESUBMITTED</Name>
+      <Value>Failed Change Resubmitted</Value>
+    </locale_entry>
+
+    <!-- Agreement Template Related Audit Events -->
+    <locale_entry>
+      <Name>metratech.com/auditevents/AUDITEVENT_AGREEMENT_TEMPLATECREATED</Name>
+      <Value>Template Created</Value>
+    </locale_entry>
+
+    <locale_entry>
+      <Name>metratech.com/auditevents/AUDITEVENT_AGREEMENT_TEMPLATEUPDATED</Name>
+      <Value>Template Updated</Value>
+    </locale_entry>
+
+    <locale_entry>
+      <Name>metratech.com/auditevents/AUDITEVENT_AGREEMENT_TEMPLATEDELETED</Name>
+      <Value>Template Deleted</Value>
+    </locale_entry>
+
+    <locale_entry>
+      <Name>metratech.com/auditevents/AUDITEVENT_AGREEMENT_POADDEDTOTEMPLATE</Name>
+      <Value>PO Added To Template</Value>
+    </locale_entry>
+
+    <locale_entry>
+      <Name>metratech.com/auditevents/AUDITEVENT_AGREEMENT_POREMOVEDFROMTEMPLATE</Name>
+      <Value>PO Removed From Template</Value>
+    </locale_entry>
+
+    <locale_entry>
+      <Name>metratech.com/auditevents/AUDITEVENT_AGREEMENT_RMEADDEDTOTEMPLATE</Name>
+      <Value>RME Added To Template</Value>
+    </locale_entry>
+
+    <locale_entry>
+      <Name>metratech.com/auditevents/AUDITEVENT_AGREEMENT_RMEREMOVEDFROMTEMPLATE</Name>
+      <Value>RME Removed From Template</Value>
+    </locale_entry>
+
+    <locale_entry>
+      <Name>metratech.com/auditevents/AUDITEVENT_AGREEMENT_MAPPEDENTITIESREMOVEDFROMTEMPLATE</Name>
+      <Value>All Mapped Entities Removed From Template</Value>
+    </locale_entry>
+
+    <locale_entry>
+      <Name>metratech.com/auditevents/AUDITEVENT_AGREEMENT_ADDEDCOREAGREEMENTPROPTOTEMPLATE</Name>
+      <Value>Core Property Added To Template</Value>
+    </locale_entry>
+
+    <locale_entry>
+      <Name>metratech.com/auditevents/AUDITEVENT_QUOTE_ADDQUOTE_SUCCESS</Name>
+      <Value>Presupuesto añadido correctamente</Value>
+    </locale_entry>
+
+    <locale_entry>
+      <Name>metratech.com/auditevents/AUDITEVENT_QUOTE_CONVERTQUOTE_SUCCESS</Name>
+      <Value>Presupuesto convertido correctamente</Value>
+    </locale_entry>
+
+    <locale_entry>
+      <Name>metratech.com/auditevents/AUDITEVENT_QUOTE_UPDATEQUOTE_SUCCESS </Name>
+      <Value>Presupuesto actualizado correctamente.</Value>
+    </locale_entry>
+
+    <locale_entry>
+      <Name>metratech.com/auditevents/AUDITEVENT_QUOTE_DELETEQUOTE_SUCCESS</Name>
+      <Value>Presupuesto eliminado correctamente</Value>
+    </locale_entry>
+
+    <locale_entry>
+      <Name>metratech.com/auditevents/AUDITEVENT_QUOTE_ADDQUOTE_FAILURE</Name>
+      <Value>Fallo al agregar Presupuesto</Value>
+    </locale_entry>
+
+    <locale_entry>
+      <Name>metratech.com/auditevents/AUDITEVENT_QUOTE_CONVERTQUOTE_FAILURE</Name>
+      <Value>Error al convertir el presupuesto</Value>
+    </locale_entry>
+
+    <locale_entry>
+      <Name>metratech.com/auditevents/AUDITEVENT_QUOTE_UPDATEQUOTE_FAILURE</Name>
+      <Value>Error al actualizar Presupuesto</Value>
+    </locale_entry>
+
+    <locale_entry>
+      <Name>metratech.com/auditevents/AUDITEVENT_QUOTE_DELETEQUOTE_FAILURE</Name>
+      <Value>Error al eliminar cita</Value>
+    </locale_entry>
+
+    <locale_entry>
+      <Name>metratech.com/auditevents/AUDITEVENT_ACH_NOTIFICATION_EMAIL_SUCCESS</Name>
+      <Value>[es-MX]ACH payment notification has been sent</Value>
+    </locale_entry>
+    
+    <locale_entry>
+      <Name>metratech.com/auditevents/AUDITEVENT_ACH_NOTIFICATION_EMAIL_FAILURE</Name>
+      <Value>[es-MX]ACH payment notification has not been sent</Value>
+    </locale_entry>
+
+    <locale_entry>
+      <Name>metratech.com/auditevents/AUDITEVENT_ACH_REFUND_NOTIFICATION_EMAIL_SUCCESS</Name>
+      <Value>[es-MX]ACH refund notification has been sent</Value>
+    </locale_entry>
+    
+    <locale_entry>
+      <Name>metratech.com/auditevents/AUDITEVENT_ACH_REFUND_NOTIFICATION_EMAIL_FAILURE</Name>
+      <Value>[es-MX]ACH refund notification has not been sent</Value>
+    </locale_entry>
+    
+    <locale_entry>
+      <Name>metratech.com/auditevents/AUDITEVENT_VOID_TRANSACTION_SUCCESS</Name>
+      <Value>[es-MX]Void transaction succeeded</Value>
+    </locale_entry>
+    
+    <locale_entry>
+      <Name>metratech.com/auditevents/AUDITEVENT_VOID_TRANSACTION_FAILED</Name>
+      <Value>[es-MX]Void transaction failed</Value>
+    </locale_entry>
+
+    <locale_entry>
+      <Name>metratech.com/auditevents/AUDITEVENT_ACH_INQUIRY_ADAPTER_SUCCESS</Name>
+      <Value>[es-MX]ACH inquiry transaction succeeded</Value>
+    </locale_entry>
+    
+    <locale_entry>
+      <Name>metratech.com/auditevents/AUDITEVENT_ACH_INQUIRY_ADAPTER_FAILURE</Name>
+      <Value>[es-MX]ACH inquiry transaction failed</Value>
+    </locale_entry>
+    
+    <locale_entry>
+      <Name>metratech.com/auditevents/AUDITEVENT_ACCOUNTING_CYCLE_CREATE_SUCCESS</Name>
+      <Value>[es-MX]Accounting cycle creation succeeded</Value>
+    </locale_entry>
+    
+    <locale_entry>
+      <Name>metratech.com/auditevents/AUDITEVENT_ACCOUNTING_CYCLE_UPDATE_SUCCESS</Name>
+      <Value>[es-MX]Accounting cycle update succeeded</Value>
+    </locale_entry>
+
+  </locale_space>
+</mt_config>

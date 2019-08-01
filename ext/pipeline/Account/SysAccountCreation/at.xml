@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xmlconfig>
+  <mtsysconfigdata>
+    <effective_date ptype="DATETIME">1998-11-19T00:00:00Z</effective_date>
+    <timeout ptype="INTEGER">30</timeout>
+    <configfiletype>CONFIG_DATA</configfiletype>
+  </mtsysconfigdata>
+
+  <mtconfigdata>
+	<version ptype="INTEGER">1</version>
+	<!-- First processor configuration -->
+	<processor>
+		<name>at</name>
+		<progid>MetraPipeline.MTSQLBatchQuery.1</progid>
+		<description>Used for finding account type id, and account type properties</description>
+
+		<!-- Processor specific configuration data -->
+		<configdata>
+			<Program>
+			
+				CREATE PROCEDURE AccountTypeLookup
+				  @AccountType VARCHAR(200),
+				  @acc_type_id INTEGER OUTPUT, 
+				  @b_CanSubscribe  BOOLEAN OUTPUT,
+				  @b_CanBePayer BOOLEAN OUTPUT,
+				  @b_CanHaveSyntheticRoot BOOLEAN OUTPUT,
+				  @b_CanParticipateInGSub BOOLEAN OUTPUT,
+				  @b_IsVisibleInHierarchy BOOLEAN OUTPUT,
+				  @b_CanHaveTemplates BOOLEAN OUTPUT,
+				  @b_IsCorporate BOOLEAN OUTPUT
+				AS
+        select 
+	          id_type,   
+	          b_CanSubscribe,  
+	          b_canbepayer,  
+		  b_CanHaveSyntheticRoot,
+	          b_CanParticipateInGSub, 
+		  b_IsVisibleInHierarchy,
+	          b_CanHaveTemplates,  
+	          b_IsCorporate
+	      into 
+	         @acc_type_id,
+	         @b_CanSubscribe,
+		 @b_CanBePayer,
+  		 @b_CanHaveSyntheticRoot,
+	         @b_CanParticipateInGSub,
+		 @b_IsVisibleInHierarchy,
+		 @b_CanHaveTemplates,
+		 @b_IsCorporate
+        from
+            t_account_type 
+            where UPPER(t_account_type.name) = UPPER(@AccountType)
+            
+ 			
+			</Program> 
+		<TempTable>at</TempTable>
+	  </configdata>
+	</processor>
+  </mtconfigdata>
+</xmlconfig>

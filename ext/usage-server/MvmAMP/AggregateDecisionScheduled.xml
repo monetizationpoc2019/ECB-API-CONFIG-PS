@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xmlconfig>
+  <!--  Adapter Name  -->
+  <AdapterName>Aggregate Metrics Processor (Scheduled)</AdapterName>
+  <!--  Insert Custom Tags here -->
+  <externalApp>mvm.exe</externalApp>
+  <!--Full path to exe (excluding name), defaults to env var MTRMPBIN -->
+  <workingDirectory>%MTRMPBIN64%</workingDirectory>
+  <!-- possible variables are %%UserID%%, %%Password%%, %%ServerName%%, %%IntervalID%% (only valid if running in EOP mode) & %%RunID%%-->
+  <commandArgs>-proc=execute_amp_for_open_intervals -runid=%%RunID%%  -logical_cluster=nrt_cluster -physical_cluster=default -use_local_windows=1</commandArgs>
+  <reverseArgs>1</reverseArgs>
+</xmlconfig>

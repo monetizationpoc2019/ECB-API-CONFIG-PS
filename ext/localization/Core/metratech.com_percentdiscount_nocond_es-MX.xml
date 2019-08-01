@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<mt_config>
+  <language_code>es-MX</language_code>
+  <locale_space name="metratech.com/percentdiscount_nocond">
+    <locale_entry>
+      <Name>metratech.com/percentdiscount_nocond</Name>
+      <Value>Porcentaje de descuento</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/percentdiscount_nocond/DiscountIntervalEnd</Name>
+      <Value>Fecha de finalización del intervalo de descuento</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/percentdiscount_nocond/DiscountIntervalStart</Name>
+      <Value>Fecha de inicio del intervalo de descuento</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/percentdiscount_nocond/DiscountIntervalSubEnd</Name>
+      <Value>Fecha de finalización de suscripción del intervalo de descuento</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/percentdiscount_nocond/DiscountIntervalSubStart</Name>
+      <Value>Fecha de inicio de suscripción del intervalo de descuento</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/percentdiscount_nocond/DiscountPercent</Name>
+      <Value>Porcentaje de descuento</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/percentdiscount_nocond/GroupSubscriptionName</Name>
+      <Value>Suscripción a grupo</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/percentdiscount_nocond/SubscriptionEnd</Name>
+      <Value>Fecha de finalización de suscripción</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/percentdiscount_nocond/SubscriptionStart</Name>
+      <Value>Fecha de inicio de suscripción</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/percentdiscount_nocond/Target</Name>
+      <Value>Valor objetivo</Value>
+    </locale_entry>
+  </locale_space>
+</mt_config>

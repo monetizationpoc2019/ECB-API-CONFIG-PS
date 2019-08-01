@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xmlconfig>
+  <version ptype="INTEGER">1</version>
+  <description>Stage used to create system accounts, contacts or both.</description>
+  <stage>
+    <name>SysAccountCreation</name>
+    <startstage ptype="BOOLEAN">YES</startstage>
+    <finalstage ptype="BOOLEAN">YES</finalstage>
+    
+    <dependencies>
+
+      <dependson>BatchUpdate</dependson>
+      <dependson>ApplyRoleMembership</dependson>
+
+      <dependency>
+        <processor>BatchUpdate</processor>
+        <dependson>Audit</dependson>
+      </dependency>
+
+      <dependency>
+        <processor>Audit</processor>
+        <dependson>SetSubscriberID</dependson>
+        <dependson>SetAuditProperties</dependson>
+      </dependency>
+
+      <dependency>
+        <processor>SetAuditProperties</processor>
+        <dependson>PopulateExtensions</dependson>
+      </dependency>
+
+      <dependency>
+        <processor>PopulateExtensions</processor>
+        <dependson>AccountResolution</dependson>
+      </dependency>
+
+      <dependency>
+        <processor>AccountResolution</processor>
+        <dependson>UpdateAccount</dependson>
+        <dependson>AccountTableCreation</dependson>
+      </dependency>
+
+      <dependency>
+       <processor>ApplyRoleMembership</processor>
+       <dependson>AccountTableCreation</dependson>
+      </dependency>
+      
+      <dependency>
+       <processor>AccountTableCreation</processor>
+       <dependson>at</dependson>
+      </dependency>
+
+     <dependency>
+       <processor>UpdateAccount</processor>
+       <dependson>at</dependson>
+     </dependency>
+
+     </dependencies>
+  </stage>
+</xmlconfig>

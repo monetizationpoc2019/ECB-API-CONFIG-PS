@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xmlconfig>
+    <!-- 
+Set IsCleanupMode to true when scheduling an instance of this adapter to run in cleanup mode. 
+If IsCleanupMode is set to false or not set in this file, then
+the adapter will run in the mode to generate new notification events. 
+-->
+    <IsCleanupMode>false</IsCleanupMode>
+    <!-- 
+If running this adapter in cleanup mode (<IsCleanupMode>true</IsCleanupMode>), you must specify the age of notification events to cleanup from NetMeter.
+Set MaxNotificationEventAgeInDays to a number of days greater than or equal to 0.
+For example, if IsCleanupMode is set to true and MaxNotificationEventAgeInDays is set to 30, then when this scheduled adapter is run, it will cleanup
+all notification events that were created more than 30 days before the scheduled adapter runs in cleanup mode.
+-->
+    <MaxNotificationEventAgeInDays>30</MaxNotificationEventAgeInDays>
+</xmlconfig>

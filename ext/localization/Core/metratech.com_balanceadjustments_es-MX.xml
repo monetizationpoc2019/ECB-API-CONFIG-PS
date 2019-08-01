@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<mt_config>
+  <language_code>es-mx</language_code>
+  <locale_space name="metratech.com/balanceadjustments">
+    <locale_entry>
+      <Name>metratech.com/balanceadjustments/PaymentMethod/ACH</Name>
+      <Value>ACH</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/balanceadjustments/PaymentMethod/Cash</Name>
+      <Value>metratech.com/balanceadjustments/PaymentMethod/Cash</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/balanceadjustments/PaymentMethod/Check</Name>
+      <Value>metratech.com/balanceadjustments/PaymentMethod/Check</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/balanceadjustments/PaymentMethod/CreditCard</Name>
+      <Value>Tarjeta de crédito</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/balanceadjustments/PaymentMethod/DirectDebit</Name>
+      <Value>Direct Debit</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/balanceadjustments/PaymentMethod/InterCompany</Name>
+      <Value>metratech.com/balanceadjustments/PaymentMethod/InterCompany</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/balanceadjustments/PaymentMethod/Lockbox</Name>
+      <Value>metratech.com/balanceadjustments/PaymentMethod/Lockbox</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/balanceadjustments/PaymentMethod/TerminalCreditCard</Name>
+      <Value>metratech.com/balanceadjustments/PaymentMethod/TerminalCreditCard</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/balanceadjustments/PaymentMethod/Wholesale</Name>
+      <Value>metratech.com/balanceadjustments/PaymentMethod/Wholesale</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/balanceadjustments/PaymentMethod/WireTransfer</Name>
+      <Value>metratech.com/balanceadjustments/PaymentMethod/WireTransfer</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/balanceadjustments/PaymentMethod/WriteOff</Name>
+      <Value>metratech.com/balanceadjustments/PaymentMethod/WriteOff</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/balanceadjustments/ReasonCode/1</Name>
+      <Value>Se traspasó el saldo al pagador</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/balanceadjustments/ReasonCode/2</Name>
+      <Value>Se traspasó el saldo del beneficiario</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/balanceadjustments/ReasonCode/3</Name>
+      <Value>Otro(a)</Value>
+    </locale_entry>
+  </locale_space>
+</mt_config>

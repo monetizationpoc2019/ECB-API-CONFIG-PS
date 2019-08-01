@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xmlconfig>
+    <mtsysconfigdata>
+        <effective_date ptype="DATETIME">1998-11-19T00:00:00Z</effective_date>
+        <timeout ptype="INTEGER">30</timeout>
+        <configfiletype>CONFIG_DATA</configfiletype>
+    </mtsysconfigdata>
+    <mtconfigdata>
+        <version ptype="INTEGER">1</version>
+        <!-- First processor configuration -->
+        <processor>
+            <name>SetInitialValues</name>
+            <progid>MetraPipeline.MTSQLInterpreter.1</progid>
+            <description>Sets intial values</description>
+            <!--
+  <autotest>
+    <file></file>
+  </autotest>
+  -->
+            <inputs />
+            <outputs />
+            <!-- Processor specific configuration data -->
+            <configdata>
+                <Program>CREATE PROCEDURE SetInitialValues
+  @_AccountID   INTEGER OUTPUT 
+  @_ProductViewID INTEGER OUTPUT
+  @_PriceableItemName VARCHAR OUTPUT
+  @late_fee_amount DECIMAL OUTPUT
+as
+
+  SET @_AccountID = -1
+  SET @_PriceableItemName ='LateFeeCharge'
+  SET @_ProductViewID =CAST(#metratech.com/LateFee# As INTEGER)
+  SET @late_fee_amount=0
+</Program>
+            </configdata>
+        </processor>
+    </mtconfigdata>
+</xmlconfig>

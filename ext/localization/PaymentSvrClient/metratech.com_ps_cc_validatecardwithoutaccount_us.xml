@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<mt_config>
+  <language_code>US</language_code>
+  <locale_space name="metratech.com/ps_cc_validatecardwithoutaccount">
+    <locale_entry>
+      <Name>metratech.com/ps_cc_validatecardwithoutaccount</Name>
+      <Value>ps_cc_validate Credit Card Without Account</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ps_cc_validatecardwithoutaccount/address</Name>
+      <Value>Street Address</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ps_cc_validatecardwithoutaccount/city</Name>
+      <Value>City</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ps_cc_validatecardwithoutaccount/country</Name>
+      <Value>Country</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ps_cc_validatecardwithoutaccount/creditcardtype</Name>
+      <Value>Credit Card Type</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ps_cc_validatecardwithoutaccount/customername</Name>
+      <Value>Customer Name</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ps_cc_validatecardwithoutaccount/paymentservicetransactionid</Name>
+      <Value>Payment Service Transaction ID</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ps_cc_validatecardwithoutaccount/respstring</Name>
+      <Value>Response String</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ps_cc_validatecardwithoutaccount/retcode</Name>
+      <Value>Return Code</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ps_cc_validatecardwithoutaccount/state</Name>
+      <Value>State</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ps_cc_validatecardwithoutaccount/terminalid</Name>
+      <Value>Terminal ID</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/ps_cc_validatecardwithoutaccount/zip</Name>
+      <Value>Zip</Value>
+    </locale_entry>
+  </locale_space>
+</mt_config>

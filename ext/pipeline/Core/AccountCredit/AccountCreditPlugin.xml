@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xmlconfig>
+  <mtsysconfigdata>
+    <effective_date ptype="DATETIME">2000-1-19T00:00:00Z</effective_date>
+    <timeout ptype="INTEGER">30</timeout>
+    <configfiletype>CONFIG_DATA</configfiletype>
+  </mtsysconfigdata>
+
+  <mtconfigdata>
+
+ <version ptype="INTEGER">1</version>
+ <!-- First processor configuration -->
+ <processor>
+  <name>AccountCreditPlugin</name>
+  <progid>MetraPipeline.AccountCreditPlugin.1</progid>
+  <description>
+  	Used to meter account credit. Does following before WriteProductView:
+	1.	Looks if status field is correct (should be either "APPROVED" or "DENIED")
+	2. If this credit is based on a previous request (RequestID &gt; 0), update a record in
+		AccountCreditRequest product view to have a correct status and credit amount
+	3. Return
+	
+	NOTE:	RequestID property should be metered as -1 if this credit is not based 
+			on a previous request (see AccountCreditRequest).
+  </description>
+
+<!--
+  <autotest>
+    <file>AccountCreditPluginTest.xml</file>
+  </autotest>
+-->
+  <inputs>
+	<input type="STRING" internal_name="Status">Status</input>
+	<input type="LONG" internal_name="RequestID">RequestID</input>
+	<input type="DECIMAL" internal_name="CreditAmount">CreditAmount</input>
+  </inputs>
+
+  <outputs>
+	<output type="LONG" internal_name="ReturnCode">ReturnCode</output>
+  </outputs>
+  
+  <configdata>
+    <Status>Status</Status>
+    <RequestID>RequestID</RequestID>
+    <ReturnCode>ReturnCode</ReturnCode>
+    <CreditAmount>CreditAmount</CreditAmount>
+  </configdata>
+
+ </processor>
+
+  </mtconfigdata>
+
+</xmlconfig>

@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<mt_config>
+  <language_code>jp</language_code>
+  <locale_space name="metratech.com/flatdiscount">
+    <locale_entry>
+      <Name>metratech.com/flatdiscount</Name>
+      <Value>均一割引</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/flatdiscount/DiscountIntervalEnd</Name>
+      <Value>割引期間の終了日</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/flatdiscount/DiscountIntervalStart</Name>
+      <Value>割引期間の開始日</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/flatdiscount/DiscountIntervalSubEnd</Name>
+      <Value>割引期間のご利用終了</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/flatdiscount/DiscountIntervalSubStart</Name>
+      <Value>割引期間のご利用開始</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/flatdiscount/FlatRateQualifier</Name>
+      <Value>均一料金資格付与</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/flatdiscount/GroupSubscriptionName</Name>
+      <Value>グループ利用</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/flatdiscount/SubscriptionEnd</Name>
+      <Value>サービスご利用終了</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/flatdiscount/SubscriptionStart</Name>
+      <Value>サービスご利用開始</Value>
+    </locale_entry>
+  </locale_space>
+</mt_config>

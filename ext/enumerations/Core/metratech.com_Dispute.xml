@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<mt_config>
+  <enum_spaces>
+    <enum_space name="metratech.com/Dispute">
+      <description>dispute namespace</description>
+      <enums>
+        <enum name="DisputeStatus">
+          <description>These are the valid dispute status</description>
+            <entries>
+              <entry name="Pending">
+                <value>0</value>
+              </entry>
+              <entry name="Approved">
+                <value>1</value>
+              </entry>
+              <entry name="Rejected">
+                <value>2</value>
+              </entry>
+            </entries>
+        </enum>
+      </enums>
+    </enum_space>
+  </enum_spaces>
+</mt_config>

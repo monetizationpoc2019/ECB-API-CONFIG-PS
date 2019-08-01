@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xmlconfig>
+  <StoredProcs>
+    <!-- This is the name of the stored procedure that updates t_invoice.invoice_string values for each invoice that requires E-Signature -->
+    <UpdateInvoiceStrings>MTSP_UPDATEONEINVOICENUM</UpdateInvoiceStrings>
+    <!-- This is the name of the stored procedure that generates t_invoice.invoice_string values for each invoice that requires E-Signature -->
+    <GenInvoiceNumbers>MTSP_UPDATEONEINVOICE_PTINVNUM</GenInvoiceNumbers>
+  </StoredProcs>  
+  <Queries> 
+    <!-- This is the query to get the list of invoices that require E-Signature -->
+    <GetInvoicesForESignature>__GET_INVOICES_THAT_REQUIRE_E_SIGNATURE__</GetInvoicesForESignature>
+  </Queries>
+  <!-- This must match the ReportType for the EOP instance of the GenerateReportingDatamarts adapter (See \RMP\Extensions\Reporting\Config\UsageServer\GenerateReportingDatamarts.xml). Supported report types: Interval, BillingGroup, Account -->
+	<ReportType>Account</ReportType>
+</xmlconfig>

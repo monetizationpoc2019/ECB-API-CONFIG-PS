@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xmlconfig>
+    <mtconfigdata>
+        <version ptype="INTEGER">1</version>
+        <!-- First processor configuration -->
+        <processor>
+            <name>CalculateDivisionCurrency</name>
+            <progid>MetraPipeline.MTSQLInterpreter.1</progid>
+            <description>Calculate the currencey divisions.</description>
+          <condition>
+            CREATE PROCEDURE Condition
+                        @_DivisionCurrency VARCHAR             
+                        @_ExecutePlugin  BOOLEAN OUTPUT
+                      as
+                        SET @_ExecutePlugin = NOT(@_DivisionCurrency is null)
+          </condition>
+            <!-- Processor specific configuration data -->
+            <configdata>
+                <Program>CREATE PROCEDURE ValidateConversionRate
+	@CurrencyConversionRate DECIMAL
+	@_Currency VARCHAR 
+	@_DivisionCurrency VARCHAR 
+	@_Timestamp DATETIME 
+	@_Amount DECIMAL 
+	@_DivisionAmount DECIMAL OUTPUT
+as
+	if (@CurrencyConversionRate is null)
+		raiserror ('Unable to locate conversion rate from ' + @_Currency + ' to ' + @_DivisionCurrency + ' for ' + cast(@_Timestamp as VARCHAR));
+	
+	set @_DivisionAmount = @_Amount * @CurrencyConversionRate;</Program>
+            </configdata>
+        </processor>
+    </mtconfigdata>
+</xmlconfig>

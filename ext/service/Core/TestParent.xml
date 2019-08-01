@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<defineservice>
+  <name>metratech.com/TestParent</name>
+  <description>Multipoint parent transaction test.</description>
+  <ptype display_name="">
+    <dn>Description</dn>
+    <type>string</type>
+    <length>80</length>
+    <required>Y</required>
+    <defaultvalue>
+    </defaultvalue>
+    <description>Open field for testing</description>
+  </ptype>
+  <ptype display_name="">
+    <dn>Time</dn>
+    <type>timestamp</type>
+    <length>
+    </length>
+    <required>Y</required>
+    <defaultvalue>
+    </defaultvalue>
+    <description>Open field for testing of timestamp properties; not used in rating but passed through</description>
+  </ptype>
+  <ptype display_name="">
+    <dn>Accountname</dn>
+    <type>string</type>
+    <length>20</length>
+    <required>Y</required>
+    <defaultvalue>
+    </defaultvalue>
+    <description>The account name used for account resolution</description>
+  </ptype>
+</defineservice>

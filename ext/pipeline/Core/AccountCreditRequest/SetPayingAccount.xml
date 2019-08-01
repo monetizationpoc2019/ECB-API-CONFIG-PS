@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xmlconfig>
+  <version ptype="INTEGER">1</version>
+  <processor>
+    <name>SetPayingAccount</name>
+    <description>Set paying account to demo.</description>
+    <progid>MetraPipeline.MTSQLInterpreter.1</progid>
+
+    <configdata>
+      <Program>
+CREATE PROCEDURE SetPayingAccount
+  @_PayingAccount INTEGER OUTPUT
+AS
+  SET @_PayingAccount = 123
+      </Program>
+    </configdata>
+
+  </processor>
+</xmlconfig>

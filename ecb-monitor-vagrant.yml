@@ -1,0 +1,14 @@
+eureka:
+  client:
+    registerWithEureka: false
+    fetchRegistry: true
+  dashboard:
+    path: /dashboard
+  server:
+    waitTimeInMsWhenSyncEmpty: 1
+    
+# management.port: 8990
+turbine:
+  stream.port: 8991
+  appConfig: ecb-billing,ecb-pricing
+  clusterNameExpression: new String("default")

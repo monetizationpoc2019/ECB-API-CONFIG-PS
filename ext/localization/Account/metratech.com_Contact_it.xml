@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<mt_config>
+  <language_code>it</language_code>
+  <locale_space name="metratech.com/Contact">
+    <locale_entry>
+      <Name>metratech.com/Contact/Address1</Name>
+      <Value>Riga indirizzo 1</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/Contact/Address2</Name>
+      <Value>Riga indirizzo 2</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/Contact/Address3</Name>
+      <Value>Riga indirizzo 3</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/Contact/City</Name>
+      <Value>Città</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/Contact/Company</Name>
+      <Value>Società</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/Contact/ContactType</Name>
+      <Value>Tipo di contatto</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/Contact/Country</Name>
+      <Value>Stato</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/Contact/Email</Name>
+      <Value>E-mail</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/Contact/FacsimileTelephoneNumber</Name>
+      <Value>Fax</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/Contact/FirstName</Name>
+      <Value>Nome</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/Contact/LastName</Name>
+      <Value>Cognome</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/Contact/MiddleInitial</Name>
+      <Value>Iniziali</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/Contact/PassportID</Name>
+      <Value>ID passaporto</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/Contact/PassportIssuer</Name>
+      <Value>Ente di emissione passaporto</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/Contact/PhoneNumber</Name>
+      <Value>Numero di telefono</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/Contact/State</Name>
+      <Value>Stato/Provincia</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/Contact/Zip</Name>
+      <Value>CAP (Codice di avviamento postale)</Value>
+    </locale_entry>
+  </locale_space>
+</mt_config>

@@ -1,0 +1,101 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xmlconfig>
+  <ScheduledAdapters>
+    <Adapter>
+      <Name>QueueScheduledExportReports</Name>
+      <DisplayName>Queue Scheduled Export Reports</DisplayName>
+      <ClassID>MetraTech.DataExportFramework.Adapters.QueueScheduledReportsAdapter.QueueScheduledReportsAdapter, MetraTech.DataExportFramework.Adapters.QueueScheduledReportsAdapter</ClassID>
+      <ConfigFile>QueueScheduledExportReports.xml</ConfigFile>
+      <Description>This scheduled BPA kick off reports</Description>
+      <LocalizedItems>
+        <item lang="FR">
+          <DisplayName>Mettre en file d`attente les rapports d`exportation planifiés </DisplayName>
+          <Description>A planifié des rapports de lancement de BPA</Description>
+        </item>
+        <item lang="IT">
+          <DisplayName>[IT] Queue Scheduled Export Reports</DisplayName>
+          <Description>[IT] This scheduled BPA kick off reports</Description>
+        </item>
+        <item lang="ES">
+          <DisplayName>[ES] Queue Scheduled Export Reports</DisplayName>
+          <Description>[ES] This scheduled BPA kick off reports</Description>
+        </item>
+        <item lang="DE">
+          <DisplayName>[DE] Queue Scheduled Export Reports</DisplayName>
+          <Description>[DE] This scheduled BPA kick off reports</Description>
+        </item>
+        <item lang="es-MX">
+          <DisplayName>[es-MX] Queue Scheduled Export Reports</DisplayName>
+          <Description>[es-MX] This scheduled BPA kick off reports</Description>
+        </item>
+        <item lang="pt-BR">
+          <DisplayName>Enfileirar relatórios de exportação agendados</DisplayName>
+          <Description>Este BPA agendado dispara relatórios</Description>
+        </item>
+        <item lang="en-GB">
+          <DisplayName>[en-GB] Queue Scheduled Export Reports</DisplayName>
+          <Description>[en-GB] This scheduled BPA kick off reports</Description>
+        </item>
+        <item lang="JA">
+          <DisplayName>[JA] Queue Scheduled Export Reports</DisplayName>
+          <Description>[JA] This scheduled BPA kick off reports</Description>
+        </item>
+      </LocalizedItems>
+      <RecurrencePattern>
+        <SystemCycle>Daily</SystemCycle>
+      </RecurrencePattern>
+    </Adapter>
+  </ScheduledAdapters>
+
+  <EndOfPeriodAdapters>
+    <Adapter>
+      <Name>QueueEOP</Name>
+      <DisplayName>Queue EOP Export Reports</DisplayName>
+      <ClassID>MetraTech.DataExportFramework.Adapters.EOPQueueReports.EOPQueueReports, MetraTech.DataExportFramework.Adapters.EOPQueueReports</ClassID>
+      <ConfigFile>QueueEOPExportReports.xml</ConfigFile>
+      <Description>Start Generating EOP Export Reports</Description>
+      <LocalizedItems>
+        <item lang="FR">
+          <DisplayName>Queue EOP Rapports exportation</DisplayName>
+          <Description>Commencer à générer des rapports EOP exportation</Description>
+        </item>
+        <item lang="IT">
+          <DisplayName>[IT] Queue EOP Export Reports</DisplayName>
+          <Description>[IT] Start Generating EOP Export Reports</Description>
+        </item>
+        <item lang="ES">
+          <DisplayName>[ES] Queue EOP Export Reports</DisplayName>
+          <Description>[ES] Start Generating EOP Export Reports</Description>
+        </item>
+        <item lang="DE">
+          <DisplayName>[DE] Queue EOP Export Reports</DisplayName>
+          <Description>[DE] Start Generating EOP Export Reports</Description>
+        </item>
+        <item lang="es-MX">
+          <DisplayName>[es-MX] Queue EOP Export Reports</DisplayName>
+          <Description>[es-MX] Start Generating EOP Export Reports</Description>
+        </item>
+        <item lang="pt-BR">
+          <DisplayName>Filas EOP Exportar relatórios</DisplayName>
+          <Description>Começar a gerar EOP Exportar relatórios</Description>
+        </item>
+        <item lang="en-GB">
+          <DisplayName>[en-GB] Queue EOP Export Reports</DisplayName>
+          <Description>[en-GB] Start Generating EOP Export Reports</Description>
+        </item>
+        <item lang="JA">
+          <DisplayName>[JA] Queue EOP Export Reports</DisplayName>
+          <Description>[JA] Start Generating EOP Export Reports</Description>
+        </item>
+      </LocalizedItems>
+      <RecurrencePattern>
+        <UsageCycleType>All</UsageCycleType>
+      </RecurrencePattern>
+      <Dependencies>
+        <DependsOn>Invoices</DependsOn> 
+        <!-- <DependsOn>InvoiceSignatureAdapter</DependsOn> -->		
+      </Dependencies>
+    </Adapter>
+  </EndOfPeriodAdapters>
+
+</xmlconfig>

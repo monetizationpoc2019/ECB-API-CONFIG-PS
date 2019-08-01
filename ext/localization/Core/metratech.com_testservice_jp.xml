@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<mt_config>
+  <language_code>jp</language_code>
+  <locale_space name="metratech.com/testservice">
+    <locale_entry>
+      <Name>metratech.com/testservice</Name>
+      <Value>テスト サービス</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/testservice/DecProp1</Name>
+      <Value>十進プロパティ 1</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/testservice/DecProp2</Name>
+      <Value>十進プロパティ 2</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/testservice/DecProp3</Name>
+      <Value>十進プロパティ 3</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/testservice/Description</Name>
+      <Value>内容</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/testservice/optionaltime</Name>
+      <Value>オプション時間</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/testservice/Time</Name>
+      <Value>時間</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/testservice/Units</Name>
+      <Value>単位</Value>
+    </locale_entry>
+  </locale_space>
+</mt_config>

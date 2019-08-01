@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<defineservice>
+  <name>metratech.com/LateFee</name>
+  <description>Account payments.</description>
+  <ptype>
+    <dn>InvoiceId</dn>
+    <type>int32</type>
+    <length />
+    <required>Y</required>
+    <defaultvalue />
+    <description>Invoice id.</description>
+  </ptype>
+  <ptype>
+    <dn>DFP_Id</dn>
+    <type>int32</type>
+    <length />
+    <required>Y</required>
+    <defaultvalue />
+    <description>Demand for payment id.</description>
+  </ptype>
+  <ptype>
+    <dn>num_days</dn>
+    <type>int32</type>
+    <length />
+    <required>Y</required>
+    <defaultvalue />
+    <description>Number of days late.</description>
+  </ptype>
+  <ptype>
+    <dn>DFPAmount</dn>
+    <type>decimal</type>
+    <length />
+    <required>Y</required>
+    <defaultvalue />
+    <description>Demand For Payment Amount used as based amount in calculation of the late fee</description>
+  </ptype>
+</defineservice>

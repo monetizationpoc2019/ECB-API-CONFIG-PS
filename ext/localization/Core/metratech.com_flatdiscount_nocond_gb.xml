@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<mt_config>
+  <language_code>gb</language_code>
+  <locale_space name="metratech.com/flatdiscount_nocond">
+    <locale_entry>
+      <Name>metratech.com/flatdiscount_nocond</Name>
+      <Value>Unadjusted Amount With Tax</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/flatdiscount_nocond/DiscountIntervalEnd</Name>
+      <Value>Discount Interval End Date</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/flatdiscount_nocond/DiscountIntervalStart</Name>
+      <Value>Discount Interval Start Date</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/flatdiscount_nocond/DiscountIntervalSubEnd</Name>
+      <Value>Discount Interval Subscription End Date</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/flatdiscount_nocond/DiscountIntervalSubStart</Name>
+      <Value>Discount Interval Subscription Start Date</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/flatdiscount_nocond/GroupSubscriptionName</Name>
+      <Value />
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/flatdiscount_nocond/SubscriptionEnd</Name>
+      <Value>Subscription Deletion</Value>
+    </locale_entry>
+    <locale_entry>
+      <Name>metratech.com/flatdiscount_nocond/SubscriptionStart</Name>
+      <Value />
+    </locale_entry>
+  </locale_space>
+</mt_config>

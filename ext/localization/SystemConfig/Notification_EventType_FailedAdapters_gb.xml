@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<mt_config>
+    <language_code>gb</language_code>
+     <locale_space name="Notification_EventType_FailedAdapters">
+        <locale_entry>
+            <Name>Notification_EventType_FailedAdapters/EventType/Failed Adapters</Name>
+            <Value>Failed Adapters</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>Notification_EventType_FailedAdapters/Template/Failed Adapters</Name>
+            <Value>Adapter {AdapterName}, instance id {InstanceID} for run {RunID} has failed with the error {ErrorDetail}.</Value>
+        </locale_entry>
+     </locale_space>
+</mt_config>

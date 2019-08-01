@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xmlconfig>
+
+  <mtsysconfigdata>
+    <effective_date ptype="DATETIME">1998-11-19T00:00:00Z</effective_date>
+    <timeout ptype="INTEGER">30</timeout>
+    <configfiletype>CONFIG_DATA</configfiletype>
+  </mtsysconfigdata>
+
+  <mtconfigdata>
+    <version ptype="INTEGER">1</version>
+    <processor>
+      <name>AccountStateCheck</name>
+      <progid>MTPipeline.MTAccountStateCheck</progid>
+			<description>
+			Used for adding checking account state property and taking 
+			appropriate action based on the state  
+			</description>
+
+			<inputs>
+				<input type="STRING" internal_name="_accountstate">_accountstate</input>
+			  <input type="STRING" internal_name="accountstaterule">accountstaterule</input>
+			</inputs>
+
+      <configdata>
+				<_accountstate>_accountstate</_accountstate>
+			  <accountstaterule>accountstaterule</accountstaterule>
+      </configdata>
+
+    </processor>
+  </mtconfigdata>
+</xmlconfig>

@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<mt_config>
+  <language_code>fr</language_code>
+  <locale_space name="metratech.com/payment">
+    <locale_entry>
+      <Name>metratech.com/payment</Name>
+      <Value>Paiements</Value>
+    </locale_entry>
+  </locale_space>
+</mt_config>

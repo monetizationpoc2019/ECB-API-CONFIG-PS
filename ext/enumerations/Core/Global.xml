@@ -1,0 +1,1707 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<mt_config>
+    <enum_spaces>
+        <enum_space name="Global">
+            <description>Global namespace</description>
+            <enums>
+                <enum name="MonthOfTheYear">
+                    <description>Month of the year</description>
+                    <entries>
+                        <entry name="January">
+                            <value>1</value>
+                        </entry>
+                        <entry name="February">
+                            <value>2</value>
+                        </entry>
+                        <entry name="March">
+                            <value>3</value>
+                        </entry>
+                        <entry name="April">
+                            <value>4</value>
+                        </entry>
+                        <entry name="May">
+                            <value>5</value>
+                        </entry>
+                        <entry name="June">
+                            <value>6</value>
+                        </entry>
+                        <entry name="July">
+                            <value>7</value>
+                        </entry>
+                        <entry name="August">
+                            <value>8</value>
+                        </entry>
+                        <entry name="September">
+                            <value>9</value>
+                        </entry>
+                        <entry name="October">
+                            <value>10</value>
+                        </entry>
+                        <entry name="November">
+                            <value>11</value>
+                        </entry>
+                        <entry name="December">
+                            <value>12</value>
+                        </entry>
+                    </entries>
+                </enum>
+                <!-- The value must be the same as January,February,March -->
+                <enum name="MonthOfTheYearByQuarter">
+                    <description>Month of the year</description>
+                    <entries>
+                        <entry name="Month1InQuarter">
+                            <value>1</value>
+                        </entry>
+                        <entry name="Month2InQuarter">
+                            <value>2</value>
+                        </entry>
+                        <entry name="Month3InQuarter">
+                            <value>3</value>
+                        </entry>
+                    </entries>
+                </enum>
+                <enum name="Boolean">
+                    <description>Base boolean value in the system (True/False)</description>
+                    <entries>
+                        <entry name="True">
+                            <value>TRUE</value>
+                        </entry>
+                        <entry name="False">
+                            <value>FALSE</value>
+                        </entry>
+                    </entries>
+                </enum>
+                <enum name="BooleanYN">
+                    <description>Base boolean value in the system (Yes/No)
+</description>
+                    <entries>
+                        <entry name="Yes">
+                            <value>TRUE</value>
+                        </entry>
+                        <entry name="No">
+                            <value>FALSE</value>
+                        </entry>
+                    </entries>
+                </enum>
+                <enum name="DayOfTheWeek">
+                    <description>Day of the week</description>
+                    <entries>
+                        <entry name="Sunday">
+                            <value>1</value>
+                        </entry>
+                        <entry name="Monday">
+                            <value>2</value>
+                        </entry>
+                        <entry name="Tuesday">
+                            <value>3</value>
+                        </entry>
+                        <entry name="Wednesday">
+                            <value>4</value>
+                        </entry>
+                        <entry name="Thursday">
+                            <value>5</value>
+                        </entry>
+                        <entry name="Friday">
+                            <value>6</value>
+                        </entry>
+                        <entry name="Saturday">
+                            <value>7</value>
+                        </entry>
+                    </entries>
+                </enum>
+                <enum name="LanguageCode">
+                    <description>Configurable list of language codes used by the system</description>
+                    <entries>
+                        <entry name="US">
+                            <value>0</value>
+                            <value>840</value>
+                            <value>en-US</value>
+                            <value>US</value>
+                        </entry>
+                        <entry name="DE">
+                            <value>1</value>
+                            <value>276</value>
+                            <value>de-DE</value>
+                            <value>DE</value>
+                        </entry>
+                        <entry name="FR">
+                            <value>3</value>
+                            <value>250</value>
+                            <value>fr-FR</value>
+                            <value>FR</value>
+                        </entry>
+                        <entry name="IT">
+                            <value>4</value>
+                            <value>380</value>
+                            <value>it-IT</value>
+                            <value>IT</value>
+                        </entry>
+                        <entry name="JP">
+                            <value>5</value>
+                            <value>392</value>
+                            <value>ja-JP</value>
+                            <value>JA</value>
+                        </entry>
+                        <entry name="ES">
+                            <value>6</value>
+                            <value>724</value>
+                            <value>es-ES</value>
+                            <value>ES</value>
+                        </entry>
+                        <entry name="GB">
+                            <value>7</value>
+                            <value>826</value>
+                            <value>en-GB</value>
+                            <value>GB</value>
+                        </entry>
+                        <entry name="MX">
+                            <value>8</value>
+                            <value>2058</value>
+                            <value>es-MX</value>
+                            <value>MX</value>
+                        </entry>
+                        <entry name="BR">
+                            <value>9</value>
+                            <value>1046</value>
+                            <value>pt-BR</value>
+                            <value>BR</value>
+                        </entry>
+                        <entry name="DA">
+                            <value>10</value>
+                            <value>2059</value>
+                            <value>da</value>
+                        </entry>
+                    </entries>
+                </enum>
+                <enum name="TimeZoneID">
+                    <description>Configurable list of timezones used by the system</description>
+                    <entries>
+                        <entry name="(GMT-12:00) Eniwetok, Kwajalein">
+                            <value>15</value>
+                        </entry>
+                        <entry name="(GMT-11:00) Midway Island, Samoa">
+                            <value>39</value>
+                        </entry>
+                        <entry name="(GMT-10:00) Hawaii">
+                            <value>24</value>
+                        </entry>
+                        <entry name="(GMT-09:00) Alaska">
+                            <value>2</value>
+                        </entry>
+                        <entry name="(GMT-08:00) Pacific Time (US &amp; Canada), Tijuana">
+                            <value>33</value>
+                        </entry>
+                        <entry name="(GMT-07:00) Arizona">
+                            <value>47</value>
+                        </entry>
+                        <entry name="(GMT-07:00) Mountain Time (US &amp; Canada)">
+                            <value>30</value>
+                        </entry>
+                        <entry name="(GMT-06:00) Central Time (US &amp; Canada)">
+                            <value>13</value>
+                        </entry>
+                        <entry name="(GMT-06:00) Mexico City, Tegucigalpa">
+                            <value>28</value>
+                        </entry>
+                        <entry name="(GMT-06:00) Saskatchewan">
+                            <value>8</value>
+                        </entry>
+                        <entry name="(GMT-05:00) Bogota, Lima">
+                            <value>37</value>
+                        </entry>
+                        <entry name="(GMT-05:00) Eastern Time (US &amp; Canada)">
+                            <value>18</value>
+                        </entry>
+                        <entry name="(GMT-05:00) Indiana (East)">
+                            <value>46</value>
+                        </entry>
+                        <entry name="(GMT-04:00) Atlantic Time (Canada)">
+                            <value>4</value>
+                        </entry>
+                        <entry name="(GMT-04:00) Caracas, La Paz">
+                            <value>38</value>
+                        </entry>
+                        <entry name="(GMT-03:30) Newfoundland">
+                            <value>32</value>
+                        </entry>
+                        <entry name="(GMT-03:00) Buenos Aires, Georgetown">
+                            <value>36</value>
+                        </entry>
+                        <entry name="(GMT-01:00) Azores, Cape Verde Is.">
+                            <value>6</value>
+                        </entry>
+                        <entry name="(GMT) Greenwich Mean Time; Dublin, Edinburgh, London, Lisbon">
+                            <value>22</value>
+                        </entry>
+                        <entry name="(GMT) Monrovia, Casablanca">
+                            <value>23</value>
+                        </entry>
+                        <entry name="(GMT+01:00) Berlin, Stockholm, Rome, Bern, Brussels Vienna">
+                            <value>48</value>
+                        </entry>
+                        <entry name="(GMT+01:00) Paris, Madrid, Amsterdam">
+                            <value>34</value>
+                        </entry>
+                        <entry name="(GMT+01:00) Prague, Warsaw, Budapest">
+                            <value>11</value>
+                        </entry>
+                        <entry name="(GMT+02:00) Athens, Helsinki, Istanbul">
+                            <value>21</value>
+                        </entry>
+                        <entry name="(GMT+02:00) Cairo">
+                            <value>19</value>
+                        </entry>
+                        <entry name="(GMT+02:00) Harare, Pretoria">
+                            <value>41</value>
+                        </entry>
+                        <entry name="(GMT+02:00) Israel">
+                            <value>27</value>
+                        </entry>
+                        <entry name="(GMT+03:00) Baghdad">
+                            <value>40</value>
+                        </entry>
+                        <entry name="(GMT+03:00) Kuwait, Nairobi, Riyadh">
+                            <value>52</value>
+                        </entry>
+                        <entry name="(GMT+03:00) Moscow, St. Petersburg, Kazan, Volgograd">
+                            <value>35</value>
+                        </entry>
+                        <entry name="(GMT+03:30) Tehran">
+                            <value>26</value>
+                        </entry>
+                        <entry name="(GMT+04:00) Abu Dhabi, Muscat, Tbilisi">
+                            <value>3</value>
+                        </entry>
+                        <entry name="(GMT+04:30) Kabul">
+                            <value>1</value>
+                        </entry>
+                        <entry name="(GMT+05:00) Islamabad, Karachi, Ekaterinburg, Tashkent">
+                            <value>49</value>
+                        </entry>
+                        <entry name="(GMT+05:30) Bombay, Calcutta, Madras, New Delhi, Colombo">
+                            <value>25</value>
+                        </entry>
+                        <entry name="(GMT+06:00) Almaty, Dhaka">
+                            <value>10</value>
+                        </entry>
+                        <entry name="(GMT+07:00) Bangkok, Jakarta, Hanoi">
+                            <value>7</value>
+                        </entry>
+                        <entry name="(GMT+08:00) Beijing, Chongqing, Urumqi">
+                            <value>14</value>
+                        </entry>
+                        <entry name="(GMT+08:00) Hong Kong, Perth, Singapore, Taipei">
+                            <value>43</value>
+                        </entry>
+                        <entry name="(GMT+09:00) Tokyo, Osaka, Sapporo, Seoul, Yakutsk">
+                            <value>45</value>
+                        </entry>
+                        <entry name="(GMT+09:30) Adelaide">
+                            <value>9</value>
+                        </entry>
+                        <entry name="(GMT+09:30) Darwin">
+                            <value>5</value>
+                        </entry>
+                        <entry name="(GMT+10:00) Brisbane">
+                            <value>42</value>
+                        </entry>
+                        <entry name="(GMT+10:00) Sydney, Melbourne">
+                            <value>51</value>
+                        </entry>
+                        <entry name="(GMT+10:00) Guam, Port Moresby, Vladivostok">
+                            <value>50</value>
+                        </entry>
+                        <entry name="(GMT+10:00) Hobart">
+                            <value>44</value>
+                        </entry>
+                        <entry name="(GMT+11:00) Magadan, Solomon Is., New Caledonia">
+                            <value>12</value>
+                        </entry>
+                        <entry name="(GMT+12:00) Fiji, Kamchatka, Marshall Is.">
+                            <value>20</value>
+                        </entry>
+                        <entry name="(GMT+12:00) Wellington, Auckland">
+                            <value>31</value>
+                        </entry>
+                    </entries>
+                </enum>
+                <enum name="CountryName">
+                    <description>Country list enumeration</description>
+                    <entries>
+                        <entry name="Afghanistan">
+                            <value>4</value>
+                            <value>AF</value>
+                            <value>AFG</value>
+                        </entry>
+                        <entry name="Albania">
+                            <value>8</value>
+                            <value>AL</value>
+                            <value>ALB</value>
+                        </entry>
+                        <entry name="Antarctica">
+                            <value>10</value>
+                            <value>AQ</value>
+                            <value>ATA</value>
+                        </entry>
+                        <entry name="Algeria">
+                            <value>12</value>
+                            <value>DZ</value>
+                            <value>DZA</value>
+                        </entry>
+                        <entry name="American Samoa">
+                            <value>16</value>
+                            <value>AS</value>
+                            <value>ASM</value>
+                        </entry>
+                        <entry name="Andorra">
+                            <value>20</value>
+                            <value>AD</value>
+                            <value>AND</value>
+                        </entry>
+                        <entry name="Angola">
+                            <value>24</value>
+                            <value>AO</value>
+                            <value>AGO</value>
+                        </entry>
+                        <entry name="Antigua and Barbuda">
+                            <value>28</value>
+                            <value>AG</value>
+                            <value>ATG</value>
+                        </entry>
+                        <entry name="Azerbaijan">
+                            <value>31</value>
+                            <value>AZ</value>
+                            <value>AZE</value>
+                        </entry>
+                        <entry name="Argentina">
+                            <value>32</value>
+                            <value>AR</value>
+                            <value>ARG</value>
+                        </entry>
+                        <entry name="Australia">
+                            <value>36</value>
+                            <value>AU</value>
+                            <value>AUS</value>
+                        </entry>
+                        <entry name="Austria">
+                            <value>40</value>
+                            <value>AT</value>
+                            <value>AUT</value>
+                        </entry>
+                        <entry name="Bahamas">
+                            <value>44</value>
+                            <value>BS</value>
+                            <value>BHS</value>
+                        </entry>
+                        <entry name="Bahrain">
+                            <value>48</value>
+                            <value>BH</value>
+                            <value>BHR</value>
+                        </entry>
+                        <entry name="Bangladesh">
+                            <value>50</value>
+                            <value>BD</value>
+                            <value>BGD</value>
+                        </entry>
+                        <entry name="Armenia">
+                            <value>51</value>
+                            <value>AM</value>
+                            <value>ARM</value>
+                        </entry>
+                        <entry name="Barbados">
+                            <value>52</value>
+                            <value>BB</value>
+                            <value>BRB</value>
+                        </entry>
+                        <entry name="Belgium">
+                            <value>56</value>
+                            <value>BE</value>
+                            <value>BEL</value>
+                        </entry>
+                        <entry name="Bermuda">
+                            <value>60</value>
+                            <value>BM</value>
+                            <value>BMU</value>
+                        </entry>
+                        <entry name="Bhutan">
+                            <value>64</value>
+                            <value>BT</value>
+                            <value>BTN</value>
+                        </entry>
+                        <entry name="Bolivia">
+                            <value>68</value>
+                            <value>BO</value>
+                            <value>BOL</value>
+                        </entry>
+                        <entry name="Bosnia and Herzegovina">
+                            <value>70</value>
+                            <value>BA</value>
+                            <value>BIH</value>
+                        </entry>
+                        <entry name="Botswana">
+                            <value>72</value>
+                            <value>BW</value>
+                            <value>BWA</value>
+                        </entry>
+                        <entry name="Bouvet Island">
+                            <value>74</value>
+                            <value>BV</value>
+                            <value>BVT</value>
+                        </entry>
+                        <entry name="Brazil">
+                            <value>76</value>
+                            <value>BR</value>
+                            <value>BRA</value>
+                        </entry>
+                        <entry name="Belize">
+                            <value>84</value>
+                            <value>BZ</value>
+                            <value>BLZ</value>
+                        </entry>
+                        <entry name="British Indian Ocean Territory">
+                            <value>86</value>
+                            <value>IO</value>
+                            <value>IOT</value>
+                        </entry>
+                        <entry name="Solomon Islands">
+                            <value>90</value>
+                            <value>SB</value>
+                            <value>SLB</value>
+                        </entry>
+                        <entry name="Virgin Islands British">
+                            <value>92</value>
+                            <value>VG</value>
+                            <value>VGB</value>
+                        </entry>
+                        <entry name="Brunei">
+                            <value>96</value>
+                            <value>BN</value>
+                            <value>BRN</value>
+                        </entry>
+                        <entry name="Bulgaria">
+                            <value>100</value>
+                            <value>BG</value>
+                            <value>BGR</value>
+                        </entry>
+                        <entry name="Myanmar">
+                            <value>104</value>
+                            <value>MM</value>
+                            <value>MMR</value>
+                        </entry>
+                        <entry name="Burundi">
+                            <value>108</value>
+                            <value>BI</value>
+                            <value>BDI</value>
+                        </entry>
+                        <entry name="Belarus">
+                            <value>112</value>
+                            <value>BY</value>
+                            <value>BLR</value>
+                        </entry>
+                        <entry name="Cambodia">
+                            <value>116</value>
+                            <value>KH</value>
+                            <value>KHM</value>
+                        </entry>
+                        <entry name="Cameroon">
+                            <value>120</value>
+                            <value>CM</value>
+                            <value>CMR</value>
+                        </entry>
+                        <entry name="Canada">
+                            <value>124</value>
+                            <value>CA</value>
+                            <value>CAN</value>
+                        </entry>
+                        <entry name="Cabo Verde">
+                            <value>132</value>
+                            <value>CV</value>
+                            <value>CPV</value>
+                        </entry>
+                        <entry name="Cayman Islands">
+                            <value>136</value>
+                            <value>KY</value>
+                            <value>CYM</value>
+                        </entry>
+                        <entry name="Central African Republic">
+                            <value>140</value>
+                            <value>CF</value>
+                            <value>CAF</value>
+                        </entry>
+                        <entry name="Sri Lanka">
+                            <value>144</value>
+                            <value>LK</value>
+                            <value>LKA</value>
+                        </entry>
+                        <entry name="Chad">
+                            <value>148</value>
+                            <value>TD</value>
+                            <value>TCD</value>
+                        </entry>
+                        <entry name="Chile">
+                            <value>152</value>
+                            <value>CL</value>
+                            <value>CHL</value>
+                        </entry>
+                        <entry name="China">
+                            <value>156</value>
+                            <value>CN</value>
+                            <value>CHN</value>
+                        </entry>
+                        <entry name="Taiwan">
+                            <value>158</value>
+                            <value>TW</value>
+                            <value>TWN</value>
+                        </entry>
+                        <entry name="Christmas Island">
+                            <value>162</value>
+                            <value>CX</value>
+                            <value>CXR</value>
+                        </entry>
+                        <entry name="Cocos (Keeling) Islands">
+                            <value>166</value>
+                            <value>CC</value>
+                            <value>CCK</value>
+                        </entry>
+                        <entry name="Colombia">
+                            <value>170</value>
+                            <value>CO</value>
+                            <value>COL</value>
+                        </entry>
+                        <entry name="Comoros">
+                            <value>174</value>
+                            <value>KM</value>
+                            <value>COM</value>
+                        </entry>
+                        <entry name="Mayotte Island">
+                            <value>175</value>
+                            <value>YT</value>
+                            <value>MYT</value>
+                        </entry>
+                        <entry name="Congo">
+                            <value>178</value>
+                            <value>CG</value>
+                            <value>COG</value>
+                        </entry>
+                        <entry name="Zaire">
+                            <value>180</value>
+                            <value>CD</value>
+                            <value>COD</value>
+                        </entry>
+                        <entry name="Cook Islands">
+                            <value>184</value>
+                            <value>CK</value>
+                            <value>COK</value>
+                        </entry>
+                        <entry name="Costa Rica">
+                            <value>188</value>
+                            <value>CR</value>
+                            <value>CRI</value>
+                        </entry>
+                        <entry name="Croatia">
+                            <value>191</value>
+                            <value>HR</value>
+                            <value>HRV</value>
+                        </entry>
+                        <entry name="Cuba">
+                            <value>192</value>
+                            <value>CU</value>
+                            <value>CUB</value>
+                        </entry>
+                        <entry name="Cyprus">
+                            <value>196</value>
+                            <value>CY</value>
+                            <value>CYP</value>
+                        </entry>
+                        <entry name="Czech Republic">
+                            <value>203</value>
+                            <value>CZ</value>
+                            <value>CZE</value>
+                        </entry>
+                        <entry name="Benin">
+                            <value>204</value>
+                            <value>BJ</value>
+                            <value>BEN</value>
+                        </entry>
+                        <entry name="Denmark">
+                            <value>208</value>
+                            <value>DK</value>
+                            <value>DNK</value>
+                        </entry>
+                        <entry name="Dominica">
+                            <value>212</value>
+                            <value>DM</value>
+                            <value>DMA</value>
+                        </entry>
+                        <entry name="Dominican Republic">
+                            <value>214</value>
+                            <value>DO</value>
+                            <value>DOM</value>
+                        </entry>
+                        <entry name="Ecuador">
+                            <value>218</value>
+                            <value>EC</value>
+                            <value>ECU</value>
+                        </entry>
+                        <entry name="El Salvador">
+                            <value>222</value>
+                            <value>SV</value>
+                            <value>SLV</value>
+                        </entry>
+                        <entry name="Equatorial Guinea">
+                            <value>226</value>
+                            <value>GQ</value>
+                            <value>GNQ</value>
+                        </entry>
+                        <entry name="Ethiopia">
+                            <value>231</value>
+                            <value>ET</value>
+                            <value>ETH</value>
+                        </entry>
+                        <entry name="Eritrea">
+                            <value>232</value>
+                            <value>ER</value>
+                            <value>ERI</value>
+                        </entry>
+                        <entry name="Estonia">
+                            <value>233</value>
+                            <value>EE</value>
+                            <value>EST</value>
+                        </entry>
+                        <entry name="Faeroe Islands">
+                            <value>234</value>
+                            <value>FO</value>
+                            <value>FRO</value>
+                        </entry>
+                        <entry name="Falkland Islands">
+                            <value>238</value>
+                            <value>FK</value>
+                            <value>FLK</value>
+                        </entry>
+                        <entry name="South Georgia and The South Sandwich Islands">
+                            <value>239</value>
+                            <value>GS</value>
+                            <value>SGS</value>
+                        </entry>
+                        <entry name="Fiji">
+                            <value>242</value>
+                            <value>FJ</value>
+                            <value>FJI</value>
+                        </entry>
+                        <entry name="Finland">
+                            <value>246</value>
+                            <value>FI</value>
+                            <value>FIN</value>
+                        </entry>
+                        <entry name="Åland Islands">
+                            <value>248</value>
+                            <value>AX</value>
+                            <value>ALA</value>
+                        </entry>
+                        <entry name="France">
+                            <value>250</value>
+                            <value>FR</value>
+                            <value>FRA</value>
+                        </entry>
+                        <entry name="French Guiana">
+                            <value>254</value>
+                            <value>GF</value>
+                            <value>GUF</value>
+                        </entry>
+                        <entry name="French Polynesia">
+                            <value>258</value>
+                            <value>PF</value>
+                            <value>PYF</value>
+                        </entry>
+                        <entry name="French Southern Territories">
+                            <value>260</value>
+                            <value>TF</value>
+                            <value>ATF</value>
+                        </entry>
+                        <entry name="Djibouti">
+                            <value>262</value>
+                            <value>DJ</value>
+                            <value>DJI</value>
+                        </entry>
+                        <entry name="Gabon">
+                            <value>266</value>
+                            <value>GA</value>
+                            <value>GAB</value>
+                        </entry>
+                        <entry name="Georgia">
+                            <value>268</value>
+                            <value>GE</value>
+                            <value>GEO</value>
+                        </entry>
+                        <entry name="Gambia">
+                            <value>270</value>
+                            <value>GM</value>
+                            <value>GMB</value>
+                        </entry>
+                        <entry name="Palestine">
+                            <value>275</value>
+                            <value>PS</value>
+                            <value>PSE</value>
+                        </entry>
+                        <entry name="Germany">
+                            <value>276</value>
+                            <value>DE</value>
+                            <value>DEU</value>
+                        </entry>
+                        <entry name="Ghana">
+                            <value>288</value>
+                            <value>GH</value>
+                            <value>GHA</value>
+                        </entry>
+                        <entry name="Gibraltar">
+                            <value>292</value>
+                            <value>GI</value>
+                            <value>GIB</value>
+                        </entry>
+                        <entry name="Kiribati">
+                            <value>296</value>
+                            <value>KI</value>
+                            <value>KIR</value>
+                        </entry>
+                        <entry name="Greece">
+                            <value>300</value>
+                            <value>GR</value>
+                            <value>GRC</value>
+                        </entry>
+                        <entry name="Greenland">
+                            <value>304</value>
+                            <value>GL</value>
+                            <value>GRL</value>
+                        </entry>
+                        <entry name="Grenada">
+                            <value>308</value>
+                            <value>GD</value>
+                            <value>GRD</value>
+                        </entry>
+                        <entry name="Guadeloupe">
+                            <value>312</value>
+                            <value>GP</value>
+                            <value>GLP</value>
+                        </entry>
+                        <entry name="Guam">
+                            <value>316</value>
+                            <value>GU</value>
+                            <value>GUM</value>
+                        </entry>
+                        <entry name="Guatemala">
+                            <value>320</value>
+                            <value>GT</value>
+                            <value>GTM</value>
+                        </entry>
+                        <entry name="Guinea">
+                            <value>324</value>
+                            <value>GN</value>
+                            <value>GIN</value>
+                        </entry>
+                        <entry name="Guyana">
+                            <value>328</value>
+                            <value>GY</value>
+                            <value>GUY</value>
+                        </entry>
+                        <entry name="Haiti">
+                            <value>332</value>
+                            <value>HT</value>
+                            <value>HTI</value>
+                        </entry>
+                        <entry name="Nevis">
+                            <value>334</value>
+                            <value>HM</value>
+                            <value>HMD</value>
+                        </entry>
+                        <entry name="Vatican City">
+                            <value>336</value>
+                            <value>VA</value>
+                            <value>VAT</value>
+                        </entry>
+                        <entry name="Honduras">
+                            <value>340</value>
+                            <value>HN</value>
+                            <value>HND</value>
+                        </entry>
+                        <entry name="Hong Kong">
+                            <value>344</value>
+                            <value>HK</value>
+                            <value>HKG</value>
+                        </entry>
+                        <entry name="Hungary">
+                            <value>348</value>
+                            <value>HU</value>
+                            <value>HUN</value>
+                        </entry>
+                        <entry name="Iceland">
+                            <value>352</value>
+                            <value>IS</value>
+                            <value>ISL</value>
+                        </entry>
+                        <entry name="India">
+                            <value>356</value>
+                            <value>IN</value>
+                            <value>IND</value>
+                        </entry>
+                        <entry name="Indonesia">
+                            <value>360</value>
+                            <value>ID</value>
+                            <value>IDN</value>
+                        </entry>
+                        <entry name="Iran">
+                            <value>364</value>
+                            <value>IR</value>
+                            <value>IRN</value>
+                        </entry>
+                        <entry name="Iraq">
+                            <value>368</value>
+                            <value>IQ</value>
+                            <value>IRQ</value>
+                        </entry>
+                        <entry name="Ireland">
+                            <value>372</value>
+                            <value>IE</value>
+                            <value>IRL</value>
+                        </entry>
+                        <entry name="Israel">
+                            <value>376</value>
+                            <value>IL</value>
+                            <value>ISR</value>
+                        </entry>
+                        <entry name="Italy">
+                            <value>380</value>
+                            <value>IT</value>
+                            <value>ITA</value>
+                        </entry>
+                        <entry name="Ivory Coast">
+                            <value>384</value>
+                            <value>CI</value>
+                            <value>CIV</value>
+                        </entry>
+                        <entry name="Jamaica">
+                            <value>388</value>
+                            <value>JM</value>
+                            <value>JAM</value>
+                        </entry>
+                        <entry name="Japan">
+                            <value>392</value>
+                            <value>JP</value>
+                            <value>JPN</value>
+                        </entry>
+                        <entry name="Kazakhstan">
+                            <value>398</value>
+                            <value>KZ</value>
+                            <value>KAZ</value>
+                        </entry>
+                        <entry name="Jordan">
+                            <value>400</value>
+                            <value>JO</value>
+                            <value>JOR</value>
+                        </entry>
+                        <entry name="Kenya">
+                            <value>404</value>
+                            <value>KE</value>
+                            <value>KEN</value>
+                        </entry>
+                        <entry name="North Korea">
+                            <value>408</value>
+                            <value>KP</value>
+                            <value>PRK</value>
+                        </entry>
+                        <entry name="South Korea">
+                            <value>410</value>
+                            <value>KR</value>
+                            <value>KOR</value>
+                        </entry>
+                        <entry name="Kuwait">
+                            <value>414</value>
+                            <value>KW</value>
+                            <value>KWT</value>
+                        </entry>
+                        <entry name="Kyrgyzstan">
+                            <value>417</value>
+                            <value>KG</value>
+                            <value>KGZ</value>
+                        </entry>
+                        <entry name="Laos">
+                            <value>418</value>
+                            <value>LA</value>
+                            <value>LAO</value>
+                        </entry>
+                        <entry name="Latvia">
+                            <value>428</value>
+                            <value>LV</value>
+                            <value>LVA</value>
+                        </entry>
+                        <entry name="Lebanon">
+                            <value>422</value>
+                            <value>LB</value>
+                            <value>LBN</value>
+                        </entry>
+                        <entry name="Lesotho">
+                            <value>426</value>
+                            <value>LS</value>
+                            <value>LSO</value>
+                        </entry>
+                        <entry name="Liberia">
+                            <value>430</value>
+                            <value>LR</value>
+                            <value>LBR</value>
+                        </entry>
+                        <entry name="Libya">
+                            <value>434</value>
+                            <value>LY</value>
+                            <value>LBY</value>
+                        </entry>
+                        <entry name="Liechtenstein">
+                            <value>438</value>
+                            <value>LI</value>
+                            <value>LIE</value>
+                        </entry>
+                        <entry name="Lithuania">
+                            <value>440</value>
+                            <value>LT</value>
+                            <value>LTU</value>
+                        </entry>
+                        <entry name="Luxembourg">
+                            <value>442</value>
+                            <value>LU</value>
+                            <value>LUX</value>
+                        </entry>
+                        <entry name="Macau">
+                            <value>446</value>
+                            <value>MO</value>
+                            <value>MAC</value>
+                        </entry>
+                        <entry name="Madagascar">
+                            <value>450</value>
+                            <value>MG</value>
+                            <value>MDG</value>
+                        </entry>
+                        <entry name="Malawi">
+                            <value>454</value>
+                            <value>MW</value>
+                            <value>MWI</value>
+                        </entry>
+                        <entry name="Malaysia">
+                            <value>458</value>
+                            <value>MY</value>
+                            <value>MYS</value>
+                        </entry>
+                        <entry name="Maldives">
+                            <value>462</value>
+                            <value>MV</value>
+                            <value>MDV</value>
+                        </entry>
+                        <entry name="Mali Republic">
+                            <value>466</value>
+                            <value>ML</value>
+                            <value>MLI</value>
+                        </entry>
+                        <entry name="Malta">
+                            <value>470</value>
+                            <value>MT</value>
+                            <value>MLT</value>
+                        </entry>
+                        <entry name="Martinique">
+                            <value>474</value>
+                            <value>MQ</value>
+                            <value>MTQ</value>
+                        </entry>
+                        <entry name="Mauritius">
+                            <value>480</value>
+                            <value>MU</value>
+                            <value>MUS</value>
+                        </entry>
+                        <entry name="Mauritania">
+                            <value>478</value>
+                            <value>MR</value>
+                            <value>MRT</value>
+                        </entry>
+                        <entry name="Mexico">
+                            <value>484</value>
+                            <value>MX</value>
+                            <value>MEX</value>
+                        </entry>
+                        <entry name="Moldova">
+                            <value>498</value>
+                            <value>MD</value>
+                            <value>MDA</value>
+                        </entry>
+                        <entry name="Monaco">
+                            <value>492</value>
+                            <value>MC</value>
+                            <value>MCO</value>
+                        </entry>
+                        <entry name="Mongolia">
+                            <value>496</value>
+                            <value>MN</value>
+                            <value>MNG</value>
+                        </entry>
+                        <entry name="Montenegro">
+                            <value>499</value>
+                            <value>ME</value>
+                            <value>MNE</value>
+                        </entry>
+                        <entry name="MontSerrat">
+                            <value>500</value>
+                            <value>MS</value>
+                            <value>MSR</value>
+                        </entry>
+                        <entry name="Morocco">
+                            <value>504</value>
+                            <value>MA</value>
+                            <value>MAR</value>
+                        </entry>
+                        <entry name="Mozambique">
+                            <value>508</value>
+                            <value>MZ</value>
+                            <value>MOZ</value>
+                        </entry>
+                        <entry name="Oman">
+                            <value>512</value>
+                            <value>OM</value>
+                            <value>OMN</value>
+                        </entry>
+                        <entry name="Namibia">
+                            <value>516</value>
+                            <value>NA</value>
+                            <value>NAM</value>
+                        </entry>
+                        <entry name="Nauru">
+                            <value>520</value>
+                            <value>NR</value>
+                            <value>NRU</value>
+                        </entry>
+                        <entry name="Nepal">
+                            <value>524</value>
+                            <value>NP</value>
+                            <value>NPL</value>
+                        </entry>
+                        <entry name="Netherlands">
+                            <value>528</value>
+                            <value>NL</value>
+                            <value>NLD</value>
+                        </entry>
+                        <entry name="Netherlands Antilles">
+                            <value>530</value>
+                            <value>AN</value>
+                            <value>ANT</value>
+                        </entry>
+                        <entry name="Curaçao">
+                            <value>531</value>
+                            <value>CW</value>
+                            <value>CUW</value>
+                        </entry>
+                        <entry name="Aruba">
+                            <value>533</value>
+                            <value>AW</value>
+                            <value>ABW</value>
+                        </entry>
+                        <entry name="Sint Maarten (Dutch part)">
+                            <value>534</value>
+                            <value>SX</value>
+                            <value>SXM</value>
+                        </entry>
+                        <entry name="Bonaire, Sint Eustatius and Saba">
+                            <value>535</value>
+                            <value>BQ</value>
+                            <value>BES</value>
+                        </entry>
+                        <entry name="New Caledonia">
+                            <value>540</value>
+                            <value>NC</value>
+                            <value>NCL</value>
+                        </entry>
+                        <entry name="Vanuatu">
+                            <value>548</value>
+                            <value>VU</value>
+                            <value>VUT</value>
+                        </entry>
+                        <entry name="New Zealand">
+                            <value>554</value>
+                            <value>NZ</value>
+                            <value>NZL</value>
+                        </entry>
+                        <entry name="Nicaragua">
+                            <value>558</value>
+                            <value>NI</value>
+                            <value>NIC</value>
+                        </entry>
+                        <entry name="Niger">
+                            <value>562</value>
+                            <value>NE</value>
+                            <value>NER</value>
+                        </entry>
+                        <entry name="Nigeria">
+                            <value>566</value>
+                            <value>NG</value>
+                            <value>NGA</value>
+                        </entry>
+                        <entry name="Niue">
+                            <value>570</value>
+                            <value>NU</value>
+                            <value>NIU</value>
+                        </entry>
+                        <entry name="Norfolk Island">
+                            <value>574</value>
+                            <value>NF</value>
+                            <value>NFK</value>
+                        </entry>
+                        <entry name="Norway">
+                            <value>578</value>
+                            <value>NO</value>
+                            <value>NOR</value>
+                        </entry>
+                        <entry name="CNMI">
+                            <value>580</value>
+                            <value>MP</value>
+                            <value>MNP</value>
+                        </entry>
+                        <entry name="United States Minor Outlying Islands">
+                            <value>581</value>
+                            <value>UM</value>
+                            <value>UMI</value>
+                        </entry>
+                        <entry name="Micronesia">
+                            <value>583</value>
+                            <value>FM</value>
+                            <value>FSM</value>
+                        </entry>
+                        <entry name="Pakistan">
+                            <value>586</value>
+                            <value>PK</value>
+                            <value>PAK</value>
+                        </entry>
+                        <entry name="Palau">
+                            <value>585</value>
+                            <value>PW</value>
+                            <value>PLW</value>
+                        </entry>
+                        <entry name="Marshall Islands">
+                            <value>584</value>
+                            <value>MH</value>
+                            <value>MHL</value>
+                        </entry>
+                        <entry name="Panama">
+                            <value>591</value>
+                            <value>PA</value>
+                            <value>PAN</value>
+                        </entry>
+                        <entry name="Papua New Guinea">
+                            <value>598</value>
+                            <value>PG</value>
+                            <value>PNG</value>
+                        </entry>
+                        <entry name="Paraguay">
+                            <value>600</value>
+                            <value>PY</value>
+                            <value>PRY</value>
+                        </entry>
+                        <entry name="Peru">
+                            <value>604</value>
+                            <value>PE</value>
+                            <value>PER</value>
+                        </entry>
+                        <entry name="Philippines">
+                            <value>608</value>
+                            <value>PH</value>
+                            <value>PHL</value>
+                        </entry>
+                        <entry name="Pitcairn">
+                            <value>612</value>
+                            <value>PN</value>
+                            <value>PCN</value>
+                        </entry>
+                        <entry name="Poland">
+                            <value>616</value>
+                            <value>PL</value>
+                            <value>POL</value>
+                        </entry>
+                        <entry name="Portugal">
+                            <value>620</value>
+                            <value>PT</value>
+                            <value>PRT</value>
+                        </entry>
+                        <entry name="Guinea-Bissau">
+                            <value>624</value>
+                            <value>GW</value>
+                            <value>GNB</value>
+                        </entry>
+                        <entry name="Timor-Leste">
+                            <value>626</value>
+                            <value>TL</value>
+                            <value>TLS</value>
+                        </entry>
+                        <entry name="Puerto Rico">
+                            <value>630</value>
+                            <value>PR</value>
+                            <value>PRI</value>
+                        </entry>
+                        <entry name="Qatar">
+                            <value>634</value>
+                            <value>QA</value>
+                            <value>QAT</value>
+                        </entry>
+                        <entry name="Reunion">
+                            <value>638</value>
+                            <value>RE</value>
+                            <value>REU</value>
+                        </entry>
+                        <entry name="Romania">
+                            <value>642</value>
+                            <value>RO</value>
+                            <value>ROU</value>
+                        </entry>
+                        <entry name="Russia">
+                            <value>643</value>
+                            <value>RU</value>
+                            <value>RUS</value>
+                        </entry>
+                        <entry name="Rwanda">
+                            <value>646</value>
+                            <value>RW</value>
+                            <value>RWA</value>
+                        </entry>
+                        <entry name="Saint Barthélemy">
+                            <value>652</value>
+                            <value>BL</value>
+                            <value>BLM</value>
+                        </entry>
+                        <entry name="Saint Helena, Ascension and Tristan da Cunha">
+                            <value>654</value>
+                            <value>SH</value>
+                            <value>SHN</value>
+                        </entry>
+                        <entry name="Saint Kitts and Nevis">
+                            <value>659</value>
+                            <value>KN</value>
+                            <value>KNA</value>
+                        </entry>
+                        <entry name="Saint Lucia">
+                            <value>662</value>
+                            <value>LC</value>
+                            <value>LCA</value>
+                        </entry>
+                        <entry name="Saint Martin (French part)">
+                            <value>663</value>
+                            <value>MF</value>
+                            <value>MAF</value>
+                        </entry>
+                        <entry name="Saint Pierre and Miquelon">
+                            <value>666</value>
+                            <value>PM</value>
+                            <value>SPM</value>
+                        </entry>
+                        <entry name="Saint Vincent and the Grenadines">
+                            <value>670</value>
+                            <value>VC</value>
+                            <value>VCT</value>
+                        </entry>
+                        <entry name="San Marino">
+                            <value>674</value>
+                            <value>SM</value>
+                            <value>SMR</value>
+                        </entry>
+                        <entry name="Anguilla">
+                            <value>660</value>
+                            <value>AI</value>
+                            <value>AIA</value>
+                        </entry>
+                        <entry name="Sao Tome and Principe">
+                            <value>678</value>
+                            <value>ST</value>
+                            <value>STP</value>
+                        </entry>
+                        <entry name="Saudi Arabia">
+                            <value>682</value>
+                            <value>SA</value>
+                            <value>SAU</value>
+                        </entry>
+                        <entry name="Senegal">
+                            <value>686</value>
+                            <value>SN</value>
+                            <value>SEN</value>
+                        </entry>
+                        <entry name="Serbia">
+                            <value>688</value>
+                            <value>RS</value>
+                            <value>SRB</value>
+                        </entry>
+                        <entry name="Seychelles">
+                            <value>690</value>
+                            <value>SC</value>
+                            <value>SYC</value>
+                        </entry>
+                        <entry name="Sierra Leone">
+                            <value>694</value>
+                            <value>SL</value>
+                            <value>SLE</value>
+                        </entry>
+                        <entry name="Singapore">
+                            <value>702</value>
+                            <value>SG</value>
+                            <value>SGP</value>
+                        </entry>
+                        <entry name="Slovakia">
+                            <value>703</value>
+                            <value>SK</value>
+                            <value>SVK</value>
+                        </entry>
+                        <entry name="Vietnam">
+                            <value>704</value>
+                            <value>VN</value>
+                            <value>VNM</value>
+                        </entry>
+                        <entry name="Slovenia">
+                            <value>705</value>
+                            <value>SI</value>
+                            <value>SVN</value>
+                        </entry>
+                        <entry name="Somalia">
+                            <value>706</value>
+                            <value>SO</value>
+                            <value>SOM</value>
+                        </entry>
+                        <entry name="South Africa">
+                            <value>710</value>
+                            <value>ZA</value>
+                            <value>ZAF</value>
+                        </entry>
+                        <entry name="Zimbabwe">
+                            <value>716</value>
+                            <value>ZW</value>
+                            <value>ZWE</value>
+                        </entry>
+                        <entry name="Spain">
+                            <value>724</value>
+                            <value>ES</value>
+                            <value>ESP</value>
+                        </entry>
+                        <entry name="South Sudan">
+                            <value>728</value>
+                            <value>SS</value>
+                            <value>SSD</value>
+                        </entry>
+                        <entry name="Sudan">
+                            <value>729</value>
+                            <value>SD</value>
+                            <value>SDN</value>
+                        </entry>
+                        <entry name="Western Sahara">
+                            <value>732</value>
+                            <value>EH</value>
+                            <value>ESH</value>
+                        </entry>
+                        <entry name="Suriname">
+                            <value>740</value>
+                            <value>SR</value>
+                            <value>SUR</value>
+                        </entry>
+                        <entry name="Svalbard and Jan Mayen">
+                            <value>744</value>
+                            <value>SJ</value>
+                            <value>SJM</value>
+                        </entry>
+                        <entry name="Swaziland">
+                            <value>748</value>
+                            <value>SZ</value>
+                            <value>SWZ</value>
+                        </entry>
+                        <entry name="Sweden">
+                            <value>752</value>
+                            <value>SE</value>
+                            <value>SWE</value>
+                        </entry>
+                        <entry name="Switzerland">
+                            <value>756</value>
+                            <value>CH</value>
+                            <value>CHE</value>
+                        </entry>
+                        <entry name="Syria">
+                            <value>760</value>
+                            <value>SY</value>
+                            <value>SYR</value>
+                        </entry>
+                        <entry name="Thailand">
+                            <value>764</value>
+                            <value>TH</value>
+                            <value>THA</value>
+                        </entry>
+                        <entry name="Tajikistan">
+                            <value>762</value>
+                            <value>TJ</value>
+                            <value>TJK</value>
+                        </entry>
+                        <entry name="Togo">
+                            <value>768</value>
+                            <value>TG</value>
+                            <value>TGO</value>
+                        </entry>
+                        <entry name="Tokelau">
+                            <value>772</value>
+                            <value>TK</value>
+                            <value>TKL</value>
+                        </entry>
+                        <entry name="Tonga">
+                            <value>776</value>
+                            <value>TO</value>
+                            <value>TON</value>
+                        </entry>
+                        <entry name="Trinidad and Tobago">
+                            <value>780</value>
+                            <value>TT</value>
+                            <value>TTO</value>
+                        </entry>
+                        <entry name="United Arab Emirates">
+                            <value>784</value>
+                            <value>AE</value>
+                            <value>ARE</value>
+                        </entry>
+                        <entry name="Tunisia">
+                            <value>788</value>
+                            <value>TN</value>
+                            <value>TUN</value>
+                        </entry>
+                        <entry name="Turkey">
+                            <value>792</value>
+                            <value>TR</value>
+                            <value>TUR</value>
+                        </entry>
+                        <entry name="Turkmenistan">
+                            <value>795</value>
+                            <value>TM</value>
+                            <value>TKM</value>
+                        </entry>
+                        <entry name="Turks and Caicos Islands">
+                            <value>796</value>
+                            <value>TC</value>
+                            <value>TCA</value>
+                        </entry>
+                        <entry name="Tuvalu">
+                            <value>798</value>
+                            <value>TV</value>
+                            <value>TUV</value>
+                        </entry>
+                        <entry name="Uganda">
+                            <value>800</value>
+                            <value>UG</value>
+                            <value>UGA</value>
+                        </entry>
+                        <entry name="Ukraine">
+                            <value>804</value>
+                            <value>UA</value>
+                            <value>UKR</value>
+                        </entry>
+                        <entry name="Macedonia">
+                            <value>807</value>
+                            <value>MK</value>
+                            <value>MKD</value>
+                        </entry>
+                        <entry name="Egypt">
+                            <value>818</value>
+                            <value>EG</value>
+                            <value>EGY</value>
+                        </entry>
+                        <entry name="United Kingdom">
+                            <value>826</value>
+                            <value>GB</value>
+                            <value>GBR</value>
+                        </entry>
+                        <entry name="Guernsey">
+                            <value>831</value>
+                            <value>GG</value>
+                            <value>GGY</value>
+                        </entry>
+                        <entry name="Jersey">
+                            <value>832</value>
+                            <value>JE</value>
+                            <value>JEY</value>
+                        </entry>
+                        <entry name="Isle of Man">
+                            <value>833</value>
+                            <value>IM</value>
+                            <value>IMN</value>
+                        </entry>
+                        <entry name="Tanzania">
+                            <value>834</value>
+                            <value>TZ</value>
+                            <value>TZA</value>
+                        </entry>
+                        <entry name="USA">
+                            <value>840</value>
+                            <value>US</value>
+                            <value>USA</value>
+                        </entry>
+                        <entry name="US Virgin Islands">
+                            <value>850</value>
+                            <value>VI</value>
+                            <value>VIR</value>
+                        </entry>
+                        <entry name="Burkina Faso">
+                            <value>854</value>
+                            <value>BF</value>
+                            <value>BFA</value>
+                        </entry>
+                        <entry name="Uruguay">
+                            <value>858</value>
+                            <value>UY</value>
+                            <value>URY</value>
+                        </entry>
+                        <entry name="Uzbekistan">
+                            <value>860</value>
+                            <value>UZ</value>
+                            <value>UZB</value>
+                        </entry>
+                        <entry name="Venezuela">
+                            <value>862</value>
+                            <value>VE</value>
+                            <value>VEN</value>
+                        </entry>
+                        <entry name="Wallis and Futuna">
+                            <value>876</value>
+                            <value>WF</value>
+                            <value>WLF</value>
+                        </entry>
+                        <entry name="Samoa">
+                            <value>882</value>
+                            <value>WS</value>
+                            <value>WSM</value>
+                        </entry>
+                        <entry name="Yemen">
+                            <value>887</value>
+                            <value>YE</value>
+                            <value>YEM</value>
+                        </entry>
+                        <entry name="Serbia and Montenegro">
+                            <value>891</value>
+                            <value>CS</value>
+                            <value>SCG</value>
+                        </entry>
+                        <entry name="Zambia">
+                            <value>894</value>
+                            <value>ZM</value>
+                            <value>ZMB</value>
+                        </entry>
+                        <entry name="Inmarsat - East Atlantic Ocean">
+                            <value>995</value>
+                            <value>995</value>
+                            <value>995</value>
+                        </entry>
+                        <entry name="Inmarsat - Indian Ocean">
+                            <value>996</value>
+                            <value>996</value>
+                            <value>996</value>
+                        </entry>
+                        <entry name="Inmarsat - Pacific Ocean">
+                            <value>997</value>
+                            <value>997</value>
+                            <value>997</value>
+                        </entry>
+                        <entry name="Inmarsat - West Atlantic Ocean">
+                            <value>998</value>
+                            <value>998</value>
+                            <value>998</value>
+                        </entry>
+                    </entries>
+                </enum>
+                <enum name="Application">
+                    <description>MetraTech Web Applications</description>
+                    <entries>
+                        <entry name="MAM">
+                            <value>MAM</value>
+                        </entry>
+                        <entry name="MCM">
+                            <value>MCM</value>
+                        </entry>
+                        <entry name="MOM">
+                            <value>MOM</value>
+                        </entry>
+                        <entry name="MPS">
+                            <value>MPS</value>
+                        </entry>
+                    </entries>
+                </enum>
+                <enum name="AccessLevel">
+                    <description>Account Hierarchy Auth and Auth Access Level</description>
+                    <entries>
+                        <entry name="READ">
+                            <value>READ</value>
+                        </entry>
+                        <entry name="WRITE">
+                            <value>WRITE</value>
+                        </entry>
+                    </entries>
+                </enum>
+                <enum name="PropertyType">
+                    <description>A list of possible extended property types on a PO.</description>
+                    <entries>
+                        <entry name="string">
+                            <value>0</value>
+                        </entry>
+                        <entry name="int">
+                            <value>1</value>
+                        </entry>
+                        <entry name="decimal">
+                            <value>2</value>
+                        </entry>
+                        <entry name="list">
+                            <value>3</value>
+                        </entry>
+                        <entry name="boolean">
+                            <value>4</value>
+                        </entry>
+                        <entry name="datetime">
+                            <value>5</value>
+                        </entry>
+                    </entries>
+                </enum>
+                <enum name="EntityType">
+                    <description>This is the entity type</description>
+                    <entries>
+                        <entry name="ProductOffering">
+                            <value>0</value>
+                        </entry>
+                        <entry name="AgreementTemplate">
+                            <value>1</value>
+                        </entry>
+                    </entries>
+                </enum>
+                <enum name="APIParameterDirection">
+                    <description>This is used to set the flow direction of API parameters.</description>
+                    <entries>
+                        <entry name="IN">
+                            <value>0</value>
+                        </entry>
+                        <entry name="OUT">
+                            <value>1</value>
+                        </entry>
+                        <entry name="INOUT">
+                            <value>2</value>
+                        </entry>
+                    </entries>
+                </enum>
+                <enum name="LocalizedItemsType ">
+                    <description>Enum to set item types for MetraTech.Localization module</description>
+                    <entries>
+                        <entry name="None">
+                            <value>0</value>
+                        </entry>
+                        <entry name="RecurringAdapters">
+                            <value>1</value>
+                        </entry>
+                        <entry name="CompositeCapability ">
+                            <value>2</value>
+                        </entry>
+                        <entry name="AtomicCapability ">
+                            <value>3</value>
+                        </entry>
+                        <entry name="AccountType">
+                            <value>4</value>
+                        </entry>
+                    </entries>
+                </enum>
+            </enums>
+        </enum_space>
+    </enum_spaces>
+</mt_config>

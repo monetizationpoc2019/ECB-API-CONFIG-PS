@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<defineservice>
+ <name>metratech.com/PercentDiscount_NoCond</name>
+ <description>Percentage unconditional discounts.</description>
+
+ <ptype>
+  <dn>DiscountIntervalStart</dn>
+  <type>timestamp</type>
+  <length />
+  <required>Y</required>
+  <defaultvalue />
+  <description>Start date of discount interval.</description>
+ </ptype>
+
+ <ptype>
+  <dn>DiscountIntervalEnd</dn>
+  <type>timestamp</type>
+  <length />
+  <required>Y</required>
+  <defaultvalue />
+  <description>End date of discount interval.</description>
+ </ptype>
+
+ <ptype uservisible="FALSE">
+  <dn>SubscriptionStart</dn>
+  <type>timestamp</type>
+  <length />
+  <required>Y</required>
+  <defaultvalue />
+  <description>Start date of subscription.</description>
+ </ptype>
+
+ <ptype uservisible="FALSE">
+  <dn>SubscriptionEnd</dn>
+  <type>timestamp</type>
+  <length />
+  <required>N</required>
+  <defaultvalue />
+  <description>End date of subscription.</description>
+ </ptype>
+
+ <ptype uservisible="FALSE">
+  <dn>DiscountIntervalSubStart</dn>
+  <type>timestamp</type>
+  <length />
+  <required>Y</required>
+  <defaultvalue />
+  <description>Start date of intersection of the discount and subscription interval.</description>
+ </ptype>
+
+ <ptype uservisible="FALSE">
+  <dn>DiscountIntervalSubEnd</dn>
+  <type>timestamp</type>
+  <length />
+  <required>Y</required>
+  <defaultvalue />
+  <description>End date of intersection of the discount and subscription interval.</description>
+ </ptype>
+
+ <ptype>
+  <dn>Target</dn>
+  <type>decimal</type>
+  <length />
+  <required>N</required>
+  <defaultvalue />
+  <description>Target Counter value. Required for pass 0 and 1.</description>
+ </ptype>
+
+ <ptype>
+  <dn>DiscountPercent</dn>
+  <type>decimal</type>
+  <length />
+  <required>Y</required>
+  <defaultvalue />
+  <description>Actual percentage applied.</description>
+ </ptype>
+
+
+<!-- properties below are used to support group discounts -->
+ <ptype>
+  <dn>GroupSubscriptionName</dn>
+  <type>string</type>
+  <length>100</length>
+  <required>N</required>
+  <defaultvalue />
+  <description>The group subscription name. Required for pass 2.</description>
+ </ptype>
+
+</defineservice>

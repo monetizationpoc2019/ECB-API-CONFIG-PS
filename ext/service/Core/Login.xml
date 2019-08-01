@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<defineservice>
+  <name>metratech.com/Login</name>
+  <description>User credentials for login.</description>
+  <ptype>
+    <dn>UserName</dn>
+    <type>string</type>
+    <length>40</length>
+    <required>Y</required>
+    <defaultvalue>
+    </defaultvalue>
+    <description>User name</description>
+  </ptype>
+  <ptype>
+    <dn>Password_</dn>
+    <type>string</type>
+    <length>40</length>
+    <required>Y</required>
+    <defaultvalue>
+    </defaultvalue>
+    <description>Password</description>
+  </ptype>
+  <ptype>
+    <dn>Namespace</dn>
+    <type>string</type>
+    <length>40</length>
+    <required>Y</required>
+    <defaultvalue>
+    </defaultvalue>
+    <description>Namespace</description>
+  </ptype>
+</defineservice>

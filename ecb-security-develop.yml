@@ -1,0 +1,8 @@
+logging.level.com.ericsson: DEBUG
+logging.level.com.ericsson.ecb: DEBUG
+logging.level.org.springframework: DEBUG
+logging.level.org.springframework.beans: DEBUG
+logging.level.org.springframework.context.annotation: DEBUG
+logging.level.org.springframework.cloud.config.server.environment: DEBUG
+logging.level.org.eclipse.jetty: DEBIG
+logging.level.org.eclipse.jetty.util: DEBUG

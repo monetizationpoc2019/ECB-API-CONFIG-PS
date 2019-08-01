@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<mt_config>
+    <enum_spaces>
+        <enum_space name="metratech.com/RevenueRecognition">
+            <description>Revenue Recognition</description>
+            <enums>
+                <enum name="PerformanceObligation">
+                    <description>Performance Obligation determines when the revenue can be recognized</description>
+                    <entries>
+                        <entry name="Delayed">
+                            <value>0</value>
+                        </entry>
+                        <entry name="OnInvoice">
+                            <value>1</value>
+                        </entry>
+                        <entry name="SpecifiedDate">
+                            <value>2</value>
+                        </entry>
+                    </entries>
+                </enum>
+                <enum name="RecognitionPattern">
+                    <description>Recognition Pattern</description>
+                    <entries>
+                        <entry name="SinglePointInTime">
+                            <value>0</value>
+                        </entry>
+                        <entry name="DailyOverTime">
+                            <value>1</value>
+                        </entry>
+                        <entry name="MonthlyOverTime">
+                            <value>2</value>
+                        </entry>
+                    </entries>
+                </enum>
+            </enums>
+        </enum_space>
+    </enum_spaces>
+</mt_config>

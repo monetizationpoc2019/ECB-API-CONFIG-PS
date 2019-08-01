@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xmlconfig>
+
+  <mtsysconfigdata>
+    <effective_date ptype="DATETIME">1998-11-19T00:00:00Z</effective_date>
+    <timeout ptype="INTEGER">30</timeout>
+    <configfiletype>CONFIG_DATA</configfiletype>
+  </mtsysconfigdata>
+
+  <mtconfigdata>
+
+
+ <version ptype="INTEGER">1</version>
+ <!-- First processor configuration -->
+ <processor>
+  <name>TOD</name>
+  <description>Extract time of day from timestamp.</description>
+  <progid>MetraPipeline.TimeOfDay.1</progid>
+
+  <condition>
+  
+    CREATE PROCEDURE condition
+         @_ExecutePlugin BOOLEAN OUTPUT
+         @PipelineTime DATETIME
+    AS
+      IF @PipelineTime IS NULL
+        SET @_ExecutePlugin =  TRUE
+      ELSE
+        SET @_ExecutePlugin =  FALSE
+  
+  </condition>
+
+  <!-- Processor specific configuration data -->
+  <configdata>
+    <datetime>_Timestamp</datetime>
+    <timeofday>TOD</timeofday>
+  </configdata>
+
+ </processor>
+
+  </mtconfigdata>
+
+</xmlconfig>

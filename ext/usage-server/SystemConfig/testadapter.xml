@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xmlconfig>
+  <tag>EOPTest</tag>
+  <batchcount>1</batchcount>
+  <sessioncount>10</sessioncount>
+  <errorcount>0</errorcount>
+  <sessionsetsize>10</sessionsetsize>
+  <extradelay>0</extradelay>
+  <reversemode>Custom</reversemode>
+  <scheduled>false</scheduled>
+  <endofperiod>true</endofperiod>
+  <multiinstance>true</multiinstance>
+  <failinitialize>false</failinitialize>
+  <failexecute>false</failexecute>
+  <failreverse>false</failreverse>
+  <failshutdown>false</failshutdown>
+  <service>metratech.com/testservice</service>
+  <query>
+   
+    select 'demo' as c_AccountName, 'Test service' as c_Description,
+		id_enum_data as c_Units, %%%SYSTEMDATE%%% as c_Time from t_enum_data
+      where id_enum_data &gt;= 10 and id_enum_data &lt; (10 + %%SUCCESS_COUNT%%)
+    union all
+    select 'demoxx' as c_AccountName, 'Test service' as c_Description,
+		id_enum_data as c_Units, %%%SYSTEMDATE%%% as c_Time from t_enum_data
+      where id_enum_data &gt;= 10 and id_enum_data &lt; (10 + %%ERROR_COUNT%%)
+	 
+  </query>
+</xmlconfig>

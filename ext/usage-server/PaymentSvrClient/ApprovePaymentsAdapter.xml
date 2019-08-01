@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xmlconfig>
+  <tag>ApprovePaymentsAdapter</tag>
+  <sessionsetsize>10</sessionsetsize>
+  <!-- time in seconds to wait for metered sessions to succeed -->
+  <WaitForCommitTimeout>60</WaitForCommitTimeout>
+  <server>paymentserver</server>
+  <service>metratech.com/ps_ApprovePayments</service>
+</xmlconfig>

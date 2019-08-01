@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<mt_config>
+    <language_code>US</language_code>
+    <locale_space name="metratech.com/percentdiscount">
+        <locale_entry>
+            <Name>metratech.com/percentdiscount</Name>
+            <Value>Percent Discount</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/percentdiscount/DiscountIntervalEnd</Name>
+            <Value>Discount Interval End Date</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/percentdiscount/DiscountIntervalStart</Name>
+            <Value>Discount Interval Start Date</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/percentdiscount/DiscountIntervalSubEnd</Name>
+            <Value>Discount Interval Subscription End Date</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/percentdiscount/DiscountIntervalSubStart</Name>
+            <Value>Discount Interval Subscription Start Date</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/percentdiscount/DiscountPercent</Name>
+            <Value>Discount Percent</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/percentdiscount/GroupSubscriptionName</Name>
+            <Value>Group Subscription</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/percentdiscount/Qualifier</Name>
+            <Value>Qualifier Value</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/percentdiscount/SubscriptionEnd</Name>
+            <Value>Subscription End Date</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/percentdiscount/SubscriptionStart</Name>
+            <Value>Subscription Start Date</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/percentdiscount/Target</Name>
+            <Value>Target Value</Value>
+        </locale_entry>
+    </locale_space>
+</mt_config>

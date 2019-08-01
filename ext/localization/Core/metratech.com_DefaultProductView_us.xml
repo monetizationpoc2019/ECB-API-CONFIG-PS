@@ -1,0 +1,170 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<mt_config>
+    <language_code>US</language_code>
+    <locale_space name="metratech.com/defaultproductview">
+        <locale_entry>
+            <Name>metratech.com/DefaultProductView</Name>
+            <Value>Product View</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/DefaultProductView/AccountID</Name>
+            <Value>Account</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/DefaultProductView/Amount</Name>
+            <Value>Amount</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/DefaultProductView/AmountWithTax</Name>
+            <Value>Amount With Tax</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/DefaultProductView/AmountWithTaxAsString</Name>
+            <Value>Amount With Tax</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/DefaultProductView/CanAdjust</Name>
+            <Value>Can Adjust</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/DefaultProductView/CanManageAdjustments</Name>
+            <Value>Can Manage Adjustments</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/DefaultProductView/CanRebill</Name>
+            <Value>Can Rebill</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/DefaultProductView/CountyTaxAmount</Name>
+            <Value>County Tax Amount</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/DefaultProductView/CountyTaxAmountAsString</Name>
+            <Value>County Tax Amount</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/DefaultProductView/Currency</Name>
+            <Value>Currency</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/DefaultProductView/DisplayAmount</Name>
+            <Value>Display Amount</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/DefaultProductView/DisplayAmountAsString</Name>
+            <Value>Display Amount</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/DefaultProductView/FederalTaxAmount</Name>
+            <Value>Federal Tax Amount</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/DefaultProductView/FederalTaxAmountAsString</Name>
+            <Value>Federal Tax Amount</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/DefaultProductView/IntervalID</Name>
+            <Value>Interval</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/DefaultProductView/IsAdjusted</Name>
+            <Value>Is Adjusted</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/DefaultProductView/IsIntervalSoftClosed</Name>
+            <Value>Is Interval Soft Closed</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/DefaultProductView/IsPostBillAdjusted</Name>
+            <Value>Is Post-bill Adjusted</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/DefaultProductView/IsPreBillAdjusted</Name>
+            <Value>Is Pre-bill Adjusted</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/DefaultProductView/IsPreBillTransaction</Name>
+            <Value>Is Pre-bill Transaction</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/DefaultProductView/IsTaxInclusive</Name>
+            <Value>Is tax inclusive?</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/DefaultProductView/IsTaxInformational</Name>
+            <Value>Is tax informational?</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/DefaultProductView/LocalTaxAmount</Name>
+            <Value>Local Tax Amount</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/DefaultProductView/LocalTaxAmountAsString</Name>
+            <Value>Local Tax Amount</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/DefaultProductView/OtherTaxAmount</Name>
+            <Value>Other Tax Amount</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/DefaultProductView/OtherTaxAmountAsString</Name>
+            <Value>Other Tax Amount</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/DefaultProductView/ParentSessionID</Name>
+            <Value>Parent Session</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/DefaultProductView/PIInstance</Name>
+            <Value>PI Instance</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/DefaultProductView/PITemplate</Name>
+            <Value>PI Template</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/DefaultProductView/PostBillAdjustmentID</Name>
+            <Value>Post-bill Adjustment</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/DefaultProductView/PreBillAdjustmentID</Name>
+            <Value>Pre-bill Adjustment</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/DefaultProductView/SessionID</Name>
+            <Value>Session</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/DefaultProductView/SessionType</Name>
+            <Value>Session Type</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/DefaultProductView/SessionType Value</Name>
+            <Value>Session Type Value</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/DefaultProductView/StateTaxAmount</Name>
+            <Value>State Tax Amount</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/DefaultProductView/StateTaxAmountAsString</Name>
+            <Value>State Tax Amount</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/DefaultProductView/TaxAmount</Name>
+            <Value>Tax Amount</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/DefaultProductView/TaxAmountAsString</Name>
+            <Value>Tax Amount</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/DefaultProductView/TimeStamp</Name>
+            <Value>Time Stamp</Value>
+        </locale_entry>
+        <locale_entry>
+            <Name>metratech.com/DefaultProductView/ViewID</Name>
+            <Value>View</Value>
+        </locale_entry>
+    </locale_space>
+</mt_config>

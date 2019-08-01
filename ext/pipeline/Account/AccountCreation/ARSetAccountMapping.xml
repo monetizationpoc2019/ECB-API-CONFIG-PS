@@ -1,0 +1,86 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xmlconfig>
+  <mtsysconfigdata>
+    <effective_date ptype="DATETIME">1998-11-19T00:00:00Z</effective_date>
+    <timeout ptype="INTEGER">30</timeout>
+    <configfiletype>CONFIG_DATA</configfiletype>
+  </mtsysconfigdata>
+
+  <mtconfigdata>
+    <version ptype="INTEGER">1</version>
+
+    <processor>
+      <name>ARSetAccountMapping</name>
+      <progid>MetraPipeline.MTSQLInterpreter.1</progid>
+      <description>This plug-in sets the AR account information in the session.
+        It does not modify t_account_mapper like ARModifyAccountMapping does.</description>
+
+      <configdata>
+
+        <Program>
+        
+                  CREATE PROCEDURE ARSetAccountMapping @ARExternalUsername  VARCHAR OUTPUT
+                                                      @ARExternalNameSpace VARCHAR OUTPUT
+                                                      @AROperation         ENUM OUTPUT --$ICE:('metratech.com','Operation')$
+                                                      @username            VARCHAR
+                                                      @operation           ENUM --$ICE:('metratech.com','Operation')$
+                                                      @name_space          VARCHAR
+                  AS
+                    -- Fix for bug 11546
+                    -- When a system user is created in MetraCare using the Add System User option we do NOT 
+                    -- want to add this user as an AR user as well.
+                    IF (@name_space = 'system_user')
+                    BEGIN
+                      Set @ARExternalNameSpace = '';
+                      Set @ARExternalUsername = '';
+
+                      -- PRINT 'ARSetARAccountMapping:ARExternalUsername [' + @ARExternalUsername + '] ARExternalNameSpace [' + @ARExternalNameSpace + '] AROperation [NULL] name_space: [' + @name_space + '] operation [' + CAST(@operation AS VARCHAR) + ']';
+                    END
+                    ELSE
+                    BEGIN
+                      -- In this plugin we need to set the account name for the external AR system as the property ARExternalUsername. We can have multiple operating companies
+                      -- by setting different ARExternalNameSpace values (although the namespaces and other configuration must already be created).
+                      --
+                      -- If this account should not be exported to an external AR system for some reason, set the ARExternalUsername
+                      -- and ARExternalNameSpace to blank.
+                      --
+                      -- Out of the box we will map all accounts into a single external AR system using the account's username as the
+                      -- account name in the external AR system and a single operating company configured as 'ar/external'.
+                    
+                      Set @ARExternalUsername = @username;
+                      Set @ARExternalNameSpace = 'ar/external';
+
+                      DECLARE @strOperation VARCHAR;
+                      SET @strOperation = CAST(@operation AS VARCHAR);
+
+                      IF @strOperation = 'Update'
+                        SET @AROperation = #metratech.com/Operation/Update#;
+                      ELSE
+                        SET @AROperation = #metratech.com/Operation/Add# 
+
+                      -- Multiple Operating Company Example
+                      -- This block is one sample of how you could map from the metratech (mt) namespace into the AR namespace.
+                      --
+                      -- In this example, if the first 4 characters of the metratech username are 'EUR_' then we know to map
+                      -- this account into the "ar/europe" AR namespace.  If they were "ASI_" we might map them into an
+                      -- "ar/asia" AR namespace.  Some characteristic of the metratech username can often be used to do this
+                      -- sort of mapping.
+                      --
+                      -- Other situations may require the use of other metered properties to determine the external AR system
+                      -- this account should be sent to.
+                      --
+                      -- PRINT 'First 4 characters of username [' + CAST(substr(@ARExternalUsername,1,4) AS VARCHAR) + ']';
+                      -- IF substr(@ARExternalUsername,1,4)='EUR_'
+                      -- BEGIN
+                      --   SET @ARExternalNameSpace = 'ar/europe';
+                      -- END
+
+                      -- PRINT 'ARSetARAccountMapping:ARExternalUsername [' + @ARExternalUsername + '] ARExternalNameSpace [' + @ARExternalNameSpace + '] AROperation [' + CAST(@AROperation AS VARCHAR) + '] name_space: [' + @name_space + '] operation [' + CAST(@operation AS VARCHAR) + ']';
+                    END
+        
+        </Program> 
+      
+      </configdata>
+    </processor>
+  </mtconfigdata>
+</xmlconfig>

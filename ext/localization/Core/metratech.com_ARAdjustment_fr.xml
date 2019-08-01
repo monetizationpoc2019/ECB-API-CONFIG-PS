@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<mt_config>
+  <language_code>FR</language_code>
+  <locale_space name="metratech.com/ARAdjustment">
+    <locale_entry>
+      <Name>metratech.com/ARAdjustment</Name>
+      <Value>Ajustements de créances</Value>
+    </locale_entry>
+  </locale_space>
+</mt_config>

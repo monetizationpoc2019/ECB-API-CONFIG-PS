@@ -1,0 +1,174 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xmlconfig>
+	<serverName>mail.metratech.com</serverName>
+	<portNumber>25</portNumber>
+	<Encoding>UTF8</Encoding> <!-- possible values are ASCII or UTF8 -->
+	<Format>Text</Format>  <!-- possible values are Text or Html -->
+	<testMode>true</testMode>
+	<testModeTo>test@metratech.com</testModeTo> <!-- this is the email address to which emails will be sent when using the test mode -->
+	<!-- The query below is expected to return a rowset, each rowset will correspond to an email to be sent out.
+	     The query MUST return the Language, this language is used to determine which email template is to be
+	     used. An expected input parameter to the query is ID_INTERVAL, but it is not required-->
+	     
+<SQLServerquery>
+   
+    select DISTINCT UPPER(reverse(substring(reverse(ed1.nm_enum_data),1,charindex('/',reverse(ed1.nm_enum_data))-1))) as Language, 
+       avc.c_email as AddressedTo,
+       amp.id_acc as AccountID,
+       avc.c_firstname as FirstName,
+       avc.c_lastname as LastName,
+       inv.current_balance as AmountDue,
+       ui.dt_start as IntervalStart,
+       ui.dt_end as IntervalEnd
+	from t_account_mapper amp 
+	inner join t_av_contact avc
+	on amp.id_acc = avc.id_acc and avc.c_contacttype =  (select id_enum_data from t_enum_data where nm_enum_data = 'metratech.com/accountcreation/contacttype/bill-to')
+	inner join t_av_internal avi
+	on amp.id_acc = avi.id_acc
+	inner join t_enum_data ed1
+	on avi.c_language = ed1.id_enum_data
+	inner join t_billgroup_member bgm
+	on amp.id_acc = bgm.id_acc and bgm.id_billgroup = %%ID_BILLGROUP%% 
+	left outer join t_invoice inv
+	on amp.id_acc = inv.id_acc and inv.id_interval = %%ID_INTERVAL%% 
+	left outer join t_usage_interval ui
+	on inv.id_interval = ui.id_interval
+	where ui.id_interval = %%ID_INTERVAL%%
+	and avc.c_email is not null
+	 
+  </SQLServerquery>
+  
+  <Oraclequery>
+   
+    select DISTINCT UPPER(REVERSE(to_char(substr(REVERSE(to_char(ed1.nm_enum_data)), 1,
+      instr(reverse(to_char(ed1.nm_enum_data)),'/',1,1)-1))))as Language, 
+       avc.c_email as AddressedTo,
+       amp.id_acc as AccountID,
+       avc.c_firstname as FirstName,
+       avc.c_lastname as LastName,
+       NVL(inv.current_balance,0) as AmountDue,
+       ui.dt_start as IntervalStart,
+       ui.dt_end as IntervalEnd
+from t_account_mapper amp 
+	inner join t_av_contact avc
+	on amp.id_acc = avc.id_acc and avc.c_contacttype =  (select id_enum_data from t_enum_data where upper(nm_enum_data) = upper('metratech.com/accountcreation/contacttype/bill-to'))
+	inner join t_av_internal avi
+	on amp.id_acc = avi.id_acc
+	inner join t_enum_data ed1
+	on avi.c_language = ed1.id_enum_data
+	inner join t_billgroup_member bgm
+	on amp.id_acc = bgm.id_acc and bgm.id_billgroup = %%ID_BILLGROUP%%
+	left outer join t_invoice inv
+	on amp.id_acc = inv.id_acc and inv.id_interval = %%ID_INTERVAL%% 
+	left outer join t_usage_interval ui
+	on inv.id_interval = ui.id_interval
+	where ui.id_interval = %%ID_INTERVAL%%
+	and avc.c_email is not null
+
+	 
+  </Oraclequery>
+  
+  <template>
+	<language>us</language>
+	<To>%%AddressedTO%%</To>
+	<From>test@metratech.com</From>
+	<CC />
+	<Bcc />
+	<Subject>Invoice Notification</Subject>
+	<messageBody>
+	
+Dear %%FIRSTNAME%% %%LASTNAME%%,
+A new bill is now available for your service with us from %%IntervalStart%% through %%IntervalEnd%%.  This email is to inform you the invoice will be mailed to you shortly with an amount due of %%AmountDue%%. No payment is due as of the receipt of this email.  Please remit payment according to the information on the invoice once you receive it via the postal service.
+
+If you have any questions or comments, please contact us. You can email us at customer_service@MetraTechCustomerName.com or you can reach us by phone at (800) xxx-xxxx during business hours.
+
+
+Sincerely,
+Customer Service
+	</messageBody>
+  </template>
+
+  <template>
+	<language>de</language>
+	<To>%%AddressedTo%%</To>
+	<From>test@metratech.com</From>
+	<CC />
+	<Bcc />
+  <Subject>Rechnungsbenachrichtigung</Subject>
+	<messageBody>
+
+Sehr geehrte/r %%FIRSTNAME%% %%LASTNAME%%,
+Eine neue Rechnung über bei uns im Zeitraum zwischen %%IntervalStart%% und %%IntervalEnd%% in Anspruch genommene Services ist jetzt verfügbar. Mit dieser E-Mail möchten wir Sie darüber informieren, dass die Rechnung mit einem fälligen Betrag in Höhe von %%AmountDue%% in Kürze an Sie gesendet wird. Mit dem Empfang dieser E-Mail ist noch keine Zahlung fällig. Leisten Sie die Zahlung entsprechend den Informationen auf der Rechnung, sobald Sie die Rechnung per Post erhalten.
+
+Wenn Sie Fragen oder Anmerkungen haben, wenden Sie sich bitte an uns. Sie können eine E-Mail an customer_service@MetraTechCustomerName.com senden, oder Sie können uns zu unseren Geschäftszeiten telefonisch unter (800) xxx-xxxx erreichen.&lt;br&gt;
+
+Mit freundlichen Grüßen
+Kundendienst
+
+	</messageBody>
+  </template>
+  
+  <template>
+	<language>fr</language>
+	<To>%%AddressedTO%%</To>
+	<From>test@metratech.com</From>
+	<CC />
+	<Bcc />
+  <Subject>Notification de facture</Subject>
+	<messageBody>
+
+Cher/chère %%FIRSTNAME%% %%LASTNAME%%,
+Une nouvelle facture est maintenant disponible pour les services que nous vous avons fournis du %%IntervalStart%% au %%IntervalEnd%%.  Ce courrier électronique a pour objectif de vous informer qu’une facture d’un montant de %%AmountDue%% vous sera envoyée sous peu. La réception de ce courrier électronique ne vous engage à aucun paiement.  Merci d’adresser le paiement suivant les informations portées sur la facture, une fois que vous l’aurez reçue par courrier postal.
+
+En cas de questions ou de commentaires, n’hésitez pas à nous contacter. Vous pouvez nous contacter par courrier électronique à l’adresse customer_service@MetraTechCustomerName.com ou nous joindre par téléphone aux heures de bureau au (800) xxx-xxxx.
+
+
+Meilleures salutations,
+Le Service clientèle
+
+	</messageBody>
+  </template>	
+  
+  <template>
+	<language>it</language>
+	<To>%%AddressedTO%%</To>
+	<From>test@metratech.com</From>
+	<CC />
+	<Bcc />
+  <Subject>Notifica fattura</Subject>
+	<messageBody>
+
+Gentile %%FIRSTNAME%% %%LASTNAME%%,
+La presente per comunicarle che è disponibile la nuova fattura relativa al servizio da Lei sottoscritto per il periodo compreso tra %%IntervalStart%% e %%IntervalEnd%%. La fattura le verrà inviata a breve via posta con l'importo dovuto, pari a %%AmountDue%%. Le ricordiamo che non è tenuto al pagamento di alcun importo fino al momento della ricezione di questo messaggio e-mail. Una volta ricevuta la fattura via posta ordinaria, La preghiamo di effettuare il pagamento in base alle informazioni riportate su di essa.
+
+Non esiti a contattarci per porre domande o esprimere commenti. Può inviare un messaggio e-mail all'indirizzo di posta elettronica customer_service@MetraTechCustomerName.com o chiamare il numero (800) xxx-xxxx durante il normale orario lavorativo.
+
+
+Distinti saluti
+Il Servizio Clienti
+
+	</messageBody>
+  </template>	
+    
+  <template>
+	<language>jp</language>
+	<To>%%AddressedTO%%</To>
+	<From>test@metratech.com</From>
+	<CC />
+	<Bcc />
+  <Subject>明細のお知らせ</Subject>
+	<messageBody>
+
+拝啓 %%FIRSTNAME%% %%LASTNAME%% 様、
+お客様にご利用いただいたサービスにつきまして、%%IntervalStart%% ～ %%IntervalEnd%% まで、新しい請求書をご覧いただけるようになりました。このメールは、お支払い額 %%AmountDue%% の明細をまもなく郵送させていただくことをお知らせするものです。このメールの受信によって、そのままお支払いいただくということでありません。郵送した明細書をお受け取りになりましたら、そこに記載されている内容に従ってお支払いください。
+
+ご質問、ご意見等ございましたら、遠慮なくお問い合わせください。E メールでのお問い合わせ先は、customer_service@MetraTechCustomerName 、また、お電話の場合は (800) xxx-xxxx まで、営業時間内にお願いいたします。
+
+
+敬具
+カスタマ サービス
+
+	</messageBody>
+  </template>	     
+	
+</xmlconfig>
